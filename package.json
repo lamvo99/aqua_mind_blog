@@ -1,0 +1,31 @@
+{
+  "name": "aqua_mind_blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@sanity/client": "6.6.0",
+    "@sanity/image-url": "1.0.2",
+    "lucide-react": "^1.16.0",
+    "next": "14.2.6",
+    "next-sanity": "^9.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.2.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5"
+  }
+}
