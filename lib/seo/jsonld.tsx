@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.vn"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
 
 export function articleSchema(post: any) {
   return {
