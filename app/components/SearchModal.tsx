@@ -58,10 +58,10 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
 
   return (
     <div className="fixed inset-0 z-[60] flex items-start justify-center pt-[15vh]">
-      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
+      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} aria-label="Close search" />
       <div className="relative w-full max-w-xl mx-4 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex items-center gap-3 px-4 border-b border-gray-200 dark:border-slate-700">
-          <Search className="w-5 h-5 text-gray-400 shrink-0" />
+          <Search className="w-5 h-5 text-gray-500 shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -71,8 +71,8 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
             className="flex-1 py-4 bg-transparent text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none text-sm"
           />
           {loading && <Loader2 className="w-4 h-4 text-aqua-500 animate-spin" />}
-          <button onClick={onClose} className="p-1 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-colors">
-            <X className="w-4 h-4 text-gray-400" />
+          <button onClick={onClose} aria-label="Close search" className="p-1 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-colors">
+            <X className="w-4 h-4 text-gray-500" />
           </button>
         </div>
         {results.length > 0 && (
@@ -108,7 +108,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
           </div>
         )}
         {query && !loading && results.length === 0 && (
-          <div className="p-8 text-center text-sm text-gray-400">{strings.search.noResults}</div>
+          <div className="p-8 text-center text-sm text-gray-500">{strings.search.noResults}</div>
         )}
       </div>
     </div>

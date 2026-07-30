@@ -38,6 +38,7 @@ export default function LikeBookmark({ postSlug }: { postSlug: string }) {
     <div className="flex items-center gap-3">
       <button
         onClick={() => toggle("liked")}
+        aria-label={liked ? strings.post.unlike : strings.post.like}
         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
           liked
             ? "bg-coral-50 dark:bg-coral-950/30 text-coral-600 dark:text-coral-400"
@@ -49,6 +50,7 @@ export default function LikeBookmark({ postSlug }: { postSlug: string }) {
       </button>
       <button
         onClick={() => toggle("bookmarked")}
+        aria-label={bookmarked ? strings.post.unbookmark : strings.post.bookmark}
         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
           bookmarked
             ? "bg-aqua-50 dark:bg-aqua-950/30 text-aqua-600 dark:text-aqua-400"

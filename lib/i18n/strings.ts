@@ -52,8 +52,12 @@ const strings = {
   post: {
     notFound: "Article not found",
     share: "Share:",
+    like: "Like",
+    unlike: "Unlike",
     save: "Save",
     saved: "Saved",
+    bookmark: "Bookmark",
+    unbookmark: "Unbookmark",
     category: "Category",
   },
   comments: {
@@ -133,6 +137,7 @@ const strings = {
     placeholder: "Search articles...",
     noResults: "No results found.",
   },
+  backToTop: "Back to top",
   errors: {
     invalidEmail: "Invalid email address",
     serverError: "Server error. Please try again later.",

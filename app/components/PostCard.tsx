@@ -49,7 +49,7 @@ export default function PostCard({ post, featured }: PostCardProps) {
               {cat.title}
             </span>
           ))}
-          <span className="flex items-center gap-1 text-xs text-gray-400 dark:text-slate-500 ml-auto">
+          <span className="flex items-center gap-1 text-xs text-gray-500 dark:text-slate-400 ml-auto">
             <Clock className="w-3 h-3" />
             {readingTime} {strings.posts.readingTime}
           </span>
@@ -60,7 +60,7 @@ export default function PostCard({ post, featured }: PostCardProps) {
         {post.excerpt && (
           <p className="text-sm text-gray-500 dark:text-slate-400 line-clamp-2 mb-4">{post.excerpt}</p>
         )}
-        <div className="flex items-center gap-3 text-xs text-gray-400 dark:text-slate-500">
+        <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-slate-400">
           {post.author && (
             <span className="flex items-center gap-1.5">
               {post.author.image ? (

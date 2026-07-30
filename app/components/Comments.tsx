@@ -79,7 +79,7 @@ export default function Comments({ postSlug }: { postSlug: string }) {
 
       <div className="space-y-4">
         {comments.length === 0 && (
-          <p className="text-center text-sm text-gray-400 dark:text-slate-500 py-8">
+          <p className="text-center text-sm text-gray-500 dark:text-slate-400 py-8">
             {strings.comments.empty}
           </p>
         )}
@@ -91,7 +91,7 @@ export default function Comments({ postSlug }: { postSlug: string }) {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-sm font-semibold text-gray-900 dark:text-slate-100">{comment.name}</span>
-                <span className="text-xs text-gray-400 dark:text-slate-500">
+                <span className="text-xs text-gray-500 dark:text-slate-400">
                   {new Date(comment.date).toLocaleDateString("en-US", {
                     day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit",
                   })}
