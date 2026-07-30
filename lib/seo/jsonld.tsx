@@ -13,6 +13,15 @@ export function organizationSchema() {
   }
 }
 
+export function articleImage(post: any) {
+  if (!post.mainImage) return undefined
+  try {
+    return urlFor(post.mainImage).width(1200).url()
+  } catch {
+    return undefined
+  }
+}
+
 export function articleSchema(post: any) {
   return {
     "@context": "https://schema.org",
