@@ -1,0 +1,4 @@
+# ads.txt — AquaMind Blog (aquamind.life)
+# File này sẽ được cập nhật khi chọn mạng quảng cáo (Google AdSense / Ezoic / Mediavine / v.v.)
+# Định dạng: google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
+# Tham khảo: https://support.google.com/adsense/answer/7532444
