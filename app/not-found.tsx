@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Droplets, Search, Home } from "lucide-react"
+import { Droplets, Home } from "lucide-react"
 
 export default function NotFound() {
   return (
@@ -8,29 +8,18 @@ export default function NotFound() {
         <div className="w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-6">
           <Droplets className="w-10 h-10 text-white" />
         </div>
-        <h1 className="text-6xl font-bold gradient-text mb-2">404</h1>
-        <p className="text-xl font-semibold text-gray-900 dark:text-slate-100 mb-2">
-          Trang không tìm thấy
+        <h1 className="text-6xl font-bold text-gray-900 dark:text-slate-100 mb-2">404</h1>
+        <p className="text-lg text-gray-500 dark:text-slate-400 mb-2">Trang bạn tìm kiếm không tồn tại</p>
+        <p className="text-sm text-gray-400 dark:text-slate-500 mb-8">
+          Có thể trang đã bị xoá hoặc đường dẫn không chính xác.
         </p>
-        <p className="text-gray-500 dark:text-slate-400 mb-8">
-          Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 px-5 py-2.5 gradient-bg text-white font-medium rounded-xl hover:opacity-90 transition-all"
-          >
-            <Home className="w-4 h-4" />
-            Về trang chủ
-          </Link>
-          <Link
-            href="/posts"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 text-gray-700 dark:text-slate-200 font-medium rounded-xl border border-gray-200 dark:border-slate-700 hover:border-aqua-300 transition-all"
-          >
-            <Search className="w-4 h-4" />
-            Tìm bài viết
-          </Link>
-        </div>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-aqua-500/25"
+        >
+          <Home className="w-4 h-4" />
+          Quay về trang chủ
+        </Link>
       </div>
     </div>
   )

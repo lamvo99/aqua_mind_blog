@@ -35,7 +35,9 @@ export default function NewsletterSection() {
         </div>
       </div>
       <form onSubmit={handleSubmit} className="flex gap-2 mt-4">
+        <label htmlFor="newsletter-email" className="sr-only">Email của bạn</label>
         <input
+          id="newsletter-email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

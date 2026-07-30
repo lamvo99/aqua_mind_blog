@@ -4,10 +4,11 @@ import PostsPageClient from "./PostsPageClient"
 export const dynamic = "force-dynamic"
 
 export default async function PostsPage({
-  searchParams,
+  searchParams: searchParamsPromise,
 }: {
-  searchParams: { category?: string }
+  searchParams: Promise<{ category?: string }>
 }) {
+  const searchParams = await searchParamsPromise
   const categorySlug = searchParams?.category
 
   let posts

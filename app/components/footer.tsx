@@ -79,7 +79,9 @@ export default function Footer() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex">
+                <label htmlFor="footer-email" className="sr-only">Email của bạn</label>
                 <input
+                  id="footer-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -106,8 +108,9 @@ export default function Footer() {
         <div className="mt-10 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} AquaMind Blog. Tất cả quyền được bảo lưu.</p>
           <div className="flex gap-4">
-            <Link href="/about" className="hover:text-aqua-400 transition-colors">Chính sách bảo mật</Link>
-            <Link href="/contact" className="hover:text-aqua-400 transition-colors">Điều khoản sử dụng</Link>
+            <Link href="/privacy-policy" className="hover:text-aqua-400 transition-colors">Chính sách bảo mật</Link>
+            <Link href="/terms-of-service" className="hover:text-aqua-400 transition-colors">Điều khoản sử dụng</Link>
+            <Link href="/cookie-policy" className="hover:text-aqua-400 transition-colors">Chính sách Cookie</Link>
           </div>
         </div>
       </div>

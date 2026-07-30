@@ -12,7 +12,8 @@ import RelatedPosts from "@/app/components/RelatedPosts"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LikeBookmark from "@/app/components/LikeBookmark"
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
-import { Calendar, User, Clock, ArrowLeft, Share2 } from "lucide-react"
+import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
+import SocialShare from "@/app/components/SocialShare"
 
 export const dynamic = "force-dynamic"
 
@@ -23,8 +24,9 @@ export async function generateStaticParams() {
   return posts.map((post: any) => ({ slug: post.slug.current }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug)
+export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await paramsPromise
+  const post = await getPostBySlug(slug)
   if (!post) return { title: "Bài viết không tìm thấy" }
   return {
     title: post.title,
@@ -38,12 +40,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       authors: post.author ? [post.author.name] : [],
     },
     twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
-    alternates: { canonical: `${siteUrl}/posts/${params.slug}` },
+    alternates: { canonical: `${siteUrl}/posts/${slug}` },
   }
 }
 
-export default async function PostDetailPage({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug)
+export default async function PostDetailPage({ params: paramsPromise }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await paramsPromise
+  const post = await getPostBySlug(slug)
   if (!post) notFound()
 
   const readingTime = estimateReadingTime(post.body)
@@ -133,14 +136,13 @@ export default async function PostDetailPage({ params }: { params: { slug: strin
               ))}
             </div>
             <div className="flex items-center gap-2">
-              <LikeBookmark postSlug={params.slug} />
-              <button
-                onClick={() => { if (typeof navigator !== "undefined") navigator.share?.({ title: post.title, url: window.location.href }) }}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 rounded-lg text-xs text-gray-600 dark:text-slate-300 transition-colors"
-              >
-                <Share2 className="w-3.5 h-3.5" />
-                Chia sẻ
-              </button>
+              <LikeBookmark postSlug={slug} />
+              <SocialShare
+                url={`${siteUrl}/posts/${slug}`}
+                title={post.title}
+                description={post.excerpt}
+                image={imageUrl || undefined}
+              />
             </div>
           </div>
 
@@ -182,14 +184,14 @@ export default async function PostDetailPage({ params }: { params: { slug: strin
             </div>
           )}
 
-          <Comments postSlug={params.slug} />
+          <Comments postSlug={slug} />
 
           <div className="mt-12">
             <NewsletterSection />
           </div>
         </div>
 
-        <RelatedPosts currentSlug={params.slug} categories={post.categories?.map((c: any) => c.slug.current)} />
+        <RelatedPosts currentSlug={slug} categories={post.categories?.map((c: any) => c.slug.current)} />
       </article>
     </>
   )

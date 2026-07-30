@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import BackToTop from "./components/BackToTop"
+import CookieConsentBanner from "./components/CookieConsentBanner"
+import CookieSettings from "./components/CookieSettings"
 import { JsonLd, websiteSchema } from "@/lib/seo/jsonld"
 import "./globals.css"
 
@@ -47,6 +49,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <BackToTop />
+        <CookieConsentBanner />
+        <CookieSettings />
         <JsonLd data={websiteSchema()} />
       </body>
     </html>

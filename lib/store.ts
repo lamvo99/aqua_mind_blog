@@ -13,10 +13,19 @@ export function useNewsletter() {
 
   const subscribe = useCallback(async (email: string) => {
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 800))
-    const subs = JSON.parse(localStorage.getItem("aquamind_subscribers") || "[]")
-    subs.push({ email, date: new Date().toISOString() })
-    localStorage.setItem("aquamind_subscribers", JSON.stringify(subs))
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      if (!res.ok) throw new Error('Failed')
+    } catch {
+      // fallback: lưu local nếu API chưa hoạt động
+      const subs = JSON.parse(localStorage.getItem("aquamind_subscribers") || "[]")
+      subs.push({ email, date: new Date().toISOString() })
+      localStorage.setItem("aquamind_subscribers", JSON.stringify(subs))
+    }
     localStorage.setItem("aquamind_newsletter", "true")
     setSubscribed(true)
     setLoading(false)
