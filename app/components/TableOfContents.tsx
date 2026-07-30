@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { List, ChevronUp } from 'lucide-react'
 
 interface TocItem {
@@ -21,24 +21,35 @@ export default function TableOfContents({ blocks }: { blocks: any[] }) {
       level: b.style === "h2" ? 2 : 3,
     }))
 
-  useEffect(() => {
-    if (items.length < 3) return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id)
-          }
-        }
-      },
-      { rootMargin: "-80px 0px -80% 0px" }
-    )
+  const updateActive = useCallback(() => {
+    let active = ""
+    let closest = Infinity
+    const offset = 120
+
     for (const item of items) {
       const el = document.getElementById(item.id)
-      if (el) observer.observe(el)
+      if (!el) continue
+      const rect = el.getBoundingClientRect()
+      const dist = rect.top - offset
+      if (dist <= 0 && Math.abs(dist) < closest) {
+        closest = Math.abs(dist)
+        active = item.id
+      }
     }
-    return () => observer.disconnect()
+
+    if (active) setActiveId(active)
+    else if (items.length > 0) setActiveId(items[0].id)
   }, [items])
+
+  useEffect(() => {
+    if (items.length < 3) return
+
+    const handleScroll = () => requestAnimationFrame(updateActive)
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    updateActive()
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [items, updateActive])
 
   if (items.length < 3) return null
 

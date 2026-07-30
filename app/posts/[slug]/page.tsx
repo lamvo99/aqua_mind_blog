@@ -19,7 +19,7 @@ import strings from "@/lib/i18n/strings"
 
 export const dynamic = "force-dynamic"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.vn"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
 
 export async function generateStaticParams() {
   const posts = await getAllPosts()
@@ -75,7 +75,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
             <div className="h-48 md:h-64 bg-gradient-to-br from-aqua-500 to-ocean-600" />
           )}
           <div className="absolute bottom-0 left-0 right-0">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-12">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-12">
               <Link
                 href="/posts"
                 className="inline-flex items-center gap-1.5 text-sm text-white/80 hover:text-white mb-4 transition-colors"
@@ -116,7 +116,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
           </div>
         </header>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-6">
             <Breadcrumb items={breadcrumbItems} />
           </div>
