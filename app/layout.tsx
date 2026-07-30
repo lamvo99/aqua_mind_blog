@@ -5,7 +5,8 @@ import Footer from "./components/footer"
 import BackToTop from "./components/BackToTop"
 import CookieConsentBanner from "./components/CookieConsentBanner"
 import CookieSettings from "./components/CookieSettings"
-import { JsonLd, websiteSchema } from "@/lib/seo/jsonld"
+import { JsonLd, websiteSchema, organizationSchema } from "@/lib/seo/jsonld"
+import strings from "@/lib/i18n/strings"
 import "./globals.css"
 
 const inter = Inter({
@@ -23,27 +24,27 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "AquaMind Blog - Khám phá thế giới thuỷ sinh",
+    default: `${strings.site.name} - ${strings.site.tagline}`,
     template: "%s | AquaMind Blog",
   },
-  description: "Blog hàng đầu về thuỷ sinh, aquascaping, cây thuỷ sinh và cá cảnh. Kiến thức chuyên sâu cho người yêu thuỷ sinh.",
-  keywords: ["thuỷ sinh", "aquascaping", "cá cảnh", "cây thuỷ sinh", "hồ cá", "aquarium"],
+  description: strings.site.description,
+  keywords: ["aquascaping", "aquarium", "fishkeeping", "aquatic plants", "aquarium guide", "planted tank"],
   openGraph: {
-    title: "AquaMind Blog",
-    description: "Khám phá thế giới thuỷ sinh đầy mê hoặc",
+    title: strings.site.name,
+    description: strings.site.description,
     siteName: "AquaMind Blog",
     type: "website",
-    locale: "vi_VN",
+    locale: "en_US",
     url: siteUrl,
   },
-  twitter: { card: "summary_large_image", title: "AquaMind Blog", description: "Khám phá thế giới thuỷ sinh đầy mê hoặc" },
+  twitter: { card: "summary_large_image", title: strings.site.name, description: strings.site.description },
   robots: { index: true, follow: true },
   alternates: { canonical: siteUrl },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors">
         <Navbar />
         <main className="flex-1">{children}</main>
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieConsentBanner />
         <CookieSettings />
         <JsonLd data={websiteSchema()} />
+        <JsonLd data={organizationSchema()} />
       </body>
     </html>
   )

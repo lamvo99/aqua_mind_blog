@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Heart, Bookmark } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 export default function LikeBookmark({ postSlug }: { postSlug: string }) {
   const [liked, setLiked] = useState(false)
@@ -55,7 +56,7 @@ export default function LikeBookmark({ postSlug }: { postSlug: string }) {
         }`}
       >
         <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? "fill-current" : ""}`} />
-        {bookmarked ? "Đã lưu" : "Lưu bài"}
+        {bookmarked ? strings.post.saved : strings.post.save}
       </button>
     </div>
   )

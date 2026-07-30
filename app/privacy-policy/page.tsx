@@ -1,5 +1,6 @@
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Shield } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 export default function PrivacyPolicyPage() {
   return (
@@ -7,7 +8,7 @@ export default function PrivacyPolicyPage() {
       <section className="bg-gradient-to-br from-aqua-50 to-ocean-50 dark:from-slate-900 dark:to-slate-800 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center">
-            <Breadcrumb items={[{ label: "Chính sách bảo mật" }]} />
+            <Breadcrumb items={[{ label: strings.legal.privacyTitle }]} />
           </div>
           <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-6">
             <Shield className="w-8 h-8 text-white" />

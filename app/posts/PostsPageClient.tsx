@@ -4,6 +4,7 @@ import { useState, useMemo } from "react"
 import Link from "next/link"
 import PostCard from "../components/PostCard"
 import { Search, SlidersHorizontal, X } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 export default function PostsPageClient({
   posts,
@@ -48,12 +49,12 @@ export default function PostsPageClient({
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-slate-100">
             {selectedCategory
               ? categories.find((c) => c.slug.current === selectedCategory)?.title
-              : "Tất cả bài viết"}
+              : strings.posts.title}
           </h1>
           <p className="text-gray-500 dark:text-slate-400 mt-2">
             {selectedCategory
-              ? `Bài viết trong chuyên mục ${categories.find((c) => c.slug.current === selectedCategory)?.title}`
-              : "Khám phá kiến thức chuyên sâu về thế giới thuỷ sinh"}
+              ? `${strings.posts.filterBy}: ${categories.find((c) => c.slug.current === selectedCategory)?.title}`
+              : strings.posts.desc}
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export default function PostsPageClient({
                 setSearch(e.target.value)
                 setCurrentPage(1)
               }}
-              placeholder="Tìm kiếm bài viết..."
+              placeholder={strings.search.placeholder}
               className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
             />
             {search && (
@@ -89,7 +90,7 @@ export default function PostsPageClient({
                 : "bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-slate-300 hover:bg-aqua-50 dark:hover:bg-aqua-950/50 hover:text-aqua-600"
             }`}
           >
-            Tất cả
+            {strings.posts.title}
           </button>
           {categories.map((cat: any) => (
             <button
@@ -120,7 +121,7 @@ export default function PostsPageClient({
                   onClick={() => setCurrentPage((p) => p + 1)}
                   className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-medium rounded-xl hover:opacity-90 transition-all"
                 >
-                  Xem thêm bài viết
+                  {strings.posts.loadMore}
                 </button>
               </div>
             )}
@@ -129,10 +130,10 @@ export default function PostsPageClient({
           <div className="text-center py-20">
             <Search className="w-12 h-12 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
             <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">
-              Không tìm thấy bài viết
+              {strings.posts.noPosts}
             </h3>
             <p className="text-gray-500 dark:text-slate-400 text-sm">
-              {search ? "Thử tìm kiếm với từ khoá khác" : "Chưa có bài viết trong chuyên mục này"}
+              {search ? strings.search.noResults : strings.posts.noPosts}
             </p>
           </div>
         )}

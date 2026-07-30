@@ -1,4 +1,4 @@
-export function formatDate(date: string, locale = "vi-VN") {
+export function formatDate(date: string, locale = "en-US") {
   return new Date(date).toLocaleDateString(locale, {
     month: "long",
     day: "numeric",
@@ -6,7 +6,7 @@ export function formatDate(date: string, locale = "vi-VN") {
   })
 }
 
-export function formatDateShort(date: string, locale = "vi-VN") {
+export function formatDateShort(date: string, locale = "en-US") {
   return new Date(date).toLocaleDateString(locale, {
     month: "short",
     day: "numeric",
@@ -14,7 +14,7 @@ export function formatDateShort(date: string, locale = "vi-VN") {
   })
 }
 
-export function formatDateNumeric(date: string, locale = "vi-VN") {
+export function formatDateNumeric(date: string, locale = "en-US") {
   return new Date(date).toLocaleDateString(locale, {
     day: "2-digit",
     month: "2-digit",
@@ -22,7 +22,7 @@ export function formatDateNumeric(date: string, locale = "vi-VN") {
   })
 }
 
-export function formatRelativeTime(date: string, locale = "vi-VN") {
+export function formatRelativeTime(date: string, locale = "en-US") {
   const rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" })
   const diff = Date.now() - new Date(date).getTime()
   const seconds = Math.floor(diff / 1000)

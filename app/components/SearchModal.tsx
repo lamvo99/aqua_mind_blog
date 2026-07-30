@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Search, X, Loader2 } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 import { client } from "@/lib/sanity"
 import { urlFor } from "@/lib/sanity"
 
@@ -66,7 +67,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Tìm kiếm bài viết..."
+            placeholder={strings.search.placeholder}
             className="flex-1 py-4 bg-transparent text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none text-sm"
           />
           {loading && <Loader2 className="w-4 h-4 text-aqua-500 animate-spin" />}
@@ -107,7 +108,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
           </div>
         )}
         {query && !loading && results.length === 0 && (
-          <div className="p-8 text-center text-sm text-gray-400">Không tìm thấy bài viết nào</div>
+          <div className="p-8 text-center text-sm text-gray-400">{strings.search.noResults}</div>
         )}
       </div>
     </div>

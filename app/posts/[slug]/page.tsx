@@ -14,6 +14,8 @@ import LikeBookmark from "@/app/components/LikeBookmark"
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import SocialShare from "@/app/components/SocialShare"
+import TableOfContents from "@/app/components/TableOfContents"
+import strings from "@/lib/i18n/strings"
 
 export const dynamic = "force-dynamic"
 
@@ -27,7 +29,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ slug: string }> }) {
   const { slug } = await paramsPromise
   const post = await getPostBySlug(slug)
-  if (!post) return { title: "Bài viết không tìm thấy" }
+  if (!post) return { title: strings.post.notFound }
   return {
     title: post.title,
     description: post.excerpt,
@@ -51,8 +53,9 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
 
   const readingTime = estimateReadingTime(post.body)
   const imageUrl = post.mainImage ? urlFor(post.mainImage).width(1200).height(600).url() : null
+  const pinterestImage = post.mainImage ? urlFor(post.mainImage).width(600).height(900).url() : null
   const breadcrumbItems = [
-    { label: "Bài viết", href: "/posts" },
+    { label: strings.nav.posts, href: "/posts" },
     { label: post.title },
   ]
 
@@ -78,7 +81,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
                 className="inline-flex items-center gap-1.5 text-sm text-white/80 hover:text-white mb-4 transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
-                Quay lại bài viết
+                {strings.posts.back}
               </Link>
               <div className="flex flex-wrap items-center gap-3 text-sm text-white/70 mb-4">
                 {post.author && (
@@ -103,7 +106,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Clock className="w-4 h-4" />
-                  {readingTime} phút đọc
+                  {readingTime} {strings.posts.readingTime}
                 </span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
@@ -142,6 +145,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
                 title={post.title}
                 description={post.excerpt}
                 image={imageUrl || undefined}
+                pinterestImage={pinterestImage || undefined}
               />
             </div>
           </div>
@@ -152,8 +156,13 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
             </p>
           )}
 
-          <div className="prose prose-lg max-w-none dark:prose-invert">
-            <PortableText value={post.body} />
+          <div className="lg:grid lg:grid-cols-[220px_1fr] lg:gap-8">
+            <div className="lg:order-2">
+              <TableOfContents blocks={post.body} />
+            </div>
+            <div className="prose prose-lg max-w-none dark:prose-invert min-w-0 lg:order-1">
+              <PortableText value={post.body} />
+            </div>
           </div>
 
           {post.author && (

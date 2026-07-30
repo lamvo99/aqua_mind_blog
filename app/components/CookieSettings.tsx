@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { getStoredConsent, storeConsent, type ConsentPreferences } from '@/lib/cookie-consent'
 import { X, Cookie } from 'lucide-react'
+import strings from '@/lib/i18n/strings'
 
 export default function CookieSettings() {
   const [open, setOpen] = useState(false)
@@ -40,7 +41,7 @@ export default function CookieSettings() {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
             <Cookie className="w-5 h-5 text-aqua-600 dark:text-aqua-400" />
-            <h3 className="text-lg font-bold text-gray-900 dark:text-slate-100">Cài đặt Cookie</h3>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-slate-100">{strings.cookie.customizeTitle}</h3>
           </div>
           <button onClick={() => setOpen(false)} className="p-1 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-colors">
             <X className="w-5 h-5 text-gray-400" />
@@ -48,9 +49,9 @@ export default function CookieSettings() {
         </div>
         <div className="space-y-3 mb-6">
           {[
-            { key: 'necessary' as const, title: 'Cần thiết', desc: 'Cần thiết để trang web hoạt động.', disabled: true },
-            { key: 'analytics' as const, title: 'Phân tích', desc: 'Giúp cải thiện trải nghiệm người dùng.' },
-            { key: 'advertising' as const, title: 'Quảng cáo', desc: 'Hiển thị quảng cáo phù hợp.' },
+            { key: 'necessary' as const, title: strings.cookie.categories.necessary, desc: strings.cookie.categories.necessaryDesc, disabled: true },
+            { key: 'analytics' as const, title: strings.cookie.categories.analytics, desc: strings.cookie.categories.analyticsDesc },
+            { key: 'advertising' as const, title: strings.cookie.categories.advertising, desc: strings.cookie.categories.advertisingDesc },
           ].map((cat) => (
             <label key={cat.key} className="flex items-start gap-3 p-3 rounded-xl bg-gray-50 dark:bg-slate-900/50 cursor-pointer">
               <input
@@ -71,7 +72,7 @@ export default function CookieSettings() {
           onClick={save}
           className="w-full px-5 py-2.5 gradient-bg text-white text-sm font-medium rounded-xl hover:opacity-90 transition-all"
         >
-          Lưu cài đặt
+          {strings.cookie.save}
         </button>
       </div>
     </div>

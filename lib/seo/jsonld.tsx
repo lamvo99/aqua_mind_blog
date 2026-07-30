@@ -1,4 +1,17 @@
+import { urlFor } from "@/lib/sanity"
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
+
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AquaMind Blog",
+    url: siteUrl,
+    logo: `${siteUrl}/icons/logo.png`,
+    description: "Leading aquarium & aquascaping blog",
+  }
+}
 
 export function articleSchema(post: any) {
   return {
@@ -6,7 +19,7 @@ export function articleSchema(post: any) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: post.mainImage?.asset?.url || undefined,
+    image: articleImage(post),
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     author: post.author
@@ -43,7 +56,7 @@ export function websiteSchema() {
     "@type": "WebSite",
     name: "AquaMind Blog",
     url: siteUrl,
-    description: "Blog chuyên sâu về thế giới thuỷ sinh - cây thuỷ sinh, cá cảnh, aquascaping",
+    description: "Leading aquarium & aquascaping blog — guides, tips, and inspiration for fishkeepers worldwide.",
     potentialAction: {
       "@type": "SearchAction",
       target: {

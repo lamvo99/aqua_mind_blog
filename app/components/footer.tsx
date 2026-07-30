@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { Droplets, Mail, Send } from "lucide-react"
 import { useNewsletter } from "@/lib/store"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import strings from "@/lib/i18n/strings"
 
 export default function Footer() {
   const { subscribed, loading, subscribe } = useNewsletter()
@@ -23,21 +24,21 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
                 <Droplets className="w-4 h-4 text-white" />
               </div>
-              <span className="text-lg font-bold text-white">AquaMind</span>
+              <span className="text-lg font-bold text-white">{strings.site.name}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Blog chia sẻ kiến thức về thuỷ sinh, aquascaping và cách chăm sóc hồ cá cảnh. Nơi kết nối những người yêu thuỷ sinh.
+              {strings.footer.description}
             </p>
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Khám phá</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.explore}</h4>
             <ul className="space-y-2.5">
               {[
-                { href: "/", label: "Trang chủ" },
-                { href: "/posts", label: "Bài viết" },
-                { href: "/about", label: "Giới thiệu" },
-                { href: "/contact", label: "Liên hệ" },
+                { href: "/", label: strings.nav.home },
+                { href: "/posts", label: strings.nav.posts },
+                { href: "/about", label: strings.nav.about },
+                { href: "/contact", label: strings.nav.contact },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -52,40 +53,29 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Chuyên mục</h4>
-            <ul className="space-y-2.5">
-              {["Aquascaping", "Cá cảnh", "Cây thuỷ sinh", "Hoá chất nước", "Thiết bị"].map((cat) => (
-                <li key={cat}>
-                  <Link
-                    href={`/posts?category=${cat.toLowerCase()}`}
-                    className="text-sm text-slate-400 hover:text-aqua-400 transition-colors"
-                  >
-                    {cat}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.categories}</h4>
+            <FooterCategories />
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Theo dõi</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.follow}</h4>
             <p className="text-sm text-slate-400 mb-4">
-              Nhận bài viết mới nhất qua email
+              {strings.footer.getLatest}
             </p>
             {subscribed ? (
               <div className="flex items-center gap-2 text-aqua-400 text-sm">
                 <Mail className="w-4 h-4" />
-                <span>Đã đăng ký thành công!</span>
+                <span>{strings.footer.subscribed}</span>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex">
-                <label htmlFor="footer-email" className="sr-only">Email của bạn</label>
+                <label htmlFor="footer-email" className="sr-only">{strings.footer.yourEmail}</label>
                 <input
                   id="footer-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email của bạn"
+                  placeholder={strings.footer.yourEmail}
                   required
                   className="flex-1 px-3 py-2.5 bg-slate-800 border border-slate-700 rounded-l-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-aqua-500"
                 />
@@ -106,14 +96,55 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} AquaMind Blog. Tất cả quyền được bảo lưu.</p>
+          <p>&copy; {new Date().getFullYear()} {strings.site.name}. {strings.footer.copyright}</p>
           <div className="flex gap-4">
-            <Link href="/privacy-policy" className="hover:text-aqua-400 transition-colors">Chính sách bảo mật</Link>
-            <Link href="/terms-of-service" className="hover:text-aqua-400 transition-colors">Điều khoản sử dụng</Link>
-            <Link href="/cookie-policy" className="hover:text-aqua-400 transition-colors">Chính sách Cookie</Link>
+            <Link href="/privacy-policy" className="hover:text-aqua-400 transition-colors">{strings.footer.privacy}</Link>
+            <Link href="/terms-of-service" className="hover:text-aqua-400 transition-colors">{strings.footer.terms}</Link>
+            <Link href="/cookie-policy" className="hover:text-aqua-400 transition-colors">{strings.footer.cookie}</Link>
           </div>
         </div>
       </div>
     </footer>
+  )
+}
+
+function FooterCategories() {
+  const [categories, setCategories] = useState<{ title: string; slug: string }[]>([])
+
+  useEffect(() => {
+    fetch("/api/categories")
+      .then((r) => r.json())
+      .then((data) => {
+        if (Array.isArray(data)) setCategories(data.slice(0, 6))
+      })
+      .catch(() => {})
+  }, [])
+
+  if (categories.length === 0) {
+    return (
+      <ul className="space-y-2.5">
+        <li className="text-sm text-slate-500">{strings.nav.posts}...</li>
+      </ul>
+    )
+  }
+
+  return (
+    <ul className="space-y-2.5">
+      {categories.map((cat) => (
+        <li key={cat.slug}>
+          <Link
+            href={`/posts?category=${cat.slug}`}
+            className="text-sm text-slate-400 hover:text-aqua-400 transition-colors"
+          >
+            {cat.title}
+          </Link>
+        </li>
+      ))}
+      <li>
+        <Link href="/posts" className="text-sm text-aqua-400 hover:text-aqua-300 transition-colors">
+          {strings.footer.viewAll}
+        </Link>
+      </li>
+    </ul>
   )
 }

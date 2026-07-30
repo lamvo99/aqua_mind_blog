@@ -3,6 +3,7 @@ import { getAllPosts, getFeaturedPosts, getAllCategories } from "@/lib/posts"
 import PostCard from "./components/PostCard"
 import NewsletterSection from "./components/NewsletterSection"
 import { Droplets, Sparkles, ArrowRight } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 export const dynamic = "force-dynamic"
 
@@ -27,28 +28,28 @@ export default async function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-aqua-100 dark:bg-aqua-950/50 text-aqua-700 dark:text-aqua-300 rounded-full text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
-              Blog thuỷ sinh hàng đầu Việt Nam
+              {strings.site.tagline}
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-slate-100 mb-6 leading-tight">
-              Khám phá thế giới
-              <span className="gradient-text block mt-1">Thuỷ sinh đầy mê hoặc</span>
+              {strings.home.heroTitle}
+              <span className="gradient-text block mt-1">{strings.home.heroTagline}</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-              Nơi chia sẻ kiến thức chuyên sâu về aquascaping, cây thuỷ sinh, cá cảnh và bí quyết duy trì hồ cá đẹp.
+              {strings.home.heroDesc}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/posts"
                 className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-aqua-500/25"
               >
-                Khám phá bài viết
+                {strings.home.explorePosts}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-slate-800 text-gray-700 dark:text-slate-200 font-medium rounded-xl border border-gray-200 dark:border-slate-700 hover:border-aqua-300 dark:hover:border-aqua-700 transition-all"
               >
-                Về chúng tôi
+                {strings.home.aboutUs}
               </Link>
             </div>
           </div>
@@ -62,15 +63,15 @@ export default async function Home() {
             <div className="flex items-center justify-between mb-10">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
-                  Bài viết nổi bật
+                  {strings.home.featured}
                 </h2>
-                <p className="text-gray-500 dark:text-slate-400 mt-1">Những bài viết được yêu thích nhất</p>
+                <p className="text-gray-500 dark:text-slate-400 mt-1">{strings.home.latestDesc}</p>
               </div>
               <Link
                 href="/posts"
                 className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:text-aqua-700 dark:hover:text-aqua-300 transition-colors"
               >
-                Xem tất cả <ArrowRight className="w-3 h-3" />
+                {strings.home.viewAll} <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -88,9 +89,9 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
-                Chuyên mục
+                {strings.footer.categories}
               </h2>
-              <p className="text-gray-500 dark:text-slate-400 mt-1">Khám phá bài viết theo chủ đề</p>
+              <p className="text-gray-500 dark:text-slate-400 mt-1">{strings.posts.desc}</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {categories.map((cat: any) => (
@@ -119,18 +120,18 @@ export default async function Home() {
       <section className="py-16 lg:py-20 bg-gray-50/50 dark:bg-slate-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
-                Bài viết mới nhất
-              </h2>
-              <p className="text-gray-500 dark:text-slate-400 mt-1">Cập nhật kiến thức thuỷ sinh mỗi ngày</p>
-            </div>
-            <Link
-              href="/posts"
-              className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:text-aqua-700 dark:hover:text-aqua-300 transition-colors"
-            >
-              Xem tất cả <ArrowRight className="w-3 h-3" />
-            </Link>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
+                  {strings.home.latestPosts}
+                </h2>
+                <p className="text-gray-500 dark:text-slate-400 mt-1">{strings.home.latestDesc}</p>
+              </div>
+              <Link
+                href="/posts"
+                className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:text-aqua-700 dark:hover:text-aqua-300 transition-colors"
+              >
+                {strings.home.viewAll} <ArrowRight className="w-3 h-3" />
+              </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {latestPosts.map((post: any) => (
@@ -142,7 +143,7 @@ export default async function Home() {
               href="/posts"
               className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-medium rounded-xl hover:opacity-90 transition-all shadow-lg shadow-aqua-500/25"
             >
-              Xem tất cả bài viết
+              {strings.home.viewAll}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

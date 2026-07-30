@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useComments } from "@/lib/store"
 import { MessageSquare, Send, User } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 export default function Comments({ postSlug }: { postSlug: string }) {
   const { comments, addComment } = useComments(postSlug)
@@ -23,42 +24,45 @@ export default function Comments({ postSlug }: { postSlug: string }) {
     <section className="mt-12">
       <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-slate-100 mb-6">
         <MessageSquare className="w-5 h-5 text-aqua-500" />
-        Bình luận ({comments.length})
+        {strings.comments.title} ({comments.length})
       </h3>
 
       <form onSubmit={handleSubmit} className="mb-8 bg-gray-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-gray-100 dark:border-slate-700">
+        <div className="absolute opacity-0 top-0 left-0 h-0 overflow-hidden" aria-hidden="true">
+          <input type="text" name="hp_comment" tabIndex={-1} autoComplete="off" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div>
-            <label htmlFor="comment-name" className="sr-only">Tên của bạn *</label>
+            <label htmlFor="comment-name" className="sr-only">{strings.comments.name}</label>
             <input
               id="comment-name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Tên của bạn *"
+              placeholder={strings.comments.name}
               required
               className="w-full px-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
             />
           </div>
           <div>
-            <label htmlFor="comment-email" className="sr-only">Email (không bắt buộc)</label>
+            <label htmlFor="comment-email" className="sr-only">{strings.comments.email}</label>
             <input
               id="comment-email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email (không bắt buộc)"
+              placeholder={strings.comments.email}
               className="w-full px-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
             />
           </div>
         </div>
         <div>
-          <label htmlFor="comment-content" className="sr-only">Viết bình luận...</label>
+          <label htmlFor="comment-content" className="sr-only">{strings.comments.contentLabel}</label>
           <textarea
             id="comment-content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            placeholder="Viết bình luận..."
+            placeholder={strings.comments.write}
             required
             rows={3}
             className="w-full px-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-900 dark:text-slate-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aqua-500/50 resize-none mb-3"
@@ -69,14 +73,14 @@ export default function Comments({ postSlug }: { postSlug: string }) {
           className="inline-flex items-center gap-2 px-5 py-2.5 gradient-bg text-white text-sm font-medium rounded-xl hover:opacity-90 transition-all"
         >
           <Send className="w-4 h-4" />
-          Gửi bình luận
+          {strings.comments.submit}
         </button>
       </form>
 
       <div className="space-y-4">
         {comments.length === 0 && (
           <p className="text-center text-sm text-gray-400 dark:text-slate-500 py-8">
-            Chưa có bình luận nào. Hãy là người đầu tiên!
+            {strings.comments.empty}
           </p>
         )}
         {comments.map((comment) => (
@@ -88,7 +92,7 @@ export default function Comments({ postSlug }: { postSlug: string }) {
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-sm font-semibold text-gray-900 dark:text-slate-100">{comment.name}</span>
                 <span className="text-xs text-gray-400 dark:text-slate-500">
-                  {new Date(comment.date).toLocaleDateString("vi-VN", {
+                  {new Date(comment.date).toLocaleDateString("en-US", {
                     day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit",
                   })}
                 </span>

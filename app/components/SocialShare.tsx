@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import { Link2, Check } from 'lucide-react'
+import strings from '@/lib/i18n/strings'
 
 interface SocialShareProps {
   url?: string
   title?: string
   description?: string
   image?: string
+  pinterestImage?: string
 }
 
 function FacebookIcon({ className }: { className?: string }) {
@@ -34,11 +36,13 @@ function PinterestIcon({ className }: { className?: string }) {
   )
 }
 
-export default function SocialShare({ url, title = '', description = '', image }: SocialShareProps) {
+export default function SocialShare({ url, title = '', description = '', image, pinterestImage }: SocialShareProps) {
   const [copied, setCopied] = useState(false)
   const shareUrl = url || (typeof window !== 'undefined' ? window.location.href : '')
   const encodedUrl = encodeURIComponent(shareUrl)
   const encodedTitle = encodeURIComponent(title)
+  const encodedDesc = encodeURIComponent(description)
+  const pinImage = pinterestImage || image || ''
 
   const copyLink = async () => {
     try {
@@ -58,13 +62,13 @@ export default function SocialShare({ url, title = '', description = '', image }
   }
 
   return (
-    <div className="flex items-center gap-2" role="group" aria-label="Chia sẻ bài viết">
-      <span className="text-sm text-gray-500 dark:text-slate-400 mr-1">Chia sẻ:</span>
+    <div className="flex items-center gap-2" role="group" aria-label={strings.post.share}>
+      <span className="text-sm text-gray-500 dark:text-slate-400 mr-1">{strings.post.share}</span>
       <a
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chia sẻ qua Facebook"
+        aria-label="Share on Facebook"
         className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-blue-100 dark:hover:bg-blue-950/50 text-blue-600 dark:text-blue-400 transition-all"
       >
         <FacebookIcon className="w-4 h-4" />
@@ -73,23 +77,23 @@ export default function SocialShare({ url, title = '', description = '', image }
         href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chia sẻ qua X (Twitter)"
+        aria-label="Share on X (Twitter)"
         className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-sky-100 dark:hover:bg-sky-950/50 text-sky-600 dark:text-sky-400 transition-all"
       >
         <XIcon className="w-4 h-4" />
       </a>
       <a
-        href={`https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodeURIComponent(description)}${image ? `&media=${encodeURIComponent(image)}` : ''}`}
+        href={`https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedDesc}${pinImage ? `&media=${encodeURIComponent(pinImage)}` : ''}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chia sẻ qua Pinterest"
+        aria-label="Share on Pinterest"
         className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-red-100 dark:hover:bg-red-950/50 text-red-600 dark:text-red-400 transition-all"
       >
         <PinterestIcon className="w-4 h-4" />
       </a>
       <button
         onClick={copyLink}
-        aria-label={copied ? 'Đã sao chép' : 'Sao chép liên kết'}
+        aria-label={copied ? 'Copied' : 'Copy link'}
         className={`p-2 rounded-lg bg-gray-100 dark:bg-slate-800 transition-all ${
           copied
             ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-950/50'

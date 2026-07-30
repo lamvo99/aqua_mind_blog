@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Droplets, Leaf, Fish, FlaskConical, ArrowRight } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 const values = [
   {
@@ -32,16 +33,16 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-aqua-50 to-ocean-50 dark:from-slate-900 dark:to-slate-800 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center">
-            <Breadcrumb items={[{ label: "Giới thiệu" }]} />
+            <Breadcrumb items={[{ label: strings.nav.about }]} />
           </div>
           <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mx-auto mb-6">
             <Droplets className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-slate-100 mb-4">
-            Về AquaMind Blog
+            {strings.about.title}
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
-            Nơi kết nối những người yêu thuỷ sinh, chia sẻ kiến thức và cảm hứng để tạo nên những hồ cá đẹp.
+            {strings.about.desc}
           </p>
         </div>
       </section>

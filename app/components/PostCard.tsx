@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import { urlFor } from "@/lib/sanity"
-import { formatDateShort } from "@/lib/utils"
+import { formatDateShort, estimateReadingTime } from "@/lib/utils"
 import { Calendar, User, Clock } from "lucide-react"
+import strings from "@/lib/i18n/strings"
 
 interface PostCardProps {
   post: any
@@ -11,7 +12,7 @@ interface PostCardProps {
 
 export default function PostCard({ post, featured }: PostCardProps) {
   const imageUrl = post.mainImage ? urlFor(post.mainImage).width(featured ? 800 : 600).height(featured ? 450 : 400).url() : null
-  const readingTime = Math.ceil((post.body?.reduce((acc: number, b: any) => acc + (b.children?.reduce((s: number, c: any) => s + c.text.split(" ").length, 0) || 0), 0) || 200) / 200)
+  const readingTime = estimateReadingTime(post.body)
 
   return (
     <Link
@@ -34,7 +35,7 @@ export default function PostCard({ post, featured }: PostCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         {post.isFeatured && (
           <span className="absolute top-3 left-3 px-2.5 py-1 bg-aqua-500 text-white text-xs font-semibold rounded-lg">
-            Nổi bật
+            {strings.home.featured}
           </span>
         )}
       </div>
@@ -50,7 +51,7 @@ export default function PostCard({ post, featured }: PostCardProps) {
           ))}
           <span className="flex items-center gap-1 text-xs text-gray-400 dark:text-slate-500 ml-auto">
             <Clock className="w-3 h-3" />
-            {readingTime} phút
+            {readingTime} {strings.posts.readingTime}
           </span>
         </div>
         <h3 className={`font-bold text-gray-900 dark:text-slate-100 mb-2 line-clamp-2 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors ${featured ? "text-2xl" : "text-lg"}`}>

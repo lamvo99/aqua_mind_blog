@@ -6,12 +6,13 @@ import { Search, Menu, X, Sun, Moon, Droplets } from "lucide-react"
 import { useState } from "react"
 import { useTheme } from "@/lib/store"
 import SearchModal from "./SearchModal"
+import strings from "@/lib/i18n/strings"
 
 const navLinks = [
-  { href: "/", label: "Trang chủ" },
-  { href: "/posts", label: "Bài viết" },
-  { href: "/about", label: "Giới thiệu" },
-  { href: "/contact", label: "Liên hệ" },
+  { href: "/", label: strings.nav.home },
+  { href: "/posts", label: strings.nav.posts },
+  { href: "/about", label: strings.nav.about },
+  { href: "/contact", label: strings.nav.contact },
 ]
 
 export default function Navbar() {
@@ -29,7 +30,7 @@ export default function Navbar() {
               <div className="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Droplets className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">AquaMind</span>
+              <span className="text-xl font-bold gradient-text">{strings.site.name}</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-1">
@@ -55,21 +56,21 @@ export default function Navbar() {
               <button
                 onClick={() => setSearchOpen(true)}
                 className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
-                aria-label="Tìm kiếm"
+                aria-label={strings.nav.search}
               >
                 <Search className="w-5 h-5" />
               </button>
               <button
                 onClick={toggle}
                 className="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
-                aria-label="Đổi chủ đề"
+                aria-label={strings.nav.theme}
               >
                 {dark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className="md:hidden p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
-                aria-label="Menu"
+                aria-label={strings.nav.menu}
               >
                 {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
