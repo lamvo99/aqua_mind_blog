@@ -1,7 +1,14 @@
 import { getAllPosts, getAllCategories, getPostsByCategory } from "@/lib/posts"
 import PostsPageClient from "./PostsPageClient"
+import type { Metadata } from "next"
 
 export const dynamic = "force-dynamic"
+
+export const metadata: Metadata = {
+  title: "All Articles",
+  description: "Aquascaping and aquarium care articles: cycling, fish selection, planted tanks, water quality, filters and maintenance.",
+  alternates: { canonical: "https://aquamind.life/posts" },
+}
 
 export default async function PostsPage({
   searchParams: searchParamsPromise,

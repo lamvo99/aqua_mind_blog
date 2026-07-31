@@ -4,8 +4,15 @@ import PostCard from "./components/PostCard"
 import NewsletterSection from "./components/NewsletterSection"
 import { Droplets, Sparkles, ArrowRight } from "lucide-react"
 import strings from "@/lib/i18n/strings"
+import type { Metadata } from "next"
 
 export const dynamic = "force-dynamic"
+
+export const metadata: Metadata = {
+  title: "Aquascaping Blog & Beginner Aquarium Guides — AquaMind",
+  description: "Free aquascaping guides, aquarium care articles, tools and a verified database of fish, plants and corals. Start here if you are new to fishkeeping.",
+  alternates: { canonical: "https://aquamind.life" },
+}
 
 export default async function Home() {
   const [featuredPosts, allPosts, categories] = await Promise.all([

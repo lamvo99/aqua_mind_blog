@@ -1,6 +1,13 @@
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { FileText } from "lucide-react"
 import strings from "@/lib/i18n/strings"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "The terms and conditions for using AquaMind — content use, disclaimers and liability for aquarium advice.",
+  alternates: { canonical: "https://aquamind.life/terms-of-service" },
+}
 
 export default function TermsOfServicePage() {
   return (

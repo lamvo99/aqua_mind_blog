@@ -1,6 +1,13 @@
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Cookie } from "lucide-react"
 import strings from "@/lib/i18n/strings"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Cookie Policy",
+  description: "How AquaMind uses cookies and local storage, and how you can control your privacy preferences.",
+  alternates: { canonical: "https://aquamind.life/cookie-policy" },
+}
 
 export default function CookiePolicyPage() {
   return (

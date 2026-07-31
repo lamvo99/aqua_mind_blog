@@ -1,6 +1,13 @@
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Shield } from "lucide-react"
 import strings from "@/lib/i18n/strings"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "How AquaMind collects, uses and protects your personal data when you visit the website or subscribe to the newsletter.",
+  alternates: { canonical: "https://aquamind.life/privacy-policy" },
+}
 
 export default function PrivacyPolicyPage() {
   return (
