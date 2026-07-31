@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
               <li>Rút lại sự đồng ý bất kỳ lúc nào.</li>
               <li>Khiếu nại với cơ quan có thẩm quyền.</li>
             </ul>
-            <p>Để thực hiện các quyền trên, vui lòng liên hệ chúng tôi qua email: hello@aquamind.vn.</p>
+            <p>Để thực hiện các quyền trên, vui lòng liên hệ chúng tôi qua email: xingzhuang5201314@gmail.com.</p>
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Lưu trữ và bảo mật</h2>
             <p>
@@ -107,7 +107,7 @@ export default function PrivacyPolicyPage() {
               Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, vui lòng liên hệ:
             </p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Email: hello@aquamind.vn</li>
+              <li>Email: xingzhuang5201314@gmail.com</li>
               <li>Trang web: <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">aquamind.life/contact</a></li>
             </ul>
           </div>

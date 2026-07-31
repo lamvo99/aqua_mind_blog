@@ -8,7 +8,7 @@ export function organizationSchema() {
     "@type": "Organization",
     name: "AquaMind Blog",
     url: siteUrl,
-    logo: `${siteUrl}/icons/logo.png`,
+    logo: `${siteUrl}/logo.png`,
     description: "Leading aquarium & aquascaping blog",
   }
 }
@@ -37,7 +37,7 @@ export function articleSchema(post: any) {
     publisher: {
       "@type": "Organization",
       name: "AquaMind Blog",
-      logo: `${siteUrl}/icons/logo.png`,
+      logo: `${siteUrl}/logo.png`,
     },
     mainEntityOfPage: {
       "@type": "WebPage",

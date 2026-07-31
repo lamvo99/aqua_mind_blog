@@ -124,7 +124,7 @@ export default function ContactForm() {
               <div className="p-5 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700">
                 <Mail className="w-5 h-5 text-aqua-500 mb-2" />
                 <h4 className="font-semibold text-sm text-gray-900 dark:text-slate-100 mb-1">Email</h4>
-                <p className="text-sm text-gray-500 dark:text-slate-400">hello@aquamind.vn</p>
+                <p className="text-sm text-gray-500 dark:text-slate-400">xingzhuang5201314@gmail.com</p>
               </div>
               <div className="p-5 bg-white dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-slate-700">
                 <MapPin className="w-5 h-5 text-aqua-500 mb-2" />

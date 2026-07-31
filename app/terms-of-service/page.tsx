@@ -98,7 +98,7 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">10. Liên hệ</h2>
             <p>
-              Nếu bạn có thắc mắc về Điều khoản Sử dụng, vui lòng liên hệ qua email: hello@aquamind.vn
+              Nếu bạn có thắc mắc về Điều khoản Sử dụng, vui lòng liên hệ qua email: xingzhuang5201314@gmail.com
               hoặc qua trang <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">Liên hệ</a>.
             </p>
           </div>

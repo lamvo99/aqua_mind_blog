@@ -106,7 +106,7 @@ export default function CookiePolicyPage() {
               Nếu bạn có câu hỏi về Chính sách Cookie của chúng tôi, vui lòng liên hệ:
             </p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Email: hello@aquamind.vn</li>
+              <li>Email: xingzhuang5201314@gmail.com</li>
               <li>Trang web: <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">aquamind.life/contact</a></li>
             </ul>
           </div>

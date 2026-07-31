@@ -431,7 +431,7 @@ ALGOLIA_ADMIN_KEY="..."                     # Chỉ dùng server-side
 
 # ===== EMAIL (Resend) =====
 RESEND_API_KEY="..."
-EMAIL_FROM="newsletter@aquamind.vn"
+EMAIL_FROM="xingzhuang5201314@gmail.com"
 
 # ===== ANALYTICS =====
 NEXT_PUBLIC_PLAUSIBLE_DOMAIN="aquamind.vn"

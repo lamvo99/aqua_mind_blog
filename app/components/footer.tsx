@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Droplets, Mail, Send } from "lucide-react"
+import Image from "next/image"
+import { Mail, Send } from "lucide-react"
 import { useNewsletter } from "@/lib/store"
 import { useState, useEffect } from "react"
 import strings from "@/lib/i18n/strings"
@@ -21,9 +22,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-                <Droplets className="w-4 h-4 text-white" />
-              </div>
+              <Image
+                src="/logo.png"
+                alt={strings.site.name}
+                width={1024}
+                height={1024}
+                className="w-8 h-8 rounded-lg"
+              />
               <span className="text-lg font-bold text-white">{strings.site.name}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">

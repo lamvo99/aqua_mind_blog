@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Search, Menu, X, Sun, Moon, Droplets, ChevronDown, Database, Calculator } from "lucide-react"
+import { Search, Menu, X, Sun, Moon, ChevronDown, Database, Calculator } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { useTheme } from "@/lib/store"
 import SearchModal from "./SearchModal"
@@ -52,9 +53,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Droplets className="w-5 h-5 text-white" />
-              </div>
+              <Image
+                src="/logo.png"
+                alt={strings.site.name}
+                width={1024}
+                height={1024}
+                className="w-9 h-9 rounded-xl group-hover:scale-110 transition-transform"
+              />
               <span className="text-xl font-bold gradient-text">{strings.site.name}</span>
             </Link>
 
