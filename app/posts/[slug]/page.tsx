@@ -17,7 +17,7 @@ import SocialShare from "@/app/components/SocialShare"
 import TableOfContents from "@/app/components/TableOfContents"
 import strings from "@/lib/i18n/strings"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 3600
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
 

@@ -4,12 +4,20 @@ import Image from "next/image"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
 import { client } from "@/lib/sanity"
+import { getInspirationList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft } from "lucide-react"
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+export const revalidate = 3600
+
+export async function generateStaticParams() {
+  const items = await getInspirationList()
+  return items.map((item) => ({ slug: item.slug?.current }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

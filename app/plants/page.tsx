@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://aquamind.life/plants" },
 }
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 export default async function PlantsPage() {
   const items = await getDatabaseList("plant")

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { client } from "@/lib/sanity"
+import { getProblemsList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import PortableText from "@/app/components/PortableText"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -9,6 +10,13 @@ import { ArrowLeft, AlertTriangle, Search, XCircle, ListChecks } from "lucide-re
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+export const revalidate = 3600
+
+export async function generateStaticParams() {
+  const items = await getProblemsList()
+  return items.map((item) => ({ slug: item.slug?.current }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -6,7 +6,7 @@ import { Droplets, Sparkles, ArrowRight } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import type { Metadata } from "next"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 export const metadata: Metadata = {
   title: "Aquascaping Blog & Beginner Aquarium Guides — AquaMind",

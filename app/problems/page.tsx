@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://aquamind.life/problems" },
 }
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 const categoryIcons: Record<string, string> = {
   water: "💧",

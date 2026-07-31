@@ -12,6 +12,8 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
+export const revalidate = 3600
+
 export async function generateStaticParams() {
   const items = await getDatabaseList("coral")
   return items.map((item) => ({ slug: item.slug?.current }))

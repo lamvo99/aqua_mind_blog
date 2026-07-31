@@ -3,6 +3,8 @@ import { urlFor } from '@/lib/sanity'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aquamind.life'
 
+export const revalidate = 3600
+
 export async function GET() {
   const posts = await getAllPosts()
 
