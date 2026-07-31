@@ -1,15 +1,16 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ArrowRight } from "lucide-react"
+import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ListChecks, ArrowRight } from "lucide-react"
 import { toolsNav } from "@/lib/navigation"
 
 export const metadata: Metadata = {
   title: "Aquarium Tools & Calculators — AquaMind",
-  description: "Free aquarium calculators: tank volume, water changes, CO₂, dosing, pump flow, salt mixing, lighting and stocking. Practical tools for fishkeepers and aquascapers.",
+  description: "Free aquarium tools: setup planner, tank volume, water changes, CO₂, dosing, pump flow, salt mixing, lighting and stocking calculators.",
   alternates: { canonical: "https://aquamind.life/tools" },
 }
 
 const icons: Record<string, React.ReactNode> = {
+  "/setup-planner": <ListChecks className="w-6 h-6" />,
   "/tools/aquarium-volume": <Ruler className="w-6 h-6" />,
   "/tools/water-change": <Droplets className="w-6 h-6" />,
   "/tools/co2": <Wind className="w-6 h-6" />,

@@ -5,6 +5,7 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
+  { href: "/start-here", label: "Start Here", description: "The beginner's path to a thriving aquarium" },
   { href: "/posts", label: "Articles" },
   { href: "/tools", label: "Tools" },
   { href: "/database", label: "Database" },
@@ -21,6 +22,7 @@ export const databaseNav: NavItem[] = [
 ]
 
 export const toolsNav: NavItem[] = [
+  { href: "/setup-planner", label: "Setup Planner", description: "Personalized first-tank plan in minutes" },
   { href: "/tools/aquarium-volume", label: "Aquarium Volume", description: "Calculate tank water volume" },
   { href: "/tools/water-change", label: "Water Change", description: "Plan water changes & parameter impact" },
   { href: "/tools/co2", label: "CO₂ Estimator", description: "Estimate dissolved CO₂ from KH/pH" },
