@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { getProblemsList } from "@/lib/database"
 import { problemCategories } from "@/lib/navigation"
+import Breadcrumb from "@/app/components/Breadcrumb"
 import { Wrench } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -25,6 +26,9 @@ export default async function ProblemsPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mb-6">
+        <Breadcrumb items={[{ label: "Problems" }]} />
+      </div>
       <div className="mb-10">
         <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
           <Wrench className="w-4 h-4" />

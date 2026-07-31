@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react"
 import Link from "next/link"
 import PostCard from "../components/PostCard"
+import Breadcrumb from "../components/Breadcrumb"
 import { Search, SlidersHorizontal, X } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 
@@ -46,6 +47,9 @@ export default function PostsPageClient({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         {/* Header */}
         <div className="mb-10">
+          <div className="mb-4">
+            <Breadcrumb items={[{ label: "Articles" }]} />
+          </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-slate-100">
             {selectedCategory
               ? categories.find((c) => c.slug.current === selectedCategory)?.title

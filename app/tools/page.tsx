@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ListChecks, ArrowRight } from "lucide-react"
 import { toolsNav } from "@/lib/navigation"
+import Breadcrumb from "@/app/components/Breadcrumb"
 
 export const metadata: Metadata = {
   title: "Aquarium Tools & Calculators — AquaMind",
@@ -24,6 +25,9 @@ const icons: Record<string, React.ReactNode> = {
 export default function ToolsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mb-6">
+        <Breadcrumb items={[{ label: "Tools" }]} />
+      </div>
       <div className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">Aquarium Tools</h1>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed max-w-2xl">

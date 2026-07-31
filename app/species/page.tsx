@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { getDatabaseList } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
+import Breadcrumb from "@/app/components/Breadcrumb"
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -16,6 +17,9 @@ export default async function SpeciesPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mb-6">
+        <Breadcrumb items={[{ label: "Database", href: "/database" }, { label: "Fish" }]} />
+      </div>
       <div className="mb-8">
         <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
           <Database className="w-4 h-4" />
