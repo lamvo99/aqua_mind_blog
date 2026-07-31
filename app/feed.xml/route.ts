@@ -25,8 +25,8 @@ export async function GET() {
   <channel>
     <title>AquaMind Blog</title>
     <link>${siteUrl}</link>
-    <description>Blog hàng đầu về thuỷ sinh, aquascaping, cây thuỷ sinh và cá cảnh</description>
-    <language>vi</language>
+    <description>Aquarium & aquascaping guides, tools and a verified database of fish, plants and corals</description>
+    <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     ${items}
