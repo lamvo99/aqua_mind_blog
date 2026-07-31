@@ -65,7 +65,19 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
   return result || null
 }
 
-export async function getInspirationList(): Promise<DatabaseItem[]> {
+export interface InspirationItem {
+  _id: string
+  _type: string
+  title: string
+  slug?: { current: string }
+  excerpt?: string
+  mainImage?: any
+  style?: string
+  tankSizeL?: number
+  difficulty?: string
+}
+
+export async function getInspirationList(): Promise<InspirationItem[]> {
   return await client.fetch(
     `*[_type == "inspiration" && defined(title)] | order(publishedAt desc) {
       _id, _type, title, slug, excerpt, mainImage, style, tankSizeL, difficulty

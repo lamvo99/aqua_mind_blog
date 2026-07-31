@@ -55,7 +55,7 @@ export function NumberField({
 }: {
   id: string
   label: string
-  value: string
+  value: string | number
   onChange: (v: string) => void
   error?: string
   placeholder?: string
