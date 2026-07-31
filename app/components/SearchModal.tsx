@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Search, X, Loader2 } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import { client } from "@/lib/sanity"
@@ -85,9 +86,11 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
                 className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors group"
               >
                 {post.mainImage ? (
-                  <img
-                    src={urlFor(post.mainImage).width(64).height(64).url() || "/placeholder.jpg"}
-                    alt=""
+                  <Image
+                    src={urlFor(post.mainImage).width(64).height(64).url() || ""}
+                    alt={post.title}
+                    width={64}
+                    height={64}
                     className="w-12 h-12 rounded-lg object-cover shrink-0"
                   />
                 ) : (
