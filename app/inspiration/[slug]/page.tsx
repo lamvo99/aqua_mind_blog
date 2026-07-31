@@ -5,6 +5,7 @@ import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
 import { client } from "@/lib/sanity"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft } from "lucide-react"
 
 interface Props {
@@ -50,6 +51,10 @@ export default async function InspirationDetailPage({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Inspiration", href: "/inspiration" },
+        { label: item.title, href: `/inspiration/${slug}` },
+      ])} />
       <Breadcrumb items={[{ label: "Inspiration", href: "/inspiration" }, { label: item.title }]} />
       <Link href="/inspiration" className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 mt-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />

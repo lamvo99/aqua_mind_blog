@@ -5,6 +5,7 @@ import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
 import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Sun, Wind, Droplets } from "lucide-react"
 
 interface Props {
@@ -56,6 +57,11 @@ export default async function CoralDetailPage({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Database", href: "/database" },
+        { label: "Corals", href: "/corals" },
+        { label: item.name, href: `/corals/${slug}` },
+      ])} />
       <Breadcrumb items={[{ label: "Database", href: "/database" }, { label: "Corals", href: "/corals" }, { label: item.name }]} />
       <Link href="/corals" className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 mt-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />

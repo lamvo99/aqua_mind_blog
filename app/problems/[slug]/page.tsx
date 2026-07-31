@@ -4,6 +4,7 @@ import Link from "next/link"
 import { client } from "@/lib/sanity"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import PortableText from "@/app/components/PortableText"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, AlertTriangle, Search, XCircle, ListChecks } from "lucide-react"
 
 interface Props {
@@ -56,6 +57,10 @@ export default async function ProblemDetailPage({ params }: Props) {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Problems", href: "/problems" },
+        { label: item.title, href: `/problems/${slug}` },
+      ])} />
       <Breadcrumb items={[{ label: "Problems", href: "/problems" }, { label: item.title }]} />
       <Link href="/problems" className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 mt-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />
