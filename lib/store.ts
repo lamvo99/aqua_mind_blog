@@ -93,26 +93,6 @@ export function useContact() {
   return { sent, loading, send }
 }
 
-// Search
-export function useSearch() {
-  const [query, setQuery] = useState("")
-  const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault()
-        setOpen((o) => !o)
-      }
-      if (e.key === "Escape") setOpen(false)
-    }
-    window.addEventListener("keydown", handleKey)
-    return () => window.removeEventListener("keydown", handleKey)
-  }, [])
-
-  return { query, setQuery, open, setOpen }
-}
-
 // Theme
 export function useTheme() {
   const [dark, setDark] = useState(false)
