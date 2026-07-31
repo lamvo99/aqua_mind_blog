@@ -21,10 +21,10 @@ export default function TermsOfServicePage() {
             <FileText className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-slate-100 mb-4">
-            Điều khoản Sử dụng
+            Terms of Service
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
-            Quy định và điều kiện khi sử dụng trang web AquaMind Blog. Cập nhật lần cuối: 27/07/2026.
+            The rules and conditions for using the AquaMind Blog website. Last updated: 27/07/2026.
           </p>
         </div>
       </section>
@@ -32,74 +32,73 @@ export default function TermsOfServicePage() {
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none dark:prose-invert text-gray-600 dark:text-slate-300 leading-relaxed space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">1. Chấp nhận điều khoản</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">1. Acceptance of terms</h2>
             <p>
-              Bằng việc truy cập và sử dụng AquaMind Blog (aquamind.life), bạn đồng ý tuân thủ
-              các Điều khoản Sử dụng này. Nếu bạn không đồng ý với bất kỳ điều khoản nào, vui lòng
-              không sử dụng trang web của chúng tôi.
+              By accessing and using AquaMind Blog (aquamind.life), you agree to comply with these
+              Terms of Service. If you do not agree with any part of these terms, please do not use
+              our website.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">2. Nội dung và bản quyền</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">2. Content and copyright</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Tất cả nội dung trên AquaMind Blog (bài viết, hình ảnh, đồ hoạ) thuộc sở hữu của chúng tôi hoặc được sử dụng với sự cho phép.</li>
-              <li>Bạn có thể chia sẻ nội dung qua các nút chia sẻ xã hội với điều kiện ghi rõ nguồn gốc.</li>
-              <li>Không được sao chép, phân phối, sửa đổi nội dung mà không có sự đồng ý trước bằng văn bản.</li>
+              <li>All content on AquaMind Blog (articles, images, graphics) is owned by us or used with permission.</li>
+              <li>You may share content through social sharing buttons provided you credit the source.</li>
+              <li>You may not copy, distribute or modify content without prior written consent.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">3. Hành vi người dùng</h2>
-            <p>Khi sử dụng trang web, bạn đồng ý không:</p>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">3. User conduct</h2>
+            <p>When using the website, you agree not to:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Đăng tải nội dung bất hợp pháp, xúc phạm, đe doạ hoặc vi phạm quyền của người khác.</li>
-              <li>Gửi spam, quảng cáo trái phép hoặc nội dung không liên quan qua form bình luận hoặc liên hệ.</li>
-              <li>Can thiệp vào hoạt động của trang web, bao gồm tấn công DDoS, khai thác lỗ hổng bảo mật.</li>
-              <li>Sử dụng bot, crawler hoặc công cụ tự động để truy cập nội dung mà không có sự cho phép.</li>
+              <li>Post unlawful, offensive, threatening content or content that violates the rights of others.</li>
+              <li>Send spam, unauthorized advertising or irrelevant content through comment or contact forms.</li>
+              <li>Interfere with the operation of the website, including DDoS attacks or exploiting security vulnerabilities.</li>
+              <li>Use bots, crawlers or automated tools to access content without permission.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">4. Bình luận và tương tác</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">4. Comments and interactions</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Bạn chịu trách nhiệm về nội dung bình luận của mình.</li>
-              <li>Chúng tôi có quyền xoá bất kỳ bình luận nào vi phạm điều khoản mà không cần thông báo trước.</li>
-              <li>Chúng tôi không chịu trách nhiệm về nội dung do người dùng tạo ra.</li>
+              <li>You are responsible for the content of your comments.</li>
+              <li>We reserve the right to remove any comment that violates these terms without prior notice.</li>
+              <li>We are not responsible for user-generated content.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">5. Tài khoản và bảo mật</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">5. Accounts and security</h2>
             <p>
-              Một số tính năng có thể yêu cầu bạn cung cấp thông tin cá nhân (email, tên). Bạn có
-              trách nhiệm giữ bảo mật thông tin của mình. Chúng tôi không chịu trách nhiệm cho
-              các thiệt hại phát sinh từ việc sử dụng trái phép tài khoản của bạn.
+              Some features may require you to provide personal information (email, name). You are
+              responsible for keeping your information secure. We are not liable for damages arising
+              from unauthorized use of your account.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">6. Liên kết đến bên thứ ba</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">6. Third-party links</h2>
             <p>
-              Trang web của chúng tôi có thể chứa liên kết đến các trang web bên thứ ba. Chúng tôi
-              không kiểm soát và không chịu trách nhiệm về nội dung, chính sách bảo mật hoặc thực
-              tiễn của các trang web đó.
+              Our website may contain links to third-party websites. We do not control and are not
+              responsible for the content, privacy policies or practices of those websites.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Từ chối bảo đảm</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Disclaimer of warranties</h2>
             <p>
-              Nội dung trên AquaMind Blog được cung cấp "như hiện trạng" chỉ cho mục đích thông tin
-              và giáo dục. Chúng tôi không đảm bảo tính chính xác, đầy đủ hoặc cập nhật của nội dung.
-              Việc áp dụng kiến thức từ trang web là hoàn toàn tự nguyện và chịu trách nhiệm cá nhân.
+              Content on AquaMind Blog is provided "as is" for informational and educational purposes
+              only. We do not guarantee the accuracy, completeness or timeliness of the content.
+              Applying knowledge from this website is entirely voluntary and at your own responsibility.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">8. Giới hạn trách nhiệm</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">8. Limitation of liability</h2>
             <p>
-              Trong phạm vi tối đa được pháp luật cho phép, AquaMind Blog không chịu trách nhiệm
-              cho bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên hoặc do hậu quả nào phát sinh
-              từ việc sử dụng hoặc không thể sử dụng trang web.
+              To the maximum extent permitted by law, AquaMind Blog shall not be liable for any
+              direct, indirect, incidental or consequential damages arising from the use or inability
+              to use the website.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">9. Thay đổi điều khoản</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">9. Changes to these terms</h2>
             <p>
-              Chúng tôi có thể sửa đổi các điều khoản này bất kỳ lúc nào. Tiếp tục sử dụng trang web
-              sau khi thay đổi đồng nghĩa với việc bạn chấp nhận các điều khoản mới.
+              We may modify these terms at any time. Continued use of the website after changes are
+              made constitutes acceptance of the new terms.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">10. Liên hệ</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">10. Contact</h2>
             <p>
-              Nếu bạn có thắc mắc về Điều khoản Sử dụng, vui lòng liên hệ qua email: xingzhuang5201314@gmail.com
-              hoặc qua trang <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">Liên hệ</a>.
+              If you have questions about these Terms of Service, please contact us by email: xingzhuang5201314@gmail.com
+              or through the <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">Contact page</a>.
             </p>
           </div>
         </div>

@@ -14,22 +14,22 @@ const values = [
   {
     icon: Leaf,
     title: "Aquascaping",
-    desc: "Nghệ thuật tạo cảnh thuỷ sinh - từ phong cách Nature Aquarium đến Iwagumi, Dutch, và Jungle.",
+    desc: "The art of planted aquarium design — from Nature Aquarium to Iwagumi, Dutch, and Jungle styles.",
   },
   {
     icon: Fish,
-    title: "Cá cảnh",
-    desc: "Hướng dẫn chăm sóc cá cảnh chi tiết, từ cá neon, cá bảy màu đến cá dĩa và cá rồng.",
+    title: "Fishkeeping",
+    desc: "Detailed fish care guides, from neon tetras and guppies to discus and arowana.",
   },
   {
     icon: FlaskConical,
-    title: "Hoá chất nước",
-    desc: "Kiến thức về thông số nước, phân bón, CO2 và hệ thống lọc cho hồ thuỷ sinh.",
+    title: "Water chemistry",
+    desc: "Water parameters, fertilizers, CO₂ and filtration systems for planted aquariums.",
   },
   {
     icon: Droplets,
-    title: "Thiết bị",
-    desc: "Đánh giá và hướng dẫn chọn đèn, lọc, CO2, phân nền và các thiết bị thuỷ sinh khác.",
+    title: "Equipment",
+    desc: "Guides for choosing lights, filters, CO₂, substrates and other aquascaping gear.",
   },
 ]
 
@@ -58,15 +58,16 @@ export default function AboutPage() {
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none dark:prose-invert">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">Sứ mệnh của chúng tôi</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">Our mission</h2>
             <p className="text-gray-600 dark:text-slate-300 leading-relaxed">
-              AquaMind Blog ra đời với sứ mệnh trở thành nguồn tài nguyên hàng đầu về thuỷ sinh cho cộng đồng
-              người yêu aquascaping tại Việt Nam. Chúng tôi tin rằng ai cũng có thể tạo ra một hồ thuỷ sinh đẹp,
-              và kiến thức đúng đắn là chìa khoá để biến điều đó thành hiện thực.
+              AquaMind Blog was created to become a leading resource for aquascaping and fishkeeping.
+              We believe anyone can create a beautiful aquarium — and the right knowledge is the key
+              to making that happen.
             </p>
             <p className="text-gray-600 dark:text-slate-300 leading-relaxed">
-              Dù bạn là người mới bắt đầu hay đã có kinh nghiệm, AquaMind Blog luôn mang đến những bài viết
-              chất lượng, được nghiên cứu kỹ lưỡng, giúp bạn hiểu sâu hơn về thế giới thuỷ sinh đầy mê hoặc.
+              Whether you are just starting out or have years of experience, AquaMind always brings
+              you carefully researched, high-quality articles that help you understand the
+              fascinating world of aquascaping.
             </p>
           </div>
         </div>
@@ -77,9 +78,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
-              Lĩnh vực của chúng tôi
+              What we cover
             </h2>
-            <p className="text-gray-500 dark:text-slate-400 mt-2">Kiến thức chuyên sâu về mọi khía cạnh của thuỷ sinh</p>
+            <p className="text-gray-500 dark:text-slate-400 mt-2">In-depth knowledge of every aspect of the hobby</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {values.map((item) => (
@@ -99,16 +100,16 @@ export default function AboutPage() {
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">
-            Bắt đầu hành trình thuỷ sinh của bạn
+            Start your aquascaping journey
           </h2>
           <p className="text-gray-500 dark:text-slate-400 mb-8 max-w-lg mx-auto">
-            Khám phá kho tàng kiến thức thuỷ sinh và bắt đầu tạo nên hồ cá trong mơ của bạn.
+            Explore our library of aquascaping knowledge and start building the aquarium you&apos;ve dreamed of.
           </p>
           <Link
             href="/posts"
             className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-aqua-500/25"
           >
-            Khám phá bài viết
+            Explore articles
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

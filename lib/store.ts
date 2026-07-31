@@ -21,7 +21,7 @@ export function useNewsletter() {
       })
       if (!res.ok) throw new Error('Failed')
     } catch {
-      // fallback: lưu local nếu API chưa hoạt động
+      // fallback: store locally if the API is not available yet
       const subs = JSON.parse(localStorage.getItem("aquamind_subscribers") || "[]")
       subs.push({ email, date: new Date().toISOString() })
       localStorage.setItem("aquamind_subscribers", JSON.stringify(subs))

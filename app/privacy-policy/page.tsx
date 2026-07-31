@@ -21,10 +21,10 @@ export default function PrivacyPolicyPage() {
             <Shield className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-slate-100 mb-4">
-            Chính sách Bảo mật
+            Privacy Policy
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
-            Cam kết bảo vệ dữ liệu cá nhân của bạn. Cập nhật lần cuối: 27/07/2026.
+            Our commitment to protecting your personal data. Last updated: 27/07/2026.
           </p>
         </div>
       </section>
@@ -32,83 +32,82 @@ export default function PrivacyPolicyPage() {
       <section className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none dark:prose-invert text-gray-600 dark:text-slate-300 leading-relaxed space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">1. Giới thiệu</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">1. Introduction</h2>
             <p>
-              AquaMind Blog (sau đây gọi là "chúng tôi") cam kết bảo vệ quyền riêng tư của bạn.
-              Chính sách Bảo mật này giải thích cách chúng tôi thu thập, sử dụng, lưu trữ và bảo vệ
-              thông tin cá nhân của bạn khi bạn truy cập và sử dụng trang web aquamind.life.
+              AquaMind Blog ("we", "us", "our") is committed to protecting your privacy. This Privacy
+              Policy explains how we collect, use, store and protect your personal information when
+              you visit and use the website aquamind.life.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">2. Thông tin chúng tôi thu thập</h2>
-            <p>Chúng tôi có thể thu thập các loại thông tin sau:</p>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">2. Information we collect</h2>
+            <p>We may collect the following types of information:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Thông tin bạn cung cấp:</strong> Họ tên, địa chỉ email khi bạn đăng ký nhận tin, để lại bình luận hoặc liên hệ với chúng tôi qua form.</li>
-              <li><strong>Thông tin tự động:</strong> Địa chỉ IP, loại trình duyệt, hệ điều hành, trang web giới thiệu, thời gian truy cập và hành vi duyệt web thông qua cookie và công nghệ tương tự.</li>
-              <li><strong>Cookie:</strong> Xem chi tiết tại <a href="/cookie-policy" className="text-aqua-600 dark:text-aqua-400 hover:underline">Chính sách Cookie</a>.</li>
+              <li><strong>Information you provide:</strong> Your name and email address when you subscribe to the newsletter, leave a comment or contact us through a form.</li>
+              <li><strong>Information collected automatically:</strong> IP address, browser type, operating system, referring website, time of visit and browsing behavior through cookies and similar technologies.</li>
+              <li><strong>Cookies:</strong> See our <a href="/cookie-policy" className="text-aqua-600 dark:text-aqua-400 hover:underline">Cookie Policy</a> for details.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">3. Mục đích sử dụng thông tin</h2>
-            <p>Chúng tôi sử dụng thông tin của bạn để:</p>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">3. How we use your information</h2>
+            <p>We use your information to:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Vận hành và cải thiện trang web.</li>
-              <li>Gửi bản tin, cập nhật bài viết mới (khi bạn đã đăng ký).</li>
-              <li>Phản hồi các câu hỏi và yêu cầu hỗ trợ.</li>
-              <li>Phân tích xu hướng sử dụng để cải thiện nội dung và trải nghiệm người dùng.</li>
-              <li>Hiển thị quảng cáo phù hợp (khi có trong tương lai).</li>
-              <li>Tuân thủ nghĩa vụ pháp lý theo quy định của pháp luật Việt Nam.</li>
+              <li>Operate and improve the website.</li>
+              <li>Send newsletters and new article updates (when you have subscribed).</li>
+              <li>Respond to your questions and support requests.</li>
+              <li>Analyze usage trends to improve content and user experience.</li>
+              <li>Display relevant advertising (if introduced in the future).</li>
+              <li>Comply with legal obligations.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">4. Cơ sở pháp lý</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">4. Legal basis</h2>
             <p>
-              Việc thu thập và xử lý dữ liệu cá nhân của chúng tôi tuân thủ Nghị định 13/2023/NĐ-CP
-              của Chính phủ Việt Nam về Bảo vệ dữ liệu cá nhân. Đối với người dùng quốc tế, chúng tôi
-              cũng tôn trọng các quyền riêng tư theo quy định của pháp luật hiện hành tại quốc gia của bạn.
+              Our collection and processing of personal data complies with Decree 13/2023/NĐ-CP of
+              the Government of Vietnam on personal data protection. For international users, we
+              also respect privacy rights under the laws applicable in your country.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">5. Chia sẻ thông tin</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">5. Sharing of information</h2>
             <p>
-              Chúng tôi không bán thông tin cá nhân của bạn cho bên thứ ba. Chúng tôi có thể chia sẻ
-              thông tin với:
+              We do not sell your personal information to third parties. We may share information with:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Các nhà cung cấp dịch vụ (Vercel, Sanity.io) để vận hành trang web.</li>
-              <li>Công cụ phân tích (Google Analytics) — chỉ khi bạn đồng ý.</li>
-              <li>Mạng quảng cáo trong tương lai — chỉ khi bạn đồng ý.</li>
-              <li>Cơ quan nhà nước có thẩm quyền khi được yêu cầu theo pháp luật.</li>
+              <li>Service providers (Vercel, Sanity.io) needed to operate the website.</li>
+              <li>Analytics tools (Google Analytics) — only with your consent.</li>
+              <li>Advertising networks in the future — only with your consent.</li>
+              <li>Competent authorities when required by law.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">6. Quyền của bạn</h2>
-            <p>Theo Nghị định 13/2023/NĐ-CP và các quy định quốc tế, bạn có quyền:</p>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">6. Your rights</h2>
+            <p>Under Decree 13/2023/NĐ-CP and applicable international regulations, you have the right to:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Được biết về việc xử lý dữ liệu cá nhân.</li>
-              <li>Đồng ý hoặc không đồng ý cho phép xử lý dữ liệu.</li>
-              <li>Truy cập để xem dữ liệu cá nhân của mình.</li>
-              <li>Yêu cầu chỉnh sửa hoặc xoá dữ liệu.</li>
-              <li>Rút lại sự đồng ý bất kỳ lúc nào.</li>
-              <li>Khiếu nại với cơ quan có thẩm quyền.</li>
+              <li>Be informed about how your personal data is processed.</li>
+              <li>Consent or refuse consent to data processing.</li>
+              <li>Access your personal data.</li>
+              <li>Request correction or deletion of your data.</li>
+              <li>Withdraw your consent at any time.</li>
+              <li>Lodge a complaint with the competent authority.</li>
             </ul>
-            <p>Để thực hiện các quyền trên, vui lòng liên hệ chúng tôi qua email: xingzhuang5201314@gmail.com.</p>
+            <p>To exercise these rights, please contact us by email: xingzhuang5201314@gmail.com.</p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Lưu trữ và bảo mật</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Storage and security</h2>
             <p>
-              Chúng tôi lưu trữ dữ liệu của bạn trên các máy chủ an toàn của Sanity.io và Vercel.
-              Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức phù hợp để bảo vệ dữ liệu
-              khỏi truy cập trái phép, thay đổi, tiết lộ hoặc phá huỷ.
+              We store your data on secure servers managed by Sanity.io and Vercel. We apply
+              appropriate technical and organizational measures to protect data from unauthorized
+              access, alteration, disclosure or destruction.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">8. Thay đổi chính sách</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">8. Changes to this policy</h2>
             <p>
-              Chúng tôi có thể cập nhật chính sách này theo thời gian. Mọi thay đổi sẽ được đăng tải
-              trên trang này kèm ngày cập nhật. Bạn nên kiểm tra định kỳ để nắm được các cập nhật.
+              We may update this policy from time to time. Any changes will be posted on this page
+              with an updated date. Please check this page periodically to stay informed.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">9. Liên hệ</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">9. Contact</h2>
             <p>
-              Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, vui lòng liên hệ:
+              If you have any questions about this Privacy Policy, please contact us:
             </p>
             <ul className="list-disc pl-6 space-y-1">
               <li>Email: xingzhuang5201314@gmail.com</li>
-              <li>Trang web: <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">aquamind.life/contact</a></li>
+              <li>Website: <a href="/contact" className="text-aqua-600 dark:text-aqua-400 hover:underline">aquamind.life/contact</a></li>
             </ul>
           </div>
         </div>

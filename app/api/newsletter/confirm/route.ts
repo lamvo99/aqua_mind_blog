@@ -4,7 +4,7 @@ export async function GET(request: NextRequest) {
   const token = request.nextUrl.searchParams.get('token')
 
   if (!token) {
-    return NextResponse.json({ error: 'Thiếu token xác nhận' }, { status: 400 })
+    return NextResponse.json({ error: 'Missing confirmation token' }, { status: 400 })
   }
 
   try {
@@ -12,19 +12,19 @@ export async function GET(request: NextRequest) {
     const { email } = decoded
 
     if (!email) {
-      return NextResponse.json({ error: 'Token không hợp lệ' }, { status: 400 })
+      return NextResponse.json({ error: 'Invalid token' }, { status: 400 })
     }
 
-    // TODO: Lưu email vào database/subscriber list thật
-    // Hiện tại chỉ trả về thành công
+    // TODO: Store the email in a real database/subscriber list
+    // Currently just returns success
     console.log(`[Newsletter] Confirmed: ${email}`)
 
-    // Redirect về trang chủ với thông báo thành công
+    // Redirect to the home page with a success notice
     return NextResponse.redirect(
       new URL('/?newsletter=confirmed', request.url),
       302
     )
   } catch {
-    return NextResponse.json({ error: 'Token không hợp lệ hoặc đã hết hạn' }, { status: 400 })
+    return NextResponse.json({ error: 'Invalid or expired token' }, { status: 400 })
   }
 }
