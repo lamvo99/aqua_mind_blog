@@ -44,7 +44,7 @@ export default function CookieSettings() {
             <h3 className="text-lg font-bold text-gray-900 dark:text-slate-100">{strings.cookie.customizeTitle}</h3>
           </div>
           <button onClick={() => setOpen(false)} className="p-1 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-colors">
-            <X className="w-5 h-5 text-gray-400" />
+            <X className="w-5 h-5 text-gray-500" />
           </button>
         </div>
         <div className="space-y-3 mb-6">

@@ -114,7 +114,7 @@ export default async function Home() {
                     {cat.title}
                   </h3>
                   {cat.description && (
-                    <p className="text-xs text-gray-400 dark:text-slate-500 mt-1 line-clamp-2">{cat.description}</p>
+                    <p className="text-xs text-gray-500 dark:text-slate-500 mt-1 line-clamp-2">{cat.description}</p>
                   )}
                 </Link>
               ))}

@@ -114,7 +114,7 @@ export default async function ProblemDetailPage({ params }: Props) {
         </div>
       )}
 
-      <p className="mt-8 text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
+      <p className="mt-8 text-xs text-gray-500 dark:text-slate-500 leading-relaxed">
         This guide is informational and does not replace professional veterinary advice. If fish are severely ill, consult a veterinarian.
       </p>
     </div>

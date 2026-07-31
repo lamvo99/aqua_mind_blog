@@ -78,7 +78,7 @@ export function NumberField({
         }`}
       />
       {error && <p className="text-xs text-red-500 mt-1">{error}</p>}
-      {!error && hint && <p className="text-xs text-gray-400 dark:text-slate-500 mt-1">{hint}</p>}
+      {!error && hint && <p className="text-xs text-gray-500 dark:text-slate-500 mt-1">{hint}</p>}
     </div>
   )
 }

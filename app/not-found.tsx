@@ -11,7 +11,7 @@ export default function NotFound() {
         </div>
         <h1 className="text-6xl font-bold text-gray-900 dark:text-slate-100 mb-2">404</h1>
         <p className="text-lg text-gray-500 dark:text-slate-400 mb-2">{strings.notFound.title}</p>
-        <p className="text-sm text-gray-400 dark:text-slate-500 mb-8">{strings.notFound.hint}</p>
+        <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">{strings.notFound.hint}</p>
         <Link
           href="/"
           className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-aqua-500/25"

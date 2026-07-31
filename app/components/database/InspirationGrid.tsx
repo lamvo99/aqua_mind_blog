@@ -86,10 +86,10 @@ export default function InspirationGrid({ items }: { items: InspirationItem[] })
                     </span>
                   )}
                   {item.difficulty && (
-                    <span className="text-[10px] text-gray-400 dark:text-slate-500">{item.difficulty}</span>
+                    <span className="text-[10px] text-gray-500 dark:text-slate-500">{item.difficulty}</span>
                   )}
                   {item.tankSizeL && (
-                    <span className="text-xs text-gray-400 dark:text-slate-500">{item.tankSizeL} L</span>
+                    <span className="text-xs text-gray-500 dark:text-slate-500">{item.tankSizeL} L</span>
                   )}
                 </div>
                 <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">

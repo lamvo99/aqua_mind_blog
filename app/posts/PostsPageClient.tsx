@@ -65,7 +65,7 @@ export default function PostsPageClient({
         {/* Search & Filter */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <div className="relative flex-1">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
             <input
               type="text"
               value={search}
@@ -78,7 +78,7 @@ export default function PostsPageClient({
             />
             {search && (
               <button onClick={() => setSearch("")} className="absolute right-3.5 top-1/2 -translate-y-1/2">
-                <X className="w-4 h-4 text-gray-400 hover:text-gray-600" />
+                <X className="w-4 h-4 text-gray-500 hover:text-gray-700" />
               </button>
             )}
           </div>
@@ -133,9 +133,9 @@ export default function PostsPageClient({
         ) : (
           <div className="text-center py-20">
             <Search className="w-12 h-12 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">
+            <p className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">
               {strings.posts.noPosts}
-            </h3>
+            </p>
             <p className="text-gray-500 dark:text-slate-400 text-sm">
               {search ? strings.search.noResults : strings.posts.noPosts}
             </p>

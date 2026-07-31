@@ -34,7 +34,7 @@ export default function DatabaseCard({ item, href }: DatabaseCardProps) {
             </span>
           )}
           {item.brand && (
-            <span className="text-xs text-gray-400 dark:text-slate-500">{item.brand}</span>
+            <span className="text-xs text-gray-500 dark:text-slate-500">{item.brand}</span>
           )}
         </div>
         <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">

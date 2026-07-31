@@ -161,7 +161,7 @@ function SearchPageClient() {
       )}
 
       {!loading && !searched && (
-        <p className="text-center text-sm text-gray-400 dark:text-slate-500 py-16">
+        <p className="text-center text-sm text-gray-500 dark:text-slate-500 py-16">
           Type to search across articles, fish, plants, corals and equipment.
         </p>
       )}
