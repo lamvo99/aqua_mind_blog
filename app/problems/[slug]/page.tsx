@@ -21,6 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${item.title} — Aquarium Problem`,
     description: item.excerpt,
     alternates: { canonical: `https://aquamind.life/problems/${slug}` },
+    openGraph: {
+      title: `${item.title} — Aquarium Problem`,
+      description: item.excerpt,
+      type: "article",
+      url: `https://aquamind.life/problems/${slug}`,
+    },
   }
 }
 

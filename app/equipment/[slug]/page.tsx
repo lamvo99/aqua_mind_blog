@@ -24,6 +24,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${item.brand ? item.brand + " " : ""}${item.name} — Equipment`,
     description: item.excerpt || `Equipment guide for ${item.name}`,
     alternates: { canonical: `https://aquamind.life/equipment/${slug}` },
+    openGraph: {
+      title: `${item.brand ? item.brand + " " : ""}${item.name} — Equipment`,
+      description: item.excerpt || `Equipment guide for ${item.name}`,
+      type: "article",
+      url: `https://aquamind.life/equipment/${slug}`,
+      images: item.mainImage
+        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: item.name }]
+        : undefined,
+    },
   }
 }
 

@@ -14,7 +14,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const item = await client.fetch(
-    `*[_type == "inspiration" && slug.current == $slug][0] { title, excerpt }`,
+    `*[_type == "inspiration" && slug.current == $slug][0] { title, excerpt, mainImage }`,
     { slug }
   )
   if (!item) return { title: "Not found" }
@@ -22,6 +22,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${item.title} — Aquascape Inspiration`,
     description: item.excerpt,
     alternates: { canonical: `https://aquamind.life/inspiration/${slug}` },
+    openGraph: {
+      title: `${item.title} — Aquascape Inspiration`,
+      description: item.excerpt,
+      type: "article",
+      url: `https://aquamind.life/inspiration/${slug}`,
+      images: item.mainImage
+        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: item.title }]
+        : undefined,
+    },
   }
 }
 
