@@ -79,7 +79,7 @@ export default function CookiePolicyPage() {
             </ul>
             <p>
               You can change your cookie choices at any time by clicking the
-              "Cookie Settings" link on this page.
+              &ldquo;Cookie Settings&rdquo; link on this page.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">4. Third-party cookies</h2>

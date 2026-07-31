@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           <div className="prose prose-lg max-w-none dark:prose-invert text-gray-600 dark:text-slate-300 leading-relaxed space-y-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">1. Introduction</h2>
             <p>
-              AquaMind Blog ("we", "us", "our") is committed to protecting your privacy. This Privacy
+              AquaMind Blog (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) is committed to protecting your privacy. This Privacy
               Policy explains how we collect, use, store and protect your personal information when
               you visit and use the website aquamind.life.
             </p>

@@ -77,7 +77,7 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100">7. Disclaimer of warranties</h2>
             <p>
-              Content on AquaMind Blog is provided "as is" for informational and educational purposes
+              Content on AquaMind Blog is provided &ldquo;as is&rdquo; for informational and educational purposes
               only. We do not guarantee the accuracy, completeness or timeliness of the content.
               Applying knowledge from this website is entirely voluntary and at your own responsibility.
             </p>
