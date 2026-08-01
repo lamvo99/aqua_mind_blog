@@ -123,6 +123,34 @@ export default async function Home() {
         </section>
       )}
 
+      {/* Finder CTA */}
+      <section className="py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-3xl gradient-bg px-6 py-12 sm:px-12 text-center">
+            <div className="absolute inset-0 opacity-10 pointer-events-none">
+              <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-white blur-3xl" />
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-white blur-3xl" />
+            </div>
+            <div className="relative">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+                Not sure what to stock?
+              </h2>
+              <p className="text-white/80 max-w-xl mx-auto mb-8 leading-relaxed">
+                Answer four quick questions and get a ranked shortlist of fish, plants and corals
+                matched to your tank size, experience and lighting.
+              </p>
+              <Link
+                href="/finder"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-aqua-700 font-semibold rounded-xl hover:bg-aqua-50 transition-all shadow-lg"
+              >
+                Take the Finder Quiz
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Posts */}
       <section className="py-16 lg:py-20 bg-gray-50/50 dark:bg-slate-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
