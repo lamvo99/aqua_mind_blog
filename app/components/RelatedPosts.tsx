@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/posts"
+import { getRelatedPosts } from "@/lib/posts"
 import PostCard from "./PostCard"
 import strings from "@/lib/i18n/strings"
 
@@ -9,13 +9,7 @@ export default async function RelatedPosts({
   currentSlug: string
   categories?: string[]
 }) {
-  const allPosts = await getAllPosts()
-  const related = allPosts
-    .filter((p: any) => p.slug.current !== currentSlug)
-    .filter((p: any) =>
-      categories?.some((cat) => p.categories?.some((pc: any) => pc.slug.current === cat))
-    )
-    .slice(0, 3)
+  const related = await getRelatedPosts(currentSlug, categories || [])
 
   if (related.length === 0) return null
 

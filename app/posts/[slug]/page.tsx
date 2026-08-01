@@ -15,6 +15,7 @@ import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import SocialShare from "@/app/components/SocialShare"
 import TableOfContents from "@/app/components/TableOfContents"
+import RelatedDatabase from "@/app/components/RelatedDatabase"
 import strings from "@/lib/i18n/strings"
 
 export const revalidate = 3600
@@ -195,13 +196,15 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
 
           <Comments postSlug={slug} />
 
-          <div className="mt-12">
-            <NewsletterSection />
-          </div>
+        <div className="mt-12">
+          <NewsletterSection />
         </div>
 
-        <RelatedPosts currentSlug={slug} categories={post.categories?.map((c: any) => c.slug.current)} />
-      </article>
+        <RelatedDatabase postId={post._id} />
+      </div>
+
+      <RelatedPosts currentSlug={slug} categories={post.categories?.map((c: any) => c.slug.current)} />
+    </article>
     </>
   )
 }

@@ -92,3 +92,15 @@ export async function getProblemsList(): Promise<any[]> {
     }`
   )
 }
+
+export async function getDatabaseItemsReferencingPost(postId: string, limit = 4) {
+  return await client.fetch(
+    `*[_type in ["species", "plant", "coral", "equipment", "problem"] && references($postId)][0...$limit] {
+      _type,
+      "name": coalesce(name, title),
+      slug,
+      excerpt
+    }`,
+    { postId, limit }
+  )
+}

@@ -98,6 +98,33 @@ export async function getPostsByCategory(slug: string) {
   `, { slug })
 }
 
+export async function getRelatedPosts(slug: string, categories: string[], limit = 3) {
+  if (categories.length === 0) return []
+  return await client.fetch(
+    `*[_type == "post" && defined(publishedAt) && slug.current != $slug
+       && count(categories[]->slug.current[@ in $categories]) > 0] | order(publishedAt desc) [0...$limit] {
+      _id,
+      title,
+      slug,
+      excerpt,
+      publishedAt,
+      mainImage,
+      author->{
+        name,
+        slug,
+        image
+      },
+      categories[]->{
+        title,
+        slug
+      },
+      tags,
+      isFeatured
+    }`,
+    { slug, categories, limit }
+  )
+}
+
 export async function getAllCategories() {
   return await client.fetch(`
     *[_type == "category"] | order(title asc) {
