@@ -7,6 +7,7 @@ export interface NavItem {
 export const mainNav: NavItem[] = [
   { href: "/start-here", label: "Start Here", description: "The beginner's path to a thriving aquarium" },
   { href: "/posts", label: "Articles" },
+  { href: "/learn", label: "Learn Paths" },
   { href: "/tools", label: "Tools" },
   { href: "/database", label: "Database" },
   { href: "/problems", label: "Problems" },

@@ -132,15 +132,25 @@ export default function StartHerePage() {
       <div className="mt-10 p-5 rounded-2xl bg-aqua-50 dark:bg-aqua-950/30 border border-aqua-100 dark:border-aqua-900/50 text-center">
         <h2 className="font-bold text-gray-900 dark:text-slate-100 mb-2">Short on time?</h2>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          Follow the Setup Planner to get a personalized plan in under a minute.
+          Follow the Setup Planner to get a personalized plan in under a minute, or browse all
+          structured learning paths.
         </p>
-        <Link
-          href="/setup-planner"
-          className="inline-flex items-center gap-2 mt-4 px-6 py-3 gradient-bg text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all"
-        >
-          Open the Setup Planner
-          <ArrowRight className="w-4 h-4" />
-        </Link>
+        <div className="flex flex-wrap justify-center gap-3 mt-4">
+          <Link
+            href="/setup-planner"
+            className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all"
+          >
+            Open the Setup Planner
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href="/learn"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-slate-700 text-gray-700 dark:text-slate-200 text-sm font-semibold rounded-xl border border-gray-200 dark:border-slate-600 hover:border-aqua-300 transition-all"
+          >
+            Browse learning paths
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </div>
   )
