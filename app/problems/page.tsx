@@ -38,6 +38,13 @@ export default async function ProblemsPage() {
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed max-w-2xl">
           Symptoms, common causes and what to check — for the most common aquarium issues.
         </p>
+        <Link
+          href="/problems/diagnose"
+          className="inline-flex items-center gap-2 mt-5 px-5 py-2.5 rounded-xl gradient-bg text-white text-sm font-semibold hover:opacity-90 transition-all"
+        >
+          Diagnose my problem
+          <Wrench className="w-4 h-4" />
+        </Link>
       </div>
 
       {problemCategories.map((cat) => {
