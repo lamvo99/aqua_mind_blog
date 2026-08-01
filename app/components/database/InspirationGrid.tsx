@@ -3,7 +3,9 @@
 import { useState, useMemo } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { BookOpen } from "lucide-react"
 import { urlFor } from "@/lib/sanity"
+import { STYLES } from "@/lib/styles"
 
 interface InspirationItem {
   _id: string
@@ -22,6 +24,14 @@ export default function InspirationGrid({ items }: { items: InspirationItem[] })
 
   const styles = useMemo(() => {
     return Array.from(new Set(items.map((i) => i.style).filter(Boolean) as string[])).sort()
+  }, [items])
+
+  const styleCounts = useMemo(() => {
+    const counts: Record<string, number> = {}
+    for (const i of items) {
+      if (i.style) counts[i.style] = (counts[i.style] || 0) + 1
+    }
+    return counts
   }, [items])
 
   const difficulties = useMemo(() => {
@@ -44,12 +54,32 @@ export default function InspirationGrid({ items }: { items: InspirationItem[] })
   return (
     <div>
       <div className="flex flex-wrap gap-2 mb-2">
-        {["all", ...styles].map((s) => (
+        <button onClick={() => setStyle("all")} className={chipClass(style === "all")}>
+          All styles ({items.length})
+        </button>
+        {styles.map((s) => (
           <button key={s} onClick={() => setStyle(s)} className={chipClass(style === s)}>
-            {s === "all" ? "All styles" : s}
+            {s} ({styleCounts[s] || 0})
           </button>
         ))}
       </div>
+      {STYLES.length > 0 && (
+        <div className="flex flex-wrap items-center gap-1.5 mb-2 text-xs">
+          <span className="inline-flex items-center gap-1 text-gray-400 dark:text-slate-500 font-medium">
+            <BookOpen className="w-3 h-3" />
+            Style guides:
+          </span>
+          {STYLES.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/styles/${s.slug}`}
+              className="text-aqua-600 dark:text-aqua-400 hover:underline"
+            >
+              {s.name}
+            </Link>
+          ))}
+        </div>
+      )}
       <div className="flex flex-wrap gap-2 mb-6">
         {["all", ...difficulties].map((d) => (
           <button key={d} onClick={() => setDifficulty(d)} className={chipClass(difficulty === d)}>
