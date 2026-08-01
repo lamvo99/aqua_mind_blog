@@ -2,11 +2,11 @@
 
 import { useState } from "react"
 import { useNewsletter } from "@/lib/store"
-import { Mail, Send, CheckCircle, Download } from "lucide-react"
+import { Mail, Send, CheckCircle, Download, Inbox } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 
 export default function NewsletterSection() {
-  const { subscribed, loading, subscribe } = useNewsletter()
+  const { status, loading, subscribe } = useNewsletter()
   const [email, setEmail] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -16,7 +16,7 @@ export default function NewsletterSection() {
 
   const leadMagnetUrl = process.env.NEXT_PUBLIC_LEAD_MAGNET_URL || ""
 
-  if (subscribed) {
+  if (status === "subscribed") {
     return (
       <div className="gradient-bg rounded-2xl p-8 text-center text-white">
         <CheckCircle className="w-12 h-12 mx-auto mb-3 opacity-80" />
@@ -33,6 +33,16 @@ export default function NewsletterSection() {
             {strings.newsletter.leadMagnetCta}
           </a>
         )}
+      </div>
+    )
+  }
+
+  if (status === "pending") {
+    return (
+      <div className="bg-gradient-to-br from-aqua-50 to-ocean-50 dark:from-aqua-950/30 dark:to-ocean-950/30 rounded-2xl p-8 text-center border border-aqua-100 dark:border-aqua-900/50">
+        <Inbox className="w-12 h-12 mx-auto mb-3 text-aqua-500" />
+        <h3 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-1">{strings.newsletter.pendingTitle}</h3>
+        <p className="text-sm text-gray-500 dark:text-slate-400">{strings.newsletter.pending}</p>
       </div>
     )
   }
@@ -56,6 +66,9 @@ export default function NewsletterSection() {
             <p className="text-gray-500 dark:text-slate-400">{strings.newsletter.leadMagnetDesc}</p>
           </div>
         </div>
+      )}
+      {status === "error" && (
+        <p className="mt-3 text-sm text-red-600 dark:text-red-400">{strings.newsletter.error}</p>
       )}
       <form onSubmit={handleSubmit} className="flex gap-2 mt-4">
         <label htmlFor="newsletter-email" className="sr-only">{strings.newsletter.email}</label>

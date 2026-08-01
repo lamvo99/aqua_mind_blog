@@ -11,6 +11,7 @@ import problem from './problem'
 import tool from './tool'
 import inspiration from './inspiration'
 import collection from './collection'
+import subscriber from './subscriber'
 
 export const schemaTypes: SchemaTypeDefinition[] = [
   author,
@@ -25,4 +26,5 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   tool,
   inspiration,
   collection,
+  subscriber,
 ]

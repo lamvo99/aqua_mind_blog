@@ -1,20 +1,12 @@
-import { createClient } from '@sanity/client'
 import { NextRequest, NextResponse } from 'next/server'
-
-const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
-  apiVersion: '2024-01-01',
-  token: process.env.SANITY_API_TOKEN,
-  useCdn: false,
-})
+import { sanityClient } from '@/lib/sanity-server'
 
 export async function GET(request: NextRequest) {
   const postSlug = request.nextUrl.searchParams.get('post')
   if (!postSlug) {
     return NextResponse.json({ error: 'Missing post slug' }, { status: 400 })
   }
-  const comments = await client.fetch(
+  const comments = await sanityClient.fetch(
     `*[_type == "comment" && approved == true && post->slug.current == $slug] | order(_createdAt asc) {
       _id, name, content, "_createdAt": _createdAt
     }`,
@@ -50,12 +42,12 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
   }
 
-  const [post] = await client.fetch(`*[_type == "post" && slug.current == $slug] { _id }`, { slug: postSlug })
+  const [post] = await sanityClient.fetch(`*[_type == "post" && slug.current == $slug] { _id }`, { slug: postSlug })
   if (!post) {
     return NextResponse.json({ error: 'Post not found' }, { status: 404 })
   }
 
-  await client.create({
+  await sanityClient.create({
     _type: 'comment',
     name: name.trim(),
     email: email ? email.trim().slice(0, 120) : undefined,

@@ -4,34 +4,47 @@ import { useState, useEffect, useCallback } from "react"
 
 // Newsletter
 export function useNewsletter() {
-  const [subscribed, setSubscribed] = useState(false)
+  const [status, setStatus] = useState<"idle" | "pending" | "subscribed" | "error">("idle")
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    setSubscribed(localStorage.getItem("aquamind_newsletter") === "true")
+    const s = localStorage.getItem("aquamind_newsletter")
+    if (s === "confirmed" || s === "true") setStatus("subscribed")
+    else if (s === "pending") setStatus("pending")
+    if (window.location.search.includes("newsletter=confirmed")) {
+      localStorage.setItem("aquamind_newsletter", "confirmed")
+      setStatus("subscribed")
+      const url = new URL(window.location.href)
+      url.searchParams.delete("newsletter")
+      window.history.replaceState({}, "", url.toString())
+    }
   }, [])
 
   const subscribe = useCallback(async (email: string) => {
     setLoading(true)
+    setStatus("idle")
     try {
-      const res = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       })
-      if (!res.ok) throw new Error('Failed')
+      if (!res.ok) throw new Error("Failed")
+      const data = await res.json()
+      if (data.confirmed) {
+        localStorage.setItem("aquamind_newsletter", "confirmed")
+        setStatus("subscribed")
+      } else {
+        localStorage.setItem("aquamind_newsletter", "pending")
+        setStatus("pending")
+      }
     } catch {
-      // fallback: store locally if the API is not available yet
-      const subs = JSON.parse(localStorage.getItem("aquamind_subscribers") || "[]")
-      subs.push({ email, date: new Date().toISOString() })
-      localStorage.setItem("aquamind_subscribers", JSON.stringify(subs))
+      setStatus("error")
     }
-    localStorage.setItem("aquamind_newsletter", "true")
-    setSubscribed(true)
     setLoading(false)
   }, [])
 
-  return { subscribed, loading, subscribe }
+  return { status, loading, subscribe }
 }
 
 // Comments

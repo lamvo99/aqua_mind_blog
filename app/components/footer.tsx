@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import strings from "@/lib/i18n/strings"
 
 export default function Footer() {
-  const { subscribed, loading, subscribe } = useNewsletter()
+  const { status, loading, subscribe } = useNewsletter()
   const [email, setEmail] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -67,35 +67,45 @@ export default function Footer() {
             <p className="text-sm text-slate-400 mb-4">
               {strings.footer.getLatest}
             </p>
-            {subscribed ? (
+            {status === "subscribed" ? (
               <div className="flex items-center gap-2 text-aqua-400 text-sm">
                 <Mail className="w-4 h-4" />
                 <span>{strings.footer.subscribed}</span>
               </div>
+            ) : status === "pending" ? (
+              <div className="flex items-center gap-2 text-amber-400 text-sm">
+                <Mail className="w-4 h-4" />
+                <span>{strings.footer.confirmEmail}</span>
+              </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex">
-                <label htmlFor="footer-email" className="sr-only">{strings.footer.yourEmail}</label>
-                <input
-                  id="footer-email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder={strings.footer.yourEmail}
-                  required
-                  className="flex-1 px-3 py-2.5 bg-slate-800 border border-slate-700 rounded-l-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-aqua-500"
-                />
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="px-3 py-2.5 gradient-bg hover:opacity-90 text-white rounded-r-lg transition-all disabled:opacity-50"
-                >
-                  {loading ? (
-                    <span className="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  ) : (
-                    <Send className="w-4 h-4" />
-                  )}
-                </button>
-              </form>
+              <>
+                {status === "error" && (
+                  <p className="text-xs text-red-400 mb-2">{strings.newsletter.error}</p>
+                )}
+                <form onSubmit={handleSubmit} className="flex">
+                  <label htmlFor="footer-email" className="sr-only">{strings.footer.yourEmail}</label>
+                  <input
+                    id="footer-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder={strings.footer.yourEmail}
+                    required
+                    className="flex-1 px-3 py-2.5 bg-slate-800 border border-slate-700 rounded-l-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-aqua-500"
+                  />
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="px-3 py-2.5 gradient-bg hover:opacity-90 text-white rounded-r-lg transition-all disabled:opacity-50"
+                  >
+                    {loading ? (
+                      <span className="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <Send className="w-4 h-4" />
+                    )}
+                  </button>
+                </form>
+              </>
             )}
           </div>
         </div>
