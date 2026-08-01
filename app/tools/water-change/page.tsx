@@ -18,6 +18,15 @@ export default function WaterChangePage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
+      howTo={{
+        url: "/tools/water-change",
+        steps: [
+          { name: "Enter tank volume", text: "Enter your tank's actual water volume in liters." },
+          { name: "Set the change percentage", text: "Choose how much water to replace — 10–30% weekly is a common routine." },
+          { name: "Calculate", text: "The calculator returns the exact volume to remove and the estimated effect on parameters like nitrate." },
+          { name: "Match the new water", text: "Prepare replacement water at the same temperature and treat it with conditioner before adding." },
+        ],
+      }}
     >
       <WaterChangeCalculator />
     </CalculatorLayout>

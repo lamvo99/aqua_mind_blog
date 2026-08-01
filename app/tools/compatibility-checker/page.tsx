@@ -37,6 +37,15 @@ export default async function CompatibilityCheckerPage() {
         { href: "/species", label: "Fish Species Database" },
         { href: "/problems", label: "Common Fish Problems" },
       ]}
+      howTo={{
+        url: "/tools/compatibility-checker",
+        steps: [
+          { name: "Enter tank volume", text: "Enter your tank's water volume in liters." },
+          { name: "Add species", text: "Search and select the fish species you plan to keep, adjusting the count for each." },
+          { name: "Calculate", text: "The checker compares temperature, pH, hardness, temperament and tank size for every pair." },
+          { name: "Review warnings", text: "Read the natural-language warnings for each pair and fix conflicts before buying fish." },
+        ],
+      }}
     >
       <Suspense fallback={<p className="text-sm text-gray-500 dark:text-slate-400">Loading checker…</p>}>
         <CompatibilityChecker species={species} />

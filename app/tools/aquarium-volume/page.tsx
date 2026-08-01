@@ -18,6 +18,15 @@ export default function AquariumVolumePage() {
         { href: "/tools/water-change", label: "Water Change Calculator" },
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
+      howTo={{
+        url: "/tools/aquarium-volume",
+        steps: [
+          { name: "Measure the tank", text: "Measure the inside length, width and water depth of your aquarium in centimeters." },
+          { name: "Enter the dimensions", text: "Type the three measurements into the calculator and choose the tank shape." },
+          { name: "Read the volume", text: "The calculator shows the gross volume in liters and US gallons." },
+          { name: "Account for displacement", text: "Subtract roughly 10–15% for substrate, hardscape and equipment to estimate actual water volume." },
+        ],
+      }}
     >
       <AquariumVolumeCalculator />
     </CalculatorLayout>

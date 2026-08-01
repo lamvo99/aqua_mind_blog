@@ -18,6 +18,15 @@ export default function PumpFlowPage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
+      howTo={{
+        url: "/tools/pump-flow",
+        steps: [
+          { name: "Enter your tank volume", text: "Enter the water volume of your aquarium in liters." },
+          { name: "Choose the turnover rate", text: "Pick a target: 3–5× per hour for community tanks, 3–10× for planted, 8–10× for reef." },
+          { name: "Calculate the flow", text: "The calculator returns the required flow rate in L/h and gph." },
+          { name: "Size up for real conditions", text: "Add 20–40% to the result to account for filter media and pipe resistance, then pick a pump." },
+        ],
+      }}
     >
       <PumpFlowCalculator />
     </CalculatorLayout>

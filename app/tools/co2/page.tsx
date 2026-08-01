@@ -18,6 +18,15 @@ export default function Co2Page() {
         { href: "/tools/water-change", label: "Water Change Calculator" },
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
       ]}
+      howTo={{
+        url: "/tools/co2",
+        steps: [
+          { name: "Measure KH", text: "Use a KH test kit to measure carbonate hardness of your tank water in degrees (dKH)." },
+          { name: "Measure pH", text: "Measure pH with a reliable test kit, ideally at the same time of day as the KH reading." },
+          { name: "Enter both values", text: "Input the KH and pH readings into the calculator." },
+          { name: "Read dissolved CO₂", text: "Compare the estimate to the 15–30 ppm target for healthy planted tanks and adjust injection." },
+        ],
+      }}
     >
       <Co2Calculator />
     </CalculatorLayout>

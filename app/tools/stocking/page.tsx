@@ -20,6 +20,15 @@ export default function StockingPage() {
         { href: "/tools/pump-flow", label: "Pump & Filter Flow Calculator" },
         { href: "/species", label: "Fish Species Database" },
       ]}
+      howTo={{
+        url: "/tools/stocking",
+        steps: [
+          { name: "Enter tank volume", text: "Enter your tank's water volume in liters." },
+          { name: "Choose a stocking level", text: "Pick light (0.5″/gal), standard (1″/gal) or heavy (1.5″/gal) stocking." },
+          { name: "Enter your fish", text: "Add the fish count and adult size in cm for each species you plan to keep." },
+          { name: "Check the result", text: "Compare total adult length against capacity and note the utilization percentage." },
+        ],
+      }}
     >
       <StockingCalculator />
     </CalculatorLayout>

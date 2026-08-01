@@ -77,6 +77,27 @@ export function websiteSchema() {
   }
 }
 
+export function howToSchema(
+  title: string,
+  description: string,
+  steps: { name: string; text: string }[],
+  url: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: title,
+    description,
+    url: `${siteUrl}${url}`,
+    step: steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  }
+}
+
 export function JsonLd({ data }: { data: any }) {
   return (
     <script

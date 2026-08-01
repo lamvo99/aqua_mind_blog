@@ -18,6 +18,15 @@ export default function LightingPage() {
         { href: "/tools/co2", label: "CO₂ Estimator" },
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
       ]}
+      howTo={{
+        url: "/tools/lighting",
+        steps: [
+          { name: "Measure your tank", text: "Measure the tank's length and width, or enter the total volume in liters." },
+          { name: "Pick a light level", text: "Choose low, medium or high light depending on your plants: about 20, 35 or 50 lumens per liter." },
+          { name: "Calculate", text: "The calculator converts the target lumens into an estimated LED wattage." },
+          { name: "Verify with growth", text: "Start slightly lower and adjust based on plant growth and algae — PAR matters more than wattage." },
+        ],
+      }}
     >
       <LightingCalculator />
     </CalculatorLayout>

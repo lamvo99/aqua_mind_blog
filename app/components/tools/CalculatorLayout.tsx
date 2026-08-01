@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Calculator, ArrowRight, AlertTriangle } from "lucide-react"
+import { JsonLd, howToSchema } from "@/lib/seo/jsonld"
 
 interface CalculatorLayoutProps {
   title: string
@@ -7,6 +8,7 @@ interface CalculatorLayoutProps {
   children: React.ReactNode
   disclaimer?: string
   related?: { href: string; label: string }[]
+  howTo?: { url: string; steps: { name: string; text: string }[] }
 }
 
 export default function CalculatorLayout({
@@ -15,9 +17,13 @@ export default function CalculatorLayout({
   children,
   disclaimer,
   related = [],
+  howTo,
 }: CalculatorLayoutProps) {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {howTo && howTo.steps.length > 0 && (
+        <JsonLd data={howToSchema(title, description, howTo.steps, howTo.url)} />
+      )}
       <div className="mb-8">
         <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
           <Calculator className="w-4 h-4" />

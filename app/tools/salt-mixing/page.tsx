@@ -18,6 +18,15 @@ export default function SaltMixingPage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
         { href: "/tools/pump-flow", label: "Pump & Filter Flow Calculator" },
       ]}
+      howTo={{
+        url: "/tools/salt-mixing",
+        steps: [
+          { name: "Enter the batch volume", text: "Enter how many liters of fresh saltwater you want to prepare." },
+          { name: "Set your target salinity", text: "Use the default 35 g/L (specific gravity ~1.023) or adjust for your system." },
+          { name: "Calculate the salt weight", text: "The calculator returns the grams (or kg) of salt mix needed for the batch." },
+          { name: "Mix and verify", text: "Dissolve the salt in RO/DI water, aerate overnight, and confirm salinity with a calibrated refractometer." },
+        ],
+      }}
     >
       <SaltMixingCalculator />
     </CalculatorLayout>
