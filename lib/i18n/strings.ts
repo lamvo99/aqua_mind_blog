@@ -70,6 +70,9 @@ const strings = {
     nameLabel: "Your name",
     emailLabel: "Email (optional)",
     contentLabel: "Write a comment",
+    pendingBadge: "Pending approval",
+    pending: "Your comment is awaiting moderation. It will appear here once approved.",
+    submitError: "Could not submit your comment. Please try again.",
   },
   newsletter: {
     title: "Subscribe",

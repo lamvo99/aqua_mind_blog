@@ -1,6 +1,7 @@
 import { type SchemaTypeDefinition } from 'sanity'
 import author from './author'
 import category from './category'
+import comment from './comment'
 import post from './post'
 import species from './species'
 import plant from './plant'
@@ -14,6 +15,7 @@ import collection from './collection'
 export const schemaTypes: SchemaTypeDefinition[] = [
   author,
   category,
+  comment,
   post,
   species,
   plant,

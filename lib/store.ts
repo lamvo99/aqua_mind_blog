@@ -43,18 +43,63 @@ export interface Comment {
   content: string
   date: string
   avatar: string
+  pending?: boolean
 }
 
 export function useComments(postSlug: string) {
   const [comments, setComments] = useState<Comment[]>([])
+  const [loading, setLoading] = useState(true)
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "pending" | "error">("idle")
 
   useEffect(() => {
-    const all = JSON.parse(localStorage.getItem("aquamind_comments") || "{}")
-    setComments(all[postSlug] || [])
+    let cancelled = false
+    setLoading(true)
+    const load = async () => {
+      let local: Comment[] = []
+      try {
+        local = JSON.parse(localStorage.getItem("aquamind_comments") || "{}")[postSlug] || []
+      } catch {
+        local = []
+      }
+      try {
+        const res = await fetch(`/api/comments?post=${encodeURIComponent(postSlug)}`, { cache: "no-store" })
+        const data = res.ok ? await res.json() : { comments: [] }
+        const approved: Comment[] = (data.comments || []).map((c: any) => ({
+          id: c._id,
+          postSlug,
+          name: c.name,
+          email: "",
+          content: c.content,
+          date: c._createdAt,
+          avatar: "",
+        }))
+        if (!cancelled) setComments([...local, ...approved])
+      } catch {
+        if (!cancelled) setComments(local)
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    }
+    load()
+    return () => {
+      cancelled = true
+    }
   }, [postSlug])
 
   const addComment = useCallback(
-    (name: string, email: string, content: string) => {
+    async (name: string, email: string, content: string, hp: string) => {
+      setSubmitState("submitting")
+      try {
+        const res = await fetch("/api/comments", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ postSlug, name, email, content, hp_comment: hp }),
+        })
+        if (!res.ok) throw new Error("Failed")
+        setSubmitState("pending")
+      } catch {
+        setSubmitState("error")
+      }
       const all = JSON.parse(localStorage.getItem("aquamind_comments") || "{}")
       const newComment: Comment = {
         id: Date.now().toString(),
@@ -64,15 +109,16 @@ export function useComments(postSlug: string) {
         content,
         date: new Date().toISOString(),
         avatar: `https://api.dicebear.com/7.x/thumbs/svg?seed=${encodeURIComponent(name)}`,
+        pending: true,
       }
       all[postSlug] = [newComment, ...(all[postSlug] || [])]
       localStorage.setItem("aquamind_comments", JSON.stringify(all))
-      setComments(all[postSlug])
+      setComments((prev) => [newComment, ...prev])
     },
     [postSlug]
   )
 
-  return { comments, addComment }
+  return { comments, loading, submitState, addComment }
 }
 
 // Contact
