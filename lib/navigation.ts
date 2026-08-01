@@ -31,6 +31,7 @@ export const toolsNav: NavItem[] = [
   { href: "/tools/salt-mixing", label: "Salt Mixing", description: "Batch marine salt for reef water changes" },
   { href: "/tools/lighting", label: "Lighting", description: "Estimate LED watts for planted tanks" },
   { href: "/tools/stocking", label: "Fish Stocking", description: "Check capacity with the 1″/gallon rule" },
+  { href: "/tools/compatibility-checker", label: "Compatibility Checker", description: "Check species compatibility & stocking together" },
 ]
 
 export const problemCategories: string[] = [

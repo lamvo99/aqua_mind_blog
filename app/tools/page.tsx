@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ListChecks, ArrowRight } from "lucide-react"
+import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ListChecks, HeartCrack, ArrowRight } from "lucide-react"
 import { toolsNav } from "@/lib/navigation"
 import Breadcrumb from "@/app/components/Breadcrumb"
 
@@ -20,6 +20,7 @@ const icons: Record<string, React.ReactNode> = {
   "/tools/salt-mixing": <FlaskConical className="w-6 h-6" />,
   "/tools/lighting": <Lightbulb className="w-6 h-6" />,
   "/tools/stocking": <Fish className="w-6 h-6" />,
+  "/tools/compatibility-checker": <HeartCrack className="w-6 h-6" />,
 }
 
 export default function ToolsPage() {
