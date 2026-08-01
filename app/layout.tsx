@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import BackToTop from "./components/BackToTop"
+import RegisterSW from "./components/RegisterSW"
 import CookieConsentBanner from "./components/CookieConsentBanner"
 import CookieSettings from "./components/CookieSettings"
 import { JsonLd, websiteSchema, organizationSchema } from "@/lib/seo/jsonld"
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieSettings />
         <JsonLd data={websiteSchema()} />
         <JsonLd data={organizationSchema()} />
+        <RegisterSW />
       </body>
     </html>
   )
