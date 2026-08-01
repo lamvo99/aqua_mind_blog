@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { getDatabaseList } from "@/lib/database"
+import { getDatabaseList, getDatabaseCompareItems } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Database } from "lucide-react"
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export const revalidate = 300
 
 export default async function EquipmentPage() {
-  const items = await getDatabaseList("equipment")
+  const [items, compareItems] = await Promise.all([getDatabaseList("equipment"), getDatabaseCompareItems("equipment")])
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="mb-6">
@@ -29,7 +29,7 @@ export default async function EquipmentPage() {
           Filters, lights, pumps, heaters and CO₂ systems with specs and suitable tank ranges.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/equipment" filterKeys={["category"]} />
+      <DatabaseGrid items={items} hrefPrefix="/equipment" filterKeys={["category"]} compareItems={compareItems} compareType="equipment" />
     </div>
   )
 }

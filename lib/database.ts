@@ -48,8 +48,38 @@ export async function getDatabaseList(type: DatabaseType): Promise<DatabaseItem[
   )
 }
 
-export async function getDatabaseItem(type: DatabaseType, slug: string): Promise<any | null> {
-  const result = await client.fetch(
+const COMPARE_PROJECTIONS: Record<DatabaseType, string> = {
+  species: `
+    _id, _type, name, slug, mainImage, sizeCm, tankSizeMinL,
+    tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
+    diet, temperament, waterZone, schooling, difficulty
+  `,
+  plant: `
+    _id, _type, name, slug, mainImage,
+    light, co2, growth, difficulty, placement,
+    tempMinC, tempMaxC, phMin, phMax, propagation
+  `,
+  coral: `
+    _id, _type, name, slug, mainImage,
+    light, flow, difficulty, placement, aggression, reefCompatibility,
+    tempMinC, tempMaxC
+  `,
+  equipment: `
+    _id, _type, name, slug, mainImage,
+    category, brand, model, flowRateLh, powerW, tankSizeMaxL, pros, cons
+  `,
+}
+
+export async function getDatabaseCompareItems(type: DatabaseType): Promise<any[]> {
+  return await client.fetch(
+    `*[_type == $type && defined(name) && defined(slug)] | order(name asc) {
+      ${COMPARE_PROJECTIONS[type]}
+    }`,
+    { type }
+  )
+}
+
+export async function getDatabaseItem(type: DatabaseType, slug: string): Promise<any | null> {  const result = await client.fetch(
     `*[_type == $type && slug.current == $slug][0] {
       _id, _type, name, scientificName, slug, excerpt, mainImage,
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,

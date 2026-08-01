@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { getDatabaseList } from "@/lib/database"
+import { getDatabaseList, getDatabaseCompareItems } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Database } from "lucide-react"
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export const revalidate = 300
 
 export default async function CoralsPage() {
-  const items = await getDatabaseList("coral")
+  const [items, compareItems] = await Promise.all([getDatabaseList("coral"), getDatabaseCompareItems("coral")])
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="mb-6">
@@ -29,7 +29,7 @@ export default async function CoralsPage() {
           Light, flow and placement requirements for reef corals.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/corals" filterKeys={["difficulty", "light"]} />
+      <DatabaseGrid items={items} hrefPrefix="/corals" filterKeys={["difficulty", "light"]} compareItems={compareItems} compareType="coral" />
     </div>
   )
 }
