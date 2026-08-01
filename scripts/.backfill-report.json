@@ -1,0 +1,79 @@
+{
+  "done": [
+    {
+      "type": "species",
+      "label": "Angelfish",
+      "slug": "pterophyllum-scalare",
+      "scientificName": "Pterophyllum scalare",
+      "commonsFile": "Pterophyllum scalare A742578.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pterophyllum_scalare_A742578.jpg/1920px-Pterophyllum_scalare_A742578.jpg",
+      "assetId": "image-13d5bc695b1282632be71e60870b5b7b832770ff-1920x1328-jpg"
+    },
+    {
+      "type": "plant",
+      "label": "Cryptocoryne balansae",
+      "slug": "cryptocoryne-balansae",
+      "scientificName": "Cryptocoryne balansae",
+      "commonsFile": "Cryptocoryne crispatula kz01.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cryptocoryne_crispatula_kz01.jpg/1920px-Cryptocoryne_crispatula_kz01.jpg",
+      "assetId": "image-7e18f8b7a94248f2b91863b32cf5cd4b8e146eb9-1920x1440-jpg"
+    },
+    {
+      "type": "equipment",
+      "label": "Master Test Kit",
+      "slug": "master-test-kit",
+      "scientificName": null,
+      "commonsFile": "Danchell-type water testing kit, England, 1867-1904 Wellcome L0058016.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Danchell-type_water_testing_kit%2C_England%2C_1867-1904_Wellcome_L0058016.jpg/1920px-Danchell-type_water_testing_kit%2C_England%2C_1867-1904_Wellcome_L0058016.jpg",
+      "assetId": "image-bbe5ee671a7d96352bafd22784f058456ea55db3-1920x2889-jpg"
+    },
+    {
+      "type": "equipment",
+      "label": "Sponge Filter",
+      "slug": "sponge-filter",
+      "scientificName": null,
+      "commonsFile": "Aquarium Sponge Filter foam 1.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Aquarium_Sponge_Filter_foam_1.jpg",
+      "assetId": "image-228d3d0b898d6e4131ef9f74471036e2eeb2d6ea-1024x768-jpg"
+    },
+    {
+      "type": "inspiration",
+      "label": "Classic Iwagumi",
+      "slug": "classic-iwagumi",
+      "scientificName": null,
+      "commonsFile": "Iwagumi Scape.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Iwagumi_Scape.jpg",
+      "assetId": "image-ec9aa7fabab54381997fa4143aa11d1ae0dcb663-1452x962-jpg"
+    },
+    {
+      "type": "inspiration",
+      "label": "Dutch Planted Tank",
+      "slug": "dutch-planted-tank",
+      "scientificName": null,
+      "commonsFile": "The Enchanted Garden by Shay Fertig.jpg",
+      "commonsUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/The_Enchanted_Garden_by_Shay_Fertig.jpg/1920px-The_Enchanted_Garden_by_Shay_Fertig.jpg",
+      "assetId": "image-fdb391d0fc932424f18a59c3356d035c4b12663d-1920x677-jpg"
+    }
+  ],
+  "manual": [
+    {
+      "type": "plant",
+      "label": "Dwarf Baby Tears",
+      "slug": "dwarf-baby-tears",
+      "scientificName": "Hemianthus callitrichoides"
+    },
+    {
+      "type": "equipment",
+      "label": "CO₂ Regulator Kit",
+      "slug": "co-regulator-kit",
+      "scientificName": null
+    },
+    {
+      "type": "equipment",
+      "label": "Hang-On-Back Filter",
+      "slug": "hang-on-back-filter",
+      "scientificName": null
+    }
+  ],
+  "failed": []
+}

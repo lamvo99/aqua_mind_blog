@@ -156,12 +156,12 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
             </p>
           )}
 
-          <div className="lg:grid lg:grid-cols-[220px_1fr] lg:gap-8">
-            <div className="lg:order-2">
-              <TableOfContents blocks={post.body} />
-            </div>
-            <div className="prose prose-lg max-w-none dark:prose-invert min-w-0 lg:order-1">
+          <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-8 lg:items-start">
+            <div className="prose prose-lg max-w-none dark:prose-invert min-w-0">
               <PortableText value={post.body} />
+            </div>
+            <div className="min-w-0">
+              <TableOfContents blocks={post.body} />
             </div>
           </div>
 

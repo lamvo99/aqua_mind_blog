@@ -1,0 +1,40 @@
+{
+  "done": [
+    {
+      "type": "plant",
+      "slug": "dwarf-baby-tears",
+      "assetId": "image-f165ed85e05178ea82afefe5523d97667edd8fb6-600x449-jpg",
+      "attribution": {
+        "title": "Cuba (Hemianthus Callitrichoides)",
+        "creator": "DGuarch",
+        "creatorUrl": "https://www.flickr.com/photos/78690928@N08",
+        "sourceUrl": "https://www.flickr.com/photos/78690928@N08/7646242558",
+        "license": "CC BY-NC-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+        "foundVia": "Openverse (Flickr)"
+      }
+    },
+    {
+      "type": "equipment",
+      "slug": "co-regulator-kit",
+      "assetId": "image-70b56245281223d5af3beb3a90c48df8240b8e68-600x400-jpg",
+      "attribution": {
+        "title": "CO2 Regulator w/ solenoid",
+        "creator": "Franklin Dattein",
+        "creatorUrl": "https://www.flickr.com/photos/51035769981@N01",
+        "sourceUrl": "https://www.flickr.com/photos/51035769981@N01/124224131",
+        "license": "CC BY-NC 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc/2.0/",
+        "foundVia": "Openverse (Flickr)"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "type": "equipment",
+      "slug": "hang-on-back-filter",
+      "reason": "no exact product image found on Wikimedia Commons or Openverse (Flickr); plan rule: do not attach approximate image"
+    }
+  ],
+  "failed": []
+}

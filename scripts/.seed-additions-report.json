@@ -1,0 +1,137 @@
+{
+  "table": {
+    "species": {
+      "existing": 28,
+      "created": 15,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 0,
+      "failed": 0
+    },
+    "plant": {
+      "existing": 20,
+      "created": 9,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 1,
+      "failed": 0
+    },
+    "coral": {
+      "existing": 11,
+      "created": 6,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 0,
+      "failed": 0
+    },
+    "equipment": {
+      "existing": 10,
+      "created": 8,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 0,
+      "failed": 0
+    },
+    "problem": {
+      "existing": 11,
+      "created": 8,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 0,
+      "failed": 0
+    },
+    "inspiration": {
+      "existing": 5,
+      "created": 5,
+      "skippedDuplicate": 0,
+      "skippedNoImage": 0,
+      "failed": 0
+    }
+  },
+  "created": {
+    "species": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "plant": [
+      "Cryptocoryne beckettii",
+      "Hydrocotyle tripartita",
+      "Pygmy Chain Sword",
+      "Pogostemon stellatus",
+      "Rotala indica",
+      "Anacharis",
+      "Rice Paddy Herb",
+      "Blyxa japonica",
+      "Anubias nana Petite"
+    ],
+    "coral": [
+      "Galaxea",
+      "Cauliflower Coral",
+      "Bird’s Nest Coral",
+      "Favites Brain Coral",
+      "Elegance Coral",
+      "Open Brain Coral"
+    ],
+    "equipment": [
+      "Protein Skimmer",
+      "Automatic Fish Feeder",
+      "RO/DI Water Filter",
+      "Air Stone",
+      "Aquarium Gravel",
+      "CO₂ Cylinder",
+      "Water Test Strips",
+      "Flake Fish Food"
+    ],
+    "problem": [
+      "Fin Rot",
+      "Old Tank Syndrome",
+      "Hair Algae",
+      "Staghorn Algae",
+      "Plant Nutrient Deficiency",
+      "Dropsy",
+      "Temperature Shock",
+      "Filter Crash"
+    ],
+    "inspiration": [
+      "Small Iwagumi Nano",
+      "Amazon Biotope",
+      "Reef Nano",
+      "Mountain Valley Scape",
+      "Planted Community Aquarium"
+    ]
+  },
+  "skippedNoImage": {
+    "species": [],
+    "plant": [
+      "Staurogyne repens"
+    ],
+    "coral": [],
+    "equipment": [],
+    "problem": [],
+    "inspiration": []
+  },
+  "skippedDuplicate": {
+    "species": [],
+    "plant": [],
+    "coral": [],
+    "equipment": [],
+    "problem": [],
+    "inspiration": []
+  },
+  "failed": {
+    "species": [],
+    "plant": [],
+    "coral": [],
+    "equipment": [],
+    "problem": [],
+    "inspiration": []
+  }
+}

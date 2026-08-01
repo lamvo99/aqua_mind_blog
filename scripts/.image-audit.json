@@ -1,0 +1,175 @@
+{
+  "perType": {
+    "species": {
+      "total": 43,
+      "valid": 43,
+      "missing": 0,
+      "broken": 0
+    },
+    "plant": {
+      "total": 30,
+      "valid": 29,
+      "missing": 1,
+      "broken": 0
+    },
+    "coral": {
+      "total": 17,
+      "valid": 17,
+      "missing": 0,
+      "broken": 0
+    },
+    "equipment": {
+      "total": 18,
+      "valid": 16,
+      "missing": 2,
+      "broken": 0
+    },
+    "inspiration": {
+      "total": 10,
+      "valid": 10,
+      "missing": 0,
+      "broken": 0
+    },
+    "problem": {
+      "total": 19,
+      "valid": 0,
+      "missing": 19,
+      "broken": 0
+    }
+  },
+  "missing": [
+    {
+      "type": "plant",
+      "label": "Dwarf Baby Tears",
+      "slug": "dwarf-baby-tears",
+      "scientificName": "Hemianthus callitrichoides"
+    },
+    {
+      "type": "equipment",
+      "label": "CO₂ Regulator Kit",
+      "slug": "co-regulator-kit",
+      "scientificName": null
+    },
+    {
+      "type": "equipment",
+      "label": "Hang-On-Back Filter",
+      "slug": "hang-on-back-filter",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Fin Rot",
+      "slug": "fin-rot",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Old Tank Syndrome",
+      "slug": "old-tank-syndrome",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Hair Algae",
+      "slug": "hair-algae",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Staghorn Algae",
+      "slug": "staghorn-algae",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Plant Nutrient Deficiency",
+      "slug": "plant-nutrient-deficiency",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Dropsy",
+      "slug": "dropsy",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Temperature Shock",
+      "slug": "temperature-shock",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Filter Crash",
+      "slug": "filter-crash",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Black Beard Algae",
+      "slug": "black-beard-algae",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Brown Diatom Algae",
+      "slug": "brown-diatom-algae",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Cloudy Water",
+      "slug": "cloudy-water",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Cyanobacteria (Blue-Green Slime)",
+      "slug": "cyanobacteria",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Fish Gasping at Surface",
+      "slug": "fish-gasping-surface",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Fish Hiding or Chronic Stress",
+      "slug": "fish-hiding",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Green Water Algae Bloom",
+      "slug": "green-water",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "High Ammonia Poisoning",
+      "slug": "high-ammonia",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Low Filter Flow",
+      "slug": "low-filter-flow",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "Plant Leaves Melting",
+      "slug": "plant-leaves-melting",
+      "scientificName": null
+    },
+    {
+      "type": "problem",
+      "label": "White Spot Disease (Ich)",
+      "slug": "white-spot-disease",
+      "scientificName": null
+    }
+  ],
+  "broken": []
+}
