@@ -117,9 +117,16 @@ export function checkCompatibility(speciesMap: Record<string, CompatSpecies>, se
       const aAgg = AGGRESSIVE.includes((a.temperament || "").toLowerCase())
       const bAgg = AGGRESSIVE.includes((b.temperament || "").toLowerCase())
       if (aAgg && bAgg) {
+        const aZone = a.waterZone ? ` (${a.waterZone})` : ""
+        const bZone = b.waterZone ? ` (${b.waterZone})` : ""
+        const sameZone = a.waterZone && b.waterZone && a.waterZone === b.waterZone
         issues.push({
           severity: "warning",
-          message: `${a.name} and ${b.name} are both ${a.temperament} — expect territory conflicts in smaller tanks.`,
+          message:
+            `${a.name}${aZone} and ${b.name}${bZone} are both ${a.temperament} — ` +
+            (sameZone
+              ? "they compete for the same water layer; expect territory conflicts in smaller tanks."
+              : "territorial pressure rises when both are aggressive, especially in smaller tanks."),
         })
       }
       const aEats = (a.diet || "").toLowerCase().includes("carnivor")
