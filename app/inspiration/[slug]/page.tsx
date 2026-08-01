@@ -7,7 +7,8 @@ import { client } from "@/lib/sanity"
 import { getInspirationList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, BookOpen } from "lucide-react"
+import { getStylePillar } from "@/lib/styles"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -72,9 +73,13 @@ export default async function InspirationDetailPage({ params }: Props) {
       <div className="mt-4">
         <div className="flex flex-wrap items-center gap-2 mb-3">
           {item.style && (
-            <span className="px-2.5 py-1 rounded-lg bg-aqua-50 dark:bg-aqua-950/50 text-aqua-700 dark:text-aqua-300 text-xs font-semibold uppercase tracking-wide">
-              {item.style}
-            </span>
+            <Link
+              href={`/styles/${getStylePillar(item.style)?.slug || item.style.toLowerCase().replace(/\s+/g, "-")}`}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-aqua-50 dark:bg-aqua-950/50 text-aqua-700 dark:text-aqua-300 text-xs font-semibold uppercase tracking-wide hover:bg-aqua-100 dark:hover:bg-aqua-950/80 transition-colors"
+            >
+              <BookOpen className="w-3 h-3" />
+              {item.style} guide
+            </Link>
           )}
           {item.tankSizeL && <span className="text-sm text-gray-500 dark:text-slate-400">{item.tankSizeL} L</span>}
           {item.difficulty && <span className="text-sm text-gray-500 dark:text-slate-400 capitalize">Difficulty: {item.difficulty}</span>}
