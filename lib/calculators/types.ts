@@ -8,7 +8,7 @@ export function validateDimension(
   label: string,
   opts: { min?: number; max?: number; allowZero?: boolean } = {}
 ): string | null {
-  if (value === null || Number.isNaN(value)) return `${label} is required`
+  if (value === null || value === undefined || Number.isNaN(value)) return `${label} is required`
   if (!Number.isFinite(value)) return `${label} must be a valid number`
   if (value <= 0) return `${label} must be greater than zero`
   if (opts.min !== undefined && value < opts.min) return `${label} must be at least ${opts.min}`

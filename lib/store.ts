@@ -67,13 +67,15 @@ export function useComments(postSlug: string) {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-    const load = async () => {
-      let local: Comment[] = []
+    const readLocal = (): Comment[] => {
       try {
-        local = JSON.parse(localStorage.getItem("aquamind_comments") || "{}")[postSlug] || []
+        return JSON.parse(localStorage.getItem("aquamind_comments") || "{}")[postSlug] || []
       } catch {
-        local = []
+        return []
       }
+    }
+    const load = async () => {
+      const local = readLocal()
       try {
         const res = await fetch(`/api/comments?post=${encodeURIComponent(postSlug)}`, { cache: "no-store" })
         const data = res.ok ? await res.json() : { comments: [] }
@@ -86,9 +88,11 @@ export function useComments(postSlug: string) {
           date: c._createdAt,
           avatar: "",
         }))
-        if (!cancelled) setComments([...local, ...approved])
+        // Re-read localStorage at resolve time so comments submitted while
+        // this request was in flight are not overwritten
+        if (!cancelled) setComments([...readLocal(), ...approved])
       } catch {
-        if (!cancelled) setComments(local)
+        if (!cancelled) setComments(readLocal())
       } finally {
         if (!cancelled) setLoading(false)
       }

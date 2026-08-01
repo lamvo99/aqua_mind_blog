@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
     }`,
     { slug: postSlug }
   )
-  return NextResponse.json({ comments })
+  return NextResponse.json({ comments: comments || [] })
 }
 
 export async function POST(request: NextRequest) {

@@ -13,16 +13,19 @@ export async function POST(request: NextRequest) {
   }
 
   const { email } = body || {}
-  if (typeof email !== 'string' || !EMAIL_RE.test(email)) {
+  if (typeof email !== 'string' || !email.trim()) {
     return NextResponse.json({ error: 'Invalid email address' }, { status: 400 })
   }
 
   const normalized = email.trim().toLowerCase()
+  if (!EMAIL_RE.test(normalized)) {
+    return NextResponse.json({ error: 'Invalid email address' }, { status: 400 })
+  }
 
-  const [existing] = await sanityClient.fetch(
+  const [existing] = (await sanityClient.fetch(
     `*[_type == "subscriber" && email == $email] { _id, status }`,
     { email: normalized }
-  )
+  )) || []
 
   if (existing?.status === 'confirmed') {
     return NextResponse.json({ success: true, confirmed: true })

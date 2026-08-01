@@ -25,6 +25,7 @@ export function formatDateNumeric(date: string, locale = "en-US") {
 export function formatRelativeTime(date: string, locale = "en-US") {
   const rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" })
   const diff = Date.now() - new Date(date).getTime()
+  if (!Number.isFinite(diff)) return formatDateShort(date, locale)
   const seconds = Math.floor(diff / 1000)
   const minutes = Math.floor(seconds / 60)
   const hours = Math.floor(minutes / 60)
@@ -50,6 +51,6 @@ export function estimateReadingTime(body: any[] | undefined) {
     .filter((block: any) => block._type === "block")
     .map((block: any) => block.children?.map((child: any) => child.text).join(" "))
     .join(" ")
-  const words = text.split(/\s+/).length
+  const words = text.split(/\s+/).filter(Boolean).length
   return Math.max(1, Math.ceil(words / 200))
 }
