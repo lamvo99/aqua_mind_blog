@@ -1,4 +1,4 @@
-import { getAllPosts, getAllCategories, getPostsByCategory } from "@/lib/posts"
+import { getAllPosts, getAllCategories } from "@/lib/posts"
 import PostsPageClient from "./PostsPageClient"
 import type { Metadata } from "next"
 
@@ -18,14 +18,7 @@ export default async function PostsPage({
   const searchParams = await searchParamsPromise
   const categorySlug = searchParams?.category
 
-  let posts
-  if (categorySlug) {
-    posts = await getPostsByCategory(categorySlug)
-  } else {
-    posts = await getAllPosts()
-  }
-
-  const categories = await getAllCategories()
+  const [posts, categories] = await Promise.all([getAllPosts(), getAllCategories()])
 
   return <PostsPageClient posts={posts} categories={categories} categorySlug={categorySlug} />
 }

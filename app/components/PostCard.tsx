@@ -25,6 +25,8 @@ export default function PostCard({ post, featured }: PostCardProps) {
             src={imageUrl}
             alt={post.title}
             fill
+            sizes={featured ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+            loading="lazy"
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (

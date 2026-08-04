@@ -38,9 +38,15 @@ export default function Navbar() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault()
+        setSearchOpen(true)
+        return
+      }
       if (e.key === "Escape") {
         setDbOpen(false)
         setMobileOpen(false)
+        setSearchOpen(false)
       }
     }
     document.addEventListener("keydown", onKey)

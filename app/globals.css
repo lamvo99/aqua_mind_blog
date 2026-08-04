@@ -43,6 +43,13 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes float {

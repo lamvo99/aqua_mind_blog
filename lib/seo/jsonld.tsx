@@ -98,6 +98,35 @@ export function howToSchema(
   }
 }
 
+export function collectionPageSchema({
+  name,
+  description,
+  url,
+  items,
+}: {
+  name: string
+  description?: string
+  url: string
+  items: { title: string; url: string }[]
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: items.map((item, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.title,
+        url: item.url,
+      })),
+    },
+  }
+}
+
 export function JsonLd({ data }: { data: any }) {
   const json = JSON.stringify(data).replace(/</g, "\\u003c")
   return (
