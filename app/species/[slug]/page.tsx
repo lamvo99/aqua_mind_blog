@@ -7,6 +7,7 @@ import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Thermometer, Droplets, Ruler, Fish } from "lucide-react"
+import WikiPromo from "@/app/components/database/WikiPromo"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -113,11 +114,11 @@ export default async function SpeciesDetailPage({ params }: Props) {
               </div>
             </div>
           )}
+          <WikiPromo />
         </div>
 
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-1">{item.name}</h1>
-          {item.scientificName && <p className="text-lg italic text-gray-500 dark:text-slate-400 mb-4">{item.scientificName}</p>}
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-1">{item.name}</h1>          {item.scientificName && <p className="text-lg italic text-gray-500 dark:text-slate-400 mb-4">{item.scientificName}</p>}
           {item.excerpt && <p className="text-gray-600 dark:text-slate-300 leading-relaxed mb-6">{item.excerpt}</p>}
 
           <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-3">Care Parameters</h2>

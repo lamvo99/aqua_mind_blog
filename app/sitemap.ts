@@ -8,12 +8,14 @@ export const revalidate = 3600
 const LIST_PATHS = [
   { path: "/posts", priority: 0.9, frequency: "daily" },
   { path: "/database", priority: 0.8, frequency: "weekly" },
+  { path: "/wiki", priority: 0.8, frequency: "weekly" },
   { path: "/start-here", priority: 0.8, frequency: "monthly" },
   { path: "/species", priority: 0.6, frequency: "weekly" },
   { path: "/plants", priority: 0.6, frequency: "weekly" },
   { path: "/corals", priority: 0.6, frequency: "weekly" },
   { path: "/equipment", priority: 0.6, frequency: "weekly" },
   { path: "/problems", priority: 0.6, frequency: "weekly" },
+  { path: "/problems/diagnose", priority: 0.6, frequency: "weekly" },
   { path: "/inspiration", priority: 0.6, frequency: "weekly" },
   { path: "/tools", priority: 0.7, frequency: "monthly" },
   { path: "/tools/aquarium-volume", priority: 0.6, frequency: "monthly" },
@@ -24,7 +26,11 @@ const LIST_PATHS = [
   { path: "/tools/salt-mixing", priority: 0.6, frequency: "monthly" },
   { path: "/tools/lighting", priority: 0.6, frequency: "monthly" },
   { path: "/tools/stocking", priority: 0.6, frequency: "monthly" },
+  { path: "/tools/compatibility-checker", priority: 0.6, frequency: "monthly" },
+  { path: "/tools/aquarium-planner", priority: 0.6, frequency: "monthly" },
+  { path: "/tools/diagnostic", priority: 0.6, frequency: "monthly" },
   { path: "/setup-planner", priority: 0.7, frequency: "monthly" },
+  { path: "/learn", priority: 0.6, frequency: "weekly" },
   { path: "/about", priority: 0.5, frequency: "monthly" },
   { path: "/contact", priority: 0.5, frequency: "monthly" },
   { path: "/privacy-policy", priority: 0.2, frequency: "yearly" },
@@ -83,6 +89,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: doc.updatedAt || doc.publishedAt || new Date(),
       changeFrequency: doc._type === "post" ? ("weekly" as const) : ("monthly" as const),
       priority: TYPE_PRIORITY[doc._type],
+    })
+  }
+
+  const [categories, learnPaths] = await Promise.all([
+    client.fetch(
+      `*[_type == "category" && defined(slug)] {
+        "slug": slug.current,
+        "count": count(*[_type == "post" && defined(publishedAt) && ^.slug.current in categories[]->slug.current])
+      }`
+    ),
+    client.fetch(`*[_type == "learn" && defined(slug)] { "slug": slug.current }`),
+  ])
+
+  for (const cat of categories) {
+    if (!cat.count || cat.count <= 0) continue
+    entries.push({
+      url: `${siteUrl}/category/${cat.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    })
+  }
+
+  for (const learn of learnPaths) {
+    entries.push({
+      url: `${siteUrl}/learn/${learn.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     })
   }
 

@@ -16,6 +16,7 @@ export const mainNav: NavItem[] = [
 ]
 
 export const databaseNav: NavItem[] = [
+  { href: "/wiki", label: "Wiki", description: "Search fish, plants, corals & equipment at once" },
   { href: "/species", label: "Fish", description: "Species profiles with care parameters" },
   { href: "/plants", label: "Plants", description: "Aquatic plant database" },
   { href: "/corals", label: "Corals", description: "Reef coral database" },
@@ -24,6 +25,7 @@ export const databaseNav: NavItem[] = [
 
 export const toolsNav: NavItem[] = [
   { href: "/setup-planner", label: "Setup Planner", description: "Personalized first-tank plan in minutes" },
+  { href: "/tools/aquarium-planner", label: "Aquarium Planner", description: "Volume, stocking, water, CO₂ & light on one screen" },
   { href: "/tools/aquarium-volume", label: "Aquarium Volume", description: "Calculate tank water volume" },
   { href: "/tools/water-change", label: "Water Change", description: "Plan water changes & parameter impact" },
   { href: "/tools/co2", label: "CO₂ Estimator", description: "Estimate dissolved CO₂ from KH/pH" },
@@ -33,6 +35,7 @@ export const toolsNav: NavItem[] = [
   { href: "/tools/lighting", label: "Lighting", description: "Estimate LED watts for planted tanks" },
   { href: "/tools/stocking", label: "Fish Stocking", description: "Check capacity with the 1″/gallon rule" },
   { href: "/tools/compatibility-checker", label: "Compatibility Checker", description: "Check species compatibility & stocking together" },
+  { href: "/tools/diagnostic", label: "Problem Diagnostic", description: "Pick symptoms and get ranked likely causes" },
 ]
 
 export const problemCategories: string[] = [

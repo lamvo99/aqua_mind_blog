@@ -7,6 +7,7 @@ import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Sun, Wind, Droplets } from "lucide-react"
+import WikiPromo from "@/app/components/database/WikiPromo"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -113,6 +114,7 @@ export default async function CoralDetailPage({ params }: Props) {
               </div>
             </div>
           )}
+          <WikiPromo />
         </div>
       </div>
     </div>

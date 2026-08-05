@@ -7,6 +7,7 @@ import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Droplets, Zap, Waves, Check, X } from "lucide-react"
+import WikiPromo from "@/app/components/database/WikiPromo"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -153,6 +154,7 @@ export default async function EquipmentDetailPage({ params }: Props) {
               </div>
             </div>
           )}
+          <WikiPromo />
         </div>
       </div>
     </div>

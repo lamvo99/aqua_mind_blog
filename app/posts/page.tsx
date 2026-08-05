@@ -4,10 +4,21 @@ import type { Metadata } from "next"
 
 export const dynamic = "force-dynamic"
 
-export const metadata: Metadata = {
-  title: "All Articles",
-  description: "Aquascaping and aquarium care articles: cycling, fish selection, planted tanks, water quality, filters and maintenance.",
-  alternates: { canonical: "https://aquamind.life/posts" },
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
+
+export async function generateMetadata({
+  searchParams: searchParamsPromise,
+}: {
+  searchParams: Promise<{ category?: string; group?: string; page?: string }>
+}): Promise<Metadata> {
+  const searchParams = await searchParamsPromise
+  const page = Math.max(1, Number(searchParams?.page) || 1)
+  const canonical = page > 1 ? `${siteUrl}/posts?page=${page}` : `${siteUrl}/posts`
+  return {
+    title: page > 1 ? `All Articles — Page ${page}` : "All Articles",
+    description: "Aquascaping and aquarium care articles: cycling, fish selection, planted tanks, water quality, filters and maintenance.",
+    alternates: { canonical },
+  }
 }
 
 export default async function PostsPage({

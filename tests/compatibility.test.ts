@@ -98,6 +98,22 @@ describe('checkCompatibility', () => {
     expect(r.pairIssues[0].issues.some((i) => i.severity === 'ok')).toBe(true)
   })
 
+  it('unverified pair with no conflicts → explicit info issue about uncertainty', () => {
+    const r = checkCompatibility({ a: A, b: B }, [{ slug: 'a', count: 1 }, { slug: 'b', count: 1 }], 100)
+    const issues = r.pairIssues[0].issues
+    expect(issues.some((i) => i.severity === 'info' && i.message.includes('unverified'))).toBe(true)
+    expect(issues.some((i) => i.severity === 'error' || i.severity === 'warning')).toBe(false)
+  })
+
+  it('missing water parameters (null temp/pH) → no hard conflicts, no crash', () => {
+    const unk = species({
+      _id: 'u', name: 'Mystery Fish', slug: 'unk',
+      tempMinC: null, tempMaxC: null, phMin: null, phMax: null, ghMin: null, ghMax: null,
+    })
+    const r = checkCompatibility({ a: A, unk }, [{ slug: 'a', count: 1 }, { slug: 'unk', count: 1 }], 100)
+    expect(r.pairIssues[0].issues.some((i) => i.severity === 'error')).toBe(false)
+  })
+
   it('stocking status computed from total cm vs capacity', () => {
     const big = species({ _id: 'b', name: 'Big', slug: 'big', sizeCm: 40 })
     const r = checkCompatibility({ big }, [{ slug: 'big', count: 10 }], 60)

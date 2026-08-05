@@ -149,6 +149,12 @@ export function checkCompatibility(speciesMap: Record<string, CompatSpecies>, se
           message: `${a.name} and ${b.name} are marked as known compatible in our database.`,
         })
       }
+      if (!knownCompatible && !issues.some((i) => i.severity === "error" || i.severity === "warning")) {
+        issues.push({
+          severity: "info",
+          message: `${a.name} and ${b.name} show no obvious conflicts — unverified, so watch them together. Missing care data may hide issues.`,
+        })
+      }
 
       pairIssues.push({ a: a.slug, b: b.slug, knownCompatible, issues })
     }
