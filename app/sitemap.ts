@@ -27,7 +27,7 @@ const LIST_PATHS = [
   { path: "/tools/lighting", priority: 0.6, frequency: "monthly" },
   { path: "/tools/stocking", priority: 0.6, frequency: "monthly" },
   { path: "/tools/compatibility-checker", priority: 0.6, frequency: "monthly" },
-  { path: "/tools/aquarium-planner", priority: 0.6, frequency: "monthly" },
+  { path: "/tools/aquarium-calculator", priority: 0.6, frequency: "monthly" },
   { path: "/tools/diagnostic", priority: 0.6, frequency: "monthly" },
   { path: "/setup-planner", priority: 0.7, frequency: "monthly" },
   { path: "/learn", priority: 0.6, frequency: "weekly" },

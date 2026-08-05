@@ -7,6 +7,7 @@ import Breadcrumb from "../components/Breadcrumb"
 import { Search, SlidersHorizontal, X } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import { CATEGORY_GROUPS, groupForCategory, postMatchesGroup, postMatchesCategory } from "@/lib/categories"
+import { readScrollMark, writeScrollMark, setManualScrollRestoration } from "@/lib/scrollRestoration"
 
 const PER_PAGE = 9
 
@@ -38,6 +39,7 @@ export default function PostsPageClient({
   const [allCatsOpen, setAllCatsOpen] = useState(false)
   const listRef = useRef<HTMLDivElement>(null)
   const restoredRef = useRef(false)
+  const lastLoadMoreRef = useRef(0)
   const scrollMarksRef = useRef<Record<number, number>>({})
   const pageRef = useRef(currentPage)
   pageRef.current = currentPage
@@ -122,6 +124,9 @@ export default function PostsPageClient({
   }
 
   const loadMore = () => {
+    const now = Date.now()
+    if (now - lastLoadMoreRef.current < 400) return
+    lastLoadMoreRef.current = now
     const next = currentPage + 1
     setCurrentPage(next)
     syncUrl(groupRef.current, categoryRef.current, next, "push")
@@ -132,17 +137,17 @@ export default function PostsPageClient({
     }
   }
 
-  // Save scroll position + page so Back from a post restores the exact spot
+  // Save scroll position + page so Back from a post restores the exact spot.
+  // URL is the source of truth for filters/page; sessionStorage only keeps scrollY.
   useEffect(() => {
+    setManualScrollRestoration()
     let raf = 0
     const save = () => {
       raf = 0
       if (typeof window === "undefined") return
-      const data = { y: window.scrollY, page: pageRef.current }
-      scrollMarksRef.current[pageRef.current] = window.scrollY
-      try {
-        sessionStorage.setItem("aquamind_posts_scroll", JSON.stringify(data))
-      } catch {}
+      const y = window.scrollY
+      scrollMarksRef.current[pageRef.current] = y
+      writeScrollMark(y, pageRef.current)
     }
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(save)
@@ -181,11 +186,7 @@ export default function PostsPageClient({
   useEffect(() => {
     if (restoredRef.current) return
     restoredRef.current = true
-    let saved: { y?: number; page?: number } | null = null
-    try {
-      const raw = sessionStorage.getItem("aquamind_posts_scroll")
-      if (raw) saved = JSON.parse(raw)
-    } catch {}
+    const saved = readScrollMark()
     if (saved) {
       if (saved.page && saved.page > 1 && saved.page <= totalPages) setCurrentPage(saved.page)
       const y = saved.y || 0

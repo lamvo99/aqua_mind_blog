@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import CalculatorLayout from "@/app/components/tools/CalculatorLayout"
 import StockingCalculator from "@/app/components/tools/StockingCalculator"
+import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
   title: "Fish Stocking Calculator — AquaMind",
@@ -20,6 +21,7 @@ export default function StockingPage() {
         { href: "/tools/pump-flow", label: "Pump & Filter Flow Calculator" },
         { href: "/species", label: "Fish Species Database" },
       ]}
+      learn={TOOL_LEARN_LINKS["/tools/stocking"]}
       howTo={{
         url: "/tools/stocking",
         steps: [

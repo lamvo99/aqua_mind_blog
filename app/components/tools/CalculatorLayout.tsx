@@ -8,6 +8,7 @@ interface CalculatorLayoutProps {
   children: React.ReactNode
   disclaimer?: string
   related?: { href: string; label: string }[]
+  learn?: { href: string; label: string }[]
   howTo?: { url: string; steps: { name: string; text: string }[] }
 }
 
@@ -17,6 +18,7 @@ export default function CalculatorLayout({
   children,
   disclaimer,
   related = [],
+  learn = [],
   howTo,
 }: CalculatorLayoutProps) {
   return (
@@ -48,9 +50,27 @@ export default function CalculatorLayout({
 
       {related.length > 0 && (
         <div className="mt-8 p-5 rounded-2xl bg-gray-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700">
-          <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related guides</h2>
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related tools</h2>
           <div className="flex flex-wrap gap-2">
             {related.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 text-sm text-aqua-700 dark:text-aqua-300 border border-aqua-100 dark:border-aqua-900/50 hover:bg-aqua-50 dark:hover:bg-aqua-950/50 transition-colors"
+              >
+                {item.label}
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {learn.length > 0 && (
+        <div className="mt-4 p-5 rounded-2xl bg-gray-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700">
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Learn more</h2>
+          <div className="flex flex-wrap gap-2">
+            {learn.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

@@ -1,26 +1,33 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
+import { useSearchParams } from "next/navigation"
+import { Share2, Check, Copy } from "lucide-react"
 import {
   NumberField,
   SegmentedControl,
   ResultRow,
 } from "./ToolForm"
-import { calculateVolume, validateVolumeInput, type VolumeInput } from "@/lib/calculators/volume"
+import {
+  calculateAquarium,
+  validateAquariumInput,
+  type AquariumInput,
+  type LightingMode,
+} from "@/lib/calculators/aquarium"
 import { calculateStocking, validateStockingInput, type StockingLevel } from "@/lib/calculators/stocking"
 import { calculateWaterChange, validateWaterChangeInput } from "@/lib/calculators/waterChange"
 import { calculateCo2, validateCo2Input } from "@/lib/calculators/co2"
 import { calculateLighting, validateLightingInput, type LightLevel } from "@/lib/calculators/lighting"
 import { calculatePumpFlow, validatePumpFlowInput } from "@/lib/calculators/pumpFlow"
 
-const EMPTY_VOLUME: VolumeInput = {
-  shape: "rectangular",
-  length: null,
-  width: null,
-  height: null,
-  diameter: null,
-  unit: "cm",
-  displacementPercent: 10,
+const EMPTY_AQUARIUM: AquariumInput = {
+  lengthCm: null,
+  widthCm: null,
+  heightCm: null,
+  substrateDepthCm: null,
+  bagSizeLiters: null,
+  lightingMode: "medium",
+  usableVolumeRatio: 0.9,
 }
 
 function toNum(v: string): number | null {
@@ -30,27 +37,44 @@ function toNum(v: string): number | null {
 }
 
 export default function AquariumPlanner() {
-  const [dims, setDims] = useState({ length: "60", width: "30", height: "35" })
+  const searchParams = useSearchParams()
+
+  const [dims, setDims] = useState({
+    length: searchParams.get("l") || "60",
+    width: searchParams.get("w") || "30",
+    height: searchParams.get("h") || "35",
+  })
   const [displacement, setDisplacement] = useState("10")
+  const [substrate, setSubstrate] = useState({ depth: searchParams.get("s") || "", bagSize: "10" })
+  const [lightMode, setLightMode] = useState<LightingMode>("medium")
   const [stock, setStock] = useState({ fishCount: "", adultCm: "" })
   const [stockLevel, setStockLevel] = useState<StockingLevel>("standard")
   const [water, setWater] = useState({ changePercent: "25", currentNitrate: "", sourceNitrate: "" })
   const [co2, setCo2] = useState({ kh: "", ph: "" })
   const [light, setLight] = useState({ level: "medium" as LightLevel, ledWattage: "" })
+  const [shareCopied, setShareCopied] = useState(false)
 
-  const volumeInput: VolumeInput = {
-    ...EMPTY_VOLUME,
-    length: toNum(dims.length),
-    width: toNum(dims.width),
-    height: toNum(dims.height),
-    displacementPercent: toNum(displacement),
+  const aquariumInput: AquariumInput = {
+    ...EMPTY_AQUARIUM,
+    lengthCm: toNum(dims.length),
+    widthCm: toNum(dims.width),
+    heightCm: toNum(dims.height),
+    substrateDepthCm: toNum(substrate.depth),
+    bagSizeLiters: toNum(substrate.bagSize),
+    lightingMode: lightMode,
+    usableVolumeRatio: 1 - (toNum(displacement) ?? 0) / 100,
   }
-  const volumeErrors = validateVolumeInput(volumeInput)
+  const aquariumErrors = validateAquariumInput(aquariumInput)
+  const aquarium = useMemo(() => calculateAquarium(aquariumInput), [aquariumInput])
+  const aquariumValid =
+    Object.keys(aquariumErrors).length === 0 &&
+    aquariumInput.lengthCm !== null &&
+    aquariumInput.widthCm !== null &&
+    aquariumInput.heightCm !== null &&
+    aquariumInput.usableVolumeRatio > 0 &&
+    aquariumInput.usableVolumeRatio <= 1
 
-  const volume = useMemo(() => calculateVolume(volumeInput), [volumeInput])
-  const volumeValid = Object.keys(volumeErrors).length === 0 && volumeInput.displacementPercent !== null
-
-  const volumeL = volumeValid ? volume.liters : null
+  const volumeL = aquariumValid ? aquarium.usableLiters : null
 
   const stockingInput = {
     volumeL,
@@ -58,7 +82,7 @@ export default function AquariumPlanner() {
     fishCount: toNum(stock.fishCount),
     adultCm: toNum(stock.adultCm),
   }
-  const stockingErrors = volumeValid ? validateStockingInput(stockingInput) : {}
+  const stockingErrors = aquariumValid ? validateStockingInput(stockingInput) : {}
   const stocking = useMemo(() => calculateStocking(stockingInput), [stockingInput])
 
   const waterInput = {
@@ -67,7 +91,7 @@ export default function AquariumPlanner() {
     currentParameter: toNum(water.currentNitrate),
     sourceParameter: toNum(water.sourceNitrate),
   }
-  const waterErrors = volumeValid ? validateWaterChangeInput(waterInput) : {}
+  const waterErrors = aquariumValid ? validateWaterChangeInput(waterInput) : {}
   const waterResult = useMemo(() => calculateWaterChange(waterInput), [waterInput])
 
   const co2Input = { kh: toNum(co2.kh), ph: toNum(co2.ph) }
@@ -80,12 +104,36 @@ export default function AquariumPlanner() {
     level: light.level,
     ledWattage: toNum(light.ledWattage),
   }
-  const lightingErrors = volumeValid ? validateLightingInput(lightingInput) : {}
+  const lightingErrors = aquariumValid ? validateLightingInput(lightingInput) : {}
   const lighting = useMemo(() => calculateLighting(lightingInput), [lightingInput])
 
   const pumpInput = { volumeL, turnoverPerHour: 4, headLossPercent: 25 }
-  const pumpErrors = volumeValid ? validatePumpFlowInput(pumpInput) : {}
+  const pumpErrors = aquariumValid ? validatePumpFlowInput(pumpInput) : {}
   const pump = useMemo(() => calculatePumpFlow(pumpInput), [pumpInput])
+
+  const share = async () => {
+    const params = new URLSearchParams()
+    if (dims.length) params.set("l", dims.length)
+    if (dims.width) params.set("w", dims.width)
+    if (dims.height) params.set("h", dims.height)
+    if (substrate.depth) params.set("s", substrate.depth)
+    const url = `${window.location.origin}/tools/aquarium-calculator${params.toString() ? `?${params}` : ""}`
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title: "AquaMind Aquarium Calculator", text: "My tank plan", url })
+        return
+      } catch {
+        /* user cancelled — fall through to copy */
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url)
+      setShareCopied(true)
+      setTimeout(() => setShareCopied(false), 2000)
+    } catch {
+      /* clipboard unavailable */
+    }
+  }
 
   const section = "rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5 sm:p-6"
   const sectionTitle = "text-sm font-bold text-gray-900 dark:text-slate-100 mb-4 uppercase tracking-wide"
@@ -96,17 +144,36 @@ export default function AquariumPlanner() {
         <section className={section} aria-label="Tank dimensions">
           <h2 className={sectionTitle}>1 · Tank dimensions</h2>
           <div className="grid grid-cols-3 gap-3">
-            <NumberField id="pl-len" label="Length (cm)" value={dims.length} placeholder="60" error={volumeErrors.length}
+            <NumberField id="pl-len" label="Length (cm)" value={dims.length} placeholder="60" error={aquariumErrors.lengthCol}
               onChange={(v) => setDims((d) => ({ ...d, length: v }))} />
-            <NumberField id="pl-wid" label="Width (cm)" value={dims.width} placeholder="30" error={volumeErrors.width}
+            <NumberField id="pl-wid" label="Width (cm)" value={dims.width} placeholder="30" error={aquariumErrors.widthCol}
               onChange={(v) => setDims((d) => ({ ...d, width: v }))} />
-            <NumberField id="pl-hei" label="Height (cm)" value={dims.height} placeholder="35" error={volumeErrors.height}
+            <NumberField id="pl-hei" label="Height (cm)" value={dims.height} placeholder="35" error={aquariumErrors.heightCol}
               onChange={(v) => setDims((d) => ({ ...d, height: v }))} />
           </div>
-          <div className="mt-3 max-w-[160px]">
+          <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <NumberField id="pl-sub" label="Substrate depth (cm)" value={substrate.depth} placeholder="5"
+              error={aquariumErrors.substrateDepthCol} hint="Gravel or soil"
+              onChange={(v) => setSubstrate((s) => ({ ...s, depth: v }))} />
+            <NumberField id="pl-bag" label="Substrate bag size (L)" value={substrate.bagSize} placeholder="10"
+              error={aquariumErrors.bagSizeCol} hint="Optional"
+              onChange={(v) => setSubstrate((s) => ({ ...s, bagSize: v }))} />
             <NumberField id="pl-disp" label="Displacement (%)" value={displacement} placeholder="10"
-              error={volumeErrors.displacement} hint="Gravel, hardscape & decor"
+              error={aquariumErrors.usableVolumeRatioCol} hint="Decor & waterline gap"
               onChange={setDisplacement} />
+          </div>
+          <div className="mt-4 max-w-[320px]">
+            <SegmentedControl
+              label="Lighting mode (for estimate)"
+              name="light-mode"
+              value={lightMode}
+              onChange={setLightMode}
+              options={[
+                { value: "low", label: "Low" },
+                { value: "medium", label: "Medium" },
+                { value: "high", label: "High" },
+              ]}
+            />
           </div>
         </section>
 
@@ -154,20 +221,9 @@ export default function AquariumPlanner() {
         </section>
 
         <section className={section} aria-label="Lighting">
-          <h2 className={sectionTitle}>4 · Lighting</h2>
-          <SegmentedControl
-            label="Target light level"
-            name="light-level"
-            value={light.level}
-            onChange={(v) => setLight((l) => ({ ...l, level: v }))}
-            options={[
-              { value: "low", label: "Low" },
-              { value: "medium", label: "Medium" },
-              { value: "high", label: "High" },
-            ]}
-          />
-          <div className="mt-3 max-w-[220px]">
-            <NumberField id="pl-led" label="Your LED wattage (optional)" value={light.ledWattage} placeholder="30"
+          <h2 className={sectionTitle}>4 · Your lighting (optional)</h2>
+          <div className="max-w-[220px]">
+            <NumberField id="pl-led" label="Your LED wattage" value={light.ledWattage} placeholder="30"
               error={lightingErrors.ledWattage}
               onChange={(v) => setLight((l) => ({ ...l, ledWattage: v }))} />
           </div>
@@ -175,20 +231,39 @@ export default function AquariumPlanner() {
       </div>
 
       <div className="space-y-5 lg:sticky lg:top-24">
-        {!volumeValid && (
+        {!aquariumValid && (
           <div className="rounded-2xl bg-gray-50 dark:bg-slate-800/60 border border-gray-200 dark:border-slate-700 p-5">
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-              Enter valid tank dimensions (1–500 cm) and displacement to start the plan.
+              Enter valid tank dimensions (1–500 cm, decimals allowed) and displacement to start the plan.
             </p>
           </div>
         )}
 
-        {volumeValid && (
+        {aquariumValid && (
           <>
             <div className="rounded-2xl bg-gradient-to-br from-aqua-50 to-ocean-50 dark:from-aqua-950/30 dark:to-ocean-950/30 border border-aqua-100 dark:border-aqua-900/50 p-5">
-              <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-2">Tank volume</h2>
-              <p className="text-3xl font-bold gradient-text mb-1">{volume.liters} L</p>
-              <p className="text-sm text-gray-600 dark:text-slate-300">{volume.usGallons} US gal</p>
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-1">Tank volume</h2>
+                  <p className="text-3xl font-bold gradient-text mb-1">{aquarium.grossLiters} L</p>
+                  <p className="text-sm text-gray-600 dark:text-slate-300">usable ≈ {aquarium.usableLiters} L</p>
+                </div>
+                <button
+                  onClick={share}
+                  className="inline-flex items-center gap-1.5 px-3 py-2 min-h-11 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-sm text-gray-600 dark:text-slate-300 hover:border-aqua-400 transition-all shrink-0"
+                >
+                  {shareCopied ? <Check className="w-4 h-4 text-emerald-500" /> : <Share2 className="w-4 h-4" />}
+                  {shareCopied ? "Copied" : "Share"}
+                </button>
+              </div>
+              {aquarium.substrateLiters > 0 && (
+                <div className="mt-4 pt-4 border-t border-aqua-100 dark:border-aqua-900/50 space-y-1.5">
+                  <ResultRow label="Substrate" value={`${aquarium.substrateLiters} L`} />
+                  {aquarium.bags > 0 && (
+                    <ResultRow label="Substrate bags" value={`${aquarium.bags} × ${substrate.bagSize || "?"} L bags`} strong />
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5">
@@ -230,10 +305,7 @@ export default function AquariumPlanner() {
               {waterResult.resultingParameter !== null && (
                 <p className="mt-3 text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
                   After a {toNum(water.changePercent) ?? 0}% change, nitrate drops from{" "}
-                  {toNum(water.currentNitrate) ?? 0} to ≈ {waterResult.resultingParameter} mg/L
-                  {waterResult.deltaParameter !== null && waterResult.deltaParameter < 0
-                    ? ` (${waterResult.deltaParameter})`.replace("-", "−")
-                    : ""}.
+                  {toNum(water.currentNitrate) ?? 0} to ≈ {waterResult.resultingParameter} mg/L.
                 </p>
               )}
             </div>
@@ -257,8 +329,10 @@ export default function AquariumPlanner() {
                 {lighting.achievedLevel && (
                   <ResultRow label="Your light" value={`${lighting.achievedLevel} level`} />
                 )}
+                <ResultRow label="Est. fixture watts" value={`${aquarium.lightingWatts} W`} />
                 <ResultRow label="Filter flow" value={`${pump.requiredFlowLh.toLocaleString()} L/h (4×/h +25%)`} strong />
               </div>
+              <p className="mt-3 text-xs text-gray-500 dark:text-slate-400 leading-relaxed">{aquarium.lightingLabel}</p>
             </div>
 
             <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed px-1">

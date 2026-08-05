@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import CalculatorLayout from "@/app/components/tools/CalculatorLayout"
 import DosingCalculator from "@/app/components/tools/DosingCalculator"
+import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
   title: "Dosing Calculator — AquaMind",
@@ -18,6 +19,7 @@ export default function DosingPage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
         { href: "/tools/water-change", label: "Water Change Calculator" },
       ]}
+      learn={TOOL_LEARN_LINKS["/tools/dosing"]}
       howTo={{
         url: "/tools/dosing",
         steps: [

@@ -7,6 +7,7 @@ import { groupForCategory } from "@/lib/categories"
 import PostCard from "@/app/components/PostCard"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
+import { resourcesForCategory } from "@/lib/related"
 import strings from "@/lib/i18n/strings"
 
 export const revalidate = 3600
@@ -78,6 +79,14 @@ export default async function CategoryPage({
       )
     : []
   const related = siblings.filter(Boolean).sort((a: any, b: any) => b.count - a.count).slice(0, 5)
+
+  const resources = resourcesForCategory(slug, category.title)
+  const resourceSections = [
+    { key: "database" as const, title: "Database" },
+    { key: "tool" as const, title: "Tools" },
+    { key: "learn" as const, title: "Learn" },
+  ].map((s) => ({ ...s, items: resources.filter((r) => r.section === s.key) }))
+    .filter((s) => s.items.length > 0)
 
   const breadcrumbItems = [
     { label: strings.nav.posts, href: "/posts" },
@@ -167,6 +176,33 @@ export default async function CategoryPage({
                     {rel.title}
                     <span className="text-xs text-gray-400">{rel.count}</span>
                   </Link>
+                ))}
+              </div>
+            </nav>
+          )}
+
+          {resourceSections.length > 0 && (
+            <nav aria-label="Related database and tools" className="mt-14 border-t border-gray-100 dark:border-slate-800 pt-10">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-4">Related resources</h2>
+              <div className="space-y-5">
+                {resourceSections.map((section) => (
+                  <div key={section.key}>
+                    <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-slate-500 mb-2">
+                      {section.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {section.items.map((r) => (
+                        <Link
+                          key={r.href}
+                          href={r.href}
+                          className="inline-flex items-center gap-2 px-4 min-h-11 rounded-full text-sm font-medium bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400 transition-all"
+                        >
+                          {r.label}
+                          <span aria-hidden="true" className="text-aqua-500">→</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </nav>

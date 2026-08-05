@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import CalculatorLayout from "@/app/components/tools/CalculatorLayout"
 import SaltMixingCalculator from "@/app/components/tools/SaltMixingCalculator"
+import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
   title: "Salt Mixing Calculator — AquaMind",
@@ -18,6 +19,7 @@ export default function SaltMixingPage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
         { href: "/tools/pump-flow", label: "Pump & Filter Flow Calculator" },
       ]}
+      learn={TOOL_LEARN_LINKS["/tools/salt-mixing"]}
       howTo={{
         url: "/tools/salt-mixing",
         steps: [

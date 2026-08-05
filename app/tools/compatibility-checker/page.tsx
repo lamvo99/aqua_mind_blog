@@ -4,6 +4,7 @@ import CalculatorLayout from "@/app/components/tools/CalculatorLayout"
 import CompatibilityChecker from "@/app/components/tools/CompatibilityChecker"
 import { client } from "@/lib/sanity"
 import type { CompatSpecies } from "@/lib/calculators/compatibility"
+import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
   title: "Compatibility Checker — AquaMind",
@@ -37,6 +38,7 @@ export default async function CompatibilityCheckerPage() {
         { href: "/species", label: "Fish Species Database" },
         { href: "/problems", label: "Common Fish Problems" },
       ]}
+      learn={TOOL_LEARN_LINKS["/tools/compatibility-checker"]}
       howTo={{
         url: "/tools/compatibility-checker",
         steps: [

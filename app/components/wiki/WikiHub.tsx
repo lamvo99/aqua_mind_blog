@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
-import { Search, Thermometer, Droplets, Ruler, HelpCircle } from "lucide-react"
+import { Search, Thermometer, Droplets, Ruler, HelpCircle, SlidersHorizontal, X, Check } from "lucide-react"
 import { urlFor } from "@/lib/sanity"
 
 interface WikiItem {
@@ -23,7 +23,6 @@ interface WikiItem {
   tempMaxC?: number
   phMin?: number
   phMax?: number
-  category?: string
   brand?: string
   href: string
 }
@@ -49,6 +48,16 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
   const [query, setQuery] = useState(searchParams.get("q") || "")
   const [difficulty, setDifficulty] = useState(searchParams.get("diff") || "all")
   const [origin, setOrigin] = useState(searchParams.get("origin") || "all")
+  const [sheetOpen, setSheetOpen] = useState(false)
+
+  useEffect(() => {
+    if (!sheetOpen) return
+    const original = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = original
+    }
+  }, [sheetOpen])
 
   const syncUrl = (t: string, q: string, d: string, o: string) => {
     const params = new URLSearchParams()
@@ -98,10 +107,43 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
     })
   }, [items, type, query, difficulty, origin])
 
+  const activeFilterCount = (difficulty !== "all" ? 1 : 0) + (origin !== "all" ? 1 : 0)
+
   const tempRange = (item: WikiItem) =>
     item.tempMinC && item.tempMaxC ? `${item.tempMinC}–${item.tempMaxC}°C` : null
   const phRange = (item: WikiItem) =>
     item.phMin && item.phMax ? `pH ${item.phMin}–${item.phMax}` : null
+
+  const renderFields = (inSheet: boolean) => (
+    <div className={`${inSheet ? "space-y-4" : "hidden sm:flex sm:gap-3"}`}>
+      {facetOptions.difficulties.length > 0 && (
+        <select
+          value={difficulty}
+          onChange={(e) => setFilter({ diff: e.target.value })}
+          aria-label="Filter by difficulty"
+          className="w-full sm:w-auto px-3 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
+        >
+          <option value="all">Difficulty: all</option>
+          {facetOptions.difficulties.map((d) => (
+            <option key={d} value={d}>{d}</option>
+          ))}
+        </select>
+      )}
+      {facetOptions.origins.length > 0 && (
+        <select
+          value={origin}
+          onChange={(e) => setFilter({ origin: e.target.value })}
+          aria-label="Filter by origin"
+          className="w-full sm:w-auto px-3 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
+        >
+          <option value="all">Origin: all</option>
+          {facetOptions.origins.map((o) => (
+            <option key={o} value={o}>{o}</option>
+          ))}
+        </select>
+      )}
+    </div>
+  )
 
   return (
     <div>
@@ -114,37 +156,28 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
             onChange={(e) => setFilter({ q: e.target.value })}
             placeholder="Search wiki…"
             aria-label="Search wiki"
-            className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-aqua-500/50 [&::-webkit-search-cancel-button]:hidden"
+            className="w-full pl-10 pr-4 py-2.5 min-h-11 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-aqua-500/50 [&::-webkit-search-cancel-button]:hidden"
           />
         </div>
-        <div className="flex gap-3">
-          {difficulty !== "all" && facetOptions.difficulties.length > 0 && (
-            <select
-              value={difficulty}
-              onChange={(e) => setFilter({ diff: e.target.value })}
-              aria-label="Filter by difficulty"
-              className="px-3 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
-            >
-              <option value="all">Difficulty: all</option>
-              {facetOptions.difficulties.map((d) => (
-                <option key={d} value={d}>{d}</option>
-              ))}
-            </select>
-          )}
-          {origin !== "all" && facetOptions.origins.length > 0 && (
-            <select
-              value={origin}
-              onChange={(e) => setFilter({ origin: e.target.value })}
-              aria-label="Filter by origin"
-              className="px-3 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
-            >
-              <option value="all">Origin: all</option>
-              {facetOptions.origins.map((o) => (
-                <option key={o} value={o}>{o}</option>
-              ))}
-            </select>
-          )}
+
+        <div className="flex gap-3 sm:hidden">
+          <button
+            onClick={() => setSheetOpen(true)}
+            aria-haspopup="dialog"
+            aria-expanded={sheetOpen}
+            className="inline-flex items-center gap-2 px-4 min-h-11 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-sm font-medium text-gray-700 dark:text-slate-300"
+          >
+            <SlidersHorizontal className="w-4 h-4" />
+            Filters
+            {activeFilterCount > 0 && (
+              <span className="w-5 h-5 rounded-full gradient-bg text-white text-[11px] font-bold flex items-center justify-center">
+                {activeFilterCount}
+              </span>
+            )}
+          </button>
         </div>
+
+        {renderFields(false)}
       </div>
 
       <div className="flex items-center gap-2 overflow-x-auto no-scrollbar mb-6 pb-1" aria-label="Filter by type">
@@ -240,6 +273,31 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
           <Search className="w-12 h-12 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
           <p className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">No entries match</p>
           <p className="text-gray-500 dark:text-slate-400 text-sm">Try different filters or search terms.</p>
+        </div>
+      )}
+
+      {sheetOpen && (
+        <div className="fixed inset-0 z-[70] flex items-end justify-center sm:hidden" role="dialog" aria-modal="true" aria-label="Wiki filters">
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setSheetOpen(false)} aria-hidden="true" />
+          <div
+            onKeyDown={(e) => e.key === "Escape" && setSheetOpen(false)}
+            className="relative w-full bg-white dark:bg-slate-800 rounded-t-3xl shadow-2xl p-5 pb-8 max-h-[80vh] overflow-y-auto"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-base font-bold text-gray-900 dark:text-slate-100">Filters</h2>
+              <button onClick={() => setSheetOpen(false)} aria-label="Close filters" className="p-2 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-full transition-colors">
+                <X className="w-5 h-5 text-gray-500" />
+              </button>
+            </div>
+            {renderFields(true)}
+            <button
+              onClick={() => setSheetOpen(false)}
+              className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3 min-h-11 gradient-bg text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all"
+            >
+              <Check className="w-4 h-4" />
+              Done
+            </button>
+          </div>
         </div>
       )}
     </div>

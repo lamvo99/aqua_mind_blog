@@ -21,7 +21,7 @@ const icons: Record<string, React.ReactNode> = {
   "/tools/lighting": <Lightbulb className="w-6 h-6" />,
   "/tools/stocking": <Fish className="w-6 h-6" />,
   "/tools/compatibility-checker": <HeartCrack className="w-6 h-6" />,
-  "/tools/aquarium-planner": <LayoutDashboard className="w-6 h-6" />,
+  "/tools/aquarium-calculator": <LayoutDashboard className="w-6 h-6" />,
   "/tools/diagnostic": <Stethoscope className="w-6 h-6" />,
 }
 

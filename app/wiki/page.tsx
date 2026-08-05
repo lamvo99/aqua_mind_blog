@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { getDatabaseCompareItems } from "@/lib/database"
 import WikiHub from "@/app/components/wiki/WikiHub"
 import Breadcrumb from "@/app/components/Breadcrumb"
-import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
+import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
   title: "Aquarium Wiki — Fish, Plants, Corals & Equipment — AquaMind",
@@ -30,6 +30,18 @@ export default async function WikiPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ label: "Wiki" }])} />
+      <JsonLd
+        data={collectionPageSchema({
+          name: "Aquarium Wiki",
+          description:
+            "Search fish species, aquatic plants, corals and aquarium equipment with care parameters.",
+          url: "https://aquamind.life/wiki",
+          items: items.slice(0, 100).map((i) => ({
+            title: i.name,
+            url: `https://aquamind.life${i.href}`,
+          })),
+        })}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="mb-6">
           <Breadcrumb items={[{ label: "Wiki" }]} />

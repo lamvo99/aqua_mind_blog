@@ -27,9 +27,27 @@ export default function DiagnosisWizard({ problems }: { problems: ProblemForDiag
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-6">
       <div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 mb-4">
-          Select every symptom you can observe — the more you pick, the more accurate the ranking.
-        </p>
+        <div className="mb-4 flex items-center justify-between gap-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300">
+            Select every symptom you can observe — the more you pick, the more accurate the ranking.
+          </p>
+          <p className="shrink-0 text-xs font-semibold text-aqua-700 dark:text-aqua-300" aria-hidden="true">
+            {selected.length}/{SYMPTOM_OPTIONS.length}
+          </p>
+        </div>
+        <div
+          className="mb-5 h-1.5 rounded-full bg-gray-200 dark:bg-slate-700 overflow-hidden"
+          role="progressbar"
+          aria-valuemin={0}
+          aria-valuemax={SYMPTOM_OPTIONS.length}
+          aria-valuenow={selected.length}
+          aria-label="Symptoms selected"
+        >
+          <div
+            className="h-full gradient-bg rounded-full transition-all duration-300"
+            style={{ width: `${(selected.length / SYMPTOM_OPTIONS.length) * 100}%` }}
+          />
+        </div>
         <div className="space-y-2.5">
           {SYMPTOM_OPTIONS.map((symptom) => {
             const active = selected.includes(symptom.id)

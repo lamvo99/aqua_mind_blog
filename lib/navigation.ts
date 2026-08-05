@@ -25,7 +25,7 @@ export const databaseNav: NavItem[] = [
 
 export const toolsNav: NavItem[] = [
   { href: "/setup-planner", label: "Setup Planner", description: "Personalized first-tank plan in minutes" },
-  { href: "/tools/aquarium-planner", label: "Aquarium Planner", description: "Volume, stocking, water, CO₂ & light on one screen" },
+  { href: "/tools/aquarium-calculator", label: "Aquarium Calculator", description: "Volume, substrate, stocking, water, CO₂ & light on one screen" },
   { href: "/tools/aquarium-volume", label: "Aquarium Volume", description: "Calculate tank water volume" },
   { href: "/tools/water-change", label: "Water Change", description: "Plan water changes & parameter impact" },
   { href: "/tools/co2", label: "CO₂ Estimator", description: "Estimate dissolved CO₂ from KH/pH" },

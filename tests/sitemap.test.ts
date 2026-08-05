@@ -17,7 +17,7 @@ describe('sitemap', () => {
       '/wiki',
       '/database',
       '/tools',
-      '/tools/aquarium-planner',
+      '/tools/aquarium-calculator',
       '/tools/diagnostic',
       '/tools/compatibility-checker',
       '/problems/diagnose',
@@ -42,16 +42,18 @@ describe('sitemap', () => {
   it('appends dynamic docs from Sanity when present', async () => {
     const { client } = await import('@/lib/sanity')
     const fetchMock = vi.mocked(client.fetch)
+    type FetchResult = Awaited<ReturnType<typeof client.fetch>>
+    const asResult = <T,>(value: T) => value as unknown as FetchResult
     fetchMock
-      .mockResolvedValueOnce([
+      .mockResolvedValueOnce(asResult([
         { _type: 'post', slug: 'cycling-101', publishedAt: '2026-01-01', updatedAt: null },
         { _type: 'species', slug: 'neon-tetra', publishedAt: '2026-01-01', updatedAt: null },
-      ])
-      .mockResolvedValueOnce([
+      ]))
+      .mockResolvedValueOnce(asResult([
         { slug: 'beginner-guides', count: 7 },
         { slug: 'empty-category', count: 0 },
-      ])
-      .mockResolvedValueOnce([{ slug: 'first-tank' }])
+      ]))
+      .mockResolvedValueOnce(asResult([{ slug: 'first-tank' }]))
     const entries = await sitemap()
     const urls = entries.map((e) => e.url)
     expect(urls).toContain('https://aquamind.life/posts/cycling-101')
