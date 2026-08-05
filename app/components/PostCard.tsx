@@ -8,9 +8,10 @@ import strings from "@/lib/i18n/strings"
 interface PostCardProps {
   post: any
   featured?: boolean
+  priority?: boolean
 }
 
-export default function PostCard({ post, featured }: PostCardProps) {
+export default function PostCard({ post, featured, priority }: PostCardProps) {
   const imageUrl = post.mainImage ? urlFor(post.mainImage).width(featured ? 800 : 600).height(featured ? 450 : 400).url() : null
   const readingTime = estimateReadingTime(post.body)
 
@@ -26,7 +27,8 @@ export default function PostCard({ post, featured }: PostCardProps) {
             alt={post.title}
             fill
             sizes={featured ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
-            loading="lazy"
+            loading={priority ? undefined : "lazy"}
+            fetchPriority={priority ? "high" : undefined}
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (

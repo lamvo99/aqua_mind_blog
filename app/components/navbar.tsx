@@ -39,6 +39,9 @@ export default function Navbar() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        const target = e.target as HTMLElement | null
+        const tag = target?.tagName?.toLowerCase()
+        if (tag === "input" || tag === "textarea" || target?.isContentEditable) return
         e.preventDefault()
         setSearchOpen(true)
         return

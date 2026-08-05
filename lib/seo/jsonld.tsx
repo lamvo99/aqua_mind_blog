@@ -31,6 +31,8 @@ export function articleSchema(post: any) {
     image: articleImage(post),
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
+    articleSection: post.categories?.[0]?.title,
+    inLanguage: "vi",
     author: post.author
       ? { "@type": "Person", name: post.author.name }
       : undefined,

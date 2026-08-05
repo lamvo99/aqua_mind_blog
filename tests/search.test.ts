@@ -8,6 +8,8 @@ import { searchContent, typeLabels, searchTypes } from '@/lib/search'
 import { client } from '@/lib/sanity'
 
 const mockedFetch = vi.mocked(client.fetch)
+type FetchResult = Awaited<ReturnType<typeof client.fetch>>
+const asResult = <T,>(value: T) => value as unknown as FetchResult
 
 describe('searchContent', () => {
   beforeEach(() => {
@@ -21,7 +23,7 @@ describe('searchContent', () => {
   })
 
   it('passes trimmed query as bound $q parameter (GROQ injection-safe)', async () => {
-    mockedFetch.mockResolvedValue([{ _id: '1', title: 'Guppy', _type: 'post', slug: { current: 'guppy' } }])
+    mockedFetch.mockResolvedValue(asResult([{ _id: '1', title: 'Guppy', _type: 'post', slug: { current: 'guppy' } }]))
     const q = 'guppy"; *[_type == "post"] { _id } //'
     const res = await searchContent(`  ${q}  `, 'article')
     expect(res).toHaveLength(1)
@@ -29,7 +31,7 @@ describe('searchContent', () => {
   })
 
   it('query escapes handled by GROQ match semantics — special chars do not throw', async () => {
-    mockedFetch.mockResolvedValue([])
+    mockedFetch.mockResolvedValue(asResult([]))
     for (const q of ["'", '"', '\\', '*', '$', ';--', '<script>alert(1)</script>']) {
       await expect(searchContent(q, 'all')).resolves.toEqual([])
     }
@@ -41,12 +43,12 @@ describe('searchContent', () => {
   })
 
   it('null response → []', async () => {
-    mockedFetch.mockResolvedValue(null)
+    mockedFetch.mockResolvedValue(asResult(null))
     expect(await searchContent('guppy', 'plant')).toEqual([])
   })
 
   it('builds queries for each type', async () => {
-    mockedFetch.mockResolvedValue([])
+    mockedFetch.mockResolvedValue(asResult([]))
     for (const t of searchTypes) {
       await searchContent('x', t.value)
       expect(mockedFetch).toHaveBeenCalled()

@@ -89,13 +89,15 @@ describe('POST /api/comments', () => {
     expect(mocks.sanityFetch).not.toHaveBeenCalled()
   })
 
-  it.each([
+  type CommentPayload = { name: string; content: string; postSlug?: string }
+  const invalidPayloads: [CommentPayload, string][] = [
     [{ name: 'A', content: 'ok', postSlug: 'x' }, 'name'],
     [{ name: 'A'.repeat(81), content: 'ok', postSlug: 'x' }, 'name'],
     [{ name: 'Valid', content: 'x', postSlug: 'x' }, 'content'],
     [{ name: 'Valid', content: 'x'.repeat(2001), postSlug: 'x' }, 'content'],
     [{ name: 'Valid', content: 'ok' }, 'postSlug'],
-  ])('400 for invalid payload %j', async (body) => {
+  ]
+  it.each(invalidPayloads)('400 for invalid payload %j', async (body) => {
     const res = await POST(jsonReq('POST', 'http://localhost/api/comments', body))
     expect(res.status).toBe(400)
   })

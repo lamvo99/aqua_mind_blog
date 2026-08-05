@@ -107,6 +107,7 @@ export default function PortableText({ value }: { value: any[] }) {
                   alt={item.block.alt || ""}
                   width={800}
                   height={500}
+                  sizes="(max-width: 768px) 100vw, 768px"
                   className="rounded-xl w-full object-cover"
                 />
               )}

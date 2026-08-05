@@ -63,6 +63,22 @@ export default async function CategoryPage({
   if (!category) notFound()
 
   const group = groupForCategory(slug)
+
+  const siblings = group
+    ? await Promise.all(
+        categories
+          .filter((c: any) => c.slug.current !== slug && groupForCategory(c.slug.current)?.id === group.id)
+          .map(async (c: any) => {
+            const count = await client.fetch(
+              `count(*[_type == "post" && defined(publishedAt) && $slug in categories[]->slug.current])`,
+              { slug: c.slug.current }
+            )
+            return count > 0 ? { slug: c.slug.current, title: c.title, count } : null
+          })
+      )
+    : []
+  const related = siblings.filter(Boolean).sort((a: any, b: any) => b.count - a.count).slice(0, 5)
+
   const breadcrumbItems = [
     { label: strings.nav.posts, href: "/posts" },
     ...(group ? [{ label: group.label, href: "/posts" }] : []),
@@ -97,6 +113,14 @@ export default async function CategoryPage({
                 {category.description}
               </p>
             )}
+            {!category.description && group?.description && (
+              <p className="text-gray-500 dark:text-slate-400 mt-3 leading-relaxed">
+                {group.description}
+              </p>
+            )}
+            <p className="text-sm text-gray-400 dark:text-slate-500 mt-3">
+              {posts.length} {posts.length === 1 ? "article" : "articles"}
+            </p>
             {group && (
               <Link
                 href="/posts"
@@ -110,8 +134,8 @@ export default async function CategoryPage({
 
           {posts.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map((post: any) => (
-                <PostCard key={post._id} post={post} />
+              {posts.map((post: any, index: number) => (
+                <PostCard key={post._id} post={post} priority={index < 3} />
               ))}
             </div>
           ) : (
@@ -126,6 +150,26 @@ export default async function CategoryPage({
                 {strings.posts.back}
               </Link>
             </div>
+          )}
+
+          {related.length > 0 && (
+            <nav aria-label="Related categories" className="mt-14">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-3">
+                {group?.label ? `More in ${group.label}` : "Related categories"}
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {related.map((rel: any) => (
+                  <Link
+                    key={rel.slug}
+                    href={`/category/${rel.slug}`}
+                    className="inline-flex items-center gap-2 px-4 min-h-11 rounded-full text-sm font-medium bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400 transition-all"
+                  >
+                    {rel.title}
+                    <span className="text-xs text-gray-400">{rel.count}</span>
+                  </Link>
+                ))}
+              </div>
+            </nav>
           )}
         </div>
       </div>

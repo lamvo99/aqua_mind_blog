@@ -1,35 +1,64 @@
 "use client"
 
 import { useMemo, useState, useEffect, useRef, useCallback } from "react"
-import Link from "next/link"
 import PostCard from "../components/PostCard"
+import CategoryFilterModal from "../components/CategoryFilterModal"
 import Breadcrumb from "../components/Breadcrumb"
-import { Search, SlidersHorizontal, X, ChevronDown, Check } from "lucide-react"
+import { Search, SlidersHorizontal, X } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import { CATEGORY_GROUPS, groupForCategory, postMatchesGroup, postMatchesCategory } from "@/lib/categories"
 
 const PER_PAGE = 9
 
+function reducedMotion() {
+  return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "instant" as ScrollBehavior })
+}
+
 export default function PostsPageClient({
   posts,
   categories,
   categorySlug,
+  group,
+  initialPage = 1,
 }: {
   posts: any[]
   categories: any[]
   categorySlug?: string
+  group?: string
+  initialPage?: number
 }) {
   const [search, setSearch] = useState("")
-  const initialGroup = categorySlug ? groupForCategory(categorySlug)?.id || "" : ""
-  const [activeGroup, setActiveGroup] = useState(initialGroup)
-  const [chosenCategory, setChosenCategory] = useState(initialGroup ? categorySlug || "" : "")
-  const [currentPage, setCurrentPage] = useState(1)
+  const [activeGroup, setActiveGroup] = useState(group || (categorySlug ? groupForCategory(categorySlug)?.id || "" : ""))
+  const [chosenCategory, setChosenCategory] = useState(categorySlug || "")
+  const [currentPage, setCurrentPage] = useState(Math.max(1, initialPage))
   const [allCatsOpen, setAllCatsOpen] = useState(false)
-  const popoverRef = useRef<HTMLDivElement>(null)
   const listRef = useRef<HTMLDivElement>(null)
   const restoredRef = useRef(false)
+  const scrollMarksRef = useRef<Record<number, number>>({})
   const pageRef = useRef(currentPage)
   pageRef.current = currentPage
+  const categoryRef = useRef(chosenCategory)
+  categoryRef.current = chosenCategory
+  const groupRef = useRef(activeGroup)
+  groupRef.current = activeGroup
+
+  const categoryOptions = useMemo(
+    () =>
+      categories
+        .map((cat: any) => ({
+          _id: cat._id,
+          title: cat.title,
+          slug: cat.slug.current,
+          postCount: posts.filter((p) => postMatchesCategory(p, cat.slug.current)).length,
+        }))
+        .filter((c) => c.postCount > 0)
+        .sort((a, b) => b.postCount - a.postCount),
+    [posts, categories]
+  )
 
   const filtered = useMemo(() => {
     let result = posts
@@ -53,36 +82,54 @@ export default function PostsPageClient({
   const paged = filtered.slice(0, currentPage * PER_PAGE)
   const hasMore = currentPage * PER_PAGE < filtered.length
 
-  const syncUrl = useCallback((group: string, category: string, page: number) => {
+  const buildQs = useCallback((groupValue: string, categoryValue: string, page: number) => {
     const params = new URLSearchParams()
-    if (group) params.set("group", group)
-    if (category) params.set("category", category)
+    if (groupValue) params.set("group", groupValue)
+    if (categoryValue) params.set("category", categoryValue)
     if (page > 1) params.set("page", String(page))
     const qs = params.toString()
-    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname)
+    return qs ? `?${qs}` : window.location.pathname
   }, [])
 
-  const selectGroup = (id: string) => {
-    setChosenCategory("")
-    setActiveGroup(id)
+  const syncUrl = useCallback(
+    (groupValue: string, categoryValue: string, page: number, mode: "replace" | "push" = "replace") => {
+      const url = buildQs(groupValue, categoryValue, page)
+      if (mode === "push") {
+        window.history.pushState({ page }, "", url)
+      } else {
+        window.history.replaceState(null, "", url)
+      }
+    },
+    [buildQs]
+  )
+
+  const applyFilter = (groupValue: string, categoryValue: string) => {
+    setChosenCategory(categoryValue)
+    setActiveGroup(groupValue)
     setCurrentPage(1)
-    syncUrl(id, "", 1)
-    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior })
+    syncUrl(groupValue, categoryValue, 1, "replace")
+    scrollToTop()
+  }
+
+  const selectGroup = (id: string) => {
+    applyFilter(id, "")
+    setAllCatsOpen(false)
   }
 
   const selectCategory = (slug: string) => {
-    setChosenCategory(slug)
-    setActiveGroup("")
-    setCurrentPage(1)
-    syncUrl("", slug, 1)
+    applyFilter("", slug)
     setAllCatsOpen(false)
-    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior })
   }
 
   const loadMore = () => {
     const next = currentPage + 1
     setCurrentPage(next)
-    syncUrl(activeGroup, chosenCategory, next)
+    syncUrl(groupRef.current, categoryRef.current, next, "push")
+    const button = listRef.current?.nextElementSibling
+    if (button instanceof HTMLElement && !reducedMotion()) {
+      const top = button.getBoundingClientRect().top + window.scrollY - 72
+      window.scrollTo({ top, behavior: "smooth" })
+    }
   }
 
   // Save scroll position + page so Back from a post restores the exact spot
@@ -92,6 +139,7 @@ export default function PostsPageClient({
       raf = 0
       if (typeof window === "undefined") return
       const data = { y: window.scrollY, page: pageRef.current }
+      scrollMarksRef.current[pageRef.current] = window.scrollY
       try {
         sessionStorage.setItem("aquamind_posts_scroll", JSON.stringify(data))
       } catch {}
@@ -106,6 +154,29 @@ export default function PostsPageClient({
     }
   }, [])
 
+  // Sync state when the user navigates Back/Forward through pushed history entries
+  useEffect(() => {
+    const onPopState = () => {
+      const params = new URLSearchParams(window.location.search)
+      const page = Math.max(1, Number(params.get("page")) || 1)
+      const category = params.get("category") || ""
+      const groupValue = params.get("group") || ""
+      setChosenCategory(category)
+      setActiveGroup(groupValue)
+      setCurrentPage(Math.min(page, totalPages))
+      const markY = scrollMarksRef.current[page]
+      if (markY !== undefined) {
+        requestAnimationFrame(() => {
+          window.scrollTo(0, markY)
+          setTimeout(() => window.scrollTo(0, markY), 300)
+        })
+      }
+    }
+    window.addEventListener("popstate", onPopState)
+    return () => window.removeEventListener("popstate", onPopState)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [totalPages])
+
   // Restore position once per mount (back navigation / reload)
   useEffect(() => {
     if (restoredRef.current) return
@@ -116,7 +187,7 @@ export default function PostsPageClient({
       if (raw) saved = JSON.parse(raw)
     } catch {}
     if (saved) {
-      if (saved.page && saved.page > 1) setCurrentPage(Math.min(saved.page, totalPages))
+      if (saved.page && saved.page > 1 && saved.page <= totalPages) setCurrentPage(saved.page)
       const y = saved.y || 0
       if (y > 0) {
         requestAnimationFrame(() =>
@@ -135,26 +206,13 @@ export default function PostsPageClient({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Close "All categories" popover on outside click / Escape
-  useEffect(() => {
-    if (!allCatsOpen) return
-    const onClick = (e: MouseEvent) => {
-      if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) setAllCatsOpen(false)
-    }
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setAllCatsOpen(false)
-    }
-    document.addEventListener("click", onClick)
-    document.addEventListener("keydown", onKey)
-    return () => {
-      document.removeEventListener("click", onClick)
-      document.removeEventListener("keydown", onKey)
-    }
-  }, [allCatsOpen])
-
   const activeLabel = chosenCategory
     ? categories.find((c) => c.slug.current === chosenCategory)?.title
     : CATEGORY_GROUPS.find((g) => g.id === activeGroup)?.label || strings.posts.title
+
+  const activeDescription = chosenCategory
+    ? categories.find((c) => c.slug.current === chosenCategory)?.description
+    : CATEGORY_GROUPS.find((g) => g.id === activeGroup)?.description || strings.posts.desc
 
   return (
     <div className="min-h-screen bg-gray-50/50 dark:bg-slate-900">
@@ -168,11 +226,10 @@ export default function PostsPageClient({
             {activeLabel}
           </h1>
           <p className="text-gray-500 dark:text-slate-400 mt-2">
-            {chosenCategory || activeGroup
-              ? categories.find((c) => c.slug.current === chosenCategory)?.description
-                || CATEGORY_GROUPS.find((g) => g.id === activeGroup)?.description
-                || strings.posts.desc
-              : strings.posts.desc}
+            {chosenCategory || activeGroup ? activeDescription || strings.posts.desc : strings.posts.desc}
+          </p>
+          <p className="sr-only" role="status" aria-live="polite">
+            {paged.length} of {filtered.length} articles
           </p>
         </div>
 
@@ -180,17 +237,18 @@ export default function PostsPageClient({
         <div className="relative max-w-xl mb-6">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
           <input
-            type="text"
+            type="search"
             value={search}
             onChange={(e) => {
               setSearch(e.target.value)
               setCurrentPage(1)
             }}
             placeholder={strings.search.placeholder}
-            className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
+            aria-label={strings.search.placeholder}
+            className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-aqua-500/50 [&::-webkit-search-cancel-button]:hidden"
           />
           {search && (
-            <button onClick={() => setSearch("")} className="absolute right-3.5 top-1/2 -translate-y-1/2" aria-label="Clear search">
+            <button onClick={() => setSearch("")} className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1" aria-label="Clear search">
               <X className="w-4 h-4 text-gray-500 hover:text-gray-700" />
             </button>
           )}
@@ -201,14 +259,12 @@ export default function PostsPageClient({
           <div
             ref={listRef}
             className="flex items-center gap-2 overflow-x-auto no-scrollbar flex-1 -mx-1 px-1 py-1"
-            role="tablist"
-            aria-label="Categories"
+            aria-label="Filter articles by category group"
           >
             <button
-              role="tab"
-              aria-selected={!activeGroup && !chosenCategory}
+              aria-pressed={!activeGroup && !chosenCategory}
               onClick={() => selectGroup("")}
-              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
+              className={`min-h-11 px-4 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
                 !activeGroup && !chosenCategory
                   ? "bg-aqua-500 text-white shadow-sm"
                   : "bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400"
@@ -216,68 +272,46 @@ export default function PostsPageClient({
             >
               {strings.posts.title}
             </button>
-            {CATEGORY_GROUPS.map((group) => (
+            {CATEGORY_GROUPS.map((groupItem) => (
               <button
-                key={group.id}
-                role="tab"
-                aria-selected={activeGroup === group.id}
-                onClick={() => selectGroup(group.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                  activeGroup === group.id
+                key={groupItem.id}
+                aria-pressed={activeGroup === groupItem.id}
+                onClick={() => selectGroup(groupItem.id)}
+                className={`min-h-11 px-4 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
+                  activeGroup === groupItem.id
                     ? "bg-aqua-500 text-white shadow-sm"
                     : "bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400"
                 }`}
               >
-                {group.label}
+                {groupItem.label}
               </button>
             ))}
           </div>
 
-          {/* All categories popover */}
-          <div className="relative shrink-0" ref={popoverRef}>
-            <button
-              onClick={() => setAllCatsOpen((o) => !o)}
-              aria-expanded={allCatsOpen}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400 transition-all"
-            >
-              <SlidersHorizontal className="w-4 h-4" />
-              All categories
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${allCatsOpen ? "rotate-180" : ""}`} />
-            </button>
-            {allCatsOpen && (
-              <div className="absolute right-0 top-full mt-2 w-72 max-h-96 overflow-y-auto bg-white dark:bg-slate-800 rounded-2xl border border-gray-200 dark:border-slate-700 shadow-xl z-50 p-2">
-                <p className="px-3 pt-2 pb-1 text-xs font-semibold text-gray-400 uppercase tracking-wider">Categories</p>
-                {categories.map((cat: any) => (
-                  <Link
-                    key={cat._id}
-                    href={`/category/${cat.slug.current}`}
-                    className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl text-sm text-gray-700 dark:text-slate-300 hover:bg-aqua-50 dark:hover:bg-aqua-950/50 hover:text-aqua-600 dark:hover:text-aqua-400 transition-colors"
-                  >
-                    <span className="truncate">{cat.title}</span>
-                    {chosenCategory === cat.slug.current && <Check className="w-4 h-4 text-aqua-500 shrink-0" />}
-                  </Link>
-                ))}
-                {categories.length === 0 && (
-                  <p className="px-3 py-2 text-sm text-gray-500">No categories yet.</p>
-                )}
-              </div>
-            )}
-          </div>
+          <button
+            onClick={() => setAllCatsOpen(true)}
+            aria-haspopup="dialog"
+            aria-expanded={allCatsOpen}
+            className="inline-flex items-center gap-1.5 px-4 min-h-11 rounded-full text-sm font-medium bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-aqua-400 hover:text-aqua-600 dark:hover:text-aqua-400 transition-all shrink-0"
+          >
+            <SlidersHorizontal className="w-4 h-4" />
+            All categories
+          </button>
         </div>
 
         {/* Posts Grid */}
         {paged.length > 0 ? (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {paged.map((post: any) => (
-                <PostCard key={post._id} post={post} />
+              {paged.map((post: any, index: number) => (
+                <PostCard key={post._id} post={post} priority={index < 3} />
               ))}
             </div>
             {hasMore && (
               <div className="mt-10 text-center">
                 <button
                   onClick={loadMore}
-                  className="inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-medium rounded-xl hover:opacity-90 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 min-h-11 gradient-bg text-white font-medium rounded-xl hover:opacity-90 transition-all"
                 >
                   {strings.posts.loadMore}
                 </button>
@@ -296,6 +330,14 @@ export default function PostsPageClient({
           </div>
         )}
       </div>
+
+      <CategoryFilterModal
+        open={allCatsOpen}
+        options={categoryOptions}
+        selectedCategory={chosenCategory}
+        onSelect={selectCategory}
+        onClose={() => setAllCatsOpen(false)}
+      />
     </div>
   )
 }
