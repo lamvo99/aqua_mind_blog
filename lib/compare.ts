@@ -24,6 +24,16 @@ export const COMPARE_FIELDS: Record<string, CompareField[]> = {
     { key: "schooling", label: "Schooling", extract: (i) => str(i.schooling) },
     { key: "difficulty", label: "Difficulty", extract: (i) => str(i.difficulty) },
   ],
+  invertebrate: [
+    { key: "group", label: "Group", extract: (i) => str(i.group) },
+    { key: "waterType", label: "Water type", extract: (i) => str(i.waterType) },
+    { key: "sizeCm", label: "Adult size", extract: (i) => str(i.sizeCm) + " cm" },
+    { key: "temp", label: "Temperature", extract: (i) => range(i.tempMinC, i.tempMaxC, "°C") },
+    { key: "ph", label: "pH range", extract: (i) => range(i.phMin, i.phMax) },
+    { key: "diet", label: "Diet", extract: (i) => str(i.diet) },
+    { key: "temperament", label: "Temperament", extract: (i) => str(i.temperament) },
+    { key: "difficulty", label: "Difficulty", extract: (i) => str(i.difficulty) },
+  ],
   plant: [
     { key: "light", label: "Light", extract: (i) => str(i.light) },
     { key: "co2", label: "CO₂", extract: (i) => str(i.co2) },

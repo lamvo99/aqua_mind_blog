@@ -9,7 +9,7 @@ import { urlFor } from "@/lib/sanity"
 
 interface WikiItem {
   _id: string
-  _type: "species" | "plant" | "coral" | "equipment"
+  _type: "species" | "invertebrate" | "plant" | "coral" | "equipment"
   name: string
   scientificName?: string
   slug: { current: string }
@@ -17,6 +17,7 @@ interface WikiItem {
   mainImage?: any
   difficulty?: string
   origin?: string
+  group?: string
   light?: string
   sizeCm?: number
   tempMinC?: number
@@ -29,12 +30,13 @@ interface WikiItem {
 
 const TYPE_LABELS: Record<WikiItem["_type"], string> = {
   species: "Fish",
+  invertebrate: "Invertebrates",
   plant: "Plants",
   coral: "Corals",
   equipment: "Equipment",
 }
 
-const TYPE_ORDER: WikiItem["_type"][] = ["species", "plant", "coral", "equipment"]
+const TYPE_ORDER: WikiItem["_type"][] = ["species", "invertebrate", "plant", "coral", "equipment"]
 
 export default function WikiHub({ items }: { items: WikiItem[] }) {
   const router = useRouter()
@@ -48,6 +50,7 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
   const [query, setQuery] = useState(searchParams.get("q") || "")
   const [difficulty, setDifficulty] = useState(searchParams.get("diff") || "all")
   const [origin, setOrigin] = useState(searchParams.get("origin") || "all")
+  const [group, setGroup] = useState(searchParams.get("group") || "all")
   const [sheetOpen, setSheetOpen] = useState(false)
 
   useEffect(() => {
@@ -59,32 +62,36 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
     }
   }, [sheetOpen])
 
-  const syncUrl = (t: string, q: string, d: string, o: string) => {
+  const syncUrl = (t: string, q: string, d: string, o: string, g: string) => {
     const params = new URLSearchParams()
     if (t !== "all") params.set("type", t)
     if (q) params.set("q", q)
     if (d !== "all") params.set("diff", d)
     if (o !== "all") params.set("origin", o)
+    if (g !== "all") params.set("group", g)
     const qs = params.toString()
     router.replace(`/wiki${qs ? `?${qs}` : ""}`, { scroll: false })
   }
 
-  const setFilter = (next: { type?: string; q?: string; diff?: string; origin?: string }) => {
+  const setFilter = (next: { type?: string; q?: string; diff?: string; origin?: string; group?: string }) => {
     const t = next.type ?? type
     const q = next.q ?? query
     const d = next.diff ?? difficulty
     const o = next.origin ?? origin
+    const g = next.group ?? group
     if (next.type !== undefined) setType(next.type as typeof type)
     if (next.q !== undefined) setQuery(next.q)
     if (next.diff !== undefined) setDifficulty(next.diff)
     if (next.origin !== undefined) setOrigin(next.origin)
-    syncUrl(t, q, d, o)
+    if (next.group !== undefined) setGroup(next.group)
+    syncUrl(t, q, d, o, g)
   }
 
   const facetOptions = useMemo(() => {
     const difficulties = Array.from(new Set(items.map((i) => i.difficulty).filter(Boolean))) as string[]
     const origins = Array.from(new Set(items.filter((i) => i._type === "species").map((i) => i.origin).filter(Boolean))) as string[]
-    return { difficulties: difficulties.sort(), origins: origins.sort() }
+    const groups = Array.from(new Set(items.filter((i) => i._type === "invertebrate").map((i) => i.group).filter(Boolean))) as string[]
+    return { difficulties: difficulties.sort(), origins: origins.sort(), groups: groups.sort() }
   }, [items])
 
   const counts = useMemo(() => {
@@ -99,15 +106,16 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
       if (type !== "all" && i._type !== type) return false
       if (difficulty !== "all" && i.difficulty !== difficulty) return false
       if (origin !== "all" && i.origin !== origin) return false
+      if (group !== "all" && i.group !== group) return false
       if (q) {
         const hay = `${i.name} ${i.scientificName || ""} ${i.excerpt || ""}`.toLowerCase()
         if (!hay.includes(q)) return false
       }
       return true
     })
-  }, [items, type, query, difficulty, origin])
+  }, [items, type, query, difficulty, origin, group])
 
-  const activeFilterCount = (difficulty !== "all" ? 1 : 0) + (origin !== "all" ? 1 : 0)
+  const activeFilterCount = (difficulty !== "all" ? 1 : 0) + (origin !== "all" ? 1 : 0) + (group !== "all" ? 1 : 0)
 
   const tempRange = (item: WikiItem) =>
     item.tempMinC && item.tempMaxC ? `${item.tempMinC}–${item.tempMaxC}°C` : null
@@ -139,6 +147,19 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
           <option value="all">Origin: all</option>
           {facetOptions.origins.map((o) => (
             <option key={o} value={o}>{o}</option>
+          ))}
+        </select>
+      )}
+      {facetOptions.groups.length > 0 && (
+        <select
+          value={group}
+          onChange={(e) => setFilter({ group: e.target.value })}
+          aria-label="Filter by group"
+          className="w-full sm:w-auto px-3 py-2.5 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-sm text-gray-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-aqua-500/50"
+        >
+          <option value="all">Group: all</option>
+          {facetOptions.groups.map((g) => (
+            <option key={g} value={g}>{g}</option>
           ))}
         </select>
       )}
@@ -232,7 +253,7 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-3xl">
-                    {item._type === "species" ? "🐠" : item._type === "plant" ? "🌿" : item._type === "coral" ? "🪸" : "⚙️"}
+                    {item._type === "species" ? "🐠" : item._type === "invertebrate" ? "🦐" : item._type === "plant" ? "🌿" : item._type === "coral" ? "🪸" : "⚙️"}
                   </div>
                 )}
                 <span className="absolute top-2 left-2 px-2 py-0.5 bg-black/50 backdrop-blur text-white text-[11px] font-medium rounded-md">

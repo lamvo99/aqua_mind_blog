@@ -11,6 +11,7 @@ const LIST_PATHS = [
   { path: "/wiki", priority: 0.8, frequency: "weekly" },
   { path: "/start-here", priority: 0.8, frequency: "monthly" },
   { path: "/species", priority: 0.6, frequency: "weekly" },
+  { path: "/invertebrates", priority: 0.6, frequency: "weekly" },
   { path: "/plants", priority: 0.6, frequency: "weekly" },
   { path: "/corals", priority: 0.6, frequency: "weekly" },
   { path: "/equipment", priority: 0.6, frequency: "weekly" },
@@ -41,6 +42,7 @@ const LIST_PATHS = [
 const TYPE_SEGMENTS: Record<string, string> = {
   post: "posts",
   species: "species",
+  invertebrate: "invertebrates",
   plant: "plants",
   coral: "corals",
   equipment: "equipment",
@@ -51,6 +53,7 @@ const TYPE_SEGMENTS: Record<string, string> = {
 const TYPE_PRIORITY: Record<string, number> = {
   post: 0.8,
   species: 0.7,
+  invertebrate: 0.7,
   plant: 0.7,
   coral: 0.7,
   equipment: 0.7,

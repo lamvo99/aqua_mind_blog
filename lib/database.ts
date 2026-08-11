@@ -1,6 +1,6 @@
 import { client } from './sanity'
 
-export type DatabaseType = 'species' | 'plant' | 'coral' | 'equipment'
+export type DatabaseType = 'species' | 'invertebrate' | 'plant' | 'coral' | 'equipment'
 
 export interface DatabaseItem {
   _id: string
@@ -54,6 +54,11 @@ const COMPARE_PROJECTIONS: Record<DatabaseType, string> = {
     tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
     diet, temperament, waterZone, schooling, difficulty
   `,
+  invertebrate: `
+    _id, _type, name, slug, mainImage, group, waterType, sizeCm,
+    tempMinC, tempMaxC, phMin, phMax,
+    diet, temperament, difficulty
+  `,
   plant: `
     _id, _type, name, slug, mainImage,
     light, co2, growth, difficulty, placement,
@@ -84,6 +89,7 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
       _id, _type, name, scientificName, slug, excerpt, mainImage,
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty,
+      group, waterType,
       light, co2, growth, placement, propagation,
       flow, aggression, reefCompatibility,
       category, brand, model, flowRateLh, powerW, tankSizeMaxL, pros, cons,

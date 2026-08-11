@@ -1,11 +1,12 @@
 import { client } from "./sanity"
 
-export type SearchType = "all" | "article" | "fish" | "plant" | "coral" | "equipment" | "tool"
+export type SearchType = "all" | "article" | "fish" | "plant" | "coral" | "equipment" | "invertebrate" | "tool"
 
 export const searchTypes: { value: SearchType; label: string }[] = [
   { value: "all", label: "All" },
   { value: "article", label: "Articles" },
   { value: "fish", label: "Fish" },
+  { value: "invertebrate", label: "Invertebrates" },
   { value: "plant", label: "Plants" },
   { value: "coral", label: "Corals" },
   { value: "equipment", label: "Equipment" },
@@ -24,6 +25,7 @@ export interface SearchItem {
 const TYPE_TO_SCHEMA: Record<Exclude<SearchType, "all">, string> = {
   article: "post",
   fish: "species",
+  invertebrate: "invertebrate",
   plant: "plant",
   coral: "coral",
   equipment: "equipment",
@@ -44,7 +46,7 @@ function buildQuery(type: SearchType, q: string): string {
         ...*[_type == "post" && (title match $q + "*" || excerpt match $q + "*")] | order(publishedAt desc) [0...8] {
           _id, _type, title, slug, excerpt, mainImage
         },
-        ...*[_type in ["species", "plant", "coral", "equipment", "tool"] && title match $q + "*"] [0...4] {
+        ...*[_type in ["species", "invertebrate", "plant", "coral", "equipment", "tool"] && title match $q + "*"] [0...4] {
           _id, _type, title, slug, excerpt, mainImage
         }
       ]`
@@ -67,6 +69,7 @@ export async function searchContent(q: string, type: SearchType): Promise<Search
 export const typeLabels: Record<string, string> = {
   post: "Article",
   species: "Fish",
+  invertebrate: "Invertebrate",
   plant: "Plant",
   coral: "Coral",
   equipment: "Equipment",

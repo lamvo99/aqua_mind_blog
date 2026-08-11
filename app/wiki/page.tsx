@@ -5,16 +5,17 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
-  title: "Aquarium Wiki — Fish, Plants, Corals & Equipment — AquaMind",
-  description: "Search the AquaMind wiki across 100+ fish species, aquatic plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
+  title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment — AquaMind",
+  description: "Search the AquaMind wiki across 140+ fish species, aquatic invertebrates, plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
   alternates: { canonical: "https://aquamind.life/wiki" },
 }
 
 export const revalidate = 300
 
 export default async function WikiPage() {
-  const [species, plants, corals, equipment] = await Promise.all([
+  const [species, invertebrates, plants, corals, equipment] = await Promise.all([
     getDatabaseCompareItems("species"),
+    getDatabaseCompareItems("invertebrate"),
     getDatabaseCompareItems("plant"),
     getDatabaseCompareItems("coral"),
     getDatabaseCompareItems("equipment"),
@@ -22,6 +23,7 @@ export default async function WikiPage() {
 
   const items = [
     ...species.map((s: any) => ({ ...s, _type: "species", href: `/species/${s.slug.current}` })),
+    ...invertebrates.map((i: any) => ({ ...i, _type: "invertebrate", href: `/invertebrates/${i.slug.current}` })),
     ...plants.map((p: any) => ({ ...p, _type: "plant", href: `/plants/${p.slug.current}` })),
     ...corals.map((c: any) => ({ ...c, _type: "coral", href: `/corals/${c.slug.current}` })),
     ...equipment.map((e: any) => ({ ...e, _type: "equipment", href: `/equipment/${e.slug.current}` })),
@@ -30,11 +32,11 @@ export default async function WikiPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ label: "Wiki" }])} />
-      <JsonLd
+          <JsonLd
         data={collectionPageSchema({
           name: "Aquarium Wiki",
           description:
-            "Search fish species, aquatic plants, corals and aquarium equipment with care parameters.",
+            "Search fish species, aquatic invertebrates, corals and aquarium equipment with care parameters.",
           url: "https://aquamind.life/wiki",
           items: items.slice(0, 100).map((i) => ({
             title: i.name,
@@ -51,8 +53,8 @@ export default async function WikiPage() {
             Aquarium Wiki
           </h1>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed max-w-2xl">
-            One search across fish, plants, corals and equipment — filter by type, difficulty,
-            origin or lighting, then open any entry for full care parameters.
+            One search across fish, invertebrates, plants, corals and equipment — filter by type,
+            difficulty, origin or group, then open any entry for full care parameters.
           </p>
         </div>
         <WikiHub items={items} />

@@ -14,7 +14,7 @@ interface DatabaseGridProps {
   hrefPrefix: string
   filterKeys?: string[]
   compareItems?: DatabaseItem[]
-  compareType?: "species" | "plant" | "coral" | "equipment"
+  compareType?: "species" | "invertebrate" | "plant" | "coral" | "equipment"
 }
 
 export default function DatabaseGrid({ items, hrefPrefix, filterKeys = [], compareItems = [], compareType }: DatabaseGridProps) {

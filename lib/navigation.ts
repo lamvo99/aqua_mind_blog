@@ -16,8 +16,9 @@ export const mainNav: NavItem[] = [
 ]
 
 export const databaseNav: NavItem[] = [
-  { href: "/wiki", label: "Wiki", description: "Search fish, plants, corals & equipment at once" },
+  { href: "/wiki", label: "Wiki", description: "Search fish, invertebrates, plants, corals & equipment at once" },
   { href: "/species", label: "Fish", description: "Species profiles with care parameters" },
+  { href: "/invertebrates", label: "Invertebrates", description: "Shrimp, snails, crabs & reef inverts" },
   { href: "/plants", label: "Plants", description: "Aquatic plant database" },
   { href: "/corals", label: "Corals", description: "Reef coral database" },
   { href: "/equipment", label: "Equipment", description: "Filters, lights, pumps & more" },
