@@ -1,0 +1,851 @@
+{
+  "generatedAt": "2026-08-11T08:47:05.684Z",
+  "totalRawDocs": 120,
+  "indexed": 120,
+  "blacklist": [
+    "acanthastrea lordhowensis",
+    "acropora millepora",
+    "alternanthera reineckii",
+    "amphiprion ocellaris",
+    "amphiprion percula",
+    "ancistrus cf. cirrhosus",
+    "andinoacara pulcher",
+    "anubias barteri",
+    "anubias barteri var. nana",
+    "aphyosemion australe",
+    "apistogramma cacatuoides",
+    "aplocheilus lineatus",
+    "betta smaragdina",
+    "betta splendens",
+    "blastomussa wellsi",
+    "blyxa japonica",
+    "boraras brigittae",
+    "botia striata",
+    "bucephalandra spp.",
+    "cabomba caroliniana",
+    "carassius auratus",
+    "catalaphyllia jardinei",
+    "caulastrea furcata",
+    "celestichthys erythromicron",
+    "centropyge loricula",
+    "ceratophyllum demersum",
+    "chromis viridis",
+    "chromobotia macracanthus",
+    "corydoras aeneus",
+    "corydoras paleatus",
+    "corydoras panda",
+    "corydoras pygmaeus",
+    "corydoras trilineatus",
+    "cryptocoryne balansae",
+    "cryptocoryne beckettii",
+    "cryptocoryne wendtii",
+    "danio margaritatus",
+    "danio rerio",
+    "duncanopsammia axifuga",
+    "echinodorus grisebachii",
+    "echinodorus tenellus",
+    "egeria densa",
+    "eleocharis parvula",
+    "euphyllia ancora",
+    "favia favus",
+    "galaxea fascicularis",
+    "garra rufa",
+    "gasteropelecus sternicla",
+    "goniopora stokesi",
+    "gymnocorymbus ternetzi",
+    "hemianthus callitrichoides",
+    "hemigrammus rhodostomus",
+    "hydrocotyle tripartita",
+    "hygrophila difformis",
+    "hyphessobrycon amandae",
+    "hyphessobrycon eques",
+    "hyphessobrycon herbertaxelrodi",
+    "hyphessobrycon megalopterus",
+    "hyphessobrycon pulchripinnis",
+    "hypostomus plecostomus",
+    "kryptopterus vitreolus",
+    "labidochromis caeruleus",
+    "limnophila aromatica",
+    "limnophila sessiliflora",
+    "ludwigia repens",
+    "marsilea hirsuta",
+    "melanotaenia boesemani",
+    "melanotaenia praecox",
+    "micranthemum tweediei",
+    "microdevario kubotai",
+    "microsorum pteropus",
+    "mikrogeophagus altispinosus",
+    "mikrogeophagus ramirezi",
+    "montipora capricornis",
+    "nannostomus beckfordi",
+    "nematobrycon palmeri",
+    "otocinclus affinis",
+    "panaqolus maccus",
+    "pangio kuhlii",
+    "paracheirodon axelrodi",
+    "paracheirodon innesi",
+    "pelvicachromis pulcher",
+    "pethia conchonius",
+    "pethia padamya",
+    "phenacogrammus interruptus",
+    "pocillopora damicornis",
+    "poecilia reticulata",
+    "poecilia sphenops",
+    "poecilia wingei",
+    "pogostemon stellatus",
+    "pseudanthias squamipinnis",
+    "pseudotropheus zebra",
+    "pterapogon kauderni",
+    "pterophyllum scalare",
+    "puntigrus tetrazona",
+    "puntius titteya",
+    "ricordea florida",
+    "rotala indica",
+    "rotala rotundifolia",
+    "sagittaria subulata",
+    "sarcophyton spp.",
+    "seriatopora hystrix",
+    "staurogyne repens",
+    "symphysodon aequifasciatus",
+    "taxiphyllum barbieri",
+    "thorichthys meeki",
+    "trachyphyllia geoffroyi",
+    "trichogaster chuna",
+    "trichogaster lalius",
+    "trichopodus leerii",
+    "trichopodus trichopterus",
+    "trichopsis pumila",
+    "trigonostigma espei",
+    "trigonostigma heteromorpha",
+    "tropheus duboisi",
+    "vallisneria spiralis",
+    "xiphophorus hellerii",
+    "xiphophorus maculatus",
+    "zebrasoma flavescens",
+    "zoanthus spp."
+  ],
+  "detail": [
+    {
+      "scientificName": "Anubias barteri var. nana",
+      "key": "anubias barteri var. nana",
+      "_type": "plant",
+      "slug": "anubias-nana-petite"
+    },
+    {
+      "scientificName": "Galaxea fascicularis",
+      "key": "galaxea fascicularis",
+      "_type": "coral",
+      "slug": "galaxea"
+    },
+    {
+      "scientificName": "Pocillopora damicornis",
+      "key": "pocillopora damicornis",
+      "_type": "coral",
+      "slug": "cauliflower-coral"
+    },
+    {
+      "scientificName": "Seriatopora hystrix",
+      "key": "seriatopora hystrix",
+      "_type": "coral",
+      "slug": "bird-s-nest-coral"
+    },
+    {
+      "scientificName": "Favia favus",
+      "key": "favia favus",
+      "_type": "coral",
+      "slug": "honeycomb-brain-coral"
+    },
+    {
+      "scientificName": "Catalaphyllia jardinei",
+      "key": "catalaphyllia jardinei",
+      "_type": "coral",
+      "slug": "elegance-coral"
+    },
+    {
+      "scientificName": "Trachyphyllia geoffroyi",
+      "key": "trachyphyllia geoffroyi",
+      "_type": "coral",
+      "slug": "open-brain-coral"
+    },
+    {
+      "scientificName": "Staurogyne repens",
+      "key": "staurogyne repens",
+      "_type": "plant",
+      "slug": "staurogyne-repens"
+    },
+    {
+      "scientificName": "Acanthastrea lordhowensis",
+      "key": "acanthastrea lordhowensis",
+      "_type": "coral",
+      "slug": "acan-lords"
+    },
+    {
+      "scientificName": "Blastomussa wellsi",
+      "key": "blastomussa wellsi",
+      "_type": "coral",
+      "slug": "blastomussa"
+    },
+    {
+      "scientificName": "Caulastrea furcata",
+      "key": "caulastrea furcata",
+      "_type": "coral",
+      "slug": "candy-cane-coral"
+    },
+    {
+      "scientificName": "Duncanopsammia axifuga",
+      "key": "duncanopsammia axifuga",
+      "_type": "coral",
+      "slug": "duncan-coral"
+    },
+    {
+      "scientificName": "Goniopora stokesi",
+      "key": "goniopora stokesi",
+      "_type": "coral",
+      "slug": "goniopora"
+    },
+    {
+      "scientificName": "Euphyllia ancora",
+      "key": "euphyllia ancora",
+      "_type": "coral",
+      "slug": "hammer-coral"
+    },
+    {
+      "scientificName": "Montipora capricornis",
+      "key": "montipora capricornis",
+      "_type": "coral",
+      "slug": "montipora-capricornis"
+    },
+    {
+      "scientificName": "Ricordea florida",
+      "key": "ricordea florida",
+      "_type": "coral",
+      "slug": "ricordea-mushroom"
+    },
+    {
+      "scientificName": "Acropora millepora",
+      "key": "acropora millepora",
+      "_type": "coral",
+      "slug": "staghorn-acropora"
+    },
+    {
+      "scientificName": "Sarcophyton spp.",
+      "key": "sarcophyton spp.",
+      "_type": "coral",
+      "slug": "toadstool-leather"
+    },
+    {
+      "scientificName": "Zoanthus spp.",
+      "key": "zoanthus spp.",
+      "_type": "coral",
+      "slug": "zoanthids"
+    },
+    {
+      "scientificName": "Corydoras pygmaeus",
+      "key": "corydoras pygmaeus",
+      "_type": "species",
+      "slug": "corydoras-pygmaeus"
+    },
+    {
+      "scientificName": "Trichogaster chuna",
+      "key": "trichogaster chuna",
+      "_type": "species",
+      "slug": "trichogaster-chuna"
+    },
+    {
+      "scientificName": "Microdevario kubotai",
+      "key": "microdevario kubotai",
+      "_type": "species",
+      "slug": "microdevario-kubotai"
+    },
+    {
+      "scientificName": "Boraras brigittae",
+      "key": "boraras brigittae",
+      "_type": "species",
+      "slug": "boraras-brigittae"
+    },
+    {
+      "scientificName": "Garra rufa",
+      "key": "garra rufa",
+      "_type": "species",
+      "slug": "garra-rufa"
+    },
+    {
+      "scientificName": "Mikrogeophagus ramirezi",
+      "key": "mikrogeophagus ramirezi",
+      "_type": "species",
+      "slug": "mikrogeophagus-ramirezi"
+    },
+    {
+      "scientificName": "Nannostomus beckfordi",
+      "key": "nannostomus beckfordi",
+      "_type": "species",
+      "slug": "nannostomus-beckfordi"
+    },
+    {
+      "scientificName": "Hemigrammus rhodostomus",
+      "key": "hemigrammus rhodostomus",
+      "_type": "species",
+      "slug": "hemigrammus-rhodostomus"
+    },
+    {
+      "scientificName": "Gasteropelecus sternicla",
+      "key": "gasteropelecus sternicla",
+      "_type": "species",
+      "slug": "gasteropelecus-sternicla"
+    },
+    {
+      "scientificName": "Betta smaragdina",
+      "key": "betta smaragdina",
+      "_type": "species",
+      "slug": "betta-smaragdina"
+    },
+    {
+      "scientificName": "Panaqolus maccus",
+      "key": "panaqolus maccus",
+      "_type": "species",
+      "slug": "panaqolus-maccus"
+    },
+    {
+      "scientificName": "Tropheus duboisi",
+      "key": "tropheus duboisi",
+      "_type": "species",
+      "slug": "tropheus-duboisi"
+    },
+    {
+      "scientificName": "Centropyge loricula",
+      "key": "centropyge loricula",
+      "_type": "species",
+      "slug": "centropyge-loricula"
+    },
+    {
+      "scientificName": "Amphiprion percula",
+      "key": "amphiprion percula",
+      "_type": "species",
+      "slug": "amphiprion-percula"
+    },
+    {
+      "scientificName": "Pterapogon kauderni",
+      "key": "pterapogon kauderni",
+      "_type": "species",
+      "slug": "pterapogon-kauderni"
+    },
+    {
+      "scientificName": "Cryptocoryne beckettii",
+      "key": "cryptocoryne beckettii",
+      "_type": "plant",
+      "slug": "cryptocoryne-beckettii"
+    },
+    {
+      "scientificName": "Hydrocotyle tripartita",
+      "key": "hydrocotyle tripartita",
+      "_type": "plant",
+      "slug": "hydrocotyle-tripartita"
+    },
+    {
+      "scientificName": "Echinodorus tenellus",
+      "key": "echinodorus tenellus",
+      "_type": "plant",
+      "slug": "pygmy-chain-sword"
+    },
+    {
+      "scientificName": "Pogostemon stellatus",
+      "key": "pogostemon stellatus",
+      "_type": "plant",
+      "slug": "pogostemon-stellatus"
+    },
+    {
+      "scientificName": "Rotala indica",
+      "key": "rotala indica",
+      "_type": "plant",
+      "slug": "rotala-indica"
+    },
+    {
+      "scientificName": "Egeria densa",
+      "key": "egeria densa",
+      "_type": "plant",
+      "slug": "anacharis"
+    },
+    {
+      "scientificName": "Limnophila aromatica",
+      "key": "limnophila aromatica",
+      "_type": "plant",
+      "slug": "rice-paddy-herb"
+    },
+    {
+      "scientificName": "Blyxa japonica",
+      "key": "blyxa japonica",
+      "_type": "plant",
+      "slug": "blyxa-japonica"
+    },
+    {
+      "scientificName": "Alternanthera reineckii",
+      "key": "alternanthera reineckii",
+      "_type": "plant",
+      "slug": "alternanthera-reineckii"
+    },
+    {
+      "scientificName": "Echinodorus grisebachii",
+      "key": "echinodorus grisebachii",
+      "_type": "plant",
+      "slug": "amazon-sword"
+    },
+    {
+      "scientificName": "Limnophila sessiliflora",
+      "key": "limnophila sessiliflora",
+      "_type": "plant",
+      "slug": "ambulia"
+    },
+    {
+      "scientificName": "Anubias barteri",
+      "key": "anubias barteri",
+      "_type": "plant",
+      "slug": "anubias-barteri"
+    },
+    {
+      "scientificName": "Bucephalandra spp.",
+      "key": "bucephalandra spp.",
+      "_type": "plant",
+      "slug": "bucephalandra"
+    },
+    {
+      "scientificName": "Cabomba caroliniana",
+      "key": "cabomba caroliniana",
+      "_type": "plant",
+      "slug": "cabomba-caroliniana"
+    },
+    {
+      "scientificName": "Cryptocoryne balansae",
+      "key": "cryptocoryne balansae",
+      "_type": "plant",
+      "slug": "cryptocoryne-balansae"
+    },
+    {
+      "scientificName": "Cryptocoryne wendtii",
+      "key": "cryptocoryne wendtii",
+      "_type": "plant",
+      "slug": "cryptocoryne-wendtii"
+    },
+    {
+      "scientificName": "Hemianthus callitrichoides",
+      "key": "hemianthus callitrichoides",
+      "_type": "plant",
+      "slug": "dwarf-baby-tears"
+    },
+    {
+      "scientificName": "Eleocharis parvula",
+      "key": "eleocharis parvula",
+      "_type": "plant",
+      "slug": "dwarf-hairgrass"
+    },
+    {
+      "scientificName": "Sagittaria subulata",
+      "key": "sagittaria subulata",
+      "_type": "plant",
+      "slug": "dwarf-sagittaria"
+    },
+    {
+      "scientificName": "Ceratophyllum demersum",
+      "key": "ceratophyllum demersum",
+      "_type": "plant",
+      "slug": "hornwort"
+    },
+    {
+      "scientificName": "Microsorum pteropus",
+      "key": "microsorum pteropus",
+      "_type": "plant",
+      "slug": "java-fern"
+    },
+    {
+      "scientificName": "Taxiphyllum barbieri",
+      "key": "taxiphyllum barbieri",
+      "_type": "plant",
+      "slug": "java-moss"
+    },
+    {
+      "scientificName": "Ludwigia repens",
+      "key": "ludwigia repens",
+      "_type": "plant",
+      "slug": "ludwigia-repens"
+    },
+    {
+      "scientificName": "Marsilea hirsuta",
+      "key": "marsilea hirsuta",
+      "_type": "plant",
+      "slug": "marsilea-hirsuta"
+    },
+    {
+      "scientificName": "Micranthemum tweediei",
+      "key": "micranthemum tweediei",
+      "_type": "plant",
+      "slug": "monte-carlo"
+    },
+    {
+      "scientificName": "Rotala rotundifolia",
+      "key": "rotala rotundifolia",
+      "_type": "plant",
+      "slug": "rotala-rotundifolia"
+    },
+    {
+      "scientificName": "Vallisneria spiralis",
+      "key": "vallisneria spiralis",
+      "_type": "plant",
+      "slug": "vallisneria-spiralis"
+    },
+    {
+      "scientificName": "Hygrophila difformis",
+      "key": "hygrophila difformis",
+      "_type": "plant",
+      "slug": "water-wisteria"
+    },
+    {
+      "scientificName": "Amphiprion ocellaris",
+      "key": "amphiprion ocellaris",
+      "_type": "species",
+      "slug": "amphiprion-ocellaris"
+    },
+    {
+      "scientificName": "Ancistrus cf. cirrhosus",
+      "key": "ancistrus cf. cirrhosus",
+      "_type": "species",
+      "slug": "ancistrus-cf-cirrhosus"
+    },
+    {
+      "scientificName": "Andinoacara pulcher",
+      "key": "andinoacara pulcher",
+      "_type": "species",
+      "slug": "andinoacara-pulcher"
+    },
+    {
+      "scientificName": "Aphyosemion australe",
+      "key": "aphyosemion australe",
+      "_type": "species",
+      "slug": "aphyosemion-australe"
+    },
+    {
+      "scientificName": "Apistogramma cacatuoides",
+      "key": "apistogramma cacatuoides",
+      "_type": "species",
+      "slug": "apistogramma-cacatuoides"
+    },
+    {
+      "scientificName": "Aplocheilus lineatus",
+      "key": "aplocheilus lineatus",
+      "_type": "species",
+      "slug": "aplocheilus-lineatus"
+    },
+    {
+      "scientificName": "Betta splendens",
+      "key": "betta splendens",
+      "_type": "species",
+      "slug": "betta-splendens"
+    },
+    {
+      "scientificName": "Botia striata",
+      "key": "botia striata",
+      "_type": "species",
+      "slug": "botia-striata"
+    },
+    {
+      "scientificName": "Carassius auratus",
+      "key": "carassius auratus",
+      "_type": "species",
+      "slug": "carassius-auratus"
+    },
+    {
+      "scientificName": "Celestichthys erythromicron",
+      "key": "celestichthys erythromicron",
+      "_type": "species",
+      "slug": "celestichthys-erythromicron"
+    },
+    {
+      "scientificName": "Chromis viridis",
+      "key": "chromis viridis",
+      "_type": "species",
+      "slug": "chromis-viridis"
+    },
+    {
+      "scientificName": "Chromobotia macracanthus",
+      "key": "chromobotia macracanthus",
+      "_type": "species",
+      "slug": "chromobotia-macracanthus"
+    },
+    {
+      "scientificName": "Corydoras aeneus",
+      "key": "corydoras aeneus",
+      "_type": "species",
+      "slug": "corydoras-aeneus"
+    },
+    {
+      "scientificName": "Corydoras paleatus",
+      "key": "corydoras paleatus",
+      "_type": "species",
+      "slug": "corydoras-paleatus"
+    },
+    {
+      "scientificName": "Corydoras panda",
+      "key": "corydoras panda",
+      "_type": "species",
+      "slug": "corydoras-panda"
+    },
+    {
+      "scientificName": "Corydoras trilineatus",
+      "key": "corydoras trilineatus",
+      "_type": "species",
+      "slug": "corydoras-trilineatus"
+    },
+    {
+      "scientificName": "Danio margaritatus",
+      "key": "danio margaritatus",
+      "_type": "species",
+      "slug": "danio-margaritatus"
+    },
+    {
+      "scientificName": "Danio rerio",
+      "key": "danio rerio",
+      "_type": "species",
+      "slug": "danio-rerio"
+    },
+    {
+      "scientificName": "Gymnocorymbus ternetzi",
+      "key": "gymnocorymbus ternetzi",
+      "_type": "species",
+      "slug": "gymnocorymbus-ternetzi"
+    },
+    {
+      "scientificName": "Hyphessobrycon amandae",
+      "key": "hyphessobrycon amandae",
+      "_type": "species",
+      "slug": "hyphessobrycon-amandae"
+    },
+    {
+      "scientificName": "Hyphessobrycon eques",
+      "key": "hyphessobrycon eques",
+      "_type": "species",
+      "slug": "hyphessobrycon-eques"
+    },
+    {
+      "scientificName": "Hyphessobrycon herbertaxelrodi",
+      "key": "hyphessobrycon herbertaxelrodi",
+      "_type": "species",
+      "slug": "hyphessobrycon-herbertaxelrodi"
+    },
+    {
+      "scientificName": "Hyphessobrycon megalopterus",
+      "key": "hyphessobrycon megalopterus",
+      "_type": "species",
+      "slug": "hyphessobrycon-megalopterus"
+    },
+    {
+      "scientificName": "Hyphessobrycon pulchripinnis",
+      "key": "hyphessobrycon pulchripinnis",
+      "_type": "species",
+      "slug": "hyphessobrycon-pulchripinnis"
+    },
+    {
+      "scientificName": "Hypostomus plecostomus",
+      "key": "hypostomus plecostomus",
+      "_type": "species",
+      "slug": "hypostomus-plecostomus"
+    },
+    {
+      "scientificName": "Kryptopterus vitreolus",
+      "key": "kryptopterus vitreolus",
+      "_type": "species",
+      "slug": "kryptopterus-vitreolus"
+    },
+    {
+      "scientificName": "Labidochromis caeruleus",
+      "key": "labidochromis caeruleus",
+      "_type": "species",
+      "slug": "labidochromis-caeruleus"
+    },
+    {
+      "scientificName": "Melanotaenia boesemani",
+      "key": "melanotaenia boesemani",
+      "_type": "species",
+      "slug": "melanotaenia-boesemani"
+    },
+    {
+      "scientificName": "Melanotaenia praecox",
+      "key": "melanotaenia praecox",
+      "_type": "species",
+      "slug": "melanotaenia-praecox"
+    },
+    {
+      "scientificName": "Mikrogeophagus altispinosus",
+      "key": "mikrogeophagus altispinosus",
+      "_type": "species",
+      "slug": "mikrogeophagus-altispinosus"
+    },
+    {
+      "scientificName": "Nematobrycon palmeri",
+      "key": "nematobrycon palmeri",
+      "_type": "species",
+      "slug": "nematobrycon-palmeri"
+    },
+    {
+      "scientificName": "Otocinclus affinis",
+      "key": "otocinclus affinis",
+      "_type": "species",
+      "slug": "otocinclus-affinis"
+    },
+    {
+      "scientificName": "Pangio kuhlii",
+      "key": "pangio kuhlii",
+      "_type": "species",
+      "slug": "pangio-kuhlii"
+    },
+    {
+      "scientificName": "Paracheirodon axelrodi",
+      "key": "paracheirodon axelrodi",
+      "_type": "species",
+      "slug": "paracheirodon-axelrodi"
+    },
+    {
+      "scientificName": "Paracheirodon innesi",
+      "key": "paracheirodon innesi",
+      "_type": "species",
+      "slug": "paracheirodon-innesi"
+    },
+    {
+      "scientificName": "Pelvicachromis pulcher",
+      "key": "pelvicachromis pulcher",
+      "_type": "species",
+      "slug": "pelvicachromis-pulcher"
+    },
+    {
+      "scientificName": "Pethia conchonius",
+      "key": "pethia conchonius",
+      "_type": "species",
+      "slug": "pethia-conchonius"
+    },
+    {
+      "scientificName": "Pethia padamya",
+      "key": "pethia padamya",
+      "_type": "species",
+      "slug": "pethia-padamya"
+    },
+    {
+      "scientificName": "Phenacogrammus interruptus",
+      "key": "phenacogrammus interruptus",
+      "_type": "species",
+      "slug": "phenacogrammus-interruptus"
+    },
+    {
+      "scientificName": "Poecilia reticulata",
+      "key": "poecilia reticulata",
+      "_type": "species",
+      "slug": "poecilia-reticulata"
+    },
+    {
+      "scientificName": "Poecilia sphenops",
+      "key": "poecilia sphenops",
+      "_type": "species",
+      "slug": "poecilia-sphenops"
+    },
+    {
+      "scientificName": "Poecilia wingei",
+      "key": "poecilia wingei",
+      "_type": "species",
+      "slug": "poecilia-wingei"
+    },
+    {
+      "scientificName": "Pseudanthias squamipinnis",
+      "key": "pseudanthias squamipinnis",
+      "_type": "species",
+      "slug": "pseudanthias-squamipinnis"
+    },
+    {
+      "scientificName": "Pseudotropheus zebra",
+      "key": "pseudotropheus zebra",
+      "_type": "species",
+      "slug": "pseudotropheus-zebra"
+    },
+    {
+      "scientificName": "Pterophyllum scalare",
+      "key": "pterophyllum scalare",
+      "_type": "species",
+      "slug": "pterophyllum-scalare"
+    },
+    {
+      "scientificName": "Puntigrus tetrazona",
+      "key": "puntigrus tetrazona",
+      "_type": "species",
+      "slug": "puntigrus-tetrazona"
+    },
+    {
+      "scientificName": "Puntius titteya",
+      "key": "puntius titteya",
+      "_type": "species",
+      "slug": "puntius-titteya"
+    },
+    {
+      "scientificName": "Symphysodon aequifasciatus",
+      "key": "symphysodon aequifasciatus",
+      "_type": "species",
+      "slug": "symphysodon-aequifasciatus"
+    },
+    {
+      "scientificName": "Thorichthys meeki",
+      "key": "thorichthys meeki",
+      "_type": "species",
+      "slug": "thorichthys-meeki"
+    },
+    {
+      "scientificName": "Trichogaster lalius",
+      "key": "trichogaster lalius",
+      "_type": "species",
+      "slug": "trichogaster-lalius"
+    },
+    {
+      "scientificName": "Trichopodus leerii",
+      "key": "trichopodus leerii",
+      "_type": "species",
+      "slug": "trichopodus-leerii"
+    },
+    {
+      "scientificName": "Trichopodus trichopterus",
+      "key": "trichopodus trichopterus",
+      "_type": "species",
+      "slug": "trichopodus-trichopterus"
+    },
+    {
+      "scientificName": "Trichopsis pumila",
+      "key": "trichopsis pumila",
+      "_type": "species",
+      "slug": "trichopsis-pumila"
+    },
+    {
+      "scientificName": "Trigonostigma espei",
+      "key": "trigonostigma espei",
+      "_type": "species",
+      "slug": "trigonostigma-espei"
+    },
+    {
+      "scientificName": "Trigonostigma heteromorpha",
+      "key": "trigonostigma heteromorpha",
+      "_type": "species",
+      "slug": "trigonostigma-heteromorpha"
+    },
+    {
+      "scientificName": "Xiphophorus hellerii",
+      "key": "xiphophorus hellerii",
+      "_type": "species",
+      "slug": "xiphophorus-hellerii"
+    },
+    {
+      "scientificName": "Xiphophorus maculatus",
+      "key": "xiphophorus maculatus",
+      "_type": "species",
+      "slug": "xiphophorus-maculatus"
+    },
+    {
+      "scientificName": "Zebrasoma flavescens",
+      "key": "zebrasoma flavescens",
+      "_type": "species",
+      "slug": "zebrasoma-flavescens"
+    }
+  ],
+  "duplicates": [],
+  "missingScientificName": []
+}

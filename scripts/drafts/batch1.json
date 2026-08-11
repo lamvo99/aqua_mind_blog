@@ -1,0 +1,311 @@
+{
+  "generatedAt": "2026-08-11",
+  "phase": "Phase 3",
+  "batch": "batch1",
+  "count": 30,
+  "entries": [
+    {
+      "name": "Ember Tetra",
+      "scientificName": "Hyphessobrycon amandae",
+      "family": "Characidae",
+      "origin": "Rio Araguaia basin, Goiás state, Brazil",
+      "excerpt": "A tiny, glowing orange tetra that adds brilliant color to nano and planted tanks. Peaceful and hardy, best kept in a group of 8 or more.",
+      "sizeCm": 2, "tankSizeMinL": 30, "tempMinC": 20, "tempMaxC": 28, "phMin": 5, "phMax": 7, "ghMin": 1, "ghMax": 10,
+      "diet": "Micropredator", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 8 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Aquarium Source"]
+    },
+    {
+      "name": "Black Neon Tetra",
+      "scientificName": "Hyphessobrycon herbertaxelrodi",
+      "family": "Characidae",
+      "origin": "Paraguay River basin, Brazil",
+      "excerpt": "A calm, hardy tetra with a bold neon stripe contrasting a dark body. Ideal for peaceful community tanks.",
+      "sizeCm": 3.5, "tankSizeMinL": 54, "tempMinC": 20, "tempMaxC": 28, "phMin": 5, "phMax": 7.5, "ghMin": 1, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Emperor Tetra",
+      "scientificName": "Nematobrycon palmeri",
+      "family": "Characidae",
+      "origin": "Río Calima and San Juan basins, western Colombia",
+      "excerpt": "A striking tetra with an extended, three-pronged tail in males. Males establish mild territories, so a roomy, planted tank suits them best.",
+      "sizeCm": 4.5, "tankSizeMinL": 54, "tempMinC": 23, "tempMaxC": 27, "phMin": 5, "phMax": 7.5, "ghMin": 1, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more; one male per 3 females if breeding.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Aquarium Source"]
+    },
+    {
+      "name": "Serpae Tetra",
+      "scientificName": "Hyphessobrycon eques",
+      "family": "Characidae",
+      "origin": "Amazon and Guaporé basins, Guyana, Peru, Brazil",
+      "excerpt": "A vivid red tetra that may nip fins unless kept in a large group of at least 12. Very active and hardy once settled.",
+      "sizeCm": 4, "tankSizeMinL": 54, "tempMinC": 20, "tempMaxC": 28, "phMin": 5, "phMax": 7.5, "ghMin": 1, "ghMax": 15,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 12 or more to prevent fin nipping.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Congo Tetra",
+      "scientificName": "Phenacogrammus interruptus",
+      "family": "Alestidae",
+      "origin": "Congo River basin, Democratic Republic of Congo",
+      "excerpt": "A large, shimmering tetra with rainbow reflections on mature males. Needs a spacious tank and a shoal to display its best colors.",
+      "sizeCm": 8, "tankSizeMinL": 108, "tempMinC": 23, "tempMaxC": 28, "phMin": 6, "phMax": 7.5, "ghMin": 3, "ghMax": 18,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more; males grow to 8 cm, females to 6 cm.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Lemon Tetra",
+      "scientificName": "Hyphessobrycon pulchripinnis",
+      "family": "Characidae",
+      "origin": "Amazon basin, Brazil (Tapajós and Xingu regions)",
+      "excerpt": "A gentle, schooling tetra with translucent yellow fins and lemon-tinted body. Great for planted community aquariums.",
+      "sizeCm": 4, "tankSizeMinL": 54, "tempMinC": 20, "tempMaxC": 28, "phMin": 5, "phMax": 7.5, "ghMin": 1, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Aquarium Source"]
+    },
+    {
+      "name": "Black Phantom Tetra",
+      "scientificName": "Hyphessobrycon megalopterus",
+      "family": "Characidae",
+      "origin": "Río Paraguay basin, Brazil and Paraguay",
+      "excerpt": "A graceful dark tetra with elegant fins; males flare their dorsal in display. Hardy and perfect for peaceful planted tanks.",
+      "sizeCm": 3.5, "tankSizeMinL": 54, "tempMinC": 20, "tempMaxC": 28, "phMin": 5, "phMax": 7, "ghMin": 1, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Southern Platy",
+      "scientificName": "Xiphophorus maculatus",
+      "family": "Poeciliidae",
+      "origin": "Veracruz, Mexico to northern Belize",
+      "excerpt": "A friendly, colorful livebearer that adapts to almost any community tank. Extremely easy to keep and breed.",
+      "sizeCm": 7.5, "tankSizeMinL": 54, "tempMinC": 20, "tempMaxC": 26, "phMin": 7, "phMax": 8.2, "ghMin": 10, "ghMax": 30,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "Best in groups with more females than males.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Short-finned Molly",
+      "scientificName": "Poecilia sphenops",
+      "family": "Poeciliidae",
+      "origin": "Coastal rivers from Mexico to Venezuela",
+      "excerpt": "A versatile livebearer that tolerates hard, even brackish water. Males reach 8 cm while females can grow to 12 cm.",
+      "sizeCm": 12, "tankSizeMinL": 81, "tempMinC": 21, "tempMaxC": 28, "phMin": 7, "phMax": 8.5, "ghMin": 15, "ghMax": 30,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "All levels", "schooling": "Best in groups with more females than males.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Endler's Livebearer",
+      "scientificName": "Poecilia wingei",
+      "family": "Poeciliidae",
+      "origin": "Laguna de Patos, northern Venezuela",
+      "excerpt": "A tiny, dazzling livebearer closely related to the guppy. Avoid keeping it with guppies, as the two species hybridize freely.",
+      "sizeCm": 4.5, "tankSizeMinL": 41, "tempMinC": 24, "tempMaxC": 30, "phMin": 7, "phMax": 8.5, "ghMin": 15, "ghMax": 35,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "Best in groups; do not mix with guppies (hybridization).", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Aquarium Source"]
+    },
+    {
+      "name": "Bronze Corydoras",
+      "scientificName": "Corydoras aeneus",
+      "family": "Callichthyidae",
+      "origin": "Trinidad and northern South America (widely distributed)",
+      "excerpt": "One of the hardiest and most popular catfish for community tanks. Forages the substrate in groups; sand is the ideal substrate.",
+      "sizeCm": 7.5, "tankSizeMinL": 54, "tempMinC": 21, "tempMaxC": 27, "phMin": 6, "phMax": 8, "ghMin": 2, "ghMax": 15,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Group of 6 or more; soft sand substrate recommended.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Panda Corydoras",
+      "scientificName": "Corydoras panda",
+      "family": "Callichthyidae",
+      "origin": "Ucayali River basin, Peru",
+      "excerpt": "A beloved black-and-white Cory that prefers cooler water than most tropical fish. Peaceful and perfect for planted tanks.",
+      "sizeCm": 5, "tankSizeMinL": 54, "tempMinC": 19, "tempMaxC": 26, "phMin": 6, "phMax": 7, "ghMin": 2, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Group of 6 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Aquarium Source"]
+    },
+    {
+      "name": "Three-Lined Corydoras",
+      "scientificName": "Corydoras trilineatus",
+      "family": "Callichthyidae",
+      "origin": "Upper Amazon tributaries, Peru, Ecuador, Colombia, Brazil",
+      "excerpt": "Most 'Julii Cory' sold in stores are actually this species. A lovely shoaling catfish with three dark lines along the flanks.",
+      "sizeCm": 6, "tankSizeMinL": 76, "tempMinC": 22, "tempMaxC": 26, "phMin": 5.8, "phMax": 7.2, "ghMin": 1, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Group of 6 or more; true C. julii is rare in the trade.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore"]
+    },
+    {
+      "name": "Glass Catfish",
+      "scientificName": "Kryptopterus vitreolus",
+      "family": "Siluridae",
+      "origin": "Mekong basin, Thailand",
+      "excerpt": "A truly transparent catfish that is shy unless kept in a group of 6 or more. Needs gentle flow and a dimly lit, mature tank.",
+      "sizeCm": 8, "tankSizeMinL": 100, "tempMinC": 20, "tempMaxC": 26, "phMin": 4, "phMax": 7, "ghMin": 2, "ghMax": 15,
+      "diet": "Carnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "Group of 6 or more; never kept singly.", "difficulty": "Intermediate",
+      "sources": ["Seriously Fish", "Fin & Stem"]
+    },
+    {
+      "name": "Kribensis",
+      "scientificName": "Pelvicachromis pulcher",
+      "family": "Cichlidae",
+      "origin": "Niger Delta, Nigeria and Cameroon",
+      "excerpt": "A beautiful West African dwarf cichlid and one of the best beginner cichlids. Provide caves; pairs become territorial when breeding.",
+      "sizeCm": 10, "tankSizeMinL": 71, "tempMinC": 24, "tempMaxC": 27, "phMin": 5, "phMax": 7.5, "ghMin": 0, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Keep as a bonded pair; very territorial when spawning.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore", "Fin & Stem"]
+    },
+    {
+      "name": "Blue Acara",
+      "scientificName": "Andinoacara pulcher",
+      "family": "Cichlidae",
+      "origin": "Northern South America, Venezuela, Colombia, Trinidad",
+      "excerpt": "A striking blue-scaled cichlid that is relatively peaceful for its size, though territorial when breeding. An avid digger, so anchor plants well.",
+      "sizeCm": 15, "tankSizeMinL": 114, "tempMinC": 22, "tempMaxC": 28, "phMin": 6.5, "phMax": 8, "ghMin": 5, "ghMax": 15,
+      "diet": "Carnivore", "temperament": "Semi-aggressive", "waterZone": "Middle", "schooling": "Best kept as a mated pair.", "difficulty": "Intermediate",
+      "sources": ["Seriously Fish", "Fishkeeping", "Guidarium"]
+    },
+    {
+      "name": "Bolivian Ram",
+      "scientificName": "Mikrogeophagus altispinosus",
+      "family": "Cichlidae",
+      "origin": "Mamoré and Guaporé drainages, Bolivia and Brazil",
+      "excerpt": "A hardy, peaceful dwarf cichlid that sifts sand for food. More tolerant of cooler water and varied chemistry than the Blue Ram.",
+      "sizeCm": 8, "tankSizeMinL": 75, "tempMinC": 23, "tempMaxC": 28, "phMin": 6, "phMax": 7.5, "ghMin": 2, "ghMax": 12,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Pairs or groups of 6 or more in a roomy tank.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Wikipedia", "Tankora"]
+    },
+    {
+      "name": "Electric Yellow Cichlid",
+      "scientificName": "Labidochromis caeruleus",
+      "family": "Cichlidae",
+      "origin": "Lake Malawi, northwestern coast",
+      "excerpt": "The famous yellow 'Yellow Lab' from Lake Malawi. One of the most peaceful mbuna; keep one male with several females.",
+      "sizeCm": 10, "tankSizeMinL": 160, "tempMinC": 24, "tempMaxC": 28, "phMin": 7.7, "phMax": 8.6, "ghMin": 10, "ghMax": 25,
+      "diet": "Omnivore", "temperament": "Semi-aggressive", "waterZone": "Middle", "schooling": "Harem of 1 male with 3 or more females.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "LiveAquaria", "The Tropical Tank"]
+    },
+    {
+      "name": "Firemouth Cichlid",
+      "scientificName": "Thorichthys meeki",
+      "family": "Cichlidae",
+      "origin": "Central America, Mexico to Guatemala and Belize",
+      "excerpt": "Named for the fiery red throat it flares during display. Robust and adaptable, but an avid digger — use sand and anchored decor.",
+      "sizeCm": 15, "tankSizeMinL": 114, "tempMinC": 22, "tempMaxC": 30, "phMin": 6, "phMax": 8.2, "ghMin": 6, "ghMax": 18,
+      "diet": "Omnivore", "temperament": "Semi-aggressive", "waterZone": "Middle", "schooling": "Keep as a pair in a roomy tank.", "difficulty": "Intermediate",
+      "sources": ["Practical Fishkeeping", "Fish Lore", "LiveAquaria"]
+    },
+    {
+      "name": "Pearl Gourami",
+      "scientificName": "Trichopodus leerii",
+      "family": "Osphronemidae",
+      "origin": "Malaysia, Sumatra, Borneo, Thailand",
+      "excerpt": "A peaceful labyrinth fish dusted with pearl-like spots. Adaptable to varied water, but enjoys floating plants and gentle filtration.",
+      "sizeCm": 12, "tankSizeMinL": 75, "tempMinC": 24, "tempMaxC": 30, "phMin": 5.5, "phMax": 8, "ghMin": 2, "ghMax": 30,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Top", "schooling": "Pairs or small groups of one male per two females.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore", "The Spruce Pets"]
+    },
+    {
+      "name": "Three-Spot Gourami",
+      "scientificName": "Trichopodus trichopterus",
+      "family": "Osphronemidae",
+      "origin": "Southeast Asia (widely distributed)",
+      "excerpt": "The hardy 'Blue Gourami', available in many color morphs. Males can be aggressive with each other; a good snail-control fish.",
+      "sizeCm": 15, "tankSizeMinL": 114, "tempMinC": 24, "tempMaxC": 30, "phMin": 5.5, "phMax": 8.5, "ghMin": 3, "ghMax": 35,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Top", "schooling": "Pairs or trio of one male with two or three females.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "TFH Magazine", "World of Aquariums"]
+    },
+    {
+      "name": "Sparkling Gourami",
+      "scientificName": "Trichopsis pumila",
+      "family": "Osphronemidae",
+      "origin": "Mekong and Chao Phraya basins, Thailand, Cambodia, Vietnam",
+      "excerpt": "A tiny croaking gourami that fits nano planted tanks. Excellent jumper — a tight lid and floating plants are essential.",
+      "sizeCm": 4, "tankSizeMinL": 40, "tempMinC": 22, "tempMaxC": 28, "phMin": 5, "phMax": 7.5, "ghMin": 1, "ghMax": 12,
+      "diet": "Micropredator", "temperament": "Peaceful", "waterZone": "Top", "schooling": "Group of 4 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Practical Fishkeeping", "Fin & Stem"]
+    },
+    {
+      "name": "Tiger Barb",
+      "scientificName": "Puntigrus tetrazona",
+      "family": "Cyprinidae",
+      "origin": "Sumatra and Borneo",
+      "excerpt": "An iconic striped barb with a reputation for fin nipping — avoid it with long-finned fish unless kept in a group of 8 or more.",
+      "sizeCm": 7, "tankSizeMinL": 76, "tempMinC": 20, "tempMaxC": 26, "phMin": 5, "phMax": 8, "ghMin": 5, "ghMax": 19,
+      "diet": "Omnivore", "temperament": "Semi-aggressive", "waterZone": "Middle", "schooling": "Group of 8 or more; fin nipping stops in larger schools.", "difficulty": "Beginner",
+      "imageKeywords": ["Puntigrus tetrazona", "Puntius tetrazona"],
+      "sources": ["Seriously Fish", "Fish Lore", "Fin & Stem"]
+    },
+    {
+      "name": "Rosy Barb",
+      "scientificName": "Pethia conchonius",
+      "family": "Cyprinidae",
+      "origin": "Northern India, Bengal region",
+      "excerpt": "A hardy, active barb that tolerates cooler water and is even kept as a pond fish in mild climates. Best in schools of 5 or more.",
+      "sizeCm": 10, "tankSizeMinL": 90, "tempMinC": 16, "tempMaxC": 26, "phMin": 6, "phMax": 8, "ghMin": 5, "ghMax": 19,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "All levels", "schooling": "School of 5 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "The Spruce Pets", "Wikipedia"]
+    },
+    {
+      "name": "Odessa Barb",
+      "scientificName": "Pethia padamya",
+      "family": "Cyprinidae",
+      "origin": "Central Myanmar (near Mandalay)",
+      "excerpt": "A small, strikingly striped barb with a red-gold blaze. Peaceful and ideal for planted community aquariums.",
+      "sizeCm": 5, "tankSizeMinL": 72, "tempMinC": 16, "tempMaxC": 25, "phMin": 6.5, "phMax": 8.5, "ghMin": 5, "ghMax": 20,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 6 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fish Lore", "Guidarium"]
+    },
+    {
+      "name": "Lambchop Rasbora",
+      "scientificName": "Trigonostigma espei",
+      "family": "Danionidae",
+      "origin": "Cambodia, southern Thailand, Vietnam",
+      "excerpt": "A small, peaceful rasbora with a copper-orange body and a lambchop-shaped black patch. Perfect for nano planted tanks.",
+      "sizeCm": 3, "tankSizeMinL": 38, "tempMinC": 23, "tempMaxC": 28, "phMin": 5.5, "phMax": 7.5, "ghMin": 1, "ghMax": 12,
+      "diet": "Micropredator", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 8 or more.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Guidarium"]
+    },
+    {
+      "name": "Emerald Dwarf Rasbora",
+      "scientificName": "Celestichthys erythromicron",
+      "family": "Danionidae",
+      "origin": "Lake Inle basin, Myanmar (endemic)",
+      "excerpt": "Not a true rasbora but a small danio from the cool, alkaline waters of Lake Inle. Unusual for a nano fish: it needs neutral-to-alkaline water.",
+      "sizeCm": 3, "tankSizeMinL": 38, "tempMinC": 20, "tempMaxC": 26, "phMin": 7, "phMax": 8, "ghMin": 8, "ghMax": 15,
+      "diet": "Micropredator", "temperament": "Peaceful", "waterZone": "Middle", "schooling": "School of 8 or more; shy in smaller groups.", "difficulty": "Intermediate",
+      "imageKeywords": ["Celestichthys erythromicron", "Microrasbora erythromicron", "Danio erythromicron"],
+      "sources": ["Seriously Fish", "AquariumStoreDepot"]
+    },
+    {
+      "name": "Dwarf Neon Rainbowfish",
+      "scientificName": "Melanotaenia praecox",
+      "family": "Melanotaeniidae",
+      "origin": "Mamberamo River basin, West Papua, Indonesia",
+      "excerpt": "A vivid blue-and-red rainbowfish that stays small. Active open-water swimmer — needs a longer tank and a shoal of at least 8.",
+      "sizeCm": 8, "tankSizeMinL": 55, "tempMinC": 23, "tempMaxC": 28, "phMin": 6.8, "phMax": 7.5, "ghMin": 5, "ghMax": 15,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Top", "schooling": "School of at least 8.", "difficulty": "Beginner",
+      "sources": ["Seriously Fish", "Fin & Stem", "AquariumStoreDepot"]
+    },
+    {
+      "name": "Golden Wonder Killifish",
+      "scientificName": "Aplocheilus lineatus",
+      "family": "Aplocheilidae",
+      "origin": "Southern India and Sri Lanka",
+      "excerpt": "A surface-hunting killifish with golden flanks and red fins. Not annual, quite hardy, but will eat any fish small enough to fit its mouth.",
+      "sizeCm": 10, "tankSizeMinL": 75, "tempMinC": 22, "tempMaxC": 28, "phMin": 6, "phMax": 7.5, "ghMin": 3, "ghMax": 20,
+      "diet": "Carnivore", "temperament": "Semi-aggressive", "waterZone": "Top", "schooling": "Singly, in pairs, or a small group in a roomy tank.", "difficulty": "Intermediate",
+      "sources": ["Fast Aquatics", "Fin & Stem", "Aquascapedia"]
+    },
+    {
+      "name": "Zebra Loach",
+      "scientificName": "Botia striata",
+      "family": "Botiidae",
+      "origin": "Western Ghats streams, India",
+      "excerpt": "A beautiful black-and-gold loach that lives for a decade or more. Needs sand substrate to protect its barbels and a group of 5 or more.",
+      "sizeCm": 10, "tankSizeMinL": 110, "tempMinC": 21, "tempMaxC": 27, "phMin": 6, "phMax": 7.5, "ghMin": 2, "ghMax": 15,
+      "diet": "Omnivore", "temperament": "Peaceful", "waterZone": "Bottom", "schooling": "Group of 5 or more, preferably 10.", "difficulty": "Beginner",
+      "imageKeywords": ["Botia striata", "Botia striata kolhapurensis"],
+      "sources": ["Seriously Fish", "Loaches Online", "Aquarium Source"]
+    }
+  ]
+}

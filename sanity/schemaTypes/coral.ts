@@ -27,6 +27,11 @@ export default defineType({
       options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] },
     }),
     defineField({
+      name: 'coralType', title: 'Coral Type', type: 'string',
+      options: { list: ['soft', 'lps', 'sps', 'nps'] },
+      validation: (Rule: any) => Rule.required(),
+    }),
+    defineField({
       name: 'placement', title: 'Placement', type: 'string',
       options: { list: ['Sand bed', 'Low rock', 'Mid rock', 'High rock'] },
     }),

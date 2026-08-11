@@ -74,6 +74,11 @@ export default defineType({
       options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] },
     }),
     defineField({
+      name: 'waterType', title: 'Water Type', type: 'string', group: 'care',
+      options: { list: ['freshwater', 'saltwater', 'brackish'] },
+      validation: (Rule: any) => Rule.required(),
+    }),
+    defineField({
       name: 'compatibleSpecies', title: 'Compatible Species', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'species' }] }], group: 'compatibility',
     }),

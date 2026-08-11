@@ -4,6 +4,7 @@ import category from './category'
 import comment from './comment'
 import post from './post'
 import species from './species'
+import invertebrate from './invertebrate'
 import plant from './plant'
 import coral from './coral'
 import equipment from './equipment'
@@ -19,6 +20,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   comment,
   post,
   species,
+  invertebrate,
   plant,
   coral,
   equipment,

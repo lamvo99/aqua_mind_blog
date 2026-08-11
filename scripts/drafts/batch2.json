@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-08-11",
+  "phase": "Phase 3",
+  "batch": "batch2",
+  "type": "invertebrate",
+  "count": 20,
+  "entries": [
+    {
+      "name": "Red Cherry Shrimp",
+      "scientificName": "Neocaridina davidi",
+      "group": "shrimp", "waterType": "freshwater",
+      "sizeCm": 3, "tempMinC": 20, "tempMaxC": 28, "phMin": 6.5, "phMax": 8,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A tiny, vivid red dwarf shrimp that breeds easily and endlessly entertains. Fine in nano tanks from 20 L; keep GH 4-15 dGH for successful molting, avoid copper-based medications entirely, and use a sponge filter so young shrimplets never get sucked in.",
+      "sources": ["Fish Lore", "Aquarium Source"]
+    },
+    {
+      "name": "Amano Shrimp",
+      "scientificName": "Caridina multidentata",
+      "group": "shrimp", "waterType": "freshwater",
+      "sizeCm": 5, "tempMinC": 18, "tempMaxC": 28, "phMin": 6.5, "phMax": 7.5,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "The classic algae-eating workhorse shrimp, unmatched for clearing hair algae from planted tanks. Hardy at 3-15 dGH, but never breeds in freshwater: its larvae need brackish water, so all reports of 'Amano babies' in freshwater tanks are actually other shrimp species.",
+      "sources": ["Fish Lore", "Aquarium Source"]
+    },
+    {
+      "name": "Crystal Red Shrimp",
+      "scientificName": "Caridina cantonensis",
+      "group": "shrimp", "waterType": "freshwater",
+      "sizeCm": 3, "tempMinC": 20, "tempMaxC": 24, "phMin": 5.8, "phMax": 6.8,
+      "diet": "Detritivore", "temperament": "Peaceful", "difficulty": "Advanced",
+      "excerpt": "A high-grade bee shrimp bred for its striking white-and-red pattern. Demanding keeper: thrives only in soft, acidic water (GH 4-6 dGH) and practically requires reverse-osmosis water with an active buffering substrate. Stable cool temperatures around 22 C are essential.",
+      "sources": ["Fish Lore", "Aquarium Breeder"]
+    },
+    {
+      "name": "Ghost Shrimp",
+      "scientificName": "Palaemon paludosus",
+      "group": "shrimp", "waterType": "freshwater",
+      "sizeCm": 4, "tempMinC": 18, "tempMaxC": 28, "phMin": 6.5, "phMax": 8,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A see-through, feather-light scavenger sold by the handful. Tough across 3-15 dGH and a wide temperature band. Beware mislabeled tankmates: true Ghost Shrimp is Palaemon paludosus, while the larger, more predatory Macrobrachium species are often sold under the same name.",
+      "sources": ["Fish Lore", "Aquarium Source"]
+    },
+    {
+      "name": "Bamboo Shrimp",
+      "scientificName": "Atyopsis moluccensis",
+      "group": "shrimp", "waterType": "freshwater",
+      "sizeCm": 8, "tempMinC": 23, "tempMaxC": 29, "phMin": 6.5, "phMax": 7.8,
+      "diet": "Filter feeder", "temperament": "Peaceful", "difficulty": "Intermediate",
+      "excerpt": "Also called the wood shrimp, it stations itself in the current and fans microscopic food from the water with its four feathery feeding fans. Needs brisk flow (8-10x tank volume per hour) and regular feedings of powdered or micro food, or it will slowly starve in a clean tank.",
+      "sources": ["Fish Lore", "Aquarium Source"]
+    },
+    {
+      "name": "Zebra Nerite Snail",
+      "scientificName": "Vittina natalensis",
+      "group": "snail", "waterType": "freshwater",
+      "sizeCm": 2.5, "tempMinC": 22, "tempMaxC": 28, "phMin": 7, "phMax": 8.5,
+      "diet": "Herbivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A striped, hard-working algae grazer that never overpopulates: its eggs are laid all over the glass but only hatch in brackish water, so they simply stay put. Prefers harder water (GH 6-20 dGH) with calcium for a healthy shell; watch for escapes, as it can climb out of open tanks.",
+      "sources": ["LiveAquaria", "Fish Lore"]
+    },
+    {
+      "name": "Mystery Snail",
+      "scientificName": "Pomacea bridgesii",
+      "group": "snail", "waterType": "freshwater",
+      "sizeCm": 5, "tempMinC": 20, "tempMaxC": 28, "phMin": 7, "phMax": 8.5,
+      "diet": "Herbivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A colorful, active apple snail that cruises the glass for algae and leftover food. Pairs lay their pink egg clutches above the waterline - remove them to avoid overpopulation. Keep hardness at 7-18 dGH and offer calcium-rich foods so the shell stays strong.",
+      "sources": ["LiveAquaria", "Fish Lore"]
+    },
+    {
+      "name": "Great Ramshorn Snail",
+      "scientificName": "Planorbarius corneus",
+      "group": "snail", "waterType": "freshwater",
+      "sizeCm": 3.5, "tempMinC": 10, "tempMaxC": 26, "phMin": 6.5, "phMax": 8.5,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "The large, coiled ramshorn that doubles as a cleanup crew and a living water-quality alarm. Every individual is hermaphroditic, so any pair can breed - populations explode only when overfeeding creates a feast, and they shrink right back once feeding is cut back.",
+      "sources": ["Fish Lore", "Aquarium Source"]
+    },
+    {
+      "name": "Malaysian Trumpet Snail",
+      "scientificName": "Melanoides tuberculata",
+      "group": "snail", "waterType": "freshwater",
+      "sizeCm": 4, "tempMinC": 21, "tempMaxC": 27, "phMin": 6.5, "phMax": 8,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A conically shelled burrower that aerates the substrate and patrols it for leftover food at night. Females reproduce by parthenogenesis, so a single snail can seed a colony - they are a genuine muck-prevention asset, but heavy feeding will let them multiply fast.",
+      "sources": ["Fish Lore", "Aquarium Breeder"]
+    },
+    {
+      "name": "Assassin Snail",
+      "scientificName": "Anentome helena",
+      "group": "snail", "waterType": "freshwater",
+      "sizeCm": 2.5, "tempMinC": 20, "tempMaxC": 28, "phMin": 6.5, "phMax": 8.5,
+      "diet": "Carnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "The striped predator of the aquarium world, kept to hunt down pest snails and worms. It burrows by day and hunts by night, and will happily share a tank with fish and plants - it ignores shrimp and fish entirely. Also known as Clea helena; both names are accepted.",
+      "sources": ["LiveAquaria", "Aquarium Breeder"]
+    },
+    {
+      "name": "Thai Micro Crab",
+      "scientificName": "Limnopilos naiyanetri",
+      "group": "crab", "waterType": "freshwater",
+      "sizeCm": 1, "tempMinC": 21, "tempMaxC": 28, "phMin": 6.5, "phMax": 7.5,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Intermediate",
+      "excerpt": "A pea-sized, fully aquatic crab - no land zone needed - that perches on driftwood and picks microparticles from the water. Fragile and easily overlooked; keep a group of 3 or more in a mature nano tank, and never expose it to copper or sharp parameter swings.",
+      "sources": ["LiveAquaria", "Aquarium Breeder"]
+    },
+    {
+      "name": "Red Claw Crab",
+      "scientificName": "Perisesarma bidens",
+      "group": "crab", "waterType": "brackish",
+      "sizeCm": 4, "tempMinC": 24, "tempMaxC": 28, "phMin": 7.5, "phMax": 8.5,
+      "diet": "Omnivore", "temperament": "Semi-aggressive", "difficulty": "Intermediate",
+      "excerpt": "A charismatic crab with vivid red claws that needs brackish water (SG 1.003-1.010) plus a 50-70% land area to climb on - it is not a true freshwater species despite how stores sell it. Feisty with slow tankmates; keep one per tank and cover every escape route.",
+      "sources": ["Aquarium Breeder", "Fish Lore"]
+    },
+    {
+      "name": "Peppermint Shrimp",
+      "scientificName": "Lysmata wurdemanni",
+      "group": "shrimp", "waterType": "saltwater",
+      "sizeCm": 5, "tempMinC": 22, "tempMaxC": 28, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Scavenger", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "Nature's aiptasia control: it hunts and eats the glass anemones that plague reef tanks. Forgiving of typical reefkeeper mistakes and tolerant of various foods, but as an invertebrate it is highly sensitive to copper. Check the stripe pattern - the similar camel shrimp stays a pest-eater only in name.",
+      "sources": ["LiveAquaria", "Aquarium Source"]
+    },
+    {
+      "name": "Coral Banded Shrimp",
+      "scientificName": "Stenopus hispidus",
+      "group": "shrimp", "waterType": "saltwater",
+      "sizeCm": 7, "tempMinC": 22, "tempMaxC": 27, "phMin": 8, "phMax": 8.4,
+      "diet": "Carnivore", "temperament": "Semi-aggressive", "difficulty": "Beginner",
+      "excerpt": "A bold, long-antennaed shrimp with coral bands that stands guard at its cave and makes an instant display piece. Not a true shrimp (it belongs to Stenopodidea): keep it singly or as a mated pair, as it will attack other crustaceans in its territory.",
+      "sources": ["LiveAquaria", "Fast Aquatics", "Fish Lore"]
+    },
+    {
+      "name": "Cleaner Shrimp",
+      "scientificName": "Lysmata amboinensis",
+      "group": "shrimp", "waterType": "saltwater",
+      "sizeCm": 6, "tempMinC": 24, "tempMaxC": 28, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "The famous skunk cleaner shrimp that runs a cleaning station: fish line up to have parasites and dead skin picked off. Hardy, outgoing, and reef-safe; an Atlantic lookalike, Lysmata grabhami, is sold under the same name in some regions.",
+      "sources": ["LiveAquaria", "Fast Aquatics", "Aquarium Breeder"]
+    },
+    {
+      "name": "Fire Shrimp",
+      "scientificName": "Lysmata debelius",
+      "group": "shrimp", "waterType": "saltwater",
+      "sizeCm": 5, "tempMinC": 24, "tempMaxC": 28, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Omnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A deep blood-red cleaner shrimp that treats fish at a personal cleaning station. More shy and nocturnal than its cousins and noticeably pricey; needs a stable, mature reef and is extremely sensitive to copper - remove it before any copper-based treatment.",
+      "sources": ["Fish Lore", "Fast Aquatics", "Saltwater Aquarium Blog"]
+    },
+    {
+      "name": "Tuxedo Urchin",
+      "scientificName": "Mespilia globulus",
+      "group": "urchin", "waterType": "saltwater",
+      "sizeCm": 7, "tempMinC": 23, "tempMaxC": 28, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Herbivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A tidy, reef-safe urchin dressed in alternating dark and light bands that keeps rock, glass, and decor swept of algae and film. Grazes mostly at night and stays put by day; supplement with nori in low-algae tanks and never expose it to copper or high nitrate.",
+      "sources": ["LiveAquaria", "Fast Aquatics", "Reefpedia"]
+    },
+    {
+      "name": "Sand-Sifting Starfish",
+      "scientificName": "Astropecten polyacanthus",
+      "group": "starfish", "waterType": "saltwater",
+      "sizeCm": 20, "tempMinC": 22, "tempMaxC": 26, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Carnivore", "temperament": "Peaceful", "difficulty": "Beginner",
+      "excerpt": "A burrowing starfish that churns the sand bed and feeds on worms, copepods, and small benthic invertebrates living in it. Demands a deep (7 cm+), well-established sand bed and roughly 280 L per specimen; once it exhausts the sand's food supply it quietly starves, so it suits mature systems only.",
+      "sources": ["LiveAquaria", "Reefs.com", "Reeflings"]
+    },
+    {
+      "name": "Bubble-Tip Anemone",
+      "scientificName": "Entacmaea quadricolor",
+      "group": "anemone", "waterType": "saltwater",
+      "sizeCm": 30, "tempMinC": 24, "tempMaxC": 28, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Carnivore", "temperament": "Peaceful", "difficulty": "Intermediate",
+      "excerpt": "The classic clownfish host anemone whose tentacle tips swell into bubbles when healthy. Demands bright light (350-500 PAR) and a stable, mature 115 L+ reef; anchor its foot in a rock crevice, not open sand, target-feed it meaty food, and keep corals clear of its stinging reach.",
+      "sources": ["Coral Magazine", "Reefs.com", "Fast Aquatics", "Atlasreef"]
+    },
+    {
+      "name": "Rock Flower Anemone",
+      "scientificName": "Phymanthus crucifer",
+      "group": "anemone", "waterType": "saltwater",
+      "sizeCm": 10, "tempMinC": 24, "tempMaxC": 27, "phMin": 8.1, "phMax": 8.4,
+      "diet": "Carnivore", "temperament": "Aggressive", "difficulty": "Beginner",
+      "excerpt": "A Caribbean anemone in a dazzling range of colors that, unlike most anemones, settles where placed and rarely wanders. Hardy and forgiving, it anchors its foot in the sand or rock and accepts meaty foods; keep small corals out of reach of its stinging tentacles. Often sold as Epicystis crucifer.",
+      "sources": ["LiveAquaria", "Reefs.com", "Fast Aquatics", "Reef Builders"]
+    }
+  ]
+}
