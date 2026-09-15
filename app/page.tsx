@@ -2,7 +2,7 @@ import Link from "next/link"
 import { getAllPosts, getFeaturedPosts, getAllCategories } from "@/lib/posts"
 import PostCard from "./components/PostCard"
 import NewsletterSection from "./components/NewsletterSection"
-import { Droplets, Sparkles, ArrowRight } from "lucide-react"
+import { Droplets, Sparkles, ArrowRight, Database, Wrench, Bug, Palette, GraduationCap, BookOpen } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import type { Metadata } from "next"
 
@@ -122,6 +122,44 @@ export default async function Home() {
           </div>
         </section>
       )}
+
+      {/* Discover */}
+      <section className="py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-slate-100">
+              Discover
+            </h2>
+            <p className="text-gray-500 dark:text-slate-400 mt-1">
+              Explore our database, tools, and knowledge base
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: "/database", icon: Database, label: "Database", desc: "Fish, plants, corals, equipment & invertebrates" },
+              { href: "/problems", icon: Bug, label: "Problems", desc: "Diagnose symptoms and find solutions" },
+              { href: "/tools", icon: Wrench, label: "Tools", desc: "Calculators, planners & compatibility checker" },
+              { href: "/inspiration", icon: Palette, label: "Inspiration", desc: "Aquascaping galleries with species links" },
+              { href: "/learn", icon: GraduationCap, label: "Learning Paths", desc: "Structured step-by-step guides" },
+              { href: "/wiki", icon: BookOpen, label: "Wiki", desc: "Unified search across all database entries" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 card-hover"
+              >
+                <div className="w-10 h-10 rounded-xl bg-aqua-50 dark:bg-aqua-950/50 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <item.icon className="w-5 h-5 text-aqua-600 dark:text-aqua-400" />
+                </div>
+                <h3 className="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors mb-1">
+                  {item.label}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-slate-400">{item.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Finder CTA */}
       <section className="py-16 lg:py-20">

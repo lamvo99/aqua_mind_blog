@@ -3,11 +3,23 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import FinderQuiz from "@/app/components/finder/FinderQuiz"
 import { client } from "@/lib/sanity"
 import type { FinderItem } from "@/lib/finder"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
   title: "Find Your Perfect Fish, Plant or Coral — AquaMind",
   description: "Answer four quick questions and get a ranked shortlist of fish, plants and corals matched to your tank size, experience and lighting.",
   alternates: { canonical: "https://aquamind.life/finder" },
+  openGraph: {
+    title: "Find Your Perfect Fish, Plant or Coral — AquaMind",
+    description: "Answer four quick questions and get a ranked shortlist of fish, plants and corals matched to your tank size, experience and lighting.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Find Your Perfect Fish, Plant or Coral — AquaMind",
+    description: "Answer four quick questions and get a ranked shortlist of fish, plants and corals matched to your tank size, experience and lighting.",
+  },
 }
 
 export const revalidate = 86400
@@ -25,10 +37,17 @@ export default async function FinderPage() {
   const items = await getItems()
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <div className="mb-6">
-        <Breadcrumb items={[{ label: "Finder" }]} />
-      </div>
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { label: "Home", href: "/" },
+          { label: "Finder" },
+        ])}
+      />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="mb-6">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Finder" }]} />
+        </div>
       <div className="mb-10 text-center max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">
           Find Your Perfect Match
@@ -40,6 +59,7 @@ export default async function FinderPage() {
       </div>
 
       <FinderQuiz items={items} />
-    </div>
+      </div>
+    </>
   )
 }

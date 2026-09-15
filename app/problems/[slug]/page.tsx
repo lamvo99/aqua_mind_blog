@@ -30,11 +30,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${item.title} — Aquarium Problem`,
     description: item.excerpt,
     alternates: { canonical: `https://aquamind.life/problems/${slug}` },
-    openGraph: {
+      openGraph: {
       title: `${item.title} — Aquarium Problem`,
       description: item.excerpt,
-      type: "article",
+      type: "website",
       url: `https://aquamind.life/problems/${slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.title} — Aquarium Problem`,
+      description: item.excerpt,
     },
   }
 }
@@ -66,10 +71,11 @@ export default async function ProblemDetailPage({ params }: Props) {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <JsonLd data={breadcrumbSchema([
+        { label: "Home", href: "/" },
         { label: "Problems", href: "/problems" },
         { label: item.title, href: `/problems/${slug}` },
       ])} />
-      <Breadcrumb items={[{ label: "Problems", href: "/problems" }, { label: item.title }]} />
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Problems", href: "/problems" }, { label: item.title }]} />
       <Link href="/problems" className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 mt-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />
         All problems

@@ -28,10 +28,10 @@ describe('sitemap', () => {
     }
   })
 
-  it('excludes search and finder (app-like, noindex) pages', async () => {
+  it('excludes search (noindex) pages but includes finder', async () => {
     const urls = (await sitemap()).map((e) => e.url)
     expect(urls.some((u) => u.includes('/search'))).toBe(false)
-    expect(urls.some((u) => u.includes('/finder'))).toBe(false)
+    expect(urls.some((u) => u.includes('/finder'))).toBe(true)
   })
 
   it('homepage has the highest priority', async () => {

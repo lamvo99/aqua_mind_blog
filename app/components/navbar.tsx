@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Search, Menu, X, Sun, Moon, ChevronDown, Database, Calculator } from "lucide-react"
+import { Search, Menu, X, Sun, Moon, ChevronDown, Database, Calculator, Mail } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { useTheme } from "@/lib/store"
 import SearchModal from "./SearchModal"
@@ -65,8 +65,8 @@ export default function Navbar() {
               <Image
                 src="/logo.png"
                 alt={strings.site.name}
-                width={1024}
-                height={1024}
+                width={36}
+                height={36}
                 className="w-9 h-9 rounded-xl group-hover:scale-110 transition-transform"
               />
               <span className="text-xl font-bold gradient-text">{strings.site.name}</span>
@@ -215,7 +215,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-gray-600 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-800"
               >
-                <Calculator className="w-4 h-4" />
+                <Mail className="w-4 h-4" />
                 Contact
               </Link>
             </div>

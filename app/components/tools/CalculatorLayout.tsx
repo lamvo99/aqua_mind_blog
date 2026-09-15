@@ -1,6 +1,7 @@
 import Link from "next/link"
-import { Calculator, ArrowRight, AlertTriangle } from "lucide-react"
-import { JsonLd, howToSchema } from "@/lib/seo/jsonld"
+import { ArrowRight, AlertTriangle } from "lucide-react"
+import { JsonLd, howToSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
+import Breadcrumb from "@/app/components/Breadcrumb"
 
 interface CalculatorLayoutProps {
   title: string
@@ -26,14 +27,16 @@ export default function CalculatorLayout({
       {howTo && howTo.steps.length > 0 && (
         <JsonLd data={howToSchema(title, description, howTo.steps, howTo.url)} />
       )}
+      <JsonLd
+        data={breadcrumbSchema([
+          { label: "Home", href: "/" },
+          { label: "Tools", href: "/tools" },
+          { label: title },
+        ])}
+      />
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
-          <Calculator className="w-4 h-4" />
-          <Link href="/tools" className="hover:underline">
-            Tools
-          </Link>
-          <span className="text-gray-400">/</span>
-          <span>{title}</span>
+        <div className="mb-2">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Tools", href: "/tools" }, { label: title }]} />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">{title}</h1>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{description}</p>

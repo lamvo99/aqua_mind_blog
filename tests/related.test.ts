@@ -59,7 +59,7 @@ describe('TOOL_LEARN_LINKS', () => {
   })
 
   it('only links to real internal routes', () => {
-    const validPrefixes = ['/species', '/plants', '/corals', '/equipment', '/learn', '/posts', '/problems']
+    const validPrefixes = ['/species', '/plants', '/corals', '/equipment', '/learn', '/posts', '/problems', '/setup-planner']
     for (const links of Object.values(TOOL_LEARN_LINKS)) {
       for (const link of links) {
         const ok = validPrefixes.some((p) => link.href === p || link.href.startsWith(p))

@@ -88,11 +88,11 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
     `*[_type == $type && slug.current == $slug][0] {
       _id, _type, name, scientificName, slug, excerpt, mainImage,
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
-      diet, temperament, waterZone, schooling, difficulty,
-      group, waterType,
+      diet, temperament, waterZone, schooling, difficulty, waterType,
+      group,
       light, co2, growth, placement, propagation,
-      flow, aggression, reefCompatibility,
-      category, brand, model, flowRateLh, powerW, tankSizeMaxL, pros, cons,
+      coralType, flow, aggression, reefCompatibility,
+      category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,
       compatibleSpecies[]->{ _id, name, slug, mainImage, excerpt },
       relatedPosts[]->{ _id, title, slug, excerpt, publishedAt, mainImage }
     }`,
@@ -131,7 +131,7 @@ export async function getProblemsList(): Promise<any[]> {
 
 export async function getDatabaseItemsReferencingPost(postId: string, limit = 4) {
   return await client.fetch(
-    `*[_type in ["species", "plant", "coral", "equipment", "problem"] && references($postId)][0...$limit] {
+    `*[_type in ["species", "plant", "coral", "equipment", "invertebrate", "problem"] && references($postId)][0...$limit] {
       _type,
       "name": coalesce(name, title),
       slug,

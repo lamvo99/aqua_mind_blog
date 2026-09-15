@@ -13,6 +13,12 @@ const CATEGORY_LABELS: Record<string, string> = {
   equipment: "Equipment",
 }
 
+function matchLabel(score: number): string {
+  if (score >= 75) return "Strong match"
+  if (score >= 40) return "Possible match"
+  return "Weak match"
+}
+
 export default function DiagnosisWizard({ problems }: { problems: ProblemForDiagnosis[] }) {
   const [selected, setSelected] = useState<string[]>([])
 
@@ -118,7 +124,7 @@ export default function DiagnosisWizard({ problems }: { problems: ProblemForDiag
               >
                 <div className="flex items-center justify-between gap-3 mb-2">
                   <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100">{r.problem.title}</h3>
-                  <span className="text-xs font-bold text-aqua-700 dark:text-aqua-300 shrink-0">{r.score}%</span>
+                  <span className="text-xs font-bold text-aqua-700 dark:text-aqua-300 shrink-0">{matchLabel(r.score)}</span>
                 </div>
                 <div className="h-1.5 rounded-full bg-gray-100 dark:bg-slate-700 mb-2.5 overflow-hidden">
                   <div className="h-full gradient-bg rounded-full" style={{ width: `${r.score}%` }} />

@@ -41,6 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: item.title }]
         : undefined,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.title} — Aquascape Inspiration`,
+      description: item.excerpt,
+    },
   }
 }
 

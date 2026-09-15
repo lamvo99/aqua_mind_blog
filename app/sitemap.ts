@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
 import { client } from "@/lib/sanity"
+import { STYLE_SLUGS } from "@/lib/styles"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
 
@@ -37,6 +38,7 @@ const LIST_PATHS = [
   { path: "/privacy-policy", priority: 0.2, frequency: "yearly" },
   { path: "/terms-of-service", priority: 0.2, frequency: "yearly" },
   { path: "/cookie-policy", priority: 0.2, frequency: "yearly" },
+  { path: "/finder", priority: 0.7, frequency: "monthly" },
 ] as const
 
 const TYPE_SEGMENTS: Record<string, string> = {
@@ -121,6 +123,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.5,
+    })
+  }
+
+  for (const slug of STYLE_SLUGS) {
+    entries.push({
+      url: `${siteUrl}/styles/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
     })
   }
 

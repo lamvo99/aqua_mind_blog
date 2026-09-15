@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "CO₂ Estimator — AquaMind",
   description: "Estimate dissolved CO₂ in your planted aquarium from KH and pH readings. Understand CO₂ levels for healthy plant growth.",
   alternates: { canonical: "https://aquamind.life/tools/co2" },
+  openGraph: {
+    title: "CO₂ Estimator — AquaMind",
+    description: "Estimate dissolved CO₂ in your planted aquarium from KH and pH readings. Understand CO₂ levels for healthy plant growth.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CO₂ Estimator — AquaMind",
+    description: "Estimate dissolved CO₂ in your planted aquarium from KH and pH readings. Understand CO₂ levels for healthy plant growth.",
+  },
 }
 
 export default function Co2Page() {

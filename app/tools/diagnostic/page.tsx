@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   title: "Aquarium Problem Diagnostic — AquaMind",
   description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
   alternates: { canonical: "https://aquamind.life/tools/diagnostic" },
+  openGraph: {
+    title: "Aquarium Problem Diagnostic — AquaMind",
+    description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aquarium Problem Diagnostic — AquaMind",
+    description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
+  },
 }
 
 export const revalidate = 86400
@@ -31,13 +42,14 @@ export default async function DiagnosticToolPage() {
     <>
       <JsonLd
         data={breadcrumbSchema([
+          { label: "Home", href: "/" },
           { label: "Tools", href: "/tools" },
           { label: "Diagnostic" },
         ])}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="mb-6">
-          <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: "Diagnostic" }]} />
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Tools", href: "/tools" }, { label: "Diagnostic" }]} />
         </div>
         <div className="mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">

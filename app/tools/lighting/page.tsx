@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "Aquarium Lighting Calculator — AquaMind",
   description: "Estimate the LED wattage and lumens your planted aquarium needs for low, medium or high light setups.",
   alternates: { canonical: "https://aquamind.life/tools/lighting" },
+  openGraph: {
+    title: "Aquarium Lighting Calculator — AquaMind",
+    description: "Estimate the LED wattage and lumens your planted aquarium needs for low, medium or high light setups.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aquarium Lighting Calculator — AquaMind",
+    description: "Estimate the LED wattage and lumens your planted aquarium needs for low, medium or high light setups.",
+  },
 }
 
 export default function LightingPage() {

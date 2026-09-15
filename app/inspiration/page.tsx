@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Aquascape Inspiration — AquaMind",
   description: "Aquascape ideas and gallery: nature aquariums, iwagumi, dutch and jungle styles with tank details.",
   alternates: { canonical: "https://aquamind.life/inspiration" },
+  openGraph: {
+    title: "Aquascape Inspiration — AquaMind",
+    description: "Aquascape ideas and gallery: nature aquariums, iwagumi, dutch and jungle styles with tank details.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 export const revalidate = 300

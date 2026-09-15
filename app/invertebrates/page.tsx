@@ -2,12 +2,19 @@ import type { Metadata } from "next"
 import { getDatabaseList, getDatabaseCompareItems } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Invertebrates Database — Shrimp, Snails, Crabs & Reef Inverts — AquaMind",
+  title: "Invertebrates Database — Shrimp, Snails & Corals — AquaMind",
   description: "Browse aquarium invertebrate profiles with care parameters: size, temperature, pH, diet, temperament and difficulty for shrimp, snails, crabs, urchins, starfish and anemones.",
   alternates: { canonical: "https://aquamind.life/invertebrates" },
+  openGraph: {
+    title: "Invertebrates Database — Shrimp, Snails & Corals — AquaMind",
+    description: "Browse aquarium invertebrate profiles with care parameters: size, temperature, pH, diet, temperament and difficulty for shrimp, snails, crabs, urchins, starfish and anemones.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 export const revalidate = 300
@@ -17,8 +24,19 @@ export default async function InvertebratesPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Home", href: "/" },
+        { label: "Database", href: "/database" },
+        { label: "Invertebrates" },
+      ])} />
+      <JsonLd data={collectionPageSchema({
+        name: "Invertebrates Database",
+        description: "Browse aquarium invertebrate profiles with care parameters.",
+        url: "https://aquamind.life/invertebrates",
+        items: items.map((i) => ({ title: i.name, url: `https://aquamind.life/invertebrates/${i.slug?.current}` })),
+      })} />
       <div className="mb-6">
-        <Breadcrumb items={[{ label: "Database", href: "/database" }, { label: "Invertebrates" }]} />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Invertebrates" }]} />
       </div>
       <div className="mb-8">
         <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">

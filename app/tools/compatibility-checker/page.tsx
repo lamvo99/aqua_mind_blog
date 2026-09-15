@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   title: "Compatibility Checker — AquaMind",
   description: "Check whether fish species can live together: temperature, pH, hardness, temperament and tank size checks combined with a stocking calculator.",
   alternates: { canonical: "https://aquamind.life/tools/compatibility-checker" },
+  openGraph: {
+    title: "Compatibility Checker — AquaMind",
+    description: "Check whether fish species can live together: temperature, pH, hardness, temperament and tank size checks combined with a stocking calculator.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Compatibility Checker — AquaMind",
+    description: "Check whether fish species can live together: temperature, pH, hardness, temperament and tank size checks combined with a stocking calculator.",
+  },
 }
 
 export const revalidate = 86400

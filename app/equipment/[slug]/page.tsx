@@ -8,6 +8,7 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Droplets, Zap, Waves, Check, X } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
+import EntityResources from "@/app/components/EntityResources"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -31,11 +32,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${item.brand ? item.brand + " " : ""}${item.name} — Equipment`,
       description: item.excerpt || `Equipment guide for ${item.name}`,
-      type: "article",
+      type: "website",
       url: `https://aquamind.life/equipment/${slug}`,
       images: item.mainImage
-        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: item.name }]
+        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: `${item.brand ? item.brand + " " : ""}${item.name} — aquarium equipment` }]
         : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.brand ? item.brand + " " : ""}${item.name} — Equipment`,
+      description: item.excerpt || `Equipment guide for ${item.name}`,
     },
   }
 }
@@ -63,11 +69,12 @@ export default async function EquipmentDetailPage({ params }: Props) {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <JsonLd data={breadcrumbSchema([
+        { label: "Home", href: "/" },
         { label: "Database", href: "/database" },
         { label: "Equipment", href: "/equipment" },
         { label: item.name, href: `/equipment/${slug}` },
       ])} />
-      <Breadcrumb items={[{ label: "Database", href: "/database" }, { label: "Equipment", href: "/equipment" }, { label: item.name }]} />
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Equipment", href: "/equipment" }, { label: item.name }]} />
       <Link href="/equipment" className="inline-flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 mt-4 transition-colors">
         <ArrowLeft className="w-4 h-4" />
         Back to Equipment
@@ -78,7 +85,7 @@ export default async function EquipmentDetailPage({ params }: Props) {
           {item.mainImage ? (
             <Image
               src={urlFor(item.mainImage).width(760).height(570).url() || ""}
-              alt={item.name}
+              alt={`${item.brand ? item.brand + " " : ""}${item.name} — aquarium equipment`}
               fill
               className="object-cover"
               priority
@@ -154,6 +161,7 @@ export default async function EquipmentDetailPage({ params }: Props) {
               </div>
             </div>
           )}
+          <EntityResources type="equipment" />
           <WikiPromo />
         </div>
       </div>

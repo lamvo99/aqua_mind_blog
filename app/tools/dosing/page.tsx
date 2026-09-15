@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "Dosing Calculator — AquaMind",
   description: "Calculate the exact volume of liquid fertilizer, medication or additive for your aquarium from the label dose rate.",
   alternates: { canonical: "https://aquamind.life/tools/dosing" },
+  openGraph: {
+    title: "Dosing Calculator — AquaMind",
+    description: "Calculate the exact volume of liquid fertilizer, medication or additive for your aquarium from the label dose rate.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dosing Calculator — AquaMind",
+    description: "Calculate the exact volume of liquid fertilizer, medication or additive for your aquarium from the label dose rate.",
+  },
 }
 
 export default function DosingPage() {

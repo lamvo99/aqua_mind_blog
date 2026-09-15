@@ -38,7 +38,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterKeys = [], compa
 
   const visible = useMemo(() => {
     if (filter === "all") return items
-    return items.filter((item) => (item as any)[filterKeys[0]] === filter)
+    return items.filter((item) => filterKeys.some((key) => (item as any)[key] === filter))
   }, [items, filter, filterKeys])
 
   const toggleCompare = (item: DatabaseItem) => {

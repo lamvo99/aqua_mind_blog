@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Breadcrumb from "@/app/components/Breadcrumb"
 import {
   Compass,
   Droplets,
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
   title: "Start Here: The Beginner's Journey — AquaMind",
   description: "New to fishkeeping? Follow this proven path: understand the nitrogen cycle, set up your first tank, choose fish and keep it stable — all free, all verified.",
   alternates: { canonical: "https://aquamind.life/start-here" },
+  openGraph: {
+    title: "Start Here: The Beginner's Journey — AquaMind",
+    description: "New to fishkeeping? Follow this proven path: understand the nitrogen cycle, set up your first tank, choose fish and keep it stable — all free, all verified.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 const steps = [
@@ -81,6 +88,9 @@ const steps = [
 export default function StartHerePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mb-6">
+        <Breadcrumb items={[{ label: "Start Here" }]} />
+      </div>
       <div className="mb-10 text-center">
         <div className="inline-flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-3">
           <Compass className="w-4 h-4" />

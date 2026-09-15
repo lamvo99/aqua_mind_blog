@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "Pump & Filter Flow Calculator — AquaMind",
   description: "Find the right flow rate (L/h or gph) for your aquarium filter or circulation pump based on tank volume and turnover rate.",
   alternates: { canonical: "https://aquamind.life/tools/pump-flow" },
+  openGraph: {
+    title: "Pump & Filter Flow Calculator — AquaMind",
+    description: "Find the right flow rate (L/h or gph) for your aquarium filter or circulation pump based on tank volume and turnover rate.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pump & Filter Flow Calculator — AquaMind",
+    description: "Find the right flow rate (L/h or gph) for your aquarium filter or circulation pump based on tank volume and turnover rate.",
+  },
 }
 
 export default function PumpFlowPage() {

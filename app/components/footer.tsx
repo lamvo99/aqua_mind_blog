@@ -7,6 +7,29 @@ import { useNewsletter } from "@/lib/store"
 import { useState, useEffect } from "react"
 import strings from "@/lib/i18n/strings"
 
+const surfaces = [
+  { href: "/start-here", label: "Start Here" },
+  { href: "/learn", label: "Learning Paths" },
+  { href: "/posts", label: "Articles" },
+]
+
+const explore = [
+  { href: "/database", label: "Database" },
+  { href: "/wiki", label: "Wiki" },
+  { href: "/species", label: "Fish" },
+  { href: "/plants", label: "Plants" },
+  { href: "/corals", label: "Corals" },
+  { href: "/invertebrates", label: "Invertebrates" },
+  { href: "/equipment", label: "Equipment" },
+]
+
+const solveAndTools = [
+  { href: "/problems", label: "Problems" },
+  { href: "/tools", label: "Tools" },
+  { href: "/inspiration", label: "Inspiration" },
+  { href: "/finder", label: "Finder Quiz" },
+]
+
 export default function Footer() {
   const { status, loading, subscribe } = useNewsletter()
   const [email, setEmail] = useState("")
@@ -19,14 +42,14 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 dark:bg-slate-950 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
                 src="/logo.png"
                 alt={strings.site.name}
-                width={1024}
-                height={1024}
+                width={32}
+                height={32}
                 className="w-8 h-8 rounded-lg"
               />
               <span className="text-lg font-bold text-white">{strings.site.name}</span>
@@ -37,14 +60,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.explore}</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Learn</h4>
             <ul className="space-y-2.5">
-              {[
-                { href: "/", label: strings.nav.home },
-                { href: "/posts", label: strings.nav.posts },
-                { href: "/about", label: strings.nav.about },
-                { href: "/contact", label: strings.nav.contact },
-              ].map((link) => (
+              {surfaces.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -58,8 +76,35 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.categories}</h4>
-            <FooterCategories />
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
+            <ul className="space-y-2.5">
+              {explore.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-400 hover:text-aqua-400 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Solve &amp; Tools</h4>
+            <ul className="space-y-2.5">
+              {solveAndTools.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-400 hover:text-aqua-400 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
@@ -120,46 +165,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
-
-function FooterCategories() {
-  const [categories, setCategories] = useState<{ title: string; slug: string }[]>([])
-
-  useEffect(() => {
-    fetch("/api/categories")
-      .then((r) => r.json())
-      .then((data) => {
-        if (Array.isArray(data)) setCategories(data.slice(0, 6))
-      })
-      .catch(() => {})
-  }, [])
-
-  if (categories.length === 0) {
-    return (
-      <ul className="space-y-2.5">
-        <li className="text-sm text-slate-500">{strings.nav.posts}...</li>
-      </ul>
-    )
-  }
-
-  return (
-    <ul className="space-y-2.5">
-      {categories.map((cat) => (
-        <li key={cat.slug}>
-          <Link
-            href={`/posts?category=${cat.slug}`}
-            className="text-sm text-slate-400 hover:text-aqua-400 transition-colors"
-          >
-            {cat.title}
-          </Link>
-        </li>
-      ))}
-      <li>
-        <Link href="/posts" className="text-sm text-aqua-400 hover:text-aqua-300 transition-colors">
-          {strings.footer.viewAll}
-        </Link>
-      </li>
-    </ul>
   )
 }

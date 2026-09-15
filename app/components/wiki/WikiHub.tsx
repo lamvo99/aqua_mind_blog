@@ -297,6 +297,31 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
         </div>
       )}
 
+      <div className="mt-8 p-5 rounded-2xl bg-aqua-50 dark:bg-aqua-950/30 border border-aqua-100 dark:border-aqua-900/50">
+        <h2 className="font-bold text-gray-900 dark:text-slate-100 mb-1">Browse by category</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300 mb-3">
+          Explore individual databases with detailed filters and comparison tools.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {[
+            { href: "/species", label: "Fish" },
+            { href: "/invertebrates", label: "Invertebrates" },
+            { href: "/plants", label: "Plants" },
+            { href: "/corals", label: "Corals" },
+            { href: "/equipment", label: "Equipment" },
+            { href: "/database", label: "All Databases" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-3 py-1.5 text-sm font-medium text-aqua-600 dark:text-aqua-400 bg-white dark:bg-slate-800 border border-aqua-200 dark:border-aqua-800 rounded-lg hover:border-aqua-400 dark:hover:border-aqua-600 transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+
       {sheetOpen && (
         <div className="fixed inset-0 z-[70] flex items-end justify-center sm:hidden" role="dialog" aria-modal="true" aria-label="Wiki filters">
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setSheetOpen(false)} aria-hidden="true" />

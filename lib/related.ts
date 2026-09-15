@@ -86,32 +86,44 @@ export function resourcesForCategory(slug: string, title: string): RelatedResour
 
 export const TOOL_LEARN_LINKS: Record<string, { href: string; label: string }[]> = {
   "/tools/aquarium-calculator": [
-    { href: "/learn", label: "Getting started guide" },
-    { href: "/posts", label: "Setup articles" },
+    { href: "/learn/beginner-s-first-freshwater-aquarium", label: "Beginner aquarium guide" },
+    { href: "/setup-planner", label: "Setup planner" },
   ],
-  "/tools/aquarium-volume": [{ href: "/learn", label: "Tank setup basics" }],
+  "/tools/aquarium-volume": [
+    { href: "/posts/setting-up-a-40cm-aquarium-for-beginners-step-by-step", label: "Setting up your first aquarium" },
+  ],
   "/tools/stocking": [
     { href: "/species", label: "Species database" },
-    { href: "/posts", label: "Stocking articles" },
+    { href: "/posts/the-easiest-aquarium-fish-for-beginners", label: "Easiest fish for beginners" },
   ],
-  "/tools/water-change": [{ href: "/learn", label: "Water quality guide" }],
+  "/tools/water-change": [
+    { href: "/posts/how-often-should-you-change-aquarium-water", label: "How often to change water" },
+    { href: "/posts/how-to-change-aquarium-water-without-stressing-fish", label: "Water changes without stress" },
+  ],
   "/tools/co2": [
     { href: "/plants", label: "Plant database" },
-    { href: "/learn", label: "Plant care guide" },
+    { href: "/learn/planted-tank-essentials", label: "Planted tank essentials" },
   ],
   "/tools/lighting": [
     { href: "/plants", label: "Plant database" },
-    { href: "/learn", label: "Plant care guide" },
+    { href: "/learn/planted-tank-essentials", label: "Planted tank essentials" },
   ],
-  "/tools/pump-flow": [{ href: "/equipment", label: "Equipment database" }],
-  "/tools/salt-mixing": [{ href: "/corals", label: "Coral database" }],
-  "/tools/dosing": [{ href: "/plants", label: "Plant database" }],
+  "/tools/pump-flow": [
+    { href: "/equipment", label: "Equipment database" },
+  ],
+  "/tools/salt-mixing": [
+    { href: "/corals", label: "Coral database" },
+    { href: "/learn/marine-and-reef-fundamentals", label: "Marine & reef fundamentals" },
+  ],
+  "/tools/dosing": [
+    { href: "/plants", label: "Plant database" },
+  ],
   "/tools/compatibility-checker": [
     { href: "/species", label: "Species database" },
     { href: "/corals", label: "Coral database" },
   ],
   "/tools/diagnostic": [
     { href: "/problems", label: "Problem guides" },
-    { href: "/learn", label: "Learn" },
+    { href: "/problems/diagnose", label: "Diagnose my problem" },
   ],
 }

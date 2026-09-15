@@ -2,19 +2,30 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { databaseNav } from "@/lib/navigation"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Aquarium Database — Fish, Plants, Corals & Equipment",
   description: "Searchable database of aquarium fish species, aquatic plants, corals and equipment with care parameters.",
   alternates: { canonical: "https://aquamind.life/database" },
+  openGraph: {
+    title: "Aquarium Database — Fish, Plants, Corals & Equipment",
+    description: "Searchable database of aquarium fish species, aquatic plants, corals and equipment with care parameters.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 export default function DatabasePage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Home", href: "/" },
+        { label: "Database" },
+      ])} />
       <div className="mb-6">
-        <Breadcrumb items={[{ label: "Database" }]} />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database" }]} />
       </div>
       <div className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">Database</h1>
@@ -40,6 +51,20 @@ export default function DatabasePage() {
             </span>
           </Link>
         ))}
+      </div>
+
+      <div className="mt-8 p-5 rounded-2xl bg-aqua-50 dark:bg-aqua-950/30 border border-aqua-100 dark:border-aqua-900/50">
+        <h2 className="font-bold text-gray-900 dark:text-slate-100 mb-1">Wiki</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300 mb-3">
+          Search across all database entries at once — fish, invertebrates, plants, corals and equipment.
+        </p>
+        <Link
+          href="/wiki"
+          className="inline-flex items-center gap-1 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:text-aqua-700 dark:hover:text-aqua-300 transition-colors"
+        >
+          Open Wiki
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
       </div>
     </div>
   )

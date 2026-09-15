@@ -3,11 +3,23 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import DiagnosisWizard from "@/app/components/problems/DiagnosisWizard"
 import { client } from "@/lib/sanity"
 import type { ProblemForDiagnosis } from "@/lib/diagnosis"
+import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
   title: "Diagnose Your Aquarium Problem — AquaMind",
   description: "Pick the symptoms you see and get ranked likely causes, from algae outbreaks to sick fish — matched against our full problem database.",
   alternates: { canonical: "https://aquamind.life/problems/diagnose" },
+  openGraph: {
+    title: "Diagnose Your Aquarium Problem — AquaMind",
+    description: "Pick the symptoms you see and get ranked likely causes, from algae outbreaks to sick fish — matched against our full problem database.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Diagnose Your Aquarium Problem — AquaMind",
+    description: "Pick the symptoms you see and get ranked likely causes, from algae outbreaks to sick fish — matched against our full problem database.",
+  },
 }
 
 export const revalidate = 86400
@@ -26,8 +38,15 @@ export default async function DiagnosePage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <JsonLd
+        data={breadcrumbSchema([
+          { label: "Home", href: "/" },
+          { label: "Problems", href: "/problems" },
+          { label: "Diagnose" },
+        ])}
+      />
       <div className="mb-6">
-        <Breadcrumb items={[{ label: "Problems", href: "/problems" }, { label: "Diagnose" }]} />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Problems", href: "/problems" }, { label: "Diagnose" }]} />
       </div>
       <div className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-3">Diagnose Your Aquarium Problem</h1>

@@ -43,12 +43,17 @@ export async function generateMetadata({
     title,
     description: category.description || `All articles in ${category.title} on AquaMind.`,
     alternates: { canonical: `${siteUrl}/category/${slug}` },
-    robots: posts.length === 0 ? { index: false } : undefined,
+      robots: posts.length === 0 ? { index: false } : undefined,
     openGraph: {
       title,
       description: category.description || `All articles in ${category.title} on AquaMind.`,
       type: "website",
       url: `${siteUrl}/category/${slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: category.description || `All articles in ${category.title} on AquaMind.`,
     },
   }
 }

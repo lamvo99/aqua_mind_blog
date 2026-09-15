@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Learning Paths — AquaMind",
   description: "Structured step-by-step learning paths for freshwater, planted and marine aquariums — from the nitrogen cycle to a thriving reef.",
   alternates: { canonical: "https://aquamind.life/learn" },
+  openGraph: {
+    title: "Learning Paths — AquaMind",
+    description: "Structured step-by-step learning paths for freshwater, planted and marine aquariums — from the nitrogen cycle to a thriving reef.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 export const revalidate = 86400

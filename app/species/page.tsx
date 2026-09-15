@@ -2,12 +2,19 @@ import type { Metadata } from "next"
 import { getDatabaseList, getDatabaseCompareItems } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
+import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Fish Species Database — AquaMind",
   description: "Browse fish species profiles with care parameters: size, tank size, temperature, pH, diet, temperament and compatibility.",
   alternates: { canonical: "https://aquamind.life/species" },
+  openGraph: {
+    title: "Fish Species Database — AquaMind",
+    description: "Browse fish species profiles with care parameters: size, tank size, temperature, pH, diet, temperament and compatibility.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 export const revalidate = 300
@@ -17,8 +24,19 @@ export default async function SpeciesPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <JsonLd data={breadcrumbSchema([
+        { label: "Home", href: "/" },
+        { label: "Database", href: "/database" },
+        { label: "Fish" },
+      ])} />
+      <JsonLd data={collectionPageSchema({
+        name: "Fish Species Database",
+        description: "Browse fish species profiles with care parameters.",
+        url: "https://aquamind.life/species",
+        items: items.map((i) => ({ title: i.name, url: `https://aquamind.life/species/${i.slug?.current}` })),
+      })} />
       <div className="mb-6">
-        <Breadcrumb items={[{ label: "Database", href: "/database" }, { label: "Fish" }]} />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Fish" }]} />
       </div>
       <div className="mb-8">
         <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">

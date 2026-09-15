@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "About AquaMind",
   description: "AquaMind's story and mission: free, verified aquascaping and aquarium knowledge for fishkeepers of every level.",
   alternates: { canonical: "https://aquamind.life/about" },
+  openGraph: {
+    title: "About AquaMind",
+    description: "AquaMind's story and mission: free, verified aquascaping and aquarium knowledge for fishkeepers of every level.",
+    type: "website",
+    locale: "en_US",
+  },
 }
 
 const values = [

@@ -12,6 +12,7 @@ export const mainNav: NavItem[] = [
   { href: "/database", label: "Database" },
   { href: "/problems", label: "Problems" },
   { href: "/inspiration", label: "Inspiration" },
+  { href: "/finder", label: "Finder", description: "Find the right fish, plants & corals for your tank" },
   { href: "/about", label: "About" },
 ]
 

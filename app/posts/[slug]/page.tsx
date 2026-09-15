@@ -9,6 +9,7 @@ import Comments from "@/app/components/Comments"
 import NewsletterSection from "@/app/components/NewsletterSection"
 import ReadingProgress from "@/app/components/ReadingProgress"
 import RelatedPosts from "@/app/components/RelatedPosts"
+import RelatedResources from "@/app/components/RelatedResources"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LikeBookmark from "@/app/components/LikeBookmark"
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -201,6 +202,8 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
         </div>
 
         <RelatedDatabase postId={post._id} />
+
+        <RelatedResources slug={slug} title={post.title} />
       </div>
 
       <RelatedPosts currentSlug={slug} categories={post.categories?.map((c: any) => c.slug.current)} />
