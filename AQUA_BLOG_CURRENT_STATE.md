@@ -6,7 +6,7 @@ Aqua Blog (AquaMind) is a production aquascaping/aquarium content platform. It i
 
 The site contains **46 page routes** across blog articles, 5 species/plant/coral/equipment/invertebrate databases, 12 interactive calculator tools, a species finder quiz, a setup planner, learning paths, aquascaping style guides, a problem diagnostic wizard, and a wiki hub.
 
-**45 page files** are all Server Components. Client interactivity is delegated to **37 client components** via `"use client"` directive. The project has **22 test files** with Vitest (1 failing test out of 211). ESLint passes cleanly.
+**45 page files** are all Server Components. Client interactivity is delegated to **37 client components** via `"use client"` directive. The project has **24 test files** with Vitest (1 failing test out of 238). ESLint passes cleanly.
 
 **Key current gaps**: No scroll reveal/entrance animations, no page transitions, no Framer Motion, no analytics, no i18n framework, no service worker registration working, Studio is unprotected, no `loading.tsx` at route level, and no error boundaries.
 

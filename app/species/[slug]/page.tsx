@@ -9,6 +9,7 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Thermometer, Droplets, Ruler, Fish } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
+import RelationshipSection from "@/app/components/database/RelationshipSection"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -147,6 +148,11 @@ export default async function SpeciesDetailPage({ params }: Props) {
               <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item.schooling}</p>
             </div>
           )}
+
+          <RelationshipSection title="Suitable Plants" items={item.compatiblePlants || []} hrefPrefix="/plants" />
+          <RelationshipSection title="Compatible Invertebrates" items={item.compatibleInvertebrates || []} hrefPrefix="/invertebrates" />
+          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
+          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
 
           {item.relatedPosts && item.relatedPosts.length > 0 && (
             <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">

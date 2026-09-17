@@ -21,6 +21,10 @@ export default defineType({
       validation: (Rule: any) => Rule.required(),
     }),
     defineField({
+      name: 'waterType', title: 'Water Type', type: 'string',
+      options: { list: ['freshwater', 'saltwater', 'both'] },
+    }),
+    defineField({
       name: 'symptoms', title: 'Symptoms', type: 'array', of: [{ type: 'block' }],
     }),
     defineField({

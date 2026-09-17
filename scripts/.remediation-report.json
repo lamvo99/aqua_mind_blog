@@ -1,0 +1,100 @@
+{
+  "applied": [
+    {
+      "slug": "nannostomus-beckfordi",
+      "file": "Nannostomus-beckfordi.jpg",
+      "size": 27669,
+      "assetId": "image-10d96371d4cb16669078fc6b545956175f9d4a53-240x180-jpg",
+      "docId": "ofTl1CTOUWuLwM28PxTCaV"
+    },
+    {
+      "slug": "celestichthys-erythromicron",
+      "file": "D.erythromicron crop.jpg",
+      "size": 585503,
+      "assetId": "image-0943b774297b949f187292cd292ca8832f41b553-1920x1279-jpg",
+      "docId": "species-celestichthys-erythromicron"
+    },
+    {
+      "slug": "betta-smaragdina",
+      "file": "Betta smaragdina pair1.jpg",
+      "size": 201867,
+      "assetId": "image-f67883a449e3ad74b536228121e4e1379bad8d75-598x398-jpg",
+      "docId": "ofTl1CTOUWuLwM28PxTESt"
+    },
+    {
+      "slug": "zebrasoma-flavescens",
+      "file": "Zebrasoma flavescens 01.JPG",
+      "size": 385213,
+      "assetId": "image-93429f88f4da9fb7714dedbf7f0495315bc733d1-1920x1269-jpg",
+      "docId": "species-zebrasoma-flavescens"
+    },
+    {
+      "slug": "acan-lords",
+      "file": "Acanthastrea lordhowensis.jpg",
+      "size": 150168,
+      "assetId": "image-f2555bd40ac62ef0c77a8ea227000cb58fde9117-500x476-jpg",
+      "docId": "coral-acan-lords"
+    },
+    {
+      "slug": "submersible-heater",
+      "file": "Aquarium heater1.jpg",
+      "size": 111784,
+      "assetId": "image-4f479c81b72fa7f5a7b3fe7e6d0b7946930c73e8-406x1000-jpg",
+      "docId": "equipment-submersible-heater"
+    },
+    {
+      "slug": "java-fern",
+      "file": "Java fern (microsorum pteropus) in natural habitat in West Peninsular Malaysia.jpg",
+      "size": 820574,
+      "assetId": "image-009788abf10e176ec5d10397618cf384933afce9-1920x1440-jpg",
+      "docId": "plant-java-fern"
+    },
+    {
+      "slug": "cryptocoryne-wendtii",
+      "file": "Cryptocoryne wendtii 74 Sunbury St Geebung P1010527.jpg",
+      "size": 1103777,
+      "assetId": "image-09798e7de7766a42a5d580c1eada18408e290d54-1920x1440-jpg",
+      "docId": "plant-cryptocoryne-wendtii"
+    },
+    {
+      "slug": "dwarf-baby-tears",
+      "file": "Oldenlandiopsis callitrichoides kz01.jpg",
+      "size": 530946,
+      "assetId": "image-e59723fdfe0bf4165131a319cd921fc4fadd32db-1920x1440-jpg",
+      "docId": "plant-dwarf-baby-tears"
+    },
+    {
+      "slug": "vallisneria-spiralis",
+      "file": "Vallisnérie Vallisneria spiralis Brantôme-Dronne 2014 4.JPG",
+      "size": 615704,
+      "assetId": "image-47cdc84e6a875bec78219b6d37d112aff158f443-1920x1253-jpg",
+      "docId": "plant-vallisneria-spiralis"
+    },
+    {
+      "slug": "water-wisteria",
+      "file": "Hygrophila difformis 8278.jpg",
+      "size": 433189,
+      "assetId": "image-75071b54f3f8a8ee05dea06423d4c40ccf731b20-1920x1280-jpg",
+      "docId": "plant-water-wisteria"
+    },
+    {
+      "slug": "phymanthus-crucifer",
+      "file": "Phymanthus crucifer.jpg",
+      "size": 188384,
+      "assetId": "image-a83bdb666ec7c8b8ab3deae7d78d6412e93384ab-749x406-jpg",
+      "docId": "invertebrate-phymanthus-crucifer"
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "hang-on-back-filter",
+      "reason": "No accurate Wikimedia Commons match found — manual image needed"
+    },
+    {
+      "slug": "co-regulator-kit",
+      "reason": "No accurate Wikimedia Commons match found — manual image needed"
+    }
+  ],
+  "failed": [],
+  "dryRun": false
+}

@@ -1,0 +1,2885 @@
+{
+  "totalEntities": 404,
+  "byType": {
+    "species": 151,
+    "plant": 64,
+    "coral": 49,
+    "equipment": 47,
+    "invertebrate": 50,
+    "problem": 33,
+    "inspiration": 10
+  },
+  "slugIssues": [
+    {
+      "slug": "gasteropelecus-sternicla",
+      "issue": "Duplicate slug across types: species:Hatchetfish, species:Silver Hatchetfish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "1z8rQFHeojDMTUo2hXSV4m",
+          "name": "Hatchetfish"
+        },
+        {
+          "type": "species",
+          "_id": "ofTl1CTOUWuLwM28PxTEQ3",
+          "name": "Silver Hatchetfish"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "nannostomus-beckfordi",
+      "issue": "Duplicate slug across types: species:Golden Pencilfish, species:Golden Pencilfish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "1z8rQFHeojDMTUo2hXSV9i",
+          "name": "Golden Pencilfish"
+        },
+        {
+          "type": "species",
+          "_id": "ofTl1CTOUWuLwM28PxTCaV",
+          "name": "Golden Pencilfish"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "macropodus-opercularis",
+      "issue": "Duplicate slug across types: species:Paradise Fish, species:Paradise Fish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "1z8rQFHeojDMTUo2hXSW6w",
+          "name": "Paradise Fish"
+        },
+        {
+          "type": "species",
+          "_id": "J1Tx0fWCuGNPno99A79fDm",
+          "name": "Paradise Fish"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "poecilia-sphenops",
+      "issue": "Duplicate slug across types: species:Molly, species:Short-finned Molly",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "PZ8Kai1VvEL468NS2LLaqK",
+          "name": "Molly"
+        },
+        {
+          "type": "species",
+          "_id": "species-poecilia-sphenops",
+          "name": "Short-finned Molly"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "carassius-auratus",
+      "issue": "Duplicate slug across types: species:Common Goldfish, species:Fancy Goldfish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "sebdKYryWZgYP2rm3oqsPG",
+          "name": "Common Goldfish"
+        },
+        {
+          "type": "species",
+          "_id": "species-carassius-auratus",
+          "name": "Fancy Goldfish"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "bucephalandra",
+      "issue": "Duplicate slug across types: plant:Bucephalandra, plant:Bucephalandra",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "1z8rQFHeojDMTUo2hXSXE2",
+          "name": "Bucephalandra"
+        },
+        {
+          "type": "plant",
+          "_id": "plant-bucephalandra",
+          "name": "Bucephalandra"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "ceratopteris-thalictroides",
+      "issue": "Duplicate slug across types: plant:Water Sprite, plant:Water Sprite",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "IlX7xILobrukz7d5Jo2xiA",
+          "name": "Water Sprite"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3or05S",
+          "name": "Water Sprite"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "rotala-macrandra",
+      "issue": "Duplicate slug across types: plant:Rotala Macrandra, plant:Rotala Macrandra",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "J1Tx0fWCuGNPno99A79SjI",
+          "name": "Rotala Macrandra"
+        },
+        {
+          "type": "plant",
+          "_id": "PZ8Kai1VvEL468NS2LLcNl",
+          "name": "Rotala Macrandra"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "bird-s-nest-coral",
+      "issue": "Duplicate slug across types: coral:Bird’s Nest Coral, coral:Bird’s Nest Coral",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "BruaGKYCGDRQjkiQDnlmoW",
+          "name": "Bird’s Nest Coral"
+        },
+        {
+          "type": "coral",
+          "_id": "drafts.BruaGKYCGDRQjkiQDnlmoW",
+          "name": "Bird’s Nest Coral"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "stylophora-pistillata",
+      "issue": "Duplicate slug across types: coral:Stylophora Coral, coral:Cat's Paw Coral",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "IlX7xILobrukz7d5JnvhK2",
+          "name": "Stylophora Coral"
+        },
+        {
+          "type": "coral",
+          "_id": "sebdKYryWZgYP2rm3or0mk",
+          "name": "Cat's Paw Coral"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "protein-skimmer",
+      "issue": "Duplicate slug across types: equipment:Protein Skimmer, equipment:Protein Skimmer",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "1z8rQFHeojDMTUo2hXSY4g",
+          "name": "Protein Skimmer"
+        },
+        {
+          "type": "equipment",
+          "_id": "ofTl1CTOUWuLwM28PxTUcx",
+          "name": "Protein Skimmer"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "gravel-vacuum",
+      "issue": "Duplicate slug across types: equipment:Gravel Vacuum, equipment:Gravel Vacuum",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "IlX7xILobrukz7d5JnTI3q",
+          "name": "Gravel Vacuum"
+        },
+        {
+          "type": "equipment",
+          "_id": "PZ8Kai1VvEL468NS2LLfda",
+          "name": "Gravel Vacuum"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "aquarium-chiller",
+      "issue": "Duplicate slug across types: equipment:Aquarium Chiller, equipment:Aquarium Chiller",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "J1Tx0fWCuGNPno99A6hjl8",
+          "name": "Aquarium Chiller"
+        },
+        {
+          "type": "equipment",
+          "_id": "sebdKYryWZgYP2rm3or2P6",
+          "name": "Aquarium Chiller"
+        }
+      ],
+      "severity": "critical"
+    },
+    {
+      "slug": "caridina-dennerli",
+      "issue": "Duplicate slug across types: invertebrate:Sulawesi Cardinal Shrimp, invertebrate:Sulawesi Red Cherry Shrimp",
+      "entries": [
+        {
+          "type": "invertebrate",
+          "_id": "J1Tx0fWCuGNPno99A7KIq7",
+          "name": "Sulawesi Cardinal Shrimp"
+        },
+        {
+          "type": "invertebrate",
+          "_id": "sebdKYryWZgYP2rm3or1AM",
+          "name": "Sulawesi Red Cherry Shrimp"
+        }
+      ],
+      "severity": "critical"
+    }
+  ],
+  "requiredFieldIssues": [
+    {
+      "type": "plant",
+      "_id": "IlX7xILobrukz7d5Jo2xiA",
+      "name": "Water Sprite",
+      "field": "growthForm",
+      "issue": "Missing required field: growthForm",
+      "severity": "critical"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLn5",
+      "name": "Blyxa japonica",
+      "field": "growthForm",
+      "issue": "Missing required field: growthForm",
+      "severity": "critical"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-alternanthera-reineckii",
+      "name": "Alternanthera reineckii",
+      "field": "growthForm",
+      "issue": "Missing required field: growthForm",
+      "severity": "critical"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-amazon-sword",
+      "name": "Amazon Sword",
+      "field": "growthForm",
+      "issue": "Missing required field: growthForm",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "1z8rQFHeojDMTUo2hX9Rpx",
+      "name": "Dendronephthya",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "5oQB2MZ7gmZXjdwFqSrVl7",
+      "name": "Montipora Digitata",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmjC",
+      "name": "Galaxea",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmlr",
+      "name": "Cauliflower Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmoW",
+      "name": "Bird’s Nest Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmrB",
+      "name": "Honeycomb Brain Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmtq",
+      "name": "Elegance Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmwV",
+      "name": "Open Brain Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9CjDmS",
+      "name": "Green Star Polyps",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9CttlY",
+      "name": "Palythoa",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9Ctty8",
+      "name": "Lobo Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9Ctu8C",
+      "name": "Bubble Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9DJffc",
+      "name": "Dendrophyllia Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5JnTHt0",
+      "name": "Torch Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5JnTgZ4",
+      "name": "Discosoma Mushroom",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5JnTita",
+      "name": "Sinularia Leather Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jng29O",
+      "name": "Trumpet Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jng2TG",
+      "name": "Favia Brain Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5JnvhK2",
+      "name": "Stylophora Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jnvipy",
+      "name": "Chalice Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jo2Xh0",
+      "name": "Pavona Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jo2Xq2",
+      "name": "Goniopora Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jo2r7u",
+      "name": "Palythoa Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jo2rGw",
+      "name": "Rhodactis Mushroom",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "J1Tx0fWCuGNPno99A6TtLj",
+      "name": "Frogspawn Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "J1Tx0fWCuGNPno99A6TtVz",
+      "name": "Xenia Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "J1Tx0fWCuGNPno99A6UVbu",
+      "name": "Kenya Tree Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "PZ8Kai1VvEL468NS2KnjUP",
+      "name": "Sun Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "PZ8Kai1VvEL468NS2KnkWY",
+      "name": "Tubing Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-acan-lords",
+      "name": "Acan Lords",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-blastomussa",
+      "name": "Blastomussa",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-candy-cane-coral",
+      "name": "Candy Cane Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-duncan-coral",
+      "name": "Duncan Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-goniopora",
+      "name": "Goniopora",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-hammer-coral",
+      "name": "Hammer Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-montipora-capricornis",
+      "name": "Montipora Capricornis",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-ricordea-mushroom",
+      "name": "Ricordea Mushroom",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-staghorn-acropora",
+      "name": "Staghorn Acropora",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-toadstool-leather",
+      "name": "Toadstool Leather",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-zoanthids",
+      "name": "Zoanthids",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "coral",
+      "_id": "drafts.BruaGKYCGDRQjkiQDnlmoW",
+      "name": "Bird’s Nest Coral",
+      "field": "waterType",
+      "issue": "Missing required field: waterType",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlsx5",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlszk",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt2P",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt54",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt7j",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltAO",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltD3",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltFi",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-black-beard-algae",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-brown-diatom-algae",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cloudy-water",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cyanobacteria",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-gasping-surface",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-hiding",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-green-water",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-high-ammonia",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-low-filter-flow",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-plant-leaves-melting",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-white-spot-disease",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm04r",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm07W",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm0AB",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm0Cq",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm0FV",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-classic-iwagumi",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-dutch-planted-tank",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-jungle-biotope",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-low-tech-nature-aquarium",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-nano-paludarium",
+      "name": null,
+      "field": "name",
+      "issue": "Missing required field: name",
+      "severity": "critical"
+    }
+  ],
+  "semanticIssues": [
+    {
+      "type": "plant",
+      "_id": "I9bI8W8ZWcEwyIzM9CjAAW",
+      "name": "Bacopa caroliniana",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "I9bI8W8ZWcEwyIzM9CuIOq",
+      "name": "Sagittaria",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "IlX7xILobrukz7d5Jo2xiA",
+      "name": "Water Sprite",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "J1Tx0fWCuGNPno99A7KJKt",
+      "name": "Salvinia",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "PZ8Kai1VvEL468NS2LLcgX",
+      "name": "Christmas Moss",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLTD",
+      "name": "Cryptocoryne beckettii",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-cryptocoryne-wendtii",
+      "name": "Cryptocoryne wendtii",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-dwarf-sagittaria",
+      "name": "Dwarf Sagittaria",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-ludwigia-repens",
+      "name": "Ludwigia repens",
+      "field": "co2",
+      "value": "Low-Medium",
+      "allowed": [
+        "None",
+        "Low",
+        "Medium",
+        "High",
+        "Required"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-marsilea-hirsuta",
+      "name": "Marsilea hirsuta",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "sebdKYryWZgYP2rm3oqz6S",
+      "name": "Weeping Moss",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "sebdKYryWZgYP2rm3or05S",
+      "name": "Water Sprite",
+      "field": "light",
+      "value": "Low-Medium",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "1z8rQFHeojDMTUo2hX9Rpx",
+      "name": "Dendronephthya",
+      "field": "light",
+      "value": "None",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "5oQB2MZ7gmZXjdwFqSrVl7",
+      "name": "Montipora Digitata",
+      "field": "light",
+      "value": "Moderate-High",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "BruaGKYCGDRQjkiQDnlmjC",
+      "name": "Galaxea",
+      "field": "light",
+      "value": "Moderate-High",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "I9bI8W8ZWcEwyIzM9DJffc",
+      "name": "Dendrophyllia Coral",
+      "field": "light",
+      "value": "None",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "IlX7xILobrukz7d5Jo2Xh0",
+      "name": "Pavona Coral",
+      "field": "light",
+      "value": "Moderate-High",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "PZ8Kai1VvEL468NS2KnjUP",
+      "name": "Sun Coral",
+      "field": "light",
+      "value": "None",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "PZ8Kai1VvEL468NS2KnkWY",
+      "name": "Tubing Coral",
+      "field": "light",
+      "value": "None",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-goniopora",
+      "name": "Goniopora",
+      "field": "light",
+      "value": "Moderate-High",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "coral",
+      "_id": "coral-montipora-capricornis",
+      "name": "Montipora Capricornis",
+      "field": "light",
+      "value": "Moderate-High",
+      "allowed": [
+        "Low",
+        "Low-Moderate",
+        "Moderate",
+        "Medium",
+        "Medium-High",
+        "High",
+        "Very High"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "IlX7xILobrukz7d5JnfmDG",
+      "name": "Nassarius Snail",
+      "field": "diet",
+      "value": "Scavenger",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "IlX7xILobrukz7d5Jng5wE",
+      "name": "Scarlet Hermit Crab",
+      "field": "diet",
+      "value": "Scavenger",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "IlX7xILobrukz7d5Jo2rTa",
+      "name": "Feather Duster Worm",
+      "field": "diet",
+      "value": "Filter feeder",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "J1Tx0fWCuGNPno99A6UVmA",
+      "name": "Vampire Shrimp",
+      "field": "diet",
+      "value": "Filter feeder",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "J1Tx0fWCuGNPno99A7Ket0",
+      "name": "Tridacna Maxima Clam",
+      "field": "diet",
+      "value": "Photosynthetic",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "invertebrate-atyopsis-moluccensis",
+      "name": "Bamboo Shrimp",
+      "field": "diet",
+      "value": "Filter feeder",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "invertebrate-caridina-cantonensis",
+      "name": "Crystal Red Shrimp",
+      "field": "diet",
+      "value": "Detritivore",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    },
+    {
+      "type": "invertebrate",
+      "_id": "invertebrate-lysmata-wurdemanni",
+      "name": "Peppermint Shrimp",
+      "field": "diet",
+      "value": "Scavenger",
+      "allowed": [
+        "Carnivore",
+        "Omnivore",
+        "Herbivore",
+        "Micropredator"
+      ],
+      "severity": "important"
+    }
+  ],
+  "numericIssues": [
+    {
+      "type": "equipment",
+      "_id": "5oQB2MZ7gmZXjdwFqSra6F",
+      "name": "Refractometer",
+      "field": "tankSizeMinL",
+      "value": 0,
+      "issue": "tankSizeMinL must be > 0",
+      "severity": "critical"
+    },
+    {
+      "type": "equipment",
+      "_id": "IlX7xILobrukz7d5JnvlZm",
+      "name": "PAR Meter",
+      "field": "tankSizeMinL",
+      "value": 0,
+      "issue": "tankSizeMinL must be > 0",
+      "severity": "critical"
+    }
+  ],
+  "waterTypeIssues": [],
+  "duplicateIssues": [
+    {
+      "name": "Golden Pencilfish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "1z8rQFHeojDMTUo2hXSV9i"
+        },
+        {
+          "type": "species",
+          "_id": "ofTl1CTOUWuLwM28PxTCaV"
+        }
+      ],
+      "issue": "Duplicate name \"Golden Pencilfish\" in species",
+      "severity": "critical"
+    },
+    {
+      "name": "Paradise Fish",
+      "entries": [
+        {
+          "type": "species",
+          "_id": "1z8rQFHeojDMTUo2hXSW6w"
+        },
+        {
+          "type": "species",
+          "_id": "J1Tx0fWCuGNPno99A79fDm"
+        }
+      ],
+      "issue": "Duplicate name \"Paradise Fish\" in species",
+      "severity": "critical"
+    },
+    {
+      "name": "Bucephalandra",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "1z8rQFHeojDMTUo2hXSXE2"
+        },
+        {
+          "type": "plant",
+          "_id": "plant-bucephalandra"
+        }
+      ],
+      "issue": "Duplicate name \"Bucephalandra\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Christmas Moss",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "I9bI8W8ZWcEwyIzM9Ciitg"
+        },
+        {
+          "type": "plant",
+          "_id": "PZ8Kai1VvEL468NS2LLcgX"
+        }
+      ],
+      "issue": "Duplicate name \"Christmas Moss\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Weeping Moss",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "IlX7xILobrukz7d5JnfltO"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3oqz6S"
+        }
+      ],
+      "issue": "Duplicate name \"Weeping Moss\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Water Sprite",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "IlX7xILobrukz7d5Jo2xiA"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3or05S"
+        }
+      ],
+      "issue": "Duplicate name \"Water Sprite\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Glossostigma",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "J1Tx0fWCuGNPno99A6Ttdg"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3oqzpi"
+        }
+      ],
+      "issue": "Duplicate name \"Glossostigma\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Rotala Macrandra",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "J1Tx0fWCuGNPno99A79SjI"
+        },
+        {
+          "type": "plant",
+          "_id": "PZ8Kai1VvEL468NS2LLcNl"
+        }
+      ],
+      "issue": "Duplicate name \"Rotala Macrandra\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Java Moss",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "J1Tx0fWCuGNPno99A7KvLg"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3oqyqi"
+        }
+      ],
+      "issue": "Duplicate name \"Java Moss\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Dwarf Sagittaria",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "plant-dwarf-sagittaria"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3oqzY0"
+        }
+      ],
+      "issue": "Duplicate name \"Dwarf Sagittaria\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Monte Carlo",
+      "entries": [
+        {
+          "type": "plant",
+          "_id": "plant-monte-carlo"
+        },
+        {
+          "type": "plant",
+          "_id": "sebdKYryWZgYP2rm3oqzIG"
+        }
+      ],
+      "issue": "Duplicate name \"Monte Carlo\" in plant",
+      "severity": "critical"
+    },
+    {
+      "name": "Bird’s Nest Coral",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "BruaGKYCGDRQjkiQDnlmoW"
+        },
+        {
+          "type": "coral",
+          "_id": "drafts.BruaGKYCGDRQjkiQDnlmoW"
+        }
+      ],
+      "issue": "Duplicate name \"Bird’s Nest Coral\" in coral",
+      "severity": "critical"
+    },
+    {
+      "name": "Open Brain Coral",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "BruaGKYCGDRQjkiQDnlmwV"
+        },
+        {
+          "type": "coral",
+          "_id": "sebdKYryWZgYP2rm3or0aw"
+        }
+      ],
+      "issue": "Duplicate name \"Open Brain Coral\" in coral",
+      "severity": "critical"
+    },
+    {
+      "name": "Chalice Coral",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "IlX7xILobrukz7d5Jnvipy"
+        },
+        {
+          "type": "coral",
+          "_id": "sebdKYryWZgYP2rm3or0LC"
+        }
+      ],
+      "issue": "Duplicate name \"Chalice Coral\" in coral",
+      "severity": "critical"
+    },
+    {
+      "name": "Ricordea Mushroom",
+      "entries": [
+        {
+          "type": "coral",
+          "_id": "PZ8Kai1VvEL468NS2LLdZI"
+        },
+        {
+          "type": "coral",
+          "_id": "coral-ricordea-mushroom"
+        }
+      ],
+      "issue": "Duplicate name \"Ricordea Mushroom\" in coral",
+      "severity": "critical"
+    },
+    {
+      "name": "Protein Skimmer",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "1z8rQFHeojDMTUo2hXSY4g"
+        },
+        {
+          "type": "equipment",
+          "_id": "ofTl1CTOUWuLwM28PxTUcx"
+        }
+      ],
+      "issue": "Duplicate name \"Protein Skimmer\" in equipment",
+      "severity": "critical"
+    },
+    {
+      "name": "Gravel Vacuum",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "IlX7xILobrukz7d5JnTI3q"
+        },
+        {
+          "type": "equipment",
+          "_id": "PZ8Kai1VvEL468NS2LLfda"
+        }
+      ],
+      "issue": "Duplicate name \"Gravel Vacuum\" in equipment",
+      "severity": "critical"
+    },
+    {
+      "name": "Aquarium Chiller",
+      "entries": [
+        {
+          "type": "equipment",
+          "_id": "J1Tx0fWCuGNPno99A6hjl8"
+        },
+        {
+          "type": "equipment",
+          "_id": "sebdKYryWZgYP2rm3or2P6"
+        }
+      ],
+      "issue": "Duplicate name \"Aquarium Chiller\" in equipment",
+      "severity": "critical"
+    },
+    {
+      "name": "Blue Tiger Shrimp",
+      "entries": [
+        {
+          "type": "invertebrate",
+          "_id": "1z8rQFHeojDMTUo2hXSXbt"
+        },
+        {
+          "type": "invertebrate",
+          "_id": "J1Tx0fWCuGNPno99A6hj3X"
+        }
+      ],
+      "issue": "Duplicate name \"Blue Tiger Shrimp\" in invertebrate",
+      "severity": "critical"
+    },
+    {
+      "name": "Rabbit Snail",
+      "entries": [
+        {
+          "type": "invertebrate",
+          "_id": "I9bI8W8ZWcEwyIzM9DJhXM"
+        },
+        {
+          "type": "invertebrate",
+          "_id": "sebdKYryWZgYP2rm3or1U2"
+        }
+      ],
+      "issue": "Duplicate name \"Rabbit Snail\" in invertebrate",
+      "severity": "critical"
+    },
+    {
+      "name": "Sulawesi Cardinal Shrimp",
+      "entries": [
+        {
+          "type": "invertebrate",
+          "_id": "J1Tx0fWCuGNPno99A7KIq7"
+        },
+        {
+          "type": "invertebrate",
+          "_id": "PZ8Kai1VvEL468NS2LLdvC"
+        }
+      ],
+      "issue": "Duplicate name \"Sulawesi Cardinal Shrimp\" in invertebrate",
+      "severity": "critical"
+    }
+  ],
+  "relationshipIssues": [
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCJT",
+      "name": "Pygmy Corydoras",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCJT",
+      "name": "Pygmy Corydoras",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCMJ",
+      "name": "Honey Gourami",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCP9",
+      "name": "Kubotai Rasbora",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCRz",
+      "name": "Chili Rasbora",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCUp",
+      "name": "Red Garra",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCXf",
+      "name": "German Blue Ram",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCaV",
+      "name": "Golden Pencilfish",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTCdL",
+      "name": "Rummynose Tetra",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTEQ3",
+      "name": "Silver Hatchetfish",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTESt",
+      "name": "Emerald Betta",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTEVj",
+      "name": "Clown Pleco",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "ofTl1CTOUWuLwM28PxTEVj",
+      "name": "Clown Pleco",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-ancistrus-cf-cirrhosus",
+      "name": "Bristlenose Pleco",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-ancistrus-cf-cirrhosus",
+      "name": "Bristlenose Pleco",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-aphyosemion-australe",
+      "name": "Lyretail Killifish",
+      "field": "relatedPosts",
+      "refId": "35519b9f-9e99-4482-aded-fdf56e94d638",
+      "issue": "Reference \"35519b9f-9e99-4482-aded-fdf56e94d638\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-apistogramma-cacatuoides",
+      "name": "Cockatoo Dwarf Cichlid",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-betta-splendens",
+      "name": "Siamese Fighting Fish",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-betta-splendens",
+      "name": "Siamese Fighting Fish",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-carassius-auratus",
+      "name": "Fancy Goldfish",
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-carassius-auratus",
+      "name": "Fancy Goldfish",
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-chromobotia-macracanthus",
+      "name": "Clown Loach",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-chromobotia-macracanthus",
+      "name": "Clown Loach",
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-corydoras-paleatus",
+      "name": "Peppered Corydoras",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-danio-margaritatus",
+      "name": "Celestial Pearl Danio",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-danio-rerio",
+      "name": "Zebrafish",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-danio-rerio",
+      "name": "Zebrafish",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-gymnocorymbus-ternetzi",
+      "name": "Black Skirt Tetra",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-hypostomus-plecostomus",
+      "name": "Common Pleco",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-melanotaenia-boesemani",
+      "name": "Boesemani Rainbowfish",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-otocinclus-affinis",
+      "name": "Otocinclus Catfish",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-otocinclus-affinis",
+      "name": "Otocinclus Catfish",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-pangio-kuhlii",
+      "name": "Kuhli Loach",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-pangio-kuhlii",
+      "name": "Kuhli Loach",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-paracheirodon-axelrodi",
+      "name": "Cardinal Tetra",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-paracheirodon-innesi",
+      "name": "Neon Tetra",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-poecilia-reticulata",
+      "name": "Guppy",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-poecilia-reticulata",
+      "name": "Guppy",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-pterophyllum-scalare",
+      "name": "Angelfish",
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-pterophyllum-scalare",
+      "name": "Angelfish",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-puntius-titteya",
+      "name": "Cherry Barb",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-trichogaster-lalius",
+      "name": "Dwarf Gourami",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-trigonostigma-heteromorpha",
+      "name": "Harlequin Rasbora",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "species",
+      "_id": "species-xiphophorus-hellerii",
+      "name": "Swordtail",
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "BruaGKYCGDRQjkiQDnlBjA",
+      "name": "Anubias nana Petite",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "BruaGKYCGDRQjkiQDnlBjA",
+      "name": "Anubias nana Petite",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "WeSCIjvgoYC0LmYF97LSPP",
+      "name": "Staurogyne repens",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLTD",
+      "name": "Cryptocoryne beckettii",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLW3",
+      "name": "Hydrocotyle tripartita",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLYt",
+      "name": "Pygmy Chain Sword",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLhP",
+      "name": "Anacharis",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "ofTl1CTOUWuLwM28PxTLhP",
+      "name": "Anacharis",
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-amazon-sword",
+      "name": "Amazon Sword",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-ambulia",
+      "name": "Ambulia",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-ambulia",
+      "name": "Ambulia",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-anubias-barteri",
+      "name": "Anubias barteri",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-bucephalandra",
+      "name": "Bucephalandra",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-cabomba-caroliniana",
+      "name": "Cabomba caroliniana",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-cabomba-caroliniana",
+      "name": "Cabomba caroliniana",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-cryptocoryne-balansae",
+      "name": "Cryptocoryne balansae",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-cryptocoryne-wendtii",
+      "name": "Cryptocoryne wendtii",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-dwarf-hairgrass",
+      "name": "Dwarf Hairgrass",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-dwarf-sagittaria",
+      "name": "Dwarf Sagittaria",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-dwarf-sagittaria",
+      "name": "Dwarf Sagittaria",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-hornwort",
+      "name": "Hornwort",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-hornwort",
+      "name": "Hornwort",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-java-fern",
+      "name": "Java Fern",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-marsilea-hirsuta",
+      "name": "Marsilea hirsuta",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-monte-carlo",
+      "name": "Monte Carlo",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-vallisneria-spiralis",
+      "name": "Vallisneria spiralis",
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-vallisneria-spiralis",
+      "name": "Vallisneria spiralis",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-water-wisteria",
+      "name": "Water Wisteria",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "plant",
+      "_id": "plant-water-wisteria",
+      "name": "Water Wisteria",
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-air-pump",
+      "name": "Air Pump",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-canister-filter",
+      "name": "Canister Filter",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-hang-on-back-filter",
+      "name": "Hang-On-Back Filter",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-hang-on-back-filter",
+      "name": "Hang-On-Back Filter",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-internal-filter",
+      "name": "Internal Filter",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-led-aquarium-light",
+      "name": "LED Aquarium Light",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-master-test-kit",
+      "name": "Master Test Kit",
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-master-test-kit",
+      "name": "Master Test Kit",
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-sponge-filter",
+      "name": "Sponge Filter",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-sponge-filter",
+      "name": "Sponge Filter",
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-submersible-heater",
+      "name": "Submersible Heater",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "equipment-submersible-heater",
+      "name": "Submersible Heater",
+      "field": "relatedPosts",
+      "refId": "d92ce721-50df-47a6-b88a-ede573a7dc7f",
+      "issue": "Reference \"d92ce721-50df-47a6-b88a-ede573a7dc7f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUfn",
+      "name": "Automatic Fish Feeder",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUid",
+      "name": "RO/DI Water Filter",
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUlT",
+      "name": "Air Stone",
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+      "name": "Aquarium Gravel",
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+      "name": "Aquarium Gravel",
+      "field": "relatedPosts",
+      "refId": "d92ce721-50df-47a6-b88a-ede573a7dc7f",
+      "issue": "Reference \"d92ce721-50df-47a6-b88a-ede573a7dc7f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUtz",
+      "name": "Water Test Strips",
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "equipment",
+      "_id": "ofTl1CTOUWuLwM28PxTUwp",
+      "name": "Flake Fish Food",
+      "field": "relatedPosts",
+      "refId": "c707b85c-1d22-4bd3-b9cb-2407dc374ea3",
+      "issue": "Reference \"c707b85c-1d22-4bd3-b9cb-2407dc374ea3\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlsx5",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlsx5",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "35519b9f-9e99-4482-aded-fdf56e94d638",
+      "issue": "Reference \"35519b9f-9e99-4482-aded-fdf56e94d638\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlszk",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlszk",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt2P",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt2P",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt54",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt7j",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnlt7j",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "657b9f2f-25df-4dcb-9104-fc1e77f181a4",
+      "issue": "Reference \"657b9f2f-25df-4dcb-9104-fc1e77f181a4\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltAO",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltD3",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltD3",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltFi",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "BruaGKYCGDRQjkiQDnltFi",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-black-beard-algae",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-black-beard-algae",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-brown-diatom-algae",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "35519b9f-9e99-4482-aded-fdf56e94d638",
+      "issue": "Reference \"35519b9f-9e99-4482-aded-fdf56e94d638\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-brown-diatom-algae",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cloudy-water",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "35519b9f-9e99-4482-aded-fdf56e94d638",
+      "issue": "Reference \"35519b9f-9e99-4482-aded-fdf56e94d638\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cloudy-water",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cyanobacteria",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-cyanobacteria",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-gasping-surface",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-gasping-surface",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-hiding",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "35519b9f-9e99-4482-aded-fdf56e94d638",
+      "issue": "Reference \"35519b9f-9e99-4482-aded-fdf56e94d638\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-fish-hiding",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+      "issue": "Reference \"358ae9b7-d28e-486f-8395-91b8eea2592f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-green-water",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+      "issue": "Reference \"d8eebef4-6b25-4895-8e5f-8c6e546305bc\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-green-water",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-high-ammonia",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "54ee737f-b6ca-4a29-8711-9a8f7c6c7067",
+      "issue": "Reference \"54ee737f-b6ca-4a29-8711-9a8f7c6c7067\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-high-ammonia",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-low-filter-flow",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f",
+      "issue": "Reference \"8a27f344-c8e7-4dbf-8067-9b2ec2a7ed8f\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-plant-leaves-melting",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "problem",
+      "_id": "problem-white-spot-disease",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+      "issue": "Reference \"86ba539d-352a-416c-9a7b-5031d396e7a1\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm04r",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm07W",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm07W",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm0Cq",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "BruaGKYCGDRQjkiQDnm0FV",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-classic-iwagumi",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-dutch-planted-tank",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-jungle-biotope",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-low-tech-nature-aquarium",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+      "issue": "Reference \"57b180a8-2b42-4b56-8677-21d1c88d692d\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-low-tech-nature-aquarium",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a",
+      "issue": "Reference \"ea6c2361-f6a3-4e7b-9782-ff3f8a15cd7a\" not found in any document",
+      "severity": "important"
+    },
+    {
+      "type": "inspiration",
+      "_id": "inspiration-nano-paludarium",
+      "name": null,
+      "field": "relatedPosts",
+      "refId": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+      "issue": "Reference \"d07f41f4-58e1-4794-aaa1-2c6873e1b866\" not found in any document",
+      "severity": "important"
+    }
+  ],
+  "summary": {
+    "totalIssues": 276,
+    "critical": 111,
+    "important": 165,
+    "minor": 0
+  }
+}

@@ -1,0 +1,3547 @@
+{
+  "species": {
+    "Banggai Cardinalfish": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "ofTl1CTOUWuLwM28PxTEh5",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Care profile for Banggai Cardinalfish (Pterapogon kauderni): 8 cm adult size, 24–28°C, pH 8–8.4, intermediate difficulty.",
+          "family": "Apogonidae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-27596976bdb92e813233f7f6d3cd84ebe0a31476-1920x1280-jpg",
+              "_type": "reference"
+            }
+          },
+          "name": "Banggai Cardinalfish",
+          "origin": "Banggai Islands, Indonesia",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": "2026-07-31T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Southeast Asia",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ],
+          "schooling": "Small groups of 3–5.",
+          "scientificName": "Pterapogon kauderni",
+          "seo": null,
+          "sizeCm": 8,
+          "slug": {
+            "_type": "slug",
+            "current": "pterapogon-kauderni"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            }
+          ],
+          "tankSizeMinL": 100,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Middle"
+        },
+        {
+          "_id": "sebdKYryWZgYP2rm3noHja",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Nano Reef",
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Distinctive black and white cardinalfish. Mouthbrooder.",
+          "family": "Apogonidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Banggai Cardinalfish",
+          "origin": "Indo-Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Pterapogon kauderni",
+          "seo": null,
+          "sizeCm": 8,
+          "slug": {
+            "_type": "slug",
+            "current": "banggai-cardinalfish"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "tankSizeMinL": 150,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Middle"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Mixed Reef"
+          ],
+          "record_B": [
+            "Nano Reef",
+            "Mixed Reef"
+          ]
+        },
+        "excerpt": {
+          "record_A": "Care profile for Banggai Cardinalfish (Pterapogon kauderni): 8 cm adult size, 24–28°C, pH 8–8.4, intermediate difficulty.",
+          "record_B": "Distinctive black and white cardinalfish. Mouthbrooder."
+        },
+        "ghMax": {
+          "record_A": 12,
+          "record_B": null
+        },
+        "ghMin": {
+          "record_A": 8,
+          "record_B": null
+        },
+        "mainImage": {
+          "record_A": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-27596976bdb92e813233f7f6d3cd84ebe0a31476-1920x1280-jpg",
+              "_type": "reference"
+            }
+          },
+          "record_B": null
+        },
+        "origin": {
+          "record_A": "Banggai Islands, Indonesia",
+          "record_B": "Indo-Pacific"
+        },
+        "publishedAt": {
+          "record_A": "2026-07-31T00:00:00Z",
+          "record_B": null
+        },
+        "reefCompatibility": {
+          "record_A": null,
+          "record_B": true
+        },
+        "region": {
+          "record_A": "Southeast Asia",
+          "record_B": "Marine Indo-Pacific"
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": "Small groups of 3–5.",
+          "record_B": null
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "pterapogon-kauderni"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "banggai-cardinalfish"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 100,
+          "record_B": 150
+        }
+      }
+    },
+    "Convict Cichlid": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "I9bI8W8ZWcEwyIzM9Ciih6",
+          "_rev": "sebdKYryWZgYP2rm3o2YcC",
+          "aquariumStyle": [
+            "Community"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlBjA",
+              "name": "Anubias nana Petite"
+            },
+            {
+              "_id": "7kdig6Bk6SZq4GZkXcVaBK",
+              "name": "Red Rotala"
+            },
+            {
+              "_id": "plant-ludwigia-repens",
+              "name": "Ludwigia repens"
+            },
+            {
+              "_id": "plant-cabomba-caroliniana",
+              "name": "Cabomba caroliniana"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9DFYK8",
+              "name": "Frogbit"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Beginner",
+          "excerpt": "A hardy, aggressive cichlid famous for being one of the easiest fish to breed in captivity. Its bold striped pattern and territorial behavior make it a fascinating species for dedicated tanks.",
+          "family": "Cichlidae",
+          "ghMax": 20,
+          "ghMin": 5,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Convict Cichlid",
+          "origin": "Central America, Panama to Guatemala",
+          "phMax": 8,
+          "phMin": 6.5,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Central America",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "schooling": "Pairs; highly territorial when breeding.",
+          "scientificName": "Amatitlania nigrofasciata",
+          "seo": null,
+          "sizeCm": 10,
+          "slug": {
+            "_type": "slug",
+            "current": "amatitlania-nigrofasciata"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUr9",
+              "name": "CO₂ Cylinder"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "tankSizeMinL": 100,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Aggressive",
+          "waterType": "freshwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "PZ8Kai1VvEL468NS2Kngxx",
+          "_rev": "sebdKYryWZgYP2rm3o2ZVI",
+          "aquariumStyle": [
+            "Predator"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": [
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+              "name": "Peacock Moss"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CtuPo",
+              "name": "Myriophyllum"
+            },
+            {
+              "_id": "plant-marsilea-hirsuta",
+              "name": "Marsilea hirsuta"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A7KvVw",
+              "name": "Marimo Moss Ball"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLYt",
+              "name": "Pygmy Chain Sword"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Beginner",
+          "excerpt": "Hardy, prolific cichlid. Extremely aggressive when breeding.",
+          "family": "Cichlidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": true,
+          "mainImage": null,
+          "name": "Convict Cichlid",
+          "origin": "Central America",
+          "phMax": 8,
+          "phMin": 6.5,
+          "publishedAt": null,
+          "reefCompatibility": false,
+          "region": "Central America",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Amatitlania nigrofasciata",
+          "seo": null,
+          "sizeCm": 12,
+          "slug": {
+            "_type": "slug",
+            "current": "convict-cichlid"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-internal-filter",
+              "name": "Internal Filter"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUr9",
+              "name": "CO₂ Cylinder"
+            }
+          ],
+          "tankSizeMinL": 150,
+          "tempMaxC": 28,
+          "tempMinC": 20,
+          "temperament": "Aggressive",
+          "waterType": "freshwater",
+          "waterZone": "All levels"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Community"
+          ],
+          "record_B": [
+            "Predator"
+          ]
+        },
+        "compatiblePlants": {
+          "record_A": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlBjA",
+              "name": "Anubias nana Petite"
+            },
+            {
+              "_id": "7kdig6Bk6SZq4GZkXcVaBK",
+              "name": "Red Rotala"
+            },
+            {
+              "_id": "plant-ludwigia-repens",
+              "name": "Ludwigia repens"
+            },
+            {
+              "_id": "plant-cabomba-caroliniana",
+              "name": "Cabomba caroliniana"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9DFYK8",
+              "name": "Frogbit"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+              "name": "Peacock Moss"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CtuPo",
+              "name": "Myriophyllum"
+            },
+            {
+              "_id": "plant-marsilea-hirsuta",
+              "name": "Marsilea hirsuta"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A7KvVw",
+              "name": "Marimo Moss Ball"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLYt",
+              "name": "Pygmy Chain Sword"
+            }
+          ]
+        },
+        "excerpt": {
+          "record_A": "A hardy, aggressive cichlid famous for being one of the easiest fish to breed in captivity. Its bold striped pattern and territorial behavior make it a fascinating species for dedicated tanks.",
+          "record_B": "Hardy, prolific cichlid. Extremely aggressive when breeding."
+        },
+        "ghMax": {
+          "record_A": 20,
+          "record_B": null
+        },
+        "ghMin": {
+          "record_A": 5,
+          "record_B": null
+        },
+        "isPredator": {
+          "record_A": null,
+          "record_B": true
+        },
+        "origin": {
+          "record_A": "Central America, Panama to Guatemala",
+          "record_B": "Central America"
+        },
+        "publishedAt": {
+          "record_A": "2026-09-16T00:00:00Z",
+          "record_B": null
+        },
+        "reefCompatibility": {
+          "record_A": null,
+          "record_B": false
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": "Pairs; highly territorial when breeding.",
+          "record_B": null
+        },
+        "sizeCm": {
+          "record_A": 10,
+          "record_B": 12
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "amatitlania-nigrofasciata"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "convict-cichlid"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUr9",
+              "name": "CO₂ Cylinder"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-internal-filter",
+              "name": "Internal Filter"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUr9",
+              "name": "CO₂ Cylinder"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 100,
+          "record_B": 150
+        },
+        "tempMinC": {
+          "record_A": 24,
+          "record_B": 20
+        }
+      }
+    },
+    "Flame Angelfish": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "ofTl1CTOUWuLwM28PxTEbP",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Community"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Care profile for Flame Angelfish (Centropyge loricula): 12 cm adult size, 24–27°C, pH 8.1–8.4, intermediate difficulty.",
+          "family": "Pomacanthidae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-94442c6e706b50bdc8511a98cf0167ad5a69c998-1920x1280-jpg",
+              "_type": "reference"
+            }
+          },
+          "name": "Flame Angelfish",
+          "origin": "Indo-Pacific reefs",
+          "phMax": 8.4,
+          "phMin": 8.1,
+          "publishedAt": "2026-07-31T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            }
+          ],
+          "schooling": "One per tank, or a bonded pair.",
+          "scientificName": "Centropyge loricula",
+          "seo": null,
+          "sizeCm": 12,
+          "slug": {
+            "_type": "slug",
+            "current": "centropyge-loricula"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "tankSizeMinL": 200,
+          "tempMaxC": 27,
+          "tempMinC": 24,
+          "temperament": "Semi-aggressive",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "sebdKYryWZgYP2rm3noHrS",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Vibrant orange dwarf angelfish. May nip corals.",
+          "family": "Pomacanthidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Flame Angelfish",
+          "origin": "Central Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Centropyge loriculus",
+          "seo": null,
+          "sizeCm": 10,
+          "slug": {
+            "_type": "slug",
+            "current": "flame-angelfish"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            }
+          ],
+          "tankSizeMinL": 200,
+          "tempMaxC": 27,
+          "tempMinC": 24,
+          "temperament": "Semi-aggressive",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Community"
+          ],
+          "record_B": [
+            "Mixed Reef"
+          ]
+        },
+        "excerpt": {
+          "record_A": "Care profile for Flame Angelfish (Centropyge loricula): 12 cm adult size, 24–27°C, pH 8.1–8.4, intermediate difficulty.",
+          "record_B": "Vibrant orange dwarf angelfish. May nip corals."
+        },
+        "ghMax": {
+          "record_A": 12,
+          "record_B": null
+        },
+        "ghMin": {
+          "record_A": 8,
+          "record_B": null
+        },
+        "mainImage": {
+          "record_A": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-94442c6e706b50bdc8511a98cf0167ad5a69c998-1920x1280-jpg",
+              "_type": "reference"
+            }
+          },
+          "record_B": null
+        },
+        "origin": {
+          "record_A": "Indo-Pacific reefs",
+          "record_B": "Central Pacific"
+        },
+        "phMin": {
+          "record_A": 8.1,
+          "record_B": 8
+        },
+        "publishedAt": {
+          "record_A": "2026-07-31T00:00:00Z",
+          "record_B": null
+        },
+        "reefCompatibility": {
+          "record_A": null,
+          "record_B": true
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": "One per tank, or a bonded pair.",
+          "record_B": null
+        },
+        "scientificName": {
+          "record_A": "Centropyge loricula",
+          "record_B": "Centropyge loriculus"
+        },
+        "sizeCm": {
+          "record_A": 12,
+          "record_B": 10
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "centropyge-loricula"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "flame-angelfish"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            }
+          ]
+        }
+      }
+    },
+    "Foxface Rabbitfish": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "J1Tx0fWCuGNPno99A6hgrc",
+          "_rev": "1z8rQFHeojDMTUo2hXCjKh",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Herbivore",
+          "difficulty": "Intermediate",
+          "excerpt": "A bright yellow marine fish with a distinctive black-and-white face pattern. Excellent algae grazer for reef tanks, but venomous dorsal spines require caution.",
+          "family": "Siganidae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Foxface Rabbitfish",
+          "origin": "Western Pacific, Philippines to Indonesia",
+          "phMax": 8.4,
+          "phMin": 8.1,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Southeast Asia",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            }
+          ],
+          "schooling": "Solitary or pairs.",
+          "scientificName": "Siganus vulpinus",
+          "seo": null,
+          "sizeCm": 20,
+          "slug": {
+            "_type": "slug",
+            "current": "siganus-vulpinus"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            }
+          ],
+          "tankSizeMinL": 200,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "sebdKYryWZgYP2rm3noI7C",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Mixed Reef",
+            "Nano Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Herbivore",
+          "difficulty": "Beginner",
+          "excerpt": "Excellent algae eater. Venomous dorsal spines.",
+          "family": "Siganidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Foxface Rabbitfish",
+          "origin": "Western Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Siganus vulpinus",
+          "seo": null,
+          "sizeCm": 20,
+          "slug": {
+            "_type": "slug",
+            "current": "foxface-rabbitfish"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "tankSizeMinL": 300,
+          "tempMaxC": 27,
+          "tempMinC": 24,
+          "temperament": "Semi-aggressive",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Mixed Reef"
+          ],
+          "record_B": [
+            "Mixed Reef",
+            "Nano Reef"
+          ]
+        },
+        "difficulty": {
+          "record_A": "Intermediate",
+          "record_B": "Beginner"
+        },
+        "excerpt": {
+          "record_A": "A bright yellow marine fish with a distinctive black-and-white face pattern. Excellent algae grazer for reef tanks, but venomous dorsal spines require caution.",
+          "record_B": "Excellent algae eater. Venomous dorsal spines."
+        },
+        "ghMax": {
+          "record_A": 12,
+          "record_B": null
+        },
+        "ghMin": {
+          "record_A": 8,
+          "record_B": null
+        },
+        "origin": {
+          "record_A": "Western Pacific, Philippines to Indonesia",
+          "record_B": "Western Pacific"
+        },
+        "phMin": {
+          "record_A": 8.1,
+          "record_B": 8
+        },
+        "publishedAt": {
+          "record_A": "2026-09-16T00:00:00Z",
+          "record_B": null
+        },
+        "reefCompatibility": {
+          "record_A": null,
+          "record_B": true
+        },
+        "region": {
+          "record_A": "Southeast Asia",
+          "record_B": "Marine Indo-Pacific"
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": "Solitary or pairs.",
+          "record_B": null
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "siganus-vulpinus"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "foxface-rabbitfish"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 200,
+          "record_B": 300
+        },
+        "tempMaxC": {
+          "record_A": 28,
+          "record_B": 27
+        },
+        "temperament": {
+          "record_A": "Peaceful",
+          "record_B": "Semi-aggressive"
+        }
+      }
+    },
+    "Frontosa Cichlid": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "J1Tx0fWCuGNPno99A79S9O",
+          "_rev": "sebdKYryWZgYP2rm3o2ZVI",
+          "aquariumStyle": [
+            "Community",
+            "Large Fish"
+          ],
+          "compatibleInvertebrates": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A79WPX",
+              "name": "Blue Crayfish"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9DFZ8S",
+              "name": "Vampire Crab"
+            }
+          ],
+          "compatiblePlants": [
+            {
+              "_id": "IlX7xILobrukz7d5Jng2hi",
+              "name": "Flame Moss"
+            },
+            {
+              "_id": "plant-dwarf-sagittaria",
+              "name": "Dwarf Sagittaria"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+              "name": "Peacock Moss"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A7KvVw",
+              "name": "Marimo Moss Ball"
+            },
+            {
+              "_id": "plant-water-wisteria",
+              "name": "Water Wisteria"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "A majestic, slow-growing cichlid from Lake Tanganyika with bold black-and-white vertical stripes and a distinctive nuchal hump. One of the most iconic African cichlids.",
+          "family": "Cichlidae",
+          "ghMax": 20,
+          "ghMin": 10,
+          "isPredator": true,
+          "mainImage": null,
+          "name": "Frontosa Cichlid",
+          "origin": "Africa, Lake Tanganyika",
+          "phMax": 9,
+          "phMin": 8,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Africa",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "schooling": "Groups of 5 or more.",
+          "scientificName": "Cyphotilapia frontosa",
+          "seo": null,
+          "sizeCm": 30,
+          "slug": {
+            "_type": "slug",
+            "current": "cyphotilapia-frontosa"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            }
+          ],
+          "tankSizeMinL": 300,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "freshwater",
+          "waterZone": "Middle"
+        },
+        {
+          "_id": "sebdKYryWZgYP2rm3noHG4",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Predator",
+            "Large Fish"
+          ],
+          "compatibleInvertebrates": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A79WPX",
+              "name": "Blue Crayfish"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9DFZ8S",
+              "name": "Vampire Crab"
+            }
+          ],
+          "compatiblePlants": [
+            {
+              "_id": "WeSCIjvgoYC0LmYF97LSPP",
+              "name": "Staurogyne repens"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A79SjI",
+              "name": "Rotala Macrandra"
+            },
+            {
+              "_id": "plant-vallisneria-spiralis",
+              "name": "Vallisneria spiralis"
+            },
+            {
+              "_id": "plant-anubias-barteri",
+              "name": "Anubias barteri"
+            },
+            {
+              "_id": "plant-dwarf-baby-tears",
+              "name": "Dwarf Baby Tears"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Majestic Lake Tanganyika cichlid. Needs hard, alkaline water.",
+          "family": "Cichlidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": true,
+          "mainImage": null,
+          "name": "Frontosa Cichlid",
+          "origin": "Africa",
+          "phMax": 9,
+          "phMin": 7.5,
+          "publishedAt": null,
+          "reefCompatibility": false,
+          "region": "Africa",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Cyphotilapia frontosa",
+          "seo": null,
+          "sizeCm": 30,
+          "slug": {
+            "_type": "slug",
+            "current": "frontosa-cichlid"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+              "name": "Aquarium Gravel"
+            }
+          ],
+          "tankSizeMinL": 400,
+          "tempMaxC": 27,
+          "tempMinC": 23,
+          "temperament": "Semi-aggressive",
+          "waterType": "freshwater",
+          "waterZone": "All levels"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Community",
+            "Large Fish"
+          ],
+          "record_B": [
+            "Predator",
+            "Large Fish"
+          ]
+        },
+        "compatiblePlants": {
+          "record_A": [
+            {
+              "_id": "IlX7xILobrukz7d5Jng2hi",
+              "name": "Flame Moss"
+            },
+            {
+              "_id": "plant-dwarf-sagittaria",
+              "name": "Dwarf Sagittaria"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+              "name": "Peacock Moss"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A7KvVw",
+              "name": "Marimo Moss Ball"
+            },
+            {
+              "_id": "plant-water-wisteria",
+              "name": "Water Wisteria"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "WeSCIjvgoYC0LmYF97LSPP",
+              "name": "Staurogyne repens"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A79SjI",
+              "name": "Rotala Macrandra"
+            },
+            {
+              "_id": "plant-vallisneria-spiralis",
+              "name": "Vallisneria spiralis"
+            },
+            {
+              "_id": "plant-anubias-barteri",
+              "name": "Anubias barteri"
+            },
+            {
+              "_id": "plant-dwarf-baby-tears",
+              "name": "Dwarf Baby Tears"
+            }
+          ]
+        },
+        "excerpt": {
+          "record_A": "A majestic, slow-growing cichlid from Lake Tanganyika with bold black-and-white vertical stripes and a distinctive nuchal hump. One of the most iconic African cichlids.",
+          "record_B": "Majestic Lake Tanganyika cichlid. Needs hard, alkaline water."
+        },
+        "ghMax": {
+          "record_A": 20,
+          "record_B": null
+        },
+        "ghMin": {
+          "record_A": 10,
+          "record_B": null
+        },
+        "origin": {
+          "record_A": "Africa, Lake Tanganyika",
+          "record_B": "Africa"
+        },
+        "phMin": {
+          "record_A": 8,
+          "record_B": 7.5
+        },
+        "publishedAt": {
+          "record_A": "2026-09-16T00:00:00Z",
+          "record_B": null
+        },
+        "reefCompatibility": {
+          "record_A": null,
+          "record_B": false
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": "Groups of 5 or more.",
+          "record_B": null
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "cyphotilapia-frontosa"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "frontosa-cichlid"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvloE",
+              "name": "Aquarium Soil Substrate"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+              "name": "Aquarium Gravel"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 300,
+          "record_B": 400
+        },
+        "tempMaxC": {
+          "record_A": 28,
+          "record_B": 27
+        },
+        "tempMinC": {
+          "record_A": 24,
+          "record_B": 23
+        },
+        "temperament": {
+          "record_A": "Peaceful",
+          "record_B": "Semi-aggressive"
+        },
+        "waterZone": {
+          "record_A": "Middle",
+          "record_B": "All levels"
+        }
+      }
+    },
+    "Green Chromis": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "sebdKYryWZgYP2rm3noHbi",
+          "_rev": "PZ8Kai1VvEL468NS2KwQA8",
+          "aquariumStyle": [
+            "Mixed Reef",
+            "Community"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Beginner",
+          "excerpt": "Peaceful schooling marine fish. Hardy and reef safe.",
+          "family": "Pomacentridae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Green Chromis",
+          "origin": "Indo-Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Chromis viridis",
+          "seo": null,
+          "sizeCm": 8,
+          "slug": {
+            "_type": "slug",
+            "current": "green-chromis"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "tankSizeMinL": 200,
+          "tempMaxC": 27,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "species-chromis-viridis",
+          "_rev": "sebdKYryWZgYP2rm3o2aCa",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Beginner",
+          "excerpt": "A peaceful, schooling damselfish that adds shimmering movement to a reef tank.",
+          "family": "Pomacentridae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-c3712eac62ef9372e08d8fe60f9e86de1782f683-800x534-jpg",
+              "_type": "reference"
+            }
+          },
+          "name": "Green Chromis",
+          "origin": "Indo-Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": "2026-07-31T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ],
+          "schooling": "Group of 5 or more.",
+          "scientificName": "Chromis viridis",
+          "seo": null,
+          "sizeCm": 10,
+          "slug": {
+            "_type": "slug",
+            "current": "chromis-viridis"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "tankSizeMinL": 120,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Middle"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Mixed Reef",
+            "Community"
+          ],
+          "record_B": [
+            "Mixed Reef"
+          ]
+        },
+        "excerpt": {
+          "record_A": "Peaceful schooling marine fish. Hardy and reef safe.",
+          "record_B": "A peaceful, schooling damselfish that adds shimmering movement to a reef tank."
+        },
+        "ghMax": {
+          "record_A": null,
+          "record_B": 12
+        },
+        "ghMin": {
+          "record_A": null,
+          "record_B": 8
+        },
+        "mainImage": {
+          "record_A": null,
+          "record_B": {
+            "_type": "image",
+            "asset": {
+              "_ref": "image-c3712eac62ef9372e08d8fe60f9e86de1782f683-800x534-jpg",
+              "_type": "reference"
+            }
+          }
+        },
+        "publishedAt": {
+          "record_A": null,
+          "record_B": "2026-07-31T00:00:00Z"
+        },
+        "reefCompatibility": {
+          "record_A": true,
+          "record_B": null
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": null,
+          "record_B": "Group of 5 or more."
+        },
+        "sizeCm": {
+          "record_A": 8,
+          "record_B": 10
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "green-chromis"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "chromis-viridis"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 200,
+          "record_B": 120
+        },
+        "tempMaxC": {
+          "record_A": 27,
+          "record_B": 28
+        },
+        "waterZone": {
+          "record_A": "All levels",
+          "record_B": "Middle"
+        }
+      }
+    },
+    "Jack Dempsey": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "1z8rQFHeojDMTUo2hX9Qxf",
+          "_rev": "1z8rQFHeojDMTUo2hXCizJ",
+          "aquariumStyle": [
+            "Predator"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLTD",
+              "name": "Cryptocoryne beckettii"
+            },
+            {
+              "_id": "plant-dwarf-hairgrass",
+              "name": "Dwarf Hairgrass"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A79StY",
+              "name": "Ludwigia Super Red"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLYt",
+              "name": "Pygmy Chain Sword"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9Ciitg",
+              "name": "Christmas Moss"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "Aggressive Central American cichlid with striking coloration.",
+          "family": "Cichlidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": true,
+          "mainImage": null,
+          "name": "Jack Dempsey",
+          "origin": "Central America",
+          "phMax": 7.5,
+          "phMin": 6.5,
+          "publishedAt": null,
+          "reefCompatibility": false,
+          "region": "Central America",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Rocio octofasciata",
+          "seo": null,
+          "sizeCm": 25,
+          "slug": {
+            "_type": "slug",
+            "current": "jack-dempsey"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+              "name": "Aquarium Gravel"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            }
+          ],
+          "tankSizeMinL": 300,
+          "tempMaxC": 29,
+          "tempMinC": 22,
+          "temperament": "Aggressive",
+          "waterType": "freshwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "I9bI8W8ZWcEwyIzM9DFXpw",
+          "_rev": "sebdKYryWZgYP2rm3o2YcC",
+          "aquariumStyle": [
+            "Community"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": [
+            {
+              "_id": "plant-cabomba-caroliniana",
+              "name": "Cabomba caroliniana"
+            },
+            {
+              "_id": "7kdig6Bk6SZq4GZkXcVaBK",
+              "name": "Red Rotala"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLn5",
+              "name": "Blyxa japonica"
+            },
+            {
+              "_id": "plant-bucephalandra",
+              "name": "Bucephalandra"
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlBjA",
+              "name": "Anubias nana Petite"
+            }
+          ],
+          "compatibleSpecies": null,
+          "diet": "Omnivore",
+          "difficulty": "Intermediate",
+          "excerpt": "A bold, colorful Central American cichlid with iridescent blue-green spots on a dark body. Named for its aggressive temperament. Hardy and visually striking.",
+          "family": "Cichlidae",
+          "ghMax": 15,
+          "ghMin": 5,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Jack Dempsey",
+          "origin": "Central America, Atlantic slope from Mexico to Honduras",
+          "phMax": 7.5,
+          "phMin": 6.5,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Central America",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ],
+          "schooling": "Solitary or pairs.",
+          "scientificName": "Rocio octofasciata",
+          "seo": null,
+          "sizeCm": 20,
+          "slug": {
+            "_type": "slug",
+            "current": "rocio-octofasciata"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "equipment-led-aquarium-light",
+              "name": "LED Aquarium Light"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            }
+          ],
+          "tankSizeMinL": 200,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Aggressive",
+          "waterType": "freshwater",
+          "waterZone": "Middle"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Predator"
+          ],
+          "record_B": [
+            "Community"
+          ]
+        },
+        "compatiblePlants": {
+          "record_A": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLTD",
+              "name": "Cryptocoryne beckettii"
+            },
+            {
+              "_id": "plant-dwarf-hairgrass",
+              "name": "Dwarf Hairgrass"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A79StY",
+              "name": "Ludwigia Super Red"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLYt",
+              "name": "Pygmy Chain Sword"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9Ciitg",
+              "name": "Christmas Moss"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "plant-cabomba-caroliniana",
+              "name": "Cabomba caroliniana"
+            },
+            {
+              "_id": "7kdig6Bk6SZq4GZkXcVaBK",
+              "name": "Red Rotala"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTLn5",
+              "name": "Blyxa japonica"
+            },
+            {
+              "_id": "plant-bucephalandra",
+              "name": "Bucephalandra"
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlBjA",
+              "name": "Anubias nana Petite"
+            }
+          ]
+        },
+        "diet": {
+          "record_A": "Carnivore",
+          "record_B": "Omnivore"
+        },
+        "excerpt": {
+          "record_A": "Aggressive Central American cichlid with striking coloration.",
+          "record_B": "A bold, colorful Central American cichlid with iridescent blue-green spots on a dark body. Named for its aggressive temperament. Hardy and visually striking."
+        },
+        "ghMax": {
+          "record_A": null,
+          "record_B": 15
+        },
+        "ghMin": {
+          "record_A": null,
+          "record_B": 5
+        },
+        "isPredator": {
+          "record_A": true,
+          "record_B": null
+        },
+        "origin": {
+          "record_A": "Central America",
+          "record_B": "Central America, Atlantic slope from Mexico to Honduras"
+        },
+        "publishedAt": {
+          "record_A": null,
+          "record_B": "2026-09-16T00:00:00Z"
+        },
+        "reefCompatibility": {
+          "record_A": false,
+          "record_B": null
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": null,
+          "record_B": "Solitary or pairs."
+        },
+        "sizeCm": {
+          "record_A": 25,
+          "record_B": 20
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "jack-dempsey"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "rocio-octofasciata"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+              "name": "Aquarium Gravel"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "equipment-co-regulator-kit",
+              "name": "CO₂ Regulator Kit"
+            },
+            {
+              "_id": "equipment-led-aquarium-light",
+              "name": "LED Aquarium Light"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 300,
+          "record_B": 200
+        },
+        "tempMaxC": {
+          "record_A": 29,
+          "record_B": 28
+        },
+        "tempMinC": {
+          "record_A": 22,
+          "record_B": 24
+        },
+        "waterZone": {
+          "record_A": "All levels",
+          "record_B": "Middle"
+        }
+      }
+    },
+    "Mandarin Fish": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "1z8rQFHeojDMTUo2hX9Rl1",
+          "_rev": "1z8rQFHeojDMTUo2hXCizJ",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Expert",
+          "excerpt": "Stunningly colorful but needs established tank with copepods.",
+          "family": "Callionymidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Mandarin Fish",
+          "origin": "Western Pacific",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Synchiropus splendidus",
+          "seo": null,
+          "sizeCm": 7,
+          "slug": {
+            "_type": "slug",
+            "current": "mandarin-fish"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "tankSizeMinL": 150,
+          "tempMaxC": 27,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Bottom"
+        },
+        {
+          "_id": "IlX7xILobrukz7d5JnfkJq",
+          "_rev": "1z8rQFHeojDMTUo2hXCjKh",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Advanced",
+          "excerpt": "One of the most beautifully colored fish in the ocean, with psychedelic patterns of blue, orange, and green. Difficult to keep due to specialized diet of live copepods.",
+          "family": "Callionymidae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Mandarin Fish",
+          "origin": "Western Pacific, from Japan to Australia",
+          "phMax": 8.4,
+          "phMin": 8.1,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "East Asia",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ],
+          "schooling": "Solitary or pairs.",
+          "scientificName": "Synchiropus splendidus",
+          "seo": null,
+          "sizeCm": 7,
+          "slug": {
+            "_type": "slug",
+            "current": "synchiropus-splendidus"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-internal-filter",
+              "name": "Internal Filter"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            }
+          ],
+          "tankSizeMinL": 100,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Bottom"
+        }
+      ],
+      "differences": {
+        "difficulty": {
+          "record_A": "Expert",
+          "record_B": "Advanced"
+        },
+        "excerpt": {
+          "record_A": "Stunningly colorful but needs established tank with copepods.",
+          "record_B": "One of the most beautifully colored fish in the ocean, with psychedelic patterns of blue, orange, and green. Difficult to keep due to specialized diet of live copepods."
+        },
+        "ghMax": {
+          "record_A": null,
+          "record_B": 12
+        },
+        "ghMin": {
+          "record_A": null,
+          "record_B": 8
+        },
+        "origin": {
+          "record_A": "Western Pacific",
+          "record_B": "Western Pacific, from Japan to Australia"
+        },
+        "phMin": {
+          "record_A": 8,
+          "record_B": 8.1
+        },
+        "publishedAt": {
+          "record_A": null,
+          "record_B": "2026-09-16T00:00:00Z"
+        },
+        "reefCompatibility": {
+          "record_A": true,
+          "record_B": null
+        },
+        "region": {
+          "record_A": "Marine Indo-Pacific",
+          "record_B": "East Asia"
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "problem-fish-gasping-surface",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "problem-cyanobacteria",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": null,
+          "record_B": "Solitary or pairs."
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "mandarin-fish"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "synchiropus-splendidus"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUcx",
+              "name": "Protein Skimmer"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-internal-filter",
+              "name": "Internal Filter"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 150,
+          "record_B": 100
+        },
+        "tempMaxC": {
+          "record_A": 27,
+          "record_B": 28
+        }
+      }
+    },
+    "Royal Gramma": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "1z8rQFHeojDMTUo2hX9Rhj",
+          "_rev": "1z8rQFHeojDMTUo2hXCizJ",
+          "aquariumStyle": [
+            "Nano Reef",
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Beginner",
+          "excerpt": "Purple and yellow basslet. Peaceful and hardy.",
+          "family": "Grammatidae",
+          "ghMax": null,
+          "ghMin": null,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Royal Gramma",
+          "origin": "Western Atlantic",
+          "phMax": 8.4,
+          "phMin": 8,
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "region": "Caribbean / Western Atlantic",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            }
+          ],
+          "schooling": null,
+          "scientificName": "Gramma loreto",
+          "seo": null,
+          "sizeCm": 8,
+          "slug": {
+            "_type": "slug",
+            "current": "royal-gramma"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "tankSizeMinL": 100,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "All levels"
+        },
+        {
+          "_id": "J1Tx0fWCuGNPno99A6hesW",
+          "_rev": "1z8rQFHeojDMTUo2hXCjKh",
+          "aquariumStyle": [
+            "Mixed Reef"
+          ],
+          "compatibleInvertebrates": null,
+          "compatiblePlants": null,
+          "compatibleSpecies": null,
+          "diet": "Carnivore",
+          "difficulty": "Beginner",
+          "excerpt": "A stunning basslet with a bright purple front half fading to golden yellow on the rear. One of the most colorful and hardy marine aquarium fish, perfect for nano reef tanks.",
+          "family": "Grammatidae",
+          "ghMax": 12,
+          "ghMin": 8,
+          "isPredator": null,
+          "mainImage": null,
+          "name": "Royal Gramma",
+          "origin": "Western Atlantic, Caribbean Sea",
+          "phMax": 8.4,
+          "phMin": 8.1,
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": null,
+          "region": "Marine Indo-Pacific",
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ],
+          "schooling": "Solitary or paired.",
+          "scientificName": "Gramma loreto",
+          "seo": null,
+          "sizeCm": 8,
+          "slug": {
+            "_type": "slug",
+            "current": "gramma-loreto"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            }
+          ],
+          "tankSizeMinL": 60,
+          "tempMaxC": 28,
+          "tempMinC": 24,
+          "temperament": "Peaceful",
+          "waterType": "saltwater",
+          "waterZone": "Bottom"
+        }
+      ],
+      "differences": {
+        "aquariumStyle": {
+          "record_A": [
+            "Nano Reef",
+            "Mixed Reef"
+          ],
+          "record_B": [
+            "Mixed Reef"
+          ]
+        },
+        "excerpt": {
+          "record_A": "Purple and yellow basslet. Peaceful and hardy.",
+          "record_B": "A stunning basslet with a bright purple front half fading to golden yellow on the rear. One of the most colorful and hardy marine aquarium fish, perfect for nano reef tanks."
+        },
+        "ghMax": {
+          "record_A": null,
+          "record_B": 12
+        },
+        "ghMin": {
+          "record_A": null,
+          "record_B": 8
+        },
+        "origin": {
+          "record_A": "Western Atlantic",
+          "record_B": "Western Atlantic, Caribbean Sea"
+        },
+        "phMin": {
+          "record_A": 8,
+          "record_B": 8.1
+        },
+        "publishedAt": {
+          "record_A": null,
+          "record_B": "2026-09-16T00:00:00Z"
+        },
+        "reefCompatibility": {
+          "record_A": true,
+          "record_B": null
+        },
+        "region": {
+          "record_A": "Caribbean / Western Atlantic",
+          "record_B": "Marine Indo-Pacific"
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "problem-white-spot-disease",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-fish-hiding",
+              "name": null
+            },
+            {
+              "_id": "problem-cloudy-water",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltD3",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltAO",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlsx5",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ]
+        },
+        "schooling": {
+          "record_A": null,
+          "record_B": "Solitary or paired."
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "royal-gramma"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "gramma-loreto"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "IlX7xILobrukz7d5JnfmX8",
+              "name": "Wave Maker"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            },
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6hjas",
+              "name": "Return Pump"
+            },
+            {
+              "_id": "equipment-canister-filter",
+              "name": "Canister Filter"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "equipment-hang-on-back-filter",
+              "name": "Hang-On-Back Filter"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            },
+            {
+              "_id": "equipment-air-pump",
+              "name": "Air Pump"
+            },
+            {
+              "_id": "equipment-submersible-heater",
+              "name": "Submersible Heater"
+            },
+            {
+              "_id": "equipment-sponge-filter",
+              "name": "Sponge Filter"
+            }
+          ]
+        },
+        "tankSizeMinL": {
+          "record_A": 100,
+          "record_B": 60
+        },
+        "waterZone": {
+          "record_A": "All levels",
+          "record_B": "Bottom"
+        }
+      }
+    }
+  },
+  "coral": {
+    "Bird's Nest Coral": {
+      "count": 0,
+      "documents": [],
+      "differences": {}
+    },
+    "Frogspawn Coral": {
+      "count": 2,
+      "documents": [
+        {
+          "_id": "1z8rQFHeojDMTUo2hX9RwX",
+          "_rev": "PZ8Kai1VvEL468NS2KwSKg",
+          "aggression": "Semi-aggressive",
+          "aquariumStyle": [
+            "LPS Reef",
+            "Mixed Reef"
+          ],
+          "coralType": "lps",
+          "difficulty": "Beginner",
+          "excerpt": "Popular LPS with tentacle tips. Hardy and forgiving.",
+          "flow": "Moderate",
+          "light": "Moderate",
+          "mainImage": null,
+          "name": "Frogspawn Coral",
+          "photosynthetic": true,
+          "placement": "Low rock",
+          "publishedAt": null,
+          "reefCompatibility": true,
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ],
+          "scientificName": "Euphyllia divisa",
+          "slug": {
+            "_type": "slug",
+            "current": "frogspawn-coral"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "equipment-led-aquarium-light",
+              "name": "LED Aquarium Light"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CjFgi",
+              "name": "Aquarium Thermometer"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUtz",
+              "name": "Water Test Strips"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "tempMaxC": 27,
+          "tempMinC": 24
+        },
+        {
+          "_id": "J1Tx0fWCuGNPno99A6TtLj",
+          "_rev": "1z8rQFHeojDMTUo2hXCkUG",
+          "aggression": "Aggressive",
+          "aquariumStyle": [
+            "LPS Reef",
+            "Mixed Reef"
+          ],
+          "coralType": "lps",
+          "difficulty": "Intermediate",
+          "excerpt": "A branching LPS coral with clusters of tentacles that resemble frog eggs. Available in green, pink, and purple color morphs. Moderate care requirements make it popular with intermediate reefers.",
+          "flow": "Moderate",
+          "light": "Moderate",
+          "mainImage": null,
+          "name": "Frogspawn Coral",
+          "photosynthetic": true,
+          "placement": "Mid rock",
+          "publishedAt": "2026-09-16T00:00:00Z",
+          "reefCompatibility": true,
+          "relatedPosts": null,
+          "relatedProblems": [
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            }
+          ],
+          "scientificName": "Euphyllia divisa",
+          "slug": {
+            "_type": "slug",
+            "current": "euphyllia-divisa"
+          },
+          "suitableEquipment": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A6Ttnw",
+              "name": "Digital pH Meter"
+            },
+            {
+              "_id": "equipment-master-test-kit",
+              "name": "Master Test Kit"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvlZm",
+              "name": "PAR Meter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6UXsx",
+              "name": "TDS Meter"
+            }
+          ],
+          "tempMaxC": 27,
+          "tempMinC": 24
+        }
+      ],
+      "differences": {
+        "aggression": {
+          "record_A": "Semi-aggressive",
+          "record_B": "Aggressive"
+        },
+        "difficulty": {
+          "record_A": "Beginner",
+          "record_B": "Intermediate"
+        },
+        "excerpt": {
+          "record_A": "Popular LPS with tentacle tips. Hardy and forgiving.",
+          "record_B": "A branching LPS coral with clusters of tentacles that resemble frog eggs. Available in green, pink, and purple color morphs. Moderate care requirements make it popular with intermediate reefers."
+        },
+        "placement": {
+          "record_A": "Low rock",
+          "record_B": "Mid rock"
+        },
+        "publishedAt": {
+          "record_A": null,
+          "record_B": "2026-09-16T00:00:00Z"
+        },
+        "relatedProblems": {
+          "record_A": [
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            },
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "problem-low-filter-flow",
+              "name": null
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "problem-high-ammonia",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnltFi",
+              "name": null
+            },
+            {
+              "_id": "BruaGKYCGDRQjkiQDnlszk",
+              "name": null
+            }
+          ]
+        },
+        "slug": {
+          "record_A": {
+            "_type": "slug",
+            "current": "frogspawn-coral"
+          },
+          "record_B": {
+            "_type": "slug",
+            "current": "euphyllia-divisa"
+          }
+        },
+        "suitableEquipment": {
+          "record_A": [
+            {
+              "_id": "equipment-led-aquarium-light",
+              "name": "LED Aquarium Light"
+            },
+            {
+              "_id": "I9bI8W8ZWcEwyIzM9CjFgi",
+              "name": "Aquarium Thermometer"
+            },
+            {
+              "_id": "ofTl1CTOUWuLwM28PxTUtz",
+              "name": "Water Test Strips"
+            },
+            {
+              "_id": "equipment-circulation-pump-powerhead",
+              "name": "Circulation Pump (Powerhead)"
+            }
+          ],
+          "record_B": [
+            {
+              "_id": "J1Tx0fWCuGNPno99A6Ttnw",
+              "name": "Digital pH Meter"
+            },
+            {
+              "_id": "equipment-master-test-kit",
+              "name": "Master Test Kit"
+            },
+            {
+              "_id": "IlX7xILobrukz7d5JnvlZm",
+              "name": "PAR Meter"
+            },
+            {
+              "_id": "J1Tx0fWCuGNPno99A6UXsx",
+              "name": "TDS Meter"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

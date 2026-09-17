@@ -47,7 +47,21 @@ export default async function CoralsPage() {
           Light, flow and placement requirements for reef corals.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/corals" filterKeys={["difficulty", "light"]} compareItems={compareItems} compareType="coral" />
+      <DatabaseGrid
+        items={items}
+        hrefPrefix="/corals"
+        finderHref="/finder"
+        filterGroups={[
+          { key: "coralType", label: "Type" },
+          { key: "difficulty", label: "Difficulty" },
+          { key: "light", label: "Light" },
+          { key: "flow", label: "Flow" },
+          { key: "placement", label: "Placement" },
+          { key: "aquariumStyle", label: "Aquarium Style" },
+        ]}
+        compareItems={compareItems}
+        compareType="coral"
+      />
     </div>
   )
 }

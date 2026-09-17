@@ -8,13 +8,23 @@ import strings from "@/lib/i18n/strings"
 import { client } from "@/lib/sanity"
 import { urlFor } from "@/lib/sanity"
 
+const typeLabels: Record<string, string> = {
+  post: "Article",
+  species: "Fish",
+  plant: "Plant",
+  coral: "Coral",
+  equipment: "Equipment",
+  invertebrate: "Invertebrate",
+}
+
 interface SearchResult {
   _id: string
+  _type: string
   title: string
   slug: { current: string }
   excerpt: string
   mainImage: any
-  publishedAt: string
+  publishedAt?: string
 }
 
 export default function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -49,14 +59,22 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
     setError(false)
     const timer = setTimeout(async () => {
       try {
-        const data = await client.fetch(
-          `*[_type == "post" && title match $q + "*"] | order(publishedAt desc) [0...6] {
-            _id, title, slug, excerpt, mainImage, publishedAt
-          }`,
-          { q: query }
-        )
+        const [posts, dbItems] = await Promise.all([
+          client.fetch(
+            `*[_type == "post" && title match $q + "*"] | order(publishedAt desc) [0...4] {
+              _id, _type, title, slug, excerpt, mainImage, publishedAt
+            }`,
+            { q: query }
+          ),
+          client.fetch(
+            `*[_type in ["species", "plant", "coral", "equipment", "invertebrate"] && (name match $q + "*" || scientificName match $q + "*")] | order(name asc) [0...6] {
+              _id, _type, "title": name, slug, excerpt, mainImage
+            }`,
+            { q: query }
+          ),
+        ])
         if (token !== tokenRef.current) return
-        setResults(data || [])
+        setResults([...(posts || []), ...(dbItems || [])])
       } catch {
         if (token !== tokenRef.current) return
         setResults([])
@@ -69,10 +87,19 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
 
   const goTo = useCallback(
     (index: number) => {
-      const post = results[index]
-      if (!post) return
+      const item = results[index]
+      if (!item) return
       onClose()
-      window.location.href = `/posts/${post.slug.current}`
+      const typeRoutes: Record<string, string> = {
+        post: "/posts",
+        species: "/species",
+        plant: "/plants",
+        coral: "/corals",
+        equipment: "/equipment",
+        invertebrate: "/invertebrates",
+      }
+      const base = typeRoutes[item._type] || "/posts"
+      window.location.href = `${base}/${item.slug.current}`
     },
     [results, onClose]
   )
@@ -143,7 +170,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
             {results.map((post, index) => (
               <li key={post._id} role="option" aria-selected={index === activeIndex} id={`search-result-${index}`}>
                 <Link
-                  href={`/posts/${post.slug.current}`}
+                  href={post._type === "post" ? `/posts/${post.slug.current}` : `/${post._type === "species" ? "species" : post._type === "plant" ? "plants" : post._type === "coral" ? "corals" : post._type === "equipment" ? "equipment" : "invertebrates"}/${post.slug.current}`}
                   onClick={onClose}
                   className={`flex items-center gap-3 p-3 rounded-xl transition-colors group ${
                     index === activeIndex ? "bg-aqua-50 dark:bg-aqua-950/50" : "hover:bg-gray-50 dark:hover:bg-slate-700/50"
@@ -164,9 +191,16 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
                     </div>
                   )}
                   <div className="min-w-0">
-                    <p className={`text-sm font-medium text-gray-900 dark:text-slate-100 truncate group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors ${index === activeIndex ? "text-aqua-700 dark:text-aqua-300" : ""}`}>
-                      {post.title}
-                    </p>
+                    <div className="flex items-center gap-2">
+                      <p className={`text-sm font-medium text-gray-900 dark:text-slate-100 truncate group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors ${index === activeIndex ? "text-aqua-700 dark:text-aqua-300" : ""}`}>
+                        {post.title}
+                      </p>
+                      {post._type !== "post" && (
+                        <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-aqua-100 dark:bg-aqua-900/50 text-aqua-700 dark:text-aqua-300 shrink-0">
+                          {typeLabels[post._type] || post._type}
+                        </span>
+                      )}
+                    </div>
                     {post.excerpt && (
                       <p className="text-xs text-gray-500 dark:text-slate-400 truncate mt-0.5">{post.excerpt}</p>
                     )}

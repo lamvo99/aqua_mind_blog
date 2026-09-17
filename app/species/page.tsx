@@ -48,7 +48,27 @@ export default async function SpeciesPage() {
           Care parameters and compatibility for freshwater and marine fish.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/species" filterKeys={["temperament", "diet"]} compareItems={compareItems} compareType="species" />
+      <DatabaseGrid
+        items={items}
+        hrefPrefix="/species"
+        finderHref="/finder"
+        filterGroups={[
+          { key: "waterType", label: "Water Type" },
+          { key: "difficulty", label: "Difficulty" },
+          { key: "temperament", label: "Temperament" },
+          { key: "diet", label: "Diet" },
+          { key: "aquariumStyle", label: "Aquarium Style" },
+          { key: "region", label: "Region" },
+        ]}
+        rangeFilters={[
+          { key: "tankSizeMinL", label: "Min Tank", min: 10, max: 1000, unit: "L" },
+          { key: "sizeCm", label: "Size", min: 1, max: 100, unit: "cm" },
+          { key: "tempMinC", label: "Temp Min", min: 15, max: 35, unit: "°C" },
+          { key: "phMin", label: "pH Min", min: 4, max: 9 },
+        ]}
+        compareItems={compareItems}
+        compareType="species"
+      />
     </div>
   )
 }

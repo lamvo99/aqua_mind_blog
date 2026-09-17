@@ -9,6 +9,7 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Sun, Wind, Droplets } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
+import RelationshipSection from "@/app/components/database/RelationshipSection"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -104,10 +105,14 @@ export default async function CoralDetailPage({ params }: Props) {
             <Parameter icon={<Wind className="w-3.5 h-3.5" />} label="Flow" value={item.flow} />
             <Parameter label="Difficulty" value={item.difficulty} />
             <Parameter label="Placement" value={item.placement} />
+            <Parameter label="Type" value={item.coralType ? item.coralType.toUpperCase() : undefined} />
             <Parameter label="Aggression" value={item.aggression} />
             <Parameter icon={<Droplets className="w-3.5 h-3.5" />} label="Reef safe" value={item.reefCompatibility !== undefined ? (item.reefCompatibility ? "Yes" : "No") : undefined} />
             <Parameter label="Temperature" value={item.tempMinC !== undefined && item.tempMaxC !== undefined && item.tempMinC !== null && item.tempMaxC !== null ? `${item.tempMinC}–${item.tempMaxC}°C` : undefined} />
           </div>
+
+          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
+          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
 
           {item.relatedPosts && item.relatedPosts.length > 0 && (
             <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">

@@ -12,6 +12,8 @@ export interface DatabaseItem {
   mainImage?: any
   category?: string
   brand?: string
+  aquariumStyle?: string[]
+  region?: string
 }
 
 export interface SpeciesDetail extends DatabaseItem {
@@ -30,6 +32,9 @@ export interface SpeciesDetail extends DatabaseItem {
   waterZone?: string
   schooling?: string
   difficulty?: string
+  waterType?: string
+  isPredator?: boolean
+  reefCompatibility?: boolean
   compatibleSpecies?: DatabaseItem[]
   relatedPosts?: any[]
 }
@@ -39,10 +44,15 @@ const LIST_PROJECTION = `
 `
 
 export async function getDatabaseList(type: DatabaseType): Promise<DatabaseItem[]> {
-  const extra = type === 'equipment' ? ', category, brand' : ''
+  const extraFields = type === 'equipment' ? ', category, brand' : ''
+  const semanticFields = `
+    aquariumStyle, region, waterType, isPredator, reefCompatibility,
+    difficulty, light, flow, co2, growth, placement, coralType,
+    group, category, diet, temperament
+  `
   return await client.fetch(
     `*[_type == $type && defined(name) && defined(slug)] | order(name asc) {
-      _id, _type, name, scientificName, slug, excerpt, mainImage ${extra}
+      _id, _type, name, scientificName, slug, excerpt, mainImage ${extraFields} ${semanticFields}
     }`,
     { type }
   )
@@ -52,26 +62,31 @@ const COMPARE_PROJECTIONS: Record<DatabaseType, string> = {
   species: `
     _id, _type, name, slug, mainImage, sizeCm, tankSizeMinL,
     tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
-    diet, temperament, waterZone, schooling, difficulty
+    diet, temperament, waterZone, schooling, difficulty,
+    aquariumStyle, region, isPredator, reefCompatibility
   `,
   invertebrate: `
     _id, _type, name, slug, mainImage, group, waterType, sizeCm,
     tempMinC, tempMaxC, phMin, phMax,
-    diet, temperament, difficulty
+    diet, temperament, difficulty,
+    aquariumStyle, region, reefCompatibility
   `,
   plant: `
     _id, _type, name, slug, mainImage,
     light, co2, growth, difficulty, placement,
-    tempMinC, tempMaxC, phMin, phMax, propagation
+    tempMinC, tempMaxC, phMin, phMax, propagation,
+    aquariumStyle, region, growthForm, redPlant
   `,
   coral: `
     _id, _type, name, slug, mainImage,
     light, flow, difficulty, placement, aggression, reefCompatibility,
-    tempMinC, tempMaxC
+    tempMinC, tempMaxC,
+    aquariumStyle, photosynthetic
   `,
   equipment: `
     _id, _type, name, slug, mainImage,
-    category, brand, model, flowRateLh, powerW, tankSizeMaxL, pros, cons
+    category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,
+    aquariumStyle
   `,
 }
 
@@ -84,16 +99,22 @@ export async function getDatabaseCompareItems(type: DatabaseType): Promise<any[]
   )
 }
 
-export async function getDatabaseItem(type: DatabaseType, slug: string): Promise<any | null> {  const result = await client.fetch(
+export async function getDatabaseItem(type: DatabaseType, slug: string): Promise<any | null> {
+  const result = await client.fetch(
     `*[_type == $type && slug.current == $slug][0] {
       _id, _type, name, scientificName, slug, excerpt, mainImage,
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty, waterType,
       group,
-      light, co2, growth, placement, propagation,
-      coralType, flow, aggression, reefCompatibility,
+      light, co2, growth, placement, propagation, growthForm, redPlant,
+      coralType, flow, aggression, reefCompatibility, photosynthetic,
       category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,
+      aquariumStyle, region, isPredator,
       compatibleSpecies[]->{ _id, name, slug, mainImage, excerpt },
+      compatiblePlants[]->{ _id, name, slug, mainImage, excerpt },
+      compatibleInvertebrates[]->{ _id, name, slug, mainImage, excerpt },
+      suitableEquipment[]->{ _id, name, slug, mainImage, category, brand },
+      relatedProblems[]->{ _id, title, slug, excerpt, category },
       relatedPosts[]->{ _id, title, slug, excerpt, publishedAt, mainImage }
     }`,
     { type, slug }
@@ -123,8 +144,8 @@ export async function getInspirationList(): Promise<InspirationItem[]> {
 
 export async function getProblemsList(): Promise<any[]> {
   return await client.fetch(
-    `*[_type == "problem" && defined(title)] | order(publishedAt desc) {
-      _id, _type, title, slug, excerpt, category
+    `*[_type == "problem"] | order(name asc) {
+      _id, _type, name, title, slug, excerpt, category, waterType
     }`
   )
 }

@@ -48,7 +48,24 @@ export default async function InvertebratesPage() {
           Shrimp, snails, crabs, urchins, starfish and anemones — freshwater, brackish and marine.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/invertebrates" filterKeys={["group"]} compareItems={compareItems} compareType="invertebrate" />
+      <DatabaseGrid
+        items={items}
+        hrefPrefix="/invertebrates"
+        finderHref="/finder"
+        filterGroups={[
+          { key: "waterType", label: "Water Type" },
+          { key: "group", label: "Group" },
+          { key: "difficulty", label: "Difficulty" },
+          { key: "aquariumStyle", label: "Aquarium Style" },
+          { key: "region", label: "Region" },
+        ]}
+        rangeFilters={[
+          { key: "sizeCm", label: "Size", min: 0.1, max: 30, unit: "cm" },
+          { key: "tempMinC", label: "Temp Min", min: 15, max: 35, unit: "°C" },
+        ]}
+        compareItems={compareItems}
+        compareType="invertebrate"
+      />
     </div>
   )
 }

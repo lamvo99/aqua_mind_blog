@@ -47,7 +47,23 @@ export default async function PlantsPage() {
           Light, CO₂ and growth requirements for freshwater aquarium plants.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/plants" filterKeys={["difficulty", "light"]} compareItems={compareItems} compareType="plant" />
+      <DatabaseGrid
+        items={items}
+        hrefPrefix="/plants"
+        finderHref="/finder"
+        filterGroups={[
+          { key: "placement", label: "Placement" },
+          { key: "difficulty", label: "Difficulty" },
+          { key: "light", label: "Light" },
+          { key: "co2", label: "CO₂" },
+          { key: "growth", label: "Growth Rate" },
+          { key: "aquariumStyle", label: "Aquarium Style" },
+          { key: "region", label: "Region" },
+          { key: "growthForm", label: "Growth Form" },
+        ]}
+        compareItems={compareItems}
+        compareType="plant"
+      />
     </div>
   )
 }

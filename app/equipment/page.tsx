@@ -47,7 +47,21 @@ export default async function EquipmentPage() {
           Filters, lights, pumps, heaters and CO₂ systems with specs and suitable tank ranges.
         </p>
       </div>
-      <DatabaseGrid items={items} hrefPrefix="/equipment" filterKeys={["category"]} compareItems={compareItems} compareType="equipment" />
+      <DatabaseGrid
+        items={items}
+        hrefPrefix="/equipment"
+        finderHref="/finder"
+        filterGroups={[
+          { key: "category", label: "Category" },
+          { key: "aquariumStyle", label: "Aquarium Style" },
+        ]}
+        rangeFilters={[
+          { key: "tankSizeMaxL", label: "Tank Size", min: 10, max: 2000, unit: "L" },
+          { key: "powerW", label: "Power", min: 1, max: 200, unit: "W" },
+        ]}
+        compareItems={compareItems}
+        compareType="equipment"
+      />
     </div>
   )
 }

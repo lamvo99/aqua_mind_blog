@@ -40,6 +40,31 @@ export default defineType({
       options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] },
     }),
     defineField({ name: 'reefCompatibility', title: 'Reef Safe?', type: 'boolean' }),
+    defineField({ name: 'photosynthetic', title: 'Photosynthetic?', type: 'boolean' }),
+    defineField({
+      name: 'suitableEquipment', title: 'Suitable Equipment', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'equipment' }] }],
+    }),
+    defineField({
+      name: 'relatedProblems', title: 'Common Problems', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'problem' }] }],
+    }),
+    defineField({
+      name: 'aquariumStyle', title: 'Aquarium Style', type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Nano Reef', value: 'Nano Reef' },
+          { title: 'Mixed Reef', value: 'Mixed Reef' },
+          { title: 'Soft Coral Reef', value: 'Soft Coral Reef' },
+          { title: 'LPS Reef', value: 'LPS Reef' },
+          { title: 'SPS Reef', value: 'SPS Reef' },
+          { title: 'NPS', value: 'NPS' },
+          { title: 'Anemone / Clownfish', value: 'Anemone / Clownfish' },
+          { title: 'Invertebrate-focused', value: 'Invertebrate-focused' },
+        ],
+      },
+    }),
     defineField({
       name: 'tempMinC', title: 'Min Temperature (°C)', type: 'number',
       validation: (Rule: any) => Rule.min(0).max(35),

@@ -1,53 +1,64 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useSearchParams, useRouter } from "next/navigation"
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, RotateCcw, Fish, Sprout, Waves } from "lucide-react"
-import { findMatches, type FinderAnswers, type FinderItem, type FinderResult } from "@/lib/finder"
+import { ArrowLeft, ArrowRight, RotateCcw, Fish, Sprout, Waves, Bug, Wrench } from "lucide-react"
+import {
+  findMatches,
+  paramsToIntent,
+  intentToParams,
+  type FinderIntent,
+  type FinderItem,
+  type FinderResult,
+  type MatchStatus,
+} from "@/lib/finder"
 
 const QUESTIONS = [
   {
-    id: "water",
+    id: "waterType",
     title: "What kind of aquarium are you setting up?",
     options: [
-      { value: "freshwater", label: "Freshwater community", desc: "Fish-only freshwater tank" },
-      { value: "planted", label: "Planted tank", desc: "Live plants are the focus" },
-      { value: "reef", label: "Saltwater reef", desc: "Corals and marine fish" },
+      { value: "freshwater", label: "Freshwater", desc: "Community or planted tank" },
+      { value: "saltwater", label: "Saltwater", desc: "Reef or marine fish-only" },
     ],
   },
   {
-    id: "tank",
+    id: "tankRange",
     title: "How big is your tank?",
     options: [
-      { value: "small", label: "Small — under 40 L", desc: "Nano tanks, desktop setups" },
-      { value: "medium", label: "Medium — 40 to 150 L", desc: "The most common size" },
-      { value: "large", label: "Large — over 150 L", desc: "Room for almost anything" },
+      { value: "nano", label: "Nano — under 30 L", desc: "Desktop or Betta setups" },
+      { value: "small", label: "Small — 30–80 L", desc: "Good starter sizes" },
+      { value: "medium", label: "Medium — 80–200 L", desc: "The most popular range" },
+      { value: "large", label: "Large — over 200 L", desc: "Room for almost anything" },
     ],
   },
   {
-    id: "experience",
-    title: "How experienced are you?",
+    id: "difficulty",
+    title: "What's your experience level?",
     options: [
-      { value: "beginner", label: "Just starting out", desc: "First aquarium" },
-      { value: "intermediate", label: "A few tanks behind me", desc: "Comfortable with basics" },
-      { value: "advanced", label: "Experienced hobbyist", desc: "Ready for challenging species" },
+      { value: "beginner", label: "Beginner", desc: "Just starting out" },
+      { value: "intermediate", label: "Intermediate", desc: "A few tanks behind me" },
+      { value: "advanced", label: "Advanced", desc: "Ready for challenging species" },
     ],
   },
   {
     id: "light",
     title: "What lighting do you have or plan?",
     options: [
-      { value: "low", label: "Low light", desc: "Basic stock LEDs" },
-      { value: "medium", label: "Medium light", desc: "Decent growth for most plants" },
-      { value: "high", label: "High light", desc: "Strong LED or metal halide" },
+      { value: "low", label: "Low", desc: "Basic stock LEDs" },
+      { value: "medium", label: "Medium", desc: "Decent growth for most plants" },
+      { value: "high", label: "High", desc: "Strong LED or metal halide" },
     ],
   },
 ] as const
 
-const TYPE_META = {
+const TYPE_META: Record<string, { label: string; icon: JSX.Element; path: string }> = {
   species: { label: "Fish", icon: <Fish className="w-4 h-4" />, path: "/species" },
   plant: { label: "Plant", icon: <Sprout className="w-4 h-4" />, path: "/plants" },
   coral: { label: "Coral", icon: <Waves className="w-4 h-4" />, path: "/corals" },
+  invertebrate: { label: "Invertebrate", icon: <Bug className="w-4 h-4" />, path: "/invertebrates" },
+  equipment: { label: "Equipment", icon: <Wrench className="w-4 h-4" />, path: "/equipment" },
 }
 
 const DIFF_COLORS: Record<string, string> = {
@@ -57,13 +68,32 @@ const DIFF_COLORS: Record<string, string> = {
   Expert: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-400",
 }
 
+const STATUS_ICONS: Record<MatchStatus, string> = {
+  match: "\u2705",
+  no_match: "\u274C",
+  unknown: "\u2753",
+}
+
 export default function FinderQuiz({ items }: { items: FinderItem[] }) {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const urlIntent = paramsToIntent(searchParams.toString())
+
   const [step, setStep] = useState(0)
-  const [answers, setAnswers] = useState<Partial<FinderAnswers>>({})
+  const [answers, setAnswers] = useState<Partial<FinderIntent>>(urlIntent)
   const [results, setResults] = useState<FinderResult[] | null>(null)
+  const [expandedCard, setExpandedCard] = useState<string | null>(null)
+
+  // Sync to URL on results
+  useEffect(() => {
+    if (results) {
+      const params = intentToParams(answers as FinderIntent)
+      router.replace(`/finder?${params}`, { scroll: false })
+    }
+  }, [results, answers, router])
 
   const current = QUESTIONS[step]
-  const picked = answers[current.id as keyof FinderAnswers] as string | undefined
+  const picked = answers[current.id as keyof FinderIntent] as string | undefined
 
   const pick = (value: string) => {
     const next = { ...answers, [current.id]: value }
@@ -71,7 +101,7 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
     if (step < QUESTIONS.length - 1) {
       setStep(step + 1)
     } else {
-      setResults(findMatches(items, next as FinderAnswers))
+      setResults(findMatches(items, next as FinderIntent))
     }
   }
 
@@ -79,6 +109,12 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
     setAnswers({})
     setStep(0)
     setResults(null)
+    setExpandedCard(null)
+    router.replace("/finder", { scroll: false })
+  }
+
+  const toggleExpand = (id: string) => {
+    setExpandedCard(expandedCard === id ? null : id)
   }
 
   if (results) {
@@ -99,9 +135,9 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
         </div>
         {results.length === 0 ? (
           <div className="text-center py-16 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-            <p className="text-gray-900 dark:text-slate-100 font-medium mb-1">No perfect matches found</p>
+            <p className="text-gray-900 dark:text-slate-100 font-medium mb-1">No matches found</p>
             <p className="text-sm text-gray-500 dark:text-slate-400 mb-4">
-              Try loosening your answers — e.g. a smaller tank or lower lighting.
+              Try loosening your constraints — e.g. a bigger tank or different lighting.
             </p>
             <button
               type="button"
@@ -114,13 +150,13 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {results.slice(0, 12).map((r) => {
+            {results.map((r) => {
               const meta = TYPE_META[r.item._type]
+              const expanded = expandedCard === r.item._id
               return (
-                <Link
+                <div
                   key={r.item._id}
-                  href={`${meta.path}/${r.item.slug.current}`}
-                  className="group rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5 hover:shadow-lg hover:border-aqua-300 dark:hover:border-aqua-800 transition-all card-hover"
+                  className="group rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5 hover:shadow-lg hover:border-aqua-300 dark:hover:border-aqua-800 transition-all"
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-aqua-600 dark:text-aqua-400">{meta.icon}</span>
@@ -133,24 +169,49 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
                       </span>
                     )}
                   </div>
-                  <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">
-                    {r.item.name}
-                  </h3>
+                  <Link href={`${meta.path}/${r.item.slug.current}`}>
+                    <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">
+                      {r.item.name}
+                    </h3>
+                  </Link>
                   <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 mb-3">
-                    {r.item.tankSizeMinL ? `Min tank ${r.item.tankSizeMinL} L · ` : ""}
-                    {r.item.tempMinC != null && r.item.tempMaxC != null ? `${r.item.tempMinC}–${r.item.tempMaxC}°C · ` : ""}
-                    {r.item.phMin != null && r.item.phMax != null ? `pH ${r.item.phMin}–${r.item.phMax}` : ""}
+                    {r.item.tankSizeMinL ? `Min tank ${r.item.tankSizeMinL}L · ` : ""}
+                    {r.item.tempMinC != null && r.item.tempMaxC != null ? `${r.item.tempMinC}\u2013${r.item.tempMaxC}\u00b0C · ` : ""}
+                    {r.item.phMin != null && r.item.phMax != null ? `pH ${r.item.phMin}\u2013${r.item.phMax}` : ""}
                     {r.item.light ? `Light: ${r.item.light}` : ""}
                   </p>
-                  <ul className="space-y-1">
-                    {r.reasons.slice(0, 3).map((reason, i) => (
+
+                  {/* Explanation */}
+                  <ul className="space-y-1 mb-3">
+                    {r.explanation.slice(0, 3).map((ex, i) => (
                       <li key={i} className="flex items-start gap-1.5 text-xs text-gray-600 dark:text-slate-300">
-                        <span className="text-aqua-500 mt-0.5 shrink-0">•</span>
-                        {reason}
+                        <span className="text-aqua-500 mt-0.5 shrink-0">{"\u2022"}</span>
+                        {ex}
                       </li>
                     ))}
                   </ul>
-                </Link>
+
+                  {/* Constraint details toggle */}
+                  <button
+                    type="button"
+                    onClick={() => toggleExpand(r.item._id)}
+                    className="text-[11px] font-medium text-aqua-600 dark:text-aqua-400 hover:underline mb-2"
+                  >
+                    {expanded ? "Hide details" : "Show details"}
+                  </button>
+
+                  {expanded && (
+                    <div className="mt-2 space-y-1 border-t border-gray-100 dark:border-slate-700 pt-2">
+                      {r.constraints.map((c) => (
+                        <div key={c.field} className="flex items-center gap-2 text-[11px] text-gray-500 dark:text-slate-400">
+                          <span>{STATUS_ICONS[c.status]}</span>
+                          <span className="font-medium">{c.label}</span>
+                          {c.detail && <span>{c.detail}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               )
             })}
           </div>
@@ -176,7 +237,7 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
       <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-6">{current.title}</h2>
       <div className="space-y-3">
         {current.options.map((opt) => {
-          const active = answers[current.id as keyof FinderAnswers] === opt.value
+          const active = answers[current.id as keyof FinderIntent] === opt.value
           return (
             <button
               key={opt.value}
@@ -211,7 +272,7 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
       {step === QUESTIONS.length - 1 && (
         <button
           type="button"
-          onClick={() => setResults(findMatches(items, answers as FinderAnswers))}
+          onClick={() => setResults(findMatches(items, answers as FinderIntent))}
           className="mt-6 inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all"
         >
           Show my matches

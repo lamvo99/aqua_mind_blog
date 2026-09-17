@@ -57,6 +57,52 @@ export default defineType({
       options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] },
     }),
     defineField({
+      name: 'aquariumStyle', title: 'Aquarium Style', type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Community', value: 'Community' },
+          { title: 'Shrimp', value: 'Shrimp' },
+          { title: 'Planted', value: 'Planted' },
+          { title: 'Low-Tech', value: 'Low-Tech' },
+          { title: 'Mixed Reef', value: 'Mixed Reef' },
+          { title: 'Invertebrate-focused', value: 'Invertebrate-focused' },
+          { title: 'Fish Only', value: 'Fish Only' },
+          { title: 'Nano Reef', value: 'Nano Reef' },
+          { title: 'Anemone / Clownfish', value: 'Anemone / Clownfish' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'region', title: 'Region', type: 'string',
+      options: {
+        list: [
+          { title: 'South America', value: 'South America' },
+          { title: 'Amazon Basin', value: 'Amazon Basin' },
+          { title: 'Southeast Asia', value: 'Southeast Asia' },
+          { title: 'South Asia', value: 'South Asia' },
+          { title: 'East Asia', value: 'East Asia' },
+          { title: 'Africa', value: 'Africa' },
+          { title: 'Marine Indo-Pacific', value: 'Marine Indo-Pacific' },
+          { title: 'Caribbean / Western Atlantic', value: 'Caribbean / Western Atlantic' },
+          { title: 'Red Sea', value: 'Red Sea' },
+        ],
+      },
+    }),
+    defineField({ name: 'reefCompatibility', title: 'Reef Compatible?', type: 'boolean' }),
+    defineField({
+      name: 'compatibleSpecies', title: 'Compatible Species', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'species' }] }],
+    }),
+    defineField({
+      name: 'suitableEquipment', title: 'Suitable Equipment', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'equipment' }] }],
+    }),
+    defineField({
+      name: 'relatedProblems', title: 'Common Problems', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'problem' }] }],
+    }),
+    defineField({
       name: 'mainImage', title: 'Main Image', type: 'image', options: { hotspot: true },
     }),
     defineField({

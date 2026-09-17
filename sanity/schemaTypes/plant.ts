@@ -52,6 +52,65 @@ export default defineType({
     }),
     defineField({ name: 'propagation', title: 'Propagation', type: 'text', rows: 2 }),
     defineField({
+      name: 'aquariumStyle', title: 'Aquarium Style', type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Community', value: 'Community' },
+          { title: 'Planted', value: 'Planted' },
+          { title: 'Low-Tech', value: 'Low-Tech' },
+          { title: 'High-Tech / CO2', value: 'High-Tech / CO2' },
+          { title: 'Aquascaping', value: 'Aquascaping' },
+          { title: 'Blackwater', value: 'Blackwater' },
+          { title: 'Biotope', value: 'Biotope' },
+          { title: 'Amazon / South American', value: 'Amazon / South American' },
+          { title: 'Shrimp', value: 'Shrimp' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'region', title: 'Region', type: 'string',
+      options: {
+        list: [
+          { title: 'South America', value: 'South America' },
+          { title: 'Amazon Basin', value: 'Amazon Basin' },
+          { title: 'Central America', value: 'Central America' },
+          { title: 'North America', value: 'North America' },
+          { title: 'Southeast Asia', value: 'Southeast Asia' },
+          { title: 'South Asia', value: 'South Asia' },
+          { title: 'East Asia', value: 'East Asia' },
+          { title: 'Africa', value: 'Africa' },
+          { title: 'Australia / Oceania', value: 'Australia / Oceania' },
+          { title: 'Europe', value: 'Europe' },
+          { title: 'Cosmopolitan', value: 'Cosmopolitan' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'growthForm', title: 'Growth Form', type: 'string',
+      options: {
+        list: [
+          { title: 'Stem', value: 'Stem' },
+          { title: 'Rosette', value: 'Rosette' },
+          { title: 'Rhizome', value: 'Rhizome' },
+          { title: 'Stolon', value: 'Stolon' },
+          { title: 'Bulb', value: 'Bulb' },
+          { title: 'Moss', value: 'Moss' },
+          { title: 'Floating', value: 'Floating' },
+          { title: 'Vine / Creeper', value: 'Vine / Creeper' },
+        ],
+      },
+    }),
+    defineField({ name: 'redPlant', title: 'Red Plant?', type: 'boolean' }),
+    defineField({
+      name: 'suitableEquipment', title: 'Suitable Equipment', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'equipment' }] }],
+    }),
+    defineField({
+      name: 'relatedProblems', title: 'Common Problems', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'problem' }] }],
+    }),
+    defineField({
       name: 'mainImage', title: 'Main Image', type: 'image', options: { hotspot: true },
     }),
     defineField({
