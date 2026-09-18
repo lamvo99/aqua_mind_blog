@@ -2,7 +2,7 @@ import { createClient } from '@sanity/client'
 import * as fs from 'fs'
 
 const envContent = fs.readFileSync('.env.local', 'utf8')
-const projectId = envContent.match(/NEXT_PUBLIC_SANITY_PROJECT_ID="([^"]+)"/)?.[1]
+const projectId = envContent.match(/NEXT_PUBLIC_SANITY_PROJECT_ID="([^"]+)"/)?.[1] ?? ''
 const dataset = envContent.match(/NEXT_PUBLIC_SANITY_DATASET="([^"]+)"/)?.[1] || 'production'
 
 if (!projectId) {

@@ -19,7 +19,7 @@ export const revalidate = 3600
 
 export async function generateStaticParams() {
   const items = await getDatabaseList("species")
-  return items.map((item) => ({ slug: item.slug?.current }))
+  return items.filter((item) => !!item.slug?.current).map((item) => ({ slug: item.slug!.current }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

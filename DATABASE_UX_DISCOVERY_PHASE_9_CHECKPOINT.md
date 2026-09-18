@@ -23,13 +23,15 @@ main
 - DATABASE V1 frozen at 404 entities
 - 22 tests passing (224/225 with pre-existing compare.test.ts failure)
 - Lint: PASS
+- TypeScript: TIMEOUT (known project issue)
 - Build: TIMEOUT (known project issue)
 
 ## 5. Final State
 
 - 23 tests passing (238/239 with pre-existing compare.test.ts failure)
 - Lint: PASS
-- Build: TIMEOUT (known project issue)
+- TypeScript: PASS (npx tsc --noEmit — zero errors)
+- Build: PASS (449 static pages, all routes compiled)
 
 ## 6. Files Changed
 
@@ -133,16 +135,16 @@ PASS (pre-existing warnings only)
 
 ## 19. TypeScript Result
 
-TIMEOUT — known project issue
+PASS — `npx tsc --noEmit` returns zero errors
 
 ## 20. Build Result
 
-TIMEOUT — known project issue
+PASS — `npm run build` generates 449 static pages, all routes compiled successfully
 
 ## 21. Known Pre-existing Issues
 
 1. `compare.test.ts` — expects 4 types, project has 5 (invertebrate added)
-2. TypeScript/build timeout — known project issue
+2. 6 `react-hooks/exhaustive-deps` warnings in AquariumPlanner.tsx (pre-existing, not blocking)
 
 ## 22. New Regressions
 

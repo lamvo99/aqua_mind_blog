@@ -51,8 +51,8 @@ export async function getDatabaseList(type: DatabaseType): Promise<DatabaseItem[
     group, category, diet, temperament
   `
   return await client.fetch(
-    `*[_type == $type && defined(name) && defined(slug)] | order(name asc) {
-      _id, _type, name, scientificName, slug, excerpt, mainImage ${extraFields} ${semanticFields}
+    `*[_type == $type && defined(name) && defined(slug.current)] | order(name asc) {
+      _id, _type, name, scientificName, slug, excerpt, mainImage${extraFields}, ${semanticFields}
     }`,
     { type }
   )
@@ -92,7 +92,7 @@ const COMPARE_PROJECTIONS: Record<DatabaseType, string> = {
 
 export async function getDatabaseCompareItems(type: DatabaseType): Promise<any[]> {
   return await client.fetch(
-    `*[_type == $type && defined(name) && defined(slug)] | order(name asc) {
+    `*[_type == $type && defined(name) && defined(slug.current)] | order(name asc) {
       ${COMPARE_PROJECTIONS[type]}
     }`,
     { type }

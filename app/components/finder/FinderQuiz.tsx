@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight, RotateCcw, Fish, Sprout, Waves, Bug, Wrench } from "lucide-react"
@@ -53,7 +53,7 @@ const QUESTIONS = [
   },
 ] as const
 
-const TYPE_META: Record<string, { label: string; icon: JSX.Element; path: string }> = {
+const TYPE_META: Record<string, { label: string; icon: React.ReactNode; path: string }> = {
   species: { label: "Fish", icon: <Fish className="w-4 h-4" />, path: "/species" },
   plant: { label: "Plant", icon: <Sprout className="w-4 h-4" />, path: "/plants" },
   coral: { label: "Coral", icon: <Waves className="w-4 h-4" />, path: "/corals" },
