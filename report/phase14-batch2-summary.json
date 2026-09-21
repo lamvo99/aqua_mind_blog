@@ -1,0 +1,165 @@
+{
+  "script": "phase14-batch2-freshwater",
+  "timestamp": "2026-09-21T09:39:08.498Z",
+  "total": 31,
+  "created": 31,
+  "errors": 0,
+  "results": [
+    {
+      "name": "Red-Tail Shark",
+      "id": "species-red-tail-shark",
+      "success": true
+    },
+    {
+      "name": "Denison Barb",
+      "id": "species-denison-barb",
+      "success": true
+    },
+    {
+      "name": "Bala Shark",
+      "id": "species-bala-shark",
+      "success": true
+    },
+    {
+      "name": "Black Ghost Knifefish",
+      "id": "species-black-ghost-knifefish",
+      "success": true
+    },
+    {
+      "name": "Tinfoil Barb",
+      "id": "species-tinfoil-barb",
+      "success": true
+    },
+    {
+      "name": "Freshwater Stingray",
+      "id": "species-freshwater-stingray",
+      "success": true
+    },
+    {
+      "name": "Severum",
+      "id": "species-severum",
+      "success": true
+    },
+    {
+      "name": "Figure-8 Puffer",
+      "id": "species-figure-8-puffer",
+      "success": true
+    },
+    {
+      "name": "Giant Danio",
+      "id": "species-giant-danio",
+      "success": true
+    },
+    {
+      "name": "Sailfin Pleco",
+      "id": "species-sailfin-pleco",
+      "success": true
+    },
+    {
+      "name": "Halfbeak",
+      "id": "species-halfbeak",
+      "success": true
+    },
+    {
+      "name": "Jaguar Cichlid",
+      "id": "species-jaguar-cichlid",
+      "success": true
+    },
+    {
+      "name": "Wolf Cichlid",
+      "id": "species-wolf-cichlid",
+      "success": true
+    },
+    {
+      "name": "Midas Cichlid",
+      "id": "species-midas-cichlid",
+      "success": true
+    },
+    {
+      "name": "Red Devil Cichlid",
+      "id": "species-red-devil-cichlid",
+      "success": true
+    },
+    {
+      "name": "Tiger Shovelnose Catfish",
+      "id": "species-tiger-shovelnose-catfish",
+      "success": true
+    },
+    {
+      "name": "Pictus Catfish",
+      "id": "species-pictus-catfish",
+      "success": true
+    },
+    {
+      "name": "Clown Knifefish",
+      "id": "species-clown-knifefish",
+      "success": true
+    },
+    {
+      "name": "Iridescent Shark",
+      "id": "species-iridescent-shark",
+      "success": true
+    },
+    {
+      "name": "Red-Bellied Pacu",
+      "id": "species-red-bellied-pacu",
+      "success": true
+    },
+    {
+      "name": "Spotted Gar",
+      "id": "species-spotted-gar",
+      "success": true
+    },
+    {
+      "name": "Spotted Snakehead",
+      "id": "species-spotted-snakehead",
+      "success": true
+    },
+    {
+      "name": "Black Arowana",
+      "id": "species-black-arowana",
+      "success": true
+    },
+    {
+      "name": "Walking Catfish",
+      "id": "species-walking-catfish",
+      "success": true
+    },
+    {
+      "name": "Weeks Bichir",
+      "id": "species-weeks-bichir",
+      "success": true
+    },
+    {
+      "name": "Longnose Gar",
+      "id": "species-longnose-gar",
+      "success": true
+    },
+    {
+      "name": "Orinoco Peacock Bass",
+      "id": "species-orinoco-peacock-bass",
+      "success": true
+    },
+    {
+      "name": "Three-Barred Peacock Bass",
+      "id": "species-three-barred-peacock-bass",
+      "success": true
+    },
+    {
+      "name": "Ryukin Goldfish",
+      "id": "species-ryukin-goldfish",
+      "success": true
+    },
+    {
+      "name": "Black Moor Goldfish",
+      "id": "species-black-moor-goldfish",
+      "success": true
+    },
+    {
+      "name": "Telescope Goldfish",
+      "id": "species-telescope-goldfish",
+      "success": true
+    }
+  ],
+  "errorDetails": []
+}

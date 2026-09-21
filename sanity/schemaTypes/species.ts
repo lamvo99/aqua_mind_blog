@@ -23,6 +23,33 @@ export default defineType({
     defineField({ name: 'family', title: 'Family', type: 'string', group: 'identity' }),
     defineField({ name: 'origin', title: 'Origin', type: 'string', group: 'identity' }),
     defineField({ name: 'excerpt', title: 'Excerpt', type: 'text', rows: 3, group: 'identity' }),
+    defineField({
+      name: 'localNames', title: 'Local / Trade Names', type: 'array', group: 'identity',
+      description: 'Verified Vietnamese, regional, or aquarium trade names for discovery (not canonical identity).',
+      of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'aliases', title: 'Search Aliases', type: 'array', group: 'identity',
+      description: 'Alternate common names, accepted search synonyms, or common spelling variants.',
+      of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'group', title: 'Biological Group', type: 'string', group: 'identity',
+      description: 'Taxonomic or hobbyist grouping (e.g. Cichlid, Catfish, Livebearer).',
+      options: {
+        list: [
+          'Cichlid', 'Livebearer', 'Catfish', 'Loach', 'Characin', 'Cyprinid',
+          'Gourami', 'Arowana', 'Puffer', 'Angelfish', 'Tang', 'Wrasse',
+          'Goby', 'Blenny', 'Shark', 'Rainbowfish', 'Killifish', 'Pleco',
+          'Other',
+        ],
+      },
+    }),
+    defineField({
+      name: 'parentSpecies', title: 'Parent Species', type: 'reference', group: 'identity',
+      description: 'If this is a variant/morph/form, point to the canonical species.',
+      to: [{ type: 'species' }],
+    }),
     defineField({ name: 'publishedAt', title: 'Published at', type: 'datetime', group: 'seo' }),
     defineField({
       name: 'sizeCm', title: 'Adult Size (cm)', type: 'number', group: 'care',

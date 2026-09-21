@@ -1,0 +1,633 @@
+{
+  "generatedAt": "2026-09-21T10:24:27.722Z",
+  "totalEntities": 483,
+  "totalIssues": 93,
+  "status": "ISSUES_FOUND",
+  "issues": {
+    "brokenParentRefs": 0,
+    "selfReferences": 0,
+    "circularChains": 0,
+    "duplicateSlugsCrossType": 0,
+    "duplicateSciNames": 14,
+    "nullNames": 39,
+    "nullWaterType": 27,
+    "nullCategory": 13,
+    "invalidRefs": 0
+  },
+  "details": {
+    "brokenParentRefs": [],
+    "selfReferences": [],
+    "circularChains": [],
+    "duplicateSlugsGlobal": [],
+    "duplicateSciNames": [
+      {
+        "domain": "species",
+        "scientificName": "Carassius auratus",
+        "entities": [
+          {
+            "id": "1z8rQFHeojDMTUo2hXSUxN",
+            "name": "Fantail Goldfish"
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqsPG",
+            "name": "Common Goldfish"
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqtze",
+            "name": "Oranda Goldfish"
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqu9U",
+            "name": "Ranchu Goldfish"
+          },
+          {
+            "id": "species-black-moor-goldfish",
+            "name": "Black Moor Goldfish"
+          },
+          {
+            "id": "species-carassius-auratus",
+            "name": "Fancy Goldfish"
+          },
+          {
+            "id": "species-ryukin-goldfish",
+            "name": "Ryukin Goldfish"
+          },
+          {
+            "id": "species-telescope-goldfish",
+            "name": "Telescope Goldfish"
+          }
+        ]
+      },
+      {
+        "domain": "species",
+        "scientificName": "Gasteropelecus sternicla",
+        "entities": [
+          {
+            "id": "1z8rQFHeojDMTUo2hXSV4m",
+            "name": "Hatchetfish"
+          },
+          {
+            "id": "ofTl1CTOUWuLwM28PxTEQ3",
+            "name": "Silver Hatchetfish"
+          }
+        ]
+      },
+      {
+        "domain": "species",
+        "scientificName": "Pterophyllum scalare",
+        "entities": [
+          {
+            "id": "5oQB2MZ7gmZXjdwFqSs3qH",
+            "name": "Marble Angelfish"
+          },
+          {
+            "id": "species-pterophyllum-scalare",
+            "name": "Angelfish"
+          }
+        ]
+      },
+      {
+        "domain": "species",
+        "scientificName": "Poecilia sphenops",
+        "entities": [
+          {
+            "id": "PZ8Kai1VvEL468NS2LLaqK",
+            "name": "Molly"
+          },
+          {
+            "id": "species-poecilia-sphenops",
+            "name": "Short-finned Molly"
+          }
+        ]
+      },
+      {
+        "domain": "plant",
+        "scientificName": "Rotala rotundifolia",
+        "entities": [
+          {
+            "id": "7kdig6Bk6SZq4GZkXcVaBK",
+            "name": "Red Rotala"
+          },
+          {
+            "id": "plant-rotala-rotundifolia",
+            "name": "Rotala rotundifolia"
+          }
+        ]
+      },
+      {
+        "domain": "plant",
+        "scientificName": "Taxiphyllum sp.",
+        "entities": [
+          {
+            "id": "I9bI8W8ZWcEwyIzM9CuIEm",
+            "name": "Peacock Moss"
+          },
+          {
+            "id": "IlX7xILobrukz7d5Jng2hi",
+            "name": "Flame Moss"
+          }
+        ]
+      },
+      {
+        "domain": "coral",
+        "scientificName": "Pocillopora damicornis",
+        "entities": [
+          {
+            "id": "BruaGKYCGDRQjkiQDnlmlr",
+            "name": "Cauliflower Coral"
+          },
+          {
+            "id": "PZ8Kai1VvEL468NS2LLdGW",
+            "name": "Pocillopora"
+          }
+        ]
+      },
+      {
+        "domain": "coral",
+        "scientificName": "Favia favus",
+        "entities": [
+          {
+            "id": "BruaGKYCGDRQjkiQDnlmrB",
+            "name": "Honeycomb Brain Coral"
+          },
+          {
+            "id": "IlX7xILobrukz7d5Jng2TG",
+            "name": "Favia Brain Coral"
+          }
+        ]
+      },
+      {
+        "domain": "coral",
+        "scientificName": "Caulastrea furcata",
+        "entities": [
+          {
+            "id": "IlX7xILobrukz7d5Jng29O",
+            "name": "Trumpet Coral"
+          },
+          {
+            "id": "coral-candy-cane-coral",
+            "name": "Candy Cane Coral"
+          }
+        ]
+      },
+      {
+        "domain": "coral",
+        "scientificName": "Stylophora pistillata",
+        "entities": [
+          {
+            "id": "IlX7xILobrukz7d5JnvhK2",
+            "name": "Stylophora Coral"
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3or0mk",
+            "name": "Cat's Paw Coral"
+          }
+        ]
+      },
+      {
+        "domain": "invertebrate",
+        "scientificName": "Neocaridina davidi",
+        "entities": [
+          {
+            "id": "5oQB2MZ7gmZXjdwFqSs4kl",
+            "name": "Cherry Shrimp"
+          },
+          {
+            "id": "IlX7xILobrukz7d5JngE2Q",
+            "name": "Blue Diamond Shrimp"
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A6iAOg",
+            "name": "Golden Back Yellow Shrimp"
+          },
+          {
+            "id": "invertebrate-neocaridina-davidi",
+            "name": "Red Cherry Shrimp"
+          }
+        ]
+      },
+      {
+        "domain": "invertebrate",
+        "scientificName": "Caridina cantonensis",
+        "entities": [
+          {
+            "id": "I9bI8W8ZWcEwyIzM9DXOqu",
+            "name": "Taiwan Bee Shrimp"
+          },
+          {
+            "id": "I9bI8W8ZWcEwyIzM9DXP0y",
+            "name": "Blue Bolt Shrimp"
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A7KIaj",
+            "name": "King Kong Shrimp"
+          },
+          {
+            "id": "invertebrate-caridina-cantonensis",
+            "name": "Crystal Red Shrimp"
+          }
+        ]
+      },
+      {
+        "domain": "invertebrate",
+        "scientificName": "Caridina sp.",
+        "entities": [
+          {
+            "id": "J1Tx0fWCuGNPno99A6hj3X",
+            "name": "Blue Tiger Shrimp"
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A6iAEQ",
+            "name": "Snowball Shrimp"
+          }
+        ]
+      },
+      {
+        "domain": "invertebrate",
+        "scientificName": "Caridina dennerli",
+        "entities": [
+          {
+            "id": "J1Tx0fWCuGNPno99A7KIq7",
+            "name": "Sulawesi Cardinal Shrimp"
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3or1AM",
+            "name": "Sulawesi Red Cherry Shrimp"
+          }
+        ]
+      }
+    ],
+    "nullNames": [
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnlsx5"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnlszk"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnlt2P"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnlt54"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnlt7j"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnltAO"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnltD3"
+      },
+      {
+        "type": "problem",
+        "id": "BruaGKYCGDRQjkiQDnltFi"
+      },
+      {
+        "type": "problem",
+        "id": "problem-aiptasia-infestation"
+      },
+      {
+        "type": "problem",
+        "id": "problem-brown-diatom-algae"
+      },
+      {
+        "type": "problem",
+        "id": "problem-brown-jelly-disease"
+      },
+      {
+        "type": "problem",
+        "id": "problem-cloudy-water"
+      },
+      {
+        "type": "problem",
+        "id": "problem-coral-bleaching"
+      },
+      {
+        "type": "problem",
+        "id": "problem-cyanobacteria"
+      },
+      {
+        "type": "problem",
+        "id": "problem-fish-gasping-surface"
+      },
+      {
+        "type": "problem",
+        "id": "problem-fish-hiding"
+      },
+      {
+        "type": "problem",
+        "id": "problem-green-water"
+      },
+      {
+        "type": "problem",
+        "id": "problem-heater-stuck-off"
+      },
+      {
+        "type": "problem",
+        "id": "problem-heater-stuck-on"
+      },
+      {
+        "type": "problem",
+        "id": "problem-high-ammonia"
+      },
+      {
+        "type": "problem",
+        "id": "problem-high-nitrate"
+      },
+      {
+        "type": "problem",
+        "id": "problem-high-nitrite"
+      },
+      {
+        "type": "problem",
+        "id": "problem-low-filter-flow"
+      },
+      {
+        "type": "problem",
+        "id": "problem-ph-crash"
+      },
+      {
+        "type": "problem",
+        "id": "problem-ph-drift"
+      },
+      {
+        "type": "problem",
+        "id": "problem-plant-leaves-melting"
+      },
+      {
+        "type": "problem",
+        "id": "problem-rapid-tissue-necrosis-rtn"
+      },
+      {
+        "type": "problem",
+        "id": "problem-slow-tissue-necrosis-stn"
+      },
+      {
+        "type": "problem",
+        "id": "problem-white-spot-disease"
+      },
+      {
+        "type": "inspiration",
+        "id": "BruaGKYCGDRQjkiQDnm04r"
+      },
+      {
+        "type": "inspiration",
+        "id": "BruaGKYCGDRQjkiQDnm07W"
+      },
+      {
+        "type": "inspiration",
+        "id": "BruaGKYCGDRQjkiQDnm0AB"
+      },
+      {
+        "type": "inspiration",
+        "id": "BruaGKYCGDRQjkiQDnm0Cq"
+      },
+      {
+        "type": "inspiration",
+        "id": "BruaGKYCGDRQjkiQDnm0FV"
+      },
+      {
+        "type": "inspiration",
+        "id": "inspiration-classic-iwagumi"
+      },
+      {
+        "type": "inspiration",
+        "id": "inspiration-dutch-planted-tank"
+      },
+      {
+        "type": "inspiration",
+        "id": "inspiration-jungle-biotope"
+      },
+      {
+        "type": "inspiration",
+        "id": "inspiration-low-tech-nature-aquarium"
+      },
+      {
+        "type": "inspiration",
+        "id": "inspiration-nano-paludarium"
+      }
+    ],
+    "nullWaterType": [
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmlr",
+        "name": "Cauliflower Coral"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5JnTgZ4",
+        "name": "Discosoma Mushroom"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5Jng29O",
+        "name": "Trumpet Coral"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5Jng2TG",
+        "name": "Favia Brain Coral"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5Jnvipy",
+        "name": "Chalice Coral"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5Jo2Xh0",
+        "name": "Pavona Coral"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5Jo2rGw",
+        "name": "Rhodactis Mushroom"
+      },
+      {
+        "type": "coral",
+        "id": "J1Tx0fWCuGNPno99A6TtLj",
+        "name": "Frogspawn Coral"
+      },
+      {
+        "type": "coral",
+        "id": "J1Tx0fWCuGNPno99A6TtVz",
+        "name": "Xenia Coral"
+      },
+      {
+        "type": "coral",
+        "id": "J1Tx0fWCuGNPno99A6UVbu",
+        "name": "Kenya Tree Coral"
+      },
+      {
+        "type": "coral",
+        "id": "PZ8Kai1VvEL468NS2KnjUP",
+        "name": "Sun Coral"
+      },
+      {
+        "type": "coral",
+        "id": "PZ8Kai1VvEL468NS2KnkWY",
+        "name": "Tubing Coral"
+      },
+      {
+        "type": "coral",
+        "id": "coral-blastomussa",
+        "name": "Blastomussa"
+      },
+      {
+        "type": "coral",
+        "id": "coral-candy-cane-coral",
+        "name": "Candy Cane Coral"
+      },
+      {
+        "type": "coral",
+        "id": "coral-duncan-coral",
+        "name": "Duncan Coral"
+      },
+      {
+        "type": "coral",
+        "id": "coral-goniopora",
+        "name": "Goniopora"
+      },
+      {
+        "type": "coral",
+        "id": "coral-gorgonian",
+        "name": "Gorgonian"
+      },
+      {
+        "type": "coral",
+        "id": "coral-hammer-coral",
+        "name": "Hammer Coral"
+      },
+      {
+        "type": "coral",
+        "id": "coral-lobophytum-leather",
+        "name": "Lobophytum Leather"
+      },
+      {
+        "type": "coral",
+        "id": "coral-montipora-capricornis",
+        "name": "Montipora Capricornis"
+      },
+      {
+        "type": "coral",
+        "id": "coral-porites",
+        "name": "Porites"
+      },
+      {
+        "type": "coral",
+        "id": "coral-ricordea-mushroom",
+        "name": "Ricordea Mushroom"
+      },
+      {
+        "type": "coral",
+        "id": "coral-staghorn-acropora",
+        "name": "Staghorn Acropora"
+      },
+      {
+        "type": "coral",
+        "id": "coral-table-acropora",
+        "name": "Table Acropora"
+      },
+      {
+        "type": "coral",
+        "id": "coral-toadstool-leather",
+        "name": "Toadstool Leather"
+      },
+      {
+        "type": "coral",
+        "id": "coral-turbinaria",
+        "name": "Turbinaria"
+      },
+      {
+        "type": "coral",
+        "id": "coral-zoanthids",
+        "name": "Zoanthids"
+      }
+    ],
+    "nullCategory": [
+      {
+        "type": "problem",
+        "id": "I9bI8W8ZWcEwyIzM9DFYjI",
+        "name": "Columnaris (Cotton Mouth)"
+      },
+      {
+        "type": "problem",
+        "id": "I9bI8W8ZWcEwyIzM9DFYtM",
+        "name": "Planaria Infestation"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5JnvacY",
+        "name": "Velvet Disease (Oodinium)"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2qVy",
+        "name": "Fish Lice (Argulus)"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2qgo",
+        "name": "Dinoflagellates"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2wxC",
+        "name": "Hole in the Head Disease"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2xIs",
+        "name": "Saprolegnia (Water Mold)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A79Tvf",
+        "name": "Hydra Infestation"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7AE36",
+        "name": "Ich (White Spot Disease)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7AEDM",
+        "name": "Swim Bladder Disease"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KJcq",
+        "name": "Flukes (Gill and Skin Parasites)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KJpf",
+        "name": "Anchor Worm (Lernaea)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KutT",
+        "name": "Pop Eye (Exophthalmia)"
+      }
+    ],
+    "invalidRefs": []
+  },
+  "perTypeCounts": {
+    "species": 218,
+    "plant": 62,
+    "coral": 48,
+    "invertebrate": 56,
+    "equipment": 46,
+    "problem": 43,
+    "inspiration": 10
+  }
+}

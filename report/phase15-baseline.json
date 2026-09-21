@@ -1,0 +1,2636 @@
+{
+  "generatedAt": "2026-09-21T13:31:12.651Z",
+  "project": "zeohjejw",
+  "dataset": "production",
+  "apiVersion": "2026-05-25",
+  "totalEntities": 483,
+  "totalPublished": 483,
+  "totalDrafts": 0,
+  "perType": {
+    "species": {
+      "total": 218,
+      "published": 218,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 4,
+      "duplicateSciNames": [
+        {
+          "scientificName": "Carassius auratus",
+          "entities": [
+            {
+              "id": "1z8rQFHeojDMTUo2hXSUxN",
+              "name": "Fantail Goldfish"
+            },
+            {
+              "id": "sebdKYryWZgYP2rm3oqsPG",
+              "name": "Common Goldfish"
+            },
+            {
+              "id": "sebdKYryWZgYP2rm3oqtze",
+              "name": "Oranda Goldfish"
+            },
+            {
+              "id": "sebdKYryWZgYP2rm3oqu9U",
+              "name": "Ranchu Goldfish"
+            },
+            {
+              "id": "species-black-moor-goldfish",
+              "name": "Black Moor Goldfish"
+            },
+            {
+              "id": "species-carassius-auratus",
+              "name": "Fancy Goldfish"
+            },
+            {
+              "id": "species-ryukin-goldfish",
+              "name": "Ryukin Goldfish"
+            },
+            {
+              "id": "species-telescope-goldfish",
+              "name": "Telescope Goldfish"
+            }
+          ]
+        },
+        {
+          "scientificName": "Gasteropelecus sternicla",
+          "entities": [
+            {
+              "id": "1z8rQFHeojDMTUo2hXSV4m",
+              "name": "Hatchetfish"
+            },
+            {
+              "id": "ofTl1CTOUWuLwM28PxTEQ3",
+              "name": "Silver Hatchetfish"
+            }
+          ]
+        },
+        {
+          "scientificName": "Pterophyllum scalare",
+          "entities": [
+            {
+              "id": "5oQB2MZ7gmZXjdwFqSs3qH",
+              "name": "Marble Angelfish"
+            },
+            {
+              "id": "species-pterophyllum-scalare",
+              "name": "Angelfish"
+            }
+          ]
+        },
+        {
+          "scientificName": "Poecilia sphenops",
+          "entities": [
+            {
+              "id": "PZ8Kai1VvEL468NS2LLaqK",
+              "name": "Molly"
+            },
+            {
+              "id": "species-poecilia-sphenops",
+              "name": "Short-finned Molly"
+            }
+          ]
+        }
+      ],
+      "nullNameCount": 0,
+      "nullCategoryCount": 124,
+      "parentSpeciesSetCount": 3,
+      "aliasesCount": 44,
+      "localNamesCount": 8,
+      "aquariumStyleCoverage": 218,
+      "regionCoverage": 180,
+      "waterTypeCoverage": 218
+    },
+    "plant": {
+      "total": 62,
+      "published": 62,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 2,
+      "duplicateSciNames": [
+        {
+          "scientificName": "Rotala rotundifolia",
+          "entities": [
+            {
+              "id": "7kdig6Bk6SZq4GZkXcVaBK",
+              "name": "Red Rotala"
+            },
+            {
+              "id": "plant-rotala-rotundifolia",
+              "name": "Rotala rotundifolia"
+            }
+          ]
+        },
+        {
+          "scientificName": "Taxiphyllum sp.",
+          "entities": [
+            {
+              "id": "I9bI8W8ZWcEwyIzM9CuIEm",
+              "name": "Peacock Moss"
+            },
+            {
+              "id": "IlX7xILobrukz7d5Jng2hi",
+              "name": "Flame Moss"
+            }
+          ]
+        }
+      ],
+      "nullNameCount": 0,
+      "nullCategoryCount": 48,
+      "parentSpeciesSetCount": 2,
+      "aliasesCount": 7,
+      "localNamesCount": 0,
+      "aquariumStyleCoverage": 62,
+      "regionCoverage": 29,
+      "waterTypeCoverage": 3
+    },
+    "coral": {
+      "total": 48,
+      "published": 48,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 4,
+      "duplicateSciNames": [
+        {
+          "scientificName": "Pocillopora damicornis",
+          "entities": [
+            {
+              "id": "BruaGKYCGDRQjkiQDnlmlr",
+              "name": "Cauliflower Coral"
+            },
+            {
+              "id": "PZ8Kai1VvEL468NS2LLdGW",
+              "name": "Pocillopora"
+            }
+          ]
+        },
+        {
+          "scientificName": "Favia favus",
+          "entities": [
+            {
+              "id": "BruaGKYCGDRQjkiQDnlmrB",
+              "name": "Honeycomb Brain Coral"
+            },
+            {
+              "id": "IlX7xILobrukz7d5Jng2TG",
+              "name": "Favia Brain Coral"
+            }
+          ]
+        },
+        {
+          "scientificName": "Caulastrea furcata",
+          "entities": [
+            {
+              "id": "IlX7xILobrukz7d5Jng29O",
+              "name": "Trumpet Coral"
+            },
+            {
+              "id": "coral-candy-cane-coral",
+              "name": "Candy Cane Coral"
+            }
+          ]
+        },
+        {
+          "scientificName": "Stylophora pistillata",
+          "entities": [
+            {
+              "id": "IlX7xILobrukz7d5JnvhK2",
+              "name": "Stylophora Coral"
+            },
+            {
+              "id": "sebdKYryWZgYP2rm3or0mk",
+              "name": "Cat's Paw Coral"
+            }
+          ]
+        }
+      ],
+      "nullNameCount": 0,
+      "nullCategoryCount": 31,
+      "parentSpeciesSetCount": 0,
+      "aliasesCount": 12,
+      "localNamesCount": 0,
+      "aquariumStyleCoverage": 48,
+      "regionCoverage": 0,
+      "waterTypeCoverage": 21
+    },
+    "invertebrate": {
+      "total": 56,
+      "published": 56,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 4,
+      "duplicateSciNames": [
+        {
+          "scientificName": "Neocaridina davidi",
+          "entities": [
+            {
+              "id": "5oQB2MZ7gmZXjdwFqSs4kl",
+              "name": "Cherry Shrimp"
+            },
+            {
+              "id": "IlX7xILobrukz7d5JngE2Q",
+              "name": "Blue Diamond Shrimp"
+            },
+            {
+              "id": "J1Tx0fWCuGNPno99A6iAOg",
+              "name": "Golden Back Yellow Shrimp"
+            },
+            {
+              "id": "invertebrate-neocaridina-davidi",
+              "name": "Red Cherry Shrimp"
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina cantonensis",
+          "entities": [
+            {
+              "id": "I9bI8W8ZWcEwyIzM9DXOqu",
+              "name": "Taiwan Bee Shrimp"
+            },
+            {
+              "id": "I9bI8W8ZWcEwyIzM9DXP0y",
+              "name": "Blue Bolt Shrimp"
+            },
+            {
+              "id": "J1Tx0fWCuGNPno99A7KIaj",
+              "name": "King Kong Shrimp"
+            },
+            {
+              "id": "invertebrate-caridina-cantonensis",
+              "name": "Crystal Red Shrimp"
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina sp.",
+          "entities": [
+            {
+              "id": "J1Tx0fWCuGNPno99A6hj3X",
+              "name": "Blue Tiger Shrimp"
+            },
+            {
+              "id": "J1Tx0fWCuGNPno99A6iAEQ",
+              "name": "Snowball Shrimp"
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina dennerli",
+          "entities": [
+            {
+              "id": "J1Tx0fWCuGNPno99A7KIq7",
+              "name": "Sulawesi Cardinal Shrimp"
+            },
+            {
+              "id": "sebdKYryWZgYP2rm3or1AM",
+              "name": "Sulawesi Red Cherry Shrimp"
+            }
+          ]
+        }
+      ],
+      "nullNameCount": 0,
+      "nullCategoryCount": 0,
+      "parentSpeciesSetCount": 0,
+      "aliasesCount": 2,
+      "localNamesCount": 1,
+      "aquariumStyleCoverage": 55,
+      "regionCoverage": 28,
+      "waterTypeCoverage": 56
+    },
+    "equipment": {
+      "total": 46,
+      "published": 46,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 0,
+      "duplicateSciNames": [],
+      "nullNameCount": 0,
+      "nullCategoryCount": 0,
+      "parentSpeciesSetCount": 0,
+      "aliasesCount": 0,
+      "localNamesCount": 0,
+      "aquariumStyleCoverage": 46,
+      "regionCoverage": 0,
+      "waterTypeCoverage": 0
+    },
+    "problem": {
+      "total": 43,
+      "published": 43,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 0,
+      "duplicateSciNames": [],
+      "nullNameCount": 0,
+      "nullCategoryCount": 13,
+      "parentSpeciesSetCount": 0,
+      "aliasesCount": 0,
+      "localNamesCount": 0,
+      "aquariumStyleCoverage": 0,
+      "regionCoverage": 0,
+      "waterTypeCoverage": 11
+    },
+    "inspiration": {
+      "total": 10,
+      "published": 10,
+      "drafts": 0,
+      "duplicateSlugsCount": 0,
+      "duplicateSlugs": [],
+      "duplicateSciNamesCount": 0,
+      "duplicateSciNames": [],
+      "nullNameCount": 0,
+      "nullCategoryCount": 10,
+      "parentSpeciesSetCount": 0,
+      "aliasesCount": 0,
+      "localNamesCount": 0,
+      "aquariumStyleCoverage": 0,
+      "regionCoverage": 0,
+      "waterTypeCoverage": 0
+    }
+  },
+  "crossType": {
+    "duplicateSlugsGlobal": [],
+    "duplicateSlugsCrossTypeCount": 0
+  },
+  "nullNames": [],
+  "nullCategories": [
+    {
+      "type": "species",
+      "id": "1z8rQFHeojDMTUo2hXSUxN",
+      "name": "Fantail Goldfish"
+    },
+    {
+      "type": "species",
+      "id": "1z8rQFHeojDMTUo2hXSV4m",
+      "name": "Hatchetfish"
+    },
+    {
+      "type": "species",
+      "id": "1z8rQFHeojDMTUo2hXSVV6",
+      "name": "Copperband Butterflyfish"
+    },
+    {
+      "type": "species",
+      "id": "1z8rQFHeojDMTUo2hXSViG",
+      "name": "Koi"
+    },
+    {
+      "type": "species",
+      "id": "1z8rQFHeojDMTUo2hXSWMZ",
+      "name": "Australian Redclaw Crayfish"
+    },
+    {
+      "type": "species",
+      "id": "7kdig6Bk6SZq4GZkXcVXjK",
+      "name": "Oscar"
+    },
+    {
+      "type": "species",
+      "id": "7kdig6Bk6SZq4GZkXcVYRS",
+      "name": "Flamehawkfish"
+    },
+    {
+      "type": "species",
+      "id": "Gk33CfLE6ahVd3Ve601V4E",
+      "name": "Frogfish"
+    },
+    {
+      "type": "species",
+      "id": "Gk33CfLE6ahVd3Ve602em7",
+      "name": "Red-tailed Catfish"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9Ciih6",
+      "name": "Convict Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "name": "Firehead Tetra"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9Cj9WG",
+      "name": "Chocolate Gourami"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9Cj9gK",
+      "name": "Scarlet Badis"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9CjDXM",
+      "name": "Clown Killifish"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9CttMO",
+      "name": "Lionfish"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9CuWy8",
+      "name": "Licorice Gourami"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9CuXNI",
+      "name": "Elephantnose Fish"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DFXpw",
+      "name": "Jack Dempsey"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DJbjY",
+      "name": "Betta Imbellis"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DJbye",
+      "name": "Betta Macrostoma"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DJePc",
+      "name": "Threadfin Rainbowfish"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DXNJI",
+      "name": "Tailspot Blenny"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DXNau",
+      "name": "Lawnmower Blenny"
+    },
+    {
+      "type": "species",
+      "id": "I9bI8W8ZWcEwyIzM9DXNv2",
+      "name": "Yellow Coris Wrasse"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5JnTgRq",
+      "name": "Hillstream Loach"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5JnfjuY",
+      "name": "Three Stripe Dwarf Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5JnfkJq",
+      "name": "Mandarin Fish"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5Jng1HC",
+      "name": "Pygmy Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5Jng1QE",
+      "name": "Smiling Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "IlX7xILobrukz7d5Jo2XHi",
+      "name": "Blue Devil Damselfish"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6UR1F",
+      "name": "Agassiz Dwarf Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6heVR",
+      "name": "Six Line Wrasse"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6hesW",
+      "name": "Royal Gramma"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6hq84",
+      "name": "Neon Blue Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6hqNS",
+      "name": "Congo Dwarf Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6i7Ae",
+      "name": "Spiketail Gourami"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6i7Sb",
+      "name": "Sri Lanka Gourami"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6i8Pa",
+      "name": "Eartheater Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A6i8hX",
+      "name": "Cupido Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79QpK",
+      "name": "Rainbow Shark"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79RMf",
+      "name": "Yoyo Loach"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79RmJ",
+      "name": "Green Neon Tetra"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79S9O",
+      "name": "Frontosa Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79evp",
+      "name": "Synodontis Catfish"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A79fDm",
+      "name": "Paradise Fish"
+    },
+    {
+      "type": "species",
+      "id": "J1Tx0fWCuGNPno99A7ACJO",
+      "name": "Siamese Algae Eater"
+    },
+    {
+      "type": "species",
+      "id": "PZ8Kai1VvEL468NS2Kni6M",
+      "name": "Green Terror"
+    },
+    {
+      "type": "species",
+      "id": "PZ8Kai1VvEL468NS2LLa6x",
+      "name": "Peacock Bass"
+    },
+    {
+      "type": "species",
+      "id": "PZ8Kai1VvEL468NS2LLaUQ",
+      "name": "Marine Betta"
+    },
+    {
+      "type": "species",
+      "id": "PZ8Kai1VvEL468NS2LLaqK",
+      "name": "Molly"
+    },
+    {
+      "type": "species",
+      "id": "bXkDxvOEdfzf4NR9Z3ReYR",
+      "name": "Alligator Gar"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCMJ",
+      "name": "Honey Gourami"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCP9",
+      "name": "Kubotai Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCRz",
+      "name": "Chili Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCUp",
+      "name": "Red Garra"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCXf",
+      "name": "German Blue Ram"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCaV",
+      "name": "Golden Pencilfish"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTCdL",
+      "name": "Rummynose Tetra"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTEQ3",
+      "name": "Silver Hatchetfish"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTESt",
+      "name": "Emerald Betta"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTEYZ",
+      "name": "Dubois’ Tropheus"
+    },
+    {
+      "type": "species",
+      "id": "ofTl1CTOUWuLwM28PxTEeF",
+      "name": "Percula Clownfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3noGak",
+      "name": "Dwarf Chain Loach"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3noHTq",
+      "name": "Bucktooth Parrot"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3noHja",
+      "name": "Banggai Cardinalfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3noI7C",
+      "name": "Foxface Rabbitfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oqsPG",
+      "name": "Common Goldfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oqtze",
+      "name": "Oranda Goldfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oqu9U",
+      "name": "Ranchu Goldfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oquNG",
+      "name": "Dwarf Pencilfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oquiu",
+      "name": "Pike Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oquwg",
+      "name": "Dwarf Lionfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oqvOE",
+      "name": "Clown Triggerfish"
+    },
+    {
+      "type": "species",
+      "id": "sebdKYryWZgYP2rm3oqvc0",
+      "name": "Zebra Moray Eel"
+    },
+    {
+      "type": "species",
+      "id": "species-amphiprion-ocellaris",
+      "name": "Ocellaris Clownfish"
+    },
+    {
+      "type": "species",
+      "id": "species-andinoacara-pulcher",
+      "name": "Blue Acara"
+    },
+    {
+      "type": "species",
+      "id": "species-aphyosemion-australe",
+      "name": "Lyretail Killifish"
+    },
+    {
+      "type": "species",
+      "id": "species-apistogramma-cacatuoides",
+      "name": "Cockatoo Dwarf Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "species-aplocheilus-lineatus",
+      "name": "Golden Wonder Killifish"
+    },
+    {
+      "type": "species",
+      "id": "species-betta-splendens",
+      "name": "Siamese Fighting Fish"
+    },
+    {
+      "type": "species",
+      "id": "species-botia-striata",
+      "name": "Zebra Loach"
+    },
+    {
+      "type": "species",
+      "id": "species-carassius-auratus",
+      "name": "Fancy Goldfish"
+    },
+    {
+      "type": "species",
+      "id": "species-celestichthys-erythromicron",
+      "name": "Emerald Dwarf Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "species-chromis-viridis",
+      "name": "Green Chromis"
+    },
+    {
+      "type": "species",
+      "id": "species-chromobotia-macracanthus",
+      "name": "Clown Loach"
+    },
+    {
+      "type": "species",
+      "id": "species-danio-margaritatus",
+      "name": "Celestial Pearl Danio"
+    },
+    {
+      "type": "species",
+      "id": "species-danio-rerio",
+      "name": "Zebrafish"
+    },
+    {
+      "type": "species",
+      "id": "species-gymnocorymbus-ternetzi",
+      "name": "Black Skirt Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-hyphessobrycon-amandae",
+      "name": "Ember Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-hyphessobrycon-eques",
+      "name": "Serpae Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-hyphessobrycon-herbertaxelrodi",
+      "name": "Black Neon Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-hyphessobrycon-megalopterus",
+      "name": "Black Phantom Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-hyphessobrycon-pulchripinnis",
+      "name": "Lemon Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-kryptopterus-vitreolus",
+      "name": "Glass Catfish"
+    },
+    {
+      "type": "species",
+      "id": "species-labidochromis-caeruleus",
+      "name": "Electric Yellow Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "species-melanotaenia-boesemani",
+      "name": "Boesemani Rainbowfish"
+    },
+    {
+      "type": "species",
+      "id": "species-melanotaenia-praecox",
+      "name": "Dwarf Neon Rainbowfish"
+    },
+    {
+      "type": "species",
+      "id": "species-mikrogeophagus-altispinosus",
+      "name": "Bolivian Ram"
+    },
+    {
+      "type": "species",
+      "id": "species-nematobrycon-palmeri",
+      "name": "Emperor Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-otocinclus-affinis",
+      "name": "Otocinclus Catfish"
+    },
+    {
+      "type": "species",
+      "id": "species-pangio-kuhlii",
+      "name": "Kuhli Loach"
+    },
+    {
+      "type": "species",
+      "id": "species-paracheirodon-axelrodi",
+      "name": "Cardinal Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-paracheirodon-innesi",
+      "name": "Neon Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-pelvicachromis-pulcher",
+      "name": "Kribensis"
+    },
+    {
+      "type": "species",
+      "id": "species-pethia-conchonius",
+      "name": "Rosy Barb"
+    },
+    {
+      "type": "species",
+      "id": "species-pethia-padamya",
+      "name": "Odessa Barb"
+    },
+    {
+      "type": "species",
+      "id": "species-phenacogrammus-interruptus",
+      "name": "Congo Tetra"
+    },
+    {
+      "type": "species",
+      "id": "species-poecilia-reticulata",
+      "name": "Guppy"
+    },
+    {
+      "type": "species",
+      "id": "species-poecilia-sphenops",
+      "name": "Short-finned Molly"
+    },
+    {
+      "type": "species",
+      "id": "species-poecilia-wingei",
+      "name": "Endler's Livebearer"
+    },
+    {
+      "type": "species",
+      "id": "species-pseudanthias-squamipinnis",
+      "name": "Lyretail Anthias"
+    },
+    {
+      "type": "species",
+      "id": "species-pseudotropheus-zebra",
+      "name": "Zebra Mbuna Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "species-puntigrus-tetrazona",
+      "name": "Tiger Barb"
+    },
+    {
+      "type": "species",
+      "id": "species-puntius-titteya",
+      "name": "Cherry Barb"
+    },
+    {
+      "type": "species",
+      "id": "species-symphysodon-aequifasciatus",
+      "name": "Discus"
+    },
+    {
+      "type": "species",
+      "id": "species-thorichthys-meeki",
+      "name": "Firemouth Cichlid"
+    },
+    {
+      "type": "species",
+      "id": "species-trichogaster-lalius",
+      "name": "Dwarf Gourami"
+    },
+    {
+      "type": "species",
+      "id": "species-trichopodus-leerii",
+      "name": "Pearl Gourami"
+    },
+    {
+      "type": "species",
+      "id": "species-trichopodus-trichopterus",
+      "name": "Three-Spot Gourami"
+    },
+    {
+      "type": "species",
+      "id": "species-trichopsis-pumila",
+      "name": "Sparkling Gourami"
+    },
+    {
+      "type": "species",
+      "id": "species-trigonostigma-espei",
+      "name": "Lambchop Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "species-trigonostigma-heteromorpha",
+      "name": "Harlequin Rasbora"
+    },
+    {
+      "type": "species",
+      "id": "species-xiphophorus-hellerii",
+      "name": "Swordtail"
+    },
+    {
+      "type": "species",
+      "id": "species-xiphophorus-maculatus",
+      "name": "Southern Platy"
+    },
+    {
+      "type": "plant",
+      "id": "1z8rQFHeojDMTUo2hXSWr0",
+      "name": "Ludwigia Red"
+    },
+    {
+      "type": "plant",
+      "id": "1z8rQFHeojDMTUo2hXSWv7",
+      "name": "Alternanthera Reineckii Mini"
+    },
+    {
+      "type": "plant",
+      "id": "7kdig6Bk6SZq4GZkXcVaBK",
+      "name": "Red Rotala"
+    },
+    {
+      "type": "plant",
+      "id": "BruaGKYCGDRQjkiQDnlBjA",
+      "name": "Anubias nana Petite"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9Ciitg",
+      "name": "Christmas Moss"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9Cj9qO",
+      "name": "Rotala sp. h'ra"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CjA0S",
+      "name": "Ludwigia arcuata"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CjAAW",
+      "name": "Bacopa caroliniana"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CtuPo",
+      "name": "Myriophyllum"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CuIEm",
+      "name": "Peacock Moss"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CuIOq",
+      "name": "Sagittaria"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9CuYam",
+      "name": "Rice Paddy Herb"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9DFYK8",
+      "name": "Frogbit"
+    },
+    {
+      "type": "plant",
+      "id": "I9bI8W8ZWcEwyIzM9DXPL6",
+      "name": "Duckweed"
+    },
+    {
+      "type": "plant",
+      "id": "IlX7xILobrukz7d5Jnflew",
+      "name": "Taiwan Moss"
+    },
+    {
+      "type": "plant",
+      "id": "IlX7xILobrukz7d5JnfltO",
+      "name": "Weeping Moss"
+    },
+    {
+      "type": "plant",
+      "id": "IlX7xILobrukz7d5Jng2hi",
+      "name": "Flame Moss"
+    },
+    {
+      "type": "plant",
+      "id": "IlX7xILobrukz7d5Jng4A2",
+      "name": "Lilaeopsis"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A6Ttdg",
+      "name": "Glossostigma"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A79SZ2",
+      "name": "Red Root Floater"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A79SjI",
+      "name": "Rotala Macrandra"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A79StY",
+      "name": "Ludwigia Super Red"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A7KJ84",
+      "name": "Dwarf Lettuce"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A7KJKt",
+      "name": "Salvinia"
+    },
+    {
+      "type": "plant",
+      "id": "J1Tx0fWCuGNPno99A7KvVw",
+      "name": "Marimo Moss Ball"
+    },
+    {
+      "type": "plant",
+      "id": "WeSCIjvgoYC0LmYF97LSPP",
+      "name": "Staurogyne repens"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLTD",
+      "name": "Cryptocoryne beckettii"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLW3",
+      "name": "Hydrocotyle tripartita"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLYt",
+      "name": "Pygmy Chain Sword"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLbj",
+      "name": "Pogostemon stellatus"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLeZ",
+      "name": "Rotala indica"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLhP",
+      "name": "Anacharis"
+    },
+    {
+      "type": "plant",
+      "id": "ofTl1CTOUWuLwM28PxTLn5",
+      "name": "Blyxa japonica"
+    },
+    {
+      "type": "plant",
+      "id": "plant-alternanthera-reineckii",
+      "name": "Alternanthera reineckii"
+    },
+    {
+      "type": "plant",
+      "id": "plant-ambulia",
+      "name": "Ambulia"
+    },
+    {
+      "type": "plant",
+      "id": "plant-anubias-barteri",
+      "name": "Anubias barteri"
+    },
+    {
+      "type": "plant",
+      "id": "plant-cabomba-caroliniana",
+      "name": "Cabomba caroliniana"
+    },
+    {
+      "type": "plant",
+      "id": "plant-cryptocoryne-balansae",
+      "name": "Cryptocoryne balansae"
+    },
+    {
+      "type": "plant",
+      "id": "plant-cryptocoryne-wendtii",
+      "name": "Cryptocoryne wendtii"
+    },
+    {
+      "type": "plant",
+      "id": "plant-dwarf-baby-tears",
+      "name": "Dwarf Baby Tears"
+    },
+    {
+      "type": "plant",
+      "id": "plant-dwarf-hairgrass",
+      "name": "Dwarf Hairgrass"
+    },
+    {
+      "type": "plant",
+      "id": "plant-ludwigia-repens",
+      "name": "Ludwigia repens"
+    },
+    {
+      "type": "plant",
+      "id": "plant-marsilea-hirsuta",
+      "name": "Marsilea hirsuta"
+    },
+    {
+      "type": "plant",
+      "id": "plant-monte-carlo",
+      "name": "Monte Carlo"
+    },
+    {
+      "type": "plant",
+      "id": "plant-rotala-rotundifolia",
+      "name": "Rotala rotundifolia"
+    },
+    {
+      "type": "plant",
+      "id": "plant-vallisneria-spiralis",
+      "name": "Vallisneria spiralis"
+    },
+    {
+      "type": "plant",
+      "id": "plant-water-wisteria",
+      "name": "Water Wisteria"
+    },
+    {
+      "type": "plant",
+      "id": "sebdKYryWZgYP2rm3oqyay",
+      "name": "Scarlet Temple"
+    },
+    {
+      "type": "coral",
+      "id": "1z8rQFHeojDMTUo2hX9Rpx",
+      "name": "Dendronephthya"
+    },
+    {
+      "type": "coral",
+      "id": "1z8rQFHeojDMTUo2hXSXLR",
+      "name": "Acan Lord"
+    },
+    {
+      "type": "coral",
+      "id": "1z8rQFHeojDMTUo2hXSXOj",
+      "name": "Scolymia"
+    },
+    {
+      "type": "coral",
+      "id": "1z8rQFHeojDMTUo2hXSXVJ",
+      "name": "Sinularia Leather"
+    },
+    {
+      "type": "coral",
+      "id": "5oQB2MZ7gmZXjdwFqSrVl7",
+      "name": "Montipora Digitata"
+    },
+    {
+      "type": "coral",
+      "id": "BruaGKYCGDRQjkiQDnlmjC",
+      "name": "Galaxea"
+    },
+    {
+      "type": "coral",
+      "id": "BruaGKYCGDRQjkiQDnlmlr",
+      "name": "Cauliflower Coral"
+    },
+    {
+      "type": "coral",
+      "id": "BruaGKYCGDRQjkiQDnlmoW",
+      "name": "Bird’s Nest Coral"
+    },
+    {
+      "type": "coral",
+      "id": "BruaGKYCGDRQjkiQDnlmrB",
+      "name": "Honeycomb Brain Coral"
+    },
+    {
+      "type": "coral",
+      "id": "BruaGKYCGDRQjkiQDnlmtq",
+      "name": "Elegance Coral"
+    },
+    {
+      "type": "coral",
+      "id": "I9bI8W8ZWcEwyIzM9CjDmS",
+      "name": "Green Star Polyps"
+    },
+    {
+      "type": "coral",
+      "id": "I9bI8W8ZWcEwyIzM9Ctty8",
+      "name": "Lobo Coral"
+    },
+    {
+      "type": "coral",
+      "id": "I9bI8W8ZWcEwyIzM9DJffc",
+      "name": "Dendrophyllia Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5JnTgZ4",
+      "name": "Discosoma Mushroom"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5Jng29O",
+      "name": "Trumpet Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5Jng2TG",
+      "name": "Favia Brain Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5JnvhK2",
+      "name": "Stylophora Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5Jnvipy",
+      "name": "Chalice Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5Jo2Xh0",
+      "name": "Pavona Coral"
+    },
+    {
+      "type": "coral",
+      "id": "IlX7xILobrukz7d5Jo2rGw",
+      "name": "Rhodactis Mushroom"
+    },
+    {
+      "type": "coral",
+      "id": "J1Tx0fWCuGNPno99A6TtVz",
+      "name": "Xenia Coral"
+    },
+    {
+      "type": "coral",
+      "id": "J1Tx0fWCuGNPno99A6UVbu",
+      "name": "Kenya Tree Coral"
+    },
+    {
+      "type": "coral",
+      "id": "PZ8Kai1VvEL468NS2KnjUP",
+      "name": "Sun Coral"
+    },
+    {
+      "type": "coral",
+      "id": "PZ8Kai1VvEL468NS2KnkWY",
+      "name": "Tubing Coral"
+    },
+    {
+      "type": "coral",
+      "id": "PZ8Kai1VvEL468NS2LLdGW",
+      "name": "Pocillopora"
+    },
+    {
+      "type": "coral",
+      "id": "coral-blastomussa",
+      "name": "Blastomussa"
+    },
+    {
+      "type": "coral",
+      "id": "coral-candy-cane-coral",
+      "name": "Candy Cane Coral"
+    },
+    {
+      "type": "coral",
+      "id": "coral-montipora-capricornis",
+      "name": "Montipora Capricornis"
+    },
+    {
+      "type": "coral",
+      "id": "coral-ricordea-mushroom",
+      "name": "Ricordea Mushroom"
+    },
+    {
+      "type": "coral",
+      "id": "coral-staghorn-acropora",
+      "name": "Staghorn Acropora"
+    },
+    {
+      "type": "coral",
+      "id": "sebdKYryWZgYP2rm3or0mk",
+      "name": "Cat's Paw Coral"
+    },
+    {
+      "type": "problem",
+      "id": "I9bI8W8ZWcEwyIzM9DFYjI",
+      "name": "Columnaris (Cotton Mouth)"
+    },
+    {
+      "type": "problem",
+      "id": "I9bI8W8ZWcEwyIzM9DFYtM",
+      "name": "Planaria Infestation"
+    },
+    {
+      "type": "problem",
+      "id": "IlX7xILobrukz7d5JnvacY",
+      "name": "Velvet Disease (Oodinium)"
+    },
+    {
+      "type": "problem",
+      "id": "IlX7xILobrukz7d5Jo2qVy",
+      "name": "Fish Lice (Argulus)"
+    },
+    {
+      "type": "problem",
+      "id": "IlX7xILobrukz7d5Jo2qgo",
+      "name": "Dinoflagellates"
+    },
+    {
+      "type": "problem",
+      "id": "IlX7xILobrukz7d5Jo2wxC",
+      "name": "Hole in the Head Disease"
+    },
+    {
+      "type": "problem",
+      "id": "IlX7xILobrukz7d5Jo2xIs",
+      "name": "Saprolegnia (Water Mold)"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A79Tvf",
+      "name": "Hydra Infestation"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A7AE36",
+      "name": "Ich (White Spot Disease)"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A7AEDM",
+      "name": "Swim Bladder Disease"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A7KJcq",
+      "name": "Flukes (Gill and Skin Parasites)"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A7KJpf",
+      "name": "Anchor Worm (Lernaea)"
+    },
+    {
+      "type": "problem",
+      "id": "J1Tx0fWCuGNPno99A7KutT",
+      "name": "Pop Eye (Exophthalmia)"
+    },
+    {
+      "type": "inspiration",
+      "id": "BruaGKYCGDRQjkiQDnm04r",
+      "name": "Small Iwagumi Nano"
+    },
+    {
+      "type": "inspiration",
+      "id": "BruaGKYCGDRQjkiQDnm07W",
+      "name": "Amazon Biotope"
+    },
+    {
+      "type": "inspiration",
+      "id": "BruaGKYCGDRQjkiQDnm0AB",
+      "name": "Reef Nano"
+    },
+    {
+      "type": "inspiration",
+      "id": "BruaGKYCGDRQjkiQDnm0Cq",
+      "name": "Mountain Valley Scape"
+    },
+    {
+      "type": "inspiration",
+      "id": "BruaGKYCGDRQjkiQDnm0FV",
+      "name": "Planted Community Aquarium"
+    },
+    {
+      "type": "inspiration",
+      "id": "inspiration-classic-iwagumi",
+      "name": "Classic Iwagumi"
+    },
+    {
+      "type": "inspiration",
+      "id": "inspiration-dutch-planted-tank",
+      "name": "Dutch Planted Tank"
+    },
+    {
+      "type": "inspiration",
+      "id": "inspiration-jungle-biotope",
+      "name": "Jungle Biotope"
+    },
+    {
+      "type": "inspiration",
+      "id": "inspiration-low-tech-nature-aquarium",
+      "name": "Low-Tech Nature Aquarium"
+    },
+    {
+      "type": "inspiration",
+      "id": "inspiration-nano-paludarium",
+      "name": "Nano Paludarium"
+    }
+  ],
+  "parentSpeciesSetCount": 5,
+  "aliasesCount": 65,
+  "localNamesCount": 9,
+  "aquariumStyleCoverage": 429,
+  "regionCoverage": 237,
+  "waterTypeCoverage": 309,
+  "brokenParentRefs": [],
+  "selfReferences": [],
+  "circularChains": [],
+  "spec01": {
+    "unexpectedFieldCount": 44,
+    "unexpectedFields": [
+      {
+        "type": "plant",
+        "id": "1z8rQFHeojDMTUo2hXSWr0",
+        "name": "Ludwigia Red",
+        "field": "waterType",
+        "value": "freshwater"
+      },
+      {
+        "type": "plant",
+        "id": "1z8rQFHeojDMTUo2hXSWv7",
+        "name": "Alternanthera Reineckii Mini",
+        "field": "waterType",
+        "value": "freshwater"
+      },
+      {
+        "type": "plant",
+        "id": "sebdKYryWZgYP2rm3oqyay",
+        "name": "Scarlet Temple",
+        "field": "waterType",
+        "value": "freshwater"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hX9Rpx",
+        "name": "Dendronephthya",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXLR",
+        "name": "Acan Lord",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXOj",
+        "name": "Scolymia",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXVJ",
+        "name": "Sinularia Leather",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "5oQB2MZ7gmZXjdwFqSrVl7",
+        "name": "Montipora Digitata",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmjC",
+        "name": "Galaxea",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmoW",
+        "name": "Bird’s Nest Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmrB",
+        "name": "Honeycomb Brain Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmtq",
+        "name": "Elegance Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "BruaGKYCGDRQjkiQDnlmwV",
+        "name": "Open Brain Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "Gk33CfLE6ahVd3Ve601Vay",
+        "name": "Fungia Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "I9bI8W8ZWcEwyIzM9CjDmS",
+        "name": "Green Star Polyps",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "I9bI8W8ZWcEwyIzM9CttlY",
+        "name": "Palythoa",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "I9bI8W8ZWcEwyIzM9Ctty8",
+        "name": "Lobo Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "I9bI8W8ZWcEwyIzM9Ctu8C",
+        "name": "Bubble Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "I9bI8W8ZWcEwyIzM9DJffc",
+        "name": "Dendrophyllia Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5JnTHt0",
+        "name": "Torch Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "IlX7xILobrukz7d5JnvhK2",
+        "name": "Stylophora Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "PZ8Kai1VvEL468NS2LLdGW",
+        "name": "Pocillopora",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "bXkDxvOEdfzf4NR9Z3Reey",
+        "name": "Alveopora Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "coral",
+        "id": "sebdKYryWZgYP2rm3or0mk",
+        "name": "Cat's Paw Coral",
+        "field": "waterType",
+        "value": "saltwater"
+      },
+      {
+        "type": "equipment",
+        "id": "1z8rQFHeojDMTUo2hXSXqh",
+        "name": "Planted LED Light",
+        "field": "group",
+        "value": "Lighting"
+      },
+      {
+        "type": "equipment",
+        "id": "1z8rQFHeojDMTUo2hXSXuo",
+        "name": "Reef LED Light",
+        "field": "group",
+        "value": "Lighting"
+      },
+      {
+        "type": "equipment",
+        "id": "1z8rQFHeojDMTUo2hXSYAR",
+        "name": "Dosing Pump",
+        "field": "group",
+        "value": "Marine"
+      },
+      {
+        "type": "equipment",
+        "id": "PZ8Kai1VvEL468NS2LLeg8",
+        "name": "Digital Heater",
+        "field": "group",
+        "value": "Temperature"
+      },
+      {
+        "type": "equipment",
+        "id": "PZ8Kai1VvEL468NS2LLfrf",
+        "name": "Aquasoil Substrate",
+        "field": "group",
+        "value": "Substrate"
+      },
+      {
+        "type": "equipment",
+        "id": "sebdKYryWZgYP2rm3or3AK",
+        "name": "Algae Scraper",
+        "field": "group",
+        "value": "Maintenance"
+      },
+      {
+        "type": "problem",
+        "id": "I9bI8W8ZWcEwyIzM9DFYjI",
+        "name": "Columnaris (Cotton Mouth)",
+        "field": "name",
+        "value": "Columnaris (Cotton Mouth)"
+      },
+      {
+        "type": "problem",
+        "id": "I9bI8W8ZWcEwyIzM9DFYtM",
+        "name": "Planaria Infestation",
+        "field": "name",
+        "value": "Planaria Infestation"
+      },
+      {
+        "type": "problem",
+        "id": "I9bI8W8ZWcEwyIzM9DNIu8",
+        "name": "Black Beard Algae (BBA)",
+        "field": "name",
+        "value": "Black Beard Algae (BBA)"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5JnvacY",
+        "name": "Velvet Disease (Oodinium)",
+        "field": "name",
+        "value": "Velvet Disease (Oodinium)"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2qVy",
+        "name": "Fish Lice (Argulus)",
+        "field": "name",
+        "value": "Fish Lice (Argulus)"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2qgo",
+        "name": "Dinoflagellates",
+        "field": "name",
+        "value": "Dinoflagellates"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2wxC",
+        "name": "Hole in the Head Disease",
+        "field": "name",
+        "value": "Hole in the Head Disease"
+      },
+      {
+        "type": "problem",
+        "id": "IlX7xILobrukz7d5Jo2xIs",
+        "name": "Saprolegnia (Water Mold)",
+        "field": "name",
+        "value": "Saprolegnia (Water Mold)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A79Tvf",
+        "name": "Hydra Infestation",
+        "field": "name",
+        "value": "Hydra Infestation"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7AE36",
+        "name": "Ich (White Spot Disease)",
+        "field": "name",
+        "value": "Ich (White Spot Disease)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7AEDM",
+        "name": "Swim Bladder Disease",
+        "field": "name",
+        "value": "Swim Bladder Disease"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KJcq",
+        "name": "Flukes (Gill and Skin Parasites)",
+        "field": "name",
+        "value": "Flukes (Gill and Skin Parasites)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KJpf",
+        "name": "Anchor Worm (Lernaea)",
+        "field": "name",
+        "value": "Anchor Worm (Lernaea)"
+      },
+      {
+        "type": "problem",
+        "id": "J1Tx0fWCuGNPno99A7KutT",
+        "name": "Pop Eye (Exophthalmia)",
+        "field": "name",
+        "value": "Pop Eye (Exophthalmia)"
+      }
+    ]
+  },
+  "spec02": {
+    "classified": {
+      "species": {
+        "CANONICAL": 215,
+        "VARIANT/MORPH": 3,
+        "CULTIVAR": 0,
+        "COMMON-NAME": 0,
+        "UNKNOWN": 0
+      },
+      "plant": {
+        "CANONICAL": 59,
+        "VARIANT/MORPH": 2,
+        "CULTIVAR": 1,
+        "COMMON-NAME": 0,
+        "UNKNOWN": 0
+      },
+      "coral": {
+        "CANONICAL": 48,
+        "VARIANT/MORPH": 0,
+        "CULTIVAR": 0,
+        "COMMON-NAME": 0,
+        "UNKNOWN": 0
+      },
+      "invertebrate": {
+        "CANONICAL": 56,
+        "VARIANT/MORPH": 0,
+        "CULTIVAR": 0,
+        "COMMON-NAME": 0,
+        "UNKNOWN": 0
+      }
+    },
+    "highRiskGroups": {
+      "Angelfish": [
+        {
+          "type": "species",
+          "id": "Gk33CfLE6ahVd3Ve602fPs",
+          "name": "Emperor Angelfish",
+          "scientificName": "Pomacanthus imperator",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "IlX7xILobrukz7d5Jo2X54",
+          "name": "Coral Beauty Angelfish",
+          "scientificName": "Centropyge bispinosa",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "bXkDxvOEdfzf4NR9Z4MgqS",
+          "name": "Queen Angelfish",
+          "scientificName": "Holacanthus ciliaris",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "ofTl1CTOUWuLwM28PxTEbP",
+          "name": "Flame Angelfish",
+          "scientificName": "Centropyge loricula",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        }
+      ],
+      "Arowana": [
+        {
+          "type": "species",
+          "id": "species-black-arowana",
+          "name": "Black Arowana",
+          "scientificName": "Osteoglossum ferreirai",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "species-osteoglossum-bicirrhosum",
+          "name": "Silver Arowana",
+          "scientificName": "Osteoglossum bicirrhosum",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "species-scleropages-formosus",
+          "name": "Asian Arowana",
+          "scientificName": "Scleropages formosus",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        },
+        {
+          "type": "species",
+          "id": "species-scleropages-jardinii",
+          "name": "Jardini Arowana",
+          "scientificName": "Scleropages jardinii",
+          "classification": "CANONICAL",
+          "parentSpecies": null
+        }
+      ]
+    },
+    "issues": [
+      {
+        "type": "species",
+        "id": "species-bala-shark",
+        "name": "Bala Shark",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-black-arowana",
+        "name": "Black Arowana",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-black-ghost-knifefish",
+        "name": "Black Ghost Knifefish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-black-moor-goldfish",
+        "name": "Black Moor Goldfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-clown-knifefish",
+        "name": "Clown Knifefish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-denison-barb",
+        "name": "Denison Barb",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-figure-8-puffer",
+        "name": "Figure-8 Puffer",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-freshwater-stingray",
+        "name": "Freshwater Stingray",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-giant-danio",
+        "name": "Giant Danio",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-halfbeak",
+        "name": "Halfbeak",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-iridescent-shark",
+        "name": "Iridescent Shark",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-jaguar-cichlid",
+        "name": "Jaguar Cichlid",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-longnose-gar",
+        "name": "Longnose Gar",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-midas-cichlid",
+        "name": "Midas Cichlid",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-orinoco-peacock-bass",
+        "name": "Orinoco Peacock Bass",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-pictus-catfish",
+        "name": "Pictus Catfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-red-bellied-pacu",
+        "name": "Red-Bellied Pacu",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-red-devil-cichlid",
+        "name": "Red Devil Cichlid",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-red-tail-shark",
+        "name": "Red-Tail Shark",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-ryukin-goldfish",
+        "name": "Ryukin Goldfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-sailfin-pleco",
+        "name": "Sailfin Pleco",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-severum",
+        "name": "Severum",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-spotted-gar",
+        "name": "Spotted Gar",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-spotted-snakehead",
+        "name": "Spotted Snakehead",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-telescope-goldfish",
+        "name": "Telescope Goldfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-three-barred-peacock-bass",
+        "name": "Three-Barred Peacock Bass",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-tiger-shovelnose-catfish",
+        "name": "Tiger Shovelnose Catfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-tinfoil-barb",
+        "name": "Tinfoil Barb",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-walking-catfish",
+        "name": "Walking Catfish",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-weeks-bichir",
+        "name": "Weeks Bichir",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "species",
+        "id": "species-wolf-cichlid",
+        "name": "Wolf Cichlid",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "plant",
+        "id": "1z8rQFHeojDMTUo2hXSWr0",
+        "name": "Ludwigia Red",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "plant",
+        "id": "1z8rQFHeojDMTUo2hXSWv7",
+        "name": "Alternanthera Reineckii Mini",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "plant",
+        "id": "sebdKYryWZgYP2rm3oqyay",
+        "name": "Scarlet Temple",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXLR",
+        "name": "Acan Lord",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXOj",
+        "name": "Scolymia",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "coral",
+        "id": "1z8rQFHeojDMTUo2hXSXVJ",
+        "name": "Sinularia Leather",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "coral",
+        "id": "PZ8Kai1VvEL468NS2LLdGW",
+        "name": "Pocillopora",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "invertebrate",
+        "id": "1z8rQFHeojDMTUo2hXSXkw",
+        "name": "Brittle Star",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "invertebrate",
+        "id": "PZ8Kai1VvEL468NS2LLdvC",
+        "name": "Sulawesi Cardinal Shrimp",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "invertebrate",
+        "id": "PZ8Kai1VvEL468NS2LLeDy",
+        "name": "Sea Cucumber",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "invertebrate",
+        "id": "sebdKYryWZgYP2rm3or1pg",
+        "name": "Cerith Snail",
+        "issue": "NULL_SLUG"
+      },
+      {
+        "type": "invertebrate",
+        "id": "sebdKYryWZgYP2rm3or21U",
+        "name": "Sexy Anemone Shrimp",
+        "issue": "NULL_SLUG"
+      }
+    ]
+  },
+  "spec03": {
+    "perDomain": {
+      "species": [
+        {
+          "scientificName": "Carassius auratus",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Fantail Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Common Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Oranda Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Ranchu Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Black Moor Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Fancy Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Ryukin Goldfish",
+              "hasParent": false
+            },
+            {
+              "name": "Telescope Goldfish",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Gasteropelecus sternicla",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Hatchetfish",
+              "hasParent": false
+            },
+            {
+              "name": "Silver Hatchetfish",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Pterophyllum scalare",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Marble Angelfish",
+              "hasParent": false
+            },
+            {
+              "name": "Angelfish",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Poecilia sphenops",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Molly",
+              "hasParent": false
+            },
+            {
+              "name": "Short-finned Molly",
+              "hasParent": false
+            }
+          ]
+        }
+      ],
+      "plant": [
+        {
+          "scientificName": "Rotala rotundifolia",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Red Rotala",
+              "hasParent": false
+            },
+            {
+              "name": "Rotala rotundifolia",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Taxiphyllum sp.",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Peacock Moss",
+              "hasParent": false
+            },
+            {
+              "name": "Flame Moss",
+              "hasParent": false
+            }
+          ]
+        }
+      ],
+      "coral": [
+        {
+          "scientificName": "Pocillopora damicornis",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Cauliflower Coral",
+              "hasParent": false
+            },
+            {
+              "name": "Pocillopora",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Favia favus",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Honeycomb Brain Coral",
+              "hasParent": false
+            },
+            {
+              "name": "Favia Brain Coral",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Caulastrea furcata",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Trumpet Coral",
+              "hasParent": false
+            },
+            {
+              "name": "Candy Cane Coral",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Stylophora pistillata",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Stylophora Coral",
+              "hasParent": false
+            },
+            {
+              "name": "Cat's Paw Coral",
+              "hasParent": false
+            }
+          ]
+        }
+      ],
+      "invertebrate": [
+        {
+          "scientificName": "Neocaridina davidi",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Cherry Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Blue Diamond Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Golden Back Yellow Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Red Cherry Shrimp",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina cantonensis",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Taiwan Bee Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Blue Bolt Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "King Kong Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Crystal Red Shrimp",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina sp.",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Blue Tiger Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Snowball Shrimp",
+              "hasParent": false
+            }
+          ]
+        },
+        {
+          "scientificName": "Caridina dennerli",
+          "classification": "ACTUAL_DUPLICATE",
+          "entities": [
+            {
+              "name": "Sulawesi Cardinal Shrimp",
+              "hasParent": false
+            },
+            {
+              "name": "Sulawesi Red Cherry Shrimp",
+              "hasParent": false
+            }
+          ]
+        }
+      ]
+    },
+    "crossType": [
+      {
+        "scientificName": "Carassius auratus",
+        "classification": "LEGITIMATE_VARIANT",
+        "entities": [
+          {
+            "id": "1z8rQFHeojDMTUo2hXSUxN",
+            "name": "Fantail Goldfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqsPG",
+            "name": "Common Goldfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqtze",
+            "name": "Oranda Goldfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3oqu9U",
+            "name": "Ranchu Goldfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "species-black-moor-goldfish",
+            "name": "Black Moor Goldfish",
+            "domain": "species",
+            "hasParent": true
+          },
+          {
+            "id": "species-carassius-auratus",
+            "name": "Fancy Goldfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "species-ryukin-goldfish",
+            "name": "Ryukin Goldfish",
+            "domain": "species",
+            "hasParent": true
+          },
+          {
+            "id": "species-telescope-goldfish",
+            "name": "Telescope Goldfish",
+            "domain": "species",
+            "hasParent": true
+          }
+        ]
+      },
+      {
+        "scientificName": "Gasteropelecus sternicla",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "1z8rQFHeojDMTUo2hXSV4m",
+            "name": "Hatchetfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "ofTl1CTOUWuLwM28PxTEQ3",
+            "name": "Silver Hatchetfish",
+            "domain": "species",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Pterophyllum scalare",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "5oQB2MZ7gmZXjdwFqSs3qH",
+            "name": "Marble Angelfish",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "species-pterophyllum-scalare",
+            "name": "Angelfish",
+            "domain": "species",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Poecilia sphenops",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "PZ8Kai1VvEL468NS2LLaqK",
+            "name": "Molly",
+            "domain": "species",
+            "hasParent": false
+          },
+          {
+            "id": "species-poecilia-sphenops",
+            "name": "Short-finned Molly",
+            "domain": "species",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Neocaridina davidi",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "5oQB2MZ7gmZXjdwFqSs4kl",
+            "name": "Cherry Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "IlX7xILobrukz7d5JngE2Q",
+            "name": "Blue Diamond Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A6iAOg",
+            "name": "Golden Back Yellow Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "invertebrate-neocaridina-davidi",
+            "name": "Red Cherry Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Caridina cantonensis",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "I9bI8W8ZWcEwyIzM9DXOqu",
+            "name": "Taiwan Bee Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "I9bI8W8ZWcEwyIzM9DXP0y",
+            "name": "Blue Bolt Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A7KIaj",
+            "name": "King Kong Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "invertebrate-caridina-cantonensis",
+            "name": "Crystal Red Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Caridina sp.",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "J1Tx0fWCuGNPno99A6hj3X",
+            "name": "Blue Tiger Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "J1Tx0fWCuGNPno99A6iAEQ",
+            "name": "Snowball Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          }
+        ]
+      },
+      {
+        "scientificName": "Caridina dennerli",
+        "classification": "ACTUAL_DUPLICATE",
+        "entities": [
+          {
+            "id": "J1Tx0fWCuGNPno99A7KIq7",
+            "name": "Sulawesi Cardinal Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          },
+          {
+            "id": "sebdKYryWZgYP2rm3or1AM",
+            "name": "Sulawesi Red Cherry Shrimp",
+            "domain": "invertebrate",
+            "hasParent": false
+          }
+        ]
+      }
+    ]
+  },
+  "spec04": {
+    "totalChecked": 5,
+    "totalIssues": 0,
+    "details": []
+  }
+}

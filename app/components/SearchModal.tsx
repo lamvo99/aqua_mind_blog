@@ -27,6 +27,20 @@ interface SearchResult {
   publishedAt?: string
 }
 
+function rankSearchItem(item: any, q: string): number {
+  const name = (item.name || item.title || "").toLowerCase()
+  const sci = (item.scientificName || "").toLowerCase()
+  const aliases = (item.aliases || []).map((a: string) => a.toLowerCase())
+  const localNames = (item.localNames || []).map((n: string) => n.toLowerCase())
+  if (name === q) return 0
+  if (sci === q) return 1
+  if (aliases.includes(q)) return 2
+  if (localNames.includes(q)) return 3
+  if (name.startsWith(q)) return 4
+  if (name.includes(q)) return 6
+  return 8
+}
+
 export default function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [query, setQuery] = useState("")
   const [results, setResults] = useState<SearchResult[]>([])
@@ -67,14 +81,37 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
             { q: query }
           ),
           client.fetch(
-            `*[_type in ["species", "plant", "coral", "equipment", "invertebrate"] && (name match $q + "*" || scientificName match $q + "*")] | order(name asc) [0...6] {
-              _id, _type, "title": name, slug, excerpt, mainImage
+            `*[_type in ["species", "plant", "coral", "equipment", "invertebrate"] && (
+              name match $q + "*" ||
+              scientificName match $q + "*" ||
+              $q in aliases ||
+              $q in localNames
+            )] | order(name asc) [0...8] {
+              _id, _type, "title": name, slug, excerpt, mainImage,
+              name, scientificName, aliases, localNames
             }`,
             { q: query }
           ),
         ])
         if (token !== tokenRef.current) return
-        setResults([...(posts || []), ...(dbItems || [])])
+        const q = query.toLowerCase().trim()
+        const seen = new Set<string>()
+        const ranked: any[] = []
+        for (const item of [...(posts || []), ...(dbItems || [])]) {
+          if (seen.has(item._id)) continue
+          seen.add(item._id)
+          ranked.push(item)
+        }
+        ranked.sort((a: any, b: any) => {
+          const ra = rankSearchItem(a, q)
+          const rb = rankSearchItem(b, q)
+          return ra - rb
+        })
+        setResults(ranked.map((r: any) => ({
+          _id: r._id, _type: r._type, title: r.title || r.name,
+          slug: r.slug, excerpt: r.excerpt, mainImage: r.mainImage,
+          publishedAt: r.publishedAt,
+        })))
       } catch {
         if (token !== tokenRef.current) return
         setResults([])

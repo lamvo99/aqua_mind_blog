@@ -1,0 +1,3306 @@
+﻿[
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Agassiz Dwarf Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Apistogramma agassizii",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "apistogramma-agassizii"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Angelfish",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Pterophyllum scalare",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pterophyllum-scalare"
+                 },
+        "tankSizeMinL":  120,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator",
+                              "Large Fish"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Asian Snakehead",
+        "reefCompatibility":  false,
+        "region":  "Southeast Asia",
+        "scientificName":  "Channa striata",
+        "sizeCm":  50,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "asian-snakehead"
+                 },
+        "tankSizeMinL":  500,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Australian Redclaw Crayfish",
+        "reefCompatibility":  null,
+        "region":  "Australia / Oceania",
+        "scientificName":  "Cherax quadricarinatus",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "australian-redclaw-crayfish"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Nano Reef",
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Banggai Cardinalfish",
+        "reefCompatibility":  true,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Pterapogon kauderni",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pterapogon-kauderni"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Betta Imbellis",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Betta imbellis",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "betta-imbellis"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Betta Macrostoma",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Betta macrostoma",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "betta-macrostoma"
+                 },
+        "tankSizeMinL":  30,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Black Neon Tetra",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hyphessobrycon herbertaxelrodi",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hyphessobrycon-herbertaxelrodi"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Black Phantom Tetra",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hyphessobrycon megalopterus",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hyphessobrycon-megalopterus"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Black Skirt Tetra",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Gymnocorymbus ternetzi",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gymnocorymbus-ternetzi"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Blue Acara",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Andinoacara pulcher",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "andinoacara-pulcher"
+                 },
+        "tankSizeMinL":  114,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Blue Devil Damselfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Chrysiptera cyanea",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "chrysiptera-cyanea"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Blue Tang",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Paracanthurus hepatus",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "paracanthurus-hepatus"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Boesemani Rainbowfish",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Melanotaenia boesemani",
+        "sizeCm":  11,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "melanotaenia-boesemani"
+                 },
+        "tankSizeMinL":  120,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Bolivian Ram",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Mikrogeophagus altispinosus",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "mikrogeophagus-altispinosus"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Bristlenose Pleco",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Ancistrus cf. cirrhosus",
+        "sizeCm":  13,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ancistrus-cf-cirrhosus"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Bronze Corydoras",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Corydoras aeneus",
+        "sizeCm":  7.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-aeneus"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Bucktooth Parrot",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Cichlasoma festivum",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "bucktooth-parrot"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Bumblebee Goby",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Brachygobius doriae",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "brachygobius-doriae"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "brackish"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Cardinal Tetra",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Paracheirodon axelrodi",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "paracheirodon-axelrodi"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Celestial Pearl Danio",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Danio margaritatus",
+        "sizeCm":  2.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "danio-margaritatus"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Cherry Barb",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Puntius titteya",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "puntius-titteya"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Chili Rasbora",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Boraras brigittae",
+        "sizeCm":  2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "boraras-brigittae"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Chocolate Gourami",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Sphaerichthys osphromenoides",
+        "sizeCm":  4,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sphaerichthys-osphromenoides"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Clown Killifish",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Pseudepiplatys annulatus",
+        "sizeCm":  3,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pseudepiplatys-annulatus"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Large Fish"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Clown Loach",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Chromobotia macracanthus",
+        "sizeCm":  30,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "chromobotia-macracanthus"
+                 },
+        "tankSizeMinL":  400,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Clown Pleco",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Panaqolus maccus",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "panaqolus-maccus"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Marine Predator",
+                              "Fish Only"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Clown Triggerfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Balistoides conspicillum",
+        "sizeCm":  50,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "clown-triggerfish"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Cockatoo Dwarf Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Apistogramma cacatuoides",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "apistogramma-cacatuoides"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Pond / Outdoor"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Common Goldfish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Carassius auratus",
+        "sizeCm":  30,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "carassius-auratus-common"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted",
+                              "Large Fish"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Common Pleco",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hypostomus plecostomus",
+        "sizeCm":  35,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hypostomus-plecostomus"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Congo Dwarf Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Nanochromis parilus",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nanochromis-parilus"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Congo Tetra",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Phenacogrammus interruptus",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "phenacogrammus-interruptus"
+                 },
+        "tankSizeMinL":  108,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Convict Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Amatitlania nigrofasciata",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "amatitlania-nigrofasciata"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef",
+                              "Fish Only"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Copperband Butterflyfish",
+        "reefCompatibility":  true,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Chelmon rostratus",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "copperband-butterflyfish"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Coral Beauty Angelfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Centropyge bispinosa",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "centropyge-bispinosa"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Cupido Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Biotodoma cupido",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "biotodoma-cupido"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Discus",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Symphysodon aequifasciatus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "symphysodon-aequifasciatus"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Expert",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Dubois’ Tropheus",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Tropheus duboisi",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "tropheus-duboisi"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Shrimp"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Dwarf Chain Loach",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Ambastaia sidthimunki",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-chain-loach"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Dwarf Gourami",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Trichogaster lalius",
+        "sizeCm":  7.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trichogaster-lalius"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Marine Predator",
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Dwarf Lionfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Dendrochirus brachypterus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-lionfish"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Dwarf Neon Rainbowfish",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Melanotaenia praecox",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "melanotaenia-praecox"
+                 },
+        "tankSizeMinL":  55,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted",
+                              "Betta / Nano"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Dwarf Pencilfish",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Nannostomus marginatus",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-pencilfish"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Dwarf Snakehead",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Channa barca",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-snakehead"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Eartheater Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Geophagus altifrons",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "geophagus-altifrons"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Electric Yellow Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Labidochromis caeruleus",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "labidochromis-caeruleus"
+                 },
+        "tankSizeMinL":  160,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Elephantnose Fish",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Gnathonemus petersii",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gnathonemus-petersii"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Micropredator",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Ember Tetra",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hyphessobrycon amandae",
+        "sizeCm":  2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hyphessobrycon-amandae"
+                 },
+        "tankSizeMinL":  30,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Emerald Betta",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Betta smaragdina",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "betta-smaragdina"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Micropredator",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Emerald Dwarf Rasbora",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Celestichthys erythromicron",
+        "sizeCm":  3,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "celestichthys-erythromicron"
+                 },
+        "tankSizeMinL":  38,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Emperor Tetra",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Nematobrycon palmeri",
+        "sizeCm":  4.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nematobrycon-palmeri"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Endler\u0027s Livebearer",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Poecilia wingei",
+        "sizeCm":  4.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "poecilia-wingei"
+                 },
+        "tankSizeMinL":  41,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Fancy Goldfish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Carassius auratus",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "carassius-auratus"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Pond / Outdoor"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Fantail Goldfish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Carassius auratus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "fantail-goldfish"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Firefish Goby",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Nemateleotris magnifica",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nemateleotris-magnifica"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Firehead Tetra",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hemigrammus bleheri",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hemigrammus-bleheri"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Firemouth Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Thorichthys meeki",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "thorichthys-meeki"
+                 },
+        "tankSizeMinL":  114,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Flame Angelfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Centropyge loricula",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "centropyge-loricula"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Flamehawkfish",
+        "reefCompatibility":  true,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Neocirrhites armatus",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "flamehawkfish"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef",
+                              "Nano Reef"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Foxface Rabbitfish",
+        "reefCompatibility":  true,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Siganus vulpinus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "siganus-vulpinus"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Large Fish"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Frontosa Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Cyphotilapia frontosa",
+        "sizeCm":  30,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cyphotilapia-frontosa"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "German Blue Ram",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Mikrogeophagus ramirezi",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "mikrogeophagus-ramirezi"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Glass Catfish",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Kryptopterus vitreolus",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "kryptopterus-vitreolus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Golden Pencilfish",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Nannostomus beckfordi",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nannostomus-beckfordi-golden"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Golden Pencilfish",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Nannostomus beckfordi",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nannostomus-beckfordi"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Golden Wonder Killifish",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Aplocheilus lineatus",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aplocheilus-lineatus"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Green Chromis",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Chromis viridis",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "chromis-viridis"
+                 },
+        "tankSizeMinL":  120,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Green Neon Tetra",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Paracheirodon simulans",
+        "sizeCm":  2.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "paracheirodon-simulans"
+                 },
+        "tankSizeMinL":  30,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Green Terror",
+        "reefCompatibility":  false,
+        "region":  "South America",
+        "scientificName":  "Andinoacara rivulatus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "green-terror"
+                 },
+        "tankSizeMinL":  250,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Guppy",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Poecilia reticulata",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "poecilia-reticulata"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Harlequin Rasbora",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Trigonostigma heteromorpha",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trigonostigma-heteromorpha"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Hatchetfish",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Gasteropelecus sternicla",
+        "sizeCm":  6.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gasteropelecus-sternicla-hatchetfish"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Hillstream Loach",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Sewellia lineolata",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sewellia-lineolata"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Honey Gourami",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Trichogaster chuna",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trichogaster-chuna"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Jack Dempsey",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Rocio octofasciata",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rocio-octofasciata"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Pond / Outdoor",
+                              "Large Fish"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Koi",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Cyprinus rubrofuscus",
+        "sizeCm":  90,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "koi"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Kole Tang",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Ctenochaetus strigosus",
+        "sizeCm":  18,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ctenochaetus-strigosus"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Kribensis",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Pelvicachromis pulcher",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pelvicachromis-pulcher"
+                 },
+        "tankSizeMinL":  71,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Kubotai Rasbora",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Microdevario kubotai",
+        "sizeCm":  2.2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "microdevario-kubotai"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Kuhli Loach",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Pangio kuhlii",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pangio-kuhlii"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Micropredator",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Lambchop Rasbora",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Trigonostigma espei",
+        "sizeCm":  3,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trigonostigma-espei"
+                 },
+        "tankSizeMinL":  38,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Lawnmower Blenny",
+        "reefCompatibility":  null,
+        "region":  "Australia / Oceania",
+        "scientificName":  "Salarias fasciatus",
+        "sizeCm":  13,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "salarias-fasciatus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Lemon Tetra",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Hyphessobrycon pulchripinnis",
+        "sizeCm":  4,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hyphessobrycon-pulchripinnis"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Leopard Frog Pleco",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Peckoltia compta",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "peckoltia-compta"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Expert",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Licorice Gourami",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Parosphromenus linkei",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "parosphromenus-linkei"
+                 },
+        "tankSizeMinL":  30,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Fish Only"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Lionfish",
+        "reefCompatibility":  null,
+        "region":  "Australia / Oceania",
+        "scientificName":  "Pterois volitans",
+        "sizeCm":  30,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pterois-volitans"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Lyretail Anthias",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Pseudanthias squamipinnis",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pseudanthias-squamipinnis"
+                 },
+        "tankSizeMinL":  400,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Lyretail Killifish",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Aphyosemion australe",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aphyosemion-australe"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Mandarin Fish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Synchiropus splendidus",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "synchiropus-splendidus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Marble Angelfish",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Pterophyllum scalare",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pterophyllum-scalare-marble"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Marine Predator",
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Marine Betta",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Cephalopholis argus",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "marine-betta"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Betta / Nano"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Molly",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Poecilia sphenops",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "poecilia-sphenops-molly"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Neon Blue Rasbora",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Sundadanio axelrodi",
+        "sizeCm":  2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sundadanio-axelrodi"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Neon Goby",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Elacatinus oceanops",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "elacatinus-oceanops"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Neon Tetra",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Paracheirodon innesi",
+        "sizeCm":  3.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "paracheirodon-innesi"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Ocellaris Clownfish",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Amphiprion ocellaris",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "amphiprion-ocellaris"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Odessa Barb",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Pethia padamya",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pethia-padamya"
+                 },
+        "tankSizeMinL":  72,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Oranda Goldfish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Carassius auratus",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "oranda-goldfish"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator",
+                              "Large Fish"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Oscar",
+        "reefCompatibility":  false,
+        "region":  "South America",
+        "scientificName":  "Astronotus ocellatus",
+        "sizeCm":  35,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "oscar"
+                 },
+        "tankSizeMinL":  400,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Large Fish"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Oscar Fish",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Astronotus ocellatus",
+        "sizeCm":  35,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "astronotus-ocellatus"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Otocinclus Catfish",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Otocinclus affinis",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "otocinclus-affinis"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Panda Corydoras",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Corydoras panda",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-panda"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Paradise Fish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Macropodus opercularis",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "macropodus-opercularis-paradise"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Paradise Fish",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Macropodus opercularis",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "macropodus-opercularis"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Pea Puffer",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Carinotetraodon travancoricus",
+        "sizeCm":  2.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "carinotetraodon-travancoricus"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator",
+                              "Large Fish"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Peacock Bass",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Cichla ocellaris",
+        "sizeCm":  40,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "peacock-bass"
+                 },
+        "tankSizeMinL":  300,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Pearl Gourami",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Trichopodus leerii",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trichopodus-leerii"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Peppered Corydoras",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Corydoras paleatus",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-paleatus"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Percula Clownfish",
+        "reefCompatibility":  null,
+        "region":  "Australia / Oceania",
+        "scientificName":  "Amphiprion percula",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "amphiprion-percula"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Pike Cichlid",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Crenicichla compressiceps",
+        "sizeCm":  25,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pike-cichlid"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Pygmy Corydoras",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Corydoras pygmaeus",
+        "sizeCm":  2.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-pygmaeus"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Pygmy Rasbora",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Boraras maculatus",
+        "sizeCm":  2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "boraras-maculatus"
+                 },
+        "tankSizeMinL":  10,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Rainbow Shark",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Epalzeorhynchos frenatum",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "epalzeorhynchos-frenatum"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  false,
+        "name":  "Ranchu Goldfish",
+        "reefCompatibility":  null,
+        "region":  "East Asia",
+        "scientificName":  "Carassius auratus",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ranchu-goldfish"
+                 },
+        "tankSizeMinL":  75,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Red Garra",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Garra rufa",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "garra-rufa"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Rosy Barb",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Pethia conchonius",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pethia-conchonius"
+                 },
+        "tankSizeMinL":  90,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Royal Gramma",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Gramma loreto",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gramma-loreto"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Royal Pleco",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Panaque nigrolineatus",
+        "sizeCm":  17,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "panaque-nigrolineatus"
+                 },
+        "tankSizeMinL":  150,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Rummynose Tetra",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Hemigrammus rhodostomus",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hemigrammus-rhodostomus"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Scarlet Badis",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Dario dario",
+        "sizeCm":  2,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dario-dario"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Predator",
+                              "Large Fish"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Senegal Bichir",
+        "reefCompatibility":  false,
+        "region":  "Africa",
+        "scientificName":  "Polypterus senegalus",
+        "sizeCm":  30,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "senegal-bichir"
+                 },
+        "tankSizeMinL":  250,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Serpae Tetra",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Hyphessobrycon eques",
+        "sizeCm":  4,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hyphessobrycon-eques"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Short-finned Molly",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Poecilia sphenops",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "poecilia-sphenops"
+                 },
+        "tankSizeMinL":  81,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Siamese Algae Eater",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Crossocheilus oblongus",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "crossocheilus-oblongus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Siamese Fighting Fish",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Betta splendens",
+        "sizeCm":  6.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "betta-splendens"
+                 },
+        "tankSizeMinL":  20,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Silver Hatchetfish",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Gasteropelecus sternicla",
+        "sizeCm":  6.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gasteropelecus-sternicla"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Fish Only"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Six Line Wrasse",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Pseudocheilinus hexataenia",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pseudocheilinus-hexataenia"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Smiling Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Laetacara curviceps",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "laetacara-curviceps"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Southern Platy",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Xiphophorus maculatus",
+        "sizeCm":  7.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "xiphophorus-maculatus"
+                 },
+        "tankSizeMinL":  54,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Micropredator",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Sparkling Gourami",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Trichopsis pumila",
+        "sizeCm":  4,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trichopsis-pumila"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Spiketail Gourami",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Pseudosphromenus dayi",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pseudosphromenus-dayi"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Sri Lanka Gourami",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Malpulutta kretseri",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "malpulutta-kretseri"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Sterbai Corydoras",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Corydoras sterbai",
+        "sizeCm":  6.5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-sterbai"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Swordtail",
+        "reefCompatibility":  null,
+        "region":  "Central America",
+        "scientificName":  "Xiphophorus hellerii",
+        "sizeCm":  14,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "xiphophorus-hellerii"
+                 },
+        "tankSizeMinL":  80,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Synodontis Catfish",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Synodontis multipunctatus",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "synodontis-multipunctatus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Tailspot Blenny",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Ecsenius stigmatura",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ecsenius-stigmatura"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Threadfin Rainbowfish",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Iriatherina werneri",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "iriatherina-werneri"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Three Stripe Dwarf Cichlid",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Apistogramma trifasciata",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "apistogramma-trifasciata"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Three-Lined Corydoras",
+        "reefCompatibility":  null,
+        "region":  "Amazon Basin",
+        "scientificName":  "Corydoras trilineatus",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "corydoras-trilineatus"
+                 },
+        "tankSizeMinL":  76,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Three-Spot Gourami",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Trichopodus trichopterus",
+        "sizeCm":  15,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "trichopodus-trichopterus"
+                 },
+        "tankSizeMinL":  114,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Tiger Barb",
+        "reefCompatibility":  null,
+        "region":  null,
+        "scientificName":  "Puntigrus tetrazona",
+        "sizeCm":  7,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "puntigrus-tetrazona"
+                 },
+        "tankSizeMinL":  76,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Yellow Coris Wrasse",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Halichoeres chrysus",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "halichoeres-chrysus"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Yellow Tang",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Zebrasoma flavescens",
+        "sizeCm":  20,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "zebrasoma-flavescens"
+                 },
+        "tankSizeMinL":  400,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Mixed Reef"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Yellow Watchman Goby",
+        "reefCompatibility":  null,
+        "region":  "Southeast Asia",
+        "scientificName":  "Cryptocentrus cinctus",
+        "sizeCm":  8,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cryptocentrus-cinctus"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Yoyo Loach",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Botia almorhae",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "botia-almorhae"
+                 },
+        "tankSizeMinL":  100,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Zebra Loach",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Botia striata",
+        "sizeCm":  10,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "botia-striata"
+                 },
+        "tankSizeMinL":  110,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Zebra Mbuna Cichlid",
+        "reefCompatibility":  null,
+        "region":  "Africa",
+        "scientificName":  "Pseudotropheus zebra",
+        "sizeCm":  12,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pseudotropheus-zebra"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Aggressive",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Marine Predator",
+                              "Fish Only"
+                          ],
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  null,
+        "isPredator":  true,
+        "name":  "Zebra Moray Eel",
+        "reefCompatibility":  null,
+        "region":  "Marine Indo-Pacific",
+        "scientificName":  "Gymnomuraena zebra",
+        "sizeCm":  100,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "zebra-moray-eel"
+                 },
+        "tankSizeMinL":  200,
+        "temperament":  "Semi-aggressive",
+        "waterType":  "saltwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Community",
+                              "Planted"
+                          ],
+        "diet":  "Herbivore",
+        "difficulty":  "Advanced",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Zebra Pleco",
+        "reefCompatibility":  null,
+        "region":  "South America",
+        "scientificName":  "Hypancistrus zebra",
+        "sizeCm":  6,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hypancistrus-zebra"
+                 },
+        "tankSizeMinL":  60,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    },
+    {
+        "aquariumStyle":  [
+                              "Betta / Nano",
+                              "Shrimp",
+                              "Community"
+                          ],
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  null,
+        "isPredator":  null,
+        "name":  "Zebrafish",
+        "reefCompatibility":  null,
+        "region":  "South Asia",
+        "scientificName":  "Danio rerio",
+        "sizeCm":  5,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "danio-rerio"
+                 },
+        "tankSizeMinL":  40,
+        "temperament":  "Peaceful",
+        "waterType":  "freshwater"
+    }
+]

@@ -1,0 +1,404 @@
+﻿[
+    {
+        "brand":  null,
+        "category":  "ATO",
+        "name":  "ATO System",
+        "slug":  "ato-system"
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Activated Carbon",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "activated-carbon"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Pump",
+        "name":  "Air Pump",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "air-pump"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Air Stone",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "air-stone"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Maintenance",
+        "name":  "Algae Scraper",
+        "slug":  "algae-scraper"
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Aquarium Chiller",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-chiller"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Chiller",
+        "name":  "Aquarium Chiller",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-chiller-phase7"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Aquarium Cooling Fan",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-cooling-fan"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Substrate",
+        "name":  "Aquarium Gravel",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-gravel"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Substrate",
+        "name":  "Aquarium Soil Substrate",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-soil-substrate"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "Aquarium Thermometer",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aquarium-thermometer"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Substrate",
+        "name":  "Aquasoil Substrate",
+        "slug":  "aquasoil-substrate"
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Auto Top-Off System",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "auto-top-off-system"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Automatic Fish Feeder",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "automatic-fish-feeder"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Automatic Water Change System",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "automatic-water-change-system"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "CO₂ System",
+        "name":  "CO₂ Cylinder",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "co-cylinder"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "CO₂ System",
+        "name":  "CO₂ Regulator Kit",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "co-regulator-kit"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Calcium Reactor",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "calcium-reactor"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Filter",
+        "name":  "Canister Filter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "canister-filter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Pump",
+        "name":  "Circulation Pump (Powerhead)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "circulation-pump-powerhead"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Dechlorinator",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dechlorinator"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Heater",
+        "name":  "Digital Heater",
+        "slug":  "digital-heater"
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "Digital pH Meter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "digital-ph-meter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Dosing",
+        "name":  "Dosing Pump",
+        "slug":  "dosing-pump"
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Filter Floss",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "filter-floss"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Flake Fish Food",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "flake-fish-food"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Maintenance",
+        "name":  "Gravel Vacuum",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gravel-vacuum"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Maintenance",
+        "name":  "Gravel Vacuum",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "gravel-vacuum-phase7"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Filter",
+        "name":  "Hang-On-Back Filter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hang-on-back-filter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Filter",
+        "name":  "Internal Filter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "internal-filter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Light",
+        "name":  "LED Aquarium Light",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "led-aquarium-light"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "Master Test Kit",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "master-test-kit"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "Media Reactor",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "media-reactor"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "PAR Meter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "par-meter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Light",
+        "name":  "Planted LED Light",
+        "slug":  "planted-led-light"
+    },
+    {
+        "brand":  null,
+        "category":  "Skimmer",
+        "name":  "Protein Skimmer",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "protein-skimmer-phase7"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Filter",
+        "name":  "Protein Skimmer",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "protein-skimmer"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "RO/DI Water Filter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ro-di-water-filter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Light",
+        "name":  "Reef LED Light",
+        "slug":  "reef-led-light"
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "Refractometer",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "refractometer"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Pump",
+        "name":  "Return Pump",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "return-pump"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Filter",
+        "name":  "Sponge Filter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sponge-filter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Heater",
+        "name":  "Submersible Heater",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "submersible-heater"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "TDS Meter",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "tds-meter"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Other",
+        "name":  "UV Sterilizer",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "uv-sterilizer"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Test Kit",
+        "name":  "Water Test Strips",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "water-test-strips"
+                 }
+    },
+    {
+        "brand":  null,
+        "category":  "Pump",
+        "name":  "Wave Maker",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "wave-maker"
+                 }
+    }
+]

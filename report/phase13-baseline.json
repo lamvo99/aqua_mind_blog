@@ -1,0 +1,51 @@
+{
+  "species": {
+    "total": 166,
+    "published": 166,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 4
+  },
+  "plant": {
+    "total": 55,
+    "published": 55,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 2
+  },
+  "coral": {
+    "total": 43,
+    "published": 43,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 4
+  },
+  "invertebrate": {
+    "total": 48,
+    "published": 48,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 4
+  },
+  "equipment": {
+    "total": 43,
+    "published": 43,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 0
+  },
+  "problem": {
+    "total": 32,
+    "published": 32,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 0
+  },
+  "inspiration": {
+    "total": 10,
+    "published": 10,
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "duplicateScientificNames": 0
+  }
+}

@@ -1,0 +1,809 @@
+{
+  "generatedAt": "2026-09-21T10:00:09.202Z",
+  "phase": "14",
+  "spec": "SPEC-15",
+  "totalQueries": 58,
+  "passRate": "81.0%",
+  "passed": 47,
+  "failed": 11,
+  "byType": {
+    "exact": {
+      "total": 15,
+      "passed": 13,
+      "failed": 2
+    },
+    "partial": {
+      "total": 27,
+      "passed": 22,
+      "failed": 5
+    },
+    "scientific": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "localName": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "alias": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "style": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3
+    },
+    "negative": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    }
+  },
+  "results": [
+    {
+      "index": 1,
+      "query": "Red-Tail Shark",
+      "expected": "Red-Tail Shark",
+      "type": "exact",
+      "topResult": "Red-Tail Shark",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 2,
+      "query": "Jaguar Cichlid",
+      "expected": "Jaguar Cichlid",
+      "type": "exact",
+      "topResult": "Jaguar Cichlid",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 3,
+      "query": "Maroon Clownfish",
+      "expected": "Maroon Clownfish",
+      "type": "exact",
+      "topResult": "Maroon Clownfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 4,
+      "query": "Purple Tang",
+      "expected": "Purple Tang",
+      "type": "exact",
+      "topResult": "Purple Tang",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 5,
+      "query": "Bolbitis",
+      "expected": "Bolbitis Heudelotii",
+      "type": "partial",
+      "topResult": "Bolbitis Heudelotii",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 6,
+      "query": "Table Acropora",
+      "expected": "Table Acropora",
+      "type": "exact",
+      "topResult": "Table Acropora",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 7,
+      "query": "Gorgonian",
+      "expected": "Gorgonian",
+      "type": "exact",
+      "topResult": "Gorgonian",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 8,
+      "query": "CO2 Diffuser",
+      "expected": "CO2 Diffuser",
+      "type": "exact",
+      "topResult": "CO2 Diffuser",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 9,
+      "query": "Brown Jelly Disease",
+      "expected": "Brown Jelly Disease",
+      "type": "exact",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 10,
+      "query": "Epalzeorhynchos bicolor",
+      "expected": "Red-Tail Shark",
+      "type": "scientific",
+      "topResult": "Red-Tail Shark",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 11,
+      "query": "Parachromis managuensis",
+      "expected": "Jaguar Cichlid",
+      "type": "scientific",
+      "topResult": "Jaguar Cichlid",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 12,
+      "query": "Premnas biaculeatus",
+      "expected": "Maroon Clownfish",
+      "type": "scientific",
+      "topResult": "Maroon Clownfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 13,
+      "query": "Bolbitis heudelotii",
+      "expected": "Bolbitis Heudelotii",
+      "type": "scientific",
+      "topResult": "Bolbitis Heudelotii",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 14,
+      "query": "Huyết Long",
+      "expected": "Asian Arowana",
+      "type": "localName",
+      "topResult": "Asian Arowana",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 15,
+      "query": "Kim Long",
+      "expected": "Jardini Arowana",
+      "type": "localName",
+      "topResult": "Asian Arowana",
+      "matchType": "miss",
+      "resultCount": 1,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 16,
+      "query": "Ngân Long",
+      "expected": "Silver Arowana",
+      "type": "localName",
+      "topResult": "Silver Arowana",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 17,
+      "query": "Tôm Cherry",
+      "expected": "Cherry Shrimp",
+      "type": "localName",
+      "topResult": "Red Cherry Shrimp",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 18,
+      "query": "Banggai Clownfish",
+      "expected": "Banggai Cardinalfish",
+      "type": "alias",
+      "topResult": "Banggai Cardinalfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 19,
+      "query": "Boeseman's Rainbowfish",
+      "expected": "Boesemani Rainbowfish",
+      "type": "alias",
+      "topResult": "Boesemani Rainbowfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 20,
+      "query": "San Francisco Piranha",
+      "expected": "Red-bellied Piranha",
+      "type": "alias",
+      "topResult": "Red-bellied Piranha",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 21,
+      "query": "Ryukin Goldfish",
+      "expected": "Ryukin Goldfish",
+      "type": "exact",
+      "topResult": "Ryukin Goldfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 22,
+      "query": "Black Moor Goldfish",
+      "expected": "Black Moor Goldfish",
+      "type": "exact",
+      "topResult": "Black Moor Goldfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 23,
+      "query": "Telescope Goldfish",
+      "expected": "Telescope Goldfish",
+      "type": "exact",
+      "topResult": "Telescope Goldfish",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 24,
+      "query": "Drop Checker",
+      "expected": "CO2 Drop Checker",
+      "type": "exact",
+      "topResult": "CO2 Drop Checker",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 25,
+      "query": "T5 Light",
+      "expected": "T5 Fluorescent Light",
+      "type": "partial",
+      "topResult": "T5 Fluorescent Light",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 26,
+      "query": "Brown Jelly",
+      "expected": "Brown Jelly Disease",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 27,
+      "query": "RTN",
+      "expected": "Rapid Tissue Necrosis (RTN)",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 28,
+      "query": "Coral Bleaching",
+      "expected": "Coral Bleaching",
+      "type": "exact",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 29,
+      "query": "Aiptasia",
+      "expected": "Aiptasia Infestation",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 30,
+      "query": "Neon Tetra",
+      "expected": "Neon Tetra",
+      "type": "exact",
+      "topResult": "Neon Tetra",
+      "matchType": "top-match",
+      "resultCount": 3,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 31,
+      "query": "Betta",
+      "expected": "Betta",
+      "type": "partial",
+      "topResult": "Betta Imbellis",
+      "matchType": "top-match",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 32,
+      "query": "Clownfish",
+      "expected": "Ocellaris Clownfish",
+      "type": "partial",
+      "topResult": "Clarkii Clownfish",
+      "matchType": "in-results",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 33,
+      "query": "Acropora",
+      "expected": "Staghorn Acropora",
+      "type": "partial",
+      "topResult": "Staghorn Acropora",
+      "matchType": "top-match",
+      "resultCount": 2,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 34,
+      "query": "Anubias",
+      "expected": "Anubias Barteri",
+      "type": "partial",
+      "topResult": "Anubias nana Petite",
+      "matchType": "in-results",
+      "resultCount": 2,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 35,
+      "query": "African Cichlid",
+      "expected": "Frontosa Cichlid",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 36,
+      "query": "Brackish",
+      "expected": "Bumblebee Goby",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 37,
+      "query": "Anemone",
+      "expected": "Bubble-Tip Anemone",
+      "type": "partial",
+      "topResult": "Magnificent Anemone",
+      "matchType": "in-results",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 38,
+      "query": "Blackwater",
+      "expected": "Chocolate Gourami",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 39,
+      "query": "Arowana",
+      "expected": "Asian Arowana",
+      "type": "partial",
+      "topResult": "Black Arowana",
+      "matchType": "in-results",
+      "resultCount": 4,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 40,
+      "query": "Bichir",
+      "expected": "Ornate Bichir",
+      "type": "partial",
+      "topResult": "Ornate Bichir",
+      "matchType": "top-match",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 41,
+      "query": "Snakehead",
+      "expected": "Emperor Snakehead",
+      "type": "partial",
+      "topResult": "Emperor Snakehead",
+      "matchType": "top-match",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 42,
+      "query": "Piranha",
+      "expected": "Red-bellied Piranha",
+      "type": "partial",
+      "topResult": "Red-bellied Piranha",
+      "matchType": "top-match",
+      "resultCount": 2,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 43,
+      "query": "Tang",
+      "expected": "Blue Tang",
+      "type": "partial",
+      "topResult": "Sailfin Tang",
+      "matchType": "in-results",
+      "resultCount": 7,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 44,
+      "query": "Goby",
+      "expected": "Yellow Watchman Goby",
+      "type": "partial",
+      "topResult": "Diamond Watchman Goby",
+      "matchType": "in-results",
+      "resultCount": 5,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 45,
+      "query": "Wrasse",
+      "expected": "Six-line Wrasse",
+      "type": "partial",
+      "topResult": "Melanurus Wrasse",
+      "matchType": "miss",
+      "resultCount": 5,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 46,
+      "query": "Puffer",
+      "expected": "Pea Puffer",
+      "type": "partial",
+      "topResult": "Porcupine Puffer",
+      "matchType": "in-results",
+      "resultCount": 4,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 47,
+      "query": "Coral",
+      "expected": "Zoanthids",
+      "type": "partial",
+      "topResult": "Cauliflower Coral",
+      "matchType": "miss",
+      "resultCount": 12,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 48,
+      "query": "Shrimp",
+      "expected": "Cherry Shrimp",
+      "type": "partial",
+      "topResult": "Cherry Shrimp",
+      "matchType": "top-match",
+      "resultCount": 12,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 49,
+      "query": "Pleco",
+      "expected": "Bristlenose Pleco",
+      "type": "partial",
+      "topResult": "Royal Pleco",
+      "matchType": "in-results",
+      "resultCount": 7,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 50,
+      "query": "Corydoras",
+      "expected": "Sterbai Corydoras",
+      "type": "partial",
+      "topResult": "Sterbai Corydoras",
+      "matchType": "top-match",
+      "resultCount": 6,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 51,
+      "query": "Gourami",
+      "expected": "Dwarf Gourami",
+      "type": "partial",
+      "topResult": "Chocolate Gourami",
+      "matchType": "in-results",
+      "resultCount": 9,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 52,
+      "query": "Loach",
+      "expected": "Kuhli Loach",
+      "type": "partial",
+      "topResult": "Hillstream Loach",
+      "matchType": "in-results",
+      "resultCount": 6,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 53,
+      "query": "Goldfish",
+      "expected": "Common Goldfish",
+      "type": "partial",
+      "topResult": "Fantail Goldfish",
+      "matchType": "in-results",
+      "resultCount": 8,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 54,
+      "query": "Angelfish",
+      "expected": "Marble Angelfish",
+      "type": "partial",
+      "topResult": "Angelfish",
+      "matchType": "in-results",
+      "resultCount": 6,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 55,
+      "query": "Discus",
+      "expected": "Discus",
+      "type": "exact",
+      "topResult": "Discus",
+      "matchType": "top-match",
+      "resultCount": 1,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 56,
+      "query": "Rainbowfish",
+      "expected": "Boesemani Rainbowfish",
+      "type": "partial",
+      "topResult": "Threadfin Rainbowfish",
+      "matchType": "in-results",
+      "resultCount": 3,
+      "passed": true,
+      "rankingOk": false
+    },
+    {
+      "index": 57,
+      "query": "Seahorse",
+      "expected": null,
+      "type": "negative",
+      "topResult": null,
+      "matchType": "correct-negative",
+      "resultCount": 0,
+      "passed": true,
+      "rankingOk": true
+    },
+    {
+      "index": 58,
+      "query": "Platypus",
+      "expected": null,
+      "type": "negative",
+      "topResult": null,
+      "matchType": "correct-negative",
+      "resultCount": 0,
+      "passed": true,
+      "rankingOk": true
+    }
+  ],
+  "failures": [
+    {
+      "index": 9,
+      "query": "Brown Jelly Disease",
+      "expected": "Brown Jelly Disease",
+      "type": "exact",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 15,
+      "query": "Kim Long",
+      "expected": "Jardini Arowana",
+      "type": "localName",
+      "topResult": "Asian Arowana",
+      "matchType": "miss",
+      "resultCount": 1,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 26,
+      "query": "Brown Jelly",
+      "expected": "Brown Jelly Disease",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 27,
+      "query": "RTN",
+      "expected": "Rapid Tissue Necrosis (RTN)",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 28,
+      "query": "Coral Bleaching",
+      "expected": "Coral Bleaching",
+      "type": "exact",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 29,
+      "query": "Aiptasia",
+      "expected": "Aiptasia Infestation",
+      "type": "partial",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 35,
+      "query": "African Cichlid",
+      "expected": "Frontosa Cichlid",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 36,
+      "query": "Brackish",
+      "expected": "Bumblebee Goby",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 38,
+      "query": "Blackwater",
+      "expected": "Chocolate Gourami",
+      "type": "style",
+      "topResult": null,
+      "matchType": "miss",
+      "resultCount": 0,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 45,
+      "query": "Wrasse",
+      "expected": "Six-line Wrasse",
+      "type": "partial",
+      "topResult": "Melanurus Wrasse",
+      "matchType": "miss",
+      "resultCount": 5,
+      "passed": false,
+      "rankingOk": false
+    },
+    {
+      "index": 47,
+      "query": "Coral",
+      "expected": "Zoanthids",
+      "type": "partial",
+      "topResult": "Cauliflower Coral",
+      "matchType": "miss",
+      "resultCount": 12,
+      "passed": false,
+      "rankingOk": false
+    }
+  ]
+}

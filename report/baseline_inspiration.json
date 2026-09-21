@@ -1,0 +1,92 @@
+﻿[
+    {
+        "difficulty":  "Beginner",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "small-iwagumi-nano"
+                 },
+        "style":  "Iwagumi"
+    },
+    {
+        "difficulty":  "Intermediate",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "amazon-biotope"
+                 },
+        "style":  "Biotope"
+    },
+    {
+        "difficulty":  "Advanced",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "reef-nano"
+                 },
+        "style":  "Reef"
+    },
+    {
+        "difficulty":  "Intermediate",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "mountain-valley-scape"
+                 },
+        "style":  "Nature Aquarium"
+    },
+    {
+        "difficulty":  "Beginner",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "planted-community-aquarium"
+                 },
+        "style":  "Nature Aquarium"
+    },
+    {
+        "difficulty":  "Intermediate",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "classic-iwagumi"
+                 },
+        "style":  "Iwagumi"
+    },
+    {
+        "difficulty":  "Advanced",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dutch-planted-tank"
+                 },
+        "style":  "Dutch"
+    },
+    {
+        "difficulty":  "Beginner",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "jungle-biotope"
+                 },
+        "style":  "Jungle"
+    },
+    {
+        "difficulty":  "Beginner",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "low-tech-nature-aquarium"
+                 },
+        "style":  "Nature Aquarium"
+    },
+    {
+        "difficulty":  "Intermediate",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nano-paludarium"
+                 },
+        "style":  "Paludarium"
+    }
+]

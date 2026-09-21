@@ -48,7 +48,8 @@ export async function getDatabaseList(type: DatabaseType): Promise<DatabaseItem[
   const semanticFields = `
     aquariumStyle, region, waterType, isPredator, reefCompatibility,
     difficulty, light, flow, co2, growth, placement, coralType,
-    group, category, diet, temperament
+    group, category, diet, temperament,
+    aliases, localNames
   `
   return await client.fetch(
     `*[_type == $type && defined(name) && defined(slug.current)] | order(name asc) {
@@ -105,7 +106,7 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
       _id, _type, name, scientificName, slug, excerpt, mainImage,
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty, waterType,
-      group,
+      group, aliases, localNames, parentSpecies,
       light, co2, growth, placement, propagation, growthForm, redPlant,
       coralType, flow, aggression, reefCompatibility, photosynthetic,
       category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,

@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-09-21T00:00:00.000Z",
+  "aliasAdditions": 3,
+  "aliasDetails": [
+    { "id": "sebdKYryWZgYP2rm3noHja", "name": "Banggai Cardinalfish", "added": "Banggai Clownfish" },
+    { "id": "species-melanotaenia-boesemani", "name": "Boesemani Rainbowfish", "added": "Boeseman's Rainbowfish" },
+    { "id": "species-pygocentrus-nattereri", "name": "Red-bellied Piranha", "added": "San Francisco Piranha" }
+  ],
+  "styleTagUpdates": 10,
+  "styleDetails": [
+    { "id": "J1Tx0fWCuGNPno99A79S9O", "name": "Frontosa Cichlid", "added": "African Cichlid" },
+    { "id": "species-labidochromis-caeruleus", "name": "Electric Yellow Cichlid", "added": "African Cichlid" },
+    { "id": "species-pseudotropheus-zebra", "name": "Zebra Mbuna Cichlid", "added": "African Cichlid" },
+    { "id": "ofTl1CTOUWuLwM28PxTEYZ", "name": "Dubois\u2019 Tropheus", "added": "African Cichlid" },
+    { "id": "I9bI8W8ZWcEwyIzM9CjDNI", "name": "Bumblebee Goby", "added": "Brackish" },
+    { "id": "species-amphiprion-ocellaris", "name": "Ocellaris Clownfish", "added": "Anemone/Clownfish" },
+    { "id": "ofTl1CTOUWuLwM28PxTEeF", "name": "Percula Clownfish", "added": "Anemone/Clownfish" },
+    { "id": "invertebrate-entacmaea-quadricolor", "name": "Bubble-Tip Anemone", "added": "Anemone/Clownfish" },
+    { "id": "I9bI8W8ZWcEwyIzM9Cj9WG", "name": "Chocolate Gourami", "added": "Blackwater" },
+    { "id": "species-paracheirodon-axelrodi", "name": "Cardinal Tetra", "added": "Blackwater" }
+  ],
+  "errors": [],
+  "javaFernId": "plant-java-fern"
+}

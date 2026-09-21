@@ -1,0 +1,7694 @@
+{
+  "species": [
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSUxN",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Pond / Outdoor"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Fantail Goldfish",
+      "region": "East Asia",
+      "scientificName": "Carassius auratus",
+      "slug": {
+        "_type": "slug",
+        "current": "fantail-goldfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSV4m",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Hatchetfish",
+      "region": "South America",
+      "scientificName": "Gasteropelecus sternicla",
+      "slug": {
+        "_type": "slug",
+        "current": "gasteropelecus-sternicla-hatchetfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSVV6",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Fish Only"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Copperband Butterflyfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Chelmon rostratus",
+      "slug": {
+        "_type": "slug",
+        "current": "copperband-butterflyfish"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSViG",
+      "_type": "species",
+      "aquariumStyle": [
+        "Pond / Outdoor",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Koi",
+      "region": "East Asia",
+      "scientificName": "Cyprinus rubrofuscus",
+      "slug": {
+        "_type": "slug",
+        "current": "koi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSWMZ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Australian Redclaw Crayfish",
+      "region": "Australia / Oceania",
+      "scientificName": "Cherax quadricarinatus",
+      "slug": {
+        "_type": "slug",
+        "current": "australian-redclaw-crayfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Marble Angelfish",
+      "region": "Amazon Basin",
+      "scientificName": "Pterophyllum scalare",
+      "slug": {
+        "_type": "slug",
+        "current": "pterophyllum-scalare-marble"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "7kdig6Bk6SZq4GZkXcVXjK",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Oscar",
+      "region": "South America",
+      "scientificName": "Astronotus ocellatus",
+      "slug": {
+        "_type": "slug",
+        "current": "oscar"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "7kdig6Bk6SZq4GZkXcVYRS",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cirrhitidae",
+      "group": null,
+      "name": "Flamehawkfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Neocirrhites armatus",
+      "slug": {
+        "_type": "slug",
+        "current": "flamehawkfish"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "G6zzfp6s5dlbun6AVzKgoN",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Emperor Snakehead",
+      "region": "Southeast Asia",
+      "scientificName": "Channa marulioides",
+      "slug": {
+        "_type": "slug",
+        "current": "channa-marulioides"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "G6zzfp6s5dlbun6AVzKgu5",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Rainbow Snakehead",
+      "region": "Southeast Asia",
+      "scientificName": "Channa pulchra",
+      "slug": {
+        "_type": "slug",
+        "current": "channa-pulchra"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "G6zzfp6s5dlbun6AVzKmc5",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "FOWLR"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Sailfin Tang",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Zebrasoma veliferum",
+      "slug": {
+        "_type": "slug",
+        "current": "zebrasoma-veliferum"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve601V4E",
+      "_type": "species",
+      "aquariumStyle": [
+        "FOWLR"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Frogfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Antennarius striatus",
+      "slug": {
+        "_type": "slug",
+        "current": "antennarius-striatus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602cco",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ornate Bichir",
+      "region": "Africa",
+      "scientificName": "Polypterus ornatipinnis",
+      "slug": {
+        "_type": "slug",
+        "current": "polypterus-ornatipinnis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602cqq",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Delhezi Bichir",
+      "region": "Africa",
+      "scientificName": "Polypterus delhezi",
+      "slug": {
+        "_type": "slug",
+        "current": "polypterus-delhezi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602d2X",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Endlicheri Bichir",
+      "region": "Africa",
+      "scientificName": "Polypterus endlicheri",
+      "slug": {
+        "_type": "slug",
+        "current": "polypterus-endlicheri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602em7",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Red-tailed Catfish",
+      "region": "South America",
+      "scientificName": "Phractocephalus hemioliopterus",
+      "slug": {
+        "_type": "slug",
+        "current": "phractocephalus-hemioliopterus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602fPs",
+      "_type": "species",
+      "aquariumStyle": [
+        "FOWLR"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Emperor Angelfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Pomacanthus imperator",
+      "slug": {
+        "_type": "slug",
+        "current": "pomacanthus-imperator"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve602tRs",
+      "_type": "species",
+      "aquariumStyle": [
+        "FOWLR"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Porcupine Puffer",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Diodon holocanthus",
+      "slug": {
+        "_type": "slug",
+        "current": "diodon-holocanthus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Sterbai Corydoras",
+      "region": "South America",
+      "scientificName": "Corydoras sterbai",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-sterbai"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Ciih6",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Convict Cichlid",
+      "region": "Central America",
+      "scientificName": "Amatitlania nigrofasciata",
+      "slug": {
+        "_type": "slug",
+        "current": "amatitlania-nigrofasciata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Characidae",
+      "group": null,
+      "name": "Firehead Tetra",
+      "region": "South America",
+      "scientificName": "Hemigrammus bleheri",
+      "slug": {
+        "_type": "slug",
+        "current": "hemigrammus-bleheri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Cj9WG",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Chocolate Gourami",
+      "region": "Southeast Asia",
+      "scientificName": "Sphaerichthys osphromenoides",
+      "slug": {
+        "_type": "slug",
+        "current": "sphaerichthys-osphromenoides"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Cj9gK",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Badidae",
+      "group": null,
+      "name": "Scarlet Badis",
+      "region": "South Asia",
+      "scientificName": "Dario dario",
+      "slug": {
+        "_type": "slug",
+        "current": "dario-dario"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjDNI",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Gobiidae",
+      "group": null,
+      "name": "Bumblebee Goby",
+      "region": "Southeast Asia",
+      "scientificName": "Brachygobius doriae",
+      "slug": {
+        "_type": "slug",
+        "current": "brachygobius-doriae"
+      },
+      "waterType": "brackish"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjDXM",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Nothobranchiidae",
+      "group": null,
+      "name": "Clown Killifish",
+      "region": "Africa",
+      "scientificName": "Pseudepiplatys annulatus",
+      "slug": {
+        "_type": "slug",
+        "current": "pseudepiplatys-annulatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CttMO",
+      "_type": "species",
+      "aquariumStyle": [
+        "Fish Only"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Scorpaenidae",
+      "group": null,
+      "name": "Lionfish",
+      "region": "Australia / Oceania",
+      "scientificName": "Pterois volitans",
+      "slug": {
+        "_type": "slug",
+        "current": "pterois-volitans"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuEcq",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Royal Pleco",
+      "region": "South America",
+      "scientificName": "Panaque nigrolineatus",
+      "slug": {
+        "_type": "slug",
+        "current": "panaque-nigrolineatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuG2u",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Leopard Frog Pleco",
+      "region": "South America",
+      "scientificName": "Peckoltia compta",
+      "slug": {
+        "_type": "slug",
+        "current": "peckoltia-compta"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuWy8",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Licorice Gourami",
+      "region": "Southeast Asia",
+      "scientificName": "Parosphromenus linkei",
+      "slug": {
+        "_type": "slug",
+        "current": "parosphromenus-linkei"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuXNI",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Mormyridae",
+      "group": null,
+      "name": "Elephantnose Fish",
+      "region": "Africa",
+      "scientificName": "Gnathonemus petersii",
+      "slug": {
+        "_type": "slug",
+        "current": "gnathonemus-petersii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DFXpw",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Jack Dempsey",
+      "region": "Central America",
+      "scientificName": "Rocio octofasciata",
+      "slug": {
+        "_type": "slug",
+        "current": "rocio-octofasciata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DJbjY",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Betta Imbellis",
+      "region": "Southeast Asia",
+      "scientificName": "Betta imbellis",
+      "slug": {
+        "_type": "slug",
+        "current": "betta-imbellis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DJbye",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Betta Macrostoma",
+      "region": null,
+      "scientificName": "Betta macrostoma",
+      "slug": {
+        "_type": "slug",
+        "current": "betta-macrostoma"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DJePc",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Melanotaeniidae",
+      "group": null,
+      "name": "Threadfin Rainbowfish",
+      "region": null,
+      "scientificName": "Iriatherina werneri",
+      "slug": {
+        "_type": "slug",
+        "current": "iriatherina-werneri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXMwe",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Gobiidae",
+      "group": null,
+      "name": "Neon Goby",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Elacatinus oceanops",
+      "slug": {
+        "_type": "slug",
+        "current": "elacatinus-oceanops"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXNJI",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Blenniidae",
+      "group": null,
+      "name": "Tailspot Blenny",
+      "region": "Southeast Asia",
+      "scientificName": "Ecsenius stigmatura",
+      "slug": {
+        "_type": "slug",
+        "current": "ecsenius-stigmatura"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXNau",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Blenniidae",
+      "group": null,
+      "name": "Lawnmower Blenny",
+      "region": "Australia / Oceania",
+      "scientificName": "Salarias fasciatus",
+      "slug": {
+        "_type": "slug",
+        "current": "salarias-fasciatus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXNv2",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Labridae",
+      "group": null,
+      "name": "Yellow Coris Wrasse",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Halichoeres chrysus",
+      "slug": {
+        "_type": "slug",
+        "current": "halichoeres-chrysus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnTgRq",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Gastromyzontidae",
+      "group": null,
+      "name": "Hillstream Loach",
+      "region": "Southeast Asia",
+      "scientificName": "Sewellia lineolata",
+      "slug": {
+        "_type": "slug",
+        "current": "sewellia-lineolata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfjuY",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Three Stripe Dwarf Cichlid",
+      "region": "South America",
+      "scientificName": "Apistogramma trifasciata",
+      "slug": {
+        "_type": "slug",
+        "current": "apistogramma-trifasciata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfkJq",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Callionymidae",
+      "group": null,
+      "name": "Mandarin Fish",
+      "region": "East Asia",
+      "scientificName": "Synchiropus splendidus",
+      "slug": {
+        "_type": "slug",
+        "current": "synchiropus-splendidus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng1HC",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Pygmy Rasbora",
+      "region": "Southeast Asia",
+      "scientificName": "Boraras maculatus",
+      "slug": {
+        "_type": "slug",
+        "current": "boraras-maculatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng1QE",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Smiling Cichlid",
+      "region": "Amazon Basin",
+      "scientificName": "Laetacara curviceps",
+      "slug": {
+        "_type": "slug",
+        "current": "laetacara-curviceps"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnvaIg",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Acanthuridae",
+      "group": null,
+      "name": "Blue Tang",
+      "region": "South Asia",
+      "scientificName": "Paracanthurus hepatus",
+      "slug": {
+        "_type": "slug",
+        "current": "paracanthurus-hepatus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2V6E",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Gobiidae",
+      "group": null,
+      "name": "Yellow Watchman Goby",
+      "region": "Southeast Asia",
+      "scientificName": "Cryptocentrus cinctus",
+      "slug": {
+        "_type": "slug",
+        "current": "cryptocentrus-cinctus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2VIs",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Ptereleotridae",
+      "group": null,
+      "name": "Firefish Goby",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Nemateleotris magnifica",
+      "slug": {
+        "_type": "slug",
+        "current": "nemateleotris-magnifica"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2X54",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Pomacanthidae",
+      "group": null,
+      "name": "Coral Beauty Angelfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Centropyge bispinosa",
+      "slug": {
+        "_type": "slug",
+        "current": "centropyge-bispinosa"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2XHi",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Pomacentridae",
+      "group": null,
+      "name": "Blue Devil Damselfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Chrysiptera cyanea",
+      "slug": {
+        "_type": "slug",
+        "current": "chrysiptera-cyanea"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6UR1F",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Agassiz Dwarf Cichlid",
+      "region": "Amazon Basin",
+      "scientificName": "Apistogramma agassizii",
+      "slug": {
+        "_type": "slug",
+        "current": "apistogramma-agassizii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6heVR",
+      "_type": "species",
+      "aquariumStyle": [
+        "Fish Only"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Labridae",
+      "group": null,
+      "name": "Six Line Wrasse",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Pseudocheilinus hexataenia",
+      "slug": {
+        "_type": "slug",
+        "current": "pseudocheilinus-hexataenia"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hesW",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Grammatidae",
+      "group": null,
+      "name": "Royal Gramma",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Gramma loreto",
+      "slug": {
+        "_type": "slug",
+        "current": "gramma-loreto"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hq84",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Neon Blue Rasbora",
+      "region": "Southeast Asia",
+      "scientificName": "Sundadanio axelrodi",
+      "slug": {
+        "_type": "slug",
+        "current": "sundadanio-axelrodi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hqNS",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Congo Dwarf Cichlid",
+      "region": "Africa",
+      "scientificName": "Nanochromis parilus",
+      "slug": {
+        "_type": "slug",
+        "current": "nanochromis-parilus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hsP7",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Zebra Pleco",
+      "region": "South America",
+      "scientificName": "Hypancistrus zebra",
+      "slug": {
+        "_type": "slug",
+        "current": "hypancistrus-zebra"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6i7Ae",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Spiketail Gourami",
+      "region": "South Asia",
+      "scientificName": "Pseudosphromenus dayi",
+      "slug": {
+        "_type": "slug",
+        "current": "pseudosphromenus-dayi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6i7Sb",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Sri Lanka Gourami",
+      "region": "South Asia",
+      "scientificName": "Malpulutta kretseri",
+      "slug": {
+        "_type": "slug",
+        "current": "malpulutta-kretseri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6i8Pa",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Eartheater Cichlid",
+      "region": "Amazon Basin",
+      "scientificName": "Geophagus altifrons",
+      "slug": {
+        "_type": "slug",
+        "current": "geophagus-altifrons"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6i8hX",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Cupido Cichlid",
+      "region": "Amazon Basin",
+      "scientificName": "Biotodoma cupido",
+      "slug": {
+        "_type": "slug",
+        "current": "biotodoma-cupido"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79QPg",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Tetraodontidae",
+      "group": null,
+      "name": "Pea Puffer",
+      "region": "South Asia",
+      "scientificName": "Carinotetraodon travancoricus",
+      "slug": {
+        "_type": "slug",
+        "current": "carinotetraodon-travancoricus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79QpK",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Rainbow Shark",
+      "region": "Southeast Asia",
+      "scientificName": "Epalzeorhynchos frenatum",
+      "slug": {
+        "_type": "slug",
+        "current": "epalzeorhynchos-frenatum"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79RMf",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cobitidae",
+      "group": null,
+      "name": "Yoyo Loach",
+      "region": "South Asia",
+      "scientificName": "Botia almorhae",
+      "slug": {
+        "_type": "slug",
+        "current": "botia-almorhae"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79RmJ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Green Neon Tetra",
+      "region": "Amazon Basin",
+      "scientificName": "Paracheirodon simulans",
+      "slug": {
+        "_type": "slug",
+        "current": "paracheirodon-simulans"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79S9O",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Frontosa Cichlid",
+      "region": "Africa",
+      "scientificName": "Cyphotilapia frontosa",
+      "slug": {
+        "_type": "slug",
+        "current": "cyphotilapia-frontosa"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79evp",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Mochokidae",
+      "group": null,
+      "name": "Synodontis Catfish",
+      "region": "Africa",
+      "scientificName": "Synodontis multipunctatus",
+      "slug": {
+        "_type": "slug",
+        "current": "synodontis-multipunctatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79fDm",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Paradise Fish",
+      "region": "Southeast Asia",
+      "scientificName": "Macropodus opercularis",
+      "slug": {
+        "_type": "slug",
+        "current": "macropodus-opercularis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7ACJO",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Siamese Algae Eater",
+      "region": "Southeast Asia",
+      "scientificName": "Crossocheilus oblongus",
+      "slug": {
+        "_type": "slug",
+        "current": "crossocheilus-oblongus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KH8y",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Acanthuridae",
+      "group": null,
+      "name": "Kole Tang",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Ctenochaetus strigosus",
+      "slug": {
+        "_type": "slug",
+        "current": "ctenochaetus-strigosus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2Kni6M",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Green Terror",
+      "region": "South America",
+      "scientificName": "Andinoacara rivulatus",
+      "slug": {
+        "_type": "slug",
+        "current": "green-terror"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLZxZ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Snakehead",
+      "region": "South Asia",
+      "scientificName": "Channa barca",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-snakehead"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLa6x",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Peacock Bass",
+      "region": "South America",
+      "scientificName": "Cichla ocellaris",
+      "slug": {
+        "_type": "slug",
+        "current": "peacock-bass"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLaUQ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Marine Predator",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Marine Betta",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Cephalopholis argus",
+      "slug": {
+        "_type": "slug",
+        "current": "marine-betta"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLaqK",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Betta / Nano"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Molly",
+      "region": "Central America",
+      "scientificName": "Poecilia sphenops",
+      "slug": {
+        "_type": "slug",
+        "current": "poecilia-sphenops-molly"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "bXkDxvOEdfzf4NR9Z3ReYR",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Alligator Gar",
+      "region": "North America",
+      "scientificName": "Atractosteus spatula",
+      "slug": {
+        "_type": "slug",
+        "current": "atractosteus-spatula"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "bXkDxvOEdfzf4NR9Z3S1rN",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "FOWLR"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Naso Tang",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Naso lituratus",
+      "slug": {
+        "_type": "slug",
+        "current": "naso-lituratus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCJT",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Pygmy Corydoras",
+      "region": "South America",
+      "scientificName": "Corydoras pygmaeus",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-pygmaeus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCMJ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Honey Gourami",
+      "region": "South Asia",
+      "scientificName": "Trichogaster chuna",
+      "slug": {
+        "_type": "slug",
+        "current": "trichogaster-chuna"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCP9",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Kubotai Rasbora",
+      "region": null,
+      "scientificName": "Microdevario kubotai",
+      "slug": {
+        "_type": "slug",
+        "current": "microdevario-kubotai"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCRz",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Chili Rasbora",
+      "region": "Southeast Asia",
+      "scientificName": "Boraras brigittae",
+      "slug": {
+        "_type": "slug",
+        "current": "boraras-brigittae"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCUp",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Red Garra",
+      "region": null,
+      "scientificName": "Garra rufa",
+      "slug": {
+        "_type": "slug",
+        "current": "garra-rufa"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCXf",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "German Blue Ram",
+      "region": null,
+      "scientificName": "Mikrogeophagus ramirezi",
+      "slug": {
+        "_type": "slug",
+        "current": "mikrogeophagus-ramirezi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCaV",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Lebiasinidae",
+      "group": null,
+      "name": "Golden Pencilfish",
+      "region": "Amazon Basin",
+      "scientificName": "Nannostomus beckfordi",
+      "slug": {
+        "_type": "slug",
+        "current": "nannostomus-beckfordi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTCdL",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Characidae",
+      "group": null,
+      "name": "Rummynose Tetra",
+      "region": "Amazon Basin",
+      "scientificName": "Hemigrammus rhodostomus",
+      "slug": {
+        "_type": "slug",
+        "current": "hemigrammus-rhodostomus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTEQ3",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Gasteropelecidae",
+      "group": null,
+      "name": "Silver Hatchetfish",
+      "region": "Amazon Basin",
+      "scientificName": "Gasteropelecus sternicla",
+      "slug": {
+        "_type": "slug",
+        "current": "gasteropelecus-sternicla"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTESt",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Emerald Betta",
+      "region": "Southeast Asia",
+      "scientificName": "Betta smaragdina",
+      "slug": {
+        "_type": "slug",
+        "current": "betta-smaragdina"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTEVj",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Clown Pleco",
+      "region": null,
+      "scientificName": "Panaqolus maccus",
+      "slug": {
+        "_type": "slug",
+        "current": "panaqolus-maccus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTEYZ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Dubois’ Tropheus",
+      "region": "Africa",
+      "scientificName": "Tropheus duboisi",
+      "slug": {
+        "_type": "slug",
+        "current": "tropheus-duboisi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTEbP",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Pomacanthidae",
+      "group": null,
+      "name": "Flame Angelfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Centropyge loricula",
+      "slug": {
+        "_type": "slug",
+        "current": "centropyge-loricula"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTEeF",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Pomacentridae",
+      "group": null,
+      "name": "Percula Clownfish",
+      "region": "Australia / Oceania",
+      "scientificName": "Amphiprion percula",
+      "slug": {
+        "_type": "slug",
+        "current": "amphiprion-percula"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noGMy",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Channidae",
+      "group": null,
+      "name": "Asian Snakehead",
+      "region": "Southeast Asia",
+      "scientificName": "Channa striata",
+      "slug": {
+        "_type": "slug",
+        "current": "asian-snakehead"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noGak",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cobitidae",
+      "group": null,
+      "name": "Dwarf Chain Loach",
+      "region": "Southeast Asia",
+      "scientificName": "Ambastaia sidthimunki",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-chain-loach"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noGuQ",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Polypteridae",
+      "group": null,
+      "name": "Senegal Bichir",
+      "region": "Africa",
+      "scientificName": "Polypterus senegalus",
+      "slug": {
+        "_type": "slug",
+        "current": "senegal-bichir"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noHTq",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Bucktooth Parrot",
+      "region": "South America",
+      "scientificName": "Cichlasoma festivum",
+      "slug": {
+        "_type": "slug",
+        "current": "bucktooth-parrot"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noHja",
+      "_type": "species",
+      "aquariumStyle": [
+        "Nano Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Apogonidae",
+      "group": null,
+      "name": "Banggai Cardinalfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Pterapogon kauderni",
+      "slug": {
+        "_type": "slug",
+        "current": "pterapogon-kauderni"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3noI7C",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Nano Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Siganidae",
+      "group": null,
+      "name": "Foxface Rabbitfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Siganus vulpinus",
+      "slug": {
+        "_type": "slug",
+        "current": "siganus-vulpinus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqsPG",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Pond / Outdoor"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Common Goldfish",
+      "region": "East Asia",
+      "scientificName": "Carassius auratus",
+      "slug": {
+        "_type": "slug",
+        "current": "carassius-auratus-common"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqtze",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Oranda Goldfish",
+      "region": "East Asia",
+      "scientificName": "Carassius auratus",
+      "slug": {
+        "_type": "slug",
+        "current": "oranda-goldfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqu9U",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ranchu Goldfish",
+      "region": "East Asia",
+      "scientificName": "Carassius auratus",
+      "slug": {
+        "_type": "slug",
+        "current": "ranchu-goldfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oquNG",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted",
+        "Betta / Nano"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Pencilfish",
+      "region": "South America",
+      "scientificName": "Nannostomus marginatus",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-pencilfish"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oquiu",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Pike Cichlid",
+      "region": "South America",
+      "scientificName": "Crenicichla compressiceps",
+      "slug": {
+        "_type": "slug",
+        "current": "pike-cichlid"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oquwg",
+      "_type": "species",
+      "aquariumStyle": [
+        "Marine Predator",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Lionfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Dendrochirus brachypterus",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-lionfish"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqvOE",
+      "_type": "species",
+      "aquariumStyle": [
+        "Marine Predator",
+        "Fish Only"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Clown Triggerfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Balistoides conspicillum",
+      "slug": {
+        "_type": "slug",
+        "current": "clown-triggerfish"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqvc0",
+      "_type": "species",
+      "aquariumStyle": [
+        "Marine Predator",
+        "Fish Only"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Zebra Moray Eel",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Gymnomuraena zebra",
+      "slug": {
+        "_type": "slug",
+        "current": "zebra-moray-eel"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "species-amphiprion-ocellaris",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Pomacentridae",
+      "group": null,
+      "name": "Ocellaris Clownfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Amphiprion ocellaris",
+      "slug": {
+        "_type": "slug",
+        "current": "amphiprion-ocellaris"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "species-ancistrus-cf-cirrhosus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Bristlenose Pleco",
+      "region": "Amazon Basin",
+      "scientificName": "Ancistrus cf. cirrhosus",
+      "slug": {
+        "_type": "slug",
+        "current": "ancistrus-cf-cirrhosus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-andinoacara-pulcher",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Blue Acara",
+      "region": "South America",
+      "scientificName": "Andinoacara pulcher",
+      "slug": {
+        "_type": "slug",
+        "current": "andinoacara-pulcher"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-aphyosemion-australe",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Nothobranchiidae",
+      "group": null,
+      "name": "Lyretail Killifish",
+      "region": "Africa",
+      "scientificName": "Aphyosemion australe",
+      "slug": {
+        "_type": "slug",
+        "current": "aphyosemion-australe"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-apistogramma-cacatuoides",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Cockatoo Dwarf Cichlid",
+      "region": "Amazon Basin",
+      "scientificName": "Apistogramma cacatuoides",
+      "slug": {
+        "_type": "slug",
+        "current": "apistogramma-cacatuoides"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-aplocheilus-lineatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Aplocheilidae",
+      "group": null,
+      "name": "Golden Wonder Killifish",
+      "region": "South Asia",
+      "scientificName": "Aplocheilus lineatus",
+      "slug": {
+        "_type": "slug",
+        "current": "aplocheilus-lineatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-arapaima-gigas",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": "Arapaimidae",
+      "group": null,
+      "name": "Arapaima",
+      "region": "South America",
+      "scientificName": "Arapaima gigas",
+      "slug": {
+        "_type": "slug",
+        "current": "arapaima-gigas"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-betta-splendens",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Siamese Fighting Fish",
+      "region": "Southeast Asia",
+      "scientificName": "Betta splendens",
+      "slug": {
+        "_type": "slug",
+        "current": "betta-splendens"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-botia-striata",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Botiidae",
+      "group": null,
+      "name": "Zebra Loach",
+      "region": "South Asia",
+      "scientificName": "Botia striata",
+      "slug": {
+        "_type": "slug",
+        "current": "botia-striata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-carassius-auratus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Fancy Goldfish",
+      "region": "East Asia",
+      "scientificName": "Carassius auratus",
+      "slug": {
+        "_type": "slug",
+        "current": "carassius-auratus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-celestichthys-erythromicron",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Emerald Dwarf Rasbora",
+      "region": null,
+      "scientificName": "Celestichthys erythromicron",
+      "slug": {
+        "_type": "slug",
+        "current": "celestichthys-erythromicron"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-chromis-viridis",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Pomacentridae",
+      "group": null,
+      "name": "Green Chromis",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Chromis viridis",
+      "slug": {
+        "_type": "slug",
+        "current": "chromis-viridis"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "species-chromobotia-macracanthus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Botiidae",
+      "group": null,
+      "name": "Clown Loach",
+      "region": "Southeast Asia",
+      "scientificName": "Chromobotia macracanthus",
+      "slug": {
+        "_type": "slug",
+        "current": "chromobotia-macracanthus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-corydoras-aeneus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Bronze Corydoras",
+      "region": "South America",
+      "scientificName": "Corydoras aeneus",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-aeneus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-corydoras-paleatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Peppered Corydoras",
+      "region": "South America",
+      "scientificName": "Corydoras paleatus",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-paleatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-corydoras-panda",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Panda Corydoras",
+      "region": null,
+      "scientificName": "Corydoras panda",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-panda"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-corydoras-trilineatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Callichthyidae",
+      "group": null,
+      "name": "Three-Lined Corydoras",
+      "region": "Amazon Basin",
+      "scientificName": "Corydoras trilineatus",
+      "slug": {
+        "_type": "slug",
+        "current": "corydoras-trilineatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-danio-margaritatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Celestial Pearl Danio",
+      "region": null,
+      "scientificName": "Danio margaritatus",
+      "slug": {
+        "_type": "slug",
+        "current": "danio-margaritatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-danio-rerio",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Zebrafish",
+      "region": "South Asia",
+      "scientificName": "Danio rerio",
+      "slug": {
+        "_type": "slug",
+        "current": "danio-rerio"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-gymnocorymbus-ternetzi",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Black Skirt Tetra",
+      "region": null,
+      "scientificName": "Gymnocorymbus ternetzi",
+      "slug": {
+        "_type": "slug",
+        "current": "gymnocorymbus-ternetzi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hyphessobrycon-amandae",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Ember Tetra",
+      "region": "South America",
+      "scientificName": "Hyphessobrycon amandae",
+      "slug": {
+        "_type": "slug",
+        "current": "hyphessobrycon-amandae"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hyphessobrycon-eques",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Serpae Tetra",
+      "region": "Amazon Basin",
+      "scientificName": "Hyphessobrycon eques",
+      "slug": {
+        "_type": "slug",
+        "current": "hyphessobrycon-eques"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hyphessobrycon-herbertaxelrodi",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Black Neon Tetra",
+      "region": "South America",
+      "scientificName": "Hyphessobrycon herbertaxelrodi",
+      "slug": {
+        "_type": "slug",
+        "current": "hyphessobrycon-herbertaxelrodi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hyphessobrycon-megalopterus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Black Phantom Tetra",
+      "region": "South America",
+      "scientificName": "Hyphessobrycon megalopterus",
+      "slug": {
+        "_type": "slug",
+        "current": "hyphessobrycon-megalopterus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hyphessobrycon-pulchripinnis",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Lemon Tetra",
+      "region": "Amazon Basin",
+      "scientificName": "Hyphessobrycon pulchripinnis",
+      "slug": {
+        "_type": "slug",
+        "current": "hyphessobrycon-pulchripinnis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-hypostomus-plecostomus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community",
+        "Planted",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Common Pleco",
+      "region": "South America",
+      "scientificName": "Hypostomus plecostomus",
+      "slug": {
+        "_type": "slug",
+        "current": "hypostomus-plecostomus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-kryptopterus-vitreolus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Siluridae",
+      "group": null,
+      "name": "Glass Catfish",
+      "region": "Southeast Asia",
+      "scientificName": "Kryptopterus vitreolus",
+      "slug": {
+        "_type": "slug",
+        "current": "kryptopterus-vitreolus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-labidochromis-caeruleus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Electric Yellow Cichlid",
+      "region": "Africa",
+      "scientificName": "Labidochromis caeruleus",
+      "slug": {
+        "_type": "slug",
+        "current": "labidochromis-caeruleus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-melanotaenia-boesemani",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Melanotaeniidae",
+      "group": null,
+      "name": "Boesemani Rainbowfish",
+      "region": "Southeast Asia",
+      "scientificName": "Melanotaenia boesemani",
+      "slug": {
+        "_type": "slug",
+        "current": "melanotaenia-boesemani"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-melanotaenia-praecox",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Melanotaeniidae",
+      "group": null,
+      "name": "Dwarf Neon Rainbowfish",
+      "region": "Southeast Asia",
+      "scientificName": "Melanotaenia praecox",
+      "slug": {
+        "_type": "slug",
+        "current": "melanotaenia-praecox"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-mikrogeophagus-altispinosus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Bolivian Ram",
+      "region": "South America",
+      "scientificName": "Mikrogeophagus altispinosus",
+      "slug": {
+        "_type": "slug",
+        "current": "mikrogeophagus-altispinosus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-nematobrycon-palmeri",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Emperor Tetra",
+      "region": null,
+      "scientificName": "Nematobrycon palmeri",
+      "slug": {
+        "_type": "slug",
+        "current": "nematobrycon-palmeri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-osteoglossum-bicirrhosum",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Osteoglossidae",
+      "group": null,
+      "name": "Silver Arowana",
+      "region": "South America",
+      "scientificName": "Osteoglossum bicirrhosum",
+      "slug": {
+        "_type": "slug",
+        "current": "osteoglossum-bicirrhosum"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-otocinclus-affinis",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Loricariidae",
+      "group": null,
+      "name": "Otocinclus Catfish",
+      "region": "South America",
+      "scientificName": "Otocinclus affinis",
+      "slug": {
+        "_type": "slug",
+        "current": "otocinclus-affinis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pangio-kuhlii",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cobitidae",
+      "group": null,
+      "name": "Kuhli Loach",
+      "region": "Southeast Asia",
+      "scientificName": "Pangio kuhlii",
+      "slug": {
+        "_type": "slug",
+        "current": "pangio-kuhlii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-paracheirodon-axelrodi",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Characidae",
+      "group": null,
+      "name": "Cardinal Tetra",
+      "region": null,
+      "scientificName": "Paracheirodon axelrodi",
+      "slug": {
+        "_type": "slug",
+        "current": "paracheirodon-axelrodi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-paracheirodon-innesi",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Characidae",
+      "group": null,
+      "name": "Neon Tetra",
+      "region": "Amazon Basin",
+      "scientificName": "Paracheirodon innesi",
+      "slug": {
+        "_type": "slug",
+        "current": "paracheirodon-innesi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pelvicachromis-pulcher",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Kribensis",
+      "region": null,
+      "scientificName": "Pelvicachromis pulcher",
+      "slug": {
+        "_type": "slug",
+        "current": "pelvicachromis-pulcher"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pethia-conchonius",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Rosy Barb",
+      "region": "South Asia",
+      "scientificName": "Pethia conchonius",
+      "slug": {
+        "_type": "slug",
+        "current": "pethia-conchonius"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pethia-padamya",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Odessa Barb",
+      "region": null,
+      "scientificName": "Pethia padamya",
+      "slug": {
+        "_type": "slug",
+        "current": "pethia-padamya"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-phenacogrammus-interruptus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Alestidae",
+      "group": null,
+      "name": "Congo Tetra",
+      "region": null,
+      "scientificName": "Phenacogrammus interruptus",
+      "slug": {
+        "_type": "slug",
+        "current": "phenacogrammus-interruptus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-poecilia-reticulata",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Poeciliidae",
+      "group": null,
+      "name": "Guppy",
+      "region": "South America",
+      "scientificName": "Poecilia reticulata",
+      "slug": {
+        "_type": "slug",
+        "current": "poecilia-reticulata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-poecilia-sphenops",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Poeciliidae",
+      "group": null,
+      "name": "Short-finned Molly",
+      "region": "Central America",
+      "scientificName": "Poecilia sphenops",
+      "slug": {
+        "_type": "slug",
+        "current": "poecilia-sphenops"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-poecilia-wingei",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Poeciliidae",
+      "group": null,
+      "name": "Endler's Livebearer",
+      "region": null,
+      "scientificName": "Poecilia wingei",
+      "slug": {
+        "_type": "slug",
+        "current": "poecilia-wingei"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pseudanthias-squamipinnis",
+      "_type": "species",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Serranidae",
+      "group": null,
+      "name": "Lyretail Anthias",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Pseudanthias squamipinnis",
+      "slug": {
+        "_type": "slug",
+        "current": "pseudanthias-squamipinnis"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "species-pseudotropheus-zebra",
+      "_type": "species",
+      "aquariumStyle": [
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Zebra Mbuna Cichlid",
+      "region": "Africa",
+      "scientificName": "Pseudotropheus zebra",
+      "slug": {
+        "_type": "slug",
+        "current": "pseudotropheus-zebra"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pterophyllum-scalare",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Angelfish",
+      "region": "Amazon Basin",
+      "scientificName": "Pterophyllum scalare",
+      "slug": {
+        "_type": "slug",
+        "current": "pterophyllum-scalare"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-puntigrus-tetrazona",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Tiger Barb",
+      "region": null,
+      "scientificName": "Puntigrus tetrazona",
+      "slug": {
+        "_type": "slug",
+        "current": "puntigrus-tetrazona"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-puntius-titteya",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Cyprinidae",
+      "group": null,
+      "name": "Cherry Barb",
+      "region": "South Asia",
+      "scientificName": "Puntius titteya",
+      "slug": {
+        "_type": "slug",
+        "current": "puntius-titteya"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-pygocentrus-nattereri",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Serrasalmidae",
+      "group": null,
+      "name": "Red-bellied Piranha",
+      "region": "South America",
+      "scientificName": "Pygocentrus nattereri",
+      "slug": {
+        "_type": "slug",
+        "current": "pygocentrus-nattereri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-scleropages-formosus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Osteoglossidae",
+      "group": null,
+      "name": "Asian Arowana",
+      "region": "Southeast Asia",
+      "scientificName": "Scleropages formosus",
+      "slug": {
+        "_type": "slug",
+        "current": "scleropages-formosus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-scleropages-jardinii",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator",
+        "Large Fish"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Osteoglossidae",
+      "group": null,
+      "name": "Jardini Arowana",
+      "region": "Australia / Oceania",
+      "scientificName": "Scleropages jardinii",
+      "slug": {
+        "_type": "slug",
+        "current": "scleropages-jardinii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-serrasalmus-rhombeus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Predator"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Serrasalmidae",
+      "group": null,
+      "name": "Black Piranha",
+      "region": "South America",
+      "scientificName": "Serrasalmus rhombeus",
+      "slug": {
+        "_type": "slug",
+        "current": "serrasalmus-rhombeus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-symphysodon-aequifasciatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Discus",
+      "region": "Amazon Basin",
+      "scientificName": "Symphysodon aequifasciatus",
+      "slug": {
+        "_type": "slug",
+        "current": "symphysodon-aequifasciatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-thorichthys-meeki",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Cichlidae",
+      "group": null,
+      "name": "Firemouth Cichlid",
+      "region": "Central America",
+      "scientificName": "Thorichthys meeki",
+      "slug": {
+        "_type": "slug",
+        "current": "thorichthys-meeki"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trichogaster-lalius",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Dwarf Gourami",
+      "region": "South Asia",
+      "scientificName": "Trichogaster lalius",
+      "slug": {
+        "_type": "slug",
+        "current": "trichogaster-lalius"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trichopodus-leerii",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Pearl Gourami",
+      "region": "Southeast Asia",
+      "scientificName": "Trichopodus leerii",
+      "slug": {
+        "_type": "slug",
+        "current": "trichopodus-leerii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trichopodus-trichopterus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Three-Spot Gourami",
+      "region": "Southeast Asia",
+      "scientificName": "Trichopodus trichopterus",
+      "slug": {
+        "_type": "slug",
+        "current": "trichopodus-trichopterus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trichopsis-pumila",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Osphronemidae",
+      "group": null,
+      "name": "Sparkling Gourami",
+      "region": "Southeast Asia",
+      "scientificName": "Trichopsis pumila",
+      "slug": {
+        "_type": "slug",
+        "current": "trichopsis-pumila"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trigonostigma-espei",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Lambchop Rasbora",
+      "region": "Southeast Asia",
+      "scientificName": "Trigonostigma espei",
+      "slug": {
+        "_type": "slug",
+        "current": "trigonostigma-espei"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-trigonostigma-heteromorpha",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Shrimp",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Danionidae",
+      "group": null,
+      "name": "Harlequin Rasbora",
+      "region": "Southeast Asia",
+      "scientificName": "Trigonostigma heteromorpha",
+      "slug": {
+        "_type": "slug",
+        "current": "trigonostigma-heteromorpha"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-xiphophorus-hellerii",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Poeciliidae",
+      "group": null,
+      "name": "Swordtail",
+      "region": "Central America",
+      "scientificName": "Xiphophorus hellerii",
+      "slug": {
+        "_type": "slug",
+        "current": "xiphophorus-hellerii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-xiphophorus-maculatus",
+      "_type": "species",
+      "aquariumStyle": [
+        "Betta / Nano",
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": "Poeciliidae",
+      "group": null,
+      "name": "Southern Platy",
+      "region": "Central America",
+      "scientificName": "Xiphophorus maculatus",
+      "slug": {
+        "_type": "slug",
+        "current": "xiphophorus-maculatus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "species-zebrasoma-flavescens",
+      "_type": "species",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": "Acanthuridae",
+      "group": null,
+      "name": "Yellow Tang",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Zebrasoma flavescens",
+      "slug": {
+        "_type": "slug",
+        "current": "zebrasoma-flavescens"
+      },
+      "waterType": "saltwater"
+    }
+  ],
+  "plant": [
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSWr0",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ludwigia Red",
+      "region": null,
+      "scientificName": "Ludwigia palustris",
+      "slug": "ludwigia-palustris",
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSWv7",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Alternanthera Reineckii Mini",
+      "region": null,
+      "scientificName": "Alternanthera reineckii Mini",
+      "slug": "alternanthera-reineckii-mini",
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "7kdig6Bk6SZq4GZkXcVaBK",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Red Rotala",
+      "region": "Southeast Asia",
+      "scientificName": "Rotala rotundifolia",
+      "slug": {
+        "_type": "slug",
+        "current": "red-rotala"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlBjA",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Anubias nana Petite",
+      "region": "Southeast Asia",
+      "scientificName": "Anubias barteri var. nana",
+      "slug": {
+        "_type": "slug",
+        "current": "anubias-nana-petite"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Ciitg",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Christmas Moss",
+      "region": null,
+      "scientificName": "Vesicularia montagnei",
+      "slug": {
+        "_type": "slug",
+        "current": "vesicularia-montagnei"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Cj9qO",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Rotala sp. h'ra",
+      "region": "Southeast Asia",
+      "scientificName": "Rotala sp. h'ra",
+      "slug": {
+        "_type": "slug",
+        "current": "rotala-sp-hra"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjA0S",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ludwigia arcuata",
+      "region": "Southeast Asia",
+      "scientificName": "Ludwigia arcuata",
+      "slug": {
+        "_type": "slug",
+        "current": "ludwigia-arcuata"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjAAW",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Bacopa caroliniana",
+      "region": null,
+      "scientificName": "Bacopa caroliniana",
+      "slug": {
+        "_type": "slug",
+        "current": "bacopa-caroliniana"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CtuPo",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Myriophyllum",
+      "region": null,
+      "scientificName": "Myriophyllum aquaticum",
+      "slug": {
+        "_type": "slug",
+        "current": "myriophyllum-aquaticum"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Peacock Moss",
+      "region": null,
+      "scientificName": "Taxiphyllum sp.",
+      "slug": {
+        "_type": "slug",
+        "current": "peacock-moss"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuIOq",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Sagittaria",
+      "region": "South America",
+      "scientificName": "Sagittaria platyphylla",
+      "slug": {
+        "_type": "slug",
+        "current": "sagittaria-platyphylla"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuYam",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Rice Paddy Herb",
+      "region": null,
+      "scientificName": "Limnophila aromatica",
+      "slug": {
+        "_type": "slug",
+        "current": "limnophila-aromatica"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DFYK8",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Frogbit",
+      "region": null,
+      "scientificName": "Limnobium laevigatum",
+      "slug": {
+        "_type": "slug",
+        "current": "limnobium-laevigatum"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXPL6",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Duckweed",
+      "region": "Cosmopolitan",
+      "scientificName": "Lemna minor",
+      "slug": {
+        "_type": "slug",
+        "current": "lemna-minor"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jnflew",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Taiwan Moss",
+      "region": null,
+      "scientificName": "Taxiphyllum alternans",
+      "slug": {
+        "_type": "slug",
+        "current": "taxiphyllum-alternans"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfltO",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Weeping Moss",
+      "region": null,
+      "scientificName": "Vesicularia ferriei",
+      "slug": {
+        "_type": "slug",
+        "current": "vesicularia-ferriei"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng2hi",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Flame Moss",
+      "region": null,
+      "scientificName": "Taxiphyllum sp.",
+      "slug": {
+        "_type": "slug",
+        "current": "flame-moss"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng4A2",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Lilaeopsis",
+      "region": null,
+      "scientificName": "Lilaeopsis brasiliensis",
+      "slug": {
+        "_type": "slug",
+        "current": "lilaeopsis-brasiliensis"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2xiA",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Water Sprite",
+      "region": null,
+      "scientificName": "Ceratopteris thalictroides",
+      "slug": {
+        "_type": "slug",
+        "current": "ceratopteris-thalictroides"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6Ttdg",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Glossostigma",
+      "region": null,
+      "scientificName": "Glossostigma elatinoides",
+      "slug": {
+        "_type": "slug",
+        "current": "glossostigma-elatinoides"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79SZ2",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Red Root Floater",
+      "region": null,
+      "scientificName": "Phyllanthus fluitans",
+      "slug": {
+        "_type": "slug",
+        "current": "phyllanthus-fluitans"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79SjI",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Rotala Macrandra",
+      "region": "Southeast Asia",
+      "scientificName": "Rotala macrandra",
+      "slug": {
+        "_type": "slug",
+        "current": "rotala-macrandra"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79StY",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ludwigia Super Red",
+      "region": "Southeast Asia",
+      "scientificName": "Ludwigia sp. Super Red",
+      "slug": {
+        "_type": "slug",
+        "current": "ludwigia-super-red"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KJ84",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Lettuce",
+      "region": "Europe",
+      "scientificName": "Pistia stratiotes",
+      "slug": {
+        "_type": "slug",
+        "current": "pistia-stratiotes"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KJKt",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Salvinia",
+      "region": null,
+      "scientificName": "Salvinia cucullata",
+      "slug": {
+        "_type": "slug",
+        "current": "salvinia-cucullata"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KvLg",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Java Moss",
+      "region": "Southeast Asia",
+      "scientificName": "Taxiphyllum barbieri",
+      "slug": {
+        "_type": "slug",
+        "current": "taxiphyllum-barbieri"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KvVw",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Marimo Moss Ball",
+      "region": null,
+      "scientificName": "Aegagropila linnaei",
+      "slug": {
+        "_type": "slug",
+        "current": "aegagropila-linnaei"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "WeSCIjvgoYC0LmYF97LSPP",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Staurogyne repens",
+      "region": null,
+      "scientificName": "Staurogyne repens",
+      "slug": {
+        "_type": "slug",
+        "current": "staurogyne-repens"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLTD",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Cryptocoryne beckettii",
+      "region": null,
+      "scientificName": "Cryptocoryne beckettii",
+      "slug": {
+        "_type": "slug",
+        "current": "cryptocoryne-beckettii"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLW3",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Hydrocotyle tripartita",
+      "region": null,
+      "scientificName": "Hydrocotyle tripartita",
+      "slug": {
+        "_type": "slug",
+        "current": "hydrocotyle-tripartita"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLYt",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Pygmy Chain Sword",
+      "region": null,
+      "scientificName": "Echinodorus tenellus",
+      "slug": {
+        "_type": "slug",
+        "current": "pygmy-chain-sword"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLbj",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Pogostemon stellatus",
+      "region": null,
+      "scientificName": "Pogostemon stellatus",
+      "slug": {
+        "_type": "slug",
+        "current": "pogostemon-stellatus"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLeZ",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Rotala indica",
+      "region": "Southeast Asia",
+      "scientificName": "Rotala indica",
+      "slug": {
+        "_type": "slug",
+        "current": "rotala-indica"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLhP",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Anacharis",
+      "region": null,
+      "scientificName": "Egeria densa",
+      "slug": {
+        "_type": "slug",
+        "current": "anacharis"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTLn5",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Blyxa japonica",
+      "region": null,
+      "scientificName": "Blyxa japonica",
+      "slug": {
+        "_type": "slug",
+        "current": "blyxa-japonica"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-alternanthera-reineckii",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Alternanthera reineckii",
+      "region": null,
+      "scientificName": "Alternanthera reineckii",
+      "slug": {
+        "_type": "slug",
+        "current": "alternanthera-reineckii"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-amazon-sword",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Amazon Sword",
+      "region": "South America",
+      "scientificName": "Echinodorus grisebachii",
+      "slug": {
+        "_type": "slug",
+        "current": "amazon-sword"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-ambulia",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Ambulia",
+      "region": null,
+      "scientificName": "Limnophila sessiliflora",
+      "slug": {
+        "_type": "slug",
+        "current": "ambulia"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-anubias-barteri",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Anubias barteri",
+      "region": "Southeast Asia",
+      "scientificName": "Anubias barteri",
+      "slug": {
+        "_type": "slug",
+        "current": "anubias-barteri"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-bucephalandra",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Bucephalandra",
+      "region": "Southeast Asia",
+      "scientificName": "Bucephalandra spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "bucephalandra"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-cabomba-caroliniana",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Cabomba caroliniana",
+      "region": null,
+      "scientificName": "Cabomba caroliniana",
+      "slug": {
+        "_type": "slug",
+        "current": "cabomba-caroliniana"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-cryptocoryne-balansae",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Cryptocoryne balansae",
+      "region": null,
+      "scientificName": "Cryptocoryne balansae",
+      "slug": {
+        "_type": "slug",
+        "current": "cryptocoryne-balansae"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-cryptocoryne-wendtii",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Cryptocoryne wendtii",
+      "region": null,
+      "scientificName": "Cryptocoryne wendtii",
+      "slug": {
+        "_type": "slug",
+        "current": "cryptocoryne-wendtii"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-dwarf-baby-tears",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Baby Tears",
+      "region": "Europe",
+      "scientificName": "Hemianthus callitrichoides",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-baby-tears"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-dwarf-hairgrass",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Hairgrass",
+      "region": "Europe",
+      "scientificName": "Eleocharis parvula",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-hairgrass"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-dwarf-sagittaria",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Dwarf Sagittaria",
+      "region": "South America",
+      "scientificName": "Sagittaria subulata",
+      "slug": {
+        "_type": "slug",
+        "current": "dwarf-sagittaria"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-hornwort",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Hornwort",
+      "region": "Cosmopolitan",
+      "scientificName": "Ceratophyllum demersum",
+      "slug": {
+        "_type": "slug",
+        "current": "hornwort"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-java-fern",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Java Fern",
+      "region": "Southeast Asia",
+      "scientificName": "Microsorum pteropus",
+      "slug": {
+        "_type": "slug",
+        "current": "java-fern"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-ludwigia-repens",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Ludwigia repens",
+      "region": "Southeast Asia",
+      "scientificName": "Ludwigia repens",
+      "slug": {
+        "_type": "slug",
+        "current": "ludwigia-repens"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-marsilea-hirsuta",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Marsilea hirsuta",
+      "region": null,
+      "scientificName": "Marsilea hirsuta",
+      "slug": {
+        "_type": "slug",
+        "current": "marsilea-hirsuta"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-monte-carlo",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Monte Carlo",
+      "region": null,
+      "scientificName": "Micranthemum tweediei",
+      "slug": {
+        "_type": "slug",
+        "current": "monte-carlo"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-rotala-rotundifolia",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Rotala rotundifolia",
+      "region": "Southeast Asia",
+      "scientificName": "Rotala rotundifolia",
+      "slug": {
+        "_type": "slug",
+        "current": "rotala-rotundifolia"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-vallisneria-spiralis",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Vallisneria spiralis",
+      "region": "South America",
+      "scientificName": "Vallisneria spiralis",
+      "slug": {
+        "_type": "slug",
+        "current": "vallisneria-spiralis"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "plant-water-wisteria",
+      "_type": "plant",
+      "aquariumStyle": [
+        "Low-Tech"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Water Wisteria",
+      "region": null,
+      "scientificName": "Hygrophila difformis",
+      "slug": {
+        "_type": "slug",
+        "current": "water-wisteria"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3oqyay",
+      "_type": "plant",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Scarlet Temple",
+      "region": null,
+      "scientificName": "Alternanthera reineckii Rosanervig",
+      "slug": "scarlet-temple",
+      "waterType": "freshwater"
+    }
+  ],
+  "coral": [
+    {
+      "_id": "1z8rQFHeojDMTUo2hX9Rpx",
+      "_type": "coral",
+      "aquariumStyle": [
+        "NPS"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": null,
+      "group": null,
+      "name": "Dendronephthya",
+      "region": null,
+      "scientificName": "Dendronephthya sp.",
+      "slug": {
+        "_type": "slug",
+        "current": "dendronephthya"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXLR",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Acan Lord",
+      "region": null,
+      "scientificName": "Acanthastrea lordhowensis",
+      "slug": "acanthastrea-lordhowensis",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXOj",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Scolymia",
+      "region": null,
+      "scientificName": "Scolymia lacera",
+      "slug": "scolymia-lacera",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXVJ",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Sinularia",
+      "region": null,
+      "scientificName": "Sinularia sp.",
+      "slug": "sinularia",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSrVl7",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Montipora Digitata",
+      "region": null,
+      "scientificName": "Montipora digitata",
+      "slug": {
+        "_type": "slug",
+        "current": "montipora-digitata"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmjC",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Galaxea",
+      "region": null,
+      "scientificName": "Galaxea fascicularis",
+      "slug": {
+        "_type": "slug",
+        "current": "galaxea"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmlr",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Cauliflower Coral",
+      "region": null,
+      "scientificName": "Pocillopora damicornis",
+      "slug": {
+        "_type": "slug",
+        "current": "cauliflower-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmoW",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Bird’s Nest Coral",
+      "region": null,
+      "scientificName": "Seriatopora hystrix",
+      "slug": {
+        "_type": "slug",
+        "current": "bird-s-nest-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmrB",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Honeycomb Brain Coral",
+      "region": null,
+      "scientificName": "Favia favus",
+      "slug": {
+        "_type": "slug",
+        "current": "honeycomb-brain-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmtq",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Elegance Coral",
+      "region": null,
+      "scientificName": "Catalaphyllia jardinei",
+      "slug": {
+        "_type": "slug",
+        "current": "elegance-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlmwV",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Open Brain Coral",
+      "region": null,
+      "scientificName": "Trachyphyllia geoffroyi",
+      "slug": {
+        "_type": "slug",
+        "current": "open-brain-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "Gk33CfLE6ahVd3Ve601Vay",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Fungia Coral",
+      "region": null,
+      "scientificName": "Fungia spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "fungia-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjDmS",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Green Star Polyps",
+      "region": null,
+      "scientificName": "Briareum asbestinum",
+      "slug": {
+        "_type": "slug",
+        "current": "briareum-asbestinum"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CttlY",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Palythoa",
+      "region": null,
+      "scientificName": "Palythoa spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "palythoa-spp"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Ctty8",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Lobo Coral",
+      "region": null,
+      "scientificName": "Lobophyllia spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "lobophyllia-spp"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9Ctu8C",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Bubble Coral",
+      "region": null,
+      "scientificName": "Plerogyra sinuosa",
+      "slug": {
+        "_type": "slug",
+        "current": "plerogyra-sinuosa"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DJffc",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Dendrophyllia Coral",
+      "region": null,
+      "scientificName": "Dendrophyllia spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "dendrophyllia-spp"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnTHt0",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Torch Coral",
+      "region": null,
+      "scientificName": "Euphyllia glabrescens",
+      "slug": {
+        "_type": "slug",
+        "current": "euphyllia-glabrescens"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnTgZ4",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Discosoma Mushroom",
+      "region": null,
+      "scientificName": "Discosoma spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "discosoma-spp"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng29O",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Trumpet Coral",
+      "region": null,
+      "scientificName": "Caulastrea furcata",
+      "slug": {
+        "_type": "slug",
+        "current": "caulastrea-furcata"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng2TG",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Favia Brain Coral",
+      "region": null,
+      "scientificName": "Favia favus",
+      "slug": {
+        "_type": "slug",
+        "current": "favia-favus"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnvhK2",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Stylophora Coral",
+      "region": null,
+      "scientificName": "Stylophora pistillata",
+      "slug": {
+        "_type": "slug",
+        "current": "stylophora-pistillata"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jnvipy",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Chalice Coral",
+      "region": null,
+      "scientificName": "Echinophyllia spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "echinophyllia-spp"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2Xh0",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Pavona Coral",
+      "region": null,
+      "scientificName": "Pavona cactusis",
+      "slug": {
+        "_type": "slug",
+        "current": "pavona-cactusis"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2rGw",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Rhodactis Mushroom",
+      "region": null,
+      "scientificName": "Rhodactis spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "rhodactis-spp"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6TtLj",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Frogspawn Coral",
+      "region": null,
+      "scientificName": "Euphyllia divisa",
+      "slug": {
+        "_type": "slug",
+        "current": "euphyllia-divisa"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6TtVz",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Xenia Coral",
+      "region": null,
+      "scientificName": "Xenia spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "xenia-spp"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6UVbu",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Kenya Tree Coral",
+      "region": null,
+      "scientificName": "Capnella imbricata",
+      "slug": {
+        "_type": "slug",
+        "current": "capnella-imbricata"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2KnjUP",
+      "_type": "coral",
+      "aquariumStyle": [
+        "NPS"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Sun Coral",
+      "region": null,
+      "scientificName": "Tubastraea faulkneri",
+      "slug": {
+        "_type": "slug",
+        "current": "sun-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2KnkWY",
+      "_type": "coral",
+      "aquariumStyle": [
+        "NPS"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Tubing Coral",
+      "region": null,
+      "scientificName": "Tubastraea coccinea",
+      "slug": {
+        "_type": "slug",
+        "current": "tubing-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLdGW",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Pocillopora",
+      "region": null,
+      "scientificName": "Pocillopora damicornis",
+      "slug": "pocillopora-damicornis",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "bXkDxvOEdfzf4NR9Z3Reey",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Alveopora Coral",
+      "region": null,
+      "scientificName": "Alveopora spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "alveopora-coral"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "coral-blastomussa",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Blastomussa",
+      "region": null,
+      "scientificName": "Blastomussa wellsi",
+      "slug": {
+        "_type": "slug",
+        "current": "blastomussa"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-candy-cane-coral",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Candy Cane Coral",
+      "region": null,
+      "scientificName": "Caulastrea furcata",
+      "slug": {
+        "_type": "slug",
+        "current": "candy-cane-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-duncan-coral",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Duncan Coral",
+      "region": null,
+      "scientificName": "Duncanopsammia axifuga",
+      "slug": {
+        "_type": "slug",
+        "current": "duncan-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-goniopora",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Goniopora",
+      "region": null,
+      "scientificName": "Goniopora stokesi",
+      "slug": {
+        "_type": "slug",
+        "current": "goniopora"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-hammer-coral",
+      "_type": "coral",
+      "aquariumStyle": [
+        "LPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Hammer Coral",
+      "region": null,
+      "scientificName": "Euphyllia ancora",
+      "slug": {
+        "_type": "slug",
+        "current": "hammer-coral"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-montipora-capricornis",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Montipora Capricornis",
+      "region": null,
+      "scientificName": "Montipora capricornis",
+      "slug": {
+        "_type": "slug",
+        "current": "montipora-capricornis"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-ricordea-mushroom",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Ricordea Mushroom",
+      "region": null,
+      "scientificName": "Ricordea florida",
+      "slug": {
+        "_type": "slug",
+        "current": "ricordea-mushroom"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-staghorn-acropora",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": "Staghorn Acropora",
+      "region": null,
+      "scientificName": "Acropora millepora",
+      "slug": {
+        "_type": "slug",
+        "current": "staghorn-acropora"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-toadstool-leather",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Toadstool Leather",
+      "region": null,
+      "scientificName": "Sarcophyton spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "toadstool-leather"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "coral-zoanthids",
+      "_type": "coral",
+      "aquariumStyle": [
+        "Soft Coral Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": "Zoanthids",
+      "region": null,
+      "scientificName": "Zoanthus spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "zoanthids"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3or0mk",
+      "_type": "coral",
+      "aquariumStyle": [
+        "SPS Reef",
+        "Mixed Reef"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": "Cat's Paw Coral",
+      "region": null,
+      "scientificName": "Stylophora pistillata",
+      "slug": {
+        "_type": "slug",
+        "current": "stylophora-pistillata-catspaw"
+      },
+      "waterType": "saltwater"
+    }
+  ],
+  "invertebrate": [
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXkw",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "starfish",
+      "name": "Brittle Star",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Ophiocoma sp.",
+      "slug": "ophiocoma",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Cherry Shrimp",
+      "region": "East Asia",
+      "scientificName": "Neocaridina davidi",
+      "slug": {
+        "_type": "slug",
+        "current": "neocaridina-davidi-cherry"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSs8fJ",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Nerite Snail",
+      "region": "Southeast Asia",
+      "scientificName": "Neritina natalensis",
+      "slug": {
+        "_type": "slug",
+        "current": "neritina-natalensis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CuIo0",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "shrimp",
+      "name": "Harlequin Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Hymenocera picta",
+      "slug": {
+        "_type": "slug",
+        "current": "hymenocera-picta"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DFZ8S",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "crab",
+      "name": "Vampire Crab",
+      "region": null,
+      "scientificName": "Geosesarma dennerle",
+      "slug": {
+        "_type": "slug",
+        "current": "geosesarma-dennerle"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DJhXM",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Rabbit Snail",
+      "region": null,
+      "scientificName": "Tylomelania spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "tylomelania-spp"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXOqu",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Taiwan Bee Shrimp",
+      "region": "East Asia",
+      "scientificName": "Caridina cantonensis",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-cantonensis-taiwan-bee"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXP0y",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": null,
+      "group": "shrimp",
+      "name": "Blue Bolt Shrimp",
+      "region": null,
+      "scientificName": "Caridina cantonensis",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-cantonensis-blue-bolt"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jnfm4E",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "crab",
+      "name": "Emerald Crab",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Mithraculus sculptus",
+      "slug": {
+        "_type": "slug",
+        "current": "mithraculus-sculptus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfmDG",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Nassarius Snail",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Nassarius spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "nassarius-spp"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfmKU",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Turbo Snail",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Turbo spp.",
+      "slug": {
+        "_type": "slug",
+        "current": "turbo-spp"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jng5wE",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "crab",
+      "name": "Scarlet Hermit Crab",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Paguristes cadenati",
+      "slug": {
+        "_type": "slug",
+        "current": "paguristes-cadenati"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JngE2Q",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Blue Diamond Shrimp",
+      "region": null,
+      "scientificName": "Neocaridina davidi",
+      "slug": {
+        "_type": "slug",
+        "current": "neocaridina-blue-diamond"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2rTa",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "worm",
+      "name": "Feather Duster Worm",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Sabellastarte magnifica",
+      "slug": {
+        "_type": "slug",
+        "current": "sabellastarte-magnifica"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6UVmA",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Vampire Shrimp",
+      "region": null,
+      "scientificName": "Atya gabonensis",
+      "slug": {
+        "_type": "slug",
+        "current": "atya-gabonensis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6UVyz",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Babaulti Shrimp",
+      "region": null,
+      "scientificName": "Caridina babaulti",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-babaulti"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hj3X",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Blue Tiger Shrimp",
+      "region": null,
+      "scientificName": "Caridina sp.",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-blue-tiger"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6iAEQ",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Snowball Shrimp",
+      "region": null,
+      "scientificName": "Caridina sp.",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-snowball"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6iAOg",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Golden Back Yellow Shrimp",
+      "region": null,
+      "scientificName": "Neocaridina davidi",
+      "slug": {
+        "_type": "slug",
+        "current": "neocaridina-golden-back-yellow"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79WPX",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "crayfish",
+      "name": "Blue Crayfish",
+      "region": null,
+      "scientificName": "Procambarus clarkii",
+      "slug": {
+        "_type": "slug",
+        "current": "procambarus-clarkii-blue"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KIaj",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Expert",
+      "family": null,
+      "group": "shrimp",
+      "name": "King Kong Shrimp",
+      "region": null,
+      "scientificName": "Caridina cantonensis",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-cantonensis-king-kong"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KIq7",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Sulawesi Cardinal Shrimp",
+      "region": null,
+      "scientificName": "Caridina dennerli",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-dennerli"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7Ket0",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "clam",
+      "name": "Tridacna Maxima Clam",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Tridacna maxima",
+      "slug": {
+        "_type": "slug",
+        "current": "tridacna-maxima"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLdvC",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "shrimp",
+      "name": "Sulawesi Cardinal Shrimp",
+      "region": "East Asia",
+      "scientificName": "Caridina omnipos",
+      "slug": "caridina-omnipos",
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLeDy",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "worm",
+      "name": "Sea Cucumber",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Holothuria sp.",
+      "slug": "holothuria",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-anentome-helena",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Assassin Snail",
+      "region": null,
+      "scientificName": "Anentome helena",
+      "slug": {
+        "_type": "slug",
+        "current": "anentome-helena"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-astropecten-polyacanthus",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "starfish",
+      "name": "Sand-Sifting Starfish",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Astropecten polyacanthus",
+      "slug": {
+        "_type": "slug",
+        "current": "astropecten-polyacanthus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-atyopsis-moluccensis",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "shrimp",
+      "name": "Bamboo Shrimp",
+      "region": null,
+      "scientificName": "Atyopsis moluccensis",
+      "slug": {
+        "_type": "slug",
+        "current": "atyopsis-moluccensis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-caridina-cantonensis",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": "shrimp",
+      "name": "Crystal Red Shrimp",
+      "region": null,
+      "scientificName": "Caridina cantonensis",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-cantonensis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-caridina-multidentata",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Amano Shrimp",
+      "region": "East Asia",
+      "scientificName": "Caridina multidentata",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-multidentata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-entacmaea-quadricolor",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "anemone",
+      "name": "Bubble-Tip Anemone",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Entacmaea quadricolor",
+      "slug": {
+        "_type": "slug",
+        "current": "entacmaea-quadricolor"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-limnopilos-naiyanetri",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "crab",
+      "name": "Thai Micro Crab",
+      "region": null,
+      "scientificName": "Limnopilos naiyanetri",
+      "slug": {
+        "_type": "slug",
+        "current": "limnopilos-naiyanetri"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-lysmata-amboinensis",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Cleaner Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Lysmata amboinensis",
+      "slug": {
+        "_type": "slug",
+        "current": "lysmata-amboinensis"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-lysmata-debelius",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Fire Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Lysmata debelius",
+      "slug": {
+        "_type": "slug",
+        "current": "lysmata-debelius"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-lysmata-wurdemanni",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Peppermint Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Lysmata wurdemanni",
+      "slug": {
+        "_type": "slug",
+        "current": "lysmata-wurdemanni"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-melanoides-tuberculata",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Malaysian Trumpet Snail",
+      "region": null,
+      "scientificName": "Melanoides tuberculata",
+      "slug": {
+        "_type": "slug",
+        "current": "melanoides-tuberculata"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-mespilia-globulus",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "urchin",
+      "name": "Tuxedo Urchin",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Mespilia globulus",
+      "slug": {
+        "_type": "slug",
+        "current": "mespilia-globulus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-neocaridina-davidi",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Red Cherry Shrimp",
+      "region": "East Asia",
+      "scientificName": "Neocaridina davidi",
+      "slug": {
+        "_type": "slug",
+        "current": "neocaridina-davidi"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-palaemon-paludosus",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Ghost Shrimp",
+      "region": null,
+      "scientificName": "Palaemon paludosus",
+      "slug": {
+        "_type": "slug",
+        "current": "palaemon-paludosus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-perisesarma-bidens",
+      "_type": "invertebrate",
+      "aquariumStyle": [],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "crab",
+      "name": "Red Claw Crab",
+      "region": null,
+      "scientificName": "Perisesarma bidens",
+      "slug": {
+        "_type": "slug",
+        "current": "perisesarma-bidens"
+      },
+      "waterType": "brackish"
+    },
+    {
+      "_id": "invertebrate-phymanthus-crucifer",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "anemone",
+      "name": "Rock Flower Anemone",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Phymanthus crucifer",
+      "slug": {
+        "_type": "slug",
+        "current": "phymanthus-crucifer"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-planorbarius-corneus",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Great Ramshorn Snail",
+      "region": null,
+      "scientificName": "Planorbarius corneus",
+      "slug": {
+        "_type": "slug",
+        "current": "planorbarius-corneus"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-pomacea-bridgesii",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Mystery Snail",
+      "region": "South America",
+      "scientificName": "Pomacea bridgesii",
+      "slug": {
+        "_type": "slug",
+        "current": "pomacea-bridgesii"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "invertebrate-stenopus-hispidus",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "shrimp",
+      "name": "Coral Banded Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Stenopus hispidus",
+      "slug": {
+        "_type": "slug",
+        "current": "stenopus-hispidus"
+      },
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "invertebrate-vittina-natalensis",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Planted"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Zebra Nerite Snail",
+      "region": "Southeast Asia",
+      "scientificName": "Vittina natalensis",
+      "slug": {
+        "_type": "slug",
+        "current": "vittina-natalensis"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3or1AM",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Community",
+        "Shrimp"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "shrimp",
+      "name": "Sulawesi Red Cherry Shrimp",
+      "region": "East Asia",
+      "scientificName": "Caridina dennerli",
+      "slug": {
+        "_type": "slug",
+        "current": "caridina-dennerli-red-cherry"
+      },
+      "waterType": "freshwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3or1pg",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": "snail",
+      "name": "Cerith Snail",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Cerithium sp.",
+      "slug": "cerithium",
+      "waterType": "saltwater"
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3or21U",
+      "_type": "invertebrate",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "Invertebrate-focused"
+      ],
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": "shrimp",
+      "name": "Sexy Anemone Shrimp",
+      "region": "Marine Indo-Pacific",
+      "scientificName": "Periclimenes brevicarpalis",
+      "slug": "periclimenes-brevicarpalis",
+      "waterType": "saltwater"
+    }
+  ],
+  "equipment": [
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXqh",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Planted",
+        "Aquascaping",
+        "High-Tech / CO2"
+      ],
+      "category": "Light",
+      "difficulty": null,
+      "family": null,
+      "group": "Lighting",
+      "name": "Planted LED Light",
+      "region": null,
+      "scientificName": null,
+      "slug": "planted-led-light",
+      "waterType": null
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSXuo",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "LPS Reef",
+        "SPS Reef"
+      ],
+      "category": "Light",
+      "difficulty": null,
+      "family": null,
+      "group": "Lighting",
+      "name": "Reef LED Light",
+      "region": null,
+      "scientificName": null,
+      "slug": "reef-led-light",
+      "waterType": null
+    },
+    {
+      "_id": "1z8rQFHeojDMTUo2hXSYAR",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef",
+        "SPS Reef"
+      ],
+      "category": "Dosing",
+      "difficulty": null,
+      "family": null,
+      "group": "Marine",
+      "name": "Dosing Pump",
+      "region": null,
+      "scientificName": null,
+      "slug": "dosing-pump",
+      "waterType": null
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSrZVh",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Calcium Reactor",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "calcium-reactor"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "5oQB2MZ7gmZXjdwFqSra6F",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Refractometer",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "refractometer"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9CjFgi",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Aquarium Thermometer",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "aquarium-thermometer"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DXs4W",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Media Reactor",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "media-reactor"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnTI3q",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Maintenance",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Gravel Vacuum",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "gravel-vacuum"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnTkGU",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Dechlorinator",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "dechlorinator"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnfmX8",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": "Pump",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Wave Maker",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "wave-maker"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jnfmla",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Activated Carbon",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "activated-carbon"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnvlZm",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "PAR Meter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "par-meter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnvloE",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Planted",
+        "Aquascaping"
+      ],
+      "category": "Substrate",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Aquarium Soil Substrate",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "aquarium-soil-substrate"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2s7K",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Automatic Water Change System",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "automatic-water-change-system"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6Ttnw",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Digital pH Meter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "digital-ph-meter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6UXsx",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "TDS Meter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "tds-meter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hjas",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": "Pump",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Return Pump",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "return-pump"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hjl8",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Chiller",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Aquarium Chiller",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "aquarium-chiller"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hwkO",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Filter Floss",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "filter-floss"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A6hwxD",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Aquarium Cooling Fan",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "aquarium-cooling-fan"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79h5B",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "ATO",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Auto Top-Off System",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "auto-top-off-system"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7Kfv7",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "UV Sterilizer",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "uv-sterilizer"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLeg8",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community",
+        "Planted",
+        "Mixed Reef"
+      ],
+      "category": "Heater",
+      "difficulty": null,
+      "family": null,
+      "group": "Temperature",
+      "name": "Digital Heater",
+      "region": null,
+      "scientificName": null,
+      "slug": "digital-heater",
+      "waterType": null
+    },
+    {
+      "_id": "PZ8Kai1VvEL468NS2LLfrf",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Planted",
+        "High-Tech / CO2",
+        "Aquascaping"
+      ],
+      "category": "Substrate",
+      "difficulty": null,
+      "family": null,
+      "group": "Substrate",
+      "name": "Aquasoil Substrate",
+      "region": null,
+      "scientificName": null,
+      "slug": "aquasoil-substrate",
+      "waterType": null
+    },
+    {
+      "_id": "equipment-air-pump",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": "Pump",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Air Pump",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "air-pump"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-canister-filter",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Filter",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Canister Filter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "canister-filter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-circulation-pump-powerhead",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Mixed Reef"
+      ],
+      "category": "Pump",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Circulation Pump (Powerhead)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "circulation-pump-powerhead"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-co-regulator-kit",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Planted"
+      ],
+      "category": "CO₂ System",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "CO₂ Regulator Kit",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "co-regulator-kit"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-hang-on-back-filter",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Filter",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Hang-On-Back Filter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "hang-on-back-filter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-internal-filter",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Filter",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Internal Filter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "internal-filter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-led-aquarium-light",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Planted",
+        "Mixed Reef"
+      ],
+      "category": "Light",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "LED Aquarium Light",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "led-aquarium-light"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-master-test-kit",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Master Test Kit",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "master-test-kit"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-sponge-filter",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Filter",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Sponge Filter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "sponge-filter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "equipment-submersible-heater",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Heater",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Submersible Heater",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "submersible-heater"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUcx",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Skimmer",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Protein Skimmer",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "protein-skimmer"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUfn",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Automatic Fish Feeder",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "automatic-fish-feeder"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUid",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "RO/DI Water Filter",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "ro-di-water-filter"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUlT",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Air Stone",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "air-stone"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUoJ",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Planted",
+        "Aquascaping"
+      ],
+      "category": "Substrate",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Aquarium Gravel",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "aquarium-gravel"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUr9",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "High-Tech / CO2",
+        "Planted"
+      ],
+      "category": "CO₂ System",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "CO₂ Cylinder",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "co-cylinder"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUtz",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Test Kit",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Water Test Strips",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "water-test-strips"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "ofTl1CTOUWuLwM28PxTUwp",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community"
+      ],
+      "category": "Other",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Flake Fish Food",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "flake-fish-food"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "sebdKYryWZgYP2rm3or3AK",
+      "_type": "equipment",
+      "aquariumStyle": [
+        "Community",
+        "Planted",
+        "Mixed Reef"
+      ],
+      "category": "Maintenance",
+      "difficulty": null,
+      "family": null,
+      "group": "Maintenance",
+      "name": "Algae Scraper",
+      "region": null,
+      "scientificName": null,
+      "slug": "algae-scraper",
+      "waterType": null
+    }
+  ],
+  "problem": [
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlsx5",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "fin-rot"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlszk",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "water",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "old-tank-syndrome"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlt2P",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "algae",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "hair-algae"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlt54",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "algae",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "staghorn-algae"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnlt7j",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "plants",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "plant-nutrient-deficiency"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnltAO",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "dropsy"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnltD3",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "temperature-shock"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnltFi",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "equipment",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "filter-crash"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DFYjI",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Columnaris (Cotton Mouth)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "columnaris-cotton-mouth"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DFYtM",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Planaria Infestation",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "planaria-infestation"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "I9bI8W8ZWcEwyIzM9DNIu8",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "algae",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Black Beard Algae (BBA)",
+      "region": null,
+      "scientificName": null,
+      "slug": "black-beard-algae",
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5JnvacY",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Velvet Disease (Oodinium)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "velvet-disease-oodinium"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2qVy",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Fish Lice (Argulus)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "fish-lice-argulus"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2qgo",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Dinoflagellates",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "dinoflagellates"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2wxC",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Hole in the Head Disease",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "hole-in-the-head-disease"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "IlX7xILobrukz7d5Jo2xIs",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Saprolegnia (Water Mold)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "saprolegnia-water-mold"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A79Tvf",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Hydra Infestation",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "hydra-infestation"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7AE36",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Ich (White Spot Disease)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "ich-white-spot-disease"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7AEDM",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Swim Bladder Disease",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "swim-bladder-disease"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KJcq",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Flukes (Gill and Skin Parasites)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "flukes-gill-skin-parasites"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KJpf",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Anchor Worm (Lernaea)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "anchor-worm-lernaea"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "J1Tx0fWCuGNPno99A7KutT",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": "Pop Eye (Exophthalmia)",
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "pop-eye-exophthalmia"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-brown-diatom-algae",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "algae",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "brown-diatom-algae"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-cloudy-water",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "water",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "cloudy-water"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-cyanobacteria",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "water",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "cyanobacteria"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-fish-gasping-surface",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "fish-gasping-surface"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-fish-hiding",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "fish-hiding"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-green-water",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "algae",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "green-water"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-high-ammonia",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "water",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "high-ammonia"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-low-filter-flow",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "equipment",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "low-filter-flow"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-plant-leaves-melting",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "plants",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "plant-leaves-melting"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "problem-white-spot-disease",
+      "_type": "problem",
+      "aquariumStyle": null,
+      "category": "fish",
+      "difficulty": null,
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "white-spot-disease"
+      },
+      "waterType": null
+    }
+  ],
+  "inspiration": [
+    {
+      "_id": "BruaGKYCGDRQjkiQDnm04r",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "small-iwagumi-nano"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnm07W",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "amazon-biotope"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnm0AB",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "reef-nano"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnm0Cq",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "mountain-valley-scape"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "BruaGKYCGDRQjkiQDnm0FV",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "planted-community-aquarium"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "inspiration-classic-iwagumi",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "classic-iwagumi"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "inspiration-dutch-planted-tank",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Advanced",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "dutch-planted-tank"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "inspiration-jungle-biotope",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "jungle-biotope"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "inspiration-low-tech-nature-aquarium",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Beginner",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "low-tech-nature-aquarium"
+      },
+      "waterType": null
+    },
+    {
+      "_id": "inspiration-nano-paludarium",
+      "_type": "inspiration",
+      "aquariumStyle": null,
+      "category": null,
+      "difficulty": "Intermediate",
+      "family": null,
+      "group": null,
+      "name": null,
+      "region": null,
+      "scientificName": null,
+      "slug": {
+        "_type": "slug",
+        "current": "nano-paludarium"
+      },
+      "waterType": null
+    }
+  ]
+}

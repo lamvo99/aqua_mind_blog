@@ -1,0 +1,299 @@
+﻿[
+    {
+        "category":  null,
+        "name":  "Anchor Worm (Lernaea)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "anchor-worm-lernaea"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Black Beard Algae (BBA)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "black-beard-algae-bba"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Columnaris (Cotton Mouth)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "columnaris-cotton-mouth"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Dinoflagellates",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dinoflagellates"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Fish Lice (Argulus)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "fish-lice-argulus"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Flukes (Gill and Skin Parasites)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "flukes-gill-skin-parasites"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Hole in the Head Disease",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hole-in-the-head-disease"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Hydra Infestation",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hydra-infestation"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Ich (White Spot Disease)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ich-white-spot-disease"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Planaria Infestation",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "planaria-infestation"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Pop Eye (Exophthalmia)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pop-eye-exophthalmia"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Saprolegnia (Water Mold)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "saprolegnia-water-mold"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Swim Bladder Disease",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "swim-bladder-disease"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  null,
+        "name":  "Velvet Disease (Oodinium)",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "velvet-disease-oodinium"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "fin-rot"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "water",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "old-tank-syndrome"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "algae",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hair-algae"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "algae",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "staghorn-algae"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "plants",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "plant-nutrient-deficiency"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dropsy"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "temperature-shock"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "equipment",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "filter-crash"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "algae",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "black-beard-algae"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "algae",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "brown-diatom-algae"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "water",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cloudy-water"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "water",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cyanobacteria"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "fish-gasping-surface"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "fish-hiding"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "algae",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "green-water"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "water",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "high-ammonia"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "equipment",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "low-filter-flow"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "plants",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "plant-leaves-melting"
+                 },
+        "waterType":  null
+    },
+    {
+        "category":  "fish",
+        "name":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "white-spot-disease"
+                 },
+        "waterType":  null
+    }
+]

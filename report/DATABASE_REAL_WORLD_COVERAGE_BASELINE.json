@@ -1,0 +1,62 @@
+{
+  "auditDate": "2026-09-20",
+  "phase": "DATABASE_REAL_WORLD_COVERAGE_AUDIT_PHASE_10",
+  "totalEntities": 403,
+  "byDomain": {
+    "species": 148,
+    "plants": 57,
+    "corals": 45,
+    "invertebrates": 45,
+    "equipment": 42,
+    "problems": 33,
+    "inspirations": 10
+  },
+  "publishedDrafts": { "published": 401, "drafts": 2 },
+  "duplicateCandidates": [
+    { "pair": ["Oscar", "Oscar Fish"], "type": "exact duplicate", "action": "remove one" },
+    { "pair": ["Golden Pencilfish", "Golden Pencilfish"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Paradise Fish", "Paradise Fish"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Acan Lord", "Acan Lords"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Chalice Coral", "Chalice Coral"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Goniopora", "Goniopora Coral"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Open Brain Coral", "Open Brain Coral"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Palythoa", "Palythoa Coral"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Ricordea Mushroom", "Ricordea Mushroom"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Sinularia", "Sinularia Leather Coral"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Protein Skimmer", "Protein Skimmer"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Gravel Vacuum", "Gravel Vacuum"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Aquarium Chiller", "Aquarium Chiller"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Auto Top-Off System", "ATO System"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Red Cherry Shrimp", "Cherry Shrimp"], "type": "near duplicate", "action": "merge" },
+    { "pair": ["Sulawesi Cardinal Shrimp", "Sulawesi Cardinal Shrimp"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Blue Tiger Shrimp", "Blue Tiger Shrimp"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Rabbit Snail", "Rabbit Snail"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Christmas Moss", "Christmas Moss"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Dwarf Sagittaria", "Dwarf Sagittaria"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Glossostigma", "Glossostigma"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Java Moss", "Java Moss"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Monte Carlo", "Monte Carlo"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Rotala Macrandra", "Rotala Macrandra"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Water Sprite", "Water Sprite"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Weeping Moss", "Weeping Moss"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Bucephalandra", "Bucephalandra"], "type": "exact duplicate", "action": "merge" },
+    { "pair": ["Black Beard Algae (BBA)", "black-beard-algae"], "type": "near duplicate", "action": "merge" }
+  ],
+  "controlledVocabularies": {
+    "waterType": ["freshwater", "saltwater", "brackish"],
+    "difficulty": ["Beginner", "Intermediate", "Advanced", "Expert"],
+    "diet": ["Omnivore", "Carnivore", "Herbivore", "Detritivore", "Filter feeder", "Scavenger", "Photosynthetic"],
+    "coralType": ["soft", "lps", "sps", "nps"],
+    "equipmentCategories": ["Filter", "Light", "Heater", "Pump", "CO₂ System", "ATO", "Skimmer", "Dosing", "Chiller", "Maintenance", "Test Kit", "Substrate", "Other"],
+    "problemCategories": ["fish", "water", "algae", "plants", "equipment"],
+    "plantPlacement": ["Foreground", "Midground", "Background", "Epiphyte", "Floating"],
+    "plantLight": ["Low", "Low-Medium", "Medium", "Medium-High", "High"],
+    "plantCO2": ["None", "Low", "Low-Medium", "Medium", "High"]
+  },
+  "searchBehavior": {
+    "globalSearch": "GROQ match on name, scientificName, excerpt fields",
+    "databaseFilter": "Client-side filtering on waterType, difficulty, diet, group, aquariumStyle",
+    "finder": "4-step quiz: waterType → tankSize → difficulty → light",
+    "commonNameSearch": "Searches name field only, no alias/common-name expansion"
+  }
+}

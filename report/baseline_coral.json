@@ -1,0 +1,653 @@
+﻿[
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "Moderate",
+        "name":  "Acan Lord",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "acanthastrea-lordhowensis",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Acan Lords",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "acan-lords"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  "High",
+        "light":  "High",
+        "name":  "Bird’s Nest Coral",
+        "placement":  "High rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "bird-s-nest-coral"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low",
+        "light":  "Low-Moderate",
+        "name":  "Blastomussa",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "blastomussa"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low",
+        "light":  "Low-Moderate",
+        "name":  "Bubble Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "plerogyra-sinuosa"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Low-Moderate",
+        "name":  "Candy Cane Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "candy-cane-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "High",
+        "name":  "Cat\u0027s Paw Coral",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "stylophora-pistillata-catspaw"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  "High",
+        "light":  "High",
+        "name":  "Cauliflower Coral",
+        "placement":  "High rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cauliflower-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low-Moderate",
+        "light":  "Low-Moderate",
+        "name":  "Chalice Coral",
+        "placement":  "Sand bed or low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "echinophyllia-spp"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "Moderate",
+        "name":  "Chalice Coral",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "echinophyllia",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "nps",
+        "difficulty":  "Expert",
+        "flow":  "High",
+        "light":  "None",
+        "name":  "Dendronephthya",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dendronephthya"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Advanced",
+        "flow":  "Low-Moderate",
+        "light":  "None",
+        "name":  "Dendrophyllia Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dendrophyllia-spp"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Low",
+        "light":  "Low-Moderate",
+        "name":  "Discosoma Mushroom",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "discosoma-spp"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Duncan Coral",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "duncan-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Advanced",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Elegance Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "elegance-coral"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Favia Brain Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "favia-favus"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Frogspawn Coral",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "euphyllia-divisa"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate",
+        "light":  "Moderate-High",
+        "name":  "Galaxea",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "galaxea"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Advanced",
+        "flow":  "Moderate",
+        "light":  "Moderate-High",
+        "name":  "Goniopora",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "goniopora"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Goniopora Coral",
+        "placement":  "Sand bed or low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "goniopora-stokesi"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Green Star Polyps",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "briareum-asbestinum"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Hammer Coral",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hammer-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Honeycomb Brain Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "honeycomb-brain-coral"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Low-Moderate",
+        "name":  "Kenya Tree Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "capnella-imbricata"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Low-Moderate",
+        "light":  "Low-Moderate",
+        "name":  "Lobo Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lobophyllia-spp"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate-High",
+        "light":  "Moderate-High",
+        "name":  "Montipora Capricornis",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "montipora-capricornis"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate-High",
+        "name":  "Montipora Digitata",
+        "placement":  "Top-Middle",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "montipora-digitata"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Low",
+        "light":  "Moderate",
+        "name":  "Open Brain Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "open-brain-coral"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "Low-Moderate",
+        "name":  "Open Brain Coral",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "trachyphyllia-geoffroyi",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Palythoa",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "palythoa-spp"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Palythoa Coral",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "palythoa-spp-v2"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate-High",
+        "name":  "Pavona Coral",
+        "placement":  "Mid-Top rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pavona-cactusis"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "High",
+        "name":  "Pocillopora",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "pocillopora-damicornis",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Low",
+        "light":  "Low-Moderate",
+        "name":  "Rhodactis Mushroom",
+        "placement":  "Sand bed or low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rhodactis-spp"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  null,
+        "light":  "Low-Moderate",
+        "name":  "Ricordea Mushroom",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "ricordea-florida",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Low",
+        "light":  "Low-Moderate",
+        "name":  "Ricordea Mushroom",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ricordea-mushroom"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  null,
+        "light":  "Moderate",
+        "name":  "Scolymia",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "scolymia-lacera",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  null,
+        "light":  "Moderate",
+        "name":  "Sinularia",
+        "placement":  null,
+        "reefCompatibility":  true,
+        "slug":  "sinularia",
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Sinularia Leather Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sinularia-spp"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Advanced",
+        "flow":  "High",
+        "light":  "High",
+        "name":  "Staghorn Acropora",
+        "placement":  "High rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "staghorn-acropora"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "sps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate-High",
+        "light":  "High",
+        "name":  "Stylophora Coral",
+        "placement":  "Top",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "stylophora-pistillata"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "nps",
+        "difficulty":  "Advanced",
+        "flow":  "Moderate",
+        "light":  "None",
+        "name":  "Sun Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sun-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Toadstool Leather",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "toadstool-leather"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Intermediate",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Torch Coral",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "euphyllia-glabrescens"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "coralType":  "lps",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Low-Moderate",
+        "name":  "Trumpet Coral",
+        "placement":  "Sand bed",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caulastrea-furcata"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "nps",
+        "difficulty":  "Advanced",
+        "flow":  "Moderate",
+        "light":  "None",
+        "name":  "Tubing Coral",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "tubing-coral"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Moderate",
+        "light":  "Moderate",
+        "name":  "Xenia Coral",
+        "placement":  "Mid rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "xenia-spp"
+                 },
+        "waterType":  null
+    },
+    {
+        "coralType":  "soft",
+        "difficulty":  "Beginner",
+        "flow":  "Low-Moderate",
+        "light":  "Moderate",
+        "name":  "Zoanthids",
+        "placement":  "Low rock",
+        "reefCompatibility":  true,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "zoanthids"
+                 },
+        "waterType":  null
+    }
+]

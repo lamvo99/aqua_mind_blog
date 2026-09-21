@@ -1,0 +1,200 @@
+{
+  "corals": [
+    {
+      "name": "Lobophytum Leather",
+      "id": "coral-lobophytum-leather",
+      "success": true,
+      "operation": "create",
+      "documentId": "coral-lobophytum-leather"
+    },
+    {
+      "name": "Turbinaria",
+      "id": "coral-turbinaria",
+      "success": true,
+      "operation": "create",
+      "documentId": "coral-turbinaria"
+    },
+    {
+      "name": "Table Acropora",
+      "id": "coral-table-acropora",
+      "success": true,
+      "operation": "create",
+      "documentId": "coral-table-acropora"
+    },
+    {
+      "name": "Porites",
+      "id": "coral-porites",
+      "success": true,
+      "operation": "create",
+      "documentId": "coral-porites"
+    },
+    {
+      "name": "Gorgonian",
+      "id": "coral-gorgonian",
+      "success": true,
+      "operation": "create",
+      "documentId": "coral-gorgonian"
+    }
+  ],
+  "plants": [
+    {
+      "name": "Bolbitis Heudelotii",
+      "id": "plant-bolbitis-heudelotii",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-bolbitis-heudelotii"
+    },
+    {
+      "name": "Java Fern Windelov",
+      "id": "plant-java-fern-windelov",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-java-fern-windelov"
+    },
+    {
+      "name": "Java Fern Narrow Leaf",
+      "id": "plant-java-fern-narrow-leaf",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-java-fern-narrow-leaf"
+    },
+    {
+      "name": "Cryptocoryne Parva",
+      "id": "plant-cryptocoryne-parva",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-cryptocoryne-parva"
+    },
+    {
+      "name": "Rotala Wallichii",
+      "id": "plant-rotala-wallichii",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-rotala-wallichii"
+    },
+    {
+      "name": "Pogostemon Helferi",
+      "id": "plant-pogostemon-helferi",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-pogostemon-helferi"
+    },
+    {
+      "name": "Dwarf Baby Tears",
+      "id": "plant-dwarf-baby-tears",
+      "success": true,
+      "operation": "update",
+      "documentId": "plant-dwarf-baby-tears"
+    },
+    {
+      "name": "Thai Onion Plant",
+      "id": "plant-thai-onion-plant",
+      "success": true,
+      "operation": "create",
+      "documentId": "plant-thai-onion-plant"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "CO2 Diffuser",
+      "id": "equip-co2-diffuser",
+      "success": true,
+      "operation": "create",
+      "documentId": "equip-co2-diffuser"
+    },
+    {
+      "name": "CO2 Drop Checker",
+      "id": "equip-co2-drop-checker",
+      "success": true,
+      "operation": "create",
+      "documentId": "equip-co2-drop-checker"
+    },
+    {
+      "name": "T5 Fluorescent Light",
+      "id": "equip-t5-fluorescent-light",
+      "success": true,
+      "operation": "create",
+      "documentId": "equip-t5-fluorescent-light"
+    }
+  ],
+  "problems": [
+    {
+      "title": "Brown Jelly Disease",
+      "id": "problem-brown-jelly-disease",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-brown-jelly-disease"
+    },
+    {
+      "title": "Rapid Tissue Necrosis (RTN)",
+      "id": "problem-rapid-tissue-necrosis-rtn",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-rapid-tissue-necrosis-rtn"
+    },
+    {
+      "title": "Slow Tissue Necrosis (STN)",
+      "id": "problem-slow-tissue-necrosis-stn",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-slow-tissue-necrosis-stn"
+    },
+    {
+      "title": "Coral Bleaching",
+      "id": "problem-coral-bleaching",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-coral-bleaching"
+    },
+    {
+      "title": "Aiptasia Infestation",
+      "id": "problem-aiptasia-infestation",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-aiptasia-infestation"
+    },
+    {
+      "title": "High Nitrite",
+      "id": "problem-high-nitrite",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-high-nitrite"
+    },
+    {
+      "title": "High Nitrate",
+      "id": "problem-high-nitrate",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-high-nitrate"
+    },
+    {
+      "title": "pH Crash",
+      "id": "problem-ph-crash",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-ph-crash"
+    },
+    {
+      "title": "Heater Stuck On",
+      "id": "problem-heater-stuck-on",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-heater-stuck-on"
+    },
+    {
+      "title": "Heater Stuck Off",
+      "id": "problem-heater-stuck-off",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-heater-stuck-off"
+    },
+    {
+      "title": "pH Drift",
+      "id": "problem-ph-drift",
+      "success": true,
+      "operation": "create",
+      "documentId": "problem-ph-drift"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,807 @@
+﻿[
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  null,
+        "light":  "High",
+        "name":  "Alternanthera Reineckii Mini",
+        "placement":  null,
+        "slug":  "alternanthera-reineckii-mini",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Medium",
+        "light":  "Medium-High",
+        "name":  "Alternanthera reineckii",
+        "placement":  "Midground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "alternanthera-reineckii"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Amazon Sword",
+        "placement":  "Midground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "amazon-sword"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Ambulia",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ambulia"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Low",
+        "name":  "Anacharis",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "anacharis"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Anubias barteri",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "anubias-barteri"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Anubias nana Petite",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "anubias-nana-petite"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Bacopa caroliniana",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "bacopa-caroliniana"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Medium",
+        "light":  "Medium-High",
+        "name":  "Blyxa japonica",
+        "placement":  "Midground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "blyxa-japonica"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Low",
+        "name":  "Bucephalandra",
+        "placement":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "bucephalandra-phase7"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Bucephalandra",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "bucephalandra"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Cabomba caroliniana",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cabomba-caroliniana"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low",
+        "name":  "Christmas Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "vesicularia-montagnei"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Low-Medium",
+        "name":  "Christmas Moss",
+        "placement":  null,
+        "slug":  "christmas-moss",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Cryptocoryne balansae",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cryptocoryne-balansae"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Cryptocoryne beckettii",
+        "placement":  "Midground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cryptocoryne-beckettii"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Cryptocoryne wendtii",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "cryptocoryne-wendtii"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Very Fast",
+        "light":  "Low",
+        "name":  "Duckweed",
+        "placement":  "Floating",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lemna-minor"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "High",
+        "difficulty":  "Advanced",
+        "growth":  "Fast",
+        "light":  "High",
+        "name":  "Dwarf Baby Tears",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-baby-tears"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Dwarf Hairgrass",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-hairgrass"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Dwarf Lettuce",
+        "placement":  "Floating",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pistia-stratiotes"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Dwarf Sagittaria",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "dwarf-sagittaria"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Medium",
+        "name":  "Dwarf Sagittaria",
+        "placement":  null,
+        "slug":  "sagittaria-subulata",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Flame Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "flame-moss"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Frogbit",
+        "placement":  "Floating",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "limnobium-laevigatum"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "High",
+        "name":  "Glossostigma",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "glossostigma-elatinoides"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Advanced",
+        "growth":  null,
+        "light":  "High",
+        "name":  "Glossostigma",
+        "placement":  null,
+        "slug":  "glossostigma-ela-tinoides",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Low",
+        "name":  "Hornwort",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hornwort"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Hydrocotyle tripartita",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hydrocotyle-tripartita"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Java Fern",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "java-fern"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Low",
+        "name":  "Java Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "taxiphyllum-barbieri"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Low",
+        "name":  "Java Moss",
+        "placement":  null,
+        "slug":  "java-moss",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Lilaeopsis",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lilaeopsis-brasiliensis"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  null,
+        "light":  "Medium-High",
+        "name":  "Ludwigia Red",
+        "placement":  null,
+        "slug":  "ludwigia-palustris",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Ludwigia Super Red",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ludwigia-super-red"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Medium",
+        "light":  "Medium-High",
+        "name":  "Ludwigia arcuata",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ludwigia-arcuata"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low-Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Ludwigia repens",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ludwigia-repens"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Very Slow",
+        "light":  "Low",
+        "name":  "Marimo Moss Ball",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "aegagropila-linnaei"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Marsilea hirsuta",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "marsilea-hirsuta"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "High",
+        "name":  "Monte Carlo",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "monte-carlo"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  null,
+        "light":  "High",
+        "name":  "Monte Carlo",
+        "placement":  null,
+        "slug":  "micranthemum-tweediei",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Myriophyllum",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "myriophyllum-aquaticum"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low",
+        "name":  "Peacock Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "peacock-moss"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "High",
+        "difficulty":  "Intermediate",
+        "growth":  "Medium",
+        "light":  "High",
+        "name":  "Pogostemon stellatus",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pogostemon-stellatus"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Pygmy Chain Sword",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pygmy-chain-sword"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Red Root Floater",
+        "placement":  "Floating",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "phyllanthus-fluitans"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Red Rotala",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "red-rotala"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "High",
+        "difficulty":  "Advanced",
+        "growth":  "Medium",
+        "light":  "High",
+        "name":  "Rice Paddy Herb",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "limnophila-aromatica"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "High",
+        "difficulty":  "Advanced",
+        "growth":  "Medium",
+        "light":  "High",
+        "name":  "Rotala Macrandra",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rotala-macrandra"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Advanced",
+        "growth":  null,
+        "light":  "High",
+        "name":  "Rotala Macrandra",
+        "placement":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rotala-macrandra-red"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Rotala indica",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rotala-indica"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "Medium-High",
+        "name":  "Rotala rotundifolia",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rotala-rotundifolia"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Medium",
+        "difficulty":  "Intermediate",
+        "growth":  "Fast",
+        "light":  "High",
+        "name":  "Rotala sp. h\u0027ra",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "rotala-sp-hra"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low-Medium",
+        "name":  "Sagittaria",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sagittaria-platyphylla"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Low-Medium",
+        "name":  "Salvinia",
+        "placement":  "Floating",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "salvinia-cucullata"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Intermediate",
+        "growth":  null,
+        "light":  "High",
+        "name":  "Scarlet Temple",
+        "placement":  null,
+        "slug":  "scarlet-temple",
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Staurogyne repens",
+        "placement":  "Foreground",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "staurogyne-repens"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Low",
+        "name":  "Taiwan Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "taxiphyllum-alternans"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Medium",
+        "light":  "Medium",
+        "name":  "Vallisneria spiralis",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "vallisneria-spiralis"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Low-Medium",
+        "name":  "Water Sprite",
+        "placement":  "Floating or Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ceratopteris-thalictroides"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Low-Medium",
+        "name":  "Water Sprite",
+        "placement":  null,
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "ceratopteris-thalictroides-sprite"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "co2":  "Low",
+        "difficulty":  "Beginner",
+        "growth":  "Fast",
+        "light":  "Medium",
+        "name":  "Water Wisteria",
+        "placement":  "Background",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "water-wisteria"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  "Slow",
+        "light":  "Low",
+        "name":  "Weeping Moss",
+        "placement":  "Epiphyte",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "vesicularia-ferriei"
+                 },
+        "waterType":  null
+    },
+    {
+        "co2":  "None",
+        "difficulty":  "Beginner",
+        "growth":  null,
+        "light":  "Low-Medium",
+        "name":  "Weeping Moss",
+        "placement":  null,
+        "slug":  "weeping-moss",
+        "waterType":  "freshwater"
+    }
+]

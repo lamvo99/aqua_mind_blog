@@ -1,0 +1,531 @@
+﻿[
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Amano Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-multidentata"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Assassin Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "anentome-helena"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Babaulti Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-babaulti"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Filter feeder",
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Bamboo Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "atyopsis-moluccensis"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Expert",
+        "group":  "shrimp",
+        "name":  "Blue Bolt Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-cantonensis-blue-bolt"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "crayfish",
+        "name":  "Blue Crayfish",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "procambarus-clarkii-blue"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Blue Diamond Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "neocaridina-blue-diamond"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Blue Tiger Shrimp",
+        "slug":  "blue-tiger-shrimp",
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Blue Tiger Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-blue-tiger"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Beginner",
+        "group":  "starfish",
+        "name":  "Brittle Star",
+        "slug":  "ophiocoma",
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  "anemone",
+        "name":  "Bubble-Tip Anemone",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "entacmaea-quadricolor"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Cerith Snail",
+        "slug":  "cerithium",
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Cherry Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "neocaridina-davidi-cherry"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Cleaner Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lysmata-amboinensis"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Coral Banded Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "stenopus-hispidus"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Detritivore",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Crystal Red Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-cantonensis"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "crab",
+        "name":  "Emerald Crab",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "mithraculus-sculptus"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Filter feeder",
+        "difficulty":  "Beginner",
+        "group":  "worm",
+        "name":  "Feather Duster Worm",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "sabellastarte-magnifica"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Fire Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lysmata-debelius"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Ghost Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "palaemon-paludosus"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Golden Back Yellow Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "neocaridina-golden-back-yellow"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Great Ramshorn Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "planorbarius-corneus"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Harlequin Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "hymenocera-picta"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Expert",
+        "group":  "shrimp",
+        "name":  "King Kong Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-cantonensis-king-kong"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Malaysian Trumpet Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "melanoides-tuberculata"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Mystery Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "pomacea-bridgesii"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Scavenger",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Nassarius Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "nassarius-spp"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Nerite Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "neritina-natalensis"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Scavenger",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Peppermint Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "lysmata-wurdemanni"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Rabbit Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "tylomelania-spp"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "snail",
+        "name":  "Rabbit Snail",
+        "slug":  "tylomelania",
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Beginner",
+        "group":  "shrimp",
+        "name":  "Red Cherry Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "neocaridina-davidi"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  "crab",
+        "name":  "Red Claw Crab",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "perisesarma-bidens"
+                 },
+        "waterType":  "brackish"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  "anemone",
+        "name":  "Rock Flower Anemone",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "phymanthus-crucifer"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Carnivore",
+        "difficulty":  "Beginner",
+        "group":  "starfish",
+        "name":  "Sand-Sifting Starfish",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "astropecten-polyacanthus"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Scavenger",
+        "difficulty":  "Beginner",
+        "group":  "crab",
+        "name":  "Scarlet Hermit Crab",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "paguristes-cadenati"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "worm",
+        "name":  "Sea Cucumber",
+        "slug":  "holothuria",
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Sexy Anemone Shrimp",
+        "slug":  "periclimenes-brevicarpalis",
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Snowball Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-snowball"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Sulawesi Cardinal Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-dennerli"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Sulawesi Cardinal Shrimp",
+        "slug":  "caridina-omnipos",
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  null,
+        "difficulty":  "Intermediate",
+        "group":  "shrimp",
+        "name":  "Sulawesi Red Cherry Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-dennerli-red-cherry"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Taiwan Bee Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "caridina-cantonensis-taiwan-bee"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  "crab",
+        "name":  "Thai Micro Crab",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "limnopilos-naiyanetri"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Photosynthetic",
+        "difficulty":  "Advanced",
+        "group":  "clam",
+        "name":  "Tridacna Maxima Clam",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "tridacna-maxima"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Turbo Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "turbo-spp"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "urchin",
+        "name":  "Tuxedo Urchin",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "mespilia-globulus"
+                 },
+        "waterType":  "saltwater"
+    },
+    {
+        "diet":  "Omnivore",
+        "difficulty":  "Intermediate",
+        "group":  "crab",
+        "name":  "Vampire Crab",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "geosesarma-dennerle"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Filter feeder",
+        "difficulty":  "Advanced",
+        "group":  "shrimp",
+        "name":  "Vampire Shrimp",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "atya-gabonensis"
+                 },
+        "waterType":  "freshwater"
+    },
+    {
+        "diet":  "Herbivore",
+        "difficulty":  "Beginner",
+        "group":  "snail",
+        "name":  "Zebra Nerite Snail",
+        "slug":  {
+                     "_type":  "slug",
+                     "current":  "vittina-natalensis"
+                 },
+        "waterType":  "freshwater"
+    }
+]

@@ -1,0 +1,1243 @@
+{
+  "generatedAt": "2026-09-21T10:18:34.868Z",
+  "phase": "14",
+  "spec": "SPEC-18",
+  "totalEntities": 473,
+  "grandTotals": {
+    "before": 295,
+    "after": 462,
+    "delta": 167
+  },
+  "domainTotals": {
+    "fwCommunity": {
+      "before": 60,
+      "after": 119,
+      "delta": 59
+    },
+    "fwPredator": {
+      "before": 19,
+      "after": 45,
+      "delta": 26
+    },
+    "marine": {
+      "before": 30,
+      "after": 54,
+      "delta": 24
+    },
+    "corals": {
+      "before": 43,
+      "after": 48,
+      "delta": 5
+    },
+    "plants": {
+      "before": 53,
+      "after": 62,
+      "delta": 9
+    },
+    "invertebrates": {
+      "before": 20,
+      "after": 56,
+      "delta": 36
+    },
+    "equipment": {
+      "before": 38,
+      "after": 36,
+      "delta": -2
+    },
+    "problems": {
+      "before": 32,
+      "after": 42,
+      "delta": 10
+    }
+  },
+  "coverage": {
+    "fwCommunity": {
+      "Livebearers": {
+        "before": 5,
+        "after": 7,
+        "delta": 2,
+        "target": 6,
+        "coveragePct": 117,
+        "entities": [
+          "Molly",
+          "Halfbeak",
+          "Guppy",
+          "Short-finned Molly",
+          "Endler's Livebearer",
+          "Swordtail",
+          "Southern Platy"
+        ]
+      },
+      "Tetras": {
+        "before": 8,
+        "after": 17,
+        "delta": 9,
+        "target": 10,
+        "coveragePct": 170,
+        "entities": [
+          "Hatchetfish",
+          "Firehead Tetra",
+          "Neon Blue Rasbora",
+          "Green Neon Tetra",
+          "Rummynose Tetra",
+          "Silver Hatchetfish",
+          "Black Skirt Tetra",
+          "Ember Tetra",
+          "Serpae Tetra",
+          "Black Neon Tetra",
+          "Black Phantom Tetra",
+          "Lemon Tetra",
+          "Dwarf Neon Rainbowfish",
+          "Emperor Tetra",
+          "Cardinal Tetra",
+          "Neon Tetra",
+          "Congo Tetra"
+        ]
+      },
+      "Rasboras/Danios": {
+        "before": 4,
+        "after": 8,
+        "delta": 4,
+        "target": 6,
+        "coveragePct": 133,
+        "entities": [
+          "Pygmy Rasbora",
+          "Kubotai Rasbora",
+          "Chili Rasbora",
+          "Emerald Dwarf Rasbora",
+          "Celestial Pearl Danio",
+          "Giant Danio",
+          "Lambchop Rasbora",
+          "Harlequin Rasbora"
+        ]
+      },
+      "Corydoras": {
+        "before": 6,
+        "after": 6,
+        "delta": 0,
+        "target": 7,
+        "coveragePct": 86,
+        "entities": [
+          "Sterbai Corydoras",
+          "Pygmy Corydoras",
+          "Bronze Corydoras",
+          "Peppered Corydoras",
+          "Panda Corydoras",
+          "Three-Lined Corydoras"
+        ]
+      },
+      "Plecos": {
+        "before": 5,
+        "after": 7,
+        "delta": 2,
+        "target": 7,
+        "coveragePct": 100,
+        "entities": [
+          "Royal Pleco",
+          "Leopard Frog Pleco",
+          "Zebra Pleco",
+          "Clown Pleco",
+          "Bristlenose Pleco",
+          "Common Pleco",
+          "Sailfin Pleco"
+        ]
+      },
+      "Cichlids": {
+        "before": 12,
+        "after": 15,
+        "delta": 3,
+        "target": 16,
+        "coveragePct": 94,
+        "entities": [
+          "Marble Angelfish",
+          "Convict Cichlid",
+          "Three Stripe Dwarf Cichlid",
+          "Smiling Cichlid",
+          "Agassiz Dwarf Cichlid",
+          "Eartheater Cichlid",
+          "Cupido Cichlid",
+          "German Blue Ram",
+          "Electric Yellow Cichlid",
+          "Bolivian Ram",
+          "Kribensis",
+          "Zebra Mbuna Cichlid",
+          "Severum",
+          "Discus",
+          "Firemouth Cichlid"
+        ]
+      },
+      "Gouramis": {
+        "before": 5,
+        "after": 9,
+        "delta": 4,
+        "target": 6,
+        "coveragePct": 150,
+        "entities": [
+          "Chocolate Gourami",
+          "Licorice Gourami",
+          "Spiketail Gourami",
+          "Sri Lanka Gourami",
+          "Honey Gourami",
+          "Dwarf Gourami",
+          "Pearl Gourami",
+          "Three-Spot Gourami",
+          "Sparkling Gourami"
+        ]
+      },
+      "Loaches": {
+        "before": 5,
+        "after": 6,
+        "delta": 1,
+        "target": 5,
+        "coveragePct": 120,
+        "entities": [
+          "Hillstream Loach",
+          "Yoyo Loach",
+          "Dwarf Chain Loach",
+          "Zebra Loach",
+          "Clown Loach",
+          "Kuhli Loach"
+        ]
+      },
+      "Rainbowfish": {
+        "before": 3,
+        "after": 2,
+        "delta": -1,
+        "target": 5,
+        "coveragePct": 40,
+        "entities": [
+          "Threadfin Rainbowfish",
+          "Boesemani Rainbowfish"
+        ]
+      },
+      "Goldfish": {
+        "before": 5,
+        "after": 8,
+        "delta": 3,
+        "target": 8,
+        "coveragePct": 100,
+        "entities": [
+          "Fantail Goldfish",
+          "Common Goldfish",
+          "Oranda Goldfish",
+          "Ranchu Goldfish",
+          "Black Moor Goldfish",
+          "Fancy Goldfish",
+          "Ryukin Goldfish",
+          "Telescope Goldfish"
+        ]
+      },
+      "Puffers": {
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "target": 2,
+        "coveragePct": 50,
+        "entities": [
+          "Figure-8 Puffer"
+        ]
+      },
+      "Other": {
+        "before": 1,
+        "after": 33,
+        "delta": 32,
+        "target": 7,
+        "coveragePct": 471,
+        "entities": [
+          "Koi",
+          "Australian Redclaw Crayfish",
+          "Bumblebee Goby",
+          "Clown Killifish",
+          "Elephantnose Fish",
+          "Jack Dempsey",
+          "Betta Imbellis",
+          "Betta Macrostoma",
+          "Rainbow Shark",
+          "Synodontis Catfish",
+          "Siamese Algae Eater",
+          "Red Garra",
+          "Golden Pencilfish",
+          "Emerald Betta",
+          "Dubois’ Tropheus",
+          "Bucktooth Parrot",
+          "Dwarf Pencilfish",
+          "Lyretail Killifish",
+          "Bala Shark",
+          "Siamese Fighting Fish",
+          "Black Ghost Knifefish",
+          "Zebrafish",
+          "Denison Barb",
+          "Iridescent Shark",
+          "Glass Catfish",
+          "Otocinclus Catfish",
+          "Rosy Barb",
+          "Odessa Barb",
+          "Tiger Barb",
+          "Cherry Barb",
+          "Red-Bellied Pacu",
+          "Red-Tail Shark",
+          "Tinfoil Barb"
+        ]
+      }
+    },
+    "fwPredator": {
+      "Arowana": {
+        "before": 3,
+        "after": 4,
+        "delta": 1,
+        "target": 5,
+        "coveragePct": 80,
+        "entities": [
+          "Black Arowana",
+          "Silver Arowana",
+          "Asian Arowana",
+          "Jardini Arowana"
+        ]
+      },
+      "Snakehead": {
+        "before": 4,
+        "after": 5,
+        "delta": 1,
+        "target": 6,
+        "coveragePct": 83,
+        "entities": [
+          "Emperor Snakehead",
+          "Rainbow Snakehead",
+          "Dwarf Snakehead",
+          "Asian Snakehead",
+          "Spotted Snakehead"
+        ]
+      },
+      "Bichir": {
+        "before": 4,
+        "after": 5,
+        "delta": 1,
+        "target": 6,
+        "coveragePct": 83,
+        "entities": [
+          "Ornate Bichir",
+          "Delhezi Bichir",
+          "Endlicheri Bichir",
+          "Senegal Bichir",
+          "Weeks Bichir"
+        ]
+      },
+      "Piranha": {
+        "before": 2,
+        "after": 2,
+        "delta": 0,
+        "target": 4,
+        "coveragePct": 50,
+        "entities": [
+          "Red-bellied Piranha",
+          "Black Piranha"
+        ]
+      },
+      "Gar": {
+        "before": 1,
+        "after": 3,
+        "delta": 2,
+        "target": 4,
+        "coveragePct": 75,
+        "entities": [
+          "Alligator Gar",
+          "Longnose Gar",
+          "Spotted Gar"
+        ]
+      },
+      "Peacock Bass": {
+        "before": 1,
+        "after": 3,
+        "delta": 2,
+        "target": 4,
+        "coveragePct": 75,
+        "entities": [
+          "Peacock Bass",
+          "Orinoco Peacock Bass",
+          "Three-Barred Peacock Bass"
+        ]
+      },
+      "Predatory Cichlids": {
+        "before": 3,
+        "after": 6,
+        "delta": 3,
+        "target": 7,
+        "coveragePct": 86,
+        "entities": [
+          "Oscar",
+          "Green Terror",
+          "Jaguar Cichlid",
+          "Midas Cichlid",
+          "Red Devil Cichlid",
+          "Wolf Cichlid"
+        ]
+      },
+      "Predatory Catfish": {
+        "before": 1,
+        "after": 3,
+        "delta": 2,
+        "target": 5,
+        "coveragePct": 60,
+        "entities": [
+          "Pictus Catfish",
+          "Tiger Shovelnose Catfish",
+          "Walking Catfish"
+        ]
+      },
+      "Rays": {
+        "before": 0,
+        "after": 1,
+        "delta": 1,
+        "target": 1,
+        "coveragePct": 100,
+        "entities": [
+          "Freshwater Stingray"
+        ]
+      },
+      "Other": {
+        "before": 0,
+        "after": 13,
+        "delta": 13,
+        "target": 4,
+        "coveragePct": 325,
+        "entities": [
+          "Red-tailed Catfish",
+          "Scarlet Badis",
+          "Congo Dwarf Cichlid",
+          "Pea Puffer",
+          "Frontosa Cichlid",
+          "Paradise Fish",
+          "Pike Cichlid",
+          "Blue Acara",
+          "Cockatoo Dwarf Cichlid",
+          "Golden Wonder Killifish",
+          "Arapaima",
+          "Clown Knifefish",
+          "Angelfish"
+        ]
+      }
+    },
+    "marine": {
+      "Clownfish": {
+        "before": 2,
+        "after": 5,
+        "delta": 3,
+        "target": 5,
+        "coveragePct": 100,
+        "entities": [
+          "Clarkii Clownfish",
+          "Maroon Clownfish",
+          "Tomato Clownfish",
+          "Percula Clownfish",
+          "Ocellaris Clownfish"
+        ]
+      },
+      "Tangs": {
+        "before": 6,
+        "after": 8,
+        "delta": 2,
+        "target": 8,
+        "coveragePct": 100,
+        "entities": [
+          "Sailfin Tang",
+          "Powder Blue Tang",
+          "Purple Tang",
+          "Blue Tang",
+          "Kole Tang",
+          "Naso Tang",
+          "Foxface Rabbitfish",
+          "Yellow Tang"
+        ]
+      },
+      "Angelfish": {
+        "before": 3,
+        "after": 4,
+        "delta": 1,
+        "target": 6,
+        "coveragePct": 67,
+        "entities": [
+          "Emperor Angelfish",
+          "Coral Beauty Angelfish",
+          "Queen Angelfish",
+          "Flame Angelfish"
+        ]
+      },
+      "Damselfish": {
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "target": 4,
+        "coveragePct": 25,
+        "entities": [
+          "Blue Devil Damselfish"
+        ]
+      },
+      "Gobies": {
+        "before": 4,
+        "after": 4,
+        "delta": 0,
+        "target": 7,
+        "coveragePct": 57,
+        "entities": [
+          "Diamond Watchman Goby",
+          "Neon Goby",
+          "Yellow Watchman Goby",
+          "Firefish Goby"
+        ]
+      },
+      "Blennies": {
+        "before": 2,
+        "after": 3,
+        "delta": 1,
+        "target": 5,
+        "coveragePct": 60,
+        "entities": [
+          "Bicolor Blenny",
+          "Tailspot Blenny",
+          "Lawnmower Blenny"
+        ]
+      },
+      "Wrasses": {
+        "before": 2,
+        "after": 5,
+        "delta": 3,
+        "target": 8,
+        "coveragePct": 63,
+        "entities": [
+          "Melanurus Wrasse",
+          "Flasher Wrasse",
+          "Yellow Coris Wrasse",
+          "Six Line Wrasse",
+          "Cleaner Wrasse"
+        ]
+      },
+      "Butterflyfish": {
+        "before": 1,
+        "after": 3,
+        "delta": 2,
+        "target": 4,
+        "coveragePct": 75,
+        "entities": [
+          "Copperband Butterflyfish",
+          "Raccoon Butterflyfish",
+          "Longnose Butterflyfish"
+        ]
+      },
+      "Triggers": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Queen Triggerfish",
+          "Clown Triggerfish"
+        ]
+      },
+      "Puffers": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Porcupine Puffer",
+          "Stars and Stripes Puffer"
+        ]
+      },
+      "Eels": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 4,
+        "coveragePct": 50,
+        "entities": [
+          "Snowflake Eel",
+          "Zebra Moray Eel"
+        ]
+      },
+      "Lionfish": {
+        "before": 2,
+        "after": 2,
+        "delta": 0,
+        "target": 2,
+        "coveragePct": 100,
+        "entities": [
+          "Lionfish",
+          "Dwarf Lionfish"
+        ]
+      },
+      "Anthias": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Bartlett's Anthias",
+          "Lyretail Anthias"
+        ]
+      },
+      "Cardinalfish": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Pajama Cardinalfish",
+          "Banggai Cardinalfish"
+        ]
+      },
+      "Mandarinfish": {
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "target": 1,
+        "coveragePct": 100,
+        "entities": [
+          "Mandarin Fish"
+        ]
+      },
+      "Other": {
+        "before": 1,
+        "after": 8,
+        "delta": 7,
+        "target": 3,
+        "coveragePct": 267,
+        "entities": [
+          "Flamehawkfish",
+          "Frogfish",
+          "Arc-eye Hawkfish",
+          "Black Cap Basslet",
+          "Royal Gramma",
+          "Marine Betta",
+          "Longnose Hawkfish",
+          "Green Chromis"
+        ]
+      }
+    },
+    "corals": {
+      "Soft": {
+        "before": 10,
+        "after": 11,
+        "delta": 1,
+        "target": 12,
+        "coveragePct": 92,
+        "entities": [
+          "Sinularia Leather",
+          "Green Star Polyps",
+          "Palythoa",
+          "Discosoma Mushroom",
+          "Rhodactis Mushroom",
+          "Xenia Coral",
+          "Kenya Tree Coral",
+          "Lobophytum Leather",
+          "Ricordea Mushroom",
+          "Toadstool Leather",
+          "Zoanthids"
+        ]
+      },
+      "LPS": {
+        "before": 21,
+        "after": 22,
+        "delta": 1,
+        "target": 24,
+        "coveragePct": 92,
+        "entities": [
+          "Acan Lord",
+          "Scolymia",
+          "Galaxea",
+          "Honeycomb Brain Coral",
+          "Elegance Coral",
+          "Open Brain Coral",
+          "Fungia Coral",
+          "Lobo Coral",
+          "Bubble Coral",
+          "Dendrophyllia Coral",
+          "Torch Coral",
+          "Trumpet Coral",
+          "Favia Brain Coral",
+          "Chalice Coral",
+          "Frogspawn Coral",
+          "Alveopora Coral",
+          "Blastomussa",
+          "Candy Cane Coral",
+          "Duncan Coral",
+          "Goniopora",
+          "Hammer Coral",
+          "Turbinaria"
+        ]
+      },
+      "SPS": {
+        "before": 9,
+        "after": 11,
+        "delta": 2,
+        "target": 11,
+        "coveragePct": 100,
+        "entities": [
+          "Montipora Digitata",
+          "Cauliflower Coral",
+          "Bird’s Nest Coral",
+          "Stylophora Coral",
+          "Pavona Coral",
+          "Pocillopora",
+          "Montipora Capricornis",
+          "Porites",
+          "Staghorn Acropora",
+          "Table Acropora",
+          "Cat's Paw Coral"
+        ]
+      },
+      "NPS": {
+        "before": 3,
+        "after": 4,
+        "delta": 1,
+        "target": 4,
+        "coveragePct": 100,
+        "entities": [
+          "Dendronephthya",
+          "Sun Coral",
+          "Tubing Coral",
+          "Gorgonian"
+        ]
+      }
+    },
+    "plants": {
+      "Stem": {
+        "before": 14,
+        "after": 11,
+        "delta": -3,
+        "target": 17,
+        "coveragePct": 65,
+        "entities": [
+          "Bacopa caroliniana",
+          "Myriophyllum",
+          "Rice Paddy Herb",
+          "Pogostemon stellatus",
+          "Anacharis",
+          "Blyxa japonica",
+          "Ambulia",
+          "Cabomba caroliniana",
+          "Pogostemon Helferi",
+          "Rotala Wallichii",
+          "Water Wisteria"
+        ]
+      },
+      "Rosette": {
+        "before": 6,
+        "after": 9,
+        "delta": 3,
+        "target": 9,
+        "coveragePct": 100,
+        "entities": [
+          "Sagittaria",
+          "Cryptocoryne beckettii",
+          "Pygmy Chain Sword",
+          "Amazon Sword",
+          "Cryptocoryne balansae",
+          "Cryptocoryne Parva",
+          "Cryptocoryne wendtii",
+          "Dwarf Sagittaria",
+          "Vallisneria spiralis"
+        ]
+      },
+      "Carpet": {
+        "before": 6,
+        "after": 6,
+        "delta": 0,
+        "target": 8,
+        "coveragePct": 75,
+        "entities": [
+          "Lilaeopsis",
+          "Glossostigma",
+          "Dwarf Baby Tears",
+          "Dwarf Hairgrass",
+          "Marsilea hirsuta",
+          "Monte Carlo"
+        ]
+      },
+      "Moss": {
+        "before": 6,
+        "after": 7,
+        "delta": 1,
+        "target": 7,
+        "coveragePct": 100,
+        "entities": [
+          "Christmas Moss",
+          "Peacock Moss",
+          "Taiwan Moss",
+          "Weeping Moss",
+          "Flame Moss",
+          "Java Moss",
+          "Marimo Moss Ball"
+        ]
+      },
+      "Epiphyte": {
+        "before": 4,
+        "after": 7,
+        "delta": 3,
+        "target": 11,
+        "coveragePct": 64,
+        "entities": [
+          "Anubias nana Petite",
+          "Anubias barteri",
+          "Bolbitis Heudelotii",
+          "Bucephalandra",
+          "Java Fern",
+          "Java Fern Narrow Leaf",
+          "Java Fern Windelov"
+        ]
+      },
+      "Floating": {
+        "before": 5,
+        "after": 7,
+        "delta": 2,
+        "target": 6,
+        "coveragePct": 117,
+        "entities": [
+          "Frogbit",
+          "Duckweed",
+          "Water Sprite",
+          "Red Root Floater",
+          "Dwarf Lettuce",
+          "Salvinia",
+          "Hornwort"
+        ]
+      },
+      "Red": {
+        "before": 6,
+        "after": 12,
+        "delta": 6,
+        "target": 8,
+        "coveragePct": 150,
+        "entities": [
+          "Ludwigia Red",
+          "Alternanthera Reineckii Mini",
+          "Red Rotala",
+          "Rotala sp. h'ra",
+          "Ludwigia arcuata",
+          "Rotala Macrandra",
+          "Ludwigia Super Red",
+          "Rotala indica",
+          "Alternanthera reineckii",
+          "Ludwigia repens",
+          "Rotala rotundifolia",
+          "Scarlet Temple"
+        ]
+      },
+      "Other": {
+        "before": 6,
+        "after": 3,
+        "delta": -3,
+        "target": 7,
+        "coveragePct": 43,
+        "entities": [
+          "Staurogyne repens",
+          "Hydrocotyle tripartita",
+          "Thai Onion Plant"
+        ]
+      }
+    },
+    "invertebrates": {
+      "FW Shrimp": {
+        "before": 0,
+        "after": 18,
+        "delta": 18,
+        "target": 4,
+        "coveragePct": 450,
+        "entities": [
+          "Cherry Shrimp",
+          "Taiwan Bee Shrimp",
+          "Blue Bolt Shrimp",
+          "Blue Diamond Shrimp",
+          "Vampire Shrimp",
+          "Babaulti Shrimp",
+          "Blue Tiger Shrimp",
+          "Snowball Shrimp",
+          "Golden Back Yellow Shrimp",
+          "King Kong Shrimp",
+          "Sulawesi Cardinal Shrimp",
+          "Sulawesi Cardinal Shrimp",
+          "Bamboo Shrimp",
+          "Crystal Red Shrimp",
+          "Amano Shrimp",
+          "Red Cherry Shrimp",
+          "Ghost Shrimp",
+          "Sulawesi Red Cherry Shrimp"
+        ]
+      },
+      "FW Snails": {
+        "before": 0,
+        "after": 7,
+        "delta": 7,
+        "target": 4,
+        "coveragePct": 175,
+        "entities": [
+          "Nerite Snail",
+          "Rabbit Snail",
+          "Assassin Snail",
+          "Malaysian Trumpet Snail",
+          "Great Ramshorn Snail",
+          "Mystery Snail",
+          "Zebra Nerite Snail"
+        ]
+      },
+      "Marine Shrimp": {
+        "before": 6,
+        "after": 6,
+        "delta": 0,
+        "target": 6,
+        "coveragePct": 100,
+        "entities": [
+          "Harlequin Shrimp",
+          "Cleaner Shrimp",
+          "Fire Shrimp",
+          "Peppermint Shrimp",
+          "Coral Banded Shrimp",
+          "Sexy Anemone Shrimp"
+        ]
+      },
+      "Marine Snails": {
+        "before": 4,
+        "after": 5,
+        "delta": 1,
+        "target": 6,
+        "coveragePct": 83,
+        "entities": [
+          "Trochus Snail",
+          "Astraea Snail",
+          "Nassarius Snail",
+          "Turbo Snail",
+          "Cerith Snail"
+        ]
+      },
+      "Crabs": {
+        "before": 2,
+        "after": 6,
+        "delta": 4,
+        "target": 4,
+        "coveragePct": 150,
+        "entities": [
+          "Vampire Crab",
+          "Emerald Crab",
+          "Scarlet Hermit Crab",
+          "Pom-Pom Crab",
+          "Thai Micro Crab",
+          "Red Claw Crab"
+        ]
+      },
+      "Starfish": {
+        "before": 2,
+        "after": 4,
+        "delta": 2,
+        "target": 5,
+        "coveragePct": 80,
+        "entities": [
+          "Brittle Star",
+          "Chocolate Chip Starfish",
+          "Fromia Starfish",
+          "Sand-Sifting Starfish"
+        ]
+      },
+      "Urchins": {
+        "before": 1,
+        "after": 2,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Pencil Urchin",
+          "Tuxedo Urchin"
+        ]
+      },
+      "Anemones": {
+        "before": 2,
+        "after": 4,
+        "delta": 2,
+        "target": 5,
+        "coveragePct": 80,
+        "entities": [
+          "Magnificent Anemone",
+          "Sebae Anemone",
+          "Bubble-Tip Anemone",
+          "Rock Flower Anemone"
+        ]
+      },
+      "Other Reef": {
+        "before": 3,
+        "after": 4,
+        "delta": 1,
+        "target": 3,
+        "coveragePct": 133,
+        "entities": [
+          "Feather Duster Worm",
+          "Blue Crayfish",
+          "Tridacna Maxima Clam",
+          "Sea Cucumber"
+        ]
+      }
+    },
+    "equipment": {
+      "Filtration": {
+        "before": 7,
+        "after": 7,
+        "delta": 0,
+        "target": 10,
+        "coveragePct": 70,
+        "entities": [
+          "Return Pump",
+          "Filter Floss",
+          "Canister Filter",
+          "Hang-On-Back Filter",
+          "Internal Filter",
+          "Sponge Filter",
+          "RO/DI Water Filter"
+        ]
+      },
+      "Lighting": {
+        "before": 4,
+        "after": 5,
+        "delta": 1,
+        "target": 7,
+        "coveragePct": 71,
+        "entities": [
+          "Planted LED Light",
+          "Reef LED Light",
+          "PAR Meter",
+          "T5 Fluorescent Light",
+          "LED Aquarium Light"
+        ]
+      },
+      "Heating": {
+        "before": 3,
+        "after": 3,
+        "delta": 0,
+        "target": 3,
+        "coveragePct": 100,
+        "entities": [
+          "Aquarium Thermometer",
+          "Digital Heater",
+          "Submersible Heater"
+        ]
+      },
+      "Circulation": {
+        "before": 3,
+        "after": 2,
+        "delta": -1,
+        "target": 4,
+        "coveragePct": 50,
+        "entities": [
+          "Air Pump",
+          "Circulation Pump (Powerhead)"
+        ]
+      },
+      "CO2": {
+        "before": 3,
+        "after": 2,
+        "delta": -1,
+        "target": 6,
+        "coveragePct": 33,
+        "entities": [
+          "CO2 Diffuser",
+          "CO2 Drop Checker"
+        ]
+      },
+      "ATO": {
+        "before": 1,
+        "after": 3,
+        "delta": 2,
+        "target": 1,
+        "coveragePct": 300,
+        "entities": [
+          "Dechlorinator",
+          "Auto Top-Off System",
+          "CO₂ Regulator Kit"
+        ]
+      },
+      "Dosing": {
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "target": 2,
+        "coveragePct": 50,
+        "entities": [
+          "Dosing Pump"
+        ]
+      },
+      "Skimming": {
+        "before": 1,
+        "after": 1,
+        "delta": 0,
+        "target": 1,
+        "coveragePct": 100,
+        "entities": [
+          "Protein Skimmer"
+        ]
+      },
+      "Reactors": {
+        "before": 2,
+        "after": 2,
+        "delta": 0,
+        "target": 2,
+        "coveragePct": 100,
+        "entities": [
+          "Calcium Reactor",
+          "Media Reactor"
+        ]
+      },
+      "Testing": {
+        "before": 7,
+        "after": 5,
+        "delta": -2,
+        "target": 8,
+        "coveragePct": 63,
+        "entities": [
+          "Refractometer",
+          "Digital pH Meter",
+          "TDS Meter",
+          "Master Test Kit",
+          "Water Test Strips"
+        ]
+      },
+      "Substrate": {
+        "before": 4,
+        "after": 4,
+        "delta": 0,
+        "target": 6,
+        "coveragePct": 67,
+        "entities": [
+          "Gravel Vacuum",
+          "Aquarium Soil Substrate",
+          "Aquasoil Substrate",
+          "Aquarium Gravel"
+        ]
+      },
+      "Maintenance": {
+        "before": 2,
+        "after": 1,
+        "delta": -1,
+        "target": 3,
+        "coveragePct": 33,
+        "entities": [
+          "Algae Scraper"
+        ]
+      }
+    },
+    "problems": {
+      "Fish Disease": {
+        "before": 15,
+        "after": 15,
+        "delta": 0,
+        "target": 16,
+        "coveragePct": 94,
+        "entities": [
+          "Fin Rot",
+          "Dropsy",
+          "Temperature Shock",
+          "Columnaris (Cotton Mouth)",
+          "Velvet Disease (Oodinium)",
+          "Fish Lice (Argulus)",
+          "Saprolegnia (Water Mold)",
+          "Ich (White Spot Disease)",
+          "Swim Bladder Disease",
+          "Flukes (Gill and Skin Parasites)",
+          "Anchor Worm (Lernaea)",
+          "Pop Eye (Exophthalmia)",
+          "Fish Gasping at Surface",
+          "Fish Hiding or Chronic Stress",
+          "White Spot Disease (Ich)"
+        ]
+      },
+      "Parasites": {
+        "before": 0,
+        "after": 2,
+        "delta": 2,
+        "target": 5,
+        "coveragePct": 40,
+        "entities": [
+          "Planaria Infestation",
+          "Hydra Infestation"
+        ]
+      },
+      "Bacterial/Fungal": {
+        "before": 0,
+        "after": 0,
+        "delta": 0,
+        "target": 3,
+        "coveragePct": 0,
+        "entities": []
+      },
+      "Algae": {
+        "before": 7,
+        "after": 7,
+        "delta": 0,
+        "target": 9,
+        "coveragePct": 78,
+        "entities": [
+          "Hair Algae",
+          "Staghorn Algae",
+          "Black Beard Algae (BBA)",
+          "Dinoflagellates",
+          "Brown Diatom Algae",
+          "Cyanobacteria (Blue-Green Slime)",
+          "Green Water Algae Bloom"
+        ]
+      },
+      "Plant": {
+        "before": 2,
+        "after": 2,
+        "delta": 0,
+        "target": 3,
+        "coveragePct": 67,
+        "entities": [
+          "Plant Nutrient Deficiency",
+          "Plant Leaves Melting"
+        ]
+      },
+      "Water Quality": {
+        "before": 6,
+        "after": 7,
+        "delta": 1,
+        "target": 9,
+        "coveragePct": 78,
+        "entities": [
+          "Old Tank Syndrome",
+          "Cloudy Water",
+          "High Ammonia Poisoning",
+          "High Nitrate",
+          "High Nitrite",
+          "pH Crash",
+          "pH Drift"
+        ]
+      },
+      "Equipment": {
+        "before": 2,
+        "after": 4,
+        "delta": 2,
+        "target": 6,
+        "coveragePct": 67,
+        "entities": [
+          "Filter Crash",
+          "Heater Stuck Off",
+          "Heater Stuck On",
+          "Low Filter Flow"
+        ]
+      },
+      "Coral/Reef": {
+        "before": 0,
+        "after": 5,
+        "delta": 5,
+        "target": 5,
+        "coveragePct": 100,
+        "entities": [
+          "Aiptasia Infestation",
+          "Brown Jelly Disease",
+          "Coral Bleaching",
+          "Rapid Tissue Necrosis (RTN)",
+          "Slow Tissue Necrosis (STN)"
+        ]
+      }
+    }
+  }
+}

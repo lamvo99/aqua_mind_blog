@@ -1,0 +1,213 @@
+{
+  "generatedAt": "2026-09-21T09:41:12.374Z",
+  "totalEntities": 29,
+  "created": 29,
+  "skipped": 0,
+  "errors": 0,
+  "results": [
+    {
+      "name": "Maroon Clownfish",
+      "type": "species",
+      "slug": "maroon-clownfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Tomato Clownfish",
+      "type": "species",
+      "slug": "tomato-clownfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Clarkii Clownfish",
+      "type": "species",
+      "slug": "clarkii-clownfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Purple Tang",
+      "type": "species",
+      "slug": "purple-tang",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Powder Blue Tang",
+      "type": "species",
+      "slug": "powder-blue-tang",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Queen Angelfish",
+      "type": "species",
+      "slug": "queen-angelfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Cleaner Wrasse",
+      "type": "species",
+      "slug": "cleaner-wrasse",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Melanurus Wrasse",
+      "type": "species",
+      "slug": "melanurus-wrasse",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Flasher Wrasse",
+      "type": "species",
+      "slug": "flasher-wrasse",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Raccoon Butterflyfish",
+      "type": "species",
+      "slug": "raccoon-butterflyfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Longnose Butterflyfish",
+      "type": "species",
+      "slug": "longnose-butterflyfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Snowflake Eel",
+      "type": "species",
+      "slug": "snowflake-eel",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Longnose Hawkfish",
+      "type": "species",
+      "slug": "longnose-hawkfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Arc-eye Hawkfish",
+      "type": "species",
+      "slug": "arc-eye-hawkfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Diamond Watchman Goby",
+      "type": "species",
+      "slug": "diamond-watchman-goby",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Bicolor Blenny",
+      "type": "species",
+      "slug": "bicolor-blenny",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Queen Triggerfish",
+      "type": "species",
+      "slug": "queen-triggerfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Black Cap Basslet",
+      "type": "species",
+      "slug": "black-cap-basslet",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Bartlett's Anthias",
+      "type": "species",
+      "slug": "bartlett-s-anthias",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Pajama Cardinalfish",
+      "type": "species",
+      "slug": "pajama-cardinalfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Stars and Stripes Puffer",
+      "type": "species",
+      "slug": "stars-and-stripes-puffer",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Sebae Anemone",
+      "type": "invertebrate",
+      "slug": "sebae-anemone",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Magnificent Anemone",
+      "type": "invertebrate",
+      "slug": "magnificent-anemone",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Chocolate Chip Starfish",
+      "type": "invertebrate",
+      "slug": "chocolate-chip-starfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Fromia Starfish",
+      "type": "invertebrate",
+      "slug": "fromia-starfish",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Trochus Snail",
+      "type": "invertebrate",
+      "slug": "trochus-snail",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Astraea Snail",
+      "type": "invertebrate",
+      "slug": "astraea-snail",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Pom-Pom Crab",
+      "type": "invertebrate",
+      "slug": "pom-pom-crab",
+      "status": "created",
+      "id": "unknown"
+    },
+    {
+      "name": "Pencil Urchin",
+      "type": "invertebrate",
+      "slug": "pencil-urchin",
+      "status": "created",
+      "id": "unknown"
+    }
+  ],
+  "errorDetails": []
+}

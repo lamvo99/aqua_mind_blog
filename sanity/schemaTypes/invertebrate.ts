@@ -16,6 +16,21 @@ export default defineType({
       validation: (Rule: any) => Rule.required(),
     }),
     defineField({ name: 'excerpt', title: 'Excerpt', type: 'text', rows: 3 }),
+    defineField({
+      name: 'localNames', title: 'Local / Trade Names', type: 'array',
+      description: 'Verified Vietnamese, regional, or aquarium trade names for discovery.',
+      of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'aliases', title: 'Search Aliases', type: 'array',
+      description: 'Alternate common names, accepted search synonyms, or common spelling variants.',
+      of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'parentSpecies', title: 'Parent Species', type: 'reference',
+      description: 'If this is a variant/morph, point to the canonical species record.',
+      to: [{ type: 'invertebrate' }],
+    }),
     defineField({ name: 'publishedAt', title: 'Published at', type: 'datetime' }),
     defineField({
       name: 'waterType', title: 'Water Type', type: 'string',
