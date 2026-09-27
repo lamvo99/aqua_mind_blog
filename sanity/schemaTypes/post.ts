@@ -22,7 +22,7 @@ export default defineType({
     }),
     defineField({
       name: 'body', title: 'Body', type: 'array',
-      of: [{ type: 'block' }, { type: 'image', options: { hotspot: true } }, { type: 'code' }],
+      of: [{ type: 'block' }, { type: 'image', options: { hotspot: true } }, { type: 'code' }, { type: 'table' }],
     }),
     defineField({ name: 'tags', title: 'Tags', type: 'array', of: [{ type: 'string' }] }),
     defineField({ name: 'isFeatured', title: 'Is Featured?', type: 'boolean', initialValue: false }),

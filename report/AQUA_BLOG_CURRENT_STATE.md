@@ -2069,3 +2069,62 @@ Future updates classified as:
 ---
 
 *Database V1 frozen. 483 entities across 7 types. TypeScript, lint, and build all pass. All 22 QA SPECs PASS. Files modified for WEB-01 through WEB-08, Phases 1-15 (database), and build fixes. Project on `main` branch.*
+
+---
+
+## 42. WEB NATIVE TABLE BLOCK PHASE 01 — SANITY PORTABLE TEXT NATIVE TABLE
+
+**Status:** ✅ COMPLETE (2026-09-27)
+
+### Summary
+
+A reusable native **Table** block now exists in Sanity Portable Text and renders as a
+responsive, accessible, semantic HTML `<table>` in the article frontend. Infrastructure
+only — no database expansion, no articles created/migrated, no other Portable Text block
+modified.
+
+### Native Table block
+
+- **Schema:** `sanity/schemaTypes/table.ts` — `caption`, `hasHeader` (default true),
+  `columns[{label}]`, `rows[{cells[{value}]}]`; plain-text cells; positional mapping.
+- **Studio:** standard array editor (add/remove column & row, edit headers/cells/caption,
+  header toggle). TSV paste deferred (custom-editor effort; allowed by SPEC-02).
+- **Renderer:** `app/components/ResponsiveTable.tsx` (server component) routed from
+  `app/components/PortableText.tsx` on `_type === 'table'`.
+- **Responsive:** desktop = normal readable table; mobile = horizontal scroll confined to
+  the table wrapper (`overflow-x-auto`, `min-w-[480px]`), no page overflow, long text wraps.
+- **Accessibility:** `<table>/<caption>/<thead>/<tbody>/<th scope="col">/<td>`; plain-text
+  cell rendering (React escaping), no `dangerouslySetInnerHTML`.
+
+### Content workflow
+
+`[TABLE 01]` in editorial output is a placeholder, NOT literal Body content. The editor
+creates a native Table block in Sanity. Markdown tables must NOT be pasted into Body as the
+long-term workflow. See `report/WEB_NATIVE_TABLE_BLOCK_PHASE_01_DOCUMENTATION.md`.
+
+### Verification
+
+| Check | Result |
+|-------|--------|
+| Tests | ✅ 253/254 (1 pre-existing `compare.test.ts`) |
+| New tests | ✅ 15/15 (`tests/responsive-table.test.tsx`) |
+| ESLint | ✅ PASS (6 pre-existing warnings) |
+| TypeScript | ✅ PASS |
+| Production Build | ✅ PASS (563/563 pages) |
+| Security audit | ✅ PASS |
+
+### Deferred
+
+- TSV paste into Studio table editor
+- Optional sticky header
+- Live Studio click-through (requires Vercel deploy; schema ships via git)
+
+### Deliverables
+
+- `report/WEB_NATIVE_TABLE_BLOCK_PHASE_01_CHECKPOINT.md`
+- `report/WEB_NATIVE_TABLE_BLOCK_PHASE_01_DOCUMENTATION.md`
+
+---
+
+*Native Table block live in Sanity Portable Text + Next.js renderer. All verification PASS
+(253/254 tests, one pre-existing failure; lint, types, and 563-page build green).*

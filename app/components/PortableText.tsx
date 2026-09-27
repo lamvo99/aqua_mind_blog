@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { urlFor } from "@/lib/sanity"
+import ResponsiveTable from "./ResponsiveTable"
 
 function headingId(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
@@ -132,6 +133,9 @@ export default function PortableText({ value }: { value: any[] }) {
               </pre>
             </div>
           )
+        }
+        if (item.type === "table") {
+          return <ResponsiveTable key={item.block._key || i} data={item.block} />
         }
         if (item.type === "block") {
           return <BlockRenderer key={item.block._key || i} block={item.block} />
