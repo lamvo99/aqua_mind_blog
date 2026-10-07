@@ -5,7 +5,7 @@ import { ListChecks } from "lucide-react"
 export const metadata: Metadata = {
   title: "Aquarium Setup Planner — AquaMind",
   description: "Plan your new aquarium step by step: choose a tank type, estimate the volume and get a personalized checklist with equipment, plants and fish.",
-  alternates: { canonical: "https://aquamind.life/setup-planner" },
+  alternates: { canonical: "https://www.aquamind.life/setup-planner" },
   openGraph: {
     title: "Aquarium Setup Planner — AquaMind",
     description: "Plan your new aquarium step by step: choose a tank type, estimate the volume and get a personalized checklist with equipment, plants and fish.",

@@ -6,7 +6,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "Fish Stocking Calculator — AquaMind",
   description: "Estimate how many fish your aquarium can hold using the classic inches-per-gallon rule and check your current stocking level.",
-  alternates: { canonical: "https://aquamind.life/tools/stocking" },
+  alternates: { canonical: "https://www.aquamind.life/tools/stocking" },
   openGraph: {
     title: "Fish Stocking Calculator — AquaMind",
     description: "Estimate how many fish your aquarium can hold using the classic inches-per-gallon rule and check your current stocking level.",

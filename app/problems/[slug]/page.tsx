@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${item.title} — Aquarium Problem`,
     description: item.excerpt,
-    alternates: { canonical: `https://aquamind.life/problems/${slug}` },
+    alternates: { canonical: `https://www.aquamind.life/problems/${slug}` },
       openGraph: {
       title: `${item.title} — Aquarium Problem`,
       description: item.excerpt,
       type: "website",
-      url: `https://aquamind.life/problems/${slug}`,
+      url: `https://www.aquamind.life/problems/${slug}`,
     },
     twitter: {
       card: "summary_large_image",

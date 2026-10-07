@@ -22,27 +22,40 @@ export async function generateStaticParams() {
   return items.filter((item) => !!item.slug?.current).map((item) => ({ slug: item.slug!.current }))
 }
 
+function nonEmptySeoString(value: unknown): value is string {
+  return typeof value === "string" && value.trim().length > 0
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const item = await getDatabaseItem("species", slug)
   if (!item) return { title: "Not found" }
+
+  const canonical = `https://www.aquamind.life/species/${slug}`
+  const fallbackTitle = `${item.name} — Fish Profile`
+  const fallbackDescription = item.excerpt || `Care guide for ${item.name}`
+  const seoTitle = nonEmptySeoString(item.seo?.metaTitle) ? item.seo.metaTitle : null
+  const seoDescription = nonEmptySeoString(item.seo?.metaDescription) ? item.seo.metaDescription : null
+  const title = seoTitle || fallbackTitle
+  const description = seoDescription || fallbackDescription
+
   return {
-    title: `${item.name} — Fish Profile`,
-    description: item.excerpt || `Care guide for ${item.name}`,
-    alternates: { canonical: `https://aquamind.life/species/${slug}` },
+    title: seoTitle ? { absolute: seoTitle } : fallbackTitle,
+    description,
+    alternates: { canonical },
     openGraph: {
-      title: `${item.name} — Fish Profile`,
-      description: item.excerpt || `Care guide for ${item.name}`,
+      title,
+      description,
       type: "website",
-      url: `https://aquamind.life/species/${slug}`,
+      url: canonical,
       images: item.mainImage
         ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: `${item.name} — fish species profile` }]
         : undefined,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.name} — Fish Profile`,
-      description: item.excerpt || `Care guide for ${item.name}`,
+      title,
+      description,
     },
   }
 }

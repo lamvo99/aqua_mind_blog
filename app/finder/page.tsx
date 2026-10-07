@@ -9,7 +9,7 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 export const metadata: Metadata = {
   title: "Find Your Perfect Match — AquaMind",
   description: "Answer a few questions and get a ranked shortlist of fish, plants, corals, invertebrates and equipment matched to your aquarium.",
-  alternates: { canonical: "https://aquamind.life/finder" },
+  alternates: { canonical: "https://www.aquamind.life/finder" },
   openGraph: {
     title: "Find Your Perfect Match — AquaMind",
     description: "Answer a few questions and get a ranked shortlist of fish, plants, corals, invertebrates and equipment matched to your aquarium.",

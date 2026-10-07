@@ -104,6 +104,7 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
   const result = await client.fetch(
     `*[_type == $type && slug.current == $slug][0] {
       _id, _type, name, scientificName, slug, excerpt, mainImage,
+      seo { metaTitle, metaDescription },
       family, origin, sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty, waterType,
       group, aliases, localNames, parentSpecies,

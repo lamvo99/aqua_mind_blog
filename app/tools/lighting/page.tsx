@@ -6,7 +6,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "Aquarium Lighting Calculator — AquaMind",
   description: "Estimate the LED wattage and lumens your planted aquarium needs for low, medium or high light setups.",
-  alternates: { canonical: "https://aquamind.life/tools/lighting" },
+  alternates: { canonical: "https://www.aquamind.life/tools/lighting" },
   openGraph: {
     title: "Aquarium Lighting Calculator — AquaMind",
     description: "Estimate the LED wattage and lumens your planted aquarium needs for low, medium or high light setups.",

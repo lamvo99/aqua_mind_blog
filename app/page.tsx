@@ -11,7 +11,7 @@ export const revalidate = 300
 export const metadata: Metadata = {
   title: "Aquascaping Blog & Beginner Aquarium Guides — AquaMind",
   description: "Free aquascaping guides, aquarium care articles, tools and a verified database of fish, plants and corals. Start here if you are new to fishkeeping.",
-  alternates: { canonical: "https://aquamind.life" },
+  alternates: { canonical: "https://www.aquamind.life" },
 }
 
 export default async function Home() {

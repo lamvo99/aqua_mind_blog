@@ -9,7 +9,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "Compatibility Checker — AquaMind",
   description: "Check whether fish species can live together: temperature, pH, hardness, temperament and tank size checks combined with a stocking calculator.",
-  alternates: { canonical: "https://aquamind.life/tools/compatibility-checker" },
+  alternates: { canonical: "https://www.aquamind.life/tools/compatibility-checker" },
   openGraph: {
     title: "Compatibility Checker — AquaMind",
     description: "Check whether fish species can live together: temperature, pH, hardness, temperament and tank size checks combined with a stocking calculator.",

@@ -8,7 +8,7 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 export const metadata: Metadata = {
   title: "Aquarium Tools & Calculators — AquaMind",
   description: "Free aquarium tools: setup planner, tank volume, water changes, CO₂, dosing, pump flow, salt mixing, lighting and stocking calculators.",
-  alternates: { canonical: "https://aquamind.life/tools" },
+  alternates: { canonical: "https://www.aquamind.life/tools" },
   openGraph: {
     title: "Aquarium Tools & Calculators — AquaMind",
     description: "Free aquarium tools: setup planner, tank volume, water changes, CO₂, dosing, pump flow, salt mixing, lighting and stocking calculators.",

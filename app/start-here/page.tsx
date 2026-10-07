@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Start Here: The Beginner's Journey — AquaMind",
   description: "New to fishkeeping? Follow this proven path: understand the nitrogen cycle, set up your first tank, choose fish and keep it stable — all free, all verified.",
-  alternates: { canonical: "https://aquamind.life/start-here" },
+  alternates: { canonical: "https://www.aquamind.life/start-here" },
   openGraph: {
     title: "Start Here: The Beginner's Journey — AquaMind",
     description: "New to fishkeeping? Follow this proven path: understand the nitrogen cycle, set up your first tank, choose fish and keep it stable — all free, all verified.",

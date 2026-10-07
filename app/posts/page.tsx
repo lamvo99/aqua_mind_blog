@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 
 export const revalidate = 300
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
 export async function generateMetadata({
   searchParams: searchParamsPromise,

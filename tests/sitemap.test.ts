@@ -24,7 +24,7 @@ describe('sitemap', () => {
       '/learn',
       '/setup-planner',
     ]) {
-      expect(urls).toContain(`https://aquamind.life${path === '/' ? '' : path}`)
+      expect(urls).toContain(`https://www.aquamind.life${path === '/' ? '' : path}`)
     }
   })
 
@@ -35,7 +35,7 @@ describe('sitemap', () => {
   })
 
   it('homepage has the highest priority', async () => {
-    const home = (await sitemap()).find((e) => e.url === 'https://aquamind.life')
+    const home = (await sitemap()).find((e) => e.url === 'https://www.aquamind.life')
     expect(home?.priority).toBe(1)
   })
 
@@ -56,11 +56,11 @@ describe('sitemap', () => {
       .mockResolvedValueOnce(asResult([{ slug: 'first-tank' }]))
     const entries = await sitemap()
     const urls = entries.map((e) => e.url)
-    expect(urls).toContain('https://aquamind.life/posts/cycling-101')
-    expect(urls).toContain('https://aquamind.life/species/neon-tetra')
-    expect(urls).toContain('https://aquamind.life/category/beginner-guides')
-    expect(urls).not.toContain('https://aquamind.life/category/empty-category')
-    expect(urls).toContain('https://aquamind.life/learn/first-tank')
+    expect(urls).toContain('https://www.aquamind.life/posts/cycling-101')
+    expect(urls).toContain('https://www.aquamind.life/species/neon-tetra')
+    expect(urls).toContain('https://www.aquamind.life/category/beginner-guides')
+    expect(urls).not.toContain('https://www.aquamind.life/category/empty-category')
+    expect(urls).toContain('https://www.aquamind.life/learn/first-tank')
   })
 })
 
@@ -68,6 +68,6 @@ describe('robots', () => {
   it('allows crawl, blocks studio, points to sitemap', () => {
     const r = robots()
     expect(r.rules).toMatchObject({ userAgent: '*', allow: '/', disallow: '/studio' })
-    expect(r.sitemap).toBe('https://aquamind.life/sitemap.xml')
+    expect(r.sitemap).toBe('https://www.aquamind.life/sitemap.xml')
   })
 })

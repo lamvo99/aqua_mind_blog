@@ -6,7 +6,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "The terms and conditions for using AquaMind — content use, disclaimers and liability for aquarium advice.",
-  alternates: { canonical: "https://aquamind.life/terms-of-service" },
+  alternates: { canonical: "https://www.aquamind.life/terms-of-service" },
 }
 
 export default function TermsOfServicePage() {

@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About AquaMind",
   description: "AquaMind's story and mission: free, verified aquascaping and aquarium knowledge for fishkeepers of every level.",
-  alternates: { canonical: "https://aquamind.life/about" },
+  alternates: { canonical: "https://www.aquamind.life/about" },
   openGraph: {
     title: "About AquaMind",
     description: "AquaMind's story and mission: free, verified aquascaping and aquarium knowledge for fishkeepers of every level.",

@@ -8,7 +8,7 @@ import { Database } from "lucide-react"
 export const metadata: Metadata = {
   title: "Coral Database — AquaMind",
   description: "Browse reef corals with care parameters: light, flow, difficulty, placement and aggression.",
-  alternates: { canonical: "https://aquamind.life/corals" },
+  alternates: { canonical: "https://www.aquamind.life/corals" },
   openGraph: {
     title: "Coral Database — AquaMind",
     description: "Browse reef corals with care parameters: light, flow, difficulty, placement and aggression.",
@@ -31,8 +31,8 @@ export default async function CoralsPage() {
       <JsonLd data={collectionPageSchema({
         name: "Coral Database",
         description: "Browse reef corals with care parameters.",
-        url: "https://aquamind.life/corals",
-        items: items.map((i) => ({ title: i.name, url: `https://aquamind.life/corals/${i.slug?.current}` })),
+        url: "https://www.aquamind.life/corals",
+        items: items.map((i) => ({ title: i.name, url: `https://www.aquamind.life/corals/${i.slug?.current}` })),
       })} />
       <div className="mb-6">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Corals" }]} />

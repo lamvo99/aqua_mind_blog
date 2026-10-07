@@ -8,7 +8,7 @@ import { ArrowRight, Search, Sparkles, Wrench } from "lucide-react"
 export const metadata: Metadata = {
   title: "Aquarium Database — Fish, Plants, Corals & Equipment",
   description: "Searchable database of 404 aquarium species, plants, corals, equipment & invertebrates with care parameters, compatibility & relationships.",
-  alternates: { canonical: "https://aquamind.life/database" },
+  alternates: { canonical: "https://www.aquamind.life/database" },
   openGraph: {
     title: "Aquarium Database — Fish, Plants, Corals & Equipment",
     description: "Searchable database of 404 aquarium species, plants, corals, equipment & invertebrates with care parameters, compatibility & relationships.",

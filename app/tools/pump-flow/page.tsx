@@ -6,7 +6,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "Pump & Filter Flow Calculator — AquaMind",
   description: "Find the right flow rate (L/h or gph) for your aquarium filter or circulation pump based on tank volume and turnover rate.",
-  alternates: { canonical: "https://aquamind.life/tools/pump-flow" },
+  alternates: { canonical: "https://www.aquamind.life/tools/pump-flow" },
   openGraph: {
     title: "Pump & Filter Flow Calculator — AquaMind",
     description: "Find the right flow rate (L/h or gph) for your aquarium filter or circulation pump based on tank volume and turnover rate.",

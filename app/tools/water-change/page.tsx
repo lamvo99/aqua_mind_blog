@@ -6,7 +6,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "Water Change Calculator — AquaMind",
   description: "Plan aquarium water changes: calculate the volume to replace and estimate the impact on water parameters like nitrate.",
-  alternates: { canonical: "https://aquamind.life/tools/water-change" },
+  alternates: { canonical: "https://www.aquamind.life/tools/water-change" },
   openGraph: {
     title: "Water Change Calculator — AquaMind",
     description: "Plan aquarium water changes: calculate the volume to replace and estimate the impact on water parameters like nitrate.",

@@ -6,7 +6,7 @@ import { TOOL_LEARN_LINKS } from "@/lib/related"
 export const metadata: Metadata = {
   title: "CO₂ Estimator — AquaMind",
   description: "Estimate dissolved CO₂ in your planted aquarium from KH and pH readings. Understand CO₂ levels for healthy plant growth.",
-  alternates: { canonical: "https://aquamind.life/tools/co2" },
+  alternates: { canonical: "https://www.aquamind.life/tools/co2" },
   openGraph: {
     title: "CO₂ Estimator — AquaMind",
     description: "Estimate dissolved CO₂ in your planted aquarium from KH and pH readings. Understand CO₂ levels for healthy plant growth.",

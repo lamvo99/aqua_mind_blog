@@ -1,6 +1,6 @@
 import { urlFor } from "@/lib/sanity"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
 export function organizationSchema() {
   return {

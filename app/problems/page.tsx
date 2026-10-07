@@ -8,7 +8,7 @@ import ProblemsGrid from "@/app/components/database/ProblemsGrid"
 export const metadata: Metadata = {
   title: "Aquarium Problem Solver — AquaMind",
   description: "Solve aquarium problems: cloudy water, algae outbreaks, sick fish, plant issues and equipment failures.",
-  alternates: { canonical: "https://aquamind.life/problems" },
+  alternates: { canonical: "https://www.aquamind.life/problems" },
   openGraph: {
     title: "Aquarium Problem Solver — AquaMind",
     description: "Solve aquarium problems: cloudy water, algae outbreaks, sick fish, plant issues and equipment failures.",

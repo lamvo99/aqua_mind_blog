@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${collection.title} — Learning Path`,
     description: collection.description || `A step-by-step learning path on AquaMind`,
-    alternates: { canonical: `https://aquamind.life/learn/${slug}` },
+    alternates: { canonical: `https://www.aquamind.life/learn/${slug}` },
   }
 }
 

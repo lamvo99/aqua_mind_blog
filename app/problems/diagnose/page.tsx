@@ -8,7 +8,7 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 export const metadata: Metadata = {
   title: "Diagnose Your Aquarium Problem — AquaMind",
   description: "Pick the symptoms you see and get ranked likely causes, from algae outbreaks to sick fish — matched against our full problem database.",
-  alternates: { canonical: "https://aquamind.life/problems/diagnose" },
+  alternates: { canonical: "https://www.aquamind.life/problems/diagnose" },
   openGraph: {
     title: "Diagnose Your Aquarium Problem — AquaMind",
     description: "Pick the symptoms you see and get ranked likely causes, from algae outbreaks to sick fish — matched against our full problem database.",

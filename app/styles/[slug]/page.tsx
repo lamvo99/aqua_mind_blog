@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${style.name} Aquascaping Style Guide — AquaMind`,
     description: style.summary,
-    alternates: { canonical: `https://aquamind.life/styles/${slug}` },
+    alternates: { canonical: `https://www.aquamind.life/styles/${slug}` },
   }
 }
 

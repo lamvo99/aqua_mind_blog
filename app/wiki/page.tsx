@@ -7,7 +7,7 @@ import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld
 export const metadata: Metadata = {
   title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment — AquaMind",
   description: "Search the AquaMind wiki across 140+ fish species, aquatic invertebrates, plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
-  alternates: { canonical: "https://aquamind.life/wiki" },
+  alternates: { canonical: "https://www.aquamind.life/wiki" },
   openGraph: {
     title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment — AquaMind",
     description: "Search the AquaMind wiki across 140+ fish species, aquatic invertebrates, plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
@@ -43,10 +43,10 @@ export default async function WikiPage() {
           name: "Aquarium Wiki",
           description:
             "Search fish species, aquatic invertebrates, corals and aquarium equipment with care parameters.",
-          url: "https://aquamind.life/wiki",
+          url: "https://www.aquamind.life/wiki",
           items: items.slice(0, 100).map((i) => ({
             title: i.name,
-            url: `https://aquamind.life${i.href}`,
+            url: `https://www.aquamind.life${i.href}`,
           })),
         })}
       />

@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aquamind.life"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
