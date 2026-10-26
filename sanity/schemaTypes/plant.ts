@@ -137,6 +137,69 @@ export default defineType({
       name: 'relatedPosts', title: 'Related Posts', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }],
     }),
+    defineField({
+      name: 'feedingMode', title: 'Feeding Mode', type: 'string',
+      options: { list: ['ROOT', 'WATER_COLUMN', 'BOTH'] },
+    }),
+    defineField({
+      name: 'substrateType', title: 'Substrate Requirement', type: 'string',
+      options: { list: ['NONE', 'SAND', 'SOIL', 'MIXED'] },
+    }),
+    defineField({
+      name: 'fertilizationPlan', title: 'Fertilization Plan', type: 'string',
+      options: { list: ['NONE', 'LIGHT_LIQUID', 'REGULAR', 'TARGETED'] },
+    }),
+    defineField({
+      name: 'ghMin', title: 'Min GH (dGH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40),
+    }),
+    defineField({
+      name: 'ghMax', title: 'Max GH (dGH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.ghMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'ghMax must be >= ghMin';
+      }),
+    }),
+    defineField({
+      name: 'khMin', title: 'Min KH (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40),
+    }),
+    defineField({
+      name: 'khMax', title: 'Max KH (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.khMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'khMax must be >= khMin';
+      }),
+    }),
+    defineField({
+      name: 'heightCm', title: 'Adult Height (cm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0.1),
+    }),
+    defineField({
+      name: 'spreadCm', title: 'Spread (cm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0.1),
+    }),
+    defineField({
+      name: 'flowTolerance', title: 'Flow Tolerance', type: 'string',
+      options: { list: ['LOW', 'MODERATE', 'HIGH'] },
+    }),
+    defineField({
+      name: 'parMin', title: 'Min PAR', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'parMax', title: 'Max PAR', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.parMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'parMax must be >= parMin';
+      }),
+    }),
+    defineField({
+      name: 'knowledgeBody', title: 'Knowledge Body', type: 'plantKnowledgeBody',
+    }),
   ],
   preview: {
     select: { title: 'name', media: 'mainImage' },

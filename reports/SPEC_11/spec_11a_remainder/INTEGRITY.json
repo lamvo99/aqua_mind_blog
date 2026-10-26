@@ -1,0 +1,41 @@
+{
+  "specId": "SPEC_11A",
+  "artifact": "SPEC_11A_INTEGRITY",
+  "generatedAt": "2026-10-18T04:05:04.426Z",
+  "mode": "Evidence-gated remainder execution (bounded); no rerun of one-shot executor",
+  "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+  "identityMatch": true,
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "protectedSealsUnchanged": true,
+  "sanityWrites": 0,
+  "mutationCalls": 0,
+  "operations": {
+    "eligible": 0,
+    "planned": 261,
+    "written": 0,
+    "holds": 257,
+    "rejects": 3,
+    "noops": 1
+  },
+  "verification": {
+    "checked": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "speciesScope": {
+    "total": 218,
+    "wave1": 17,
+    "wave2": 201,
+    "wave3": 0,
+    "noActionable": 0
+  },
+  "verdict": "PARTIAL_EVIDENCE_BLOCKED"
+}

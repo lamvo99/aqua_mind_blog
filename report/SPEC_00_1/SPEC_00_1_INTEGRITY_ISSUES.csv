@@ -1,0 +1,99 @@
+issue_id,severity,category,canonical_id,slug,issue_type,field,description,evidence,status
+I0001,MEDIUM,Fish / Species,I9bI8W8ZWcEwyIzM9CuXNI,gnathonemus-petersii,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0002,MEDIUM,Invertebrates,I9bI8W8ZWcEwyIzM9DJhXM,tylomelania-spp,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0003,MEDIUM,Invertebrates,J1Tx0fWCuGNPno99A6UVmA,atya-gabonensis,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0004,MEDIUM,Invertebrates,J1Tx0fWCuGNPno99A6UVyz,caridina-babaulti,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0005,MEDIUM,Invertebrates,PZ8Kai1VvEL468NS2LLeDy,holothuria,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0006,MEDIUM,Equipment,1z8rQFHeojDMTUo2hXSXqh,planted-led-light,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0007,MEDIUM,Equipment,1z8rQFHeojDMTUo2hXSXuo,reef-led-light,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0008,MEDIUM,Equipment,1z8rQFHeojDMTUo2hXSYAR,dosing-pump,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0009,MEDIUM,Equipment,5oQB2MZ7gmZXjdwFqSrZVh,calcium-reactor,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0010,MEDIUM,Equipment,5oQB2MZ7gmZXjdwFqSra6F,refractometer,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0011,MEDIUM,Equipment,I9bI8W8ZWcEwyIzM9CjFgi,aquarium-thermometer,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0012,MEDIUM,Equipment,I9bI8W8ZWcEwyIzM9DXs4W,media-reactor,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0013,MEDIUM,Equipment,IlX7xILobrukz7d5JnTI3q,gravel-vacuum,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0014,MEDIUM,Equipment,IlX7xILobrukz7d5JnTkGU,dechlorinator,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0015,MEDIUM,Equipment,IlX7xILobrukz7d5JnfmX8,wave-maker,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0016,MEDIUM,Equipment,IlX7xILobrukz7d5Jnfmla,activated-carbon,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0017,MEDIUM,Equipment,IlX7xILobrukz7d5JnvlZm,par-meter,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0018,MEDIUM,Equipment,IlX7xILobrukz7d5JnvloE,aquarium-soil-substrate,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0019,MEDIUM,Equipment,IlX7xILobrukz7d5Jo2s7K,automatic-water-change-system,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0020,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6Ttnw,digital-ph-meter,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0021,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6UXsx,tds-meter,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0022,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6hjas,return-pump,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0023,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6hjl8,aquarium-chiller,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0024,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6hwkO,filter-floss,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0025,MEDIUM,Equipment,J1Tx0fWCuGNPno99A6hwxD,aquarium-cooling-fan,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0026,MEDIUM,Equipment,J1Tx0fWCuGNPno99A79h5B,auto-top-off-system,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0027,MEDIUM,Equipment,J1Tx0fWCuGNPno99A7Kfv7,uv-sterilizer,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0028,MEDIUM,Equipment,PZ8Kai1VvEL468NS2LLeg8,digital-heater,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0029,MEDIUM,Equipment,PZ8Kai1VvEL468NS2LLfrf,aquasoil-substrate,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0030,MEDIUM,Equipment,equip-co2-diffuser,equip-co2-diffuser,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0031,MEDIUM,Equipment,equip-co2-drop-checker,equip-co2-drop-checker,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0032,MEDIUM,Equipment,equip-t5-fluorescent-light,equip-t5-fluorescent-light,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0033,MEDIUM,Equipment,equipment-hang-on-back-filter,hang-on-back-filter,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0034,MEDIUM,Equipment,sebdKYryWZgYP2rm3or3AK,algae-scraper,MISSING_IMAGE,mainImage,Missing main image,mainImage.asset is null,VERIFIED
+I0035,HIGH,Invertebrates,PZ8Kai1VvEL468NS2LLeDy,,INVALID_CATEGORY,group,"Invalid category value ""worm"" for invertebrate",group=worm,VERIFIED
+I0036,LOW,Plants,I9bI8W8ZWcEwyIzM9DFYK8,,LANGUAGE_CONTAMINATION,excerpt,Non-English (CJK) characters in excerpt,"""A popular floating plant with round, lily-pad-like leaves and long, trailing roots. Excellent for nutrient吸收 and providing cover for fish fry and shy species.""",VERIFIED
+I0037,LOW,Plants,J1Tx0fWCuGNPno99A7KJKt,,LANGUAGE_CONTAMINATION,excerpt,Non-English (CJK) characters in excerpt,"""A small floating fern with distinctive cup-shaped leaves. Fast-growing and excellent for nutrient吸收 in shrimp tanks. Does not reproduce as aggressively as duckweed.""",VERIFIED
+I0038,LOW,Corals,1z8rQFHeojDMTUo2hX9Rpx,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0039,LOW,Corals,1z8rQFHeojDMTUo2hX9Rpx,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0040,LOW,Corals,1z8rQFHeojDMTUo2hX9Rpx,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0041,LOW,Corals,BruaGKYCGDRQjkiQDnlmjC,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0042,LOW,Corals,BruaGKYCGDRQjkiQDnlmjC,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0043,LOW,Corals,BruaGKYCGDRQjkiQDnlmlr,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0044,LOW,Corals,BruaGKYCGDRQjkiQDnlmlr,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0045,LOW,Corals,BruaGKYCGDRQjkiQDnlmoW,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0046,LOW,Corals,BruaGKYCGDRQjkiQDnlmoW,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0047,LOW,Corals,BruaGKYCGDRQjkiQDnlmoW,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0048,LOW,Corals,BruaGKYCGDRQjkiQDnlmrB,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0049,LOW,Corals,BruaGKYCGDRQjkiQDnlmrB,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0050,LOW,Corals,BruaGKYCGDRQjkiQDnlmtq,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0051,LOW,Corals,BruaGKYCGDRQjkiQDnlmtq,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0052,LOW,Corals,I9bI8W8ZWcEwyIzM9CjDmS,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0053,LOW,Corals,I9bI8W8ZWcEwyIzM9CjDmS,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0054,LOW,Corals,I9bI8W8ZWcEwyIzM9CttlY,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0055,LOW,Corals,I9bI8W8ZWcEwyIzM9CttlY,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0056,LOW,Corals,I9bI8W8ZWcEwyIzM9Ctty8,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0057,LOW,Corals,I9bI8W8ZWcEwyIzM9Ctu8C,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0058,LOW,Corals,I9bI8W8ZWcEwyIzM9Ctu8C,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0059,LOW,Corals,I9bI8W8ZWcEwyIzM9DJffc,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0060,LOW,Corals,I9bI8W8ZWcEwyIzM9DJffc,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0061,LOW,Corals,IlX7xILobrukz7d5JnTHt0,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0062,LOW,Corals,IlX7xILobrukz7d5JnTHt0,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0063,LOW,Corals,IlX7xILobrukz7d5JnTHt0,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0064,LOW,Corals,IlX7xILobrukz7d5JnTgZ4,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0065,LOW,Corals,IlX7xILobrukz7d5Jng29O,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0066,LOW,Corals,IlX7xILobrukz7d5Jng29O,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0067,LOW,Corals,IlX7xILobrukz7d5Jng2TG,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0068,LOW,Corals,IlX7xILobrukz7d5JnvhK2,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0069,LOW,Corals,IlX7xILobrukz7d5Jnvipy,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0070,LOW,Corals,IlX7xILobrukz7d5Jnvipy,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0071,LOW,Corals,IlX7xILobrukz7d5Jo2Xh0,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0072,LOW,Corals,IlX7xILobrukz7d5Jo2Xh0,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0073,LOW,Corals,IlX7xILobrukz7d5Jo2rGw,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0074,LOW,Corals,J1Tx0fWCuGNPno99A6TtLj,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0075,LOW,Corals,J1Tx0fWCuGNPno99A6TtLj,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0076,LOW,Corals,J1Tx0fWCuGNPno99A6TtVz,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0077,LOW,Corals,J1Tx0fWCuGNPno99A6TtVz,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0078,LOW,Corals,J1Tx0fWCuGNPno99A6UVbu,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0079,LOW,Corals,J1Tx0fWCuGNPno99A6UVbu,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0080,LOW,Corals,PZ8Kai1VvEL468NS2KnjUP,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0081,LOW,Corals,PZ8Kai1VvEL468NS2KnjUP,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0082,LOW,Corals,PZ8Kai1VvEL468NS2KnkWY,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0083,LOW,Corals,PZ8Kai1VvEL468NS2KnkWY,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0084,LOW,Corals,coral-blastomussa,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0085,LOW,Corals,coral-blastomussa,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0086,LOW,Corals,coral-candy-cane-coral,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0087,LOW,Corals,coral-duncan-coral,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0088,LOW,Corals,coral-duncan-coral,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0089,LOW,Corals,coral-goniopora,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0090,LOW,Corals,coral-hammer-coral,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0091,LOW,Corals,coral-montipora-capricornis,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0092,LOW,Corals,coral-montipora-capricornis,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0093,LOW,Corals,coral-ricordea-mushroom,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0094,LOW,Corals,coral-staghorn-acropora,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0095,LOW,Corals,coral-staghorn-acropora,,OTHER,relatedProblems,"Coral references generic problem ""Filter Crash""",_ref=BruaGKYCGDRQjkiQDnltFi,VERIFIED
+I0096,LOW,Corals,coral-staghorn-acropora,,OTHER,relatedProblems,"Coral references generic problem ""Cloudy Water""",_ref=problem-cloudy-water,VERIFIED
+I0097,LOW,Corals,coral-toadstool-leather,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED
+I0098,LOW,Corals,coral-zoanthids,,OTHER,relatedProblems,"Coral references generic problem ""Old Tank Syndrome""",_ref=BruaGKYCGDRQjkiQDnlszk,VERIFIED

@@ -1,0 +1,141 @@
+document_type,field_name,field_type,required_in_schema,array_or_scalar,nullable,applicable_scope,depth_tier,audit_rule
+species,name,string,TRUE,scalar,FALSE,Fish / Species,A,required
+species,slug,slug,TRUE,scalar,FALSE,Fish / Species,A,required
+species,scientificName,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,family,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,origin,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,excerpt,text,FALSE,scalar,TRUE,Fish / Species,B,optional
+species,localNames,arrayString,FALSE,array,TRUE,Fish / Species,B,optional
+species,aliases,arrayString,FALSE,array,TRUE,Fish / Species,B,optional
+species,group,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,parentSpecies,reference,FALSE,reference,TRUE,Fish / Species,D,optional
+species,publishedAt,datetime,FALSE,scalar,TRUE,Fish / Species,B,optional
+species,sizeCm,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,tankSizeMinL,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,tempMinC,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,tempMaxC,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,phMin,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,phMax,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,ghMin,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,ghMax,number,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,diet,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,temperament,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,waterZone,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,schooling,text,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,difficulty,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,waterType,string,TRUE,scalar,FALSE,Fish / Species,C,required
+species,aquariumStyle,arrayString,FALSE,array,TRUE,Fish / Species,C,optional
+species,region,string,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,isPredator,boolean,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,reefCompatibility,boolean,FALSE,scalar,TRUE,Fish / Species,C,optional
+species,compatibleSpecies,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+species,compatiblePlants,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+species,compatibleInvertebrates,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+species,suitableEquipment,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+species,relatedProblems,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+species,mainImage,image,FALSE,image,TRUE,Fish / Species,B,optional
+species,seo,object,FALSE,object,TRUE,Fish / Species,E,optional
+species,relatedPosts,arrayRef,FALSE,array,TRUE,Fish / Species,D,optional
+plant,name,string,TRUE,scalar,FALSE,Plants,A,required
+plant,slug,slug,TRUE,scalar,FALSE,Plants,A,required
+plant,scientificName,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,excerpt,text,FALSE,scalar,TRUE,Plants,B,optional
+plant,localNames,arrayString,FALSE,array,TRUE,Plants,B,optional
+plant,aliases,arrayString,FALSE,array,TRUE,Plants,B,optional
+plant,group,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,publishedAt,datetime,FALSE,scalar,TRUE,Plants,B,optional
+plant,light,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,co2,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,growth,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,difficulty,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,placement,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,tempMinC,number,FALSE,scalar,TRUE,Plants,C,optional
+plant,tempMaxC,number,FALSE,scalar,TRUE,Plants,C,optional
+plant,phMin,number,FALSE,scalar,TRUE,Plants,C,optional
+plant,phMax,number,FALSE,scalar,TRUE,Plants,C,optional
+plant,propagation,text,FALSE,scalar,TRUE,Plants,C,optional
+plant,aquariumStyle,arrayString,FALSE,array,TRUE,Plants,C,optional
+plant,region,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,growthForm,string,FALSE,scalar,TRUE,Plants,C,optional
+plant,redPlant,boolean,FALSE,scalar,TRUE,Plants,C,optional
+plant,suitableEquipment,arrayRef,FALSE,array,TRUE,Plants,D,optional
+plant,relatedProblems,arrayRef,FALSE,array,TRUE,Plants,D,optional
+plant,mainImage,image,FALSE,image,TRUE,Plants,B,optional
+plant,relatedPosts,arrayRef,FALSE,array,TRUE,Plants,D,optional
+invertebrate,name,string,TRUE,scalar,FALSE,Invertebrates,A,required
+invertebrate,slug,slug,TRUE,scalar,FALSE,Invertebrates,A,required
+invertebrate,scientificName,string,TRUE,scalar,FALSE,Invertebrates,C,required
+invertebrate,excerpt,text,FALSE,scalar,TRUE,Invertebrates,B,optional
+invertebrate,localNames,arrayString,FALSE,array,TRUE,Invertebrates,B,optional
+invertebrate,aliases,arrayString,FALSE,array,TRUE,Invertebrates,B,optional
+invertebrate,parentSpecies,reference,FALSE,reference,TRUE,Invertebrates,D,optional
+invertebrate,publishedAt,datetime,FALSE,scalar,TRUE,Invertebrates,B,optional
+invertebrate,waterType,string,TRUE,scalar,FALSE,Invertebrates,C,required
+invertebrate,group,string,TRUE,scalar,FALSE,Invertebrates,C,required
+invertebrate,sizeCm,number,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,tempMinC,number,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,tempMaxC,number,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,phMin,number,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,phMax,number,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,difficulty,string,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,diet,string,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,temperament,string,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,aquariumStyle,arrayString,FALSE,array,TRUE,Invertebrates,C,optional
+invertebrate,region,string,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,reefCompatibility,boolean,FALSE,scalar,TRUE,Invertebrates,C,optional
+invertebrate,compatibleSpecies,arrayRef,FALSE,array,TRUE,Invertebrates,D,optional
+invertebrate,suitableEquipment,arrayRef,FALSE,array,TRUE,Invertebrates,D,optional
+invertebrate,relatedProblems,arrayRef,FALSE,array,TRUE,Invertebrates,D,optional
+invertebrate,mainImage,image,FALSE,image,TRUE,Invertebrates,B,optional
+invertebrate,relatedPosts,arrayRef,FALSE,array,TRUE,Invertebrates,D,optional
+coral,name,string,TRUE,scalar,FALSE,Corals,A,required
+coral,slug,slug,TRUE,scalar,FALSE,Corals,A,required
+coral,scientificName,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,excerpt,text,FALSE,scalar,TRUE,Corals,B,optional
+coral,localNames,arrayString,FALSE,array,TRUE,Corals,B,optional
+coral,aliases,arrayString,FALSE,array,TRUE,Corals,B,optional
+coral,group,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,publishedAt,datetime,FALSE,scalar,TRUE,Corals,B,optional
+coral,light,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,flow,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,difficulty,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,coralType,string,TRUE,scalar,FALSE,Corals,C,required
+coral,placement,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,aggression,string,FALSE,scalar,TRUE,Corals,C,optional
+coral,reefCompatibility,boolean,FALSE,scalar,TRUE,Corals,C,optional
+coral,photosynthetic,boolean,FALSE,scalar,TRUE,Corals,C,optional
+coral,suitableEquipment,arrayRef,FALSE,array,TRUE,Corals,D,optional
+coral,relatedProblems,arrayRef,FALSE,array,TRUE,Corals,D,optional
+coral,aquariumStyle,arrayString,FALSE,array,TRUE,Corals,C,optional
+coral,tempMinC,number,FALSE,scalar,TRUE,Corals,C,optional
+coral,tempMaxC,number,FALSE,scalar,TRUE,Corals,C,optional
+coral,mainImage,image,FALSE,image,TRUE,Corals,B,optional
+coral,relatedPosts,arrayRef,FALSE,array,TRUE,Corals,D,optional
+equipment,name,string,TRUE,scalar,FALSE,Equipment,A,required
+equipment,slug,slug,TRUE,scalar,FALSE,Equipment,A,required
+equipment,brand,string,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,model,string,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,category,string,TRUE,scalar,FALSE,Equipment,A,required
+equipment,excerpt,text,FALSE,scalar,TRUE,Equipment,B,optional
+equipment,publishedAt,datetime,FALSE,scalar,TRUE,Equipment,B,optional
+equipment,flowRateLh,number,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,powerW,number,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,tankSizeMinL,number,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,tankSizeMaxL,number,FALSE,scalar,TRUE,Equipment,C,optional
+equipment,aquariumStyle,arrayString,FALSE,array,TRUE,Equipment,C,optional
+equipment,pros,arrayString,FALSE,array,TRUE,Equipment,C,optional
+equipment,cons,arrayString,FALSE,array,TRUE,Equipment,C,optional
+equipment,mainImage,image,FALSE,image,TRUE,Equipment,B,optional
+equipment,relatedPosts,arrayRef,FALSE,array,TRUE,Equipment,D,optional
+problem,title,string,TRUE,scalar,FALSE,Problems,A,required
+problem,slug,slug,TRUE,scalar,FALSE,Problems,A,required
+problem,excerpt,text,FALSE,scalar,TRUE,Problems,B,optional
+problem,publishedAt,datetime,FALSE,scalar,TRUE,Problems,B,optional
+problem,category,string,TRUE,scalar,FALSE,Problems,A,required
+problem,waterType,string,FALSE,scalar,TRUE,Problems,C,optional
+problem,symptoms,arrayBlock,FALSE,array,TRUE,Problems,C,optional
+problem,causes,arrayBlock,FALSE,array,TRUE,Problems,C,optional
+problem,whatToCheck,arrayBlock,FALSE,array,TRUE,Problems,C,optional
+problem,whatNotToDo,arrayBlock,FALSE,array,TRUE,Problems,C,optional
+problem,relatedPosts,arrayRef,FALSE,array,TRUE,Problems,D,optional
+problem,relatedTools,arrayRef,FALSE,array,TRUE,Problems,D,optional

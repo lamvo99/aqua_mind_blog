@@ -1,0 +1,23 @@
+relationshipId,sourceDomain,targetDomain,slotName,status,relationType,direction,reciprocityRule,evidenceRequirement,spec09Reference,appliesToRecords,notes
+REL-M01,species,species,compatibleSpecies,EXISTING_EMPTY,COMPATIBLE + CONDITIONAL,source->target refs (+conditions[] proposed),none (populate forward); reverse view rendered from refs,entries require evidence note when conditions[] used,REL-01,218,"extend entry shape: {ref, conditions[], confidence}"
+REL-M02,invertebrate,species,compatibleSpecies,EXISTING_EMPTY,COMPATIBLE,source->target refs,same,evidence note,REL-12,56,
+REL-M03,species,plant,compatiblePlants,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal (pairing),REL-06,111,107/218 populated
+REL-M04,species,invertebrate,compatibleInvertebrates,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal,REL-07,118,
+REL-M05,species,equipment,suitableEquipment,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal,REL-08,87,
+REL-M06,species,problem,relatedProblems,EXISTING_PARTIAL,TROUBLESHOOTING,source->target refs,same,minimal,REL-09,87,
+REL-M07,plant,equipment,suitableEquipment,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal,REL-10,10,
+REL-M08,plant,problem,relatedProblems,EXISTING_PARTIAL,TROUBLESHOOTING,source->target refs,same,minimal,REL-10,10,
+REL-M09,coral,equipment,suitableEquipment,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal,REL-14,12,
+REL-M10,coral,problem,relatedProblems,EXISTING_PARTIAL,TROUBLESHOOTING,source->target refs,same,minimal,REL-14,12,
+REL-M11,invertebrate,equipment,suitableEquipment,EXISTING_PARTIAL,SUITABILITY,source->target refs,same,minimal,REL-14-class,0,
+REL-M12,invertebrate,problem,relatedProblems,EXISTING_PARTIAL,TROUBLESHOOTING,source->target refs,same,minimal,REL-14-class,0,
+REL-M13,plant,style,aquariumStyle,EXISTING_FULL,SUITABILITY,source->style terms,n/a,none,REL-11,0,62/62 populated
+REL-M14,equipment,style,aquariumStyle,EXISTING_PARTIAL,SUITABILITY,source->style terms,n/a,none,REL-15,0,
+REL-M15,problem,tool,relatedTools,EXISTING_PARTIAL,TROUBLESHOOTING,source->target refs,same,minimal,REL-17,27,
+REL-P01,species,species,incompatibleSpecies (PROPOSED),PROPOSED,INCOMPATIBLE,source->target refs (+reason enum),mutual display recommended,reason required (predation/temperament/size/water),REL-02,218,no slot exists today
+REL-P02,species+invertebrate,species+invertebrate,predatorPrey (PROPOSED),PROPOSED,PREDATOR_PREY,typed refs predator->prey (+size condition),prey shows predator warning,size/diet evidence note required,REL-03/REL-05,218,"covers size_based_predation, fish_predators, invertebrate_predators"
+REL-P03,species,coral,reefInteraction detail (PROPOSED object),PROPOSED,CORAL_INTERACTION,"ref + {tier, targets[], frequency, monitoring}",coral shows fish-risk view,§11 six-question evidence,REL-04,56,extends boolean reefCompatibility; tier enum shared with species.reefInteraction field
+REL-P04,coral,coral,coralNeighbors (PROPOSED),PROPOSED,AGGRESSION (SWEEP/STING/SHADE/ALLELOPATHY/OVERGROW),source->target refs + type,symmetric spacing view,distance/evidence note,REL-13,48,serves placement_neighbors + coral_interaction_coral
+REL-P05,equipment,equipment,compatibleEquipment (PROPOSED),PROPOSED,DEPENDENCY,source->target refs,symmetric display,minimal,SPEC 10 §15,46,
+REL-P06,equipment,problem,relatedProblems (PROPOSED),PROPOSED,TROUBLESHOOTING,source->target refs,same,minimal,SPEC 10 §15,46,failure-modes navigation
+REL-D01,problem,species,(no new field: DERIVED),DERIVED,BACKREFERENCE,derived from species.relatedProblems,n/a (query-time),n/a,REL-16,43,avoid duplicate source of truth (§29)

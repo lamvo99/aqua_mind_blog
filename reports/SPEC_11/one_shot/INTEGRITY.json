@@ -1,0 +1,33 @@
+{
+  "specId": "SPEC_11",
+  "artifact": "ONE_SHOT_INTEGRITY",
+  "generatedAt": "2026-10-18T02:37:13.430Z",
+  "mode": "PRODUCTION WRITE (repo schema authoritative; conditional writes with read-back verification)",
+  "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+  "identityMatch": true,
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "protectedSealsUnchanged": true,
+  "sanityWrites": 17,
+  "mutationCalls": 17,
+  "mutationCallsNote": "17 document transactions during this run; plus 1 separate earlier empty-payload auth probe (no data changed) run during capability verification; total endpoint calls 18",
+  "operations": {
+    "planned": 364,
+    "written": 364,
+    "skippedDrift": 0,
+    "failed": 0
+  },
+  "verification": {
+    "checked": 364,
+    "passed": 364,
+    "failed": 0
+  },
+  "verdict": "COMPLETE"
+}

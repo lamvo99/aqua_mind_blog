@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "HOLD_EVIDENCE": 45,
+    "APPLY_WITH_CAVEAT": 189,
+    "APPLY": 175,
+    "HOLD_CONFLICT": 11,
+    "REJECT_SEMANTIC_MAPPING": 3,
+    "SKIP_ALREADY_CORRECT": 1
+  },
+  "applied": 364,
+  "recordsTouched": 17
+}

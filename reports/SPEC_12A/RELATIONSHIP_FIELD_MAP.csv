@@ -1,0 +1,29 @@
+relationshipId,sourceType,field,kind,targetTypes,direction,reciprocity,consumers,validation,coverageRecords,coverageEdges
+REL-M01,species,compatibleSpecies,objectArray,species,source->target (array),symmetric display recommended,lib/database.ts projection; app/species/[slug]/page.tsx; app/tools/compatibility-checker/page.tsx (GROQ),ref required,0,0
+REL-M03,species,compatiblePlants,refArray,plant,source->target (array),none,none (schema-only),reference target type enforced,107,535
+REL-M04,species,compatibleInvertebrates,refArray,invertebrate,source->target (array),none,none (schema-only),reference target type enforced,100,388
+REL-M05,species,suitableEquipment,refArray,equipment,source->target (array),none,none (schema-only),reference target type enforced,131,654
+REL-M06,species,relatedProblems,refArray,problem,source->target (array),none,none (schema-only),reference target type enforced,131,655
+REL-POST,species,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,38,49
+REL-P01,species,incompatibleSpecies,objectArray,species,source->target (array),none,none (schema-only),ref required,0,0
+REL-P02,species,predatorPrey,objectArray,species|invertebrate,source->target (array),none,none (schema-only),ref required,0,0
+REL-P03,species,reefInteractionDetail,objectArray,coral,source->target (array),none,none (schema-only),coral required,0,0
+REL-PARENT,species,parentSpecies,ref,species,source->target (single),none,none (schema-only),reference target type enforced,3,3
+REL-M07,plant,suitableEquipment,refArray,equipment,source->target (array),none,none (schema-only),reference target type enforced,52,208
+REL-M08,plant,relatedProblems,refArray,problem,source->target (array),none,none (schema-only),reference target type enforced,52,156
+REL-POST,plant,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,26,35
+REL-M02,invertebrate,compatibleSpecies,objectArray,species,source->target (array),symmetric display recommended,lib/database.ts projection; app/invertebrates/[slug]/page.tsx,ref required,0,0
+REL-M11,invertebrate,suitableEquipment,refArray,equipment,source->target (array),none,none (schema-only),reference target type enforced,0,0
+REL-M12,invertebrate,relatedProblems,refArray,problem,source->target (array),none,none (schema-only),reference target type enforced,42,126
+REL-POST,invertebrate,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,3,5
+REL-P02,invertebrate,predatorPrey,objectArray,species|invertebrate,source->target (array),none,none (schema-only),ref required,0,0
+REL-PARENT,invertebrate,parentSpecies,ref,species,source->target (single),none,none (schema-only),reference target type enforced,0,0
+REL-M09,coral,suitableEquipment,refArray,equipment,source->target (array),none,none (schema-only),reference target type enforced,36,144
+REL-M10,coral,relatedProblems,refArray,problem,source->target (array),none,none (schema-only),reference target type enforced,36,108
+REL-POST,coral,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,0,0
+REL-P04,coral,coralNeighbors,objectArray,coral,source->target (array),symmetric display recommended,none (schema-only),ref required,0,0
+REL-P05,equipment,compatibleEquipment,refArray,equipment,source->target (array),symmetric display recommended,none (schema-only),reference target type enforced,0,0
+REL-P06,equipment,relatedProblems,refArray,problem,source->target (array),none,none (schema-only),reference target type enforced,0,0
+REL-POST,equipment,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,21,36
+REL-M15,problem,relatedTools,refArray,tool,source->target (array),none,none (schema-only),reference target type enforced,16,16
+REL-POST,problem,relatedPosts,refArray,post,source->target (array),none,none (schema-only),reference target type enforced,20,33

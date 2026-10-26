@@ -107,7 +107,8 @@ export default defineType({
     defineField({ name: 'reefCompatibility', title: 'Reef Compatible?', type: 'boolean' }),
     defineField({
       name: 'compatibleSpecies', title: 'Compatible Species', type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'species' }] }],
+      of: [{ type: 'compatibleEntry' }],
+      description: 'Conditional compatibility entries with optional conditions[] (SPEC 10 REL-M01/M02).',
     }),
     defineField({
       name: 'suitableEquipment', title: 'Suitable Equipment', type: 'array',
@@ -123,6 +124,84 @@ export default defineType({
     defineField({
       name: 'relatedPosts', title: 'Related Posts', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }],
+    }),
+    defineField({
+      name: 'salinityMin', title: 'Min Salinity (ppt)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'salinityMax', title: 'Max Salinity (ppt)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.salinityMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'salinityMax must be >= salinityMin';
+      }),
+    }),
+    defineField({
+      name: 'ghMin', title: 'Min GH (dGH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40),
+    }),
+    defineField({
+      name: 'ghMax', title: 'Max GH (dGH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.ghMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'ghMax must be >= ghMin';
+      }),
+    }),
+    defineField({
+      name: 'khMin', title: 'Min KH (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40),
+    }),
+    defineField({
+      name: 'khMax', title: 'Max KH (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).max(40).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.khMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'khMax must be >= khMin';
+      }),
+    }),
+    defineField({
+      name: 'calciumRequirement', title: 'Calcium Requirement', type: 'string',
+      options: { list: ['NONE', 'SUGGESTED', 'REQUIRED'] },
+    }),
+    defineField({
+      name: 'stabilityRequirement', title: 'Stability Requirement', type: 'string',
+      options: { list: ['LOW', 'MODERATE', 'CRITICAL'] },
+    }),
+    defineField({
+      name: 'riskFlags', title: 'Risk Flags', type: 'array',
+      of: [{ type: 'string' }],
+      description: 'Non-exclusive risk flags. Absence is not a negative claim.',
+      options: { list: ['STARVATION', 'ESCAPE'] },
+    }),
+    defineField({
+      name: 'moltingType', title: 'Molting Type', type: 'string',
+      options: { list: ['NONE', 'RARE', 'FREQUENT'] },
+    }),
+    defineField({
+      name: 'minTankVolumeL', title: 'Min Tank Volume (L)', type: 'number',
+      validation: (Rule: any) => Rule.min(1),
+    }),
+    defineField({
+      name: 'breedingDifficulty', title: 'Breeding Difficulty', type: 'string',
+      options: { list: ['EASY', 'MODERATE', 'DIFFICULT'] },
+    }),
+    defineField({
+      name: 'maturityRequirement', title: 'Mature Aquarium Requirement', type: 'string',
+      options: { list: ['NONE', 'SUGGESTED', 'REQUIRED'] },
+    }),
+    defineField({
+      name: 'biofilmRequirement', title: 'Biofilm Requirement', type: 'string',
+      options: { list: ['NONE', 'REQUIRED'] },
+    }),
+    defineField({
+      name: 'predatorPrey', title: 'Predator / Prey', type: 'array',
+      of: [{ type: 'predatorPreyEntry' }],
+      description: 'Predator -> prey typed references with size condition and evidence note.',
+    }),
+    defineField({
+      name: 'knowledgeBody', title: 'Knowledge Body', type: 'invertebrateKnowledgeBody',
     }),
   ],
   preview: {

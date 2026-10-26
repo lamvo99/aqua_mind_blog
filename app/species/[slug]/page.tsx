@@ -10,6 +10,8 @@ import { ArrowLeft, Thermometer, Droplets, Ruler, Fish } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import PortableText from "@/app/components/PortableText"
+import { buildHusbandryFacts, knowledgeBodySections, compatibleSpeciesRefs } from "@/lib/species-facts"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -89,6 +91,10 @@ export default async function SpeciesDetailPage({ params }: Props) {
   const range = (min?: number, max?: number, suffix = "") =>
     min !== undefined && max !== undefined && (min !== null) && (max !== null) ? `${min}–${max}${suffix}` : undefined
 
+  const compatible = compatibleSpeciesRefs<any>(item.compatibleSpecies)
+  const husbandryGroups = buildHusbandryFacts(item)
+  const bodySections = knowledgeBodySections(item.knowledgeBody)
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <JsonLd data={breadcrumbSchema([
@@ -119,11 +125,11 @@ export default async function SpeciesDetailPage({ params }: Props) {
               <div className="w-full h-full flex items-center justify-center text-6xl">🐠</div>
             )}
           </div>
-          {item.compatibleSpecies && item.compatibleSpecies.length > 0 && (
+          {compatible.length > 0 && (
             <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
               <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Compatible Species</h2>
               <div className="flex flex-wrap gap-2">
-                {item.compatibleSpecies.map((c: any) => (
+                {compatible.map((c: any) => (
                   <Link
                     key={c._id}
                     href={`/species/${c.slug?.current}`}
@@ -161,6 +167,24 @@ export default async function SpeciesDetailPage({ params }: Props) {
               <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item.schooling}</p>
             </div>
           )}
+
+          {husbandryGroups.map((group) => (
+            <section key={group.title} className="mt-6">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">{group.title}</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {group.facts.map((fact) => (
+                  <Parameter key={fact.label} label={fact.label} value={fact.value} />
+                ))}
+              </div>
+            </section>
+          ))}
+
+          {bodySections.map((section) => (
+            <section key={section.title} className="mt-8">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">{section.title}</h2>
+              <PortableText value={section.blocks} />
+            </section>
+          ))}
 
           <RelationshipSection title="Suitable Plants" items={item.compatiblePlants || []} hrefPrefix="/plants" />
           <RelationshipSection title="Compatible Invertebrates" items={item.compatibleInvertebrates || []} hrefPrefix="/invertebrates" />

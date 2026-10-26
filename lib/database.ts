@@ -35,7 +35,28 @@ export interface SpeciesDetail extends DatabaseItem {
   waterType?: string
   isPredator?: boolean
   reefCompatibility?: boolean
-  compatibleSpecies?: DatabaseItem[]
+  minTankLengthCm?: number | null
+  minTankWidthCm?: number | null
+  swimmingSpace?: string | null
+  jumpRisk?: string | null
+  lidRequired?: string | null
+  flowPreference?: string | null
+  oxygenSensitivity?: string | null
+  maturityRequirement?: string | null
+  bioload?: string | null
+  waterChangeSensitivity?: string | null
+  breedingDifficulty?: string | null
+  khMin?: number | null
+  khMax?: number | null
+  salinityMin?: number | null
+  salinityMax?: number | null
+  behaviorFlags?: string[] | null
+  groupSize?: { min?: number | null; max?: number | null } | null
+  communitySuitability?: string | null
+  reefInteraction?: string | null
+  predatesInverts?: string | null
+  knowledgeBody?: Record<string, any[]> | null
+  compatibleSpecies?: { ref?: DatabaseItem; conditions?: string[]; confidence?: string }[]
   relatedPosts?: any[]
 }
 
@@ -112,7 +133,12 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
       coralType, flow, aggression, reefCompatibility, photosynthetic,
       category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,
       aquariumStyle, region, isPredator,
-      compatibleSpecies[]->{ _id, name, slug, mainImage, excerpt },
+      minTankLengthCm, minTankWidthCm, swimmingSpace, jumpRisk, lidRequired, flowPreference,
+      oxygenSensitivity, maturityRequirement, bioload, waterChangeSensitivity, breedingDifficulty,
+      khMin, khMax, salinityMin, salinityMax, behaviorFlags, groupSize,
+      communitySuitability, reefInteraction, predatesInverts,
+      knowledgeBody,
+      "compatibleSpecies": compatibleSpecies[]{ ref->{ _id, name, slug, mainImage, excerpt }, conditions, confidence },
       compatiblePlants[]->{ _id, name, slug, mainImage, excerpt },
       compatibleInvertebrates[]->{ _id, name, slug, mainImage, excerpt },
       suitableEquipment[]->{ _id, name, slug, mainImage, category, brand },

@@ -57,6 +57,36 @@ export default defineType({
       name: 'relatedPosts', title: 'Related Posts', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }],
     }),
+    defineField({
+      name: 'waterType', title: 'Water Type Suitability', type: 'string',
+      options: { list: ['freshwater', 'saltwater', 'both'] },
+    }),
+    defineField({
+      name: 'turnoverPerH', title: 'Turnover per Hour (x)', type: 'number',
+      validation: (Rule: any) => Rule.min(0.1),
+    }),
+    defineField({
+      name: 'ratedCapacity', title: 'Rated Capacity', type: 'object',
+      description: 'Manufacturer-rated capacity. Real-world suitability belongs to the body, not here.',
+      fields: [
+        { name: 'value', title: 'Value', type: 'number', validation: (Rule: any) => Rule.min(0) },
+        { name: 'unit', title: 'Unit', type: 'string' },
+        { name: 'basis', title: 'Basis', type: 'string' },
+      ],
+    }),
+    defineField({
+      name: 'compatibleEquipment', title: 'Compatible Equipment', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'equipment' }] }],
+      description: 'Equipment-to-equipment dependency compatibility.',
+    }),
+    defineField({
+      name: 'relatedProblems', title: 'Common Problems', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'problem' }] }],
+      description: 'Failure-mode navigation to problem records.',
+    }),
+    defineField({
+      name: 'knowledgeBody', title: 'Knowledge Body', type: 'equipmentKnowledgeBody',
+    }),
   ],
   preview: {
     select: { title: 'name', subtitle: 'brand', media: 'mainImage' },

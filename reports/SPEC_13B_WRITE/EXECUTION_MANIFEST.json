@@ -1,0 +1,397 @@
+{
+  "specId": "SPEC_13B_WRITE",
+  "artifact": "EXECUTION_MANIFEST",
+  "generatedAt": "2026-10-22T02:40:45.947Z",
+  "authorized": true,
+  "authorization": "phase/SPEC_13B_WRITE_EXECUTION_PROMPT.md - owner-approved, limited to 17 eligible operations",
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production",
+    "api": "v2026-05-25"
+  },
+  "mode": "add-if-absent",
+  "concurrency": "ifRevisionID",
+  "batchLimit": 5,
+  "deterministicKey": true,
+  "excludedCandidateIds": [
+    "REL13A-0016",
+    "REL13A-0017",
+    "REL13A-0019",
+    "REL13A-0020"
+  ],
+  "operationCount": 17,
+  "operations": [
+    {
+      "candidateId": "REL13A-0001",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel5f453f5b12",
+      "value": {
+        "_key": "rel5f453f5b12",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0001,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,ofTl1CTOUWuLwM28PxTCRz,Chili Rasbora,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: prey much smaller than adult oscar,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar is explicitly described as predatory toward much smaller fishes; chili rasbora is a 2 cm fish."
+    },
+    {
+      "candidateId": "REL13A-0002",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "J1Tx0fWCuGNPno99A79RmJ",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "relb2cc81bee2",
+      "value": {
+        "_key": "relb2cc81bee2",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A79RmJ"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0002,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,J1Tx0fWCuGNPno99A79RmJ,Green Neon Tetra,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: prey much smaller than adult oscar,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar predatory nature precludes much smaller fishes; green neon tetra is 2.5 cm."
+    },
+    {
+      "candidateId": "REL13A-0003",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "species-paracheirodon-innesi",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel13c34f6c7e",
+      "value": {
+        "_key": "rel13c34f6c7e",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-innesi"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0003,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,species-paracheirodon-innesi,Neon Tetra,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: prey much smaller than adult oscar,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar predatory nature precludes much smaller fishes; neon tetra is 3.5 cm vs 35 cm adult."
+    },
+    {
+      "candidateId": "REL13A-0004",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel4a59022b49",
+      "value": {
+        "_key": "rel4a59022b49",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "5oQB2MZ7gmZXjdwFqSs4kl"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0004,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,5oQB2MZ7gmZXjdwFqSs4kl,Cherry Shrimp,invertebrate,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult oscar; shrimp are prey-sized crustaceans,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar diet explicitly includes crustaceans and smaller fish."
+    },
+    {
+      "candidateId": "REL13A-0005",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-caridina-multidentata",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rela800c865ad",
+      "value": {
+        "_key": "rela800c865ad",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-caridina-multidentata"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0005,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,invertebrate-caridina-multidentata,Amano Shrimp,invertebrate,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult oscar; shrimp are prey-sized crustaceans,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar diet explicitly includes crustaceans."
+    },
+    {
+      "candidateId": "REL13A-0006",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-palaemon-paludosus",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "reld7d540353a",
+      "value": {
+        "_key": "reld7d540353a",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-palaemon-paludosus"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      },
+      "candidateMeta": "REL13A-0006,predatorPrey,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,predatorPrey,invertebrate-palaemon-paludosus,Ghost Shrimp,invertebrate,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult oscar; shrimp are prey-sized crustaceans,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Oscar diet explicitly includes crustaceans."
+    },
+    {
+      "candidateId": "REL13A-0007",
+      "sourceType": "species",
+      "sourceId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "field": "predatorPrey",
+      "targetId": "species-paracheirodon-innesi",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "reldfe81aeaea",
+      "value": {
+        "_key": "reldfe81aeaea",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-innesi"
+        },
+        "sizeCondition": "adult angelfish; neon tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      },
+      "candidateMeta": "REL13A-0007,predatorPrey,species,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,predatorPrey,species-paracheirodon-innesi,Neon Tetra,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult angelfish; neon tetra is small enough to swallow,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source explicitly states angelfish may eat small fish such as tetras."
+    },
+    {
+      "candidateId": "REL13A-0008",
+      "sourceType": "species",
+      "sourceId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "field": "predatorPrey",
+      "targetId": "J1Tx0fWCuGNPno99A79RmJ",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "relca2e5d9585",
+      "value": {
+        "_key": "relca2e5d9585",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A79RmJ"
+        },
+        "sizeCondition": "adult angelfish; green neon tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      },
+      "candidateMeta": "REL13A-0008,predatorPrey,species,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,predatorPrey,J1Tx0fWCuGNPno99A79RmJ,Green Neon Tetra,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult angelfish; green neon tetra is small enough to swallow,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source explicitly states angelfish may eat small fish such as tetras."
+    },
+    {
+      "candidateId": "REL13A-0009",
+      "sourceType": "species",
+      "sourceId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "field": "predatorPrey",
+      "targetId": "species-paracheirodon-axelrodi",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel286e0c642b",
+      "value": {
+        "_key": "rel286e0c642b",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-axelrodi"
+        },
+        "sizeCondition": "adult angelfish; cardinal tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      },
+      "candidateMeta": "REL13A-0009,predatorPrey,species,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,predatorPrey,species-paracheirodon-axelrodi,Cardinal Tetra,species,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: adult angelfish; cardinal tetra is small enough to swallow,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source explicitly states angelfish may eat small fish such as tetras."
+    },
+    {
+      "candidateId": "REL13A-0010",
+      "sourceType": "species",
+      "sourceId": "species-bala-shark",
+      "field": "predatorPrey",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel22a32112fa",
+      "value": {
+        "_key": "rel22a32112fa",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "sizeCondition": "very small fishes",
+        "evidenceNote": "Seriously Fish - Balantiocheilos melanopterus (Silver/Bala Shark) - https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+      },
+      "candidateMeta": "REL13A-0010,predatorPrey,species,species-bala-shark,Bala Shark,predatorPrey,ofTl1CTOUWuLwM28PxTCRz,Chili Rasbora,species,PROPOSE_WITH_CAVEAT,MEDIUM,P0,sizeCondition: very small fishes,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states it will eat very small fishes; chili rasbora is 2 cm."
+    },
+    {
+      "candidateId": "REL13A-0011",
+      "sourceType": "species",
+      "sourceId": "species-bala-shark",
+      "field": "predatorPrey",
+      "targetId": "IlX7xILobrukz7d5Jng1HC",
+      "targetType": "species",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel603ae0a557",
+      "value": {
+        "_key": "rel603ae0a557",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "IlX7xILobrukz7d5Jng1HC"
+        },
+        "sizeCondition": "very small fishes",
+        "evidenceNote": "Seriously Fish - Balantiocheilos melanopterus (Silver/Bala Shark) - https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+      },
+      "candidateMeta": "REL13A-0011,predatorPrey,species,species-bala-shark,Bala Shark,predatorPrey,IlX7xILobrukz7d5Jng1HC,Pygmy Rasbora,species,PROPOSE_WITH_CAVEAT,MEDIUM,P0,sizeCondition: very small fishes,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states it will eat very small fishes; pygmy rasbora is 2 cm."
+    },
+    {
+      "candidateId": "REL13A-0012",
+      "sourceType": "species",
+      "sourceId": "J1Tx0fWCuGNPno99A79QPg",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-planorbarius-corneus",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel7dafb79c3d",
+      "value": {
+        "_key": "rel7dafb79c3d",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-planorbarius-corneus"
+        },
+        "sizeCondition": "small snails (shell on) are required diet",
+        "evidenceNote": "Seriously Fish - Carinotetraodon travancoricus (Dwarf Puffer) - https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+      },
+      "candidateMeta": "REL13A-0012,predatorPrey,species,J1Tx0fWCuGNPno99A79QPg,Pea Puffer,predatorPrey,invertebrate-planorbarius-corneus,Great Ramshorn Snail,invertebrate,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: small snails (shell on) are required diet,EV-SF-DWARFPUFFER,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states small snails should be fed regularly; great ramshorn is a small snail."
+    },
+    {
+      "candidateId": "REL13A-0013",
+      "sourceType": "species",
+      "sourceId": "J1Tx0fWCuGNPno99A79QPg",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-melanoides-tuberculata",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel74d704e2d8",
+      "value": {
+        "_key": "rel74d704e2d8",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-melanoides-tuberculata"
+        },
+        "sizeCondition": "small snails (shell on) are required diet",
+        "evidenceNote": "Seriously Fish - Carinotetraodon travancoricus (Dwarf Puffer) - https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+      },
+      "candidateMeta": "REL13A-0013,predatorPrey,species,J1Tx0fWCuGNPno99A79QPg,Pea Puffer,predatorPrey,invertebrate-melanoides-tuberculata,Malaysian Trumpet Snail,invertebrate,PROPOSE_WITH_CAVEAT,HIGH,P0,sizeCondition: small snails (shell on) are required diet,EV-SF-DWARFPUFFER,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states small snails should be fed regularly; Malaysian trumpet snail is a small snail."
+    },
+    {
+      "candidateId": "REL13A-0014",
+      "sourceType": "species",
+      "sourceId": "J1Tx0fWCuGNPno99A79RMf",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-melanoides-tuberculata",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rela0633a1601",
+      "value": {
+        "_key": "rela0633a1601",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-melanoides-tuberculata"
+        },
+        "sizeCondition": "small aquatic snails",
+        "evidenceNote": "Seriously Fish - Botia almorhae (Yo-Yo Loach) - https://www.seriouslyfish.com/species/botia-almorhae/"
+      },
+      "candidateMeta": "REL13A-0014,predatorPrey,species,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,predatorPrey,invertebrate-melanoides-tuberculata,Malaysian Trumpet Snail,invertebrate,PROPOSE_WITH_CAVEAT,MEDIUM,P0,sizeCondition: small aquatic snails,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states botiid loaches prey on aquatic snails."
+    },
+    {
+      "candidateId": "REL13A-0015",
+      "sourceType": "species",
+      "sourceId": "J1Tx0fWCuGNPno99A79RMf",
+      "field": "predatorPrey",
+      "targetId": "invertebrate-planorbarius-corneus",
+      "targetType": "invertebrate",
+      "direction": "source=predator -> target=prey",
+      "action": "add-if-absent",
+      "key": "rel58cf15cf20",
+      "value": {
+        "_key": "rel58cf15cf20",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-planorbarius-corneus"
+        },
+        "sizeCondition": "small aquatic snails",
+        "evidenceNote": "Seriously Fish - Botia almorhae (Yo-Yo Loach) - https://www.seriouslyfish.com/species/botia-almorhae/"
+      },
+      "candidateMeta": "REL13A-0015,predatorPrey,species,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,predatorPrey,invertebrate-planorbarius-corneus,Great Ramshorn Snail,invertebrate,PROPOSE_WITH_CAVEAT,MEDIUM,P0,sizeCondition: small aquatic snails,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,Predation risk depends on relative size and individual temperament; not an absolute rule for every tank.,Source states botiid loaches prey on aquatic snails."
+    },
+    {
+      "candidateId": "REL13A-0018",
+      "sourceType": "species",
+      "sourceId": "J1Tx0fWCuGNPno99A79RMf",
+      "field": "incompatibleSpecies",
+      "targetId": "species-poecilia-reticulata",
+      "targetType": "species",
+      "direction": "source -> incompatible target",
+      "action": "add-if-absent",
+      "key": "relc43fac8d3d",
+      "value": {
+        "_key": "relc43fac8d3d",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-poecilia-reticulata"
+        },
+        "reason": "temperament"
+      },
+      "candidateMeta": "REL13A-0018,incompatibleSpecies,species,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,incompatibleSpecies,species-poecilia-reticulata,Guppy,species,PROPOSE_WITH_CAVEAT,HIGH,P1,reason: temperament,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,\"Risk depends on individual temperament, tank size and layout; monitor introductions.\",Source explicitly names guppies as susceptible to fin-nipping."
+    },
+    {
+      "candidateId": "REL13A-0021",
+      "sourceType": "species",
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "incompatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCJT",
+      "targetType": "species",
+      "direction": "source -> incompatible target",
+      "action": "add-if-absent",
+      "key": "relc8b8caedc4",
+      "value": {
+        "_key": "relc8b8caedc4",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCJT"
+        },
+        "reason": "size"
+      },
+      "candidateMeta": "REL13A-0021,incompatibleSpecies,species,7kdig6Bk6SZq4GZkXcVXjK,Oscar,incompatibleSpecies,ofTl1CTOUWuLwM28PxTCJT,Pygmy Corydoras,species,PROPOSE_WITH_CAVEAT,MEDIUM,P1,reason: size,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,\"Risk depends on individual temperament, tank size and layout; monitor introductions.\",Source states oscar should not be combined with much smaller fishes; pygmy corydoras is 2.5 cm."
+    }
+  ]
+}

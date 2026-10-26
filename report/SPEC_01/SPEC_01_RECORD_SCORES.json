@@ -1,0 +1,3313 @@
+[
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSUxN",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSV4m",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSVV6",
+    "completeness_percent": 49.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSViG",
+    "completeness_percent": 50.4,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSWMZ",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSs3qH",
+    "completeness_percent": 72.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "7kdig6Bk6SZq4GZkXcVXjK",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 26
+  },
+  {
+    "canonical_id": "7kdig6Bk6SZq4GZkXcVYRS",
+    "completeness_percent": 58.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVzKgoN",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVzKgu5",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVzKmc5",
+    "completeness_percent": 54.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztvbi",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztvrt",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztwWo",
+    "completeness_percent": 46.7,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztwgK",
+    "completeness_percent": 49.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztxQx",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztxmq",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve601V4E",
+    "completeness_percent": 49.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602cco",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602cqq",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602d2X",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602em7",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602fPs",
+    "completeness_percent": 54.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve602tRs",
+    "completeness_percent": 54.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PY2c",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PZR9",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PZmC",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PagK",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61Pb63",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PbHk",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61Pc4r",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61PcZG",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Ciih6",
+    "completeness_percent": 82.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Cj9MC",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Cj9WG",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Cj9gK",
+    "completeness_percent": 86,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjDNI",
+    "completeness_percent": 81.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjDXM",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CttMO",
+    "completeness_percent": 81.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuEcq",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuG2u",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuWy8",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuXNI",
+    "completeness_percent": 81.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DFXpw",
+    "completeness_percent": 82.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DJbjY",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DJbye",
+    "completeness_percent": 81.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DJePc",
+    "completeness_percent": 81.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXMwe",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXNJI",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXNau",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXNv2",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnTgRq",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfjuY",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfkJq",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng1HC",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng1QE",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnvaIg",
+    "completeness_percent": 68.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2V6E",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2VIs",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2X54",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2XHi",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6UR1F",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6heVR",
+    "completeness_percent": 81.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hesW",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hq84",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hqNS",
+    "completeness_percent": 86,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hsP7",
+    "completeness_percent": 90.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6i7Ae",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6i7Sb",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6i8Pa",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6i8hX",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79QPg",
+    "completeness_percent": 89,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79QpK",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79RMf",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79RmJ",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79S9O",
+    "completeness_percent": 86,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79evp",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79fDm",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7ACJO",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KH8y",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2Kni6M",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 26
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLZxZ",
+    "completeness_percent": 52.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLa6x",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLaUQ",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLaqK",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z3ReYR",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z3S1rN",
+    "completeness_percent": 54.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MeU8",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4Mel7",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MgqS",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4Mh0u",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4Mi1c",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MicC",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MjaI",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCJT",
+    "completeness_percent": 89.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCMJ",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCP9",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCRz",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCUp",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCXf",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCaV",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTCdL",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTEQ3",
+    "completeness_percent": 71.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTESt",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTEVj",
+    "completeness_percent": 90.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTEYZ",
+    "completeness_percent": 82.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTEbP",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTEeF",
+    "completeness_percent": 63.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 26
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noGMy",
+    "completeness_percent": 65.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 27
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noGak",
+    "completeness_percent": 61.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 25
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noGuQ",
+    "completeness_percent": 67.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noHTq",
+    "completeness_percent": 63.2,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 26
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noHja",
+    "completeness_percent": 61.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 25
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3noI7C",
+    "completeness_percent": 58.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqsPG",
+    "completeness_percent": 50.4,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqtze",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqu9U",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oquNG",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oquiu",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oquwg",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqvOE",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqvc0",
+    "completeness_percent": 48.3,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "species-amphiprion-ocellaris",
+    "completeness_percent": 63.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 26
+  },
+  {
+    "canonical_id": "species-ancistrus-cf-cirrhosus",
+    "completeness_percent": 92.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 33
+  },
+  {
+    "canonical_id": "species-andinoacara-pulcher",
+    "completeness_percent": 86,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-aphyosemion-australe",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-apistogramma-cacatuoides",
+    "completeness_percent": 88.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "species-aplocheilus-lineatus",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-arapaima-gigas",
+    "completeness_percent": 74,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "species-bala-shark",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-betta-splendens",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-black-arowana",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-black-ghost-knifefish",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-black-moor-goldfish",
+    "completeness_percent": 53.6,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "species-botia-striata",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-carassius-auratus",
+    "completeness_percent": 71.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-celestichthys-erythromicron",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-chromis-viridis",
+    "completeness_percent": 65.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 27
+  },
+  {
+    "canonical_id": "species-chromobotia-macracanthus",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-clown-knifefish",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-corydoras-aeneus",
+    "completeness_percent": 89.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "species-corydoras-paleatus",
+    "completeness_percent": 89.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "species-corydoras-panda",
+    "completeness_percent": 85.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-corydoras-trilineatus",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-danio-margaritatus",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-danio-rerio",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-denison-barb",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-figure-8-puffer",
+    "completeness_percent": 49.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "species-freshwater-stingray",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-giant-danio",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-gymnocorymbus-ternetzi",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-halfbeak",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-hyphessobrycon-amandae",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-hyphessobrycon-eques",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-hyphessobrycon-herbertaxelrodi",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-hyphessobrycon-megalopterus",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-hyphessobrycon-pulchripinnis",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-hypostomus-plecostomus",
+    "completeness_percent": 92.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 33
+  },
+  {
+    "canonical_id": "species-iridescent-shark",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-jaguar-cichlid",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-kryptopterus-vitreolus",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-labidochromis-caeruleus",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-longnose-gar",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-melanotaenia-boesemani",
+    "completeness_percent": 87.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-melanotaenia-praecox",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-midas-cichlid",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-mikrogeophagus-altispinosus",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-nematobrycon-palmeri",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-orinoco-peacock-bass",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-osteoglossum-bicirrhosum",
+    "completeness_percent": 74,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "species-otocinclus-affinis",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-pangio-kuhlii",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-paracheirodon-axelrodi",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-paracheirodon-innesi",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-pelvicachromis-pulcher",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-pethia-conchonius",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-pethia-padamya",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-phenacogrammus-interruptus",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-pictus-catfish",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-poecilia-reticulata",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-poecilia-sphenops",
+    "completeness_percent": 67.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "species-poecilia-wingei",
+    "completeness_percent": 81.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "species-pseudanthias-squamipinnis",
+    "completeness_percent": 80.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 28
+  },
+  {
+    "canonical_id": "species-pseudotropheus-zebra",
+    "completeness_percent": 82.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-pterophyllum-scalare",
+    "completeness_percent": 76.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 32
+  },
+  {
+    "canonical_id": "species-puntigrus-tetrazona",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-puntius-titteya",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-pygocentrus-nattereri",
+    "completeness_percent": 56,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "species-red-bellied-pacu",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-red-devil-cichlid",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-red-tail-shark",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-ryukin-goldfish",
+    "completeness_percent": 53.6,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "species-sailfin-pleco",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-scleropages-formosus",
+    "completeness_percent": 74,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "species-scleropages-jardinii",
+    "completeness_percent": 74,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "species-serrasalmus-rhombeus",
+    "completeness_percent": 56,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "species-severum",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-spotted-gar",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-spotted-snakehead",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-symphysodon-aequifasciatus",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-telescope-goldfish",
+    "completeness_percent": 53.6,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "species-thorichthys-meeki",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-three-barred-peacock-bass",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-tiger-shovelnose-catfish",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-tinfoil-barb",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-trichogaster-lalius",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-trichopodus-leerii",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-trichopodus-trichopterus",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-trichopsis-pumila",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-trigonostigma-espei",
+    "completeness_percent": 84.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-trigonostigma-heteromorpha",
+    "completeness_percent": 86.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 31
+  },
+  {
+    "canonical_id": "species-walking-catfish",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-weeks-bichir",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-wolf-cichlid",
+    "completeness_percent": 51.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 37,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "species-xiphophorus-hellerii",
+    "completeness_percent": 84.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 30
+  },
+  {
+    "canonical_id": "species-xiphophorus-maculatus",
+    "completeness_percent": 82.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "species-zebrasoma-flavescens",
+    "completeness_percent": 83.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 37,
+    "populated_fields": 29
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSWr0",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSWv7",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "7kdig6Bk6SZq4GZkXcVaBK",
+    "completeness_percent": 81,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlBjA",
+    "completeness_percent": 90.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 23
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Ciitg",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Cj9qO",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjA0S",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjAAW",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CtuPo",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuIOq",
+    "completeness_percent": 90.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 23
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuYam",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DFYK8",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXPL6",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jnflew",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfltO",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng2hi",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng4A2",
+    "completeness_percent": 79.3,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2xiA",
+    "completeness_percent": 88.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6Ttdg",
+    "completeness_percent": 79.3,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79SZ2",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79SjI",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79StY",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KJ84",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KJKt",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KvLg",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KvVw",
+    "completeness_percent": 79.3,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "WeSCIjvgoYC0LmYF97LSPP",
+    "completeness_percent": 85.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLTD",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLW3",
+    "completeness_percent": 85.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLYt",
+    "completeness_percent": 85.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLbj",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLeZ",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLhP",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTLn5",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-alternanthera-reineckii",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-amazon-sword",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "plant-ambulia",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-anubias-barteri",
+    "completeness_percent": 90.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 23
+  },
+  {
+    "canonical_id": "plant-bolbitis-heudelotii",
+    "completeness_percent": 66.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "plant-bucephalandra",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "plant-cabomba-caroliniana",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-cryptocoryne-balansae",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-cryptocoryne-parva",
+    "completeness_percent": 69.2,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "plant-cryptocoryne-wendtii",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-dwarf-baby-tears",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-dwarf-hairgrass",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-dwarf-sagittaria",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "plant-hornwort",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "plant-java-fern",
+    "completeness_percent": 93.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 24
+  },
+  {
+    "canonical_id": "plant-java-fern-narrow-leaf",
+    "completeness_percent": 66.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "plant-java-fern-windelov",
+    "completeness_percent": 66.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "plant-ludwigia-repens",
+    "completeness_percent": 81.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-marsilea-hirsuta",
+    "completeness_percent": 85.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-monte-carlo",
+    "completeness_percent": 85.2,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "plant-pogostemon-helferi",
+    "completeness_percent": 69.2,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "plant-rotala-rotundifolia",
+    "completeness_percent": 84.5,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "plant-rotala-wallichii",
+    "completeness_percent": 69.2,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "plant-thai-onion-plant",
+    "completeness_percent": 66.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "plant-vallisneria-spiralis",
+    "completeness_percent": 90.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 23
+  },
+  {
+    "canonical_id": "plant-water-wisteria",
+    "completeness_percent": 87.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 22
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3oqyay",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXkw",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+    "completeness_percent": 82.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSs8fJ",
+    "completeness_percent": 79.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztyBa",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztyJC",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "G6zzfp6s5dlbun6AVztyQo",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61Pe08",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve61Pewb",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CuIo0",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DFZ8S",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DJhXM",
+    "completeness_percent": 69.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXOqu",
+    "completeness_percent": 75.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXP0y",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jnfm4E",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfmDG",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfmKU",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng5wE",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JngE2Q",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2rTa",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6UVmA",
+    "completeness_percent": 69.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6UVyz",
+    "completeness_percent": 69.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hj3X",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6iAEQ",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6iAOg",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79WPX",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KIaj",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KIq7",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7Ket0",
+    "completeness_percent": 75.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLdvC",
+    "completeness_percent": 48.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLeDy",
+    "completeness_percent": 44.7,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4Mjof",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MkUT",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z4MkcJ",
+    "completeness_percent": 68.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "invertebrate-anentome-helena",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-astropecten-polyacanthus",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-atyopsis-moluccensis",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-caridina-cantonensis",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-caridina-multidentata",
+    "completeness_percent": 79.4,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-entacmaea-quadricolor",
+    "completeness_percent": 75.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "invertebrate-limnopilos-naiyanetri",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-lysmata-amboinensis",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-lysmata-debelius",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-lysmata-wurdemanni",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-melanoides-tuberculata",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-mespilia-globulus",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-neocaridina-davidi",
+    "completeness_percent": 82.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 26,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "invertebrate-palaemon-paludosus",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-perisesarma-bidens",
+    "completeness_percent": 70,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "invertebrate-phymanthus-crucifer",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-planorbarius-corneus",
+    "completeness_percent": 72.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "invertebrate-pomacea-bridgesii",
+    "completeness_percent": 75.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "invertebrate-stenopus-hispidus",
+    "completeness_percent": 78.8,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "invertebrate-vittina-natalensis",
+    "completeness_percent": 75.9,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3or1AM",
+    "completeness_percent": 48.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3or1pg",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3or21U",
+    "completeness_percent": 51.2,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 26,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hX9Rpx",
+    "completeness_percent": 80.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXLR",
+    "completeness_percent": 55.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXOj",
+    "completeness_percent": 55.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXVJ",
+    "completeness_percent": 55.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSrVl7",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmjC",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmlr",
+    "completeness_percent": 87.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmoW",
+    "completeness_percent": 87.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmrB",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmtq",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlmwV",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "Gk33CfLE6ahVd3Ve601Vay",
+    "completeness_percent": 59.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjDmS",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CttlY",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Ctty8",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9Ctu8C",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DJffc",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnTHt0",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnTgZ4",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng29O",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jng2TG",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnvhK2",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jnvipy",
+    "completeness_percent": 77.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2Xh0",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2rGw",
+    "completeness_percent": 77.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 17
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6TtLj",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6TtVz",
+    "completeness_percent": 87.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6UVbu",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2KnjUP",
+    "completeness_percent": 80.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2KnkWY",
+    "completeness_percent": 80.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLdGW",
+    "completeness_percent": 55.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "bXkDxvOEdfzf4NR9Z3Reey",
+    "completeness_percent": 62.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 14
+  },
+  {
+    "canonical_id": "coral-blastomussa",
+    "completeness_percent": 83.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 19
+  },
+  {
+    "canonical_id": "coral-candy-cane-coral",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "coral-duncan-coral",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "coral-goniopora",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "coral-gorgonian",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 16
+  },
+  {
+    "canonical_id": "coral-hammer-coral",
+    "completeness_percent": 90.6,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 21
+  },
+  {
+    "canonical_id": "coral-lobophytum-leather",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 16
+  },
+  {
+    "canonical_id": "coral-montipora-capricornis",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "coral-porites",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 16
+  },
+  {
+    "canonical_id": "coral-ricordea-mushroom",
+    "completeness_percent": 80.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 18
+  },
+  {
+    "canonical_id": "coral-staghorn-acropora",
+    "completeness_percent": 87.1,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "coral-table-acropora",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 16
+  },
+  {
+    "canonical_id": "coral-toadstool-leather",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "coral-turbinaria",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 16
+  },
+  {
+    "canonical_id": "coral-zoanthids",
+    "completeness_percent": 87.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 23,
+    "populated_fields": 20
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3or0mk",
+    "completeness_percent": 55.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 23,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXqh",
+    "completeness_percent": 34,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 5
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSXuo",
+    "completeness_percent": 29.4,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 4
+  },
+  {
+    "canonical_id": "1z8rQFHeojDMTUo2hXSYAR",
+    "completeness_percent": 34,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 5
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSrZVh",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "5oQB2MZ7gmZXjdwFqSra6F",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9CjFgi",
+    "completeness_percent": 49,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 8
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DXs4W",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnTI3q",
+    "completeness_percent": 66.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnTkGU",
+    "completeness_percent": 66.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnfmX8",
+    "completeness_percent": 67.3,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jnfmla",
+    "completeness_percent": 66.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnvlZm",
+    "completeness_percent": 80.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnvloE",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2s7K",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6Ttnw",
+    "completeness_percent": 49,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 8
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6UXsx",
+    "completeness_percent": 49,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 8
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hjas",
+    "completeness_percent": 67.3,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hjl8",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hwkO",
+    "completeness_percent": 66.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A6hwxD",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79h5B",
+    "completeness_percent": 62.7,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7Kfv7",
+    "completeness_percent": 80.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLeg8",
+    "completeness_percent": 34,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 5
+  },
+  {
+    "canonical_id": "PZ8Kai1VvEL468NS2LLfrf",
+    "completeness_percent": 34,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 5
+  },
+  {
+    "canonical_id": "equip-co2-diffuser",
+    "completeness_percent": 43.1,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 7
+  },
+  {
+    "canonical_id": "equip-co2-drop-checker",
+    "completeness_percent": 43.1,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 7
+  },
+  {
+    "canonical_id": "equip-t5-fluorescent-light",
+    "completeness_percent": 38.6,
+    "classification": "MAJOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 6
+  },
+  {
+    "canonical_id": "equipment-air-pump",
+    "completeness_percent": 86.3,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "equipment-canister-filter",
+    "completeness_percent": 90.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 14
+  },
+  {
+    "canonical_id": "equipment-circulation-pump-powerhead",
+    "completeness_percent": 73.2,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "equipment-co-regulator-kit",
+    "completeness_percent": 59.5,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "equipment-hang-on-back-filter",
+    "completeness_percent": 85,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "equipment-internal-filter",
+    "completeness_percent": 90.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 14
+  },
+  {
+    "canonical_id": "equipment-led-aquarium-light",
+    "completeness_percent": 86.3,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "equipment-master-test-kit",
+    "completeness_percent": 72.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "equipment-sponge-filter",
+    "completeness_percent": 86.3,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "equipment-submersible-heater",
+    "completeness_percent": 86.3,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUcx",
+    "completeness_percent": 68.6,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUfn",
+    "completeness_percent": 77.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUid",
+    "completeness_percent": 86.3,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 13
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUlT",
+    "completeness_percent": 81.7,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 16,
+    "populated_fields": 12
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUoJ",
+    "completeness_percent": 72.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUr9",
+    "completeness_percent": 54.9,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUtz",
+    "completeness_percent": 72.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "ofTl1CTOUWuLwM28PxTUwp",
+    "completeness_percent": 72.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "sebdKYryWZgYP2rm3or3AK",
+    "completeness_percent": 51.6,
+    "classification": "MODERATE_GAPS",
+    "applicable_fields": 16,
+    "populated_fields": 6
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlsx5",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlszk",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlt2P",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlt54",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnlt7j",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnltAO",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnltD3",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "BruaGKYCGDRQjkiQDnltFi",
+    "completeness_percent": 82.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DFYjI",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DFYtM",
+    "completeness_percent": 74.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "I9bI8W8ZWcEwyIzM9DNIu8",
+    "completeness_percent": 82.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5JnvacY",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2qVy",
+    "completeness_percent": 74.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2qgo",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2wxC",
+    "completeness_percent": 74.1,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "IlX7xILobrukz7d5Jo2xIs",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A79Tvf",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7AE36",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7AEDM",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KJcq",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KJpf",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "J1Tx0fWCuGNPno99A7KutT",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "problem-aiptasia-infestation",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-brown-diatom-algae",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-brown-jelly-disease",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-cloudy-water",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-coral-bleaching",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-cyanobacteria",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-fish-gasping-surface",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-fish-hiding",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-green-water",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-heater-stuck-off",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-heater-stuck-on",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-high-ammonia",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-high-nitrate",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-high-nitrite",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-low-filter-flow",
+    "completeness_percent": 82.9,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "problem-ph-crash",
+    "completeness_percent": 82.4,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 10
+  },
+  {
+    "canonical_id": "problem-ph-drift",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-plant-leaves-melting",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  },
+  {
+    "canonical_id": "problem-rapid-tissue-necrosis-rtn",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-slow-tissue-necrosis-stn",
+    "completeness_percent": 73.5,
+    "classification": "MINOR_GAPS",
+    "applicable_fields": 12,
+    "populated_fields": 9
+  },
+  {
+    "canonical_id": "problem-white-spot-disease",
+    "completeness_percent": 91.8,
+    "classification": "STRUCTURALLY_COMPLETE",
+    "applicable_fields": 12,
+    "populated_fields": 11
+  }
+]

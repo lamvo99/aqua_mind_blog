@@ -1,0 +1,22 @@
+candidateId,family,evidenceId,sourceClass,evidenceStrength,supportsClaim,reviewerDecision,note
+REL13A-0001,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0002,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0003,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0004,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0005,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0006,predatorPrey,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0007,predatorPrey,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0008,predatorPrey,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0009,predatorPrey,EV-SF-ANGELFISH,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0010,predatorPrey,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0011,predatorPrey,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0012,predatorPrey,EV-SF-DWARFPUFFER,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0013,predatorPrey,EV-SF-DWARFPUFFER,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0014,predatorPrey,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0015,predatorPrey,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,EXPLICIT_CATEGORY,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly states predation/diet for this category; conditional size caveat preserved.
+REL13A-0016,incompatibleSpecies,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,GENERIC_INFERENCE,PARTIAL,MANUAL_REVIEW,Source gives a generic temperament/slow-moving/long-finned statement; mapping to this specific catalog record needs human confirmation.
+REL13A-0017,incompatibleSpecies,EV-SF-BALASHARK,C3_SPECIALIST_REFERENCE,GENERIC_INFERENCE,PARTIAL,MANUAL_REVIEW,Source gives a generic temperament/slow-moving/long-finned statement; mapping to this specific catalog record needs human confirmation.
+REL13A-0018,incompatibleSpecies,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,EXPLICIT_NAMED_SPECIES,YES_WITH_CAVEAT,ELIGIBLE,Source explicitly names guppies as vulnerable to fin-nipping.
+REL13A-0019,incompatibleSpecies,EV-SF-YOYOLOACH,C3_SPECIALIST_REFERENCE,GENERIC_INFERENCE,PARTIAL,MANUAL_REVIEW,Source gives a generic temperament/slow-moving/long-finned statement; mapping to this specific catalog record needs human confirmation.
+REL13A-0020,incompatibleSpecies,EV-SF-DWARFPUFFER,C3_SPECIALIST_REFERENCE,GENERIC_INFERENCE,PARTIAL,MANUAL_REVIEW,Source gives a generic temperament/slow-moving/long-finned statement; mapping to this specific catalog record needs human confirmation.
+REL13A-0021,incompatibleSpecies,EV-SF-OSCAR,C3_SPECIALIST_REFERENCE,EXPLICIT_SIZE_RULE,YES_WITH_CAVEAT,ELIGIBLE,Source states oscar should not be combined with much smaller fishes; pygmy corydoras is ~14x smaller by length.

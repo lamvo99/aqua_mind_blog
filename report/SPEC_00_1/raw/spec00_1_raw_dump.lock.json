@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-10-17T19:29:28.099Z",
+  "projectId": "zeohjejw",
+  "dataset": "production",
+  "apiVersion": "2026-05-25",
+  "extractionMethod": "Sanity HTTP API — data/query (read-only)",
+  "sourceFiles": [
+    "sanity/schemaTypes/{species,plant,invertebrate,coral,equipment,problem}.ts",
+    "app/{species,plants,invertebrates,corals,equipment,problems}/[slug]/page.tsx",
+    "scripts/SPEC_00_1_extract.js"
+  ],
+  "recordCountsBeforeNormalization": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43,
+    "post": 22,
+    "tool": 9,
+    "category": 40,
+    "author": 1,
+    "inspiration": 10,
+    "subscriber": 1
+  },
+  "notes": "Raw API snapshot. No normalization applied. Published vs drafts split in audit."
+}

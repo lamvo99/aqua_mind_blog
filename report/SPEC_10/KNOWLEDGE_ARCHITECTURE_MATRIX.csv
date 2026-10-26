@@ -1,0 +1,231 @@
+domain,requirement,label,knowledgeLayer,primaryRepresentation,target,secondaryRepresentation,applicabilityClass,introducedLevel,researchGated,spec09Priority,spec09Severity,spec09Covered,spec09Partial,spec09Missing,spec09NA,decisionNote
+species,common_name,Common name,A,EXISTING_FIELD,name,,REQUIRED,L1,n,,LOW,218,0,0,0,
+species,scientific_name,Scientific name,A,EXISTING_FIELD,scientificName,,REQUIRED,L1,n,,LOW,218,0,0,0,
+species,taxonomic_context,Taxonomic context (family + group),A,EXISTING_FIELD,family+group,BODY,REQUIRED,L1,y,,LOW,106,93,19,0,body adds family context prose
+species,natural_distribution,Natural distribution,A,EXISTING_FIELD,origin+region,BODY,REQUIRED,L1,y,,MEDIUM,114,83,21,0,
+species,habitat,Natural habitat description,A,BODY,body:overview,,REQUIRED,L1,y,,MEDIUM,34,108,76,0,habitat description is explanatory prose
+species,adult_size,Adult size,A,EXISTING_FIELD,sizeCm,,REQUIRED,L1,n,,HIGH,218,0,0,0,
+species,growth_expectations,Growth expectations,F,BODY,body:adult-size-growth,,REQUIRED,L3,y,P2,MEDIUM,1,0,217,0,trajectory prose; sizeCm covers endpoint only
+species,juvenile_vs_adult,Juvenile vs adult differences,F,BODY,body:adult-size-growth,,OPTIONAL,L3,y,P2,MEDIUM,1,0,217,0,
+species,adult_footprint,Adult footprint implications (volume != footprint),B,NEW_FIELD,minTankLengthCm,BODY,REQUIRED,L2,y,,HIGH,3,215,0,0,"P0: volume != footprint (§6); footprint = length x width of the SAME dimensions block (no duplicate object, §29); implications prose in body"
+species,growth_tank_transition,Growth-related tank transition guidance,E,BODY,body:adult-size-growth,,REQUIRED,L3,y,P2,MEDIUM,0,0,218,0,when to upsize guidance
+species,temperature,Temperature range,B,EXISTING_FIELD,tempMinC/tempMaxC,,REQUIRED,L1,n,,HIGH,218,0,0,0,
+species,ph,pH range,B,EXISTING_FIELD,phMin/phMax,,REQUIRED,L1,y,,MEDIUM,217,0,1,0,
+species,gh,GH range,B,EXISTING_FIELD,ghMin/ghMax,,REQUIRED,L2,y,,MEDIUM,122,0,96,0,
+species,kh,KH / carbonate hardness,B,NEW_FIELD,khMin/khMax,,REQUIRED,L2,y,P2,MEDIUM,0,0,218,0,carbonate hardness absent from schema | rule: research
+species,salinity,Salinity / brackish-marine chemistry,B,NEW_FIELD,salinityMin/Max (ppt),,CONDITIONAL,L2,y,P1,HIGH,2,0,54,162,"rule: waterType in (saltwater, brackish)"
+species,species_specific_chemistry,Other species-specific chemistry sensitivities,B,BODY,body:water-parameters,,CONDITIONAL,L3,y,,MEDIUM,1,0,217,0,rule: documented sensitive species
+species,min_tank_volume,Minimum tank volume,B,EXISTING_FIELD,tankSizeMinL,,REQUIRED,L1,n,,HIGH,218,0,0,0,
+species,min_tank_dimensions,Minimum tank dimensions / length,B,NEW_FIELD,minTankLengthCm,,REQUIRED,L2,y,P0,HIGH,0,0,218,0,P0 schema item SG-001
+species,tank_footprint,Tank footprint / width requirement,B,NEW_FIELD,minTankWidthCm,,REQUIRED,L2,y,P0,HIGH,0,0,218,0,P0 schema item SG-002
+species,swimming_space,Swimming space / uninterrupted swimming area,B,NEW_FIELD,swimmingSpace (enum),BODY,REQUIRED,L2,y,P0,HIGH,3,0,215,0,P0 schema item SG-006; enum NONE/LOW/MODERATE/HIGH
+species,open_water_requirement,Open-water requirement,B,NEW_FIELD,behaviorFlags[open-water],,REQUIRED,L2,y,P2,MEDIUM,1,0,217,0,shared target with open_water_swimmer (single source of truth)
+species,bottom_area,Bottom area requirement,B,BODY,body:tank-requirements,,CONDITIONAL,L3,y,P2,MEDIUM,6,0,46,166,rule: benthic/sand-dwelling groups
+species,vertical_space,Vertical space requirement,B,BODY,body:tank-requirements,,CONDITIONAL,L3,n,,MEDIUM,0,0,0,218,"SPEC 09 NA-all rule replaced by explicit group rule | rule: tall-bodied/surface groups (arowana, angelfish, etc.)"
+species,hiding_structures,Hiding structures requirement,B,BODY,body:tank-requirements,,CONDITIONAL,L3,y,,MEDIUM,9,0,51,158,rule: cave/shy species
+species,jumping_risk,Escape / jumping risk,C,NEW_FIELD,jumpRisk (enum NONE/LOW/MODERATE/HIGH),BODY,REQUIRED,L2,y,P0,HIGH,1,0,217,0,P0 schema item SG-003
+species,lid_requirement,Lid / cover requirement,B,NEW_FIELD,lidRequired (enum NOT_REQUIRED/RECOMMENDED/ESSENTIAL),,REQUIRED,L2,y,P0,HIGH,6,0,212,0,P0 schema item SG-007
+species,flow_requirement,Flow / current requirement,B,NEW_FIELD,flowPreference (enum STILL/MODERATE/STRONG),,REQUIRED,L2,y,P2,MEDIUM,2,0,216,0,
+species,oxygenation,Oxygenation requirement,B,NEW_FIELD,oxygenSensitivity (enum NEUTRAL/SENSITIVE),,REQUIRED,L2,y,P1,HIGH,1,0,217,0,
+species,mature_aquarium,Mature / established aquarium requirement,E,NEW_FIELD,maturityRequirement (enum NONE/SUGGESTED/REQUIRED),BODY,REQUIRED,L2,y,,HIGH,3,0,215,0,shared vocabulary with invertebrate schema
+species,temperament,Temperament,C,EXISTING_FIELD,temperament,NEW_FIELD,REQUIRED,L1,n,,HIGH,218,0,0,0,keep coarse enum; granular behavior moves to behaviorFlags
+species,territoriality,Territoriality,C,NEW_FIELD,behaviorFlags[territorial],,REQUIRED,L2,y,,HIGH,14,0,204,0,
+species,schooling,Schooling / shoaling requirement,C,EXISTING_FIELD,"schooling (text) + groupSize {min,max}",BODY,REQUIRED,L2,y,,HIGH,105,31,82,0,extend text field with structured group size
+species,solitary,Solitary behavior,C,NEW_FIELD,behaviorFlags[solitary],,REQUIRED,L2,y,,MEDIUM,26,0,192,0,presence=positive signal; negatives live in body (Gate C rule)
+species,predator,Predator status,C,EXISTING_FIELD,isPredator,RELATIONSHIP,REQUIRED,L1,y,,HIGH,105,0,113,0,boolean stays; predation detail via predatorPrey relations
+species,diet_type,Diet,A,EXISTING_FIELD,diet,BODY,REQUIRED,L1,n,,HIGH,218,0,0,0,
+species,nocturnal,Nocturnal behavior,C,NEW_FIELD,behaviorFlags[nocturnal],,CONDITIONAL,L3,y,,MEDIUM,3,0,215,0,"rule: documented nocturnal groups (catfish, loaches, eels, cichlids)"
+species,diurnal,Diurnal / daytime behavior,C,NEW_FIELD,behaviorFlags[diurnal],,OPTIONAL,L3,y,,LOW,0,0,218,0,
+species,burrower,Burrowing behavior,C,NEW_FIELD,behaviorFlags[burrower],,CONDITIONAL,L3,y,,MEDIUM,1,0,217,0,"rule: sand-dwellers (loaches, eels, rays, gobies)"
+species,cave_dependent,Cave dependence,C,NEW_FIELD,behaviorFlags[cave-dweller],,CONDITIONAL,L3,y,,MEDIUM,2,0,216,0,rule: cavity-spawning/shy groups
+species,open_water_swimmer,Open-water swimmer behavior,C,NEW_FIELD,behaviorFlags[open-water],,CONDITIONAL,L2,y,,MEDIUM,1,0,217,0,shared with open_water_requirement | rule: sizeCm>=15 or pelagic groups
+species,strong_swimmer,Strong swimmer behavior,C,NEW_FIELD,behaviorFlags[strong-swimmer],,CONDITIONAL,L3,y,,MEDIUM,0,0,218,0,rule: large/riverine groups
+species,timid,Timid / skittish behavior,C,NEW_FIELD,behaviorFlags[timid],,REQUIRED,L3,y,,MEDIUM,9,0,209,0,community-stocking relevant for all
+species,community_suitability,Community suitability,D,NEW_FIELD,communitySuitability (enum UNSUITABLE/CONDITIONAL/SUITABLE),RELATIONSHIP,REQUIRED,L2,y,,HIGH,52,166,0,0,summary enum; full truth lives in compatible/incompatible relations
+species,feeding_frequency,Feeding frequency (if meaningful),E,BODY,body:feeding,,OPTIONAL,L3,y,,LOW,0,0,218,0,rule: where meaningful
+species,feeding_method,Feeding type / foods accepted,B,BODY,body:feeding,,REQUIRED,L2,y,,MEDIUM,1,0,217,0,practical feeding strategy cannot be one field (SPEC 10 §8)
+species,juvenile_adult_diet,Juvenile/adult dietary differences,F,BODY,body:feeding,,OPTIONAL,L3,y,P2,MEDIUM,1,0,217,0,
+species,special_nutrition,Special nutritional requirements,B,BODY,body:feeding,,CONDITIONAL,L3,y,,MEDIUM,1,0,217,0,rule: specialist feeders
+species,feeding_competition,Feeding competition,E,BODY,body:feeding,,CONDITIONAL,L3,y,P2,MEDIUM,0,0,218,0,rule: slow/semi-aggressive feeders
+species,predatory_feeding_behavior,Predatory feeding behavior,C,BODY,body:feeding,,CONDITIONAL,L3,y,,MEDIUM,18,0,82,118,rule: predators
+species,compatible_tankmates,Compatible tankmates (relationship),D,RELATIONSHIP,compatibleSpecies (+conditions),BODY,REQUIRED,L2,n,,HIGH,0,14,204,0,exists but empty 218/218 (REL-01); extend entries with conditions[] for conditional compatibility (§10)
+species,incompatible_tankmates,Incompatible tankmates / must-avoid combinations,D,RELATIONSHIP,incompatibleSpecies (PROPOSED),BODY,REQUIRED,L2,y,P1,HIGH,1,0,217,0,no schema slot today (REL-02)
+species,size_based_predation,Size-based predation risk,D,RELATIONSHIP,predatorPrey (PROPOSED typed refs),BODY,CONDITIONAL,L2,y,,HIGH,7,0,93,118,REL-03 | rule: predators/omnivores that eat tankmates
+species,territorial_conflicts,Territorial conflicts,D,BODY,body:compatibility,,CONDITIONAL,L3,y,,MEDIUM,14,0,204,0,rule: territorial species
+species,fin_nipping,Fin-nipping risk,D,BODY,body:compatibility,,CONDITIONAL,L2,y,,HIGH,3,0,215,0,rule: documented nippers
+species,compatibility_competition,Competition for resources,D,BODY,body:compatibility,,CONDITIONAL,L3,y,,MEDIUM,0,0,218,0,rule: resource-competition species
+species,compat_warnings,Special compatibility warnings,D,BODY,body:compatibility,,REQUIRED,L3,y,,HIGH,5,33,180,0,
+species,coral_interaction,Coral interaction / reef safety depth (§7C),D,NEW_FIELD,reefInteraction (enum REEF_SAFE/CAUTION/SPECIES_DEPENDENT/NOT_REEF_SAFE),RELATIONSHIP,CONDITIONAL,L2,y,,HIGH,1,42,11,164,§11: replaces reefCompatibility boolean semantics; detail flags (coral-predator/polyp-picker/tissue-nipper) in body | rule: waterType=saltwater
+species,invertebrate_predation,Invertebrate predation risk,D,NEW_FIELD,predatesInverts (enum NONE/POSSIBLE/LIKELY),RELATIONSHIP,CONDITIONAL,L2,y,,HIGH,0,0,100,118,"REL-05 | rule: isPredator=true or diet in (carnivore, omnivore)"
+species,water_change_sensitivity,Water-change sensitivity,E,NEW_FIELD,waterChangeSensitivity (enum LOW/MODERATE/HIGH),,REQUIRED,L2,y,,HIGH,0,0,218,0,
+species,waste_bioload,Waste production / bioload,E,NEW_FIELD,bioload (enum LOW/MODERATE/HIGH),,REQUIRED,L2,y,,MEDIUM,1,0,217,0,
+species,maintenance_burden,Maintenance burden,E,EXISTING_FIELD,difficulty (semantics extended: careLevel),BODY,REQUIRED,L1,y,,MEDIUM,4,214,0,0,
+species,special_husbandry,Special husbandry requirements,F,BODY,body:special-requirements,,CONDITIONAL,L3,y,,LOW,0,0,218,0,rule: specialist species
+species,sexual_differences,Sexual differences (where useful),F,BODY,body:breeding,,OPTIONAL,L3,y,,MEDIUM,28,0,190,0,
+species,spawning_behavior,Spawning behavior,F,BODY,body:breeding,,CONDITIONAL,L3,y,,MEDIUM,6,0,212,0,rule: known breeders
+species,breeding_difficulty,Breeding difficulty,F,NEW_FIELD,breedingDifficulty (enum),,CONDITIONAL,L3,y,P2,MEDIUM,2,0,216,0,rule: known breeders
+species,breeding_requirements,Breeding special requirements,F,BODY,body:breeding,,CONDITIONAL,L4,y,P2,MEDIUM,0,0,218,0,research-gated | rule: known breeders
+plant,common_name,Common name,A,EXISTING_FIELD,name,,REQUIRED,L1,n,,LOW,62,0,0,0,
+plant,scientific_name,Scientific name,A,EXISTING_FIELD,scientificName,,REQUIRED,L1,n,,LOW,62,0,0,0,
+plant,plant_type,Plant type / group,A,EXISTING_FIELD,group/type,,REQUIRED,L1,y,,MEDIUM,53,0,9,0,
+plant,growth_form_plant,Growth form,A,EXISTING_FIELD,growthForm,,REQUIRED,L1,n,,MEDIUM,62,0,0,0,
+plant,natural_habitat_plant,Natural habitat,A,BODY,body:overview,,REQUIRED,L1,y,,MEDIUM,0,29,33,0,
+plant,light_requirement,Light requirement (qualitative),B,EXISTING_FIELD,light,,REQUIRED,L1,n,,HIGH,62,0,0,0,
+plant,light_intensity,Light intensity / acclimation guidance,B,BODY,body:light,,REQUIRED,L2,y,P1,MEDIUM,1,0,61,0,acclimation/intensity nuance; no duplicate of light enum (§30)
+plant,par,PAR guidance,B,NEW_FIELD,parMin/parMax,,OPTIONAL,L4,y,P1,MEDIUM,0,0,62,0,research-gated; qualitative stays authoritative | rule: only where evidence supports numbers
+plant,photoperiod,Photoperiod considerations,B,BODY,body:light,,REQUIRED,L2,y,P2,MEDIUM,0,0,62,0,
+plant,light_acclimation,Light acclimation (transition),E,BODY,body:light,,REQUIRED,L3,y,,MEDIUM,0,0,62,0,
+plant,co2_requirement,CO2 requirement,B,EXISTING_FIELD,co2,,REQUIRED,L1,n,,HIGH,62,0,0,0,
+plant,low_tech_suitability,Low-tech suitability,B,EXISTING_FIELD,co2 (semantics: NONE/LOW implies low-tech),BODY,REQUIRED,L2,y,,MEDIUM,46,16,0,0,
+plant,co2_response,CO2 response / low-tech behavior,B,BODY,body:co2,,REQUIRED,L3,y,,MEDIUM,0,0,62,0,
+plant,macro_nutrients,Macro nutrients,B,BODY,body:nutrients,,REQUIRED,L3,y,P2,MEDIUM,0,0,62,0,
+plant,micro_nutrients,Micro nutrients / trace elements,B,BODY,body:nutrients,,REQUIRED,L3,y,P2,MEDIUM,2,0,60,0,
+plant,root_vs_water_column,Root feeding vs water-column feeding,B,NEW_FIELD,feedingMode (enum ROOT/WATER_COLUMN/BOTH),,CONDITIONAL,L2,y,P2,MEDIUM,0,0,41,21,rule: not (Epiphyte/Moss/Fern/Floating)
+plant,substrate_requirements,Substrate requirements,B,NEW_FIELD,substrateType (enum NONE/SAND/SOIL/MIXED),BODY,CONDITIONAL,L2,y,P1,HIGH,1,0,40,21,rule: not (Epiphyte/Moss/Fern/Floating)
+plant,fertilization,Fertilization implications,B,NEW_FIELD,fertilizationPlan (enum NONE/LIGHT_LIQUID/REGULAR/TARGETED),BODY,REQUIRED,L2,y,P1,HIGH,0,0,62,0,HIGH severity; core plant decision field
+plant,deficiency_sensitivity,Deficiency sensitivity,E,BODY,body:common-deficiencies,,REQUIRED,L3,y,P2,MEDIUM,0,0,62,0,
+plant,temperature_plant,Temperature range,B,EXISTING_FIELD,tempMinC/tempMaxC,,REQUIRED,L1,y,,MEDIUM,59,0,3,0,
+plant,ph_plant,pH range,B,EXISTING_FIELD,phMin/phMax,,REQUIRED,L1,y,,MEDIUM,59,0,3,0,
+plant,gh_plant,GH preference,B,NEW_FIELD,ghMin/ghMax,,OPTIONAL,L3,y,P2,MEDIUM,0,0,62,0,research-gated | rule: where evidence exists
+plant,kh_plant,KH preference,B,NEW_FIELD,khMin/khMax,,OPTIONAL,L3,y,P2,MEDIUM,0,0,62,0,research-gated | rule: where evidence exists
+plant,placement,Placement (fore/mid/back/floating/epiphyte),B,EXISTING_FIELD,placement,,REQUIRED,L1,y,,MEDIUM,59,0,3,0,
+plant,epiphyte_attachment,Epiphyte / hardscape attachment,C,BODY,body:placement,,CONDITIONAL,L3,y,,MEDIUM,6,0,8,48,rule: Epiphyte placement
+plant,space_requirements_plant,Space requirements / spread room,B,BODY,body:growth-and-trimming,,REQUIRED,L2,y,P2,MEDIUM,4,0,58,0,spread-room advice is contextual
+plant,growth_rate,Growth rate,C,EXISTING_FIELD,growth,,REQUIRED,L2,y,,LOW,59,0,3,0,
+plant,adult_height,Adult height,C,NEW_FIELD,heightCm,,REQUIRED,L2,y,P2,MEDIUM,0,0,62,0,aquascaping placement decision data
+plant,spread_width,Spread / width,C,NEW_FIELD,spreadCm,,REQUIRED,L2,y,P2,MEDIUM,14,0,48,0,rule: research
+plant,propagation,Propagation,F,EXISTING_FIELD,propagation,,REQUIRED,L3,y,,MEDIUM,51,0,11,0,
+plant,trimming,Trimming / pruning,F,BODY,body:growth-and-trimming,,REQUIRED,L3,y,,MEDIUM,19,0,43,0,
+plant,flow_tolerance,Flow tolerance,B,NEW_FIELD,flowTolerance (enum LOW/MODERATE/HIGH),,REQUIRED,L3,y,P2,MEDIUM,0,0,62,0,
+plant,algae_sensitivity,Algae sensitivity,E,BODY,body:algae-sensitivity,,REQUIRED,L3,y,,MEDIUM,2,0,60,0,
+plant,melting,Melting behavior,E,BODY,body:common-problems,,REQUIRED,L3,y,,MEDIUM,1,0,61,0,
+plant,nutrient_deficiency_problems,Nutrient deficiency problems,E,BODY,body:common-deficiencies,,REQUIRED,L3,y,,MEDIUM,0,0,62,0,
+plant,light_problems,Light-related problems,E,BODY,body:common-problems,,REQUIRED,L3,y,,MEDIUM,0,0,62,0,
+plant,co2_problems,CO2-related problems,E,BODY,body:common-problems,,REQUIRED,L3,y,,MEDIUM,0,0,62,0,
+plant,transition_issues,Transition / acclimation issues,E,BODY,body:transition,,REQUIRED,L3,y,,MEDIUM,1,0,61,0,
+invertebrate,common_name,Common name,A,EXISTING_FIELD,name,,REQUIRED,L1,n,,LOW,56,0,0,0,
+invertebrate,scientific_name_inv,Scientific name,A,EXISTING_FIELD,scientificName,,REQUIRED,L1,n,,LOW,56,0,0,0,
+invertebrate,type_group,Type / group,A,EXISTING_FIELD,group/type,,REQUIRED,L1,n,,MEDIUM,56,0,0,0,
+invertebrate,natural_habitat_inv,Natural role / habitat,A,BODY,body:overview,,REQUIRED,L1,y,,MEDIUM,8,24,24,0,
+invertebrate,temperature_inv,Temperature range,B,EXISTING_FIELD,tempMinC/tempMaxC,,REQUIRED,L1,y,,HIGH,50,0,6,0,
+invertebrate,salinity_inv,Salinity,B,NEW_FIELD,salinityMin/Max (ppt),,CONDITIONAL,L2,y,P1,HIGH,1,0,27,28,rule: waterType=saltwater
+invertebrate,ph_inv,pH range,B,EXISTING_FIELD,phMin/phMax,,REQUIRED,L1,y,,HIGH,50,0,6,0,
+invertebrate,gh_kh_inv,GH / KH where relevant,B,NEW_FIELD,ghMin/ghMax + khMin/khMax,,OPTIONAL,L3,y,P2,MEDIUM,5,0,51,0,research-gated | rule: where evidence exists
+invertebrate,calcium_inv,Calcium where relevant (shells/molts),B,NEW_FIELD,calciumRequirement (enum NONE/SUGGESTED/REQUIRED),BODY,CONDITIONAL,L2,y,P1,HIGH,2,0,43,11,"HIGH severity; mineral decision field | rule: shells/molts: snails, shrimp, crabs"
+invertebrate,magnesium_inv,Magnesium where relevant,B,BODY,body:water-parameters,,CONDITIONAL,L3,y,P2,MEDIUM,0,0,28,28,research-gated | rule: shrimp/crustacean groups
+invertebrate,stability_inv,Stability requirements,B,NEW_FIELD,stabilityRequirement (enum LOW/MODERATE/CRITICAL),BODY,REQUIRED,L2,y,P1,HIGH,8,0,48,0,HIGH severity
+invertebrate,diet_inv,Diet type,A,EXISTING_FIELD,diet,,REQUIRED,L1,y,,HIGH,50,0,6,0,
+invertebrate,natural_food,Natural food source,B,BODY,body:diet-and-feeding,,REQUIRED,L2,y,,HIGH,17,0,39,0,
+invertebrate,supplemental_feeding,Supplemental feeding,B,BODY,body:diet-and-feeding,,REQUIRED,L3,y,,MEDIUM,8,0,48,0,
+invertebrate,starvation_risk,Risk of starvation,E,NEW_FIELD,riskFlags[STARVATION],BODY,REQUIRED,L2,y,,HIGH,3,0,53,0,HIGH severity
+invertebrate,molting,Molting knowledge,C,NEW_FIELD,moltingType (enum NONE/RARE/FREQUENT),BODY,CONDITIONAL,L2,y,P1,HIGH,1,0,30,25,"P0-relevant: 30/31 applicable missing (SPEC 09) | rule: crustaceans (shrimp, crabs, crayfish)"
+invertebrate,molting_minerals,Calcium/mineral needs for molting,B,BODY,body:molting,,CONDITIONAL,L2,y,P1,HIGH,0,0,43,13,research-gated; HIGH severity | rule: crustaceans
+invertebrate,molting_hazards,Molting hazards,E,BODY,body:molting,,CONDITIONAL,L3,y,P2,MEDIUM,0,0,31,25,rule: crustaceans
+invertebrate,post_molt_vulnerability,Post-molt vulnerability,E,BODY,body:molting,,CONDITIONAL,L3,y,P2,MEDIUM,0,0,31,25,rule: crustaceans
+invertebrate,fish_predators,Fish predator risk,D,RELATIONSHIP,predatorPrey (PROPOSED typed refs),BODY,CONDITIONAL,L2,y,,HIGH,1,0,46,9,REL-03/05 | rule: prey-sized invertebrates
+invertebrate,invertebrate_predators,Invertebrate predator risk,D,RELATIONSHIP,predatorPrey (PROPOSED typed refs),,CONDITIONAL,L3,y,,MEDIUM,0,0,56,0,rule: community records
+invertebrate,temperament_inv,Aggression / temperament,C,EXISTING_FIELD,temperament,,REQUIRED,L1,y,,MEDIUM,50,0,6,0,
+invertebrate,competition_inv,Competition,D,BODY,body:compatibility,,REQUIRED,L3,y,,MEDIUM,0,0,56,0,
+invertebrate,reef_compat_inv,Reef compatibility,D,EXISTING_FIELD,reefCompatibility,,CONDITIONAL,L2,y,,HIGH,27,0,1,28,rule: waterType=saltwater
+invertebrate,min_tank_inv,Minimum tank requirements,B,NEW_FIELD,minTankVolumeL,,REQUIRED,L2,y,P2,MEDIUM,2,0,54,0,species pattern reused for consistency
+invertebrate,hiding_areas,Hiding areas,B,BODY,body:tank-requirements,,CONDITIONAL,L3,y,,MEDIUM,6,0,50,0,rule: cave/shy species
+invertebrate,substrate_inv,Substrate requirements,B,BODY,body:tank-requirements,,CONDITIONAL,L3,y,,MEDIUM,8,0,48,0,rule: burrowers/sand-sifters
+invertebrate,rockwork,Rockwork requirements,B,BODY,body:tank-requirements,,CONDITIONAL,L3,y,P2,MEDIUM,5,0,22,29,rule: reef grazers/lochers
+invertebrate,escape_risk,Escape risk,E,NEW_FIELD,riskFlags[ESCAPE],BODY,CONDITIONAL,L2,y,,HIGH,3,0,28,25,"HIGH severity | rule: climbing groups (crabs, some snails, sleeper gobies)"
+invertebrate,reproduction,Reproduction / breeding behavior,F,BODY,body:breeding,,OPTIONAL,L3,y,,MEDIUM,11,0,45,0,
+invertebrate,breeding_difficulty_inv,Breeding difficulty,F,NEW_FIELD,breedingDifficulty (enum),,CONDITIONAL,L3,y,P2,MEDIUM,2,0,54,0,rule: known breeders
+invertebrate,larval_requirements,Larval requirements (where relevant),F,BODY,body:breeding,,CONDITIONAL,L4,y,P3,LOW,1,0,55,0,research-gated | rule: breedable species
+invertebrate,mature_aquarium_inv,Mature aquarium requirement,E,NEW_FIELD,maturityRequirement (enum NONE/SUGGESTED/REQUIRED),BODY,REQUIRED,L2,y,P1,HIGH,1,0,36,19,shared vocabulary with species schema; HIGH severity
+invertebrate,established_biofilm,Established biofilm requirement,E,NEW_FIELD,biofilmRequirement (enum NONE/REQUIRED),BODY,CONDITIONAL,L2,y,P1,HIGH,0,0,43,13,"HIGH severity; 43 applicable, 0 covered in SPEC 09 | rule: grazers: shrimp, snails, detritivores"
+invertebrate,specialized_food_inv,Specialized food,B,BODY,body:diet-and-feeding,,CONDITIONAL,L3,y,,MEDIUM,1,0,55,0,rule: specialist feeders
+invertebrate,specialized_habitat_inv,Specialized habitat,B,BODY,body:tank-requirements,,OPTIONAL,L4,y,,LOW,6,0,50,0,
+coral,common_name,Common name,A,EXISTING_FIELD,name,,REQUIRED,L1,n,,LOW,48,0,0,0,
+coral,scientific_name_coral,Scientific name,A,EXISTING_FIELD,scientificName,,REQUIRED,L1,n,,LOW,48,0,0,0,
+coral,coral_type,Coral type,A,EXISTING_FIELD,coralType,,REQUIRED,L1,n,,MEDIUM,48,0,0,0,
+coral,coral_group,Coral group / family context,A,EXISTING_FIELD,group,,REQUIRED,L1,y,,MEDIUM,44,0,4,0,
+coral,growth_form_coral,Growth form (branching/plating/encrusting),A,NEW_FIELD,growthForm (enum BRANCHING/PLATING/ENCRASTING/MASSIVE/FOLIACEOUS),,REQUIRED,L2,y,P2,MEDIUM,18,0,30,0,no growth-form field on coral schema today
+coral,light_coral,Qualitative lighting requirement,B,EXISTING_FIELD,light,,REQUIRED,L1,n,,HIGH,48,0,0,0,
+coral,par_coral,PAR guidance,B,NEW_FIELD,parMin/parMax,,OPTIONAL,L4,y,P1,MEDIUM,0,0,48,0,research-gated; qualitative light stays authoritative (§23) | rule: only where evidence supports numbers
+coral,placement_coral,Placement,B,EXISTING_FIELD,placement,,REQUIRED,L2,y,,HIGH,43,0,5,0,
+coral,acclimation_coral,Light acclimation,E,BODY,body:acclimation,,REQUIRED,L2,y,,HIGH,0,0,48,0,research-gated; HIGH severity
+coral,lighting_risks,Lighting-related risks,E,BODY,body:lighting-risks,,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,
+coral,flow_coral,Flow requirement,B,EXISTING_FIELD,flow,,REQUIRED,L1,y,,HIGH,43,0,5,0,
+coral,flow_pattern,"Flow pattern (direct vs indirect, laminar vs turbulent)",B,NEW_FIELD,flowPattern (enum DIRECT/INDIRECT/RANDOM/OSCILLATING/LAMINAR),BODY,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,§12: flow quality beyond quantity
+coral,flow_tissue_considerations,Flow/tissue considerations,B,BODY,body:flow,,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,
+coral,temperature_coral,Temperature range,B,EXISTING_FIELD,tempMinC/tempMaxC,,REQUIRED,L1,y,,HIGH,41,0,7,0,
+coral,salinity_coral,Salinity / specific gravity,B,NEW_FIELD,salinityMin/Max (ppt) or sgMin/sgMax,,REQUIRED,L2,y,P1,HIGH,0,0,48,0,HIGH severity; coral chemistry block | rule: research
+coral,ph_coral,pH,B,NEW_FIELD,phMin/phMax,,REQUIRED,L2,y,P1,HIGH,0,0,48,0,coral chemistry block | rule: research
+coral,alkalinity,Alkalinity (dKH),B,NEW_FIELD,dkhMin/dkhMax,,REQUIRED,L2,y,P1,HIGH,0,0,48,0,HIGH severity; coral chemistry block | rule: research
+coral,calcium,Calcium,B,NEW_FIELD,caMin/caMax (ppm),,REQUIRED,L2,y,P1,HIGH,0,0,48,0,HIGH severity; coral chemistry block | rule: research
+coral,magnesium,Magnesium,B,NEW_FIELD,mgMin/mgMax (ppm),,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,coral chemistry block | rule: research
+coral,nitrate,Nitrate,B,NEW_FIELD,no3Min/no3Max (ppm),,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,coral chemistry block | rule: research
+coral,phosphate,Phosphate,B,NEW_FIELD,po4Min/po4Max (ppm),,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,coral chemistry block | rule: research
+coral,stability,Water stability requirements,B,BODY,body:water-chemistry,,REQUIRED,L2,y,P1,HIGH,3,0,45,0,"HIGH severity; stability is a strategy, not a number (§9)"
+coral,photosynthetic,Photosynthetic role,C,EXISTING_FIELD,photosynthetic,,REQUIRED,L1,y,,MEDIUM,46,0,2,0,
+coral,feeding_coral,Feeding,B,BODY,body:nutrition,,REQUIRED,L3,y,P2,MEDIUM,7,0,41,0,
+coral,feeding_type_coral,Feeding type,C,NEW_FIELD,feedingType (enum ZOOXANTHELLAE/MIXED/CARNIVOROUS/NPS),,REQUIRED,L2,y,P3,LOW,0,0,48,0,classification decides feeding workflow
+coral,feeding_frequency_coral,Feeding frequency (meaningful for NPS),B,BODY,body:nutrition,,CONDITIONAL,L3,y,P1,MEDIUM,0,0,4,44,rule: NPS/non-photosynthetic corals
+coral,nutrient_availability,Nutrient availability,B,BODY,body:nutrition,,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,
+coral,growth_rate_coral,Growth rate,C,NEW_FIELD,growthRate (enum SLOW/MODERATE/FAST),,REQUIRED,L3,y,P2,MEDIUM,7,0,41,0,
+coral,space_coral,Space requirements,B,NEW_FIELD,spacing (enum CLOSE/MODERATE/SPACED),BODY,REQUIRED,L2,y,P1,HIGH,0,0,48,0,placement decision field; detail in body
+coral,aggression,Aggression level,C,EXISTING_FIELD,aggression,,REQUIRED,L2,y,,HIGH,41,0,7,0,
+coral,sweeper_tentacles,Sweeper tentacles,C,NEW_FIELD,aggressionTraits[SWEEPER],BODY,REQUIRED,L2,y,P1,HIGH,1,0,47,0,one multi-select serves sweeper/allelopathy/stinging (Gate C vocabulary rule)
+coral,chemical_warfare,Chemical warfare (allelopathy),C,NEW_FIELD,aggressionTraits[ALLOLEPATHY],BODY,REQUIRED,L3,y,P1,HIGH,1,0,47,0,
+coral,stinging,Stinging risk,C,NEW_FIELD,aggressionTraits[STING],BODY,REQUIRED,L3,y,P2,MEDIUM,1,0,47,0,
+coral,placement_neighbors,Placement relative to neighbors,D,RELATIONSHIP,coralNeighbors (PROPOSED typed refs),BODY,REQUIRED,L3,y,P1,HIGH,2,0,46,0,REL-13: coral-coral spacing/aggression cannot be expressed today
+coral,reef_safe_status,Reef-safe status,D,EXISTING_FIELD,reefCompatibility,,REQUIRED,L1,n,,HIGH,48,0,0,0,
+coral,reef_caveats,Species-dependent reef caveats,D,BODY,body:reef-caveats,,REQUIRED,L2,y,,HIGH,0,0,48,0,HIGH severity; species-dependent nuance (§11)
+coral,coral_interaction_coral,Coral interaction / neighbor effects,D,RELATIONSHIP,coralNeighbors (PROPOSED typed refs),BODY,REQUIRED,L3,y,P2,MEDIUM,1,0,47,0,neighbor effects as typed relations + narrative
+coral,fish_interaction_coral,Fish interaction,D,RELATIONSHIP,species<->coral reefInteraction (bidirectional view),BODY,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,coral-side view of the fish-side relation; no duplicate slot (§29)
+coral,invertebrate_interaction_coral,Invertebrate interaction,D,BODY,body:compatibility,,REQUIRED,L3,y,P2,MEDIUM,0,0,48,0,
+coral,bleaching,Bleaching knowledge,E,BODY,body:common-problems,RELATIONSHIP,REQUIRED,L2,y,,HIGH,0,0,48,0,HIGH severity; relatedProblems links + narrative
+coral,stn_rtn,STN / RTN / tissue recession,E,BODY,body:common-problems,RELATIONSHIP,REQUIRED,L2,y,,HIGH,0,0,48,0,HIGH severity
+coral,pests_coral,Pests knowledge,E,BODY,body:common-problems,RELATIONSHIP,REQUIRED,L3,y,P1,HIGH,0,0,48,0,HIGH severity
+coral,algae_coral,Algae problems,E,BODY,body:common-problems,,REQUIRED,L3,y,,MEDIUM,0,0,48,0,
+coral,flow_stress_coral,Flow stress problems,E,BODY,body:common-problems,,REQUIRED,L3,y,,MEDIUM,0,0,48,0,
+coral,chemistry_problems,Chemistry-related problems,E,BODY,body:chemistry-problems,RELATIONSHIP,REQUIRED,L3,y,P1,HIGH,0,0,48,0,HIGH severity
+equipment,purpose,What it does / purpose,A,EXISTING_FIELD,excerpt (semantics: function/intended use),BODY,REQUIRED,L1,y,,MEDIUM,39,7,0,0,excerpt serves identification; body adds What It Does section
+equipment,problem_solved,What problem it solves,A,BODY,body:what-it-does,,REQUIRED,L2,y,,MEDIUM,17,0,29,0,
+equipment,suitable_tank_size,Suitable tank size range,B,EXISTING_FIELD,tankSizeMinL/tankSizeMaxL,,REQUIRED,L1,y,,HIGH,26,0,20,0,
+equipment,water_type_suitability,Freshwater/marine/reef suitability,B,NEW_FIELD,waterType (enum freshwater/saltwater/both),,REQUIRED,L1,n,,HIGH,46,0,0,0,currently text-derived (46/46 covered); structuring enables filtering (§18)
+equipment,tank_type,Tank type / equipment category,A,EXISTING_FIELD,category,,REQUIRED,L1,n,,MEDIUM,46,0,0,0,
+equipment,flow_capacity,Flow capacity (L/h),B,EXISTING_FIELD,flowRateLh,,CONDITIONAL,L2,y,,HIGH,6,0,3,37,"rule: pumps, filters, powerheads"
+equipment,turnover,Turnover guidance,B,NEW_FIELD,turnoverPerH,,CONDITIONAL,L3,y,P1,HIGH,0,0,9,37,research-gated; HIGH severity | rule: marine/filtration categories
+equipment,filtration_capacity,Filtration capacity / rated load,B,NEW_FIELD,"ratedCapacity {value,unit,basis}",,CONDITIONAL,L3,y,P1,HIGH,3,0,1,42,"research-gated; preserves manufacturer spec (§15) | rule: filters, skimmers, reactors"
+equipment,load_limitations,Load limitations (stocking vs capacity),E,BODY,body:real-world-capacity,,REQUIRED,L2,y,P1,HIGH,0,0,46,0,HIGH severity; rated != real (§15)
+equipment,practical_capacity,Practical vs marketing capacity,E,BODY,body:real-world-capacity,,REQUIRED,L3,y,P3,LOW,0,0,46,0,
+equipment,best_use_case,Best use case,C,BODY,body:best-use,,REQUIRED,L2,y,,MEDIUM,8,0,38,0,
+equipment,installation,Installation guidance,C,BODY,body:specifications,,OPTIONAL,L3,y,P2,MEDIUM,9,0,37,0,
+equipment,placement_equipment,Placement guidance,C,BODY,body:specifications,,REQUIRED,L3,y,P2,MEDIUM,15,0,31,0,
+equipment,configuration,Configuration guidance,C,BODY,body:specifications,,REQUIRED,L3,y,P2,MEDIUM,5,0,41,0,
+equipment,limitations,What it cannot do / limitations,E,EXISTING_FIELD,cons,BODY,REQUIRED,L1,y,,HIGH,37,0,9,0,cons array is the strongest existing body layer (37/46)
+equipment,when_inadequate,When it becomes inadequate,E,BODY,body:limitations,,REQUIRED,L2,y,P1,HIGH,0,0,46,0,HIGH severity
+equipment,noise_heat,Noise / heat / running-cost implications,E,BODY,body:limitations,,REQUIRED,L3,y,,MEDIUM,8,0,38,0,
+equipment,compatible_equipment,Compatible equipment / system interactions,D,RELATIONSHIP,compatibleEquipment (PROPOSED equipment->equipment),BODY,REQUIRED,L3,y,P2,MEDIUM,2,0,44,0,no equipment-to-equipment slot exists
+equipment,system_interactions,System interactions (sump/canister/inline),D,BODY,body:compatibility,,REQUIRED,L3,y,P2,MEDIUM,8,0,38,0,
+equipment,reef_fresh_constraints,Reef vs freshwater constraints,B,BODY,body:limitations,,CONDITIONAL,L3,y,,MEDIUM,0,0,46,0,rule: categories usable in both water types
+equipment,cleaning,Cleaning / maintenance routine,E,BODY,body:maintenance,,REQUIRED,L2,y,,HIGH,14,0,32,0,HIGH severity
+equipment,replacement,Replacement schedule / parts,E,BODY,body:maintenance,,REQUIRED,L3,y,P2,MEDIUM,8,0,38,0,
+equipment,consumables,Consumables,E,BODY,body:maintenance,,REQUIRED,L3,y,P2,MEDIUM,6,0,40,0,
+equipment,failure_modes,Failure modes,E,BODY,body:failure-modes,RELATIONSHIP,REQUIRED,L2,y,P1,HIGH,4,0,42,0,HIGH severity; links to problem records
+equipment,common_misuse,Common misuse,E,BODY,body:safety,,REQUIRED,L2,y,P1,HIGH,0,0,46,0,HIGH severity
+equipment,overflow_risk,Overflow / water-damage risk,E,BODY,body:safety,,CONDITIONAL,L2,y,P1,HIGH,0,0,11,35,"HIGH severity | rule: water-moving categories (filters, powerheads, top-offs)"
+equipment,electrical_safety,Electrical safety,E,BODY,body:safety,,CONDITIONAL,L2,y,P1,HIGH,2,0,9,35,"HIGH severity; Digital Heater P0 | rule: electrical categories (heaters, lights, controllers)"
+equipment,power_draw,Power draw (W),B,EXISTING_FIELD,powerW,,REQUIRED,L1,y,,LOW,24,0,22,0,
+problem,symptoms,Observable symptoms,E,EXISTING_FIELD,symptoms (portable-text block),,REQUIRED,L1,n,,HIGH,43,0,0,0,
+problem,what_it_indicates,What it may indicate (primary causes),E,EXISTING_FIELD,causes (portable-text block),,REQUIRED,L1,n,,HIGH,43,0,0,0,
+problem,differential_causes,Differential causes (multiple),E,EXISTING_FIELD,causes (semantics: multiple causes w/ ordering),,REQUIRED,L2,n,,HIGH,43,0,0,0,
+problem,how_to_distinguish,How to distinguish between causes,E,BODY,newBlock:howToDistinguish,,REQUIRED,L2,y,,HIGH,5,0,38,0,differential diagnosis; 5/43 covered in SPEC 09
+problem,first_check,First check / highest-priority observations,E,EXISTING_FIELD,whatToCheck (portable-text block),,REQUIRED,L1,n,,HIGH,43,0,0,0,
+problem,secondary_causes,Secondary / contributing causes,E,EXISTING_FIELD,causes (semantics: tag entries secondary),,REQUIRED,L3,y,,MEDIUM,28,0,15,0,
+problem,environmental_causes,Environmental causes,E,EXISTING_FIELD,causes (semantics: tag entries environmental),,REQUIRED,L3,y,,MEDIUM,36,0,7,0,
+problem,husbandry_causes,Husbandry causes,E,EXISTING_FIELD,causes (semantics: tag entries husbandry),,REQUIRED,L3,y,,MEDIUM,16,0,27,0,
+problem,immediate_action,Immediate action,E,BODY,newBlock:immediateAction,,REQUIRED,L2,y,P1,HIGH,9,0,34,0,§16 pipeline step missing today; 9/43 covered
+problem,corrective_action,Corrective action / treatment,E,BODY,newBlock:treatment,,REQUIRED,L2,y,,HIGH,23,0,20,0,§16 correction step
+problem,recovery_expectations,Recovery expectations,E,BODY,newBlock:recovery,,REQUIRED,L3,y,P2,MEDIUM,13,0,30,0,
+problem,what_not_to_do,What NOT to do,E,EXISTING_FIELD,whatNotToDo (portable-text block),,REQUIRED,L1,n,,HIGH,43,0,0,0,
+problem,overcorrection_risks,Overcorrection risks,E,EXISTING_FIELD,whatNotToDo (semantics: include overcorrection),,REQUIRED,L3,y,,MEDIUM,4,0,39,0,no duplicate block (§30)
+problem,prevention,Long-term prevention,E,BODY,newBlock:prevention,,REQUIRED,L2,y,P2,MEDIUM,2,0,41,0,§16 prevention step; 2/43 covered
+problem,monitoring,Monitoring guidance,E,BODY,newBlock:monitoring,,REQUIRED,L3,y,P2,MEDIUM,4,0,39,0,ongoing checks vs first-check block
+problem,maintenance_prevention,Maintenance-linked prevention,E,BODY,newBlock:prevention (maintenance entries),,REQUIRED,L3,y,P2,MEDIUM,10,0,33,0,shared block with prevention
+problem,escalation,Escalation: when hobbyist help is insufficient,E,BODY,newBlock:escalation,,REQUIRED,L2,y,P1,HIGH,0,0,43,0,P0: 0/43 covered (SPEC 09); §16 final step

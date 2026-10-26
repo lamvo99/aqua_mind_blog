@@ -1,0 +1,244 @@
+{
+  "specId": "SPEC_13B_WRITE",
+  "artifact": "PREFLIGHT",
+  "generatedAt": "2026-10-22T02:40:45.947Z",
+  "repo": {
+    "root": "F:\\AquaMind\\aqua_mind_blog",
+    "branch": "main",
+    "head": "b014e5c8477f61f0685cf07748aee74c7c18c1e9",
+    "node": "v22.17.0",
+    "dirtyFiles": 136
+  },
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production",
+    "api": "v2026-05-25"
+  },
+  "mode": "execute",
+  "checks": [
+    {
+      "id": "W-01",
+      "name": "SPEC 13B artifact manifest valid",
+      "pass": true,
+      "detail": "tracked=9 mismatches=0"
+    },
+    {
+      "id": "W-02",
+      "name": "SPEC 13A manifest valid",
+      "pass": true,
+      "detail": "tracked=14 mismatches=0"
+    },
+    {
+      "id": "W-03",
+      "name": "SPEC 12B intact; SPEC 12A only known test-file drift",
+      "pass": true,
+      "detail": "12B=0 12A=[\"tests/spec12a-plan.test.ts\"]"
+    },
+    {
+      "id": "W-04",
+      "name": "target identity is zeohjejw/production/v2026-05-25",
+      "pass": true,
+      "detail": "zeohjejw/production/v2026-05-25"
+    },
+    {
+      "id": "W-05",
+      "name": "eligible set is exactly 17 unique operations",
+      "pass": true,
+      "detail": "ops=17 unique=17"
+    },
+    {
+      "id": "W-06",
+      "name": "all four excluded IDs absent from eligible set",
+      "pass": true,
+      "detail": "excludedInOps=[]"
+    },
+    {
+      "id": "W-07",
+      "name": "every op is evidence-linked, eligible, PROPOSE_WITH_CAVEAT lineage",
+      "pass": true,
+      "detail": "artifacts reference all 17"
+    },
+    {
+      "id": "W-08",
+      "name": "no held/rejected/conflict pair leaked",
+      "pass": true,
+      "detail": "heldRows=10"
+    },
+    {
+      "id": "W-09",
+      "name": "entry shapes, direction and reason enums valid",
+      "pass": true,
+      "detail": "schema-exact"
+    },
+    {
+      "id": "W-10",
+      "name": "no self-links and deterministic keys unique in plan",
+      "pass": true,
+      "detail": "17 keys"
+    },
+    {
+      "id": "W-11",
+      "name": "dry-run artifact is explicitly simulated, not applied",
+      "pass": true,
+      "detail": "Projected only. SPEC 13B is read-only; production remains at the live edge count."
+    },
+    {
+      "id": "W-12",
+      "name": "live counts match handoff",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "W-13",
+      "name": "live drafts = 0 and duplicate _id/slug = 0",
+      "pass": true,
+      "detail": "drafts=0 dupIds=0 dupSlugs=0"
+    },
+    {
+      "id": "W-14",
+      "name": "live identity hash matches",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "W-15",
+      "name": "live relationship edge count is 3173",
+      "pass": true,
+      "detail": "edges=3173"
+    },
+    {
+      "id": "W-16",
+      "name": "all 17 pairs still absent, no reverse edges",
+      "pass": true,
+      "detail": "present=0 reverse=0"
+    },
+    {
+      "id": "W-17",
+      "name": "all sources/targets resolve with expected types",
+      "pass": true,
+      "detail": "unresolved=0 badTypes=0"
+    },
+    {
+      "id": "W-18",
+      "name": "no destination _key clash",
+      "pass": true,
+      "detail": "clash=0"
+    },
+    {
+      "id": "W-19",
+      "name": "SPEC 13A/13B artifacts unchanged during preflight",
+      "pass": true,
+      "detail": "recheck"
+    }
+  ],
+  "decision": "READY_TO_WRITE",
+  "artifactIntegrity": {
+    "spec13a": {
+      "dir": "SPEC_13A",
+      "tracked": 14,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec12a": {
+      "dir": "SPEC_12A",
+      "tracked": 14,
+      "mismatches": 1,
+      "bad": [
+        "tests/spec12a-plan.test.ts"
+      ],
+      "missing": []
+    },
+    "spec12b": {
+      "dir": "SPEC_12B",
+      "tracked": 10,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec13b": {
+      "dir": "SPEC_13B",
+      "tracked": 9,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    }
+  },
+  "live": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "drafts": 0,
+    "duplicate": {
+      "dupIds": 0,
+      "dupSlugs": 0
+    },
+    "identity": {
+      "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+      "match": true
+    },
+    "edges": 3173
+  },
+  "sourceRevisions": {
+    "7kdig6Bk6SZq4GZkXcVXjK": "iIEha4Lf0bd08jwW6gbhsZ",
+    "5oQB2MZ7gmZXjdwFqSs3qH": "S14zwcyM2Pfmg8COTwKwt7",
+    "species-bala-shark": "nMj4Bthvy4g70bFzG8bsw1",
+    "J1Tx0fWCuGNPno99A79QPg": "BF7b7JzesWwz9GasstzzGz",
+    "J1Tx0fWCuGNPno99A79RMf": "vIy4RM4AZsZ5V5B7s9fJ4f"
+  },
+  "sourceArraysBefore": {
+    "7kdig6Bk6SZq4GZkXcVXjK": {
+      "rev": "iIEha4Lf0bd08jwW6gbhsZ",
+      "predatorPrey": null,
+      "incompatibleSpecies": null
+    },
+    "5oQB2MZ7gmZXjdwFqSs3qH": {
+      "rev": "S14zwcyM2Pfmg8COTwKwt7",
+      "predatorPrey": null,
+      "incompatibleSpecies": null
+    },
+    "species-bala-shark": {
+      "rev": "nMj4Bthvy4g70bFzG8bsw1",
+      "predatorPrey": null,
+      "incompatibleSpecies": null
+    },
+    "J1Tx0fWCuGNPno99A79QPg": {
+      "rev": "BF7b7JzesWwz9GasstzzGz",
+      "predatorPrey": null,
+      "incompatibleSpecies": null
+    },
+    "J1Tx0fWCuGNPno99A79RMf": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fJ4f",
+      "predatorPrey": null,
+      "incompatibleSpecies": null
+    }
+  },
+  "eligible": 17,
+  "present": 0,
+  "reverse": 0,
+  "unresolved": 0,
+  "projection": {
+    "edgesBefore": 3173,
+    "eligibleOps": 17,
+    "edgesAfterExpected": 3190
+  },
+  "baselineFingerprint": {
+    "strippedHash": "9a37b8f67b017d59d0c279cae5de323c081b119ebae665554fe9f1c6e8b2eeb2",
+    "edgeCount": 3173,
+    "identity": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    }
+  }
+}

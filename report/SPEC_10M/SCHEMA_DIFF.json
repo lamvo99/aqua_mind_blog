@@ -1,0 +1,203 @@
+{
+  "specId": "SPEC_10M",
+  "artifact": "SCHEMA_DIFF",
+  "generatedAt": "2026-10-17T19:34:02.004Z",
+  "mode": "CODE-ONLY source diff (sha256 of each defineField block, before vs after)",
+  "verdict": "UNAPPROVED CHANGES DETECTED",
+  "totals": {
+    "addedFields": 0,
+    "removedFields": 0,
+    "modifiedFields": 0,
+    "newTypes": 10,
+    "unapprovedChanges": -1
+  },
+  "approvedModifications": [
+    "species.compatibleSpecies",
+    "invertebrate.compatibleSpecies"
+  ],
+  "types": [
+    {
+      "typeName": "species",
+      "beforeFields": 61,
+      "afterFields": 61,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "behaviorFlags",
+        "bioload",
+        "breedingDifficulty",
+        "communitySuitability",
+        "flowPreference",
+        "groupSize",
+        "incompatibleSpecies",
+        "jumpRisk",
+        "khMax",
+        "khMin",
+        "knowledgeBody",
+        "lidRequired",
+        "maturityRequirement",
+        "minTankLengthCm",
+        "minTankWidthCm",
+        "oxygenSensitivity",
+        "predatesInverts",
+        "predatorPrey",
+        "reefInteraction",
+        "reefInteractionDetail",
+        "salinityMax",
+        "salinityMin",
+        "swimmingSpace",
+        "waterChangeSensitivity"
+      ],
+      "additionsExact": false
+    },
+    {
+      "typeName": "plant",
+      "beforeFields": 39,
+      "afterFields": 39,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "feedingMode",
+        "fertilizationPlan",
+        "flowTolerance",
+        "ghMax",
+        "ghMin",
+        "heightCm",
+        "khMax",
+        "khMin",
+        "knowledgeBody",
+        "parMax",
+        "parMin",
+        "spreadCm",
+        "substrateType"
+      ],
+      "additionsExact": false
+    },
+    {
+      "typeName": "invertebrate",
+      "beforeFields": 42,
+      "afterFields": 42,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "biofilmRequirement",
+        "breedingDifficulty",
+        "calciumRequirement",
+        "ghMax",
+        "ghMin",
+        "khMax",
+        "khMin",
+        "knowledgeBody",
+        "maturityRequirement",
+        "minTankVolumeL",
+        "moltingType",
+        "predatorPrey",
+        "riskFlags",
+        "salinityMax",
+        "salinityMin",
+        "stabilityRequirement"
+      ],
+      "additionsExact": false
+    },
+    {
+      "typeName": "coral",
+      "beforeFields": 47,
+      "afterFields": 47,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "aggressionTraits",
+        "caMax",
+        "caMin",
+        "coralNeighbors",
+        "dkhMax",
+        "dkhMin",
+        "feedingType",
+        "flowPattern",
+        "growthForm",
+        "growthRate",
+        "knowledgeBody",
+        "mgMax",
+        "mgMin",
+        "no3Max",
+        "no3Min",
+        "parMax",
+        "parMin",
+        "phMax",
+        "phMin",
+        "po4Max",
+        "po4Min",
+        "salinityMax",
+        "salinityMin",
+        "spacing"
+      ],
+      "additionsExact": false
+    },
+    {
+      "typeName": "equipment",
+      "beforeFields": 22,
+      "afterFields": 22,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "compatibleEquipment",
+        "knowledgeBody",
+        "ratedCapacity",
+        "relatedProblems",
+        "turnoverPerH",
+        "waterType"
+      ],
+      "additionsExact": false
+    },
+    {
+      "typeName": "problem",
+      "beforeFields": 19,
+      "afterFields": 19,
+      "added": [],
+      "removed": [],
+      "modified": [],
+      "approvedAdditions": [
+        "escalation",
+        "howToDistinguish",
+        "immediateAction",
+        "monitoring",
+        "prevention",
+        "recovery",
+        "treatment"
+      ],
+      "additionsExact": false
+    }
+  ],
+  "indexDiff": {
+    "beforeExports": 25,
+    "afterExports": 25,
+    "added": [],
+    "removed": [],
+    "importsAdded": []
+  },
+  "checks": [
+    {
+      "id": "B-00",
+      "name": "Gate A inventory intact and all 13 A-checks passing",
+      "pass": true,
+      "detail": "checks=13 passed=13"
+    },
+    {
+      "id": "B-01",
+      "name": "after inventory: 16 types (6 doc + 10 new structures), 230 doc fields, 0 removed",
+      "pass": false,
+      "detail": "types=16 new=10 docFields=230/320"
+    },
+    {
+      "id": "B-02",
+      "name": "schema diff = expected only (90 added / 0 removed / 2 modified / 10 new types / index +10 exports)",
+      "pass": false,
+      "detail": "added=0 removed=0 modified=[] newTypes=10 addProblems=species: got[] plant: got[] invertebrate: got[] coral: got[] equipment: got[] problem: got[]"
+    }
+  ]
+}

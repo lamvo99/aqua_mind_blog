@@ -1,0 +1,61 @@
+recordId,slug,species,priority,safetyCritical,requirement,evidenceNeeded,reason,action
+1z8rQFHeojDMTUo2hXSViG,koi,koi,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+1z8rQFHeojDMTUo2hXSViG,koi,koi,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+1z8rQFHeojDMTUo2hXSViG,koi,koi,P2,1,flowPreference,,not applied,HOLD_EVIDENCE
+1z8rQFHeojDMTUo2hXSViG,koi,koi,P2,0,ghMin,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+1z8rQFHeojDMTUo2hXSViG,koi,koi,P2,0,ghMax,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+bXkDxvOEdfzf4NR9Z3ReYR,atractosteus-spatula,atractosteus-spatula,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+bXkDxvOEdfzf4NR9Z3ReYR,atractosteus-spatula,atractosteus-spatula,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+bXkDxvOEdfzf4NR9Z3ReYR,atractosteus-spatula,atractosteus-spatula,P0,1,tankSizeMinL,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+bXkDxvOEdfzf4NR9Z3ReYR,atractosteus-spatula,atractosteus-spatula,P1,0,tempMinC,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,phractocephalus-hemioliopterus,P0,1,minTankLengthCm,,not applied,HOLD_EVIDENCE
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,phractocephalus-hemioliopterus,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,phractocephalus-hemioliopterus,P1,1,oxygenSensitivity,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,phractocephalus-hemioliopterus,P1,0,tempMinC,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,phractocephalus-hemioliopterus,P1,0,tempMaxC,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P1,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P1,1,oxygenSensitivity,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P1,0,tempMinC,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,zebra-moray-eel,P1,0,temperament,,not applied,REJECT_SEMANTIC_MAPPING
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P2,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P1,0,waterChangeSensitivity,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P1,0,tempMaxC,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-arapaima-gigas,arapaima-gigas,arapaima-gigas,P2,0,ghMin,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-black-arowana,black-arowana,black-arowana,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-black-arowana,black-arowana,black-arowana,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-black-arowana,black-arowana,black-arowana,P2,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-black-arowana,black-arowana,black-arowana,P1,0,bioload,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-black-arowana,black-arowana,black-arowana,P0,1,tankSizeMinL,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-clown-knifefish,clown-knifefish,clown-knifefish,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-clown-knifefish,clown-knifefish,clown-knifefish,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-clown-knifefish,clown-knifefish,clown-knifefish,P2,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-clown-knifefish,clown-knifefish,clown-knifefish,P1,0,groupSize,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-iridescent-shark,iridescent-shark,iridescent-shark,P2,0,diet,,not applied,SKIP_ALREADY_CORRECT
+species-longnose-gar,longnose-gar,longnose-gar,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-longnose-gar,longnose-gar,longnose-gar,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-longnose-gar,longnose-gar,longnose-gar,P1,1,oxygenSensitivity,,not applied,HOLD_EVIDENCE
+species-longnose-gar,longnose-gar,longnose-gar,P0,1,tankSizeMinL,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,P2,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,P1,0,diet,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-scleropages-formosus,scleropages-formosus,scleropages-formosus,P0,1,minTankLengthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-scleropages-formosus,scleropages-formosus,scleropages-formosus,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-scleropages-formosus,scleropages-formosus,scleropages-formosus,P2,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-scleropages-formosus,scleropages-formosus,scleropages-formosus,P1,0,bioload,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-scleropages-formosus,scleropages-formosus,scleropages-formosus,P1,0,temperament,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-spotted-gar,spotted-gar,spotted-gar,P1,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-three-barred-peacock-bass,three-barred-peacock-bass,three-barred-peacock-bass,P1,0,predatesInverts,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-three-barred-peacock-bass,three-barred-peacock-bass,three-barred-peacock-bass,P1,0,phMax,stronger/refreshed source evidence,not applied,HOLD_CONFLICT
+species-tiger-shovelnose-catfish,tiger-shovelnose-catfish,tiger-shovelnose-catfish,P0,1,minTankWidthCm,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-tiger-shovelnose-catfish,tiger-shovelnose-catfish,tiger-shovelnose-catfish,P1,0,waterChangeSensitivity,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-tiger-shovelnose-catfish,tiger-shovelnose-catfish,tiger-shovelnose-catfish,P1,0,temperament,stronger/refreshed source evidence,not applied,REJECT_SEMANTIC_MAPPING
+species-walking-catfish,walking-catfish,walking-catfish,P1,0,bioload,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-walking-catfish,walking-catfish,walking-catfish,P1,0,predatesInverts,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-weeks-bichir,weeks-bichir,weeks-bichir,P1,1,flowPreference,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-weeks-bichir,weeks-bichir,weeks-bichir,P1,0,waterChangeSensitivity,stronger/refreshed source evidence,not applied,HOLD_EVIDENCE
+species-weeks-bichir,weeks-bichir,weeks-bichir,P1,0,temperament,stronger/refreshed source evidence,not applied,REJECT_SEMANTIC_MAPPING

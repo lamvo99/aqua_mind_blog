@@ -1,0 +1,219 @@
+recordId,slug,title,wave,totalRequirements,covered,partial,missing,coverageRatio,evidenceStatus
+I9bI8W8ZWcEwyIzM9Ciih6,amatitlania-nigrofasciata,Convict Cichlid,WAVE_2_CANDIDATE,58,17,3,38,0.293,NO_EVIDENCE_COLLECTED
+species-amphiprion-ocellaris,amphiprion-ocellaris,Ocellaris Clownfish,WAVE_2_CANDIDATE,60,12,5,43,0.200,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTEeF,amphiprion-percula,Percula Clownfish,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+species-ancistrus-cf-cirrhosus,ancistrus-cf-cirrhosus,Bristlenose Pleco,WAVE_2_CANDIDATE,60,13,4,43,0.217,NO_EVIDENCE_COLLECTED
+species-andinoacara-pulcher,andinoacara-pulcher,Blue Acara,WAVE_2_CANDIDATE,61,15,5,41,0.246,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve601V4E,antennarius-striatus,Frogfish,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+species-aphyosemion-australe,aphyosemion-australe,Lyretail Killifish,WAVE_2_CANDIDATE,58,11,5,42,0.190,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6UR1F,apistogramma-agassizii,Agassiz Dwarf Cichlid,WAVE_2_CANDIDATE,63,13,4,46,0.206,NO_EVIDENCE_COLLECTED
+species-apistogramma-cacatuoides,apistogramma-cacatuoides,Cockatoo Dwarf Cichlid,WAVE_2_CANDIDATE,63,17,4,42,0.270,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5JnfjuY,apistogramma-trifasciata,Three Stripe Dwarf Cichlid,WAVE_2_CANDIDATE,63,15,3,45,0.238,NO_EVIDENCE_COLLECTED
+species-aplocheilus-lineatus,aplocheilus-lineatus,Golden Wonder Killifish,WAVE_2_CANDIDATE,61,13,5,43,0.213,NO_EVIDENCE_COLLECTED
+species-arapaima-gigas,arapaima-gigas,Arapaima,WAVE_1,61,11,4,46,0.180,WAVE1_PARTIAL_HELD
+Gk33CfLE6ahVd3Ve61Pb63,arc-eye-hawkfish,Arc-eye Hawkfish,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3noGMy,asian-snakehead,Asian Snakehead,WAVE_2_CANDIDATE,61,13,4,44,0.213,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z3ReYR,atractosteus-spatula,Alligator Gar,WAVE_1,61,9,5,47,0.148,WAVE1_PARTIAL_HELD
+1z8rQFHeojDMTUo2hXSWMZ,australian-redclaw-crayfish,Australian Redclaw Crayfish,WAVE_2_CANDIDATE,58,10,5,43,0.172,NO_EVIDENCE_COLLECTED
+species-bala-shark,bala-shark,Bala Shark,WAVE_2_CANDIDATE,58,9,6,43,0.155,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PcZG,bartlett-s-anthias,Bartlett's Anthias,WAVE_2_CANDIDATE,63,10,7,46,0.159,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DJbjY,betta-imbellis,Betta Imbellis,WAVE_2_CANDIDATE,61,13,5,43,0.213,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DJbye,betta-macrostoma,Betta Macrostoma,WAVE_2_CANDIDATE,61,11,6,44,0.180,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTESt,betta-smaragdina,Emerald Betta,WAVE_2_CANDIDATE,61,12,6,43,0.197,NO_EVIDENCE_COLLECTED
+species-betta-splendens,betta-splendens,Siamese Fighting Fish,WAVE_2_CANDIDATE,61,15,4,42,0.246,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztxQx,bicolor-blenny,Bicolor Blenny,WAVE_2_CANDIDATE,65,9,6,50,0.138,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6i8hX,biotodoma-cupido,Cupido Cichlid,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+species-black-arowana,black-arowana,Black Arowana,WAVE_1,61,11,4,46,0.180,WAVE1_PARTIAL_HELD
+Gk33CfLE6ahVd3Ve61Pc4r,black-cap-basslet,Black Cap Basslet,WAVE_2_CANDIDATE,65,12,7,46,0.185,NO_EVIDENCE_COLLECTED
+species-black-ghost-knifefish,black-ghost-knifefish,Black Ghost Knifefish,WAVE_2_CANDIDATE,61,10,5,46,0.164,NO_EVIDENCE_COLLECTED
+species-black-moor-goldfish,black-moor-goldfish,Black Moor Goldfish,WAVE_2_CANDIDATE,58,10,5,43,0.172,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCRz,boraras-brigittae,Chili Rasbora,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jng1HC,boraras-maculatus,Pygmy Rasbora,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79RMf,botia-almorhae,Yoyo Loach,WAVE_2_CANDIDATE,60,13,4,43,0.217,NO_EVIDENCE_COLLECTED
+species-botia-striata,botia-striata,Zebra Loach,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CjDNI,brachygobius-doriae,Bumblebee Goby,WAVE_2_CANDIDATE,64,14,4,46,0.219,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3noHTq,bucktooth-parrot,Bucktooth Parrot,WAVE_2_CANDIDATE,58,11,4,43,0.190,NO_EVIDENCE_COLLECTED
+species-carassius-auratus,carassius-auratus,Fancy Goldfish,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oqsPG,carassius-auratus-common,Common Goldfish,WAVE_2_CANDIDATE,58,9,4,45,0.155,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79QPg,carinotetraodon-travancoricus,Pea Puffer,WAVE_2_CANDIDATE,61,16,3,42,0.262,NO_EVIDENCE_COLLECTED
+species-celestichthys-erythromicron,celestichthys-erythromicron,Emerald Dwarf Rasbora,WAVE_2_CANDIDATE,59,13,4,42,0.220,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jo2X54,centropyge-bispinosa,Coral Beauty Angelfish,WAVE_2_CANDIDATE,60,13,5,42,0.217,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTEbP,centropyge-loricula,Flame Angelfish,WAVE_2_CANDIDATE,60,11,6,43,0.183,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVzKgoN,channa-marulioides,Emperor Snakehead,WAVE_2_CANDIDATE,61,11,4,46,0.180,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVzKgu5,channa-pulchra,Rainbow Snakehead,WAVE_2_CANDIDATE,61,11,4,46,0.180,NO_EVIDENCE_COLLECTED
+species-chromis-viridis,chromis-viridis,Green Chromis,WAVE_2_CANDIDATE,60,12,5,43,0.200,NO_EVIDENCE_COLLECTED
+species-chromobotia-macracanthus,chromobotia-macracanthus,Clown Loach,WAVE_2_CANDIDATE,60,11,5,44,0.183,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jo2XHi,chrysiptera-cyanea,Blue Devil Damselfish,WAVE_2_CANDIDATE,60,15,4,41,0.250,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztvbi,clarkii-clownfish,Clarkii Clownfish,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4Mh0u,cleaner-wrasse,Cleaner Wrasse,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+species-clown-knifefish,clown-knifefish,Clown Knifefish,WAVE_1,61,11,4,46,0.180,WAVE1_PARTIAL_HELD
+sebdKYryWZgYP2rm3oqvOE,clown-triggerfish,Clown Triggerfish,WAVE_2_CANDIDATE,63,10,3,50,0.159,NO_EVIDENCE_COLLECTED
+1z8rQFHeojDMTUo2hXSVV6,copperband-butterflyfish,Copperband Butterflyfish,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+species-corydoras-aeneus,corydoras-aeneus,Bronze Corydoras,WAVE_2_CANDIDATE,60,13,3,44,0.217,NO_EVIDENCE_COLLECTED
+species-corydoras-paleatus,corydoras-paleatus,Peppered Corydoras,WAVE_2_CANDIDATE,60,14,3,43,0.233,NO_EVIDENCE_COLLECTED
+species-corydoras-panda,corydoras-panda,Panda Corydoras,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCJT,corydoras-pygmaeus,Pygmy Corydoras,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9Ci1Vw,corydoras-sterbai,Sterbai Corydoras,WAVE_2_CANDIDATE,60,13,3,44,0.217,NO_EVIDENCE_COLLECTED
+species-corydoras-trilineatus,corydoras-trilineatus,Three-Lined Corydoras,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A7ACJO,crossocheilus-oblongus,Siamese Algae Eater,WAVE_2_CANDIDATE,60,13,4,43,0.217,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jo2V6E,cryptocentrus-cinctus,Yellow Watchman Goby,WAVE_2_CANDIDATE,65,13,4,48,0.200,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A7KH8y,ctenochaetus-strigosus,Kole Tang,WAVE_2_CANDIDATE,60,12,6,42,0.200,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79S9O,cyphotilapia-frontosa,Frontosa Cichlid,WAVE_2_CANDIDATE,61,14,3,44,0.230,NO_EVIDENCE_COLLECTED
+species-danio-margaritatus,danio-margaritatus,Celestial Pearl Danio,WAVE_2_CANDIDATE,59,14,4,41,0.237,NO_EVIDENCE_COLLECTED
+species-danio-rerio,danio-rerio,Zebrafish,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9Cj9gK,dario-dario,Scarlet Badis,WAVE_2_CANDIDATE,61,17,3,41,0.279,NO_EVIDENCE_COLLECTED
+species-denison-barb,denison-barb,Denison Barb,WAVE_2_CANDIDATE,58,10,5,43,0.172,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PbHk,diamond-watchman-goby,Diamond Watchman Goby,WAVE_2_CANDIDATE,65,9,6,50,0.138,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602tRs,diodon-holocanthus,Porcupine Puffer,WAVE_2_CANDIDATE,63,9,7,47,0.143,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3noGak,dwarf-chain-loach,Dwarf Chain Loach,WAVE_2_CANDIDATE,60,10,6,44,0.167,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oquwg,dwarf-lionfish,Dwarf Lionfish,WAVE_2_CANDIDATE,63,10,5,48,0.159,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oquNG,dwarf-pencilfish,Dwarf Pencilfish,WAVE_2_CANDIDATE,58,9,5,44,0.155,NO_EVIDENCE_COLLECTED
+PZ8Kai1VvEL468NS2LLZxZ,dwarf-snakehead,Dwarf Snakehead,WAVE_2_CANDIDATE,61,11,4,46,0.180,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DXNJI,ecsenius-stigmatura,Tailspot Blenny,WAVE_2_CANDIDATE,62,12,6,44,0.194,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DXMwe,elacatinus-oceanops,Neon Goby,WAVE_2_CANDIDATE,65,12,5,48,0.185,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79QpK,epalzeorhynchos-frenatum,Rainbow Shark,WAVE_2_CANDIDATE,60,17,4,39,0.283,NO_EVIDENCE_COLLECTED
+1z8rQFHeojDMTUo2hXSUxN,fantail-goldfish,Fantail Goldfish,WAVE_2_CANDIDATE,58,9,4,45,0.155,NO_EVIDENCE_COLLECTED
+species-figure-8-puffer,figure-8-puffer,Figure-8 Puffer,WAVE_2_CANDIDATE,62,10,5,47,0.161,NO_EVIDENCE_COLLECTED
+7kdig6Bk6SZq4GZkXcVYRS,flamehawkfish,Flamehawkfish,WAVE_2_CANDIDATE,63,11,6,46,0.175,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PZmC,flasher-wrasse,Flasher Wrasse,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+species-freshwater-stingray,freshwater-stingray,Freshwater Stingray,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCUp,garra-rufa,Red Garra,WAVE_2_CANDIDATE,60,11,5,44,0.183,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTEQ3,gasteropelecus-sternicla,Silver Hatchetfish,WAVE_2_CANDIDATE,61,12,4,45,0.197,NO_EVIDENCE_COLLECTED
+1z8rQFHeojDMTUo2hXSV4m,gasteropelecus-sternicla-hatchetfish,Hatchetfish,WAVE_2_CANDIDATE,61,10,4,47,0.164,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6i8Pa,geophagus-altifrons,Eartheater Cichlid,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+species-giant-danio,giant-danio,Giant Danio,WAVE_2_CANDIDATE,58,9,6,43,0.155,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CuXNI,gnathonemus-petersii,Elephantnose Fish,WAVE_2_CANDIDATE,63,12,4,47,0.190,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6hesW,gramma-loreto,Royal Gramma,WAVE_2_CANDIDATE,65,12,6,47,0.185,NO_EVIDENCE_COLLECTED
+PZ8Kai1VvEL468NS2Kni6M,green-terror,Green Terror,WAVE_2_CANDIDATE,61,12,4,45,0.197,NO_EVIDENCE_COLLECTED
+species-gymnocorymbus-ternetzi,gymnocorymbus-ternetzi,Black Skirt Tetra,WAVE_2_CANDIDATE,58,14,4,40,0.241,NO_EVIDENCE_COLLECTED
+species-halfbeak,halfbeak,Halfbeak,WAVE_2_CANDIDATE,61,12,5,44,0.197,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DXNv2,halichoeres-chrysus,Yellow Coris Wrasse,WAVE_2_CANDIDATE,63,15,5,43,0.238,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9Cj9MC,hemigrammus-bleheri,Firehead Tetra,WAVE_2_CANDIDATE,58,13,3,42,0.224,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCdL,hemigrammus-rhodostomus,Rummynose Tetra,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6hsP7,hypancistrus-zebra,Zebra Pleco,WAVE_2_CANDIDATE,60,14,3,43,0.233,NO_EVIDENCE_COLLECTED
+species-hyphessobrycon-amandae,hyphessobrycon-amandae,Ember Tetra,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+species-hyphessobrycon-eques,hyphessobrycon-eques,Serpae Tetra,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+species-hyphessobrycon-herbertaxelrodi,hyphessobrycon-herbertaxelrodi,Black Neon Tetra,WAVE_2_CANDIDATE,58,14,2,42,0.241,NO_EVIDENCE_COLLECTED
+species-hyphessobrycon-megalopterus,hyphessobrycon-megalopterus,Black Phantom Tetra,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+species-hyphessobrycon-pulchripinnis,hyphessobrycon-pulchripinnis,Lemon Tetra,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+species-hypostomus-plecostomus,hypostomus-plecostomus,Common Pleco,WAVE_2_CANDIDATE,60,12,5,43,0.200,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DJePc,iriatherina-werneri,Threadfin Rainbowfish,WAVE_2_CANDIDATE,58,12,5,41,0.207,NO_EVIDENCE_COLLECTED
+species-iridescent-shark,iridescent-shark,Iridescent Shark,WAVE_1,58,9,6,43,0.155,WAVE1_PARTIAL_HELD
+species-jaguar-cichlid,jaguar-cichlid,Jaguar Cichlid,WAVE_2_CANDIDATE,61,13,6,42,0.213,NO_EVIDENCE_COLLECTED
+1z8rQFHeojDMTUo2hXSViG,koi,Koi,WAVE_1,58,9,5,44,0.155,WAVE1_PARTIAL_HELD
+species-kryptopterus-vitreolus,kryptopterus-vitreolus,Glass Catfish,WAVE_2_CANDIDATE,62,15,4,43,0.242,NO_EVIDENCE_COLLECTED
+species-labidochromis-caeruleus,labidochromis-caeruleus,Electric Yellow Cichlid,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jng1QE,laetacara-curviceps,Smiling Cichlid,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztwgK,longnose-butterflyfish,Longnose Butterflyfish,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+species-longnose-gar,longnose-gar,Longnose Gar,WAVE_1,61,11,4,46,0.180,WAVE1_PARTIAL_HELD
+bXkDxvOEdfzf4NR9Z4Mi1c,longnose-hawkfish,Longnose Hawkfish,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79fDm,macropodus-opercularis,Paradise Fish,WAVE_2_CANDIDATE,61,13,4,44,0.213,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6i7Sb,malpulutta-kretseri,Sri Lanka Gourami,WAVE_2_CANDIDATE,58,12,5,41,0.207,NO_EVIDENCE_COLLECTED
+PZ8Kai1VvEL468NS2LLaUQ,marine-betta,Marine Betta,WAVE_2_CANDIDATE,64,12,4,48,0.188,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4MeU8,maroon-clownfish,Maroon Clownfish,WAVE_2_CANDIDATE,63,14,6,43,0.222,NO_EVIDENCE_COLLECTED
+species-melanotaenia-boesemani,melanotaenia-boesemani,Boesemani Rainbowfish,WAVE_2_CANDIDATE,58,11,5,42,0.190,NO_EVIDENCE_COLLECTED
+species-melanotaenia-praecox,melanotaenia-praecox,Dwarf Neon Rainbowfish,WAVE_2_CANDIDATE,58,14,4,40,0.241,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PZR9,melanurus-wrasse,Melanurus Wrasse,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCP9,microdevario-kubotai,Kubotai Rasbora,WAVE_2_CANDIDATE,58,11,5,42,0.190,NO_EVIDENCE_COLLECTED
+species-midas-cichlid,midas-cichlid,Midas Cichlid,WAVE_2_CANDIDATE,61,13,3,45,0.213,NO_EVIDENCE_COLLECTED
+species-mikrogeophagus-altispinosus,mikrogeophagus-altispinosus,Bolivian Ram,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCXf,mikrogeophagus-ramirezi,German Blue Ram,WAVE_2_CANDIDATE,60,13,5,42,0.217,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCaV,nannostomus-beckfordi,Golden Pencilfish,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6hqNS,nanochromis-parilus,Congo Dwarf Cichlid,WAVE_2_CANDIDATE,63,15,3,45,0.238,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z3S1rN,naso-lituratus,Naso Tang,WAVE_2_CANDIDATE,60,9,7,44,0.150,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5Jo2VIs,nemateleotris-magnifica,Firefish Goby,WAVE_2_CANDIDATE,63,13,5,45,0.206,NO_EVIDENCE_COLLECTED
+species-nematobrycon-palmeri,nematobrycon-palmeri,Emperor Tetra,WAVE_2_CANDIDATE,58,15,5,38,0.259,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oqtze,oranda-goldfish,Oranda Goldfish,WAVE_2_CANDIDATE,58,9,4,45,0.155,NO_EVIDENCE_COLLECTED
+species-orinoco-peacock-bass,orinoco-peacock-bass,Orinoco Peacock Bass,WAVE_2_CANDIDATE,61,10,5,46,0.164,NO_EVIDENCE_COLLECTED
+7kdig6Bk6SZq4GZkXcVXjK,oscar,Oscar,WAVE_2_CANDIDATE,61,13,4,44,0.213,NO_EVIDENCE_COLLECTED
+species-osteoglossum-bicirrhosum,osteoglossum-bicirrhosum,Silver Arowana,WAVE_1,61,10,4,47,0.164,WAVE1_PARTIAL_HELD
+species-otocinclus-affinis,otocinclus-affinis,Otocinclus Catfish,WAVE_2_CANDIDATE,60,12,4,44,0.200,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztxmq,pajama-cardinalfish,Pajama Cardinalfish,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTEVj,panaqolus-maccus,Clown Pleco,WAVE_2_CANDIDATE,60,11,6,43,0.183,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CuEcq,panaque-nigrolineatus,Royal Pleco,WAVE_2_CANDIDATE,60,13,4,43,0.217,NO_EVIDENCE_COLLECTED
+species-pangio-kuhlii,pangio-kuhlii,Kuhli Loach,WAVE_2_CANDIDATE,60,13,5,42,0.217,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5JnvaIg,paracanthurus-hepatus,Blue Tang,WAVE_2_CANDIDATE,60,14,4,42,0.233,NO_EVIDENCE_COLLECTED
+species-paracheirodon-axelrodi,paracheirodon-axelrodi,Cardinal Tetra,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+species-paracheirodon-innesi,paracheirodon-innesi,Neon Tetra,WAVE_2_CANDIDATE,58,14,2,42,0.241,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79RmJ,paracheirodon-simulans,Green Neon Tetra,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CuWy8,parosphromenus-linkei,Licorice Gourami,WAVE_2_CANDIDATE,62,12,5,45,0.194,NO_EVIDENCE_COLLECTED
+PZ8Kai1VvEL468NS2LLa6x,peacock-bass,Peacock Bass,WAVE_2_CANDIDATE,61,11,3,47,0.180,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CuG2u,peckoltia-compta,Leopard Frog Pleco,WAVE_2_CANDIDATE,60,14,3,43,0.233,NO_EVIDENCE_COLLECTED
+species-pelvicachromis-pulcher,pelvicachromis-pulcher,Kribensis,WAVE_2_CANDIDATE,60,16,5,39,0.267,NO_EVIDENCE_COLLECTED
+species-pethia-conchonius,pethia-conchonius,Rosy Barb,WAVE_2_CANDIDATE,58,13,3,42,0.224,NO_EVIDENCE_COLLECTED
+species-pethia-padamya,pethia-padamya,Odessa Barb,WAVE_2_CANDIDATE,58,11,5,42,0.190,NO_EVIDENCE_COLLECTED
+species-phenacogrammus-interruptus,phenacogrammus-interruptus,Congo Tetra,WAVE_2_CANDIDATE,58,14,4,40,0.241,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602em7,phractocephalus-hemioliopterus,Red-tailed Catfish,WAVE_1,61,10,5,46,0.164,WAVE1_PARTIAL_HELD
+species-pictus-catfish,pictus-catfish,Pictus Catfish,WAVE_2_CANDIDATE,63,12,6,45,0.190,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oquiu,pike-cichlid,Pike Cichlid,WAVE_2_CANDIDATE,61,13,2,46,0.213,NO_EVIDENCE_COLLECTED
+species-poecilia-reticulata,poecilia-reticulata,Guppy,WAVE_2_CANDIDATE,58,13,5,40,0.224,NO_EVIDENCE_COLLECTED
+species-poecilia-sphenops,poecilia-sphenops,Short-finned Molly,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+PZ8Kai1VvEL468NS2LLaqK,poecilia-sphenops-molly,Molly,WAVE_2_CANDIDATE,58,9,4,45,0.155,NO_EVIDENCE_COLLECTED
+species-poecilia-wingei,poecilia-wingei,Endler's Livebearer,WAVE_2_CANDIDATE,58,12,6,40,0.207,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602cqq,polypterus-delhezi,Delhezi Bichir,WAVE_2_CANDIDATE,61,10,5,46,0.164,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602d2X,polypterus-endlicheri,Endlicheri Bichir,WAVE_2_CANDIDATE,61,9,5,47,0.148,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602cco,polypterus-ornatipinnis,Ornate Bichir,WAVE_2_CANDIDATE,61,10,5,46,0.164,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve602fPs,pomacanthus-imperator,Emperor Angelfish,WAVE_2_CANDIDATE,60,11,7,42,0.183,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztvrt,powder-blue-tang,Powder Blue Tang,WAVE_2_CANDIDATE,63,9,6,48,0.143,NO_EVIDENCE_COLLECTED
+species-pseudanthias-squamipinnis,pseudanthias-squamipinnis,Lyretail Anthias,WAVE_2_CANDIDATE,63,13,5,45,0.206,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CjDXM,pseudepiplatys-annulatus,Clown Killifish,WAVE_2_CANDIDATE,61,11,5,45,0.180,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6heVR,pseudocheilinus-hexataenia,Six Line Wrasse,WAVE_2_CANDIDATE,63,15,5,43,0.238,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6i7Ae,pseudosphromenus-dayi,Spiketail Gourami,WAVE_2_CANDIDATE,58,12,4,42,0.207,NO_EVIDENCE_COLLECTED
+species-pseudotropheus-zebra,pseudotropheus-zebra,Zebra Mbuna Cichlid,WAVE_2_CANDIDATE,58,14,2,42,0.241,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3noHja,pterapogon-kauderni,Banggai Cardinalfish,WAVE_2_CANDIDATE,63,10,6,47,0.159,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9CttMO,pterois-volitans,Lionfish,WAVE_2_CANDIDATE,63,14,4,45,0.222,NO_EVIDENCE_COLLECTED
+species-pterophyllum-scalare,pterophyllum-scalare,Angelfish,WAVE_2_CANDIDATE,61,16,4,41,0.262,NO_EVIDENCE_COLLECTED
+5oQB2MZ7gmZXjdwFqSs3qH,pterophyllum-scalare-marble,Marble Angelfish,WAVE_2_CANDIDATE,58,14,2,42,0.241,NO_EVIDENCE_COLLECTED
+species-puntigrus-tetrazona,puntigrus-tetrazona,Tiger Barb,WAVE_2_CANDIDATE,58,13,5,40,0.224,NO_EVIDENCE_COLLECTED
+species-puntius-titteya,puntius-titteya,Cherry Barb,WAVE_2_CANDIDATE,59,13,4,42,0.220,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PY2c,purple-tang,Purple Tang,WAVE_2_CANDIDATE,63,11,6,46,0.175,NO_EVIDENCE_COLLECTED
+species-pygocentrus-nattereri,pygocentrus-nattereri,Red-bellied Piranha,WAVE_2_CANDIDATE,61,11,4,46,0.180,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4MgqS,queen-angelfish,Queen Angelfish,WAVE_2_CANDIDATE,60,10,6,44,0.167,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4MicC,queen-triggerfish,Queen Triggerfish,WAVE_2_CANDIDATE,63,10,5,48,0.159,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVztwWo,raccoon-butterflyfish,Raccoon Butterflyfish,WAVE_2_CANDIDATE,60,8,6,46,0.133,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oqu9U,ranchu-goldfish,Ranchu Goldfish,WAVE_2_CANDIDATE,58,9,4,45,0.155,NO_EVIDENCE_COLLECTED
+species-red-bellied-pacu,red-bellied-pacu,Red-Bellied Pacu,WAVE_2_CANDIDATE,58,9,5,44,0.155,NO_EVIDENCE_COLLECTED
+species-red-devil-cichlid,red-devil-cichlid,Red Devil Cichlid,WAVE_2_CANDIDATE,61,11,5,45,0.180,NO_EVIDENCE_COLLECTED
+species-red-tail-shark,red-tail-shark,Red-Tail Shark,WAVE_2_CANDIDATE,60,10,5,45,0.167,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DFXpw,rocio-octofasciata,Jack Dempsey,WAVE_2_CANDIDATE,58,14,3,41,0.241,NO_EVIDENCE_COLLECTED
+species-ryukin-goldfish,ryukin-goldfish,Ryukin Goldfish,WAVE_2_CANDIDATE,58,9,6,43,0.155,NO_EVIDENCE_COLLECTED
+species-sailfin-pleco,sailfin-pleco,Sailfin Pleco,WAVE_2_CANDIDATE,60,9,5,46,0.150,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9DXNau,salarias-fasciatus,Lawnmower Blenny,WAVE_2_CANDIDATE,62,12,5,45,0.194,NO_EVIDENCE_COLLECTED
+species-scleropages-formosus,scleropages-formosus,Asian Arowana,WAVE_1,61,10,4,47,0.164,WAVE1_PARTIAL_HELD
+species-scleropages-jardinii,scleropages-jardinii,Jardini Arowana,WAVE_1,61,10,4,47,0.164,WAVE1_ALL_APPLIED
+sebdKYryWZgYP2rm3noGuQ,senegal-bichir,Senegal Bichir,WAVE_2_CANDIDATE,63,12,5,46,0.190,NO_EVIDENCE_COLLECTED
+species-serrasalmus-rhombeus,serrasalmus-rhombeus,Black Piranha,WAVE_2_CANDIDATE,61,13,3,45,0.213,NO_EVIDENCE_COLLECTED
+species-severum,severum,Severum,WAVE_2_CANDIDATE,58,9,5,44,0.155,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5JnTgRq,sewellia-lineolata,Hillstream Loach,WAVE_2_CANDIDATE,60,13,4,43,0.217,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3noI7C,siganus-vulpinus,Foxface Rabbitfish,WAVE_2_CANDIDATE,60,10,6,44,0.167,NO_EVIDENCE_COLLECTED
+Gk33CfLE6ahVd3Ve61PagK,snowflake-eel,Snowflake Eel,WAVE_2_CANDIDATE,65,12,7,46,0.185,NO_EVIDENCE_COLLECTED
+I9bI8W8ZWcEwyIzM9Cj9WG,sphaerichthys-osphromenoides,Chocolate Gourami,WAVE_2_CANDIDATE,62,13,5,44,0.210,NO_EVIDENCE_COLLECTED
+species-spotted-gar,spotted-gar,Spotted Gar,WAVE_1,61,14,3,44,0.230,WAVE1_PARTIAL_HELD
+species-spotted-snakehead,spotted-snakehead,Spotted Snakehead,WAVE_2_CANDIDATE,61,12,6,43,0.197,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4MjaI,stars-and-stripes-puffer,Stars and Stripes Puffer,WAVE_2_CANDIDATE,63,10,5,48,0.159,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A6hq84,sundadanio-axelrodi,Neon Blue Rasbora,WAVE_2_CANDIDATE,58,13,3,42,0.224,NO_EVIDENCE_COLLECTED
+species-symphysodon-aequifasciatus,symphysodon-aequifasciatus,Discus,WAVE_2_CANDIDATE,61,14,2,45,0.230,NO_EVIDENCE_COLLECTED
+IlX7xILobrukz7d5JnfkJq,synchiropus-splendidus,Mandarin Fish,WAVE_2_CANDIDATE,65,14,4,47,0.215,NO_EVIDENCE_COLLECTED
+J1Tx0fWCuGNPno99A79evp,synodontis-multipunctatus,Synodontis Catfish,WAVE_2_CANDIDATE,60,14,3,43,0.233,NO_EVIDENCE_COLLECTED
+species-telescope-goldfish,telescope-goldfish,Telescope Goldfish,WAVE_2_CANDIDATE,58,10,5,43,0.172,NO_EVIDENCE_COLLECTED
+species-thorichthys-meeki,thorichthys-meeki,Firemouth Cichlid,WAVE_2_CANDIDATE,58,11,5,42,0.190,NO_EVIDENCE_COLLECTED
+species-three-barred-peacock-bass,three-barred-peacock-bass,Three-Barred Peacock Bass,WAVE_1,61,10,4,47,0.164,WAVE1_PARTIAL_HELD
+species-tiger-shovelnose-catfish,tiger-shovelnose-catfish,Tiger Shovelnose Catfish,WAVE_1,63,10,4,49,0.159,WAVE1_PARTIAL_HELD
+species-tinfoil-barb,tinfoil-barb,Tinfoil Barb,WAVE_2_CANDIDATE,58,9,6,43,0.155,NO_EVIDENCE_COLLECTED
+bXkDxvOEdfzf4NR9Z4Mel7,tomato-clownfish,Tomato Clownfish,WAVE_2_CANDIDATE,63,9,7,47,0.143,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTCMJ,trichogaster-chuna,Honey Gourami,WAVE_2_CANDIDATE,58,12,5,41,0.207,NO_EVIDENCE_COLLECTED
+species-trichogaster-lalius,trichogaster-lalius,Dwarf Gourami,WAVE_2_CANDIDATE,58,11,6,41,0.190,NO_EVIDENCE_COLLECTED
+species-trichopodus-leerii,trichopodus-leerii,Pearl Gourami,WAVE_2_CANDIDATE,58,12,5,41,0.207,NO_EVIDENCE_COLLECTED
+species-trichopodus-trichopterus,trichopodus-trichopterus,Three-Spot Gourami,WAVE_2_CANDIDATE,58,12,5,41,0.207,NO_EVIDENCE_COLLECTED
+species-trichopsis-pumila,trichopsis-pumila,Sparkling Gourami,WAVE_2_CANDIDATE,58,13,5,40,0.224,NO_EVIDENCE_COLLECTED
+species-trigonostigma-espei,trigonostigma-espei,Lambchop Rasbora,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+species-trigonostigma-heteromorpha,trigonostigma-heteromorpha,Harlequin Rasbora,WAVE_2_CANDIDATE,58,13,3,42,0.224,NO_EVIDENCE_COLLECTED
+ofTl1CTOUWuLwM28PxTEYZ,tropheus-duboisi,Dubois’ Tropheus,WAVE_2_CANDIDATE,58,14,2,42,0.241,NO_EVIDENCE_COLLECTED
+species-walking-catfish,walking-catfish,Walking Catfish,WAVE_1,61,10,4,47,0.164,WAVE1_PARTIAL_HELD
+species-weeks-bichir,weeks-bichir,Weeks Bichir,WAVE_1,63,10,5,48,0.159,WAVE1_PARTIAL_HELD
+species-wolf-cichlid,wolf-cichlid,Wolf Cichlid,WAVE_2_CANDIDATE,61,10,4,47,0.164,NO_EVIDENCE_COLLECTED
+species-xiphophorus-hellerii,xiphophorus-hellerii,Swordtail,WAVE_2_CANDIDATE,58,13,4,41,0.224,NO_EVIDENCE_COLLECTED
+species-xiphophorus-maculatus,xiphophorus-maculatus,Southern Platy,WAVE_2_CANDIDATE,58,14,3,41,0.241,NO_EVIDENCE_COLLECTED
+sebdKYryWZgYP2rm3oqvc0,zebra-moray-eel,Zebra Moray Eel,WAVE_1,64,11,4,49,0.172,WAVE1_PARTIAL_HELD
+species-zebrasoma-flavescens,zebrasoma-flavescens,Yellow Tang,WAVE_2_CANDIDATE,60,11,6,43,0.183,NO_EVIDENCE_COLLECTED
+G6zzfp6s5dlbun6AVzKmc5,zebrasoma-veliferum,Sailfin Tang,WAVE_2_CANDIDATE,60,9,7,44,0.150,NO_EVIDENCE_COLLECTED

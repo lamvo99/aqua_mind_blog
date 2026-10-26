@@ -1,0 +1,26 @@
+{
+  "specId": "SPEC_13A",
+  "artifact": "INTEGRITY",
+  "generatedAt": "2026-10-21T06:27:34.654Z",
+  "mode": "READ-ONLY (GET query only; no writes, no deploy)",
+  "content_mutations": 0,
+  "schema_changes": 0,
+  "deploys": 0,
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "draftCount": 0,
+  "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+  "identityMatch": true,
+  "relationshipsBefore": 3173,
+  "relationshipsAfter": 3173,
+  "relationshipsUnchanged": true,
+  "expectedEdges": 3173,
+  "verdict": "CLEAN"
+}

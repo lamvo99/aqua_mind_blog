@@ -1,0 +1,115 @@
+{
+  "specId": "SPEC_13B_WRITE",
+  "artifact": "POST_WRITE_VERIFICATION",
+  "generatedAt": "2026-10-22T02:47:40.197Z",
+  "status": "COMPLETE",
+  "applied": 17,
+  "expected": 17,
+  "edgesBefore": 3173,
+  "edgesAfter": 3190,
+  "edgeDelta": 17,
+  "projection": 3190,
+  "identity": {
+    "before": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "after": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "drafts": 0,
+  "duplicate": {
+    "dupIds": 0,
+    "dupSlugs": 0
+  },
+  "checks": {
+    "allSeventeenPresent": true,
+    "eachExactlyOnce": true,
+    "excludedApplied": 0,
+    "noPriorEdgeLost": true,
+    "unrelatedFieldsUnchanged": true,
+    "onlyApprovedDocumentsTouched": true,
+    "recordCountUnchanged": true,
+    "identityUnchanged": true,
+    "draftsZero": true,
+    "edgesMatchApplied": true
+  },
+  "fingerprint": {
+    "method": "sha256 over per-doc fields excluding _rev/_updatedAt/predatorPrey/incompatibleSpecies",
+    "preWriteReconstructed": "72a6e8940c37e8a0aa6dd6c1af3321e60d3aee0253262ce90ab6f3738713fe8c",
+    "postWrite": "72a6e8940c37e8a0aa6dd6c1af3321e60d3aee0253262ce90ab6f3738713fe8c",
+    "match": true
+  },
+  "removalCheck": [
+    {
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "predatorPrey",
+      "currentCount": 6,
+      "removed": 6,
+      "plannedCount": 6,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "field": "predatorPrey",
+      "currentCount": 3,
+      "removed": 3,
+      "plannedCount": 3,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "species-bala-shark",
+      "field": "predatorPrey",
+      "currentCount": 2,
+      "removed": 2,
+      "plannedCount": 2,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "J1Tx0fWCuGNPno99A79QPg",
+      "field": "predatorPrey",
+      "currentCount": 2,
+      "removed": 2,
+      "plannedCount": 2,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "J1Tx0fWCuGNPno99A79RMf",
+      "field": "predatorPrey",
+      "currentCount": 2,
+      "removed": 2,
+      "plannedCount": 2,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "J1Tx0fWCuGNPno99A79RMf",
+      "field": "incompatibleSpecies",
+      "currentCount": 1,
+      "removed": 1,
+      "plannedCount": 1,
+      "matchesPreflight": true
+    },
+    {
+      "sourceId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "field": "incompatibleSpecies",
+      "currentCount": 1,
+      "removed": 1,
+      "plannedCount": 1,
+      "matchesPreflight": true
+    }
+  ],
+  "idempotency": {
+    "additionalOperationsOnReapply": 0,
+    "expected": 0,
+    "pass": true
+  },
+  "operationStatusCounts": {
+    "APPLIED_AND_VERIFIED": 17
+  }
+}

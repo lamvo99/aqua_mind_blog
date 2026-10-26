@@ -1,0 +1,231 @@
+domain,requirement,label,applicabilityClass,applicabilityRule,spec09NA,spec09Applicable,falseGapControl
+species,common_name,Common name,REQUIRED,all records in domain,0,218,required for all domain records
+species,scientific_name,Scientific name,REQUIRED,all records in domain,0,218,required for all domain records
+species,taxonomic_context,Taxonomic context (family + group),REQUIRED,all records in domain,0,218,required for all domain records
+species,natural_distribution,Natural distribution,REQUIRED,all records in domain,0,218,required for all domain records
+species,habitat,Natural habitat description,REQUIRED,all records in domain,0,218,required for all domain records
+species,adult_size,Adult size,REQUIRED,all records in domain,0,218,required for all domain records
+species,growth_expectations,Growth expectations,REQUIRED,all records in domain,0,218,required for all domain records
+species,juvenile_vs_adult,Juvenile vs adult differences,OPTIONAL,editorial judgment; absence is not a gap,0,218,optional — never counted as gap when absent
+species,adult_footprint,Adult footprint implications (volume != footprint),REQUIRED,all records in domain,0,218,required for all domain records
+species,growth_tank_transition,Growth-related tank transition guidance,REQUIRED,all records in domain,0,218,required for all domain records
+species,temperature,Temperature range,REQUIRED,all records in domain,0,218,required for all domain records
+species,ph,pH range,REQUIRED,all records in domain,0,218,required for all domain records
+species,gh,GH range,REQUIRED,all records in domain,0,218,required for all domain records
+species,kh,KH / carbonate hardness,REQUIRED,research,0,218,required for all domain records
+species,salinity,Salinity / brackish-marine chemistry,CONDITIONAL,"waterType in (saltwater, brackish)",162,56,"NOT_APPLICABLE when rule false: waterType in (saltwater, brackish)"
+species,species_specific_chemistry,Other species-specific chemistry sensitivities,CONDITIONAL,documented sensitive species,0,218,NOT_APPLICABLE when rule false: documented sensitive species
+species,min_tank_volume,Minimum tank volume,REQUIRED,all records in domain,0,218,required for all domain records
+species,min_tank_dimensions,Minimum tank dimensions / length,REQUIRED,all records in domain,0,218,required for all domain records
+species,tank_footprint,Tank footprint / width requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,swimming_space,Swimming space / uninterrupted swimming area,REQUIRED,all records in domain,0,218,required for all domain records
+species,open_water_requirement,Open-water requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,bottom_area,Bottom area requirement,CONDITIONAL,benthic/sand-dwelling groups,166,52,NOT_APPLICABLE when rule false: benthic/sand-dwelling groups
+species,vertical_space,Vertical space requirement,CONDITIONAL,"tall-bodied/surface groups (arowana, angelfish, etc.)",218,0,"NOT_APPLICABLE when rule false: tall-bodied/surface groups (arowana, angelfish, etc.)"
+species,hiding_structures,Hiding structures requirement,CONDITIONAL,cave/shy species,158,60,NOT_APPLICABLE when rule false: cave/shy species
+species,jumping_risk,Escape / jumping risk,REQUIRED,all records in domain,0,218,required for all domain records
+species,lid_requirement,Lid / cover requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,flow_requirement,Flow / current requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,oxygenation,Oxygenation requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,mature_aquarium,Mature / established aquarium requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,temperament,Temperament,REQUIRED,all records in domain,0,218,required for all domain records
+species,territoriality,Territoriality,REQUIRED,all records in domain,0,218,required for all domain records
+species,schooling,Schooling / shoaling requirement,REQUIRED,all records in domain,0,218,required for all domain records
+species,solitary,Solitary behavior,REQUIRED,all records in domain,0,218,required for all domain records
+species,predator,Predator status,REQUIRED,all records in domain,0,218,required for all domain records
+species,diet_type,Diet,REQUIRED,all records in domain,0,218,required for all domain records
+species,nocturnal,Nocturnal behavior,CONDITIONAL,"documented nocturnal groups (catfish, loaches, eels, cichlids)",0,218,"NOT_APPLICABLE when rule false: documented nocturnal groups (catfish, loaches, eels, cichlids)"
+species,diurnal,Diurnal / daytime behavior,OPTIONAL,editorial judgment; absence is not a gap,0,218,optional — never counted as gap when absent
+species,burrower,Burrowing behavior,CONDITIONAL,"sand-dwellers (loaches, eels, rays, gobies)",0,218,"NOT_APPLICABLE when rule false: sand-dwellers (loaches, eels, rays, gobies)"
+species,cave_dependent,Cave dependence,CONDITIONAL,cavity-spawning/shy groups,0,218,NOT_APPLICABLE when rule false: cavity-spawning/shy groups
+species,open_water_swimmer,Open-water swimmer behavior,CONDITIONAL,sizeCm>=15 or pelagic groups,0,218,NOT_APPLICABLE when rule false: sizeCm>=15 or pelagic groups
+species,strong_swimmer,Strong swimmer behavior,CONDITIONAL,large/riverine groups,0,218,NOT_APPLICABLE when rule false: large/riverine groups
+species,timid,Timid / skittish behavior,REQUIRED,all records in domain,0,218,required for all domain records
+species,community_suitability,Community suitability,REQUIRED,all records in domain,0,218,required for all domain records
+species,feeding_frequency,Feeding frequency (if meaningful),OPTIONAL,where meaningful,0,218,optional — never counted as gap when absent
+species,feeding_method,Feeding type / foods accepted,REQUIRED,all records in domain,0,218,required for all domain records
+species,juvenile_adult_diet,Juvenile/adult dietary differences,OPTIONAL,editorial judgment; absence is not a gap,0,218,optional — never counted as gap when absent
+species,special_nutrition,Special nutritional requirements,CONDITIONAL,specialist feeders,0,218,NOT_APPLICABLE when rule false: specialist feeders
+species,feeding_competition,Feeding competition,CONDITIONAL,slow/semi-aggressive feeders,0,218,NOT_APPLICABLE when rule false: slow/semi-aggressive feeders
+species,predatory_feeding_behavior,Predatory feeding behavior,CONDITIONAL,predators,118,100,NOT_APPLICABLE when rule false: predators
+species,compatible_tankmates,Compatible tankmates (relationship),REQUIRED,all records in domain,0,218,required for all domain records
+species,incompatible_tankmates,Incompatible tankmates / must-avoid combinations,REQUIRED,all records in domain,0,218,required for all domain records
+species,size_based_predation,Size-based predation risk,CONDITIONAL,predators/omnivores that eat tankmates,118,100,NOT_APPLICABLE when rule false: predators/omnivores that eat tankmates
+species,territorial_conflicts,Territorial conflicts,CONDITIONAL,territorial species,0,218,NOT_APPLICABLE when rule false: territorial species
+species,fin_nipping,Fin-nipping risk,CONDITIONAL,documented nippers,0,218,NOT_APPLICABLE when rule false: documented nippers
+species,compatibility_competition,Competition for resources,CONDITIONAL,resource-competition species,0,218,NOT_APPLICABLE when rule false: resource-competition species
+species,compat_warnings,Special compatibility warnings,REQUIRED,all records in domain,0,218,required for all domain records
+species,coral_interaction,Coral interaction / reef safety depth (§7C),CONDITIONAL,waterType=saltwater,164,54,NOT_APPLICABLE when rule false: waterType=saltwater
+species,invertebrate_predation,Invertebrate predation risk,CONDITIONAL,"isPredator=true or diet in (carnivore, omnivore)",118,100,"NOT_APPLICABLE when rule false: isPredator=true or diet in (carnivore, omnivore)"
+species,water_change_sensitivity,Water-change sensitivity,REQUIRED,all records in domain,0,218,required for all domain records
+species,waste_bioload,Waste production / bioload,REQUIRED,all records in domain,0,218,required for all domain records
+species,maintenance_burden,Maintenance burden,REQUIRED,all records in domain,0,218,required for all domain records
+species,special_husbandry,Special husbandry requirements,CONDITIONAL,specialist species,0,218,NOT_APPLICABLE when rule false: specialist species
+species,sexual_differences,Sexual differences (where useful),OPTIONAL,editorial judgment; absence is not a gap,0,218,optional — never counted as gap when absent
+species,spawning_behavior,Spawning behavior,CONDITIONAL,known breeders,0,218,NOT_APPLICABLE when rule false: known breeders
+species,breeding_difficulty,Breeding difficulty,CONDITIONAL,known breeders,0,218,NOT_APPLICABLE when rule false: known breeders
+species,breeding_requirements,Breeding special requirements,CONDITIONAL,known breeders,0,218,NOT_APPLICABLE when rule false: known breeders
+plant,common_name,Common name,REQUIRED,all records in domain,0,62,required for all domain records
+plant,scientific_name,Scientific name,REQUIRED,all records in domain,0,62,required for all domain records
+plant,plant_type,Plant type / group,REQUIRED,all records in domain,0,62,required for all domain records
+plant,growth_form_plant,Growth form,REQUIRED,all records in domain,0,62,required for all domain records
+plant,natural_habitat_plant,Natural habitat,REQUIRED,all records in domain,0,62,required for all domain records
+plant,light_requirement,Light requirement (qualitative),REQUIRED,all records in domain,0,62,required for all domain records
+plant,light_intensity,Light intensity / acclimation guidance,REQUIRED,all records in domain,0,62,required for all domain records
+plant,par,PAR guidance,OPTIONAL,only where evidence supports numbers,0,62,optional — never counted as gap when absent
+plant,photoperiod,Photoperiod considerations,REQUIRED,all records in domain,0,62,required for all domain records
+plant,light_acclimation,Light acclimation (transition),REQUIRED,all records in domain,0,62,required for all domain records
+plant,co2_requirement,CO2 requirement,REQUIRED,all records in domain,0,62,required for all domain records
+plant,low_tech_suitability,Low-tech suitability,REQUIRED,all records in domain,0,62,required for all domain records
+plant,co2_response,CO2 response / low-tech behavior,REQUIRED,all records in domain,0,62,required for all domain records
+plant,macro_nutrients,Macro nutrients,REQUIRED,all records in domain,0,62,required for all domain records
+plant,micro_nutrients,Micro nutrients / trace elements,REQUIRED,all records in domain,0,62,required for all domain records
+plant,root_vs_water_column,Root feeding vs water-column feeding,CONDITIONAL,not (Epiphyte/Moss/Fern/Floating),21,41,NOT_APPLICABLE when rule false: not (Epiphyte/Moss/Fern/Floating)
+plant,substrate_requirements,Substrate requirements,CONDITIONAL,not (Epiphyte/Moss/Fern/Floating),21,41,NOT_APPLICABLE when rule false: not (Epiphyte/Moss/Fern/Floating)
+plant,fertilization,Fertilization implications,REQUIRED,all records in domain,0,62,required for all domain records
+plant,deficiency_sensitivity,Deficiency sensitivity,REQUIRED,all records in domain,0,62,required for all domain records
+plant,temperature_plant,Temperature range,REQUIRED,all records in domain,0,62,required for all domain records
+plant,ph_plant,pH range,REQUIRED,all records in domain,0,62,required for all domain records
+plant,gh_plant,GH preference,OPTIONAL,where evidence exists,0,62,optional — never counted as gap when absent
+plant,kh_plant,KH preference,OPTIONAL,where evidence exists,0,62,optional — never counted as gap when absent
+plant,placement,Placement (fore/mid/back/floating/epiphyte),REQUIRED,all records in domain,0,62,required for all domain records
+plant,epiphyte_attachment,Epiphyte / hardscape attachment,CONDITIONAL,Epiphyte placement,48,14,NOT_APPLICABLE when rule false: Epiphyte placement
+plant,space_requirements_plant,Space requirements / spread room,REQUIRED,all records in domain,0,62,required for all domain records
+plant,growth_rate,Growth rate,REQUIRED,all records in domain,0,62,required for all domain records
+plant,adult_height,Adult height,REQUIRED,all records in domain,0,62,required for all domain records
+plant,spread_width,Spread / width,REQUIRED,research,0,62,required for all domain records
+plant,propagation,Propagation,REQUIRED,all records in domain,0,62,required for all domain records
+plant,trimming,Trimming / pruning,REQUIRED,all records in domain,0,62,required for all domain records
+plant,flow_tolerance,Flow tolerance,REQUIRED,all records in domain,0,62,required for all domain records
+plant,algae_sensitivity,Algae sensitivity,REQUIRED,all records in domain,0,62,required for all domain records
+plant,melting,Melting behavior,REQUIRED,all records in domain,0,62,required for all domain records
+plant,nutrient_deficiency_problems,Nutrient deficiency problems,REQUIRED,all records in domain,0,62,required for all domain records
+plant,light_problems,Light-related problems,REQUIRED,all records in domain,0,62,required for all domain records
+plant,co2_problems,CO2-related problems,REQUIRED,all records in domain,0,62,required for all domain records
+plant,transition_issues,Transition / acclimation issues,REQUIRED,all records in domain,0,62,required for all domain records
+invertebrate,common_name,Common name,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,scientific_name_inv,Scientific name,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,type_group,Type / group,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,natural_habitat_inv,Natural role / habitat,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,temperature_inv,Temperature range,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,salinity_inv,Salinity,CONDITIONAL,waterType=saltwater,28,28,NOT_APPLICABLE when rule false: waterType=saltwater
+invertebrate,ph_inv,pH range,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,gh_kh_inv,GH / KH where relevant,OPTIONAL,where evidence exists,0,56,optional — never counted as gap when absent
+invertebrate,calcium_inv,Calcium where relevant (shells/molts),CONDITIONAL,"shells/molts: snails, shrimp, crabs",11,45,"NOT_APPLICABLE when rule false: shells/molts: snails, shrimp, crabs"
+invertebrate,magnesium_inv,Magnesium where relevant,CONDITIONAL,shrimp/crustacean groups,28,28,NOT_APPLICABLE when rule false: shrimp/crustacean groups
+invertebrate,stability_inv,Stability requirements,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,diet_inv,Diet type,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,natural_food,Natural food source,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,supplemental_feeding,Supplemental feeding,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,starvation_risk,Risk of starvation,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,molting,Molting knowledge,CONDITIONAL,"crustaceans (shrimp, crabs, crayfish)",25,31,"NOT_APPLICABLE when rule false: crustaceans (shrimp, crabs, crayfish)"
+invertebrate,molting_minerals,Calcium/mineral needs for molting,CONDITIONAL,crustaceans,13,43,NOT_APPLICABLE when rule false: crustaceans
+invertebrate,molting_hazards,Molting hazards,CONDITIONAL,crustaceans,25,31,NOT_APPLICABLE when rule false: crustaceans
+invertebrate,post_molt_vulnerability,Post-molt vulnerability,CONDITIONAL,crustaceans,25,31,NOT_APPLICABLE when rule false: crustaceans
+invertebrate,fish_predators,Fish predator risk,CONDITIONAL,prey-sized invertebrates,9,47,NOT_APPLICABLE when rule false: prey-sized invertebrates
+invertebrate,invertebrate_predators,Invertebrate predator risk,CONDITIONAL,community records,0,56,NOT_APPLICABLE when rule false: community records
+invertebrate,temperament_inv,Aggression / temperament,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,competition_inv,Competition,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,reef_compat_inv,Reef compatibility,CONDITIONAL,waterType=saltwater,28,28,NOT_APPLICABLE when rule false: waterType=saltwater
+invertebrate,min_tank_inv,Minimum tank requirements,REQUIRED,all records in domain,0,56,required for all domain records
+invertebrate,hiding_areas,Hiding areas,CONDITIONAL,cave/shy species,0,56,NOT_APPLICABLE when rule false: cave/shy species
+invertebrate,substrate_inv,Substrate requirements,CONDITIONAL,burrowers/sand-sifters,0,56,NOT_APPLICABLE when rule false: burrowers/sand-sifters
+invertebrate,rockwork,Rockwork requirements,CONDITIONAL,reef grazers/lochers,29,27,NOT_APPLICABLE when rule false: reef grazers/lochers
+invertebrate,escape_risk,Escape risk,CONDITIONAL,"climbing groups (crabs, some snails, sleeper gobies)",25,31,"NOT_APPLICABLE when rule false: climbing groups (crabs, some snails, sleeper gobies)"
+invertebrate,reproduction,Reproduction / breeding behavior,OPTIONAL,editorial judgment; absence is not a gap,0,56,optional — never counted as gap when absent
+invertebrate,breeding_difficulty_inv,Breeding difficulty,CONDITIONAL,known breeders,0,56,NOT_APPLICABLE when rule false: known breeders
+invertebrate,larval_requirements,Larval requirements (where relevant),CONDITIONAL,breedable species,0,56,NOT_APPLICABLE when rule false: breedable species
+invertebrate,mature_aquarium_inv,Mature aquarium requirement,REQUIRED,all records in domain,19,37,required for all domain records
+invertebrate,established_biofilm,Established biofilm requirement,CONDITIONAL,"grazers: shrimp, snails, detritivores",13,43,"NOT_APPLICABLE when rule false: grazers: shrimp, snails, detritivores"
+invertebrate,specialized_food_inv,Specialized food,CONDITIONAL,specialist feeders,0,56,NOT_APPLICABLE when rule false: specialist feeders
+invertebrate,specialized_habitat_inv,Specialized habitat,OPTIONAL,editorial judgment; absence is not a gap,0,56,optional — never counted as gap when absent
+coral,common_name,Common name,REQUIRED,all records in domain,0,48,required for all domain records
+coral,scientific_name_coral,Scientific name,REQUIRED,all records in domain,0,48,required for all domain records
+coral,coral_type,Coral type,REQUIRED,all records in domain,0,48,required for all domain records
+coral,coral_group,Coral group / family context,REQUIRED,all records in domain,0,48,required for all domain records
+coral,growth_form_coral,Growth form (branching/plating/encrusting),REQUIRED,all records in domain,0,48,required for all domain records
+coral,light_coral,Qualitative lighting requirement,REQUIRED,all records in domain,0,48,required for all domain records
+coral,par_coral,PAR guidance,OPTIONAL,only where evidence supports numbers,0,48,optional — never counted as gap when absent
+coral,placement_coral,Placement,REQUIRED,all records in domain,0,48,required for all domain records
+coral,acclimation_coral,Light acclimation,REQUIRED,all records in domain,0,48,required for all domain records
+coral,lighting_risks,Lighting-related risks,REQUIRED,all records in domain,0,48,required for all domain records
+coral,flow_coral,Flow requirement,REQUIRED,all records in domain,0,48,required for all domain records
+coral,flow_pattern,"Flow pattern (direct vs indirect, laminar vs turbulent)",REQUIRED,all records in domain,0,48,required for all domain records
+coral,flow_tissue_considerations,Flow/tissue considerations,REQUIRED,all records in domain,0,48,required for all domain records
+coral,temperature_coral,Temperature range,REQUIRED,all records in domain,0,48,required for all domain records
+coral,salinity_coral,Salinity / specific gravity,REQUIRED,research,0,48,required for all domain records
+coral,ph_coral,pH,REQUIRED,research,0,48,required for all domain records
+coral,alkalinity,Alkalinity (dKH),REQUIRED,research,0,48,required for all domain records
+coral,calcium,Calcium,REQUIRED,research,0,48,required for all domain records
+coral,magnesium,Magnesium,REQUIRED,research,0,48,required for all domain records
+coral,nitrate,Nitrate,REQUIRED,research,0,48,required for all domain records
+coral,phosphate,Phosphate,REQUIRED,research,0,48,required for all domain records
+coral,stability,Water stability requirements,REQUIRED,all records in domain,0,48,required for all domain records
+coral,photosynthetic,Photosynthetic role,REQUIRED,all records in domain,0,48,required for all domain records
+coral,feeding_coral,Feeding,REQUIRED,all records in domain,0,48,required for all domain records
+coral,feeding_type_coral,Feeding type,REQUIRED,all records in domain,0,48,required for all domain records
+coral,feeding_frequency_coral,Feeding frequency (meaningful for NPS),CONDITIONAL,NPS/non-photosynthetic corals,44,4,NOT_APPLICABLE when rule false: NPS/non-photosynthetic corals
+coral,nutrient_availability,Nutrient availability,REQUIRED,all records in domain,0,48,required for all domain records
+coral,growth_rate_coral,Growth rate,REQUIRED,all records in domain,0,48,required for all domain records
+coral,space_coral,Space requirements,REQUIRED,all records in domain,0,48,required for all domain records
+coral,aggression,Aggression level,REQUIRED,all records in domain,0,48,required for all domain records
+coral,sweeper_tentacles,Sweeper tentacles,REQUIRED,all records in domain,0,48,required for all domain records
+coral,chemical_warfare,Chemical warfare (allelopathy),REQUIRED,all records in domain,0,48,required for all domain records
+coral,stinging,Stinging risk,REQUIRED,all records in domain,0,48,required for all domain records
+coral,placement_neighbors,Placement relative to neighbors,REQUIRED,all records in domain,0,48,required for all domain records
+coral,reef_safe_status,Reef-safe status,REQUIRED,all records in domain,0,48,required for all domain records
+coral,reef_caveats,Species-dependent reef caveats,REQUIRED,all records in domain,0,48,required for all domain records
+coral,coral_interaction_coral,Coral interaction / neighbor effects,REQUIRED,all records in domain,0,48,required for all domain records
+coral,fish_interaction_coral,Fish interaction,REQUIRED,all records in domain,0,48,required for all domain records
+coral,invertebrate_interaction_coral,Invertebrate interaction,REQUIRED,all records in domain,0,48,required for all domain records
+coral,bleaching,Bleaching knowledge,REQUIRED,all records in domain,0,48,required for all domain records
+coral,stn_rtn,STN / RTN / tissue recession,REQUIRED,all records in domain,0,48,required for all domain records
+coral,pests_coral,Pests knowledge,REQUIRED,all records in domain,0,48,required for all domain records
+coral,algae_coral,Algae problems,REQUIRED,all records in domain,0,48,required for all domain records
+coral,flow_stress_coral,Flow stress problems,REQUIRED,all records in domain,0,48,required for all domain records
+coral,chemistry_problems,Chemistry-related problems,REQUIRED,all records in domain,0,48,required for all domain records
+equipment,purpose,What it does / purpose,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,problem_solved,What problem it solves,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,suitable_tank_size,Suitable tank size range,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,water_type_suitability,Freshwater/marine/reef suitability,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,tank_type,Tank type / equipment category,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,flow_capacity,Flow capacity (L/h),CONDITIONAL,"pumps, filters, powerheads",37,9,"NOT_APPLICABLE when rule false: pumps, filters, powerheads"
+equipment,turnover,Turnover guidance,CONDITIONAL,marine/filtration categories,37,9,NOT_APPLICABLE when rule false: marine/filtration categories
+equipment,filtration_capacity,Filtration capacity / rated load,CONDITIONAL,"filters, skimmers, reactors",42,4,"NOT_APPLICABLE when rule false: filters, skimmers, reactors"
+equipment,load_limitations,Load limitations (stocking vs capacity),REQUIRED,all records in domain,0,46,required for all domain records
+equipment,practical_capacity,Practical vs marketing capacity,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,best_use_case,Best use case,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,installation,Installation guidance,OPTIONAL,editorial judgment; absence is not a gap,0,46,optional — never counted as gap when absent
+equipment,placement_equipment,Placement guidance,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,configuration,Configuration guidance,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,limitations,What it cannot do / limitations,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,when_inadequate,When it becomes inadequate,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,noise_heat,Noise / heat / running-cost implications,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,compatible_equipment,Compatible equipment / system interactions,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,system_interactions,System interactions (sump/canister/inline),REQUIRED,all records in domain,0,46,required for all domain records
+equipment,reef_fresh_constraints,Reef vs freshwater constraints,CONDITIONAL,categories usable in both water types,0,46,NOT_APPLICABLE when rule false: categories usable in both water types
+equipment,cleaning,Cleaning / maintenance routine,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,replacement,Replacement schedule / parts,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,consumables,Consumables,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,failure_modes,Failure modes,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,common_misuse,Common misuse,REQUIRED,all records in domain,0,46,required for all domain records
+equipment,overflow_risk,Overflow / water-damage risk,CONDITIONAL,"water-moving categories (filters, powerheads, top-offs)",35,11,"NOT_APPLICABLE when rule false: water-moving categories (filters, powerheads, top-offs)"
+equipment,electrical_safety,Electrical safety,CONDITIONAL,"electrical categories (heaters, lights, controllers)",35,11,"NOT_APPLICABLE when rule false: electrical categories (heaters, lights, controllers)"
+equipment,power_draw,Power draw (W),REQUIRED,all records in domain,0,46,required for all domain records
+problem,symptoms,Observable symptoms,REQUIRED,all records in domain,0,43,required for all domain records
+problem,what_it_indicates,What it may indicate (primary causes),REQUIRED,all records in domain,0,43,required for all domain records
+problem,differential_causes,Differential causes (multiple),REQUIRED,all records in domain,0,43,required for all domain records
+problem,how_to_distinguish,How to distinguish between causes,REQUIRED,all records in domain,0,43,required for all domain records
+problem,first_check,First check / highest-priority observations,REQUIRED,all records in domain,0,43,required for all domain records
+problem,secondary_causes,Secondary / contributing causes,REQUIRED,all records in domain,0,43,required for all domain records
+problem,environmental_causes,Environmental causes,REQUIRED,all records in domain,0,43,required for all domain records
+problem,husbandry_causes,Husbandry causes,REQUIRED,all records in domain,0,43,required for all domain records
+problem,immediate_action,Immediate action,REQUIRED,all records in domain,0,43,required for all domain records
+problem,corrective_action,Corrective action / treatment,REQUIRED,all records in domain,0,43,required for all domain records
+problem,recovery_expectations,Recovery expectations,REQUIRED,all records in domain,0,43,required for all domain records
+problem,what_not_to_do,What NOT to do,REQUIRED,all records in domain,0,43,required for all domain records
+problem,overcorrection_risks,Overcorrection risks,REQUIRED,all records in domain,0,43,required for all domain records
+problem,prevention,Long-term prevention,REQUIRED,all records in domain,0,43,required for all domain records
+problem,monitoring,Monitoring guidance,REQUIRED,all records in domain,0,43,required for all domain records
+problem,maintenance_prevention,Maintenance-linked prevention,REQUIRED,all records in domain,0,43,required for all domain records
+problem,escalation,Escalation: when hobbyist help is insufficient,REQUIRED,all records in domain,0,43,required for all domain records

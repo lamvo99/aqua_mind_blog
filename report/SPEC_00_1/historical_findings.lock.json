@@ -1,0 +1,179 @@
+{
+  "bba": {
+    "reported": "Black Beard Algae route resolves to /problems/undefined",
+    "status": "NOT FOUND",
+    "records": [
+      {
+        "id": "I9bI8W8ZWcEwyIzM9DNIu8",
+        "title": "Black Beard Algae (BBA)",
+        "slug": "black-beard-algae"
+      }
+    ],
+    "problemsWithoutSlug": []
+  },
+  "ich": {
+    "reported": "Two records: ich-white-spot-disease and white-spot-disease, one reported null/broken",
+    "status": "VERIFIED",
+    "records": [
+      {
+        "id": "J1Tx0fWCuGNPno99A7AE36",
+        "title": "Ich (White Spot Disease)",
+        "slug": "ich-white-spot-disease",
+        "excerpt": true,
+        "body": 11
+      },
+      {
+        "id": "problem-white-spot-disease",
+        "title": "White Spot Disease (Ich)",
+        "slug": "white-spot-disease",
+        "excerpt": true,
+        "body": 12
+      }
+    ]
+  },
+  "coralProblems": {
+    "status": "VERIFIED",
+    "genericNames": [
+      "Old Tank Syndrome",
+      "Filter Crash",
+      "Cloudy Water"
+    ],
+    "torchProblemRefs": [
+      {
+        "ref": "BruaGKYCGDRQjkiQDnlszk",
+        "title": "Old Tank Syndrome",
+        "exists": true
+      },
+      {
+        "ref": "BruaGKYCGDRQjkiQDnltFi",
+        "title": "Filter Crash",
+        "exists": true
+      },
+      {
+        "ref": "problem-cloudy-water",
+        "title": "Cloudy Water",
+        "exists": true
+      }
+    ],
+    "coralProblemRefsCount": 108,
+    "coralsWithProblems": 36,
+    "coralSpecificProblemsExist": {
+      "Brown Jelly Disease": true,
+      "RTN": false,
+      "STN": false,
+      "Coral Bleaching": true
+    }
+  },
+  "emptyProblemBodies": {
+    "status": "VERIFIED",
+    "items": [
+      {
+        "title": "Brown Jelly Disease",
+        "found": true,
+        "body": 11,
+        "id": "problem-brown-jelly-disease"
+      },
+      {
+        "title": "RTN",
+        "found": false,
+        "body": null,
+        "id": null
+      },
+      {
+        "title": "STN",
+        "found": false,
+        "body": null,
+        "id": null
+      },
+      {
+        "title": "Coral Bleaching",
+        "found": true,
+        "body": 11,
+        "id": "problem-coral-bleaching"
+      },
+      {
+        "title": "Aiptasia Infestation",
+        "found": true,
+        "body": 11,
+        "id": "problem-aiptasia-infestation"
+      },
+      {
+        "title": "High Nitrate",
+        "found": true,
+        "body": 11,
+        "id": "problem-high-nitrate"
+      },
+      {
+        "title": "High Nitrite",
+        "found": true,
+        "body": 11,
+        "id": "problem-high-nitrite"
+      },
+      {
+        "title": "pH Crash",
+        "found": true,
+        "body": 11,
+        "id": "problem-ph-crash"
+      },
+      {
+        "title": "pH Drift",
+        "found": true,
+        "body": 11,
+        "id": "problem-ph-drift"
+      },
+      {
+        "title": "Heater Stuck On",
+        "found": true,
+        "body": 11,
+        "id": "problem-heater-stuck-on"
+      },
+      {
+        "title": "Heater Stuck Off",
+        "found": true,
+        "body": 11,
+        "id": "problem-heater-stuck-off"
+      }
+    ],
+    "emptyCount": 0
+  },
+  "plantLanguage": {
+    "status": "VERIFIED",
+    "plantFlags": [
+      {
+        "id": "I9bI8W8ZWcEwyIzM9DFYK8",
+        "field": "excerpt",
+        "value": "A popular floating plant with round, lily-pad-like leaves and long, trailing roots. Excellent for nutrient吸收 and providing cover for fish fry and shy species."
+      },
+      {
+        "id": "J1Tx0fWCuGNPno99A7KJKt",
+        "field": "excerpt",
+        "value": "A small floating fern with distinctive cup-shaped leaves. Fast-growing and excellent for nutrient吸收 in shrimp tanks. Does not reproduce as aggressively as duckweed."
+      }
+    ],
+    "frogbit": {
+      "found": true,
+      "id": "I9bI8W8ZWcEwyIzM9DFYK8"
+    },
+    "salvinia": {
+      "found": true,
+      "id": "J1Tx0fWCuGNPno99A7KJKt"
+    }
+  },
+  "invertebrateDisplay": {
+    "status": "VERIFIED",
+    "babaulti": {
+      "id": "J1Tx0fWCuGNPno99A6UVyz",
+      "title": "Babaulti Shrimp",
+      "group": "shrimp",
+      "waterType": "freshwater",
+      "image": false
+    },
+    "rabbit": {
+      "id": "I9bI8W8ZWcEwyIzM9DJhXM",
+      "title": "Rabbit Snail",
+      "group": "snail",
+      "waterType": "freshwater",
+      "image": false
+    }
+  }
+}

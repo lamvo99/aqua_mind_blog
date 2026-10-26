@@ -1,0 +1,365 @@
+candidateId,recordId,path,expected,actual,verified
+OP-003,1z8rQFHeojDMTUo2hXSViG,swimmingSpace,HIGH,HIGH,true
+OP-004,1z8rQFHeojDMTUo2hXSViG,jumpRisk,MODERATE,MODERATE,true
+OP-005,1z8rQFHeojDMTUo2hXSViG,lidRequired,RECOMMENDED,RECOMMENDED,true
+OP-007,1z8rQFHeojDMTUo2hXSViG,oxygenSensitivity,SENSITIVE,SENSITIVE,true
+OP-008,1z8rQFHeojDMTUo2hXSViG,maturityRequirement,REQUIRED,REQUIRED,true
+OP-009,1z8rQFHeojDMTUo2hXSViG,bioload,HIGH,HIGH,true
+OP-010,1z8rQFHeojDMTUo2hXSViG,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-011,1z8rQFHeojDMTUo2hXSViG,behaviorFlags,"[""open-water"",""strong-swimmer""]","open-water,strong-swimmer",true
+OP-012,1z8rQFHeojDMTUo2hXSViG,groupSize,"{""min"":5}","{""min"":5}",true
+OP-013,1z8rQFHeojDMTUo2hXSViG,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-014,1z8rQFHeojDMTUo2hXSViG,predatesInverts,LIKELY,LIKELY,true
+OP-015,1z8rQFHeojDMTUo2hXSViG,tankSizeMinL,1000,1000,true
+OP-016,1z8rQFHeojDMTUo2hXSViG,tempMinC,4,4,true
+OP-017,1z8rQFHeojDMTUo2hXSViG,tempMaxC,28,28,true
+OP-020,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.overview,Koi are domesticated colour forms of the Amur carp (Cyprinus,Koi are domesticated colour forms of the Amur carp (Cyprinus,true
+OP-021,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.adultSizeGrowth,"Adults commonly reach 60 cm, with PetMD listing up to 3 feet","Adults commonly reach 60 cm, with PetMD listing up to 3 feet",true
+OP-022,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.tankRequirements,"Koi are pond fish: one koi needs roughly 1,000 L to start, a","Koi are pond fish: one koi needs roughly 1,000 L to start, a",true
+OP-023,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.swimmingSpaceFootprint,"Read the 1,000 L minimum as floor area first: koi swim side ","Read the 1,000 L minimum as floor area first: koi swim side ",true
+OP-024,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.behavior,"Koi are peaceful, social pond fish that live in schools, lea","Koi are peaceful, social pond fish that live in schools, lea",true
+OP-025,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.feeding,"Omnivore: feed a varied, koi-formulated diet - sinking pelle","Omnivore: feed a varied, koi-formulated diet - sinking pelle",true
+OP-026,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.compatibility,"Keep koi with other large, robust pond fish only: goldfish (","Keep koi with other large, robust pond fish only: goldfish (",true
+OP-027,1z8rQFHeojDMTUo2hXSViG,knowledgeBody.practicalVerdict,"Verdict: a 1,000-litre-plus pond commitment, not a beginner ","Verdict: a 1,000-litre-plus pond commitment, not a beginner ",true
+OP-056,Gk33CfLE6ahVd3Ve602em7,swimmingSpace,HIGH,HIGH,true
+OP-057,Gk33CfLE6ahVd3Ve602em7,jumpRisk,MODERATE,MODERATE,true
+OP-058,Gk33CfLE6ahVd3Ve602em7,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-059,Gk33CfLE6ahVd3Ve602em7,flowPreference,MODERATE,MODERATE,true
+OP-061,Gk33CfLE6ahVd3Ve602em7,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-062,Gk33CfLE6ahVd3Ve602em7,bioload,HIGH,HIGH,true
+OP-063,Gk33CfLE6ahVd3Ve602em7,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-064,Gk33CfLE6ahVd3Ve602em7,behaviorFlags,"[""nocturnal"",""territorial"",""solitary"",""cave-dweller"",""strong-swimmer""]","nocturnal,territorial,solitary,cave-dweller,strong-swimmer",true
+OP-065,Gk33CfLE6ahVd3Ve602em7,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-066,Gk33CfLE6ahVd3Ve602em7,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-067,Gk33CfLE6ahVd3Ve602em7,predatesInverts,LIKELY,LIKELY,true
+OP-068,Gk33CfLE6ahVd3Ve602em7,tankSizeMinL,10368,10368,true
+OP-071,Gk33CfLE6ahVd3Ve602em7,ghMin,2,2,true
+OP-072,Gk33CfLE6ahVd3Ve602em7,ghMax,12,12,true
+OP-073,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.overview,Phractocephalus hemioliopterus is a giant long-whiskered cat,Phractocephalus hemioliopterus is a giant long-whiskered cat,true
+OP-074,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.adultSizeGrowth,Expect a typical captive adult of roughly 100-130 cm (3-4 ft,Expect a typical captive adult of roughly 100-130 cm (3-4 ft,true
+OP-075,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.tankRequirements,"For a single adult, Seriously Fish gives an absolute minimum","For a single adult, Seriously Fish gives an absolute minimum",true
+OP-076,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.swimmingSpaceFootprint,Volume is the wrong metric here: what the fish needs is floo,Volume is the wrong metric here: what the fish needs is floo,true
+OP-077,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.behavior,"Redtails are nocturnal, gape-limited predators: Aquarist Atl","Redtails are nocturnal, gape-limited predators: Aquarist Atl",true
+OP-078,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.feeding,Diet is carnivorous and opportunistic: FishBase records adul,Diet is carnivorous and opportunistic: FishBase records adul,true
+OP-079,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.compatibility,Compatibility turns entirely on mouth size: Aquarist Atlas s,Compatibility turns entirely on mouth size: Aquarist Atlas s,true
+OP-080,Gk33CfLE6ahVd3Ve602em7,knowledgeBody.practicalVerdict,Blunt verdict: no for a private aquarist - only an exception,Blunt verdict: no for a private aquarist - only an exception,true
+OP-030,bXkDxvOEdfzf4NR9Z3ReYR,swimmingSpace,HIGH,HIGH,true
+OP-031,bXkDxvOEdfzf4NR9Z3ReYR,jumpRisk,HIGH,HIGH,true
+OP-032,bXkDxvOEdfzf4NR9Z3ReYR,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-033,bXkDxvOEdfzf4NR9Z3ReYR,flowPreference,MODERATE,MODERATE,true
+OP-034,bXkDxvOEdfzf4NR9Z3ReYR,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-035,bXkDxvOEdfzf4NR9Z3ReYR,maturityRequirement,REQUIRED,REQUIRED,true
+OP-036,bXkDxvOEdfzf4NR9Z3ReYR,bioload,HIGH,HIGH,true
+OP-037,bXkDxvOEdfzf4NR9Z3ReYR,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-038,bXkDxvOEdfzf4NR9Z3ReYR,behaviorFlags,"[""open-water"",""strong-swimmer""]","open-water,strong-swimmer",true
+OP-039,bXkDxvOEdfzf4NR9Z3ReYR,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-040,bXkDxvOEdfzf4NR9Z3ReYR,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-041,bXkDxvOEdfzf4NR9Z3ReYR,predatesInverts,LIKELY,LIKELY,true
+OP-044,bXkDxvOEdfzf4NR9Z3ReYR,ghMin,8,8,true
+OP-045,bXkDxvOEdfzf4NR9Z3ReYR,ghMax,20,20,true
+OP-046,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.overview,The alligator gar (Atractosteus spatula) is a living fossil ,The alligator gar (Atractosteus spatula) is a living fossil ,true
+OP-047,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.adultSizeGrowth,"Adults reach 180-240 cm (6-8 ft) typically, with a scientifi","Adults reach 180-240 cm (6-8 ft) typically, with a scientifi",true
+OP-048,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.tankRequirements,This is not a home-aquarium fish. A juvenile can start in ab,This is not a home-aquarium fish. A juvenile can start in ab,true
+OP-049,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.swimmingSpaceFootprint,Read any volume minimum as floor area first: a gar must be a,Read any volume minimum as floor area first: a gar must be a,true
+OP-050,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.behavior,The alligator gar is an apex ambush predator: motionless nea,The alligator gar is an apex ambush predator: motionless nea,true
+OP-051,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.feeding,Obligate piscivore: whole prey items only - rotating tilapia,Obligate piscivore: whole prey items only - rotating tilapia,true
+OP-052,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.compatibility,Default: keep it alone (SeriouslyFish). In genuinely massive,Default: keep it alone (SeriouslyFish). In genuinely massive,true
+OP-053,bXkDxvOEdfzf4NR9Z3ReYR,knowledgeBody.practicalVerdict,"Verdict: expert-only, build-first commitment. Budget a custo","Verdict: expert-only, build-first commitment. Budget a custo",true
+OP-083,sebdKYryWZgYP2rm3oqvc0,swimmingSpace,LOW,LOW,true
+OP-084,sebdKYryWZgYP2rm3oqvc0,jumpRisk,MODERATE,MODERATE,true
+OP-085,sebdKYryWZgYP2rm3oqvc0,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-088,sebdKYryWZgYP2rm3oqvc0,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-089,sebdKYryWZgYP2rm3oqvc0,bioload,MODERATE,MODERATE,true
+OP-090,sebdKYryWZgYP2rm3oqvc0,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-091,sebdKYryWZgYP2rm3oqvc0,behaviorFlags,"[""nocturnal"",""cave-dweller""]","nocturnal,cave-dweller",true
+OP-092,sebdKYryWZgYP2rm3oqvc0,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-093,sebdKYryWZgYP2rm3oqvc0,predatesInverts,LIKELY,LIKELY,true
+OP-094,sebdKYryWZgYP2rm3oqvc0,tankSizeMinL,378,378,true
+OP-097,sebdKYryWZgYP2rm3oqvc0,salinityMin,34,34,true
+OP-098,sebdKYryWZgYP2rm3oqvc0,salinityMax,36,36,true
+OP-099,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.overview,"Gymnomuraena zebra is the sole member of its genus, a heavy-","Gymnomuraena zebra is the sole member of its genus, a heavy-",true
+OP-100,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.adultSizeGrowth,Expect a typical captive adult of roughly 60-90 cm (two to t,Expect a typical captive adult of roughly 60-90 cm (two to t,true
+OP-101,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.tankRequirements,Minimum housing is Reef Builders' 'at least 100 gallons' (≈3,Minimum housing is Reef Builders' 'at least 100 gallons' (≈3,true
+OP-102,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.swimmingSpaceFootprint,This species inverts the usual volume-versus-footprint argum,This species inverts the usual volume-versus-footprint argum,true
+OP-103,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.behavior,"Zebra morays are reclusive, secretive cave-dwellers: Wet Web","Zebra morays are reclusive, secretive cave-dwellers: Wet Web",true
+OP-104,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.feeding,Obligate hard-shelled carnivore: FishBase - 'It feeds primar,Obligate hard-shelled carnivore: FishBase - 'It feeds primar,true
+OP-105,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.compatibility,One rule governs fish: mouth-size. Wet Web Media - 'most all,One rule governs fish: mouth-size. Wet Web Media - 'most all,true
+OP-106,sebdKYryWZgYP2rm3oqvc0,knowledgeBody.practicalVerdict,"Verdict: one of the best morays available, but only in the r","Verdict: one of the best morays available, but only in the r",true
+OP-109,species-arapaima-gigas,swimmingSpace,HIGH,HIGH,true
+OP-110,species-arapaima-gigas,jumpRisk,HIGH,HIGH,true
+OP-111,species-arapaima-gigas,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-113,species-arapaima-gigas,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-114,species-arapaima-gigas,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-115,species-arapaima-gigas,bioload,HIGH,HIGH,true
+OP-117,species-arapaima-gigas,behaviorFlags,"[""open-water"",""solitary"",""strong-swimmer""]","open-water,solitary,strong-swimmer",true
+OP-118,species-arapaima-gigas,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-119,species-arapaima-gigas,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-120,species-arapaima-gigas,predatesInverts,LIKELY,LIKELY,true
+OP-121,species-arapaima-gigas,tankSizeMinL,40000,40000,true
+OP-122,species-arapaima-gigas,tempMinC,25,25,true
+OP-125,species-arapaima-gigas,knowledgeBody.overview,"The arapaima (pirarucu in Brazil, paiche in Peru) is native ","The arapaima (pirarucu in Brazil, paiche in Peru) is native ",true
+OP-126,species-arapaima-gigas,knowledgeBody.adultSizeGrowth,"Adults commonly reach 2.2-2.4 m (7-8 ft) and about 90 kg, wi","Adults commonly reach 2.2-2.4 m (7-8 ft) and about 90 kg, wi",true
+OP-127,species-arapaima-gigas,knowledgeBody.tankRequirements,This is not a home-aquarium fish: sources put the practical ,This is not a home-aquarium fish: sources put the practical ,true
+OP-128,species-arapaima-gigas,knowledgeBody.swimmingSpaceFootprint,"Judge the enclosure by usable length and width, not by litre","Judge the enclosure by usable length and width, not by litre",true
+OP-129,species-arapaima-gigas,knowledgeBody.behavior,"Arapaima are solitary, surface-oriented open-water fish that","Arapaima are solitary, surface-oriented open-water fish that",true
+OP-130,species-arapaima-gigas,knowledgeBody.feeding,"Carnivorous: in the wild they eat mostly fish plus fruits, s","Carnivorous: in the wild they eat mostly fish plus fruits, s",true
+OP-131,species-arapaima-gigas,knowledgeBody.compatibility,"Keep it alone, or with pond fish clearly far too large to sw","Keep it alone, or with pond fish clearly far too large to sw",true
+OP-132,species-arapaima-gigas,knowledgeBody.practicalVerdict,"Verdict: skip it unless you can run a 40,000-litre pond or a","Verdict: skip it unless you can run a 40,000-litre pond or a",true
+OP-135,species-black-arowana,swimmingSpace,HIGH,HIGH,true
+OP-136,species-black-arowana,jumpRisk,HIGH,HIGH,true
+OP-137,species-black-arowana,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-139,species-black-arowana,maturityRequirement,REQUIRED,REQUIRED,true
+OP-141,species-black-arowana,waterChangeSensitivity,HIGH,HIGH,true
+OP-142,species-black-arowana,behaviorFlags,"[""solitary""]",solitary,true
+OP-143,species-black-arowana,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-144,species-black-arowana,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-145,species-black-arowana,predatesInverts,LIKELY,LIKELY,true
+OP-147,species-black-arowana,knowledgeBody.overview,The black arowana (Osteoglossum ferreirai) is a South Americ,The black arowana (Osteoglossum ferreirai) is a South Americ,true
+OP-148,species-black-arowana,knowledgeBody.adultSizeGrowth,Adults typically reach 0.9 m (3 ft) with credible reports to,Adults typically reach 0.9 m (3 ft) with credible reports to,true
+OP-149,species-black-arowana,knowledgeBody.tankRequirements,Plan for an adult around 90 cm (reports to 1.2 m) and a tank,Plan for an adult around 90 cm (reports to 1.2 m) and a tank,true
+OP-150,species-black-arowana,knowledgeBody.swimmingSpaceFootprint,"Read the 1,500 L minimum as a floor area first: a long, wide","Read the 1,500 L minimum as a floor area first: a long, wide",true
+OP-151,species-black-arowana,knowledgeBody.behavior,The black arowana is a solitary surface hunter that usually ,The black arowana is a solitary surface hunter that usually ,true
+OP-152,species-black-arowana,knowledgeBody.feeding,"Carnivorous surface feeder: in the wild it eats shrimps, ins","Carnivorous surface feeder: in the wild it eats shrimps, ins",true
+OP-153,species-black-arowana,knowledgeBody.compatibility,Tankmates must be large and peaceful and physically unable t,Tankmates must be large and peaceful and physically unable t,true
+OP-154,species-black-arowana,knowledgeBody.practicalVerdict,Verdict: an advanced specialist fish - a 90-120 cm predator ,Verdict: an advanced specialist fish - a 90-120 cm predator ,true
+OP-157,species-clown-knifefish,swimmingSpace,MODERATE,MODERATE,true
+OP-158,species-clown-knifefish,jumpRisk,MODERATE,MODERATE,true
+OP-159,species-clown-knifefish,lidRequired,RECOMMENDED,RECOMMENDED,true
+OP-161,species-clown-knifefish,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-162,species-clown-knifefish,maturityRequirement,REQUIRED,REQUIRED,true
+OP-163,species-clown-knifefish,bioload,HIGH,HIGH,true
+OP-164,species-clown-knifefish,waterChangeSensitivity,HIGH,HIGH,true
+OP-165,species-clown-knifefish,behaviorFlags,"[""nocturnal"",""territorial"",""cave-dweller"",""solitary""]","nocturnal,territorial,cave-dweller,solitary",true
+OP-167,species-clown-knifefish,predatesInverts,LIKELY,LIKELY,true
+OP-168,species-clown-knifefish,tempMinC,24,24,true
+OP-169,species-clown-knifefish,phMax,8,8,true
+OP-170,species-clown-knifefish,ghMin,5,5,true
+OP-171,species-clown-knifefish,ghMax,19,19,true
+OP-172,species-clown-knifefish,knowledgeBody.overview,"The clown knifefish (Chitala chitala), also called the clown","The clown knifefish (Chitala chitala), also called the clown",true
+OP-173,species-clown-knifefish,knowledgeBody.adultSizeGrowth,Clown knives reach 122 cm in the wild with 75 cm common and ,Clown knives reach 122 cm in the wild with 75 cm common and ,true
+OP-174,species-clown-knifefish,knowledgeBody.tankRequirements,Adult clown knives need 200 US gallons (about 760 L) or more,Adult clown knives need 200 US gallons (about 760 L) or more,true
+OP-175,species-clown-knifefish,knowledgeBody.swimmingSpaceFootprint,Judge the enclosure by usable floor first: a 100-120 cm fish,Judge the enclosure by usable floor first: a 100-120 cm fish,true
+OP-176,species-clown-knifefish,knowledgeBody.behavior,"Clown knives are nocturnal, territorial cave-dwellers: they ","Clown knives are nocturnal, territorial cave-dwellers: they ",true
+OP-177,species-clown-knifefish,knowledgeBody.feeding,Carnivore and active predator: clown knives will eagerly swa,Carnivore and active predator: clown knives will eagerly swa,true
+OP-178,species-clown-knifefish,knowledgeBody.compatibility,"House it singly by default: two knifefish fight ferociously,","House it singly by default: two knifefish fight ferociously,",true
+OP-179,species-clown-knifefish,knowledgeBody.practicalVerdict,Verdict: a common fish that most keepers should skip - TFH s,Verdict: a common fish that most keepers should skip - TFH s,true
+OP-180,species-clown-knifefish,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-181,species-iridescent-shark,minTankLengthCm,450,450,true
+OP-182,species-iridescent-shark,minTankWidthCm,180,180,true
+OP-183,species-iridescent-shark,swimmingSpace,HIGH,HIGH,true
+OP-184,species-iridescent-shark,jumpRisk,MODERATE,MODERATE,true
+OP-185,species-iridescent-shark,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-186,species-iridescent-shark,flowPreference,MODERATE,MODERATE,true
+OP-187,species-iridescent-shark,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-188,species-iridescent-shark,maturityRequirement,REQUIRED,REQUIRED,true
+OP-189,species-iridescent-shark,bioload,HIGH,HIGH,true
+OP-190,species-iridescent-shark,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-191,species-iridescent-shark,behaviorFlags,"[""open-water"",""strong-swimmer"",""timid""]","open-water,strong-swimmer,timid",true
+OP-192,species-iridescent-shark,groupSize,"{""min"":5}","{""min"":5}",true
+OP-193,species-iridescent-shark,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-194,species-iridescent-shark,tankSizeMinL,14580,14580,true
+OP-195,species-iridescent-shark,tempMaxC,26,26,true
+OP-196,species-iridescent-shark,ghMin,2,2,true
+OP-197,species-iridescent-shark,ghMax,29,29,true
+OP-199,species-iridescent-shark,knowledgeBody.overview,"The iridescent shark (Pangasianodon hypophthalmus), also sol","The iridescent shark (Pangasianodon hypophthalmus), also sol",true
+OP-200,species-iridescent-shark,knowledgeBody.adultSizeGrowth,Wild fish reach 130 cm and 44 kg; in captivity they rarely h,Wild fish reach 130 cm and 44 kg; in captivity they rarely h,true
+OP-201,species-iridescent-shark,knowledgeBody.tankRequirements,"Adult iridescent sharks need 450 x 180 x 180 cm - about 14,5","Adult iridescent sharks need 450 x 180 x 180 cm - about 14,5",true
+OP-202,species-iridescent-shark,knowledgeBody.swimmingSpaceFootprint,Read the minimum as floor area first: 450 x 180 cm of usable,Read the minimum as floor area first: 450 x 180 cm of usable,true
+OP-203,species-iridescent-shark,knowledgeBody.behavior,Iridescent sharks are peaceful but nervous open-water swimme,Iridescent sharks are peaceful but nervous open-water swimme,true
+OP-204,species-iridescent-shark,knowledgeBody.feeding,Omnivore with an age-based shift: juveniles need a protein-r,Omnivore with an age-based shift: juveniles need a protein-r,true
+OP-205,species-iridescent-shark,knowledgeBody.compatibility,"Not aggressive, but three ways to fail: anything small enoug","Not aggressive, but three ways to fail: anything small enoug",true
+OP-206,species-iridescent-shark,knowledgeBody.practicalVerdict,Verdict: one of the most consistently mis-sold fish in the h,Verdict: one of the most consistently mis-sold fish in the h,true
+OP-207,species-iridescent-shark,predatesInverts,LIKELY,LIKELY,true
+OP-210,species-longnose-gar,swimmingSpace,MODERATE,MODERATE,true
+OP-211,species-longnose-gar,jumpRisk,MODERATE,MODERATE,true
+OP-212,species-longnose-gar,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-213,species-longnose-gar,flowPreference,STILL,STILL,true
+OP-215,species-longnose-gar,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-216,species-longnose-gar,bioload,HIGH,HIGH,true
+OP-217,species-longnose-gar,waterChangeSensitivity,LOW,LOW,true
+OP-218,species-longnose-gar,behaviorFlags,"[""strong-swimmer""]",strong-swimmer,true
+OP-219,species-longnose-gar,groupSize,"{""min"":1}","{""min"":1}",true
+OP-220,species-longnose-gar,predatesInverts,LIKELY,LIKELY,true
+OP-221,species-longnose-gar,ghMin,10,10,true
+OP-222,species-longnose-gar,ghMax,15,15,true
+OP-224,species-longnose-gar,knowledgeBody.overview,"The longnose gar (Lepisosteus osseus) is a primitive, pike-l","The longnose gar (Lepisosteus osseus) is a primitive, pike-l",true
+OP-225,species-longnose-gar,knowledgeBody.adultSizeGrowth,"Wild longnose gar reach up to 200 cm and 22.8 kg, with Virgi","Wild longnose gar reach up to 200 cm and 22.8 kg, with Virgi",true
+OP-226,species-longnose-gar,knowledgeBody.tankRequirements,Plan for an adult of up to 200 cm in a specialist aquarium o,Plan for an adult of up to 200 cm in a specialist aquarium o,true
+OP-227,species-longnose-gar,knowledgeBody.swimmingSpaceFootprint,"Judge the tank by width first, not litres: NANFA's rule is k","Judge the tank by width first, not litres: NANFA's rule is k",true
+OP-228,species-longnose-gar,knowledgeBody.behavior,Longnose gars are sedentary ambush predators: they hang moti,Longnose gars are sedentary ambush predators: they hang moti,true
+OP-229,species-longnose-gar,knowledgeBody.feeding,"Carnivore with a feeding problem: wild fish take fishes, cra","Carnivore with a feeding problem: wild fish take fishes, cra",true
+OP-230,species-longnose-gar,knowledgeBody.compatibility,Compatibility is a narrow corridor with two walls: anything ,Compatibility is a narrow corridor with two walls: anything ,true
+OP-231,species-longnose-gar,knowledgeBody.practicalVerdict,"Verdict: an expert-only specialist fish - a 1-2 m, air-breat","Verdict: an expert-only specialist fish - a 1-2 m, air-breat",true
+OP-232,species-longnose-gar,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-235,species-osteoglossum-bicirrhosum,swimmingSpace,HIGH,HIGH,true
+OP-236,species-osteoglossum-bicirrhosum,jumpRisk,HIGH,HIGH,true
+OP-237,species-osteoglossum-bicirrhosum,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-239,species-osteoglossum-bicirrhosum,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-240,species-osteoglossum-bicirrhosum,maturityRequirement,REQUIRED,REQUIRED,true
+OP-241,species-osteoglossum-bicirrhosum,bioload,HIGH,HIGH,true
+OP-242,species-osteoglossum-bicirrhosum,waterChangeSensitivity,HIGH,HIGH,true
+OP-243,species-osteoglossum-bicirrhosum,behaviorFlags,"[""solitary"",""strong-swimmer""]","solitary,strong-swimmer",true
+OP-244,species-osteoglossum-bicirrhosum,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-245,species-osteoglossum-bicirrhosum,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-246,species-osteoglossum-bicirrhosum,predatesInverts,LIKELY,LIKELY,true
+OP-247,species-osteoglossum-bicirrhosum,tankSizeMinL,1500,1500,true
+OP-249,species-osteoglossum-bicirrhosum,knowledgeBody.overview,The silver arowana (Osteoglossum bicirrhosum) is a South Ame,The silver arowana (Osteoglossum bicirrhosum) is a South Ame,true
+OP-250,species-osteoglossum-bicirrhosum,knowledgeBody.adultSizeGrowth,"Adults reach 90-100 cm, with credible reports to 1.2 m, so t","Adults reach 90-100 cm, with credible reports to 1.2 m, so t",true
+OP-251,species-osteoglossum-bicirrhosum,knowledgeBody.tankRequirements,Adults reach around 90-100 cm and need a footprint of at lea,Adults reach around 90-100 cm and need a footprint of at lea,true
+OP-252,species-osteoglossum-bicirrhosum,knowledgeBody.swimmingSpaceFootprint,"Judge the tank by usable floor length and width, not by litr","Judge the tank by usable floor length and width, not by litr",true
+OP-253,species-osteoglossum-bicirrhosum,knowledgeBody.behavior,The silver arowana is the 'water monkey' of the Amazon: it w,The silver arowana is the 'water monkey' of the Amazon: it w,true
+OP-254,species-osteoglossum-bicirrhosum,knowledgeBody.feeding,Surface-oriented predator with an omnivore label but an over,Surface-oriented predator with an omnivore label but an over,true
+OP-255,species-osteoglossum-bicirrhosum,knowledgeBody.compatibility,Anything that fits in its mouth is food - they will eat any ,Anything that fits in its mouth is food - they will eat any ,true
+OP-256,species-osteoglossum-bicirrhosum,knowledgeBody.practicalVerdict,"Verdict: a spectacular but demanding pet fish - plan 1,500+ ","Verdict: a spectacular but demanding pet fish - plan 1,500+ ",true
+OP-259,species-scleropages-formosus,swimmingSpace,HIGH,HIGH,true
+OP-260,species-scleropages-formosus,jumpRisk,HIGH,HIGH,true
+OP-261,species-scleropages-formosus,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-263,species-scleropages-formosus,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-265,species-scleropages-formosus,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-266,species-scleropages-formosus,behaviorFlags,"[""territorial"",""solitary""]","territorial,solitary",true
+OP-267,species-scleropages-formosus,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-268,species-scleropages-formosus,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-269,species-scleropages-formosus,predatesInverts,LIKELY,LIKELY,true
+OP-270,species-scleropages-formosus,tankSizeMinL,1000,1000,true
+OP-272,species-scleropages-formosus,knowledgeBody.overview,"The Asian arowana (Scleropages formosus), known as the drago","The Asian arowana (Scleropages formosus), known as the drago",true
+OP-273,species-scleropages-formosus,knowledgeBody.adultSizeGrowth,"Asian arowanas grow up to 90 cm, so the profile's 60 cm desc","Asian arowanas grow up to 90 cm, so the profile's 60 cm desc",true
+OP-274,species-scleropages-formosus,knowledgeBody.tankRequirements,"Because they can grow to 90 cm, Asian arowanas require large","Because they can grow to 90 cm, Asian arowanas require large",true
+OP-275,species-scleropages-formosus,knowledgeBody.swimmingSpaceFootprint,"Read the 1,000 L minimum as floor area first: a long, wide b","Read the 1,000 L minimum as floor area first: a long, wide b",true
+OP-276,species-scleropages-formosus,knowledgeBody.behavior,Asian arowanas are territorial and normally seen alone or in,Asian arowanas are territorial and normally seen alone or in,true
+OP-277,species-scleropages-formosus,knowledgeBody.feeding,Carnivorous surface feeder: offer a high-quality meaty diet ,Carnivorous surface feeder: offer a high-quality meaty diet ,true
+OP-278,species-scleropages-formosus,knowledgeBody.compatibility,"House it singly, or only with large tankmates of similar siz","House it singly, or only with large tankmates of similar siz",true
+OP-279,species-scleropages-formosus,knowledgeBody.practicalVerdict,"Verdict: a beautiful, expensive and legally complicated fish","Verdict: a beautiful, expensive and legally complicated fish",true
+OP-280,species-scleropages-jardinii,minTankLengthCm,180,180,true
+OP-281,species-scleropages-jardinii,minTankWidthCm,60,60,true
+OP-282,species-scleropages-jardinii,swimmingSpace,HIGH,HIGH,true
+OP-283,species-scleropages-jardinii,jumpRisk,HIGH,HIGH,true
+OP-284,species-scleropages-jardinii,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-285,species-scleropages-jardinii,flowPreference,STILL,STILL,true
+OP-286,species-scleropages-jardinii,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-287,species-scleropages-jardinii,maturityRequirement,REQUIRED,REQUIRED,true
+OP-288,species-scleropages-jardinii,bioload,HIGH,HIGH,true
+OP-289,species-scleropages-jardinii,waterChangeSensitivity,HIGH,HIGH,true
+OP-290,species-scleropages-jardinii,behaviorFlags,"[""solitary"",""territorial"",""strong-swimmer""]","solitary,territorial,strong-swimmer",true
+OP-291,species-scleropages-jardinii,groupSize,"{""min"":1,""max"":1}","{""max"":1,""min"":1}",true
+OP-292,species-scleropages-jardinii,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-293,species-scleropages-jardinii,temperament,Aggressive,Aggressive,true
+OP-294,species-scleropages-jardinii,predatesInverts,LIKELY,LIKELY,true
+OP-295,species-scleropages-jardinii,tankSizeMinL,648,648,true
+OP-296,species-scleropages-jardinii,ghMin,8,8,true
+OP-297,species-scleropages-jardinii,ghMax,15,15,true
+OP-298,species-scleropages-jardinii,knowledgeBody.overview,"The Jardini arowana (Scleropages jardinii), sold as Gulf sar","The Jardini arowana (Scleropages jardinii), sold as Gulf sar",true
+OP-299,species-scleropages-jardinii,knowledgeBody.adultSizeGrowth,"Wild fish reach up to 100 cm standard length, with 55 cm com","Wild fish reach up to 100 cm standard length, with 55 cm com",true
+OP-300,species-scleropages-jardinii,knowledgeBody.tankRequirements,Plan for an adult near 90-100 cm in a tank of at least 180 x,Plan for an adult near 90-100 cm in a tank of at least 180 x,true
+OP-301,species-scleropages-jardinii,knowledgeBody.swimmingSpaceFootprint,Read the minimum as floor area first: 180 x 60 cm of usable ,Read the minimum as floor area first: 180 x 60 cm of usable ,true
+OP-302,species-scleropages-jardinii,knowledgeBody.behavior,Jardini are solitary and territorial: FishBase records them ,Jardini are solitary and territorial: FishBase records them ,true
+OP-303,species-scleropages-jardinii,knowledgeBody.feeding,"Carnivorous surface feeder: offer earthworms, gut-loaded mea","Carnivorous surface feeder: offer earthworms, gut-loaded mea",true
+OP-304,species-scleropages-jardinii,knowledgeBody.compatibility,Community use is possible but never guaranteed: it eats smal,Community use is possible but never guaranteed: it eats smal,true
+OP-305,species-scleropages-jardinii,knowledgeBody.practicalVerdict,"Verdict: an advanced specialist fish - a 90-100 cm, highly a","Verdict: an advanced specialist fish - a 90-100 cm, highly a",true
+OP-306,species-spotted-gar,minTankLengthCm,183,183,true
+OP-307,species-spotted-gar,minTankWidthCm,60,60,true
+OP-308,species-spotted-gar,swimmingSpace,HIGH,HIGH,true
+OP-309,species-spotted-gar,jumpRisk,MODERATE,MODERATE,true
+OP-310,species-spotted-gar,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-312,species-spotted-gar,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-313,species-spotted-gar,maturityRequirement,REQUIRED,REQUIRED,true
+OP-314,species-spotted-gar,bioload,HIGH,HIGH,true
+OP-315,species-spotted-gar,waterChangeSensitivity,MODERATE,MODERATE,true
+OP-316,species-spotted-gar,behaviorFlags,"[""open-water"",""territorial"",""solitary"",""nocturnal""]","open-water,territorial,solitary,nocturnal",true
+OP-317,species-spotted-gar,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-318,species-spotted-gar,predatesInverts,LIKELY,LIKELY,true
+OP-319,species-spotted-gar,ghMin,5,5,true
+OP-320,species-spotted-gar,ghMax,20,20,true
+OP-321,species-spotted-gar,knowledgeBody.overview,"The spotted gar (Lepisosteus oculatus) is a large, surface-o","The spotted gar (Lepisosteus oculatus) is a large, surface-o",true
+OP-322,species-spotted-gar,knowledgeBody.adultSizeGrowth,"Profile sizeCm=100 matches FishBase's common length, though ","Profile sizeCm=100 matches FishBase's common length, though ",true
+OP-323,species-spotted-gar,knowledgeBody.behavior,"ADW records the spotted gar as solitary, territorial and pri","ADW records the spotted gar as solitary, territorial and pri",true
+OP-324,species-spotted-gar,knowledgeBody.tankRequirements,fishstores.org specifies a 180 US gal tank of 6x2x2 ft (appr,fishstores.org specifies a 180 US gal tank of 6x2x2 ft (appr,true
+OP-325,species-spotted-gar,knowledgeBody.swimmingSpaceFootprint,"The 183x60 cm footprint is a practical adult minimum, giving","The 183x60 cm footprint is a practical adult minimum, giving",true
+OP-326,species-spotted-gar,knowledgeBody.feeding,Carnivorous: FishBase lists a piscivore that also takes crus,Carnivorous: FishBase lists a piscivore that also takes crus,true
+OP-327,species-spotted-gar,knowledgeBody.compatibility,SeriouslyFish does not consider the spotted gar a community ,SeriouslyFish does not consider the spotted gar a community ,true
+OP-328,species-spotted-gar,knowledgeBody.practicalVerdict,A spotted gar is a public-aquarium-scale commitment: 183+ cm,A spotted gar is a public-aquarium-scale commitment: 183+ cm,true
+OP-329,species-three-barred-peacock-bass,minTankLengthCm,305,305,true
+OP-330,species-three-barred-peacock-bass,minTankWidthCm,122,122,true
+OP-331,species-three-barred-peacock-bass,swimmingSpace,HIGH,HIGH,true
+OP-332,species-three-barred-peacock-bass,jumpRisk,HIGH,HIGH,true
+OP-333,species-three-barred-peacock-bass,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-334,species-three-barred-peacock-bass,maturityRequirement,SUGGESTED,SUGGESTED,true
+OP-335,species-three-barred-peacock-bass,bioload,HIGH,HIGH,true
+OP-336,species-three-barred-peacock-bass,waterChangeSensitivity,HIGH,HIGH,true
+OP-337,species-three-barred-peacock-bass,behaviorFlags,"[""diurnal"",""open-water"",""territorial""]","diurnal,open-water,territorial",true
+OP-338,species-three-barred-peacock-bass,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-340,species-three-barred-peacock-bass,tankSizeMinL,3397,3397,true
+OP-341,species-three-barred-peacock-bass,tempMinC,27,27,true
+OP-343,species-three-barred-peacock-bass,ghMin,0,0,true
+OP-344,species-three-barred-peacock-bass,ghMax,15,15,true
+OP-345,species-three-barred-peacock-bass,knowledgeBody.overview,Cichla temensis - the three-barred/speckled peacock bass - i,Cichla temensis - the three-barred/speckled peacock bass - i,true
+OP-346,species-three-barred-peacock-bass,knowledgeBody.adultSizeGrowth,Profile sizeCm=70 understates the species: FishBase and USGS,Profile sizeCm=70 understates the species: FishBase and USGS,true
+OP-347,species-three-barred-peacock-bass,knowledgeBody.behavior,Diurnal and territorial: TFH describes C. temensis as bellig,Diurnal and territorial: TFH describes C. temensis as bellig,true
+OP-348,species-three-barred-peacock-bass,knowledgeBody.tankRequirements,SeriouslyFish specifies an adult tank of 10'x3'x4' - about 3,SeriouslyFish specifies an adult tank of 10'x3'x4' - about 3,true
+OP-349,species-three-barred-peacock-bass,knowledgeBody.swimmingSpaceFootprint,Open-water swimmer: TFH warns keepers about the swimming roo,Open-water swimmer: TFH warns keepers about the swimming roo,true
+OP-350,species-three-barred-peacock-bass,knowledgeBody.feeding,Carnivore - profile diet correct. FishBase lists small fish ,Carnivore - profile diet correct. FishBase lists small fish ,true
+OP-351,species-three-barred-peacock-bass,knowledgeBody.compatibility,TFH: peacock bass 'can certainly be kept in community settin,TFH: peacock bass 'can certainly be kept in community settin,true
+OP-352,species-three-barred-peacock-bass,knowledgeBody.practicalVerdict,"A three-barred peacock bass is a 3,000-plus-litre, 27 °C, lo","A three-barred peacock bass is a 3,000-plus-litre, 27 °C, lo",true
+OP-353,species-tiger-shovelnose-catfish,minTankLengthCm,360,360,true
+OP-355,species-tiger-shovelnose-catfish,swimmingSpace,HIGH,HIGH,true
+OP-356,species-tiger-shovelnose-catfish,jumpRisk,HIGH,HIGH,true
+OP-357,species-tiger-shovelnose-catfish,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-358,species-tiger-shovelnose-catfish,flowPreference,MODERATE,MODERATE,true
+OP-359,species-tiger-shovelnose-catfish,maturityRequirement,REQUIRED,REQUIRED,true
+OP-360,species-tiger-shovelnose-catfish,bioload,HIGH,HIGH,true
+OP-362,species-tiger-shovelnose-catfish,behaviorFlags,"[""nocturnal"",""territorial"",""strong-swimmer""]","nocturnal,territorial,strong-swimmer",true
+OP-363,species-tiger-shovelnose-catfish,communitySuitability,UNSUITABLE,UNSUITABLE,true
+OP-364,species-tiger-shovelnose-catfish,predatesInverts,LIKELY,LIKELY,true
+OP-365,species-tiger-shovelnose-catfish,tankSizeMinL,10368,10368,true
+OP-366,species-tiger-shovelnose-catfish,tempMaxC,26,26,true
+OP-367,species-tiger-shovelnose-catfish,ghMin,5,5,true
+OP-368,species-tiger-shovelnose-catfish,ghMax,20,20,true
+OP-370,species-tiger-shovelnose-catfish,knowledgeBody.overview,Pseudoplatystoma tigrinum (tiger shovelnose catfish) is one ,Pseudoplatystoma tigrinum (tiger shovelnose catfish) is one ,true
+OP-371,species-tiger-shovelnose-catfish,knowledgeBody.adultSizeGrowth,"FishBase gives a 130 cm maximum length; SF builds its 10,368","FishBase gives a 130 cm maximum length; SF builds its 10,368",true
+OP-372,species-tiger-shovelnose-catfish,knowledgeBody.behavior,"Nocturnal (FishBase) and piscivorous by night, resting among","Nocturnal (FishBase) and piscivorous by night, resting among",true
+OP-373,species-tiger-shovelnose-catfish,knowledgeBody.tankRequirements,SeriouslyFish's adult tank is 12'x8'x4' (360x240x120 cm) - 1,SeriouslyFish's adult tank is 12'x8'x4' (360x240x120 cm) - 1,true
+OP-374,species-tiger-shovelnose-catfish,knowledgeBody.swimmingSpaceFootprint,A 360 x 240 cm footprint provides both the length and the tu,A 360 x 240 cm footprint provides both the length and the tu,true
+OP-375,species-tiger-shovelnose-catfish,knowledgeBody.feeding,Carnivore: FishBase documents a nocturnal piscivore taking f,Carnivore: FishBase documents a nocturnal piscivore taking f,true
+OP-376,species-tiger-shovelnose-catfish,knowledgeBody.compatibility,Anything fitting into its mouth is potential food - FishBase,Anything fitting into its mouth is potential food - FishBase,true
+OP-377,species-tiger-shovelnose-catfish,knowledgeBody.practicalVerdict,"The tiger shovelnose is a 10,000-litre-class showpiece: 10,3","The tiger shovelnose is a 10,000-litre-class showpiece: 10,3",true
+OP-378,species-walking-catfish,minTankLengthCm,210,210,true
+OP-379,species-walking-catfish,minTankWidthCm,120,120,true
+OP-380,species-walking-catfish,swimmingSpace,HIGH,HIGH,true
+OP-381,species-walking-catfish,jumpRisk,HIGH,HIGH,true
+OP-382,species-walking-catfish,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-383,species-walking-catfish,flowPreference,STILL,STILL,true
+OP-384,species-walking-catfish,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-385,species-walking-catfish,maturityRequirement,NONE,NONE,true
+OP-387,species-walking-catfish,waterChangeSensitivity,LOW,LOW,true
+OP-388,species-walking-catfish,behaviorFlags,"[""territorial"",""burrower""]","territorial,burrower",true
+OP-389,species-walking-catfish,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-391,species-walking-catfish,tankSizeMinL,2268,2268,true
+OP-392,species-walking-catfish,tempMaxC,26,26,true
+OP-393,species-walking-catfish,diet,Omnivore,Omnivore,true
+OP-394,species-walking-catfish,ghMin,2,2,true
+OP-395,species-walking-catfish,ghMax,25,25,true
+OP-396,species-walking-catfish,knowledgeBody.overview,"The walking catfish (Clarias batrachus) is a hardy, air-brea","The walking catfish (Clarias batrachus) is a hardy, air-brea",true
+OP-397,species-walking-catfish,knowledgeBody.adultSizeGrowth,SeriouslyFish's quick-facts give 245 mm SL for an adult and ,SeriouslyFish's quick-facts give 245 mm SL for an adult and ,true
+OP-398,species-walking-catfish,knowledgeBody.behavior,Highly predatory: SF says it 'will eat any fish it can fit i,Highly predatory: SF says it 'will eat any fish it can fit i,true
+OP-399,species-walking-catfish,knowledgeBody.tankRequirements,"SeriouslyFish's adult system is 210 x 120 x 90 cm - about 2,","SeriouslyFish's adult system is 210 x 120 x 90 cm - about 2,",true
+OP-400,species-walking-catfish,knowledgeBody.swimmingSpaceFootprint,SF's 'floor space is more important than depth' plus its 've,SF's 'floor space is more important than depth' plus its 've,true
+OP-401,species-walking-catfish,knowledgeBody.feeding,"Diet correction: omnivore, not carnivore - SF calls it 'a gr","Diet correction: omnivore, not carnivore - SF calls it 'a gr",true
+OP-402,species-walking-catfish,knowledgeBody.compatibility,"SF: 'Definitely not a fish for the general community', yet i","SF: 'Definitely not a fish for the general community', yet i",true
+OP-403,species-walking-catfish,knowledgeBody.practicalVerdict,"A walking catfish needs ~2,268 L of floor space, a tight lid","A walking catfish needs ~2,268 L of floor space, a tight lid",true
+OP-404,species-weeks-bichir,minTankLengthCm,150,150,true
+OP-405,species-weeks-bichir,minTankWidthCm,60,60,true
+OP-406,species-weeks-bichir,swimmingSpace,HIGH,HIGH,true
+OP-407,species-weeks-bichir,jumpRisk,HIGH,HIGH,true
+OP-408,species-weeks-bichir,lidRequired,ESSENTIAL,ESSENTIAL,true
+OP-410,species-weeks-bichir,oxygenSensitivity,NEUTRAL,NEUTRAL,true
+OP-411,species-weeks-bichir,maturityRequirement,NONE,NONE,true
+OP-413,species-weeks-bichir,behaviorFlags,"[""nocturnal"",""solitary"",""cave-dweller""]","nocturnal,solitary,cave-dweller",true
+OP-414,species-weeks-bichir,communitySuitability,CONDITIONAL,CONDITIONAL,true
+OP-415,species-weeks-bichir,predatesInverts,LIKELY,LIKELY,true
+OP-417,species-weeks-bichir,knowledgeBody.overview,Polypterus weeksii - the mottled or Weeks' bichir - is a noc,Polypterus weeksii - the mottled or Weeks' bichir - is a noc,true
+OP-418,species-weeks-bichir,knowledgeBody.adultSizeGrowth,"SF records 550 mm SL and TankBud 54 cm, so profile sizeCm=60","SF records 550 mm SL and TankBud 54 cm, so profile sizeCm=60",true
+OP-419,species-weeks-bichir,knowledgeBody.behavior,"Nocturnal: SF calls it 'an incredibly hardy, nocturnal speci","Nocturnal: SF calls it 'an incredibly hardy, nocturnal speci",true
+OP-420,species-weeks-bichir,knowledgeBody.tankRequirements,SF's adult minimum is a 150 x 60 cm base (~540 L); TankBud s,SF's adult minimum is a 150 x 60 cm base (~540 L); TankBud s,true
+OP-421,species-weeks-bichir,knowledgeBody.swimmingSpaceFootprint,SF: 'Floor space is more important than depth with this spec,SF: 'Floor space is more important than depth with this spec,true
+OP-422,species-weeks-bichir,knowledgeBody.feeding,Diet is correctly recorded as carnivore: SF says it is 'carn,Diet is correctly recorded as carnivore: SF says it is 'carn,true
+OP-423,species-weeks-bichir,knowledgeBody.compatibility,SF: 'Not to be trusted with tankmates it can fit in its mout,SF: 'Not to be trusted with tankmates it can fit in its mout,true
+OP-424,species-weeks-bichir,knowledgeBody.practicalVerdict,"A Weeks' bichir is a manageable monster: 150 x 60 cm floor, ","A Weeks' bichir is a manageable monster: 150 x 60 cm floor, ",true

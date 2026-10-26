@@ -1,0 +1,78 @@
+{
+  "specId": "SPEC_13B_WRITE",
+  "artifact": "INTEGRITY",
+  "generatedAt": "2026-10-22T02:47:40.544Z",
+  "status": "COMPLETE",
+  "content_mutations": 17,
+  "schema_changes": 0,
+  "deploys": 0,
+  "records": {
+    "before": 473,
+    "after": 473
+  },
+  "drafts": {
+    "before": 0,
+    "after": 0
+  },
+  "identity": {
+    "before": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "after": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "relationships": {
+    "before": 3173,
+    "after": 3190,
+    "delta": 17,
+    "expectedDelta": 17
+  },
+  "idempotency": {
+    "additionalOperationsOnReapply": 0,
+    "expected": 0,
+    "pass": true
+  },
+  "artifactIntegrity": {
+    "spec13a": {
+      "dir": "SPEC_13A",
+      "exists": true,
+      "tracked": 14,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec12a": {
+      "dir": "SPEC_12A",
+      "exists": true,
+      "tracked": 14,
+      "mismatches": 1,
+      "bad": [
+        "tests/spec12a-plan.test.ts"
+      ],
+      "missing": []
+    },
+    "spec12b": {
+      "dir": "SPEC_12B",
+      "exists": true,
+      "tracked": 10,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec13b": {
+      "dir": "SPEC_13B",
+      "exists": true,
+      "tracked": 9,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec13bWrite": {
+      "dir": "SPEC_13B_WRITE",
+      "exists": false,
+      "tracked": 0,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    }
+  },
+  "verdict": "CLEAN"
+}

@@ -1,0 +1,130 @@
+{
+  "specId": "SPEC_11",
+  "stage": "A",
+  "mode": "READ-ONLY research/planning - no Sanity writes",
+  "generatedAt": "2026-10-17T19:49:51.841Z",
+  "finalRun": true,
+  "sanityWrites": 0,
+  "mutationCalls": 0,
+  "gatesPassed": 15,
+  "gatesFailed": 0,
+  "checks": [
+    {
+      "id": "G1",
+      "name": "Inventory: 473 unchanged / domain counts frozen",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "G2",
+      "name": "Identity: canonical hash unchanged vs SPEC 10M baseline",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "G9a",
+      "name": "Determinism: repeated live reads normalize identically",
+      "pass": true,
+      "detail": "mismatchedTypes=0"
+    },
+    {
+      "id": "G8",
+      "name": "No regression: SEO/titles/slugs/rels/_updatedAt unchanged vs freeze",
+      "pass": true,
+      "detail": "seals=MATCH recordDrift=0 revisionDrift=0"
+    },
+    {
+      "id": "G3",
+      "name": "Scope: only 17 Wave 1 species targets; no banned destinations",
+      "pass": true,
+      "detail": "queue=17 mutOffQueue=0 regOffQueue=0 banned=0"
+    },
+    {
+      "id": "G4",
+      "name": "Research: every proposed claim has evidence metadata; no pending claim proposed",
+      "pass": true,
+      "detail": "mutations=424 bad=0 pendingProposed=0 register=441 evidence=441 evidenceMissing=0"
+    },
+    {
+      "id": "G5",
+      "name": "Applicability: REQUIRED/CONDITIONAL rules not bypassed",
+      "pass": true,
+      "detail": "badApplic=0 badPriority=0 safetyNotRequired=0"
+    },
+    {
+      "id": "G6",
+      "name": "Safety: unresolved P0 gaps never marked complete; flagged rows = openP0",
+      "pass": true,
+      "detail": "unsafeComplete=0 wave1OpenP0=7 pendingSafetyConflicts=7"
+    },
+    {
+      "id": "G7",
+      "name": "Schema: every destination exists in SPEC 10M schema",
+      "pass": true,
+      "detail": "invalidDestinations=0"
+    },
+    {
+      "id": "G9b",
+      "name": "Determinism: Stage A artifacts regenerate byte-identical",
+      "pass": true,
+      "detail": "researchExit=0 planExit=0 identical=true"
+    },
+    {
+      "id": "G10a",
+      "name": "Build: lint passes",
+      "pass": true,
+      "detail": "exit=0"
+    },
+    {
+      "id": "G10b",
+      "name": "Build: typecheck passes",
+      "pass": true,
+      "detail": "exit=0"
+    },
+    {
+      "id": "G10c",
+      "name": "Build: focused SPEC 10M schema tests pass (108)",
+      "pass": true,
+      "detail": "exit=0 passed=108"
+    },
+    {
+      "id": "G10d",
+      "name": "Build: full tests only fail known tests/compare.test.ts baseline failure",
+      "pass": true,
+      "detail": "testsFailed=1 filesFailed=1 compareTestMentioned=true"
+    },
+    {
+      "id": "G10e",
+      "name": "Build: production build passes",
+      "pass": true,
+      "detail": "exit=0"
+    }
+  ],
+  "artifactHashes": {
+    "SPEC_11_HUSBANDRY_ENRICHMENT_REPORT.md": "06d373ed14ec4400995d449ba54632aae9f72c41ec7590b0382ba4cd01a8b059",
+    "BASELINE.json": "9fcb98da116bd4617f5cd4a5267223b197b16c1d9fa4e0d30ff89dab7b1d7f28",
+    "WAVE_1_QUEUE.csv": "f1e98279598bd42f6b2d944b15ab628ced5117d5e5c1a11423a5aa3dc7ec9545",
+    "RESEARCH_REGISTER.csv": "60d95c3b26b243b009522c34efadb39e3f8fca011cd3fb6bc81e37e767a539a9",
+    "EVIDENCE_MAP.csv": "64a0ccbeef03cd5dd5bb9693bd204a2c09a80c81b334162d14c8a1d0bce7fc89",
+    "PROPOSED_MUTATIONS.csv": "6b1f7bb175f086851d045150bf18c3cb6defbbc132ed3912fd0cd43fdb2f0cfd",
+    "COMPLETENESS_BEFORE.csv": "44d4429193029b932a53480c9427a3e70ac23cef336688050dd54cd2d3fbe184",
+    "COMPLETENESS_AFTER_PLAN.csv": "861dab6fc11ab45be1393819ac88adaaf4154d85e8b6e7d3713a376622b91f98",
+    "CONFLICTS.csv": "82fa46a124f905a080f7d28b76859a38b21eb75169f91248d8d6e7048d6deb0c",
+    "EXECUTION_LOG.md": "f25f72c3b1fd0632945ad211eea56371bfcb59ff95ee1dcc9d5dbe38aa0f870c"
+  },
+  "artifacts": [
+    "SPEC_11_HUSBANDRY_ENRICHMENT_REPORT.md",
+    "BASELINE.json",
+    "WAVE_1_QUEUE.csv",
+    "RESEARCH_REGISTER.csv",
+    "EVIDENCE_MAP.csv",
+    "PROPOSED_MUTATIONS.csv",
+    "COMPLETENESS_BEFORE.csv",
+    "COMPLETENESS_AFTER_PLAN.csv",
+    "CONFLICTS.csv",
+    "EXECUTION_LOG.md",
+    "INTEGRITY.json"
+  ],
+  "mirror": "reports/SPEC_11 (byte-identical, verified in --final)",
+  "status": "SPEC 11 STAGE A - COMPLETE"
+}

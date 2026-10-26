@@ -1,0 +1,237 @@
+rowType,domain,requirement,label,severity,records,EXCELLENT,GOOD,USABLE_WITH_GAPS,THIN,CRITICAL_GAPS,covered,partial,missing,na,uncertain,researchRequired,gapsCritical,gapsHigh,gapsMedium,gapsLow,affectedRecords
+DOMAIN_STATUS,species,,,,218,0,0,0,201,17,,,,,,,,,,,
+DOMAIN_STATUS,plant,,,,62,0,0,0,62,0,,,,,,,,,,,
+DOMAIN_STATUS,invertebrate,,,,56,0,0,0,56,0,,,,,,,,,,,
+DOMAIN_STATUS,coral,,,,48,0,0,0,48,0,,,,,,,,,,,
+DOMAIN_STATUS,equipment,,,,46,0,0,0,45,1,,,,,,,,,,,
+DOMAIN_STATUS,problem,,,,43,0,0,8,35,0,,,,,,,,,,,
+REQUIREMENT,species,common_name,Common name,LOW,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,scientific_name,Scientific name,LOW,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,taxonomic_context,Taxonomic context (family + group),LOW,,,,,,,106,93,19,0,0,112,0,0,0,112,112
+REQUIREMENT,species,natural_distribution,Natural distribution,MEDIUM,,,,,,,114,83,21,0,0,104,0,0,104,0,104
+REQUIREMENT,species,habitat,Natural habitat description,MEDIUM,,,,,,,34,108,76,0,0,184,0,0,184,0,184
+REQUIREMENT,species,adult_size,Adult size,HIGH,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,growth_expectations,Growth expectations,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,juvenile_vs_adult,Juvenile vs adult differences,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,adult_footprint,Adult footprint implications (volume != footprint),HIGH,,,,,,,3,215,0,0,0,215,15,200,0,0,215
+REQUIREMENT,species,growth_tank_transition,Growth-related tank transition guidance,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,species,temperature,Temperature range,HIGH,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,ph,pH range,MEDIUM,,,,,,,217,0,1,0,0,1,0,0,1,0,1
+REQUIREMENT,species,gh,GH range,MEDIUM,,,,,,,122,0,96,0,0,96,0,0,96,0,96
+REQUIREMENT,species,kh,KH / carbonate hardness,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,species,salinity,Salinity / brackish-marine chemistry,HIGH,,,,,,,2,0,54,162,0,54,0,54,0,0,54
+REQUIREMENT,species,species_specific_chemistry,Other species-specific chemistry sensitivities,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,min_tank_volume,Minimum tank volume,HIGH,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,min_tank_dimensions,Minimum tank dimensions / length,HIGH,,,,,,,0,0,218,0,0,218,16,202,0,0,218
+REQUIREMENT,species,tank_footprint,Tank footprint / width requirement,HIGH,,,,,,,0,0,218,0,0,218,16,202,0,0,218
+REQUIREMENT,species,swimming_space,Swimming space / uninterrupted swimming area,HIGH,,,,,,,3,0,215,0,0,215,15,200,0,0,215
+REQUIREMENT,species,open_water_requirement,Open-water requirement,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,bottom_area,Bottom area requirement,MEDIUM,,,,,,,6,0,46,166,0,46,0,0,46,0,46
+REQUIREMENT,species,vertical_space,Vertical space requirement,MEDIUM,,,,,,,0,0,0,218,0,0,0,0,0,0,0
+REQUIREMENT,species,hiding_structures,Hiding structures requirement,MEDIUM,,,,,,,9,0,51,158,0,51,0,0,51,0,51
+REQUIREMENT,species,jumping_risk,Escape / jumping risk,HIGH,,,,,,,1,0,217,0,0,217,4,213,0,0,217
+REQUIREMENT,species,lid_requirement,Lid / cover requirement,HIGH,,,,,,,6,0,212,0,0,212,3,209,0,0,212
+REQUIREMENT,species,flow_requirement,Flow / current requirement,MEDIUM,,,,,,,2,0,216,0,0,216,0,0,216,0,216
+REQUIREMENT,species,oxygenation,Oxygenation requirement,HIGH,,,,,,,1,0,217,0,0,217,0,217,0,0,217
+REQUIREMENT,species,mature_aquarium,Mature / established aquarium requirement,HIGH,,,,,,,3,0,215,0,0,215,0,215,0,0,215
+REQUIREMENT,species,temperament,Temperament,HIGH,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,territoriality,Territoriality,HIGH,,,,,,,14,0,204,0,0,204,0,204,0,0,204
+REQUIREMENT,species,schooling,Schooling / shoaling requirement,HIGH,,,,,,,105,31,82,0,0,113,0,113,0,0,113
+REQUIREMENT,species,solitary,Solitary behavior,MEDIUM,,,,,,,26,0,192,0,0,192,0,0,192,0,192
+REQUIREMENT,species,predator,Predator status,HIGH,,,,,,,105,0,113,0,0,113,0,113,0,0,113
+REQUIREMENT,species,diet_type,Diet,HIGH,,,,,,,218,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,species,nocturnal,Nocturnal behavior,MEDIUM,,,,,,,3,0,215,0,0,215,0,0,215,0,215
+REQUIREMENT,species,diurnal,Diurnal / daytime behavior,LOW,,,,,,,0,0,218,0,0,218,0,0,0,218,218
+REQUIREMENT,species,burrower,Burrowing behavior,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,cave_dependent,Cave dependence,MEDIUM,,,,,,,2,0,216,0,0,216,0,0,216,0,216
+REQUIREMENT,species,open_water_swimmer,Open-water swimmer behavior,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,strong_swimmer,Strong swimmer behavior,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,species,timid,Timid / skittish behavior,MEDIUM,,,,,,,9,0,209,0,0,209,0,0,209,0,209
+REQUIREMENT,species,community_suitability,Community suitability,HIGH,,,,,,,52,166,0,0,0,166,0,166,0,0,166
+REQUIREMENT,species,feeding_frequency,Feeding frequency (if meaningful),LOW,,,,,,,0,0,218,0,0,218,0,0,0,218,218
+REQUIREMENT,species,feeding_method,Feeding type / foods accepted,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,juvenile_adult_diet,Juvenile/adult dietary differences,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,special_nutrition,Special nutritional requirements,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,feeding_competition,Feeding competition,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,species,predatory_feeding_behavior,Predatory feeding behavior,MEDIUM,,,,,,,18,0,82,118,0,82,0,0,82,0,82
+REQUIREMENT,species,compatible_tankmates,Compatible tankmates (relationship),HIGH,,,,,,,0,14,204,0,0,0,0,218,0,0,218
+REQUIREMENT,species,incompatible_tankmates,Incompatible tankmates / must-avoid combinations,HIGH,,,,,,,1,0,217,0,0,217,0,217,0,0,217
+REQUIREMENT,species,size_based_predation,Size-based predation risk,HIGH,,,,,,,7,0,93,118,0,93,0,93,0,0,93
+REQUIREMENT,species,territorial_conflicts,Territorial conflicts,MEDIUM,,,,,,,14,0,204,0,0,204,0,0,204,0,204
+REQUIREMENT,species,fin_nipping,Fin-nipping risk,HIGH,,,,,,,3,0,215,0,0,215,0,215,0,0,215
+REQUIREMENT,species,compatibility_competition,Competition for resources,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,species,compat_warnings,Special compatibility warnings,HIGH,,,,,,,5,33,180,0,0,213,0,213,0,0,213
+REQUIREMENT,species,coral_interaction,Coral interaction / reef safety depth (§7C),HIGH,,,,,,,1,42,11,164,0,53,0,53,0,0,53
+REQUIREMENT,species,invertebrate_predation,Invertebrate predation risk,HIGH,,,,,,,0,0,100,118,0,100,0,100,0,0,100
+REQUIREMENT,species,water_change_sensitivity,Water-change sensitivity,HIGH,,,,,,,0,0,218,0,0,218,0,218,0,0,218
+REQUIREMENT,species,waste_bioload,Waste production / bioload,MEDIUM,,,,,,,1,0,217,0,0,217,0,0,217,0,217
+REQUIREMENT,species,maintenance_burden,Maintenance burden,MEDIUM,,,,,,,4,214,0,0,0,214,0,0,214,0,214
+REQUIREMENT,species,special_husbandry,Special husbandry requirements,LOW,,,,,,,0,0,218,0,0,218,0,0,0,218,218
+REQUIREMENT,species,sexual_differences,Sexual differences (where useful),MEDIUM,,,,,,,28,0,190,0,0,190,0,0,190,0,190
+REQUIREMENT,species,spawning_behavior,Spawning behavior,MEDIUM,,,,,,,6,0,212,0,0,212,0,0,212,0,212
+REQUIREMENT,species,breeding_difficulty,Breeding difficulty,MEDIUM,,,,,,,2,0,216,0,0,216,0,0,216,0,216
+REQUIREMENT,species,breeding_requirements,Breeding special requirements,MEDIUM,,,,,,,0,0,218,0,0,218,0,0,218,0,218
+REQUIREMENT,plant,common_name,Common name,LOW,,,,,,,62,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,plant,scientific_name,Scientific name,LOW,,,,,,,62,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,plant,plant_type,Plant type / group,MEDIUM,,,,,,,53,0,9,0,0,9,0,0,9,0,9
+REQUIREMENT,plant,growth_form_plant,Growth form,MEDIUM,,,,,,,62,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,plant,natural_habitat_plant,Natural habitat,MEDIUM,,,,,,,0,29,33,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,light_requirement,Light requirement (qualitative),HIGH,,,,,,,62,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,plant,light_intensity,Light intensity / acclimation guidance,MEDIUM,,,,,,,1,0,61,0,0,61,0,20,41,0,61
+REQUIREMENT,plant,par,PAR guidance,MEDIUM,,,,,,,0,0,62,0,0,62,0,21,41,0,62
+REQUIREMENT,plant,photoperiod,Photoperiod considerations,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,light_acclimation,Light acclimation (transition),MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,co2_requirement,CO2 requirement,HIGH,,,,,,,62,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,plant,low_tech_suitability,Low-tech suitability,MEDIUM,,,,,,,46,16,0,0,0,16,0,0,16,0,16
+REQUIREMENT,plant,co2_response,CO2 response / low-tech behavior,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,macro_nutrients,Macro nutrients,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,micro_nutrients,Micro nutrients / trace elements,MEDIUM,,,,,,,2,0,60,0,0,60,0,0,60,0,60
+REQUIREMENT,plant,root_vs_water_column,Root feeding vs water-column feeding,MEDIUM,,,,,,,0,0,41,21,0,41,0,0,41,0,41
+REQUIREMENT,plant,substrate_requirements,Substrate requirements,HIGH,,,,,,,1,0,40,21,0,40,0,40,0,0,40
+REQUIREMENT,plant,fertilization,Fertilization implications,HIGH,,,,,,,0,0,62,0,0,62,0,62,0,0,62
+REQUIREMENT,plant,deficiency_sensitivity,Deficiency sensitivity,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,temperature_plant,Temperature range,MEDIUM,,,,,,,59,0,3,0,0,3,0,0,3,0,3
+REQUIREMENT,plant,ph_plant,pH range,MEDIUM,,,,,,,59,0,3,0,0,3,0,0,3,0,3
+REQUIREMENT,plant,gh_plant,GH preference,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,kh_plant,KH preference,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,placement,Placement (fore/mid/back/floating/epiphyte),MEDIUM,,,,,,,59,0,3,0,0,3,0,0,3,0,3
+REQUIREMENT,plant,epiphyte_attachment,Epiphyte / hardscape attachment,MEDIUM,,,,,,,6,0,8,48,0,8,0,0,8,0,8
+REQUIREMENT,plant,space_requirements_plant,Space requirements / spread room,MEDIUM,,,,,,,4,0,58,0,0,58,0,0,58,0,58
+REQUIREMENT,plant,growth_rate,Growth rate,LOW,,,,,,,59,0,3,0,0,3,0,0,0,3,3
+REQUIREMENT,plant,adult_height,Adult height,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,spread_width,Spread / width,MEDIUM,,,,,,,14,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,plant,propagation,Propagation,MEDIUM,,,,,,,51,0,11,0,0,11,0,0,11,0,11
+REQUIREMENT,plant,trimming,Trimming / pruning,MEDIUM,,,,,,,19,0,43,0,0,43,0,0,43,0,43
+REQUIREMENT,plant,flow_tolerance,Flow tolerance,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,algae_sensitivity,Algae sensitivity,MEDIUM,,,,,,,2,0,60,0,0,60,0,0,60,0,60
+REQUIREMENT,plant,melting,Melting behavior,MEDIUM,,,,,,,1,0,61,0,0,61,0,0,61,0,61
+REQUIREMENT,plant,nutrient_deficiency_problems,Nutrient deficiency problems,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,light_problems,Light-related problems,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,co2_problems,CO2-related problems,MEDIUM,,,,,,,0,0,62,0,0,62,0,0,62,0,62
+REQUIREMENT,plant,transition_issues,Transition / acclimation issues,MEDIUM,,,,,,,1,0,61,0,0,61,0,0,61,0,61
+REQUIREMENT,invertebrate,common_name,Common name,LOW,,,,,,,56,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,invertebrate,scientific_name_inv,Scientific name,LOW,,,,,,,56,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,invertebrate,type_group,Type / group,MEDIUM,,,,,,,56,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,invertebrate,natural_habitat_inv,Natural role / habitat,MEDIUM,,,,,,,8,24,24,0,0,48,0,0,48,0,48
+REQUIREMENT,invertebrate,temperature_inv,Temperature range,HIGH,,,,,,,50,0,6,0,0,6,0,6,0,0,6
+REQUIREMENT,invertebrate,salinity_inv,Salinity,HIGH,,,,,,,1,0,27,28,0,27,0,27,0,0,27
+REQUIREMENT,invertebrate,ph_inv,pH range,HIGH,,,,,,,50,0,6,0,0,6,0,6,0,0,6
+REQUIREMENT,invertebrate,gh_kh_inv,GH / KH where relevant,MEDIUM,,,,,,,5,0,51,0,0,51,0,0,51,0,51
+REQUIREMENT,invertebrate,calcium_inv,Calcium where relevant (shells/molts),HIGH,,,,,,,2,0,43,11,0,43,0,43,0,0,43
+REQUIREMENT,invertebrate,magnesium_inv,Magnesium where relevant,MEDIUM,,,,,,,0,0,28,28,0,28,0,0,28,0,28
+REQUIREMENT,invertebrate,stability_inv,Stability requirements,HIGH,,,,,,,8,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,invertebrate,diet_inv,Diet type,HIGH,,,,,,,50,0,6,0,0,6,0,6,0,0,6
+REQUIREMENT,invertebrate,natural_food,Natural food source,HIGH,,,,,,,17,0,39,0,0,39,0,39,0,0,39
+REQUIREMENT,invertebrate,supplemental_feeding,Supplemental feeding,MEDIUM,,,,,,,8,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,invertebrate,starvation_risk,Risk of starvation,HIGH,,,,,,,3,0,53,0,0,53,0,53,0,0,53
+REQUIREMENT,invertebrate,molting,Molting knowledge,HIGH,,,,,,,1,0,30,25,0,30,0,30,0,0,30
+REQUIREMENT,invertebrate,molting_minerals,Calcium/mineral needs for molting,HIGH,,,,,,,0,0,43,13,0,43,0,43,0,0,43
+REQUIREMENT,invertebrate,molting_hazards,Molting hazards,MEDIUM,,,,,,,0,0,31,25,0,31,0,0,31,0,31
+REQUIREMENT,invertebrate,post_molt_vulnerability,Post-molt vulnerability,MEDIUM,,,,,,,0,0,31,25,0,31,0,0,31,0,31
+REQUIREMENT,invertebrate,fish_predators,Fish predator risk,HIGH,,,,,,,1,0,46,9,0,46,0,46,0,0,46
+REQUIREMENT,invertebrate,invertebrate_predators,Invertebrate predator risk,MEDIUM,,,,,,,0,0,56,0,0,56,0,0,56,0,56
+REQUIREMENT,invertebrate,temperament_inv,Aggression / temperament,MEDIUM,,,,,,,50,0,6,0,0,6,0,0,6,0,6
+REQUIREMENT,invertebrate,competition_inv,Competition,MEDIUM,,,,,,,0,0,56,0,0,56,0,0,56,0,56
+REQUIREMENT,invertebrate,reef_compat_inv,Reef compatibility,HIGH,,,,,,,27,0,1,28,0,1,0,1,0,0,1
+REQUIREMENT,invertebrate,min_tank_inv,Minimum tank requirements,MEDIUM,,,,,,,2,0,54,0,0,54,0,0,54,0,54
+REQUIREMENT,invertebrate,hiding_areas,Hiding areas,MEDIUM,,,,,,,6,0,50,0,0,50,0,0,50,0,50
+REQUIREMENT,invertebrate,substrate_inv,Substrate requirements,MEDIUM,,,,,,,8,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,invertebrate,rockwork,Rockwork requirements,MEDIUM,,,,,,,5,0,22,29,0,22,0,0,22,0,22
+REQUIREMENT,invertebrate,escape_risk,Escape risk,HIGH,,,,,,,3,0,28,25,0,28,0,28,0,0,28
+REQUIREMENT,invertebrate,reproduction,Reproduction / breeding behavior,MEDIUM,,,,,,,11,0,45,0,0,45,0,0,45,0,45
+REQUIREMENT,invertebrate,breeding_difficulty_inv,Breeding difficulty,MEDIUM,,,,,,,2,0,54,0,0,54,0,0,54,0,54
+REQUIREMENT,invertebrate,larval_requirements,Larval requirements (where relevant),LOW,,,,,,,1,0,55,0,0,55,0,0,0,55,55
+REQUIREMENT,invertebrate,mature_aquarium_inv,Mature aquarium requirement,HIGH,,,,,,,1,0,36,19,0,36,0,36,0,0,36
+REQUIREMENT,invertebrate,established_biofilm,Established biofilm requirement,HIGH,,,,,,,0,0,43,13,0,43,0,43,0,0,43
+REQUIREMENT,invertebrate,specialized_food_inv,Specialized food,MEDIUM,,,,,,,1,0,55,0,0,55,0,0,55,0,55
+REQUIREMENT,invertebrate,specialized_habitat_inv,Specialized habitat,LOW,,,,,,,6,0,50,0,0,50,0,0,0,50,50
+REQUIREMENT,coral,common_name,Common name,LOW,,,,,,,48,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,coral,scientific_name_coral,Scientific name,LOW,,,,,,,48,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,coral,coral_type,Coral type,MEDIUM,,,,,,,48,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,coral,coral_group,Coral group / family context,MEDIUM,,,,,,,44,0,4,0,0,4,0,0,4,0,4
+REQUIREMENT,coral,growth_form_coral,Growth form (branching/plating/encrusting),MEDIUM,,,,,,,18,0,30,0,0,30,0,0,30,0,30
+REQUIREMENT,coral,light_coral,Qualitative lighting requirement,HIGH,,,,,,,48,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,coral,par_coral,PAR guidance,MEDIUM,,,,,,,0,0,48,0,0,48,0,11,37,0,48
+REQUIREMENT,coral,placement_coral,Placement,HIGH,,,,,,,43,0,5,0,0,5,0,5,0,0,5
+REQUIREMENT,coral,acclimation_coral,Light acclimation,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,lighting_risks,Lighting-related risks,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,flow_coral,Flow requirement,HIGH,,,,,,,43,0,5,0,0,5,0,5,0,0,5
+REQUIREMENT,coral,flow_pattern,"Flow pattern (direct vs indirect, laminar vs turbulent)",MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,flow_tissue_considerations,Flow/tissue considerations,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,temperature_coral,Temperature range,HIGH,,,,,,,41,0,7,0,0,7,0,7,0,0,7
+REQUIREMENT,coral,salinity_coral,Salinity / specific gravity,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,ph_coral,pH,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,alkalinity,Alkalinity (dKH),HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,calcium,Calcium,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,magnesium,Magnesium,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,nitrate,Nitrate,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,phosphate,Phosphate,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,stability,Water stability requirements,HIGH,,,,,,,3,0,45,0,0,45,0,45,0,0,45
+REQUIREMENT,coral,photosynthetic,Photosynthetic role,MEDIUM,,,,,,,46,0,2,0,0,2,0,0,2,0,2
+REQUIREMENT,coral,feeding_coral,Feeding,MEDIUM,,,,,,,7,0,41,0,0,41,0,0,41,0,41
+REQUIREMENT,coral,feeding_type_coral,Feeding type,LOW,,,,,,,0,0,48,0,0,48,0,0,0,48,48
+REQUIREMENT,coral,feeding_frequency_coral,Feeding frequency (meaningful for NPS),MEDIUM,,,,,,,0,0,4,44,0,4,0,4,0,0,4
+REQUIREMENT,coral,nutrient_availability,Nutrient availability,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,growth_rate_coral,Growth rate,MEDIUM,,,,,,,7,0,41,0,0,41,0,0,41,0,41
+REQUIREMENT,coral,space_coral,Space requirements,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,aggression,Aggression level,HIGH,,,,,,,41,0,7,0,0,7,0,7,0,0,7
+REQUIREMENT,coral,sweeper_tentacles,Sweeper tentacles,HIGH,,,,,,,1,0,47,0,0,47,0,47,0,0,47
+REQUIREMENT,coral,chemical_warfare,Chemical warfare (allelopathy),HIGH,,,,,,,1,0,47,0,0,47,0,47,0,0,47
+REQUIREMENT,coral,stinging,Stinging risk,MEDIUM,,,,,,,1,0,47,0,0,47,0,0,47,0,47
+REQUIREMENT,coral,placement_neighbors,Placement relative to neighbors,HIGH,,,,,,,2,0,46,0,0,46,0,46,0,0,46
+REQUIREMENT,coral,reef_safe_status,Reef-safe status,HIGH,,,,,,,48,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,coral,reef_caveats,Species-dependent reef caveats,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,coral_interaction_coral,Coral interaction / neighbor effects,MEDIUM,,,,,,,1,0,47,0,0,47,0,0,47,0,47
+REQUIREMENT,coral,fish_interaction_coral,Fish interaction,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,invertebrate_interaction_coral,Invertebrate interaction,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,bleaching,Bleaching knowledge,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,stn_rtn,STN / RTN / tissue recession,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,pests_coral,Pests knowledge,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,coral,algae_coral,Algae problems,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,flow_stress_coral,Flow stress problems,MEDIUM,,,,,,,0,0,48,0,0,48,0,0,48,0,48
+REQUIREMENT,coral,chemistry_problems,Chemistry-related problems,HIGH,,,,,,,0,0,48,0,0,48,0,48,0,0,48
+REQUIREMENT,equipment,purpose,What it does / purpose,MEDIUM,,,,,,,39,7,0,0,0,7,0,0,7,0,7
+REQUIREMENT,equipment,problem_solved,What problem it solves,MEDIUM,,,,,,,17,0,29,0,0,29,0,0,29,0,29
+REQUIREMENT,equipment,suitable_tank_size,Suitable tank size range,HIGH,,,,,,,26,0,20,0,0,20,0,20,0,0,20
+REQUIREMENT,equipment,water_type_suitability,Freshwater/marine/reef suitability,HIGH,,,,,,,46,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,equipment,tank_type,Tank type / equipment category,MEDIUM,,,,,,,46,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,equipment,flow_capacity,Flow capacity (L/h),HIGH,,,,,,,6,0,3,37,0,3,0,3,0,0,3
+REQUIREMENT,equipment,turnover,Turnover guidance,HIGH,,,,,,,0,0,9,37,0,9,0,9,0,0,9
+REQUIREMENT,equipment,filtration_capacity,Filtration capacity / rated load,HIGH,,,,,,,3,0,1,42,0,1,0,1,0,0,1
+REQUIREMENT,equipment,load_limitations,Load limitations (stocking vs capacity),HIGH,,,,,,,0,0,46,0,0,46,0,46,0,0,46
+REQUIREMENT,equipment,practical_capacity,Practical vs marketing capacity,LOW,,,,,,,0,0,46,0,0,46,0,0,0,46,46
+REQUIREMENT,equipment,best_use_case,Best use case,MEDIUM,,,,,,,8,0,38,0,0,38,0,0,38,0,38
+REQUIREMENT,equipment,installation,Installation guidance,MEDIUM,,,,,,,9,0,37,0,0,37,0,0,37,0,37
+REQUIREMENT,equipment,placement_equipment,Placement guidance,MEDIUM,,,,,,,15,0,31,0,0,31,0,0,31,0,31
+REQUIREMENT,equipment,configuration,Configuration guidance,MEDIUM,,,,,,,5,0,41,0,0,41,0,0,41,0,41
+REQUIREMENT,equipment,limitations,What it cannot do / limitations,HIGH,,,,,,,37,0,9,0,0,9,1,8,0,0,9
+REQUIREMENT,equipment,when_inadequate,When it becomes inadequate,HIGH,,,,,,,0,0,46,0,0,46,0,46,0,0,46
+REQUIREMENT,equipment,noise_heat,Noise / heat / running-cost implications,MEDIUM,,,,,,,8,0,38,0,0,38,0,0,38,0,38
+REQUIREMENT,equipment,compatible_equipment,Compatible equipment / system interactions,MEDIUM,,,,,,,2,0,44,0,0,44,0,0,44,0,44
+REQUIREMENT,equipment,system_interactions,System interactions (sump/canister/inline),MEDIUM,,,,,,,8,0,38,0,0,38,0,0,38,0,38
+REQUIREMENT,equipment,reef_fresh_constraints,Reef vs freshwater constraints,MEDIUM,,,,,,,0,0,46,0,0,46,0,0,46,0,46
+REQUIREMENT,equipment,cleaning,Cleaning / maintenance routine,HIGH,,,,,,,14,0,32,0,0,32,0,32,0,0,32
+REQUIREMENT,equipment,replacement,Replacement schedule / parts,MEDIUM,,,,,,,8,0,38,0,0,38,0,0,38,0,38
+REQUIREMENT,equipment,consumables,Consumables,MEDIUM,,,,,,,6,0,40,0,0,40,0,0,40,0,40
+REQUIREMENT,equipment,failure_modes,Failure modes,HIGH,,,,,,,4,0,42,0,0,42,0,42,0,0,42
+REQUIREMENT,equipment,common_misuse,Common misuse,HIGH,,,,,,,0,0,46,0,0,46,0,46,0,0,46
+REQUIREMENT,equipment,overflow_risk,Overflow / water-damage risk,HIGH,,,,,,,0,0,11,35,0,11,0,11,0,0,11
+REQUIREMENT,equipment,electrical_safety,Electrical safety,HIGH,,,,,,,2,0,9,35,0,9,0,9,0,0,9
+REQUIREMENT,equipment,power_draw,Power draw (W),LOW,,,,,,,24,0,22,0,0,22,0,0,0,22,22
+REQUIREMENT,problem,symptoms,Observable symptoms,HIGH,,,,,,,43,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,problem,what_it_indicates,What it may indicate (primary causes),HIGH,,,,,,,43,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,problem,differential_causes,Differential causes (multiple),HIGH,,,,,,,43,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,problem,how_to_distinguish,How to distinguish between causes,HIGH,,,,,,,5,0,38,0,0,38,0,38,0,0,38
+REQUIREMENT,problem,first_check,First check / highest-priority observations,HIGH,,,,,,,43,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,problem,secondary_causes,Secondary / contributing causes,MEDIUM,,,,,,,28,0,15,0,0,15,0,0,15,0,15
+REQUIREMENT,problem,environmental_causes,Environmental causes,MEDIUM,,,,,,,36,0,7,0,0,7,0,0,7,0,7
+REQUIREMENT,problem,husbandry_causes,Husbandry causes,MEDIUM,,,,,,,16,0,27,0,0,27,0,0,27,0,27
+REQUIREMENT,problem,immediate_action,Immediate action,HIGH,,,,,,,9,0,34,0,0,34,0,34,0,0,34
+REQUIREMENT,problem,corrective_action,Corrective action / treatment,HIGH,,,,,,,23,0,20,0,0,20,0,20,0,0,20
+REQUIREMENT,problem,recovery_expectations,Recovery expectations,MEDIUM,,,,,,,13,0,30,0,0,30,0,0,30,0,30
+REQUIREMENT,problem,what_not_to_do,What NOT to do,HIGH,,,,,,,43,0,0,0,0,0,0,0,0,0,0
+REQUIREMENT,problem,overcorrection_risks,Overcorrection risks,MEDIUM,,,,,,,4,0,39,0,0,39,0,0,39,0,39
+REQUIREMENT,problem,prevention,Long-term prevention,MEDIUM,,,,,,,2,0,41,0,0,41,0,0,41,0,41
+REQUIREMENT,problem,monitoring,Monitoring guidance,MEDIUM,,,,,,,4,0,39,0,0,39,0,0,39,0,39
+REQUIREMENT,problem,maintenance_prevention,Maintenance-linked prevention,MEDIUM,,,,,,,10,0,33,0,0,33,0,0,33,0,33
+REQUIREMENT,problem,escalation,Escalation: when hobbyist help is insufficient,HIGH,,,,,,,0,0,43,0,0,43,0,43,0,0,43

@@ -100,6 +100,136 @@ export default defineType({
       name: 'relatedPosts', title: 'Related Posts', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }],
     }),
+    defineField({
+      name: 'growthForm', title: 'Growth Form', type: 'string',
+      options: { list: ['BRANCHING', 'PLATING', 'ENCRUSTING', 'MASSIVE', 'FOLIACEOUS'] },
+    }),
+    defineField({
+      name: 'parMin', title: 'Min PAR', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'parMax', title: 'Max PAR', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.parMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'parMax must be >= parMin';
+      }),
+    }),
+    defineField({
+      name: 'flowPattern', title: 'Flow Pattern', type: 'string',
+      options: { list: ['DIRECT', 'INDIRECT', 'RANDOM', 'OSCILLATING', 'LAMINAR'] },
+    }),
+    defineField({
+      name: 'salinityMin', title: 'Min Salinity (ppt)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'salinityMax', title: 'Max Salinity (ppt)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.salinityMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'salinityMax must be >= salinityMin';
+      }),
+    }),
+    defineField({
+      name: 'phMin', title: 'Min pH', type: 'number',
+      validation: (Rule: any) => Rule.min(3).max(11),
+    }),
+    defineField({
+      name: 'phMax', title: 'Max pH', type: 'number',
+      validation: (Rule: any) => Rule.min(3).max(11).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.phMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'phMax must be >= phMin';
+      }),
+    }),
+    defineField({
+      name: 'dkhMin', title: 'Min Alkalinity (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'dkhMax', title: 'Max Alkalinity (dKH)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.dkhMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'dkhMax must be >= dkhMin';
+      }),
+    }),
+    defineField({
+      name: 'caMin', title: 'Min Calcium (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'caMax', title: 'Max Calcium (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.caMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'caMax must be >= caMin';
+      }),
+    }),
+    defineField({
+      name: 'mgMin', title: 'Min Magnesium (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'mgMax', title: 'Max Magnesium (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.mgMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'mgMax must be >= mgMin';
+      }),
+    }),
+    defineField({
+      name: 'no3Min', title: 'Min Nitrate (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'no3Max', title: 'Max Nitrate (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.no3Min;
+        if (val == null || min == null) return true;
+        return val >= min || 'no3Max must be >= no3Min';
+      }),
+    }),
+    defineField({
+      name: 'po4Min', title: 'Min Phosphate (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'po4Max', title: 'Max Phosphate (ppm)', type: 'number',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.po4Min;
+        if (val == null || min == null) return true;
+        return val >= min || 'po4Max must be >= po4Min';
+      }),
+    }),
+    defineField({
+      name: 'feedingType', title: 'Feeding Type', type: 'string',
+      options: { list: ['ZOOXANTHELLAE', 'MIXED', 'CARNIVOROUS', 'NPS'] },
+    }),
+    defineField({
+      name: 'growthRate', title: 'Growth Rate', type: 'string',
+      options: { list: ['SLOW', 'MODERATE', 'FAST'] },
+    }),
+    defineField({
+      name: 'spacing', title: 'Spacing', type: 'string',
+      options: { list: ['CLOSE', 'MODERATE', 'SPACED'] },
+    }),
+    defineField({
+      name: 'aggressionTraits', title: 'Aggression Traits', type: 'array',
+      of: [{ type: 'string' }],
+      description: 'Non-exclusive aggression traits. Absence is not a negative claim.',
+      options: { list: ['SWEEPER', 'ALLELOPATHY', 'STING'] },
+    }),
+    defineField({
+      name: 'coralNeighbors', title: 'Coral Neighbors', type: 'array',
+      of: [{ type: 'coralNeighborEntry' }],
+      description: 'Coral-to-coral neighbors with aggression relation type.',
+    }),
+    defineField({
+      name: 'knowledgeBody', title: 'Knowledge Body', type: 'coralKnowledgeBody',
+    }),
   ],
   preview: {
     select: { title: 'name', media: 'mainImage' },

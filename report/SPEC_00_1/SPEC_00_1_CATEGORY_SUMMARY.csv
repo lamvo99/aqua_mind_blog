@@ -1,0 +1,7 @@
+category,canonical_count,duplicate_count,null_id_count,null_slug_count,broken_reference_count,broken_route_count,empty_body_count,empty_excerpt_count,missing_image_count,reachable_count,unreachable_count
+Fish / Species,218,0,0,0,0,0,0,0,1,218,0
+Plants,62,0,0,0,0,0,0,0,0,62,0
+Invertebrates,56,0,0,0,0,0,0,0,4,56,0
+Corals,48,0,0,0,0,0,0,0,0,48,0
+Equipment,46,0,0,0,0,0,0,0,29,46,0
+Problems,43,0,0,0,0,0,0,0,0,43,0

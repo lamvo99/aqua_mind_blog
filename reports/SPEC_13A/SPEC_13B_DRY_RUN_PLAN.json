@@ -1,0 +1,377 @@
+{
+  "specId": "SPEC_13A",
+  "artifact": "SPEC_13B_DRY_RUN_PLAN",
+  "generatedAt": "2026-10-21T06:27:28.628Z",
+  "mode": "OFFLINE PLAN ONLY - not executed",
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production"
+  },
+  "allowedFamilies": [
+    "predatorPrey",
+    "incompatibleSpecies"
+  ],
+  "operationCount": 21,
+  "simulated": {
+    "relationshipEdgesBefore": 3173,
+    "relationshipEdgesAfter": 3194,
+    "note": "SIMULATED - not a live change"
+  },
+  "idempotency": {
+    "duplicateEdgesOnReapply": 0,
+    "safeToReapply": true
+  },
+  "operations": [
+    {
+      "candidateId": "REL13A-0001",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel5f453f5b12",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0002",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "relb2cc81bee2",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A79RmJ"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0003",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel13c34f6c7e",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-innesi"
+        },
+        "sizeCondition": "prey much smaller than adult oscar",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0004",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel4a59022b49",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "5oQB2MZ7gmZXjdwFqSs4kl"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0005",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rela800c865ad",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-caridina-multidentata"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0006",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "reld7d540353a",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-palaemon-paludosus"
+        },
+        "sizeCondition": "adult oscar; shrimp are prey-sized crustaceans",
+        "evidenceNote": "Seriously Fish - Astronotus ocellatus (Oscar) - https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0007",
+      "sourceType": "species",
+      "documentId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "reldfe81aeaea",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-innesi"
+        },
+        "sizeCondition": "adult angelfish; neon tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0008",
+      "sourceType": "species",
+      "documentId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "relca2e5d9585",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A79RmJ"
+        },
+        "sizeCondition": "adult angelfish; green neon tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0009",
+      "sourceType": "species",
+      "documentId": "5oQB2MZ7gmZXjdwFqSs3qH",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel286e0c642b",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-paracheirodon-axelrodi"
+        },
+        "sizeCondition": "adult angelfish; cardinal tetra is small enough to swallow",
+        "evidenceNote": "Seriously Fish - Pterophyllum \"scalare\" (Angelfish) - https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0010",
+      "sourceType": "species",
+      "documentId": "species-bala-shark",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel22a32112fa",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "sizeCondition": "very small fishes",
+        "evidenceNote": "Seriously Fish - Balantiocheilos melanopterus (Silver/Bala Shark) - https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0011",
+      "sourceType": "species",
+      "documentId": "species-bala-shark",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel603ae0a557",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "IlX7xILobrukz7d5Jng1HC"
+        },
+        "sizeCondition": "very small fishes",
+        "evidenceNote": "Seriously Fish - Balantiocheilos melanopterus (Silver/Bala Shark) - https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0012",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79QPg",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel7dafb79c3d",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-planorbarius-corneus"
+        },
+        "sizeCondition": "small snails (shell on) are required diet",
+        "evidenceNote": "Seriously Fish - Carinotetraodon travancoricus (Dwarf Puffer) - https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0013",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79QPg",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel74d704e2d8",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-melanoides-tuberculata"
+        },
+        "sizeCondition": "small snails (shell on) are required diet",
+        "evidenceNote": "Seriously Fish - Carinotetraodon travancoricus (Dwarf Puffer) - https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0014",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79RMf",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rela0633a1601",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-melanoides-tuberculata"
+        },
+        "sizeCondition": "small aquatic snails",
+        "evidenceNote": "Seriously Fish - Botia almorhae (Yo-Yo Loach) - https://www.seriouslyfish.com/species/botia-almorhae/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0015",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79RMf",
+      "path": "predatorPrey",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel58cf15cf20",
+        "_type": "predatorPreyEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "invertebrate-planorbarius-corneus"
+        },
+        "sizeCondition": "small aquatic snails",
+        "evidenceNote": "Seriously Fish - Botia almorhae (Yo-Yo Loach) - https://www.seriouslyfish.com/species/botia-almorhae/"
+      }
+    },
+    {
+      "candidateId": "REL13A-0016",
+      "sourceType": "species",
+      "documentId": "species-bala-shark",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "relc0b8950123",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCMJ"
+        },
+        "reason": "temperament"
+      }
+    },
+    {
+      "candidateId": "REL13A-0017",
+      "sourceType": "species",
+      "documentId": "species-bala-shark",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rele3805adce6",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "I9bI8W8ZWcEwyIzM9DJbjY"
+        },
+        "reason": "temperament"
+      }
+    },
+    {
+      "candidateId": "REL13A-0018",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79RMf",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "relc43fac8d3d",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "species-poecilia-reticulata"
+        },
+        "reason": "temperament"
+      }
+    },
+    {
+      "candidateId": "REL13A-0019",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79RMf",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rel1d12d6f741",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "5oQB2MZ7gmZXjdwFqSs3qH"
+        },
+        "reason": "temperament"
+      }
+    },
+    {
+      "candidateId": "REL13A-0020",
+      "sourceType": "species",
+      "documentId": "J1Tx0fWCuGNPno99A79QPg",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "rele509e23233",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "5oQB2MZ7gmZXjdwFqSs3qH"
+        },
+        "reason": "temperament"
+      }
+    },
+    {
+      "candidateId": "REL13A-0021",
+      "sourceType": "species",
+      "documentId": "7kdig6Bk6SZq4GZkXcVXjK",
+      "path": "incompatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "_key": "relc8b8caedc4",
+        "_type": "incompatibleEntry",
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCJT"
+        },
+        "reason": "size"
+      }
+    }
+  ]
+}

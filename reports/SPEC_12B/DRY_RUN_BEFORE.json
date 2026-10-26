@@ -1,0 +1,250 @@
+{
+  "specId": "SPEC_12B",
+  "artifact": "DRY_RUN_BEFORE",
+  "generatedAt": "2026-10-19T02:28:43.851Z",
+  "mode": "PLAN + LIVE STATE BEFORE ANY WRITE",
+  "operations": [
+    {
+      "candidateId": "REL12A-0001",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCaV",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0002",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "sebdKYryWZgYP2rm3oquNG",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0003",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A6UR1F",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0004",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "IlX7xILobrukz7d5JnfjuY",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0005",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0006",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCJT",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0007",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "I9bI8W8ZWcEwyIzM9CuG2u",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0008",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A6hsP7",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0009",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0010",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCP9",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0011",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A6hq84",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0012",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCMJ",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0013",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0014",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCdL",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0015",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A79RmJ",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0016",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCMJ",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0017",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0018",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCP9",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0019",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A6hq84",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0020",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "J1Tx0fWCuGNPno99A6UR1F",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0021",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "IlX7xILobrukz7d5JnfjuY",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    },
+    {
+      "candidateId": "REL12A-0022",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "documentType": "species",
+      "path": "compatibleSpecies",
+      "targetId": "ofTl1CTOUWuLwM28PxTCJT",
+      "targetType": "species",
+      "targetTypeAllowed": true,
+      "currentEntries": [],
+      "existingSameRef": false
+    }
+  ]
+}

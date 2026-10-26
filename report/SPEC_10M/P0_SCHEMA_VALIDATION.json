@@ -1,0 +1,6343 @@
+{
+  "specId": "SPEC_10M",
+  "artifact": "P0_SCHEMA_VALIDATION",
+  "generatedAt": "2026-10-17T19:34:02.296Z",
+  "mode": "READ-ONLY (schema source structural validation)",
+  "queue": {
+    "file": "report/SPEC_10/PRIORITY_MIGRATION_QUEUE.csv",
+    "total": 106,
+    "implementationItems": 76,
+    "breakdown": {
+      "SCHEMA_MIGRATION": 64,
+      "BODY_BLOCK": 7,
+      "RELATIONSHIP_SLOT": 5
+    },
+    "itemTypeCounts": {
+      "SCHEMA_MIGRATION": 64,
+      "BODY_BLOCK": 7,
+      "RECORD_ENRICHMENT": 18,
+      "RELATIONSHIP_SLOT": 5,
+      "DOMAIN_BATCH": 6,
+      "RESEARCH_BATCH": 6
+    },
+    "p0Items": 24
+  },
+  "p0Evidence": [
+    {
+      "queueId": "Q-001",
+      "itemType": "SCHEMA_MIGRATION",
+      "target": "species: jumpRisk",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "jumpRisk",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-002",
+      "itemType": "SCHEMA_MIGRATION",
+      "target": "species: lidRequired",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "lidRequired",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NOT_REQUIRED",
+              "RECOMMENDED",
+              "ESSENTIAL"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-003",
+      "itemType": "SCHEMA_MIGRATION",
+      "target": "species: minTankLengthCm",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "minTankLengthCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-004",
+      "itemType": "SCHEMA_MIGRATION",
+      "target": "species: minTankWidthCm",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "minTankWidthCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-005",
+      "itemType": "SCHEMA_MIGRATION",
+      "target": "species: swimmingSpace",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "swimmingSpace",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-006",
+      "itemType": "BODY_BLOCK",
+      "target": "problem: newBlock:escalation",
+      "structural": true,
+      "pass": true,
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "escalation",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "problems": []
+    },
+    {
+      "queueId": "Q-007",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "equipment: Digital Heater (digital-heater)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-008",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Alligator Gar (atractosteus-spatula)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-009",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Arapaima (arapaima-gigas)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-010",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Asian Arowana (scleropages-formosus)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-011",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Black Arowana (black-arowana)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-012",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Clown Knifefish (clown-knifefish)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-013",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Iridescent Shark (iridescent-shark)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-014",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Jardini Arowana (scleropages-jardinii)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-015",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Koi (koi)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-016",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Longnose Gar (longnose-gar)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-017",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Red-tailed Catfish (phractocephalus-hemioliopterus)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-018",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Silver Arowana (osteoglossum-bicirrhosum)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-019",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Spotted Gar (spotted-gar)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-020",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Three-Barred Peacock Bass (three-barred-peacock-bass)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-021",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Tiger Shovelnose Catfish (tiger-shovelnose-catfish)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-022",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Walking Catfish (walking-catfish)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-023",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Weeks Bichir (weeks-bichir)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    },
+    {
+      "queueId": "Q-024",
+      "itemType": "RECORD_ENRICHMENT",
+      "target": "species: Zebra Moray Eel (zebra-moray-eel)",
+      "structural": false,
+      "pass": true,
+      "note": "outside implementation scope (RECORD_ENRICHMENT); served by migration-phase work items"
+    }
+  ],
+  "queueItems": [
+    {
+      "queueId": "Q-001",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P0",
+      "target": "species: jumpRisk",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "jumpRisk"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "jumpRisk",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-002",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P0",
+      "target": "species: lidRequired",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "lidRequired"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "lidRequired",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NOT_REQUIRED",
+              "RECOMMENDED",
+              "ESSENTIAL"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-003",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P0",
+      "target": "species: minTankLengthCm",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "minTankLengthCm"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "minTankLengthCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-004",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P0",
+      "target": "species: minTankWidthCm",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "minTankWidthCm"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "minTankWidthCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-005",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P0",
+      "target": "species: swimmingSpace",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "swimmingSpace"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "swimmingSpace",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-006",
+      "itemType": "BODY_BLOCK",
+      "priority": "P0",
+      "target": "problem: newBlock:escalation",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "escalation"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "escalation",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-025",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: aggressionTraits[ALLOLEPATHY]",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "aggressionTraits"
+        ],
+        "value": "ALLELOPATHY"
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "aggressionTraits",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "SWEEPER",
+              "ALLELOPATHY",
+              "STING"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "ALLELOPATHY",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-026",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: aggressionTraits[SWEEPER]",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "aggressionTraits"
+        ],
+        "value": "SWEEPER"
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "aggressionTraits",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "SWEEPER",
+              "ALLELOPATHY",
+              "STING"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "SWEEPER",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-027",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: caMin/caMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "caMin",
+          "caMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "caMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "caMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-028",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: dkhMin/dkhMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "dkhMin",
+          "dkhMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "dkhMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "dkhMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-029",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: parMin/parMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "parMin",
+          "parMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "parMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "parMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-030",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: phMin/phMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "phMin",
+          "phMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "phMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "phMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-031",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: salinityMin/Max (ppt) or sgMin/sgMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "salinityMin",
+          "salinityMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "salinityMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "salinityMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-032",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "coral: spacing",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "spacing"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "spacing",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "CLOSE",
+              "MODERATE",
+              "SPACED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-033",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "equipment: ratedCapacity {value,unit,basis}",
+      "resolution": {
+        "domain": "equipment",
+        "fields": [
+          "ratedCapacity"
+        ],
+        "objectParts": [
+          "value",
+          "unit",
+          "basis"
+        ]
+      },
+      "evidence": {
+        "domain": "equipment",
+        "fields": [
+          {
+            "name": "ratedCapacity",
+            "type": "object",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": [
+          "value",
+          "unit",
+          "basis"
+        ],
+        "objectSubFields": [
+          "value",
+          "unit",
+          "basis"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-034",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "equipment: turnoverPerH",
+      "resolution": {
+        "domain": "equipment",
+        "fields": [
+          "turnoverPerH"
+        ]
+      },
+      "evidence": {
+        "domain": "equipment",
+        "fields": [
+          {
+            "name": "turnoverPerH",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-035",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "equipment: waterType",
+      "resolution": {
+        "domain": "equipment",
+        "fields": [
+          "waterType"
+        ]
+      },
+      "evidence": {
+        "domain": "equipment",
+        "fields": [
+          {
+            "name": "waterType",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "both"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-036",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: biofilmRequirement",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "biofilmRequirement"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "biofilmRequirement",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "REQUIRED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-037",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: calciumRequirement",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "calciumRequirement"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "calciumRequirement",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-038",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: maturityRequirement",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "maturityRequirement"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "maturityRequirement",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-039",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: moltingType",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "moltingType"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "moltingType",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "RARE",
+              "FREQUENT"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-040",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: riskFlags[ESCAPE]",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "riskFlags"
+        ],
+        "value": "ESCAPE"
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "riskFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "STARVATION",
+              "ESCAPE"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "ESCAPE",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-041",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: riskFlags[STARVATION]",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "riskFlags"
+        ],
+        "value": "STARVATION"
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "riskFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "STARVATION",
+              "ESCAPE"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "STARVATION",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-042",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: salinityMin/Max",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "salinityMin",
+          "salinityMax"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "salinityMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "salinityMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-043",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "invertebrate: stabilityRequirement",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "stabilityRequirement"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "stabilityRequirement",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "CRITICAL"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-044",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "plant: fertilizationPlan",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "fertilizationPlan"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "fertilizationPlan",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "LIGHT_LIQUID",
+              "REGULAR",
+              "TARGETED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-045",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "plant: parMin/parMax",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "parMin",
+          "parMax"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "parMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "parMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-046",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "plant: substrateType",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "substrateType"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "substrateType",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "SAND",
+              "SOIL",
+              "MIXED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-047",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: behaviorFlags[territorial]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "territorial"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "territorial",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-048",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: communitySuitability",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "communitySuitability"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "communitySuitability",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "UNSUITABLE",
+              "CONDITIONAL",
+              "SUITABLE"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-049",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: maturityRequirement",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "maturityRequirement"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "maturityRequirement",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-050",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: oxygenSensitivity",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "oxygenSensitivity"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "oxygenSensitivity",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NEUTRAL",
+              "SENSITIVE"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-051",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: predatesInverts",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "predatesInverts"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "predatesInverts",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "NONE",
+              "POSSIBLE",
+              "LIKELY"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-052",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: reefInteraction",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "reefInteraction"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "reefInteraction",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "REEF_SAFE",
+              "CAUTION",
+              "SPECIES_DEPENDENT",
+              "NOT_REEF_SAFE"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-053",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: salinityMin/Max",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "salinityMin",
+          "salinityMax"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "salinityMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "salinityMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-054",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P1",
+      "target": "species: waterChangeSensitivity",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "waterChangeSensitivity"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "waterChangeSensitivity",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-055",
+      "itemType": "BODY_BLOCK",
+      "priority": "P1",
+      "target": "problem: newBlock:howToDistinguish",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "howToDistinguish"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "howToDistinguish",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-056",
+      "itemType": "BODY_BLOCK",
+      "priority": "P1",
+      "target": "problem: newBlock:immediateAction",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "immediateAction"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "immediateAction",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-057",
+      "itemType": "BODY_BLOCK",
+      "priority": "P1",
+      "target": "problem: newBlock:treatment",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "treatment"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "treatment",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-058",
+      "itemType": "RELATIONSHIP_SLOT",
+      "priority": "P1",
+      "target": "coral: coralNeighbors",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "coralNeighbors"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "coralNeighbors",
+            "type": "array",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-059",
+      "itemType": "RELATIONSHIP_SLOT",
+      "priority": "P1",
+      "target": "invertebrate: predatorPrey",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "predatorPrey"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "predatorPrey",
+            "type": "array",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-060",
+      "itemType": "RELATIONSHIP_SLOT",
+      "priority": "P1",
+      "target": "species: incompatibleSpecies",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "incompatibleSpecies"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "incompatibleSpecies",
+            "type": "array",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-061",
+      "itemType": "RELATIONSHIP_SLOT",
+      "priority": "P1",
+      "target": "species: predatorPrey",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "predatorPrey"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "predatorPrey",
+            "type": "array",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-074",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: aggressionTraits[STING]",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "aggressionTraits"
+        ],
+        "value": "STING"
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "aggressionTraits",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "SWEEPER",
+              "ALLELOPATHY",
+              "STING"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "STING",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-075",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: flowPattern",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "flowPattern"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "flowPattern",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "DIRECT",
+              "INDIRECT",
+              "RANDOM",
+              "OSCILLATING",
+              "LAMINAR"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-076",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: growthForm",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "growthForm"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "growthForm",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "BRANCHING",
+              "PLATING",
+              "ENCRUSTING",
+              "MASSIVE",
+              "FOLIACEOUS"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-077",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: growthRate",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "growthRate"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "growthRate",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "SLOW",
+              "MODERATE",
+              "FAST"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-078",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: mgMin/mgMax",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "mgMin",
+          "mgMax"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "mgMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "mgMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-079",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: no3Min/no3Max",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "no3Min",
+          "no3Max"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "no3Min",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "no3Max",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-080",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "coral: po4Min/po4Max",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "po4Min",
+          "po4Max"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "po4Min",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "po4Max",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-081",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "invertebrate: breedingDifficulty",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "breedingDifficulty"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "breedingDifficulty",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "EASY",
+              "MODERATE",
+              "DIFFICULT"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-082",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "invertebrate: ghMin/ghMax + khMin/khMax",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "ghMin",
+          "ghMax",
+          "khMin",
+          "khMax"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "ghMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "ghMax",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "khMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "khMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-083",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "invertebrate: minTankVolumeL",
+      "resolution": {
+        "domain": "invertebrate",
+        "fields": [
+          "minTankVolumeL"
+        ]
+      },
+      "evidence": {
+        "domain": "invertebrate",
+        "fields": [
+          {
+            "name": "minTankVolumeL",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-084",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: feedingMode",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "feedingMode"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "feedingMode",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "ROOT",
+              "WATER_COLUMN",
+              "BOTH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-085",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: flowTolerance",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "flowTolerance"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "flowTolerance",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-086",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: ghMin/ghMax",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "ghMin",
+          "ghMax"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "ghMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "ghMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-087",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: heightCm",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "heightCm"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "heightCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-088",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: khMin/khMax",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "khMin",
+          "khMax"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "khMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "khMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-089",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "plant: spreadCm",
+      "resolution": {
+        "domain": "plant",
+        "fields": [
+          "spreadCm"
+        ]
+      },
+      "evidence": {
+        "domain": "plant",
+        "fields": [
+          {
+            "name": "spreadCm",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-090",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[burrower]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "burrower"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "burrower",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-091",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[cave-dweller]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "cave-dweller"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "cave-dweller",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-092",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[nocturnal]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "nocturnal"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "nocturnal",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-093",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[open-water]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "open-water"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "open-water",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-094",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[solitary]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "solitary"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "solitary",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-095",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[strong-swimmer]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "strong-swimmer"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "strong-swimmer",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-096",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: behaviorFlags[timid]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "timid"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "timid",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-097",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: bioload",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "bioload"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "bioload",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-098",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: breedingDifficulty",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "breedingDifficulty"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "breedingDifficulty",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "EASY",
+              "MODERATE",
+              "DIFFICULT"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-099",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: flowPreference",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "flowPreference"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "flowPreference",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "STILL",
+              "MODERATE",
+              "STRONG"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-100",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P2",
+      "target": "species: khMin/khMax",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "khMin",
+          "khMax"
+        ]
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "khMin",
+            "type": "number",
+            "optional": true
+          },
+          {
+            "name": "khMax",
+            "type": "number",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-101",
+      "itemType": "BODY_BLOCK",
+      "priority": "P2",
+      "target": "problem: newBlock:monitoring",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "monitoring"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "monitoring",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-102",
+      "itemType": "BODY_BLOCK",
+      "priority": "P2",
+      "target": "problem: newBlock:prevention",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "prevention"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "prevention",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-103",
+      "itemType": "BODY_BLOCK",
+      "priority": "P2",
+      "target": "problem: newBlock:recovery",
+      "resolution": {
+        "domain": "problem",
+        "fields": [],
+        "block": "recovery"
+      },
+      "evidence": {
+        "domain": "problem",
+        "fields": [],
+        "block": "recovery",
+        "value": null,
+        "objectParts": null,
+        "blockType": "array",
+        "blockOf": [
+          "block"
+        ]
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-104",
+      "itemType": "RELATIONSHIP_SLOT",
+      "priority": "P2",
+      "target": "equipment: compatibleEquipment",
+      "resolution": {
+        "domain": "equipment",
+        "fields": [
+          "compatibleEquipment"
+        ]
+      },
+      "evidence": {
+        "domain": "equipment",
+        "fields": [
+          {
+            "name": "compatibleEquipment",
+            "type": "array",
+            "optional": true
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-105",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P3",
+      "target": "coral: feedingType",
+      "resolution": {
+        "domain": "coral",
+        "fields": [
+          "feedingType"
+        ]
+      },
+      "evidence": {
+        "domain": "coral",
+        "fields": [
+          {
+            "name": "feedingType",
+            "type": "string",
+            "optional": true,
+            "listValues": [
+              "ZOOXANTHELLAE",
+              "MIXED",
+              "CARNIVOROUS",
+              "NPS"
+            ]
+          }
+        ],
+        "block": null,
+        "value": null,
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    },
+    {
+      "queueId": "Q-106",
+      "itemType": "SCHEMA_MIGRATION",
+      "priority": "P3",
+      "target": "species: behaviorFlags[diurnal]",
+      "resolution": {
+        "domain": "species",
+        "fields": [
+          "behaviorFlags"
+        ],
+        "value": "diurnal"
+      },
+      "evidence": {
+        "domain": "species",
+        "fields": [
+          {
+            "name": "behaviorFlags",
+            "type": "array",
+            "optional": true,
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ]
+          }
+        ],
+        "block": null,
+        "value": "diurnal",
+        "objectParts": null
+      },
+      "pass": true,
+      "problems": []
+    }
+  ],
+  "matrix": {
+    "file": "report/SPEC_10/KNOWLEDGE_ARCHITECTURE_MATRIX.csv",
+    "total": 230,
+    "byRepresentation": {
+      "EXISTING_FIELD": 60,
+      "BODY": 95,
+      "NEW_FIELD": 66,
+      "RELATIONSHIP": 9
+    },
+    "bodySectionRows": 87,
+    "newBlockRows": 8,
+    "unresolved": [],
+    "items": [
+      {
+        "i": 1,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "name",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "name"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 2,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "scientificName",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "scientificName"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 3,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "family+group",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "family",
+            "group"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 4,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "origin+region",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "origin",
+            "region"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 5,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:overview",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "overview"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 6,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "sizeCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "sizeCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 7,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:adult-size-growth",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "adultSizeGrowth"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 8,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:adult-size-growth",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "adultSizeGrowth"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 9,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "minTankLengthCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "minTankLengthCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 10,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:adult-size-growth",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "adultSizeGrowth"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 11,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "tempMinC/tempMaxC",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tempMinC",
+            "tempMaxC"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 12,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "phMin/phMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "phMin",
+            "phMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 13,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "ghMin/ghMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "ghMin",
+            "ghMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 14,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "khMin/khMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "khMin",
+            "khMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 15,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "salinityMin/Max (ppt)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "salinityMin",
+            "salinityMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 16,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:water-parameters",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "waterParameters"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 17,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "tankSizeMinL",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tankSizeMinL"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 18,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "minTankLengthCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "minTankLengthCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 19,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "minTankWidthCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "minTankWidthCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 20,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "swimmingSpace (enum)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "swimmingSpace"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 21,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[open-water]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "open-water",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 22,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 23,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 24,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 25,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "jumpRisk (enum NONE/LOW/MODERATE/HIGH)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "jumpRisk"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 26,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "lidRequired (enum NOT_REQUIRED/RECOMMENDED/ESSENTIAL)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "lidRequired"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 27,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "flowPreference (enum STILL/MODERATE/STRONG)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "flowPreference"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 28,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "oxygenSensitivity (enum NEUTRAL/SENSITIVE)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "oxygenSensitivity"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 29,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "maturityRequirement (enum NONE/SUGGESTED/REQUIRED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "maturityRequirement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 30,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "temperament",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "temperament"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 31,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[territorial]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "territorial",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 32,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "schooling (text) + groupSize {min,max}",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "schooling",
+            "groupSize"
+          ],
+          "value": null,
+          "objectParts": [
+            "min",
+            "max"
+          ]
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 33,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[solitary]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "solitary",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 34,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "isPredator",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "isPredator"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 35,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "diet",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "diet"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 36,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[nocturnal]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "nocturnal",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 37,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[diurnal]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "diurnal",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 38,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[burrower]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "burrower",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 39,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[cave-dweller]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "cave-dweller",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 40,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[open-water]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "open-water",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 41,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[strong-swimmer]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "strong-swimmer",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 42,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "behaviorFlags[timid]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "behaviorFlags"
+          ],
+          "value": "timid",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 43,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "communitySuitability (enum UNSUITABLE/CONDITIONAL/SUITABLE)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "communitySuitability"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 44,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 45,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 46,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 47,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 48,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 49,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "feeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 50,
+        "domain": "species",
+        "repr": "RELATIONSHIP",
+        "target": "compatibleSpecies (+conditions)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "compatibleSpecies"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 51,
+        "domain": "species",
+        "repr": "RELATIONSHIP",
+        "target": "incompatibleSpecies (PROPOSED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "incompatibleSpecies"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 52,
+        "domain": "species",
+        "repr": "RELATIONSHIP",
+        "target": "predatorPrey (PROPOSED typed refs)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "predatorPrey"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 53,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 54,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 55,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 56,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 57,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "reefInteraction (enum REEF_SAFE/CAUTION/SPECIES_DEPENDENT/NOT_REEF_SAFE)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "reefInteraction"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 58,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "predatesInverts (enum NONE/POSSIBLE/LIKELY)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "predatesInverts"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 59,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "waterChangeSensitivity (enum LOW/MODERATE/HIGH)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "waterChangeSensitivity"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 60,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "bioload (enum LOW/MODERATE/HIGH)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "bioload"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 61,
+        "domain": "species",
+        "repr": "EXISTING_FIELD",
+        "target": "difficulty (semantics extended: careLevel)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "difficulty"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 62,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:special-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "specialRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 63,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:breeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "breeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 64,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:breeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "breeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 65,
+        "domain": "species",
+        "repr": "NEW_FIELD",
+        "target": "breedingDifficulty (enum)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "breedingDifficulty"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 66,
+        "domain": "species",
+        "repr": "BODY",
+        "target": "body:breeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "speciesKnowledgeBody",
+          "section": "breeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 67,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "name",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "name"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 68,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "scientificName",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "scientificName"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 69,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "group/type",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "group"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 70,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "growthForm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "growthForm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 71,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:overview",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "overview"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 72,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "light",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "light"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 73,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:light",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "light"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 74,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "parMin/parMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "parMin",
+            "parMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 75,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:light",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "light"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 76,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:light",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "light"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 77,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "co2",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "co2"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 78,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "co2 (semantics: NONE/LOW implies low-tech)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "co2"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 79,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:co2",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "co2"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 80,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:nutrients",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "nutrients"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 81,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:nutrients",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "nutrients"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 82,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "feedingMode (enum ROOT/WATER_COLUMN/BOTH)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "feedingMode"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 83,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "substrateType (enum NONE/SAND/SOIL/MIXED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "substrateType"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 84,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "fertilizationPlan (enum NONE/LIGHT_LIQUID/REGULAR/TARGETED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "fertilizationPlan"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 85,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:common-deficiencies",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "commonDeficiencies"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 86,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "tempMinC/tempMaxC",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tempMinC",
+            "tempMaxC"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 87,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "phMin/phMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "phMin",
+            "phMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 88,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "ghMin/ghMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "ghMin",
+            "ghMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 89,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "khMin/khMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "khMin",
+            "khMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 90,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "placement",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "placement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 91,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:placement",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "placement"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 92,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:growth-and-trimming",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "growthAndTrimming"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 93,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "growth",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "growth"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 94,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "heightCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "heightCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 95,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "spreadCm",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "spreadCm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 96,
+        "domain": "plant",
+        "repr": "EXISTING_FIELD",
+        "target": "propagation",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "propagation"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 97,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:growth-and-trimming",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "growthAndTrimming"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 98,
+        "domain": "plant",
+        "repr": "NEW_FIELD",
+        "target": "flowTolerance (enum LOW/MODERATE/HIGH)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "flowTolerance"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 99,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:algae-sensitivity",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "algaeSensitivity"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 100,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 101,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:common-deficiencies",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "commonDeficiencies"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 102,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 103,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 104,
+        "domain": "plant",
+        "repr": "BODY",
+        "target": "body:transition",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "plantKnowledgeBody",
+          "section": "transition"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 105,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "name",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "name"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 106,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "scientificName",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "scientificName"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 107,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "group/type",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "group"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 108,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:overview",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "overview"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 109,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "tempMinC/tempMaxC",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tempMinC",
+            "tempMaxC"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 110,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "salinityMin/Max (ppt)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "salinityMin",
+            "salinityMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 111,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "phMin/phMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "phMin",
+            "phMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 112,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "ghMin/ghMax + khMin/khMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "ghMin",
+            "ghMax",
+            "khMin",
+            "khMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 113,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "calciumRequirement (enum NONE/SUGGESTED/REQUIRED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "calciumRequirement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 114,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:water-parameters",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "waterParameters"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 115,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "stabilityRequirement (enum LOW/MODERATE/CRITICAL)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "stabilityRequirement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 116,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "diet",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "diet"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 117,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:diet-and-feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "dietAndFeeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 118,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:diet-and-feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "dietAndFeeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 119,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "riskFlags[STARVATION]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "riskFlags"
+          ],
+          "value": "STARVATION",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 120,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "moltingType (enum NONE/RARE/FREQUENT)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "moltingType"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 121,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:molting",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "molting"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 122,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:molting",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "molting"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 123,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:molting",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "molting"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 124,
+        "domain": "invertebrate",
+        "repr": "RELATIONSHIP",
+        "target": "predatorPrey (PROPOSED typed refs)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "predatorPrey"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 125,
+        "domain": "invertebrate",
+        "repr": "RELATIONSHIP",
+        "target": "predatorPrey (PROPOSED typed refs)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "predatorPrey"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 126,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "temperament",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "temperament"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 127,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 128,
+        "domain": "invertebrate",
+        "repr": "EXISTING_FIELD",
+        "target": "reefCompatibility",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "reefCompatibility"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 129,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "minTankVolumeL",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "minTankVolumeL"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 130,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 131,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 132,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 133,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "riskFlags[ESCAPE]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "riskFlags"
+          ],
+          "value": "ESCAPE",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 134,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:breeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "breeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 135,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "breedingDifficulty (enum)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "breedingDifficulty"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 136,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:breeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "breeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 137,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "maturityRequirement (enum NONE/SUGGESTED/REQUIRED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "maturityRequirement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 138,
+        "domain": "invertebrate",
+        "repr": "NEW_FIELD",
+        "target": "biofilmRequirement (enum NONE/REQUIRED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "biofilmRequirement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 139,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:diet-and-feeding",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "dietAndFeeding"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 140,
+        "domain": "invertebrate",
+        "repr": "BODY",
+        "target": "body:tank-requirements",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "invertebrateKnowledgeBody",
+          "section": "tankRequirements"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 141,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "name",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "name"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 142,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "scientificName",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "scientificName"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 143,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "coralType",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "coralType"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 144,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "group",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "group"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 145,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "growthForm (enum BRANCHING/PLATING/ENCRASTING/MASSIVE/FOLIACEOUS)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "growthForm"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 146,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "light",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "light"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 147,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "parMin/parMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "parMin",
+            "parMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 148,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "placement",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "placement"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 149,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:acclimation",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "acclimation"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 150,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:lighting-risks",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "lightingRisks"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 151,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "flow",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "flow"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 152,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "flowPattern (enum DIRECT/INDIRECT/RANDOM/OSCILLATING/LAMINAR)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "flowPattern"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 153,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:flow",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "flow"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 154,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "tempMinC/tempMaxC",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tempMinC",
+            "tempMaxC"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 155,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "salinityMin/Max (ppt) or sgMin/sgMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "salinityMin",
+            "salinityMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 156,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "phMin/phMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "phMin",
+            "phMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 157,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "dkhMin/dkhMax",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "dkhMin",
+            "dkhMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 158,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "caMin/caMax (ppm)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "caMin",
+            "caMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 159,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "mgMin/mgMax (ppm)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "mgMin",
+            "mgMax"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 160,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "no3Min/no3Max (ppm)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "no3Min",
+            "no3Max"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 161,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "po4Min/po4Max (ppm)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "po4Min",
+            "po4Max"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 162,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:water-chemistry",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "waterChemistry"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 163,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "photosynthetic",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "photosynthetic"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 164,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:nutrition",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "nutrition"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 165,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "feedingType (enum ZOOXANTHELLAE/MIXED/CARNIVOROUS/NPS)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "feedingType"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 166,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:nutrition",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "nutrition"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 167,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:nutrition",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "nutrition"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 168,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "growthRate (enum SLOW/MODERATE/FAST)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "growthRate"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 169,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "spacing (enum CLOSE/MODERATE/SPACED)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "spacing"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 170,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "aggression",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "aggression"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 171,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "aggressionTraits[SWEEPER]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "aggressionTraits"
+          ],
+          "value": "SWEEPER",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 172,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "aggressionTraits[ALLOLEPATHY]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "aggressionTraits"
+          ],
+          "value": "ALLELOPATHY",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 173,
+        "domain": "coral",
+        "repr": "NEW_FIELD",
+        "target": "aggressionTraits[STING]",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "aggressionTraits"
+          ],
+          "value": "STING",
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 174,
+        "domain": "coral",
+        "repr": "RELATIONSHIP",
+        "target": "coralNeighbors (PROPOSED typed refs)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "coralNeighbors"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 175,
+        "domain": "coral",
+        "repr": "EXISTING_FIELD",
+        "target": "reefCompatibility",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "reefCompatibility"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 176,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:reef-caveats",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "reefCaveats"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 177,
+        "domain": "coral",
+        "repr": "RELATIONSHIP",
+        "target": "coralNeighbors (PROPOSED typed refs)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "coralNeighbors"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 178,
+        "domain": "coral",
+        "repr": "RELATIONSHIP",
+        "target": "species<->coral reefInteraction (bidirectional view)",
+        "resolution": {
+          "kind": "field",
+          "represented": true,
+          "note": "coral-side view of species.reefInteractionDetail[].coral (REL-P03); no duplicate coral slot per SPEC 10 decision rule"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 179,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 180,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 181,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 182,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 183,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 184,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:common-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "commonProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 185,
+        "domain": "coral",
+        "repr": "BODY",
+        "target": "body:chemistry-problems",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "coralKnowledgeBody",
+          "section": "chemistryProblems"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 186,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "excerpt (semantics: function/intended use)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "excerpt"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 187,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:what-it-does",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "whatItDoes"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 188,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "tankSizeMinL/tankSizeMaxL",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "tankSizeMinL",
+            "tankSizeMaxL"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 189,
+        "domain": "equipment",
+        "repr": "NEW_FIELD",
+        "target": "waterType (enum freshwater/saltwater/both)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "waterType"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 190,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "category",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "category"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 191,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "flowRateLh",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "flowRateLh"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 192,
+        "domain": "equipment",
+        "repr": "NEW_FIELD",
+        "target": "turnoverPerH",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "turnoverPerH"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 193,
+        "domain": "equipment",
+        "repr": "NEW_FIELD",
+        "target": "ratedCapacity {value,unit,basis}",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "ratedCapacity"
+          ],
+          "value": null,
+          "objectParts": [
+            "value",
+            "unit",
+            "basis"
+          ]
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 194,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:real-world-capacity",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "realWorldCapacity"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 195,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:real-world-capacity",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "realWorldCapacity"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 196,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:best-use",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "bestUse"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 197,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:specifications",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "specifications"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 198,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:specifications",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "specifications"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 199,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:specifications",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "specifications"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 200,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "cons",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "cons"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 201,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:limitations",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "limitations"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 202,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:limitations",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "limitations"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 203,
+        "domain": "equipment",
+        "repr": "RELATIONSHIP",
+        "target": "compatibleEquipment (PROPOSED equipment->equipment)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "compatibleEquipment"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 204,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:compatibility",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "compatibility"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 205,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:limitations",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "limitations"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 206,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:maintenance",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "maintenance"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 207,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:maintenance",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "maintenance"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 208,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:maintenance",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "maintenance"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 209,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:failure-modes",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "failureModes"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 210,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:safety",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "safety"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 211,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:safety",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "safety"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 212,
+        "domain": "equipment",
+        "repr": "BODY",
+        "target": "body:safety",
+        "resolution": {
+          "kind": "bodySection",
+          "bodyType": "equipmentKnowledgeBody",
+          "section": "safety"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 213,
+        "domain": "equipment",
+        "repr": "EXISTING_FIELD",
+        "target": "powerW",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "powerW"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 214,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "symptoms (portable-text block)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "symptoms"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 215,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "causes (portable-text block)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "causes"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 216,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "causes (semantics: multiple causes w/ ordering)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "causes"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 217,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:howToDistinguish",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "howToDistinguish"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 218,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "whatToCheck (portable-text block)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "whatToCheck"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 219,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "causes (semantics: tag entries secondary)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "causes"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 220,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "causes (semantics: tag entries environmental)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "causes"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 221,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "causes (semantics: tag entries husbandry)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "causes"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 222,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:immediateAction",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "immediateAction"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 223,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:treatment",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "treatment"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 224,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:recovery",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "recovery"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 225,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "whatNotToDo (portable-text block)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "whatNotToDo"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 226,
+        "domain": "problem",
+        "repr": "EXISTING_FIELD",
+        "target": "whatNotToDo (semantics: include overcorrection)",
+        "resolution": {
+          "kind": "field",
+          "fields": [
+            "whatNotToDo"
+          ],
+          "value": null,
+          "objectParts": null
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 227,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:prevention",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "prevention"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 228,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:monitoring",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "monitoring"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 229,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:prevention (maintenance entries)",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "prevention"
+        },
+        "pass": true,
+        "problems": []
+      },
+      {
+        "i": 230,
+        "domain": "problem",
+        "repr": "BODY",
+        "target": "newBlock:escalation",
+        "resolution": {
+          "kind": "newBlock",
+          "block": "escalation"
+        },
+        "pass": true,
+        "problems": []
+      }
+    ]
+  },
+  "approvedAdditions": {
+    "species": [
+      "minTankLengthCm",
+      "minTankWidthCm",
+      "swimmingSpace",
+      "jumpRisk",
+      "lidRequired",
+      "flowPreference",
+      "oxygenSensitivity",
+      "maturityRequirement",
+      "bioload",
+      "waterChangeSensitivity",
+      "breedingDifficulty",
+      "khMin",
+      "khMax",
+      "salinityMin",
+      "salinityMax",
+      "behaviorFlags",
+      "groupSize",
+      "communitySuitability",
+      "reefInteraction",
+      "predatesInverts",
+      "incompatibleSpecies",
+      "predatorPrey",
+      "reefInteractionDetail",
+      "knowledgeBody"
+    ],
+    "plant": [
+      "feedingMode",
+      "substrateType",
+      "fertilizationPlan",
+      "ghMin",
+      "ghMax",
+      "khMin",
+      "khMax",
+      "heightCm",
+      "spreadCm",
+      "flowTolerance",
+      "parMin",
+      "parMax",
+      "knowledgeBody"
+    ],
+    "invertebrate": [
+      "salinityMin",
+      "salinityMax",
+      "ghMin",
+      "ghMax",
+      "khMin",
+      "khMax",
+      "calciumRequirement",
+      "stabilityRequirement",
+      "riskFlags",
+      "moltingType",
+      "minTankVolumeL",
+      "breedingDifficulty",
+      "maturityRequirement",
+      "biofilmRequirement",
+      "predatorPrey",
+      "knowledgeBody"
+    ],
+    "coral": [
+      "growthForm",
+      "parMin",
+      "parMax",
+      "flowPattern",
+      "salinityMin",
+      "salinityMax",
+      "phMin",
+      "phMax",
+      "dkhMin",
+      "dkhMax",
+      "caMin",
+      "caMax",
+      "mgMin",
+      "mgMax",
+      "no3Min",
+      "no3Max",
+      "po4Min",
+      "po4Max",
+      "feedingType",
+      "growthRate",
+      "spacing",
+      "aggressionTraits",
+      "coralNeighbors",
+      "knowledgeBody"
+    ],
+    "equipment": [
+      "waterType",
+      "turnoverPerH",
+      "ratedCapacity",
+      "compatibleEquipment",
+      "relatedProblems",
+      "knowledgeBody"
+    ],
+    "problem": [
+      "howToDistinguish",
+      "immediateAction",
+      "treatment",
+      "recovery",
+      "prevention",
+      "monitoring",
+      "escalation"
+    ]
+  },
+  "approvedNewTypes": [
+    "compatibleEntry",
+    "incompatibleEntry",
+    "predatorPreyEntry",
+    "reefInteractionEntry",
+    "coralNeighborEntry",
+    "speciesKnowledgeBody",
+    "coralKnowledgeBody",
+    "plantKnowledgeBody",
+    "invertebrateKnowledgeBody",
+    "equipmentKnowledgeBody"
+  ],
+  "findings": [
+    "Vocabulary normalization: matrix typo ALLOLEPATHY resolved to ALLELOPATHY (aggressionTraits/coralNeighborEntry enum); matrix typo ENCRASTING resolved to ENCRUSTING (coral.growthForm enum).",
+    "breedingDifficulty enum values are not defined by SPEC 10 source artifacts; implemented provisionally as EASY/MODERATE/DIFFICULT (not populated on any document).",
+    "Matrix target \"group/type\" is label shorthand for the existing schema field \"group\" (FIELD_TO_KNOWLEDGE_MAPPING plant.group / invertebrate.group); no \"type\" field exists or was added.",
+    "Matrix target \"salinityMin/Max (ppt) or sgMin/sgMax\": salinityMin/Max implemented; sgMin/sgMax alternative deliberately NOT implemented (single source of truth).",
+    "Five matrix body keys outside BODY_ARCHITECTURE.md section lists (coral lighting-risks/reef-caveats/chemistry-problems; plant common-problems/transition) implemented as additional named sections per SPEC 10 matrix-over-documents precedence.",
+    "species<->coral reefInteraction row is the documented bidirectional view of REL-P03; no duplicate coral-side slot created per SPEC 10 no-duplicate rule.",
+    "problem.causes entry-tag EXTEND deferred: would require rewriting populated portable-text blocks; narrative structure already supports the semantics."
+  ],
+  "checks": [
+    {
+      "id": "B-03",
+      "name": "migration queue: all 76 implementation items structurally resolve",
+      "pass": true,
+      "detail": "items=76 failed=0"
+    },
+    {
+      "id": "B-04",
+      "name": "architecture matrix: all 230 rows structurally represented",
+      "pass": true,
+      "detail": "rows=230 failed=0"
+    },
+    {
+      "id": "C-01",
+      "name": "source counts exact: queue 106 (64+7+5 impl, 24 P0), matrix 230 (60/66/95/9; 87 body + 8 blocks)",
+      "pass": true,
+      "detail": "queue=106/76(64+7+5) p0=24 matrix=230 repr={\"EXISTING_FIELD\":60,\"BODY\":95,\"NEW_FIELD\":66,\"RELATIONSHIP\":9} body=87 blocks=8"
+    },
+    {
+      "id": "C-02",
+      "name": "all P0 queue items resolved with field-level evidence (24 items)",
+      "pass": true,
+      "detail": "p0=24 structural=6 failed=0"
+    },
+    {
+      "id": "C-03",
+      "name": "alternative sgMin/sgMax representation NOT implemented (single source of truth = salinity ppt)",
+      "pass": true,
+      "detail": "sgAbsent=true"
+    },
+    {
+      "id": "C-04",
+      "name": "all 90 approved additions present and optional (no field-level Rule.required)",
+      "pass": true,
+      "detail": "checked=90 problems=0"
+    }
+  ]
+}

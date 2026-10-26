@@ -1,0 +1,26 @@
+SPEC 11 Stage A Revision 1 - artifact checksums (SHA-256)
+mode: READ-ONLY revision; no production mutation occurred
+canonical identity hash: c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda (MATCH, unchanged)
+inventory: 473 records (species 218, plant 62, invertebrate 56, coral 48, equipment 46, problem 43); drafts 0; duplicate slugs 0
+
+original Stage A artifact SHA-256 verified against report/SPEC_11/INTEGRITY.json artifactHashes:
+  SPEC_11_HUSBANDRY_ENRICHMENT_REPORT.md: 06d373ed14ec4400995d449ba54632aae9f72c41ec7590b0382ba4cd01a8b059 [VERIFIED]
+  BASELINE.json: 9fcb98da116bd4617f5cd4a5267223b197b16c1d9fa4e0d30ff89dab7b1d7f28 [VERIFIED]
+  WAVE_1_QUEUE.csv: f1e98279598bd42f6b2d944b15ab628ced5117d5e5c1a11423a5aa3dc7ec9545 [VERIFIED]
+  RESEARCH_REGISTER.csv: 60d95c3b26b243b009522c34efadb39e3f8fca011cd3fb6bc81e37e767a539a9 [VERIFIED]
+  EVIDENCE_MAP.csv: 64a0ccbeef03cd5dd5bb9693bd204a2c09a80c81b334162d14c8a1d0bce7fc89 [VERIFIED]
+  PROPOSED_MUTATIONS.csv: 6b1f7bb175f086851d045150bf18c3cb6defbbc132ed3912fd0cd43fdb2f0cfd [VERIFIED]
+  COMPLETENESS_BEFORE.csv: 44d4429193029b932a53480c9427a3e70ac23cef336688050dd54cd2d3fbe184 [VERIFIED]
+  COMPLETENESS_AFTER_PLAN.csv: 861dab6fc11ab45be1393819ac88adaaf4154d85e8b6e7d3713a376622b91f98 [VERIFIED]
+  CONFLICTS.csv: 82fa46a124f905a080f7d28b76859a38b21eb75169f91248d8d6e7048d6deb0c [VERIFIED]
+  EXECUTION_LOG.md: f25f72c3b1fd0632945ad211eea56371bfcb59ff95ee1dcc9d5dbe38aa0f870c [VERIFIED]
+
+revision artifacts SHA-256:
+  REVISED_MUTATION_PLAN.csv: bec3771313a521b03a621cd7926f9af852c15ab5b16b031486c618d356d49dd4
+  REVISED_CONFLICT_REGISTER.csv: 950cc86070ee2d74d1ef2d57adb4a21de9968c4043e38f67a979aa44ea57f537
+  SEMANTIC_MAPPING_AUDIT.csv: ea6b39fec73a9f7309bfa9001e2e1953d0e2b8de4bc5bd1afdc794b9b138399f
+  HELD_FOR_EVIDENCE.csv: 47bad1c2aa537640c68827bbbaa25418c5d08e6b1d39a7054aeb65d5264a59c7
+  SPEC_11_STAGE_A_REVISION_1_REPORT.md: 9177e81627b8692ced130cecd5251bbf3ddf1aaab9279129ea8d2d9376421bde
+
+determinism: PASS - two independent in-process generations produced byte-identical artifacts; scripts/SPEC_11_revision1_validate.js re-verifies with two separate process regenerations
+sanityWrites=0 mutationCalls=0

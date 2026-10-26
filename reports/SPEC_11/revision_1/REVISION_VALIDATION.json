@@ -1,0 +1,103 @@
+{
+  "specId": "SPEC_11_STAGE_A_REVISION_1",
+  "artifact": "REVISION_VALIDATION",
+  "generatedAt": "2026-10-17T19:57:55.499Z",
+  "mode": "READ-ONLY (Sanity GET queries only; no production mutation)",
+  "sanityWrites": 0,
+  "mutationCalls": 0,
+  "checks": [
+    {
+      "id": "V-01",
+      "name": "inventory 473 + double-read identical (live GET, read-only)",
+      "pass": true,
+      "detail": "total=473 mismatchedTypes=0 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "V-02",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "V-03",
+      "name": "only the original 17 Wave-1 species in scope",
+      "pass": true,
+      "detail": "slugs=17 offQueue=0"
+    },
+    {
+      "id": "V-04",
+      "name": "no unresolved research item is marked eligible",
+      "pass": true,
+      "detail": "pendingEligible=0 keepHold=14"
+    },
+    {
+      "id": "V-05",
+      "name": "no LOW-confidence fill is marked eligible",
+      "pass": true,
+      "detail": "lowEligible=0 lowHeldOk=true"
+    },
+    {
+      "id": "V-06",
+      "name": "no rejected conflict is reintroduced",
+      "pass": true,
+      "detail": "rejected=3 reintroduced=0"
+    },
+    {
+      "id": "V-07",
+      "name": "eligible rows carry evidence + justified confidence (not schema-only)",
+      "pass": true,
+      "detail": "noSource=0 badConfidence=0"
+    },
+    {
+      "id": "V-08",
+      "name": "no invalid enum or unit/cross-range issue is introduced",
+      "pass": true,
+      "detail": "badEnum=0 badNum=0 badCross=0 badSalinity=0"
+    },
+    {
+      "id": "V-09",
+      "name": "revised plan is deterministic across two independent runs (and matches revision_1)",
+      "pass": true,
+      "detail": "diff=none"
+    },
+    {
+      "id": "V-10",
+      "name": "CSV row counts, mutation IDs and disposition totals reconcile exactly",
+      "pass": true,
+      "detail": "plan424 conflicts50 held70 audit39 report=match"
+    },
+    {
+      "id": "V-11",
+      "name": "original Stage A artifacts unchanged (both copies vs frozen hashes)",
+      "pass": true,
+      "detail": "all verified"
+    },
+    {
+      "id": "V-12",
+      "name": "lint / typecheck / tests / build pass; report numbers match fresh runs",
+      "pass": true,
+      "detail": "lint=0 tsc=0 focused=108 passed (108) full=1 failed | 372 passed (373) build=0 reportMatch=true"
+    },
+    {
+      "id": "V-13",
+      "name": "report carries required status statements",
+      "pass": true,
+      "detail": "complete=true noMutation=true"
+    },
+    {
+      "id": "V-14",
+      "name": "needle + API-token scan across revision artifacts",
+      "pass": true,
+      "detail": "needles=CLEAN tokens=CLEAN"
+    },
+    {
+      "id": "V-15",
+      "name": "semantic audit covers every semantic hold + both topic mislinks; all semantic holds are held in plan",
+      "pass": true,
+      "detail": "holdsMissing=none planBad=none mislinks=2"
+    }
+  ],
+  "gatesPassed": 15,
+  "gatesFailed": 0,
+  "status": "SPEC 11 STAGE A REVISION 1 - COMPLETE / READY FOR PM REVISED-PLAN REVIEW"
+}

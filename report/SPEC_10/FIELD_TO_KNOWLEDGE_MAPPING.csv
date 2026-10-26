@@ -1,0 +1,141 @@
+document_type,field_name,field_type,knowledgeLayer,servedRequirements,mappingStatus,proposedChange,note
+species,name,string,A,common_name,ADEQUATE,KEEP,
+species,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,scientificName,string,A,scientific_name,ADEQUATE,KEEP,
+species,family,string,A,taxonomic_context,ADEQUATE,KEEP,
+species,origin,string,A,natural_distribution,ADEQUATE,KEEP,
+species,excerpt,text,A/F,habitat,EXTEND_SEMANTICS,EXTEND semantics/shape,excerpt doubles as mini-body; long-form body is the real target
+species,localNames,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,aliases,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,group,string,A,taxonomic_context,ADEQUATE,KEEP,
+species,parentSpecies,reference,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,sizeCm,number,A,adult_size,ADEQUATE,KEEP,
+species,tankSizeMinL,number,B,min_tank_volume,INSUFFICIENT_FOR_DECISIONS,EXTEND with new decision fields (see architecture matrix),volume-only: cannot express footprint/dimensions/turning room (SPEC 10 §6)
+species,tempMinC,number,B,temperature,ADEQUATE,KEEP,
+species,tempMaxC,number,B,temperature,ADEQUATE,KEEP,
+species,phMin,number,B,ph,ADEQUATE,KEEP,
+species,phMax,number,B,ph,ADEQUATE,KEEP,
+species,ghMin,number,B,gh,ADEQUATE,KEEP,
+species,ghMax,number,B,gh,ADEQUATE,KEEP,
+species,diet,string,A/B,diet_type,ADEQUATE,KEEP,
+species,temperament,string,C,temperament,EXTEND_SEMANTICS,EXTEND semantics/shape,single enum forces mutually exclusive concepts; add behaviorFlags (SPEC 10 §7)
+species,waterZone,string,C,open_water_swimmer,EXTEND_SEMANTICS,EXTEND semantics/shape,zone enum helps; pair with behaviorFlags
+species,schooling,text,C,schooling,EXTEND_SEMANTICS,EXTEND semantics/shape,"text field; add structured groupSize {min,max}"
+species,difficulty,string,E,maintenance_burden,EXTEND_SEMANTICS,EXTEND semantics/shape,define careLevel semantics
+species,waterType,string,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,aquariumStyle,arrayString,D,style pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+species,region,string,A,natural_distribution,ADEQUATE,KEEP,
+species,isPredator,boolean,C,predator,ADEQUATE,KEEP,
+species,reefCompatibility,boolean,D,coral_interaction,INSUFFICIENT_FOR_DECISIONS,EXTEND with new decision fields (see architecture matrix),boolean cannot express §11 tiers (caution/species-dependent/predator detail)
+species,compatibleSpecies,arrayRef,D,compatible_tankmates,INSUFFICIENT_FOR_DECISIONS,EXTEND with new decision fields (see architecture matrix),empty 218/218; add conditions[] on entries
+species,compatiblePlants,arrayRef,D,plant pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+species,compatibleInvertebrates,arrayRef,D,invertebrate pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+species,suitableEquipment,arrayRef,D,equipment pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+species,relatedProblems,arrayRef,D,troubleshooting links,EXTEND_SEMANTICS,EXTEND semantics/shape,
+species,mainImage,image,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,seo,object,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+species,relatedPosts,arrayRef,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,name,string,A,common_name,ADEQUATE,KEEP,
+plant,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,scientificName,string,A,scientific_name,ADEQUATE,KEEP,
+plant,excerpt,text,A/F,natural_habitat_plant,EXTEND_SEMANTICS,EXTEND semantics/shape,long-form body target
+plant,localNames,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,aliases,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,group,string,A,plant_type,ADEQUATE,KEEP,
+plant,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,light,string,B,light_requirement,ADEQUATE,KEEP,
+plant,co2,string,B,"co2_requirement, low_tech_suitability",ADEQUATE,KEEP,
+plant,growth,string,C,growth_rate,ADEQUATE,KEEP,
+plant,difficulty,string,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,placement,string,B,"placement, epiphyte_attachment",EXTEND_SEMANTICS,EXTEND semantics/shape,
+plant,tempMinC,number,B,temperature_plant,ADEQUATE,KEEP,
+plant,tempMaxC,number,B,temperature_plant,ADEQUATE,KEEP,
+plant,phMin,number,B,ph_plant,ADEQUATE,KEEP,
+plant,phMax,number,B,ph_plant,ADEQUATE,KEEP,
+plant,propagation,text,F,propagation,ADEQUATE,KEEP,
+plant,aquariumStyle,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,region,string,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,growthForm,string,A,growth_form_plant,ADEQUATE,KEEP,
+plant,redPlant,boolean,A,plant_type,EXTEND_SEMANTICS,EXTEND semantics/shape,
+plant,suitableEquipment,arrayRef,D,equipment pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+plant,relatedProblems,arrayRef,D,troubleshooting links,EXTEND_SEMANTICS,EXTEND semantics/shape,
+plant,mainImage,image,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+plant,relatedPosts,arrayRef,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,name,string,A,common_name,ADEQUATE,KEEP,
+invertebrate,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,scientificName,string,A,scientific_name_inv,ADEQUATE,KEEP,
+invertebrate,excerpt,text,A/F,natural_habitat_inv,EXTEND_SEMANTICS,EXTEND semantics/shape,long-form body target
+invertebrate,localNames,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,aliases,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,parentSpecies,reference,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,waterType,string,B,"salinity_inv, reef_compat_inv",EXTEND_SEMANTICS,EXTEND semantics/shape,
+invertebrate,group,string,A,type_group,ADEQUATE,KEEP,
+invertebrate,sizeCm,number,A,adult size,ADEQUATE,KEEP,
+invertebrate,tempMinC,number,B,temperature_inv,ADEQUATE,KEEP,
+invertebrate,tempMaxC,number,B,temperature_inv,ADEQUATE,KEEP,
+invertebrate,phMin,number,B,ph_inv,ADEQUATE,KEEP,
+invertebrate,phMax,number,B,ph_inv,ADEQUATE,KEEP,
+invertebrate,difficulty,string,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,diet,string,A,diet_inv,ADEQUATE,KEEP,
+invertebrate,temperament,string,C,temperament_inv,ADEQUATE,KEEP,
+invertebrate,aquariumStyle,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,region,string,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,reefCompatibility,boolean,D,reef_compat_inv,ADEQUATE,KEEP,
+invertebrate,compatibleSpecies,arrayRef,D,compatible_tankmates,INSUFFICIENT_FOR_DECISIONS,EXTEND with new decision fields (see architecture matrix),empty 56/56 (REL-12)
+invertebrate,suitableEquipment,arrayRef,D,equipment pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+invertebrate,relatedProblems,arrayRef,D,troubleshooting links,EXTEND_SEMANTICS,EXTEND semantics/shape,
+invertebrate,mainImage,image,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+invertebrate,relatedPosts,arrayRef,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,name,string,A,common_name,ADEQUATE,KEEP,
+coral,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,scientificName,string,A,scientific_name,ADEQUATE,KEEP,
+coral,excerpt,text,A/F,overview,EXTEND_SEMANTICS,EXTEND semantics/shape,long-form body target
+coral,localNames,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,aliases,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,group,string,A,coral_group,ADEQUATE,KEEP,
+coral,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,light,string,B,light_coral,ADEQUATE,KEEP,
+coral,flow,string,B,flow_coral,EXTEND_SEMANTICS,EXTEND semantics/shape,add flowPattern enum (§12)
+coral,difficulty,string,E,maintenance_burden,EXTEND_SEMANTICS,EXTEND semantics/shape,
+coral,coralType,string,A,coral_type,ADEQUATE,KEEP,
+coral,placement,string,B,placement_coral,ADEQUATE,KEEP,
+coral,aggression,string,C,aggression,EXTEND_SEMANTICS,EXTEND semantics/shape,add aggressionTraits multi-select
+coral,reefCompatibility,boolean,D,reef_safe_status,EXTEND_SEMANTICS,EXTEND semantics/shape,OK for corals; fish-side boolean is the insufficient one
+coral,photosynthetic,boolean,C,photosynthetic,ADEQUATE,KEEP,
+coral,suitableEquipment,arrayRef,D,equipment pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+coral,relatedProblems,arrayRef,D,problem links,EXTEND_SEMANTICS,EXTEND semantics/shape,
+coral,aquariumStyle,arrayString,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,tempMinC,number,B,temperature_coral,ADEQUATE,KEEP,
+coral,tempMaxC,number,B,temperature_coral,ADEQUATE,KEEP,
+coral,mainImage,image,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+coral,relatedPosts,arrayRef,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+equipment,name,string,A,purpose,ADEQUATE,KEEP,
+equipment,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+equipment,brand,string,A,identification,STRUCTURAL,KEEP (structural),
+equipment,model,string,A,identification,STRUCTURAL,KEEP (structural),
+equipment,category,string,A/B,tank_type,ADEQUATE,KEEP,
+equipment,excerpt,text,A,"purpose, problem_solved",EXTEND_SEMANTICS,EXTEND semantics/shape,long-form body target
+equipment,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+equipment,flowRateLh,number,B,flow_capacity,INSUFFICIENT_FOR_DECISIONS,EXTEND with new decision fields (see architecture matrix),manufacturer rating only; practical capacity belongs in body (§15)
+equipment,powerW,number,B,power_draw,ADEQUATE,KEEP,
+equipment,tankSizeMinL,number,B,suitable_tank_size,ADEQUATE,KEEP,
+equipment,tankSizeMaxL,number,B,suitable_tank_size,ADEQUATE,KEEP,
+equipment,aquariumStyle,arrayString,D,style pairing,EXTEND_SEMANTICS,EXTEND semantics/shape,
+equipment,pros,arrayString,E,best_use_case,ADEQUATE,KEEP,
+equipment,cons,arrayString,E,limitations,ADEQUATE,KEEP,strongest equipment body layer
+equipment,mainImage,image,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+equipment,relatedPosts,arrayRef,-,content linking,STRUCTURAL,KEEP (structural),
+problem,title,string,A,identification,ADEQUATE,KEEP,
+problem,slug,slug,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+problem,excerpt,text,A,identification,EXTEND_SEMANTICS,EXTEND semantics/shape,
+problem,publishedAt,datetime,-,,STRUCTURAL,KEEP (structural),no husbandry knowledge served (identity/SEO/media/slug/publishedAt class)
+problem,category,string,E,taxonomy navigation,EXTEND_SEMANTICS,EXTEND semantics/shape,"navigation aid, not knowledge"
+problem,waterType,string,E,scope,ADEQUATE,KEEP,
+problem,symptoms,arrayBlock,E,symptoms,ADEQUATE,KEEP,
+problem,causes,arrayBlock,E,"what_it_indicates, differential_causes, secondary/environmental/husbandry_causes",EXTEND_SEMANTICS,EXTEND semantics/shape,needs entry semantics (primary/secondary/type tags)
+problem,whatToCheck,arrayBlock,E,first_check,EXTEND_SEMANTICS,EXTEND semantics/shape,distinguish first-check vs ongoing monitoring
+problem,whatNotToDo,arrayBlock,E,"what_not_to_do, overcorrection_risks",EXTEND_SEMANTICS,EXTEND semantics/shape,
+problem,relatedPosts,arrayRef,-,content linking,STRUCTURAL,KEEP (structural),
+problem,relatedTools,arrayRef,D,tool links,EXTEND_SEMANTICS,EXTEND semantics/shape,

@@ -45,3 +45,7 @@ next-env.d.ts
 
 # wiki seed run artifacts
 /scripts/.seed-*-report.json
+
+# sanity studio build output + runtime cache
+/dist/
+/.sanity/

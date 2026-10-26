@@ -1,0 +1,88 @@
+{
+  "specId": "SPEC_12B",
+  "artifact": "PREFLIGHT",
+  "generatedAt": "2026-10-19T02:28:34.892Z",
+  "mode": "full",
+  "checks": [
+    {
+      "id": "P-01",
+      "name": "project/dataset match intended production",
+      "pass": true,
+      "detail": "sanity.cli=zeohjejw/production"
+    },
+    {
+      "id": "P-02",
+      "name": "SPEC 12A artifacts unmodified (checksums)",
+      "pass": true,
+      "detail": "files=14 mismatches=0"
+    },
+    {
+      "id": "P-03",
+      "name": "plan has exactly 22 well-formed compatibleSpecies ops",
+      "pass": true,
+      "detail": "ops=22"
+    },
+    {
+      "id": "P-04",
+      "name": "all ops are PROPOSE_WITH_CAVEAT / MEDIUM / P1",
+      "pass": true,
+      "detail": "checked=22"
+    },
+    {
+      "id": "P-05",
+      "name": "every op has traceable evidence row",
+      "pass": true,
+      "detail": "evidenceRows=22"
+    },
+    {
+      "id": "P-06",
+      "name": "no duplicate (doc,path,target) operations",
+      "pass": true,
+      "detail": "unique=22"
+    },
+    {
+      "id": "P-07",
+      "name": "record counts match SPEC 12A baseline",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "P-08",
+      "name": "drafts = 0",
+      "pass": true,
+      "detail": "datasetDrafts=0"
+    },
+    {
+      "id": "P-09",
+      "name": "duplicate _id = 0 and slug = 0",
+      "pass": true,
+      "detail": "dupIds=0 dupSlugs=0"
+    },
+    {
+      "id": "P-10",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "P-11",
+      "name": "relationship edge count matches baseline",
+      "pass": true,
+      "detail": "edges=3151 expected=3151"
+    },
+    {
+      "id": "P-12",
+      "name": "all source and target IDs resolve to allowed types",
+      "pass": true,
+      "detail": "unresolved=0"
+    }
+  ],
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production",
+    "api": "v2026-05-25"
+  },
+  "totalOps": 22,
+  "opsAlreadyPresent": 0,
+  "verdict": "PASS"
+}

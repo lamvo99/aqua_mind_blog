@@ -31,7 +31,7 @@ async function getSpecies(): Promise<CompatSpecies[]> {
       _id, name, scientificName, slug,
       sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty,
-      "compatibleWith": compatibleSpecies[]->slug.current
+      "compatibleWith": compatibleSpecies[defined(ref)].ref->slug.current
     }`
   )
 }

@@ -1,0 +1,2227 @@
+{
+  "specId": "SPEC_11",
+  "artifact": "ONE_SHOT_PRE_WRITE_BASELINE",
+  "generatedAt": "2026-10-18T02:34:24.074Z",
+  "mode": "READ-ONLY preflight before one-shot production writes",
+  "authorization": "one_shot invocation = production write authorization; repo schema treated as authoritative (user decision)",
+  "checks": [
+    {
+      "id": "P-01",
+      "name": "Stage A INTEGRITY finalRun + gates pass + writes 0",
+      "pass": true,
+      "detail": "finalRun=true gates=15/15 writes=0"
+    },
+    {
+      "id": "P-02",
+      "name": "Stage A mirror reports/SPEC_11 byte-identical",
+      "pass": true,
+      "detail": "ok=10/10"
+    },
+    {
+      "id": "P-03",
+      "name": "Revision 1 validation all checks pass",
+      "pass": true,
+      "detail": "passed=15/15 writes=0"
+    },
+    {
+      "id": "P-04",
+      "name": "Revision 1 checksums re-verified (original + revision)",
+      "pass": true,
+      "detail": "entries=15"
+    },
+    {
+      "id": "B-01",
+      "name": "deterministic double-read identical (6 domains)",
+      "pass": true,
+      "detail": "mismatchedTypes=0"
+    },
+    {
+      "id": "B-02",
+      "name": "473 records / domain counts frozen",
+      "pass": true,
+      "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "B-03",
+      "name": "drafts = 0",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "B-04",
+      "name": "duplicate slugs = 0",
+      "pass": true,
+      "detail": "duplicates=0 noSlug=0"
+    },
+    {
+      "id": "B-05",
+      "name": "canonical identity hash matches baseline",
+      "pass": true,
+      "detail": "MATCH"
+    }
+  ],
+  "inventory": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "drafts": 0,
+    "datasetDrafts": 0,
+    "duplicateSlugs": 0,
+    "noSlug": 0
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "seals": {
+    "titleSlugSeal": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "seoSeal": "94cbb6564964bd32b566e1556f539b9e242bd8b0e749ba6a3cc81eea4235d9a9",
+    "relSeal": "6585f4d3a304393341177952f8586902559b88d318041667ddd189165d91bc49"
+  },
+  "revisions": {
+    "1z8rQFHeojDMTUo2hXSUxN": {
+      "rev": "Gk33CfLE6ahVd3Ve5tzs4Y",
+      "updatedAt": "2026-09-19T16:54:26Z"
+    },
+    "1z8rQFHeojDMTUo2hXSV4m": {
+      "rev": "9tHdrZzgsCPG7AwtWms7DB",
+      "updatedAt": "2026-09-17T09:15:59Z"
+    },
+    "1z8rQFHeojDMTUo2hXSVV6": {
+      "rev": "bXkDxvOEdfzf4NR9YzkUkI",
+      "updatedAt": "2026-09-19T16:28:41Z"
+    },
+    "1z8rQFHeojDMTUo2hXSViG": {
+      "rev": "rtyqKwjy88AX8UfFxNjJhY",
+      "updatedAt": "2026-10-01T02:57:00Z"
+    },
+    "1z8rQFHeojDMTUo2hXSWMZ": {
+      "rev": "spdaSMErH8o1D4LseJ8iwK",
+      "updatedAt": "2026-09-17T09:19:18Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSs3qH": {
+      "rev": "S14zwcyM2Pfmg8COTwKwt7",
+      "updatedAt": "2026-09-21T14:12:29Z"
+    },
+    "7kdig6Bk6SZq4GZkXcVXjK": {
+      "rev": "iIEha4Lf0bd08jwW6gbhsZ",
+      "updatedAt": "2026-09-29T02:39:15Z"
+    },
+    "7kdig6Bk6SZq4GZkXcVYRS": {
+      "rev": "6hiKrYJiMBmDerMeziIbD5",
+      "updatedAt": "2026-09-29T17:25:14Z"
+    },
+    "G6zzfp6s5dlbun6AVzKgoN": {
+      "rev": "GDkcErM64RhoZsqj94HKO3",
+      "updatedAt": "2026-09-22T03:37:32Z"
+    },
+    "G6zzfp6s5dlbun6AVzKgu5": {
+      "rev": "bXkDxvOEdfzf4NR9Z6rNrf",
+      "updatedAt": "2026-09-22T03:35:17Z"
+    },
+    "G6zzfp6s5dlbun6AVzKmc5": {
+      "rev": "bXkDxvOEdfzf4NR9Z6rAst",
+      "updatedAt": "2026-09-22T03:32:54Z"
+    },
+    "G6zzfp6s5dlbun6AVztvbi": {
+      "rev": "nMj4Bthvy4g70bFzG41elR",
+      "updatedAt": "2026-09-21T15:16:31Z"
+    },
+    "G6zzfp6s5dlbun6AVztvrt": {
+      "rev": "GDkcErM64RhoZsqj93LoVq",
+      "updatedAt": "2026-09-21T15:09:16Z"
+    },
+    "G6zzfp6s5dlbun6AVztwWo": {
+      "rev": "GDkcErM64RhoZsqj93LcCT",
+      "updatedAt": "2026-09-21T15:06:12Z"
+    },
+    "G6zzfp6s5dlbun6AVztwgK": {
+      "rev": "bXkDxvOEdfzf4NR9Z5Bhrz",
+      "updatedAt": "2026-09-21T15:05:04Z"
+    },
+    "G6zzfp6s5dlbun6AVztxQx": {
+      "rev": "nMj4Bthvy4g70bFzG3tpQc",
+      "updatedAt": "2026-09-21T15:01:43Z"
+    },
+    "G6zzfp6s5dlbun6AVztxmq": {
+      "rev": "nMj4Bthvy4g70bFzG3s3Ly",
+      "updatedAt": "2026-09-21T14:58:26Z"
+    },
+    "Gk33CfLE6ahVd3Ve601V4E": {
+      "rev": "GDkcErM64RhoZsqj94J5bq",
+      "updatedAt": "2026-09-22T04:01:05Z"
+    },
+    "Gk33CfLE6ahVd3Ve602cco": {
+      "rev": "nMj4Bthvy4g70bFzG90YLV",
+      "updatedAt": "2026-09-22T04:01:43Z"
+    },
+    "Gk33CfLE6ahVd3Ve602cqq": {
+      "rev": "GDkcErM64RhoZsqj94Hgst",
+      "updatedAt": "2026-09-22T03:41:49Z"
+    },
+    "Gk33CfLE6ahVd3Ve602d2X": {
+      "rev": "GDkcErM64RhoZsqj94HBtx",
+      "updatedAt": "2026-09-22T03:36:09Z"
+    },
+    "Gk33CfLE6ahVd3Ve602em7": {
+      "rev": "GDkcErM64RhoZsqj94IrBK",
+      "updatedAt": "2026-09-22T03:59:40Z"
+    },
+    "Gk33CfLE6ahVd3Ve602fPs": {
+      "rev": "nMj4Bthvy4g70bFzG8dX0b",
+      "updatedAt": "2026-09-22T03:19:35Z"
+    },
+    "Gk33CfLE6ahVd3Ve602tRs": {
+      "rev": "GDkcErM64RhoZsqj94GzFM",
+      "updatedAt": "2026-09-22T03:33:36Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PY2c": {
+      "rev": "GDkcErM64RhoZsqj93LsWU",
+      "updatedAt": "2026-09-21T15:09:50Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PZR9": {
+      "rev": "nMj4Bthvy4g70bFzG3xU0G",
+      "updatedAt": "2026-09-21T15:07:33Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PZmC": {
+      "rev": "GDkcErM64RhoZsqj93LfAg",
+      "updatedAt": "2026-09-21T15:06:50Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PagK": {
+      "rev": "GDkcErM64RhoZsqj93LSuL",
+      "updatedAt": "2026-09-21T15:04:36Z"
+    },
+    "Gk33CfLE6ahVd3Ve61Pb63": {
+      "rev": "nMj4Bthvy4g70bFzG3uetD",
+      "updatedAt": "2026-09-21T15:03:34Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PbHk": {
+      "rev": "nMj4Bthvy4g70bFzG3uM6D",
+      "updatedAt": "2026-09-21T15:02:55Z"
+    },
+    "Gk33CfLE6ahVd3Ve61Pc4r": {
+      "rev": "bXkDxvOEdfzf4NR9Z5C3gA",
+      "updatedAt": "2026-09-21T15:06:56Z"
+    },
+    "Gk33CfLE6ahVd3Ve61PcZG": {
+      "rev": "bXkDxvOEdfzf4NR9Z5A0qd",
+      "updatedAt": "2026-09-21T14:58:58Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Ci1Vw": {
+      "rev": "kacSGNiYKzyTTcRPtr02IG",
+      "updatedAt": "2026-10-05T02:53:00Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Ciih6": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQbu",
+      "updatedAt": "2026-10-05T02:53:02Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Cj9MC": {
+      "rev": "kacSGNiYKzyTTcRPtr02On",
+      "updatedAt": "2026-10-05T02:53:05Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Cj9WG": {
+      "rev": "bC4ykP1TUmEDYEZRQDwBCB",
+      "updatedAt": "2026-10-05T02:53:07Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Cj9gK": {
+      "rev": "58daN6aSfkISRX8w0NS846",
+      "updatedAt": "2026-10-05T02:53:04Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjDNI": {
+      "rev": "BF7b7JzesWwz9GasstzxHV",
+      "updatedAt": "2026-10-05T02:53:09Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjDXM": {
+      "rev": "58daN6aSfkISRX8w0NS89N",
+      "updatedAt": "2026-10-05T02:53:10Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CttMO": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQf3",
+      "updatedAt": "2026-10-05T02:53:13Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuEcq": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQgw",
+      "updatedAt": "2026-10-05T02:53:14Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuG2u": {
+      "rev": "BF7b7JzesWwz9GasstzxSj",
+      "updatedAt": "2026-10-05T02:53:16Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuWy8": {
+      "rev": "QPsNt7HA1W2nzvoUKEBXc6",
+      "updatedAt": "2026-10-05T02:53:18Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuXNI": {
+      "rev": "kacSGNiYKzyTTcRPtr02ZF",
+      "updatedAt": "2026-10-05T02:53:20Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DFXpw": {
+      "rev": "BF7b7JzesWwz9Gasstzxdx",
+      "updatedAt": "2026-10-05T02:53:22Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DJbjY": {
+      "rev": "kacSGNiYKzyTTcRPtr02eT",
+      "updatedAt": "2026-10-05T02:53:23Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DJbye": {
+      "rev": "kacSGNiYKzyTTcRPtr02iO",
+      "updatedAt": "2026-10-05T02:53:25Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DJePc": {
+      "rev": "BF7b7JzesWwz9GasstzxpB",
+      "updatedAt": "2026-10-05T02:53:27Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXMwe": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fD6C",
+      "updatedAt": "2026-10-05T02:53:28Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXNJI": {
+      "rev": "bC4ykP1TUmEDYEZRQDwBJd",
+      "updatedAt": "2026-10-05T02:53:31Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXNau": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQmb",
+      "updatedAt": "2026-10-05T02:53:30Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXNv2": {
+      "rev": "kacSGNiYKzyTTcRPtr02ov",
+      "updatedAt": "2026-10-05T02:53:33Z"
+    },
+    "IlX7xILobrukz7d5JnTgRq": {
+      "rev": "QPsNt7HA1W2nzvoUKEBXhp",
+      "updatedAt": "2026-10-05T02:53:42Z"
+    },
+    "IlX7xILobrukz7d5JnfjuY": {
+      "rev": "kacSGNiYKzyTTcRPtr02sq",
+      "updatedAt": "2026-10-05T02:53:35Z"
+    },
+    "IlX7xILobrukz7d5JnfkJq": {
+      "rev": "BF7b7JzesWwz9Gasstzy0P",
+      "updatedAt": "2026-10-05T02:53:37Z"
+    },
+    "IlX7xILobrukz7d5Jng1HC": {
+      "rev": "BF7b7JzesWwz9GasstzyBd",
+      "updatedAt": "2026-10-05T02:53:38Z"
+    },
+    "IlX7xILobrukz7d5Jng1QE": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fDGz",
+      "updatedAt": "2026-10-05T02:53:40Z"
+    },
+    "IlX7xILobrukz7d5JnvaIg": {
+      "rev": "Gk33CfLE6ahVd3Ve60D0fw",
+      "updatedAt": "2026-09-21T03:33:29Z"
+    },
+    "IlX7xILobrukz7d5Jo2V6E": {
+      "rev": "kacSGNiYKzyTTcRPtr02wl",
+      "updatedAt": "2026-10-05T02:53:44Z"
+    },
+    "IlX7xILobrukz7d5Jo2VIs": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQr0",
+      "updatedAt": "2026-10-05T02:53:45Z"
+    },
+    "IlX7xILobrukz7d5Jo2X54": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fDcZ",
+      "updatedAt": "2026-10-05T02:53:47Z"
+    },
+    "IlX7xILobrukz7d5Jo2XHi": {
+      "rev": "58daN6aSfkISRX8w0NS8Jv",
+      "updatedAt": "2026-10-05T02:53:48Z"
+    },
+    "J1Tx0fWCuGNPno99A6UR1F": {
+      "rev": "kacSGNiYKzyTTcRPtr034b",
+      "updatedAt": "2026-10-05T02:54:05Z"
+    },
+    "J1Tx0fWCuGNPno99A6heVR": {
+      "rev": "58daN6aSfkISRX8w0NS8PC",
+      "updatedAt": "2026-10-05T02:53:52Z"
+    },
+    "J1Tx0fWCuGNPno99A6hesW": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQst",
+      "updatedAt": "2026-10-05T02:53:50Z"
+    },
+    "J1Tx0fWCuGNPno99A6hq84": {
+      "rev": "BF7b7JzesWwz9GasstzyuX",
+      "updatedAt": "2026-10-05T02:53:53Z"
+    },
+    "J1Tx0fWCuGNPno99A6hqNS": {
+      "rev": "BF7b7JzesWwz9Gasstzz5l",
+      "updatedAt": "2026-10-05T02:53:55Z"
+    },
+    "J1Tx0fWCuGNPno99A6hsP7": {
+      "rev": "bC4ykP1TUmEDYEZRQDwBW3",
+      "updatedAt": "2026-10-05T02:53:57Z"
+    },
+    "J1Tx0fWCuGNPno99A6i7Ae": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQwf",
+      "updatedAt": "2026-10-05T02:53:59Z"
+    },
+    "J1Tx0fWCuGNPno99A6i7Sb": {
+      "rev": "ewFCUyUyQDZBbcG2bi1FTQ",
+      "updatedAt": "2026-10-05T02:54:01Z"
+    },
+    "J1Tx0fWCuGNPno99A6i8Pa": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fGI1",
+      "updatedAt": "2026-10-05T02:54:04Z"
+    },
+    "J1Tx0fWCuGNPno99A6i8hX": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFQyY",
+      "updatedAt": "2026-10-05T02:54:02Z"
+    },
+    "J1Tx0fWCuGNPno99A79QPg": {
+      "rev": "BF7b7JzesWwz9GasstzzGz",
+      "updatedAt": "2026-10-05T02:54:10Z"
+    },
+    "J1Tx0fWCuGNPno99A79QpK": {
+      "rev": "kacSGNiYKzyTTcRPtr038W",
+      "updatedAt": "2026-10-05T02:54:12Z"
+    },
+    "J1Tx0fWCuGNPno99A79RMf": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fJ4f",
+      "updatedAt": "2026-10-05T02:54:14Z"
+    },
+    "J1Tx0fWCuGNPno99A79RmJ": {
+      "rev": "58daN6aSfkISRX8w0NS9w8",
+      "updatedAt": "2026-10-05T02:54:15Z"
+    },
+    "J1Tx0fWCuGNPno99A79S9O": {
+      "rev": "QPsNt7HA1W2nzvoUKEBYfN",
+      "updatedAt": "2026-10-05T02:54:17Z"
+    },
+    "J1Tx0fWCuGNPno99A79evp": {
+      "rev": "ewFCUyUyQDZBbcG2bi1FbV",
+      "updatedAt": "2026-10-05T02:54:07Z"
+    },
+    "J1Tx0fWCuGNPno99A79fDm": {
+      "rev": "58daN6aSfkISRX8w0NS9nL",
+      "updatedAt": "2026-10-05T02:54:09Z"
+    },
+    "J1Tx0fWCuGNPno99A7ACJO": {
+      "rev": "BF7b7JzesWwz9Gassu0237",
+      "updatedAt": "2026-10-05T02:54:18Z"
+    },
+    "J1Tx0fWCuGNPno99A7KH8y": {
+      "rev": "kacSGNiYKzyTTcRPtr03CR",
+      "updatedAt": "2026-10-05T02:54:20Z"
+    },
+    "PZ8Kai1VvEL468NS2Kni6M": {
+      "rev": "tiu5awf4YZpMiGxzJC9siX",
+      "updatedAt": "2026-09-29T02:39:29Z"
+    },
+    "PZ8Kai1VvEL468NS2LLZxZ": {
+      "rev": "Gk33CfLE6ahVd3Ve60Cza7",
+      "updatedAt": "2026-09-21T03:33:08Z"
+    },
+    "PZ8Kai1VvEL468NS2LLa6x": {
+      "rev": "Gk33CfLE6ahVd3Ve5twmiH",
+      "updatedAt": "2026-09-19T16:36:10Z"
+    },
+    "PZ8Kai1VvEL468NS2LLaUQ": {
+      "rev": "Gk33CfLE6ahVd3Ve5u0QhU",
+      "updatedAt": "2026-09-19T16:57:54Z"
+    },
+    "PZ8Kai1VvEL468NS2LLaqK": {
+      "rev": "D3U4LrLTtv0XoPOOLeYIu7",
+      "updatedAt": "2026-09-17T09:19:03Z"
+    },
+    "bXkDxvOEdfzf4NR9Z3ReYR": {
+      "rev": "GDkcErM64RhoZsqj94Itm2",
+      "updatedAt": "2026-09-22T04:00:10Z"
+    },
+    "bXkDxvOEdfzf4NR9Z3S1rN": {
+      "rev": "nMj4Bthvy4g70bFzG8dgwv",
+      "updatedAt": "2026-09-22T03:20:15Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MeU8": {
+      "rev": "POR9P8FMbH7uFFu1qpYwXR",
+      "updatedAt": "2026-09-21T15:13:41Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4Mel7": {
+      "rev": "nMj4Bthvy4g70bFzG3zjAm",
+      "updatedAt": "2026-09-21T15:12:52Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MgqS": {
+      "rev": "bXkDxvOEdfzf4NR9Z5CLY2",
+      "updatedAt": "2026-09-21T15:08:38Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4Mh0u": {
+      "rev": "nMj4Bthvy4g70bFzG3xa44",
+      "updatedAt": "2026-09-21T15:08:12Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4Mi1c": {
+      "rev": "nMj4Bthvy4g70bFzG3vZGD",
+      "updatedAt": "2026-09-21T15:04:04Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MicC": {
+      "rev": "bXkDxvOEdfzf4NR9Z5APZ6",
+      "updatedAt": "2026-09-21T15:00:32Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MjaI": {
+      "rev": "bXkDxvOEdfzf4NR9Z59DUv",
+      "updatedAt": "2026-09-21T14:53:17Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCJT": {
+      "rev": "bC4ykP1TUmEDYEZRQDwDMJ",
+      "updatedAt": "2026-10-05T02:54:24Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCMJ": {
+      "rev": "kacSGNiYKzyTTcRPtr03Mt",
+      "updatedAt": "2026-10-05T02:54:26Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCP9": {
+      "rev": "ewFCUyUyQDZBbcG2bi1HmB",
+      "updatedAt": "2026-10-05T02:54:28Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCRz": {
+      "rev": "QPsNt7HA1W2nzvoUKEBZW3",
+      "updatedAt": "2026-10-05T02:54:30Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCUp": {
+      "rev": "ewFCUyUyQDZBbcG2bi1HuG",
+      "updatedAt": "2026-10-05T02:54:32Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCXf": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFR5T",
+      "updatedAt": "2026-10-05T02:54:33Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCaV": {
+      "rev": "58daN6aSfkISRX8w0NSA1P",
+      "updatedAt": "2026-10-05T02:54:21Z"
+    },
+    "ofTl1CTOUWuLwM28PxTCdL": {
+      "rev": "kacSGNiYKzyTTcRPtr03GM",
+      "updatedAt": "2026-10-05T02:54:23Z"
+    },
+    "ofTl1CTOUWuLwM28PxTEQ3": {
+      "rev": "6hiKrYJiMBmDerMeziJ6xN",
+      "updatedAt": "2026-09-29T17:26:02Z"
+    },
+    "ofTl1CTOUWuLwM28PxTESt": {
+      "rev": "BF7b7JzesWwz9Gassu050T",
+      "updatedAt": "2026-10-05T02:54:37Z"
+    },
+    "ofTl1CTOUWuLwM28PxTEVj": {
+      "rev": "kacSGNiYKzyTTcRPtr03Qo",
+      "updatedAt": "2026-10-05T02:54:38Z"
+    },
+    "ofTl1CTOUWuLwM28PxTEYZ": {
+      "rev": "ewFCUyUyQDZBbcG2bi1Igk",
+      "updatedAt": "2026-10-05T02:54:40Z"
+    },
+    "ofTl1CTOUWuLwM28PxTEbP": {
+      "rev": "58daN6aSfkISRX8w0NSA6g",
+      "updatedAt": "2026-10-05T02:54:35Z"
+    },
+    "ofTl1CTOUWuLwM28PxTEeF": {
+      "rev": "tiu5awf4YZpMiGxzJEHMbt",
+      "updatedAt": "2026-09-29T17:26:00Z"
+    },
+    "sebdKYryWZgYP2rm3noGMy": {
+      "rev": "bXkDxvOEdfzf4NR9Z3b8ba",
+      "updatedAt": "2026-09-21T03:33:09Z"
+    },
+    "sebdKYryWZgYP2rm3noGak": {
+      "rev": "G6zzfp6s5dlbun6AVxlCkX",
+      "updatedAt": "2026-09-20T05:59:15Z"
+    },
+    "sebdKYryWZgYP2rm3noGuQ": {
+      "rev": "Gk33CfLE6ahVd3Ve60CzF4",
+      "updatedAt": "2026-09-21T03:33:05Z"
+    },
+    "sebdKYryWZgYP2rm3noHTq": {
+      "rev": "iIEha4Lf0bd08jwW6gbm2d",
+      "updatedAt": "2026-09-29T02:39:30Z"
+    },
+    "sebdKYryWZgYP2rm3noHja": {
+      "rev": "iIEha4Lf0bd08jwW6ospZb",
+      "updatedAt": "2026-09-29T17:26:04Z"
+    },
+    "sebdKYryWZgYP2rm3noI7C": {
+      "rev": "iIEha4Lf0bd08jwW6ostz9",
+      "updatedAt": "2026-09-29T17:26:06Z"
+    },
+    "sebdKYryWZgYP2rm3oqsPG": {
+      "rev": "WXnn3TMAGVs0EnH19COTwI",
+      "updatedAt": "2026-10-01T02:57:36Z"
+    },
+    "sebdKYryWZgYP2rm3oqtze": {
+      "rev": "Gk33CfLE6ahVd3Ve5u075M",
+      "updatedAt": "2026-09-19T16:55:41Z"
+    },
+    "sebdKYryWZgYP2rm3oqu9U": {
+      "rev": "G6zzfp6s5dlbun6AVwnnHo",
+      "updatedAt": "2026-09-19T16:52:57Z"
+    },
+    "sebdKYryWZgYP2rm3oquNG": {
+      "rev": "G6zzfp6s5dlbun6AVwnhDv",
+      "updatedAt": "2026-09-19T16:51:31Z"
+    },
+    "sebdKYryWZgYP2rm3oquiu": {
+      "rev": "Gk33CfLE6ahVd3Ve5tx0vy",
+      "updatedAt": "2026-09-19T16:37:41Z"
+    },
+    "sebdKYryWZgYP2rm3oquwg": {
+      "rev": "bXkDxvOEdfzf4NR9YzlTlm",
+      "updatedAt": "2026-09-19T16:33:07Z"
+    },
+    "sebdKYryWZgYP2rm3oqvOE": {
+      "rev": "sebdKYryWZgYP2rm3pCggo",
+      "updatedAt": "2026-09-17T09:21:09Z"
+    },
+    "sebdKYryWZgYP2rm3oqvc0": {
+      "rev": "sebdKYryWZgYP2rm3pCeFI",
+      "updatedAt": "2026-09-17T09:18:46Z"
+    },
+    "species-amphiprion-ocellaris": {
+      "rev": "6hiKrYJiMBmDerMeziJ7XR",
+      "updatedAt": "2026-09-29T17:26:08Z"
+    },
+    "species-ancistrus-cf-cirrhosus": {
+      "rev": "bC4ykP1TUmEDYEZRQDwDbD",
+      "updatedAt": "2026-10-05T02:54:42Z"
+    },
+    "species-andinoacara-pulcher": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fOvw",
+      "updatedAt": "2026-10-05T02:54:44Z"
+    },
+    "species-aphyosemion-australe": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFRB8",
+      "updatedAt": "2026-10-05T02:54:45Z"
+    },
+    "species-apistogramma-cacatuoides": {
+      "rev": "ewFCUyUyQDZBbcG2bi1J4z",
+      "updatedAt": "2026-10-05T02:54:47Z"
+    },
+    "species-aplocheilus-lineatus": {
+      "rev": "58daN6aSfkISRX8w0NSAX3",
+      "updatedAt": "2026-10-05T02:54:49Z"
+    },
+    "species-arapaima-gigas": {
+      "rev": "kacSGNiYKzyTTcRPtr03li",
+      "updatedAt": "2026-10-05T02:54:51Z"
+    },
+    "species-bala-shark": {
+      "rev": "nMj4Bthvy4g70bFzG8bsw1",
+      "updatedAt": "2026-09-22T03:13:07Z"
+    },
+    "species-betta-splendens": {
+      "rev": "58daN6aSfkISRX8w0NSAcK",
+      "updatedAt": "2026-10-05T02:54:53Z"
+    },
+    "species-black-arowana": {
+      "rev": "bXkDxvOEdfzf4NR9Z5Jbf9",
+      "updatedAt": "2026-09-21T15:29:53Z"
+    },
+    "species-black-ghost-knifefish": {
+      "rev": "nMj4Bthvy4g70bFzG8cLj6",
+      "updatedAt": "2026-09-22T03:15:33Z"
+    },
+    "species-black-moor-goldfish": {
+      "rev": "GDkcErM64RhoZsqj93MSSR",
+      "updatedAt": "2026-09-21T15:16:17Z"
+    },
+    "species-botia-striata": {
+      "rev": "58daN6aSfkISRX8w0NSAhb",
+      "updatedAt": "2026-10-05T02:54:54Z"
+    },
+    "species-carassius-auratus": {
+      "rev": "tiu5awf4YZpMiGxzJEHN8b",
+      "updatedAt": "2026-09-29T17:26:10Z"
+    },
+    "species-celestichthys-erythromicron": {
+      "rev": "bC4ykP1TUmEDYEZRQDwFgN",
+      "updatedAt": "2026-10-05T02:54:56Z"
+    },
+    "species-chromis-viridis": {
+      "rev": "6hiKrYJiMBmDerMeziJ9VV",
+      "updatedAt": "2026-09-29T17:26:14Z"
+    },
+    "species-chromobotia-macracanthus": {
+      "rev": "bC4ykP1TUmEDYEZRQDwFnp",
+      "updatedAt": "2026-10-05T02:54:58Z"
+    },
+    "species-clown-knifefish": {
+      "rev": "bXkDxvOEdfzf4NR9Z6gbhO",
+      "updatedAt": "2026-09-22T02:10:21Z"
+    },
+    "species-corydoras-aeneus": {
+      "rev": "ewFCUyUyQDZBbcG2bi1JL9",
+      "updatedAt": "2026-10-05T02:55:00Z"
+    },
+    "species-corydoras-paleatus": {
+      "rev": "QPsNt7HA1W2nzvoUKEBan4",
+      "updatedAt": "2026-10-05T02:55:01Z"
+    },
+    "species-corydoras-panda": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fSTL",
+      "updatedAt": "2026-10-05T02:55:03Z"
+    },
+    "species-corydoras-trilineatus": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFROL",
+      "updatedAt": "2026-10-05T02:55:05Z"
+    },
+    "species-danio-margaritatus": {
+      "rev": "BF7b7JzesWwz9Gassu07f7",
+      "updatedAt": "2026-10-05T02:55:07Z"
+    },
+    "species-danio-rerio": {
+      "rev": "QPsNt7HA1W2nzvoUKEBasn",
+      "updatedAt": "2026-10-05T02:55:09Z"
+    },
+    "species-denison-barb": {
+      "rev": "nMj4Bthvy4g70bFzG8cJIm",
+      "updatedAt": "2026-09-22T03:15:22Z"
+    },
+    "species-figure-8-puffer": {
+      "rev": "bXkDxvOEdfzf4NR9Z6knf5",
+      "updatedAt": "2026-09-22T02:45:07Z"
+    },
+    "species-freshwater-stingray": {
+      "rev": "QoM244JUCxy23vNUUTcdIU",
+      "updatedAt": "2026-09-22T03:08:29Z"
+    },
+    "species-giant-danio": {
+      "rev": "nMj4Bthvy4g70bFzG8QjsK",
+      "updatedAt": "2026-09-22T02:44:34Z"
+    },
+    "species-gymnocorymbus-ternetzi": {
+      "rev": "kacSGNiYKzyTTcRPtr04vZ",
+      "updatedAt": "2026-10-05T02:55:11Z"
+    },
+    "species-halfbeak": {
+      "rev": "nMj4Bthvy4g70bFzG8Q8b7",
+      "updatedAt": "2026-09-22T02:42:59Z"
+    },
+    "species-hyphessobrycon-amandae": {
+      "rev": "1Ijs2brJcsWqS9fwQ6tXv3",
+      "updatedAt": "2026-10-05T02:55:12Z"
+    },
+    "species-hyphessobrycon-eques": {
+      "rev": "QPsNt7HA1W2nzvoUKEBazf",
+      "updatedAt": "2026-10-05T02:55:14Z"
+    },
+    "species-hyphessobrycon-herbertaxelrodi": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFRrH",
+      "updatedAt": "2026-10-05T02:55:16Z"
+    },
+    "species-hyphessobrycon-megalopterus": {
+      "rev": "kacSGNiYKzyTTcRPtr053P",
+      "updatedAt": "2026-10-05T02:55:17Z"
+    },
+    "species-hyphessobrycon-pulchripinnis": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fSlK",
+      "updatedAt": "2026-10-05T02:55:19Z"
+    },
+    "species-hypostomus-plecostomus": {
+      "rev": "ewFCUyUyQDZBbcG2bi1JTE",
+      "updatedAt": "2026-10-05T02:55:21Z"
+    },
+    "species-iridescent-shark": {
+      "rev": "GDkcErM64RhoZsqj94B5cC",
+      "updatedAt": "2026-09-22T02:09:37Z"
+    },
+    "species-jaguar-cichlid": {
+      "rev": "bXkDxvOEdfzf4NR9Z6jx2s",
+      "updatedAt": "2026-09-22T02:42:18Z"
+    },
+    "species-kryptopterus-vitreolus": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFRxZ",
+      "updatedAt": "2026-10-05T02:55:23Z"
+    },
+    "species-labidochromis-caeruleus": {
+      "rev": "1Ijs2brJcsWqS9fwQ6tZZT",
+      "updatedAt": "2026-10-05T02:55:25Z"
+    },
+    "species-longnose-gar": {
+      "rev": "bXkDxvOEdfzf4NR9Z5J9Jy",
+      "updatedAt": "2026-09-21T15:26:24Z"
+    },
+    "species-melanotaenia-boesemani": {
+      "rev": "kacSGNiYKzyTTcRPtr057K",
+      "updatedAt": "2026-10-05T02:55:27Z"
+    },
+    "species-melanotaenia-praecox": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fSw7",
+      "updatedAt": "2026-10-05T02:55:28Z"
+    },
+    "species-midas-cichlid": {
+      "rev": "nMj4Bthvy4g70bFzG8MGoD",
+      "updatedAt": "2026-09-22T02:32:32Z"
+    },
+    "species-mikrogeophagus-altispinosus": {
+      "rev": "070VCb2YNUintYnS2o6q4j",
+      "updatedAt": "2026-10-05T02:55:30Z"
+    },
+    "species-nematobrycon-palmeri": {
+      "rev": "QPsNt7HA1W2nzvoUKEBbyM",
+      "updatedAt": "2026-10-05T02:55:32Z"
+    },
+    "species-orinoco-peacock-bass": {
+      "rev": "GDkcErM64RhoZsqj93ND6S",
+      "updatedAt": "2026-09-21T15:25:26Z"
+    },
+    "species-osteoglossum-bicirrhosum": {
+      "rev": "ewFCUyUyQDZBbcG2bi1KzV",
+      "updatedAt": "2026-10-05T02:55:34Z"
+    },
+    "species-otocinclus-affinis": {
+      "rev": "1Ijs2brJcsWqS9fwQ6tZno",
+      "updatedAt": "2026-10-05T02:55:36Z"
+    },
+    "species-pangio-kuhlii": {
+      "rev": "BF7b7JzesWwz9Gassu08O1",
+      "updatedAt": "2026-10-05T02:55:38Z"
+    },
+    "species-paracheirodon-axelrodi": {
+      "rev": "58daN6aSfkISRX8w0NSAqO",
+      "updatedAt": "2026-10-05T02:55:39Z"
+    },
+    "species-paracheirodon-innesi": {
+      "rev": "QPsNt7HA1W2nzvoUKEBc1n",
+      "updatedAt": "2026-10-05T02:55:41Z"
+    },
+    "species-pelvicachromis-pulcher": {
+      "rev": "ewFCUyUyQDZBbcG2bi1LAH",
+      "updatedAt": "2026-10-05T02:55:43Z"
+    },
+    "species-pethia-conchonius": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFStR",
+      "updatedAt": "2026-10-05T02:55:44Z"
+    },
+    "species-pethia-padamya": {
+      "rev": "1Ijs2brJcsWqS9fwQ6u99a",
+      "updatedAt": "2026-10-05T02:55:46Z"
+    },
+    "species-phenacogrammus-interruptus": {
+      "rev": "1Ijs2brJcsWqS9fwQ6u9Fj",
+      "updatedAt": "2026-10-05T02:55:47Z"
+    },
+    "species-pictus-catfish": {
+      "rev": "GDkcErM64RhoZsqj94BtM0",
+      "updatedAt": "2026-09-22T02:20:50Z"
+    },
+    "species-poecilia-reticulata": {
+      "rev": "QPsNt7HA1W2nzvoUKEBc5E",
+      "updatedAt": "2026-10-05T02:55:49Z"
+    },
+    "species-poecilia-sphenops": {
+      "rev": "bXkDxvOEdfzf4NR9Z19naM",
+      "updatedAt": "2026-09-20T04:41:32Z"
+    },
+    "species-poecilia-wingei": {
+      "rev": "QPsNt7HA1W2nzvoUKEBc8f",
+      "updatedAt": "2026-10-05T02:55:51Z"
+    },
+    "species-pseudanthias-squamipinnis": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFSvx",
+      "updatedAt": "2026-10-05T02:55:52Z"
+    },
+    "species-pseudotropheus-zebra": {
+      "rev": "1Ijs2brJcsWqS9fwQ6uAlx",
+      "updatedAt": "2026-10-05T02:55:54Z"
+    },
+    "species-pterophyllum-scalare": {
+      "rev": "bXkDxvOEdfzf4NR9Z3gOkq",
+      "updatedAt": "2026-09-21T04:29:28Z"
+    },
+    "species-puntigrus-tetrazona": {
+      "rev": "ewFCUyUyQDZBbcG2bi1LIM",
+      "updatedAt": "2026-10-05T02:55:55Z"
+    },
+    "species-puntius-titteya": {
+      "rev": "58daN6aSfkISRX8w0NSB2h",
+      "updatedAt": "2026-10-05T02:55:57Z"
+    },
+    "species-pygocentrus-nattereri": {
+      "rev": "bXkDxvOEdfzf4NR9Z6oR1a",
+      "updatedAt": "2026-09-22T03:17:18Z"
+    },
+    "species-red-bellied-pacu": {
+      "rev": "GDkcErM64RhoZsqj93NliX",
+      "updatedAt": "2026-09-21T15:32:00Z"
+    },
+    "species-red-devil-cichlid": {
+      "rev": "bXkDxvOEdfzf4NR9Z6iPzT",
+      "updatedAt": "2026-09-22T02:29:11Z"
+    },
+    "species-red-tail-shark": {
+      "rev": "nMj4Bthvy4g70bFzG8cHuL",
+      "updatedAt": "2026-09-22T03:15:10Z"
+    },
+    "species-ryukin-goldfish": {
+      "rev": "GDkcErM64RhoZsqj93MVSv",
+      "updatedAt": "2026-09-21T15:17:22Z"
+    },
+    "species-sailfin-pleco": {
+      "rev": "GDkcErM64RhoZsqj94D1e7",
+      "updatedAt": "2026-09-22T02:43:43Z"
+    },
+    "species-scleropages-formosus": {
+      "rev": "BF7b7JzesWwz9Gassu0KSP",
+      "updatedAt": "2026-10-05T02:55:59Z"
+    },
+    "species-scleropages-jardinii": {
+      "rev": "070VCb2YNUintYnS2o6qGR",
+      "updatedAt": "2026-10-05T02:56:01Z"
+    },
+    "species-serrasalmus-rhombeus": {
+      "rev": "GDkcErM64RhoZsqj94HyKe",
+      "updatedAt": "2026-09-22T03:43:51Z"
+    },
+    "species-severum": {
+      "rev": "GDkcErM64RhoZsqj94F388",
+      "updatedAt": "2026-09-22T03:15:41Z"
+    },
+    "species-spotted-gar": {
+      "rev": "nMj4Bthvy4g70bFzG48Ydc",
+      "updatedAt": "2026-09-21T15:31:17Z"
+    },
+    "species-spotted-snakehead": {
+      "rev": "nMj4Bthvy4g70bFzG48N7a",
+      "updatedAt": "2026-09-21T15:30:44Z"
+    },
+    "species-symphysodon-aequifasciatus": {
+      "rev": "1Ijs2brJcsWqS9fwQ6uAs6",
+      "updatedAt": "2026-10-05T02:56:02Z"
+    },
+    "species-telescope-goldfish": {
+      "rev": "bXkDxvOEdfzf4NR9Z5H41a",
+      "updatedAt": "2026-09-21T15:15:40Z"
+    },
+    "species-thorichthys-meeki": {
+      "rev": "QPsNt7HA1W2nzvoUKEBcLG",
+      "updatedAt": "2026-10-05T02:56:04Z"
+    },
+    "species-three-barred-peacock-bass": {
+      "rev": "bXkDxvOEdfzf4NR9Z5IwDM",
+      "updatedAt": "2026-09-21T15:24:55Z"
+    },
+    "species-tiger-shovelnose-catfish": {
+      "rev": "GDkcErM64RhoZsqj94Bufs",
+      "updatedAt": "2026-09-22T02:21:32Z"
+    },
+    "species-tinfoil-barb": {
+      "rev": "BfX6V3wz1DOJdzDvLyR0yS",
+      "updatedAt": "2026-09-22T03:09:43Z"
+    },
+    "species-trichogaster-lalius": {
+      "rev": "1Ijs2brJcsWqS9fwQ6uAyF",
+      "updatedAt": "2026-10-05T02:56:06Z"
+    },
+    "species-trichopodus-leerii": {
+      "rev": "ewFCUyUyQDZBbcG2bi1MzP",
+      "updatedAt": "2026-10-05T02:56:08Z"
+    },
+    "species-trichopodus-trichopterus": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fUO2",
+      "updatedAt": "2026-10-05T02:56:09Z"
+    },
+    "species-trichopsis-pumila": {
+      "rev": "vIy4RM4AZsZ5V5B7s9fUYp",
+      "updatedAt": "2026-10-05T02:56:11Z"
+    },
+    "species-trigonostigma-espei": {
+      "rev": "Ih7CtFPuPgIOJ6afZvFTrp",
+      "updatedAt": "2026-10-05T02:56:12Z"
+    },
+    "species-trigonostigma-heteromorpha": {
+      "rev": "58daN6aSfkISRX8w0NSB7y",
+      "updatedAt": "2026-10-05T02:56:14Z"
+    },
+    "species-walking-catfish": {
+      "rev": "GDkcErM64RhoZsqj93NT3j",
+      "updatedAt": "2026-09-21T15:29:16Z"
+    },
+    "species-weeks-bichir": {
+      "rev": "GDkcErM64RhoZsqj93NLxI",
+      "updatedAt": "2026-09-21T15:28:04Z"
+    },
+    "species-wolf-cichlid": {
+      "rev": "GDkcErM64RhoZsqj94CrI2",
+      "updatedAt": "2026-09-22T02:41:11Z"
+    },
+    "species-xiphophorus-hellerii": {
+      "rev": "QPsNt7HA1W2nzvoUKEBcOh",
+      "updatedAt": "2026-10-05T02:56:16Z"
+    },
+    "species-xiphophorus-maculatus": {
+      "rev": "070VCb2YNUintYnS2o6qMI",
+      "updatedAt": "2026-10-05T02:56:18Z"
+    },
+    "species-zebrasoma-flavescens": {
+      "rev": "ewFCUyUyQDZBbcG2bi1N7U",
+      "updatedAt": "2026-10-05T02:56:19Z"
+    },
+    "1z8rQFHeojDMTUo2hXSWr0": {
+      "rev": "6hiKrYJiMBmDerMezgNFih",
+      "updatedAt": "2026-09-29T02:37:58Z"
+    },
+    "1z8rQFHeojDMTUo2hXSWv7": {
+      "rev": "6hiKrYJiMBmDerMezgNFoF",
+      "updatedAt": "2026-09-29T02:37:59Z"
+    },
+    "7kdig6Bk6SZq4GZkXcVaBK": {
+      "rev": "6hiKrYJiMBmDerMezgNFsP",
+      "updatedAt": "2026-09-29T02:38:01Z"
+    },
+    "BruaGKYCGDRQjkiQDnlBjA": {
+      "rev": "tiu5awf4YZpMiGxzJC9jzZ",
+      "updatedAt": "2026-09-29T02:38:02Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Ciitg": {
+      "rev": "tiu5awf4YZpMiGxzJC9k8N",
+      "updatedAt": "2026-09-29T02:38:04Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Cj9qO": {
+      "rev": "6hiKrYJiMBmDerMezgNGBp",
+      "updatedAt": "2026-09-29T02:38:05Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjA0S": {
+      "rev": "6hiKrYJiMBmDerMezgNGLX",
+      "updatedAt": "2026-09-29T02:38:06Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjAAW": {
+      "rev": "6hiKrYJiMBmDerMezgNHLx",
+      "updatedAt": "2026-09-29T02:38:07Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CtuPo": {
+      "rev": "tiu5awf4YZpMiGxzJC9klN",
+      "updatedAt": "2026-09-29T02:38:09Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuIEm": {
+      "rev": "iIEha4Lf0bd08jwW6gbM4J",
+      "updatedAt": "2026-09-29T02:38:10Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuIOq": {
+      "rev": "Z5tyIhOWsR99a1RypJ8J6L",
+      "updatedAt": "2026-10-01T02:57:05Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuYam": {
+      "rev": "iIEha4Lf0bd08jwW6gbNjX",
+      "updatedAt": "2026-09-29T02:38:13Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DFYK8": {
+      "rev": "zfQuMTBtkX4TgigwznPm41",
+      "updatedAt": "2026-10-01T02:57:07Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXPL6": {
+      "rev": "zfQuMTBtkX4TgigwznPmBT",
+      "updatedAt": "2026-10-01T02:57:11Z"
+    },
+    "IlX7xILobrukz7d5Jnflew": {
+      "rev": "tiu5awf4YZpMiGxzJC9mCh",
+      "updatedAt": "2026-09-29T02:38:17Z"
+    },
+    "IlX7xILobrukz7d5JnfltO": {
+      "rev": "iIEha4Lf0bd08jwW6gbQjL",
+      "updatedAt": "2026-09-29T02:38:18Z"
+    },
+    "IlX7xILobrukz7d5Jng2hi": {
+      "rev": "iIEha4Lf0bd08jwW6gbQyp",
+      "updatedAt": "2026-09-29T02:38:19Z"
+    },
+    "IlX7xILobrukz7d5Jng4A2": {
+      "rev": "GDkcErM64RhoZsqj94bAYR",
+      "updatedAt": "2026-09-22T07:44:43Z"
+    },
+    "IlX7xILobrukz7d5Jo2xiA": {
+      "rev": "zfQuMTBtkX4TgigwznPmQN",
+      "updatedAt": "2026-10-01T02:57:21Z"
+    },
+    "J1Tx0fWCuGNPno99A6Ttdg": {
+      "rev": "bXkDxvOEdfzf4NR9Z7PdM1",
+      "updatedAt": "2026-09-22T07:46:27Z"
+    },
+    "J1Tx0fWCuGNPno99A79SZ2": {
+      "rev": "iIEha4Lf0bd08jwW6gbSJP",
+      "updatedAt": "2026-09-29T02:38:22Z"
+    },
+    "J1Tx0fWCuGNPno99A79SjI": {
+      "rev": "iIEha4Lf0bd08jwW6gbREJ",
+      "updatedAt": "2026-09-29T02:38:20Z"
+    },
+    "J1Tx0fWCuGNPno99A79StY": {
+      "rev": "iIEha4Lf0bd08jwW6gbRe7",
+      "updatedAt": "2026-09-29T02:38:21Z"
+    },
+    "J1Tx0fWCuGNPno99A7KJ84": {
+      "rev": "iIEha4Lf0bd08jwW6gbSYt",
+      "updatedAt": "2026-09-29T02:38:24Z"
+    },
+    "J1Tx0fWCuGNPno99A7KJKt": {
+      "rev": "iIEha4Lf0bd08jwW6gbTJL",
+      "updatedAt": "2026-09-29T02:38:25Z"
+    },
+    "J1Tx0fWCuGNPno99A7KvLg": {
+      "rev": "zfQuMTBtkX4TgigwznPmfH",
+      "updatedAt": "2026-10-01T02:57:29Z"
+    },
+    "J1Tx0fWCuGNPno99A7KvVw": {
+      "rev": "tiu5awf4YZpMiGxzJC9mkf",
+      "updatedAt": "2026-09-29T02:38:26Z"
+    },
+    "WeSCIjvgoYC0LmYF97LSPP": {
+      "rev": "bXkDxvOEdfzf4NR9Z7QIWp",
+      "updatedAt": "2026-09-22T07:50:59Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLTD": {
+      "rev": "iIEha4Lf0bd08jwW6gbW8p",
+      "updatedAt": "2026-09-29T02:38:33Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLW3": {
+      "rev": "nMj4Bthvy4g70bFzGANwUN",
+      "updatedAt": "2026-09-22T07:18:48Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLYt": {
+      "rev": "GDkcErM64RhoZsqj94ZQYS",
+      "updatedAt": "2026-09-22T07:19:31Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLbj": {
+      "rev": "iIEha4Lf0bd08jwW6gbUOR",
+      "updatedAt": "2026-09-29T02:38:27Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLeZ": {
+      "rev": "iIEha4Lf0bd08jwW6gbUyZ",
+      "updatedAt": "2026-09-29T02:38:29Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLhP": {
+      "rev": "iIEha4Lf0bd08jwW6gbVYh",
+      "updatedAt": "2026-09-29T02:38:30Z"
+    },
+    "ofTl1CTOUWuLwM28PxTLn5": {
+      "rev": "6hiKrYJiMBmDerMezgNLRn",
+      "updatedAt": "2026-09-29T02:38:31Z"
+    },
+    "plant-alternanthera-reineckii": {
+      "rev": "6hiKrYJiMBmDerMezgNLa7",
+      "updatedAt": "2026-09-29T02:38:34Z"
+    },
+    "plant-amazon-sword": {
+      "rev": "GDkcErM64RhoZsqj94V2GM",
+      "updatedAt": "2026-09-22T06:23:46Z"
+    },
+    "plant-ambulia": {
+      "rev": "iIEha4Lf0bd08jwW6gbWix",
+      "updatedAt": "2026-09-29T02:38:35Z"
+    },
+    "plant-anubias-barteri": {
+      "rev": "6hiKrYJiMBmDerMezgNLh3",
+      "updatedAt": "2026-09-29T02:38:37Z"
+    },
+    "plant-bolbitis-heudelotii": {
+      "rev": "bXkDxvOEdfzf4NR9Z79P1o",
+      "updatedAt": "2026-09-22T05:55:06Z"
+    },
+    "plant-bucephalandra": {
+      "rev": "nMj4Bthvy4g70bFzG9Zkgr",
+      "updatedAt": "2026-09-22T05:59:35Z"
+    },
+    "plant-cabomba-caroliniana": {
+      "rev": "6hiKrYJiMBmDerMezgNLwJ",
+      "updatedAt": "2026-09-29T02:38:38Z"
+    },
+    "plant-cryptocoryne-balansae": {
+      "rev": "6hiKrYJiMBmDerMezgNMAB",
+      "updatedAt": "2026-09-29T02:38:40Z"
+    },
+    "plant-cryptocoryne-parva": {
+      "rev": "nMj4Bthvy4g70bFzG9XurD",
+      "updatedAt": "2026-09-22T05:53:13Z"
+    },
+    "plant-cryptocoryne-wendtii": {
+      "rev": "iIEha4Lf0bd08jwW6gbXdj",
+      "updatedAt": "2026-09-29T02:38:41Z"
+    },
+    "plant-dwarf-baby-tears": {
+      "rev": "GDkcErM64RhoZsqj94Zm9x",
+      "updatedAt": "2026-09-22T07:25:06Z"
+    },
+    "plant-dwarf-hairgrass": {
+      "rev": "nMj4Bthvy4g70bFzGAQKZK",
+      "updatedAt": "2026-09-22T07:26:12Z"
+    },
+    "plant-dwarf-sagittaria": {
+      "rev": "iIEha4Lf0bd08jwW6otEd9",
+      "updatedAt": "2026-09-29T17:26:58Z"
+    },
+    "plant-hornwort": {
+      "rev": "bXkDxvOEdfzf4NR9Z79iWH",
+      "updatedAt": "2026-09-22T05:57:37Z"
+    },
+    "plant-java-fern": {
+      "rev": "GDkcErM64RhoZsqj94UyR5",
+      "updatedAt": "2026-09-22T06:22:46Z"
+    },
+    "plant-java-fern-narrow-leaf": {
+      "rev": "bXkDxvOEdfzf4NR9Z79FGv",
+      "updatedAt": "2026-09-22T05:53:50Z"
+    },
+    "plant-java-fern-windelov": {
+      "rev": "nMj4Bthvy4g70bFzG9Yc4i",
+      "updatedAt": "2026-09-22T05:55:09Z"
+    },
+    "plant-ludwigia-repens": {
+      "rev": "tiu5awf4YZpMiGxzJC9oev",
+      "updatedAt": "2026-09-29T02:38:42Z"
+    },
+    "plant-marsilea-hirsuta": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Mhsr",
+      "updatedAt": "2026-09-22T07:28:23Z"
+    },
+    "plant-monte-carlo": {
+      "rev": "bXkDxvOEdfzf4NR9Z7OZD4",
+      "updatedAt": "2026-09-22T07:40:34Z"
+    },
+    "plant-pogostemon-helferi": {
+      "rev": "nMj4Bthvy4g70bFzG9Xcc2",
+      "updatedAt": "2026-09-22T05:51:36Z"
+    },
+    "plant-rotala-rotundifolia": {
+      "rev": "6hiKrYJiMBmDerMezgNMWN",
+      "updatedAt": "2026-09-29T02:38:43Z"
+    },
+    "plant-rotala-wallichii": {
+      "rev": "bXkDxvOEdfzf4NR9Z78kIR",
+      "updatedAt": "2026-09-22T05:52:31Z"
+    },
+    "plant-thai-onion-plant": {
+      "rev": "GDkcErM64RhoZsqj94Sgnf",
+      "updatedAt": "2026-09-22T05:51:07Z"
+    },
+    "plant-vallisneria-spiralis": {
+      "rev": "tiu5awf4YZpMiGxzJC9oih",
+      "updatedAt": "2026-09-29T02:38:44Z"
+    },
+    "plant-water-wisteria": {
+      "rev": "tiu5awf4YZpMiGxzJC9ooz",
+      "updatedAt": "2026-09-29T02:38:45Z"
+    },
+    "sebdKYryWZgYP2rm3oqyay": {
+      "rev": "6hiKrYJiMBmDerMezgNMtx",
+      "updatedAt": "2026-09-29T02:38:46Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXkw": {
+      "rev": "nMj4Bthvy4g70bFzG95o96",
+      "updatedAt": "2026-09-22T04:20:16Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSs4kl": {
+      "rev": "zfQuMTBtkX4TgigwznPlwZ",
+      "updatedAt": "2026-10-01T02:57:01Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSs8fJ": {
+      "rev": "7d6uY14XNJyugfJLsUvqGP",
+      "updatedAt": "2026-10-01T02:57:04Z"
+    },
+    "G6zzfp6s5dlbun6AVztyBa": {
+      "rev": "BhxdLrybiwRysG91aNBTYG",
+      "updatedAt": "2026-09-22T04:12:12Z"
+    },
+    "G6zzfp6s5dlbun6AVztyJC": {
+      "rev": "nMj4Bthvy4g70bFzG92gfM",
+      "updatedAt": "2026-09-22T04:11:19Z"
+    },
+    "G6zzfp6s5dlbun6AVztyQo": {
+      "rev": "GDkcErM64RhoZsqj94JZiC",
+      "updatedAt": "2026-09-22T04:10:37Z"
+    },
+    "Gk33CfLE6ahVd3Ve61Pe08": {
+      "rev": "nMj4Bthvy4g70bFzG92OqU",
+      "updatedAt": "2026-09-22T04:09:58Z"
+    },
+    "Gk33CfLE6ahVd3Ve61Pewb": {
+      "rev": "bXkDxvOEdfzf4NR9Z6vljV",
+      "updatedAt": "2026-09-22T04:09:14Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CuIo0": {
+      "rev": "bXkDxvOEdfzf4NR9Z73I8V",
+      "updatedAt": "2026-09-22T04:50:02Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DFZ8S": {
+      "rev": "GDkcErM64RhoZsqj94MDUT",
+      "updatedAt": "2026-09-22T04:50:41Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DJhXM": {
+      "rev": "PZ8Kai1VvEL468NS2KwTqY",
+      "updatedAt": "2026-09-17T03:48:56Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXOqu": {
+      "rev": "bXkDxvOEdfzf4NR9Z73NtA",
+      "updatedAt": "2026-09-22T04:52:23Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXP0y": {
+      "rev": "nMj4Bthvy4g70bFzG9Gyu1",
+      "updatedAt": "2026-09-22T04:53:19Z"
+    },
+    "IlX7xILobrukz7d5Jnfm4E": {
+      "rev": "GDkcErM64RhoZsqj94MYBs",
+      "updatedAt": "2026-09-22T04:54:07Z"
+    },
+    "IlX7xILobrukz7d5JnfmDG": {
+      "rev": "bXkDxvOEdfzf4NR9Z73oFX",
+      "updatedAt": "2026-09-22T04:55:40Z"
+    },
+    "IlX7xILobrukz7d5JnfmKU": {
+      "rev": "nMj4Bthvy4g70bFzG9IDZy",
+      "updatedAt": "2026-09-22T04:57:51Z"
+    },
+    "IlX7xILobrukz7d5Jng5wE": {
+      "rev": "bXkDxvOEdfzf4NR9Z73tuy",
+      "updatedAt": "2026-09-22T04:58:26Z"
+    },
+    "IlX7xILobrukz7d5JngE2Q": {
+      "rev": "bXkDxvOEdfzf4NR9Z73vaB",
+      "updatedAt": "2026-09-22T04:59:05Z"
+    },
+    "IlX7xILobrukz7d5Jo2rTa": {
+      "rev": "bXkDxvOEdfzf4NR9Z747IZ",
+      "updatedAt": "2026-09-22T05:00:20Z"
+    },
+    "J1Tx0fWCuGNPno99A6UVmA": {
+      "rev": "GDkcErM64RhoZsqj94N56a",
+      "updatedAt": "2026-09-22T05:01:21Z"
+    },
+    "J1Tx0fWCuGNPno99A6UVyz": {
+      "rev": "PZ8Kai1VvEL468NS2KwTqY",
+      "updatedAt": "2026-09-17T03:48:56Z"
+    },
+    "J1Tx0fWCuGNPno99A6hj3X": {
+      "rev": "GDkcErM64RhoZsqj94SZbv",
+      "updatedAt": "2026-09-22T05:47:19Z"
+    },
+    "J1Tx0fWCuGNPno99A6iAEQ": {
+      "rev": "GDkcErM64RhoZsqj94SdUz",
+      "updatedAt": "2026-09-22T05:49:10Z"
+    },
+    "J1Tx0fWCuGNPno99A6iAOg": {
+      "rev": "nMj4Bthvy4g70bFzG98dG9",
+      "updatedAt": "2026-09-22T04:29:30Z"
+    },
+    "J1Tx0fWCuGNPno99A79WPX": {
+      "rev": "nMj4Bthvy4g70bFzG99muB",
+      "updatedAt": "2026-09-22T04:30:50Z"
+    },
+    "J1Tx0fWCuGNPno99A7KIaj": {
+      "rev": "GDkcErM64RhoZsqj94Kkqw",
+      "updatedAt": "2026-09-22T04:31:39Z"
+    },
+    "J1Tx0fWCuGNPno99A7KIq7": {
+      "rev": "nMj4Bthvy4g70bFzG9AUQT",
+      "updatedAt": "2026-09-22T04:32:21Z"
+    },
+    "J1Tx0fWCuGNPno99A7Ket0": {
+      "rev": "bXkDxvOEdfzf4NR9Z71S3N",
+      "updatedAt": "2026-09-22T04:33:28Z"
+    },
+    "PZ8Kai1VvEL468NS2LLdvC": {
+      "rev": "bXkDxvOEdfzf4NR9Z6vY8q",
+      "updatedAt": "2026-09-22T04:06:55Z"
+    },
+    "PZ8Kai1VvEL468NS2LLeDy": {
+      "rev": "G6X5Q7T5x7WwfPCCQLqI1q",
+      "updatedAt": "2026-09-28T11:04:29Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4Mjof": {
+      "rev": "BhxdLrybiwRysG91aNC1N4",
+      "updatedAt": "2026-09-22T04:13:24Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MkUT": {
+      "rev": "GDkcErM64RhoZsqj94JTrq",
+      "updatedAt": "2026-09-22T04:07:44Z"
+    },
+    "bXkDxvOEdfzf4NR9Z4MkcJ": {
+      "rev": "bXkDxvOEdfzf4NR9Z6vTni",
+      "updatedAt": "2026-09-22T04:06:13Z"
+    },
+    "invertebrate-anentome-helena": {
+      "rev": "nMj4Bthvy4g70bFzG9Boyx",
+      "updatedAt": "2026-09-22T04:34:22Z"
+    },
+    "invertebrate-astropecten-polyacanthus": {
+      "rev": "bXkDxvOEdfzf4NR9Z71d0j",
+      "updatedAt": "2026-09-22T04:35:11Z"
+    },
+    "invertebrate-atyopsis-moluccensis": {
+      "rev": "GDkcErM64RhoZsqj94L2tq",
+      "updatedAt": "2026-09-22T04:36:02Z"
+    },
+    "invertebrate-caridina-cantonensis": {
+      "rev": "nMj4Bthvy4g70bFzG9D41S",
+      "updatedAt": "2026-09-22T04:36:56Z"
+    },
+    "invertebrate-caridina-multidentata": {
+      "rev": "rtyqKwjy88AX8UfFxNjLDF",
+      "updatedAt": "2026-10-01T02:57:32Z"
+    },
+    "invertebrate-entacmaea-quadricolor": {
+      "rev": "GDkcErM64RhoZsqj94KFy4",
+      "updatedAt": "2026-09-22T04:23:12Z"
+    },
+    "invertebrate-limnopilos-naiyanetri": {
+      "rev": "bXkDxvOEdfzf4NR9Z72bNi",
+      "updatedAt": "2026-09-22T04:43:40Z"
+    },
+    "invertebrate-lysmata-amboinensis": {
+      "rev": "nMj4Bthvy4g70bFzG9F5rC",
+      "updatedAt": "2026-09-22T04:44:26Z"
+    },
+    "invertebrate-lysmata-debelius": {
+      "rev": "GDkcErM64RhoZsqj94LnPW",
+      "updatedAt": "2026-09-22T04:45:07Z"
+    },
+    "invertebrate-lysmata-wurdemanni": {
+      "rev": "bXkDxvOEdfzf4NR9Z72wCU",
+      "updatedAt": "2026-09-22T04:46:04Z"
+    },
+    "invertebrate-melanoides-tuberculata": {
+      "rev": "bXkDxvOEdfzf4NR9Z72zFv",
+      "updatedAt": "2026-09-22T04:47:02Z"
+    },
+    "invertebrate-mespilia-globulus": {
+      "rev": "nMj4Bthvy4g70bFzG9FseR",
+      "updatedAt": "2026-09-22T04:47:40Z"
+    },
+    "invertebrate-neocaridina-davidi": {
+      "rev": "GDkcErM64RhoZsqj94KJwR",
+      "updatedAt": "2026-09-22T04:24:28Z"
+    },
+    "invertebrate-palaemon-paludosus": {
+      "rev": "nMj4Bthvy4g70bFzG9GB4t",
+      "updatedAt": "2026-09-22T04:48:23Z"
+    },
+    "invertebrate-perisesarma-bidens": {
+      "rev": "bXkDxvOEdfzf4NR9Z73Di9",
+      "updatedAt": "2026-09-22T04:48:58Z"
+    },
+    "invertebrate-phymanthus-crucifer": {
+      "rev": "nMj4Bthvy4g70bFzG97uHf",
+      "updatedAt": "2026-09-22T04:25:18Z"
+    },
+    "invertebrate-planorbarius-corneus": {
+      "rev": "GDkcErM64RhoZsqj94KTXW",
+      "updatedAt": "2026-09-22T04:26:23Z"
+    },
+    "invertebrate-pomacea-bridgesii": {
+      "rev": "bXkDxvOEdfzf4NR9Z70nyV",
+      "updatedAt": "2026-09-22T04:27:15Z"
+    },
+    "invertebrate-stenopus-hispidus": {
+      "rev": "nMj4Bthvy4g70bFzG98Rz9",
+      "updatedAt": "2026-09-22T04:28:01Z"
+    },
+    "invertebrate-vittina-natalensis": {
+      "rev": "nMj4Bthvy4g70bFzG98XzC",
+      "updatedAt": "2026-09-22T04:28:42Z"
+    },
+    "sebdKYryWZgYP2rm3or1AM": {
+      "rev": "BhxdLrybiwRysG91aNCIpa",
+      "updatedAt": "2026-09-22T04:14:07Z"
+    },
+    "sebdKYryWZgYP2rm3or1pg": {
+      "rev": "nMj4Bthvy4g70bFzG95JEU",
+      "updatedAt": "2026-09-22T04:18:15Z"
+    },
+    "sebdKYryWZgYP2rm3or21U": {
+      "rev": "bXkDxvOEdfzf4NR9Z6zy4i",
+      "updatedAt": "2026-09-22T04:17:18Z"
+    },
+    "1z8rQFHeojDMTUo2hX9Rpx": {
+      "rev": "iIEha4Lf0bd08jwW6gas15",
+      "updatedAt": "2026-09-29T02:37:25Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXLR": {
+      "rev": "6hiKrYJiMBmDerMezgNAPx",
+      "updatedAt": "2026-09-29T02:37:27Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXOj": {
+      "rev": "tiu5awf4YZpMiGxzJC9gmn",
+      "updatedAt": "2026-09-29T02:37:28Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXVJ": {
+      "rev": "6hiKrYJiMBmDerMezgNAWt",
+      "updatedAt": "2026-09-29T02:37:29Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSrVl7": {
+      "rev": "iIEha4Lf0bd08jwW6gaxB5",
+      "updatedAt": "2026-09-29T02:37:30Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmjC": {
+      "rev": "iIEha4Lf0bd08jwW6gaxg3",
+      "updatedAt": "2026-09-29T02:37:32Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmlr": {
+      "rev": "iIEha4Lf0bd08jwW6gb1QJ",
+      "updatedAt": "2026-09-29T02:37:33Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmoW": {
+      "rev": "6hiKrYJiMBmDerMezgNB2n",
+      "updatedAt": "2026-09-29T02:37:34Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmrB": {
+      "rev": "tiu5awf4YZpMiGxzJC9hIF",
+      "updatedAt": "2026-09-29T02:37:35Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmtq": {
+      "rev": "tiu5awf4YZpMiGxzJC9hmR",
+      "updatedAt": "2026-09-29T02:37:37Z"
+    },
+    "BruaGKYCGDRQjkiQDnlmwV": {
+      "rev": "nMj4Bthvy4g70bFzGAwUht",
+      "updatedAt": "2026-09-22T08:43:14Z"
+    },
+    "Gk33CfLE6ahVd3Ve601Vay": {
+      "rev": "bXkDxvOEdfzf4NR9Z7XJdk",
+      "updatedAt": "2026-09-22T08:39:38Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjDmS": {
+      "rev": "bXkDxvOEdfzf4NR9Z7jNv9",
+      "updatedAt": "2026-09-22T09:39:05Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CttlY": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Yx6J",
+      "updatedAt": "2026-09-22T08:49:39Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Ctty8": {
+      "rev": "tiu5awf4YZpMiGxzJC9hrT",
+      "updatedAt": "2026-09-29T02:37:42Z"
+    },
+    "I9bI8W8ZWcEwyIzM9Ctu8C": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Y3Eu",
+      "updatedAt": "2026-09-22T08:44:05Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DJffc": {
+      "rev": "iIEha4Lf0bd08jwW6gb8Kh",
+      "updatedAt": "2026-09-29T02:37:44Z"
+    },
+    "IlX7xILobrukz7d5JnTHt0": {
+      "rev": "nMj4Bthvy4g70bFzGBKmmW",
+      "updatedAt": "2026-09-22T09:38:57Z"
+    },
+    "IlX7xILobrukz7d5JnTgZ4": {
+      "rev": "bXkDxvOEdfzf4NR9Z7iprv",
+      "updatedAt": "2026-09-22T09:35:23Z"
+    },
+    "IlX7xILobrukz7d5Jng29O": {
+      "rev": "6hiKrYJiMBmDerMezgNDdh",
+      "updatedAt": "2026-09-29T02:37:45Z"
+    },
+    "IlX7xILobrukz7d5Jng2TG": {
+      "rev": "iIEha4Lf0bd08jwW6gbAAF",
+      "updatedAt": "2026-09-29T02:37:47Z"
+    },
+    "IlX7xILobrukz7d5JnvhK2": {
+      "rev": "iIEha4Lf0bd08jwW6gbAUt",
+      "updatedAt": "2026-09-29T02:37:48Z"
+    },
+    "IlX7xILobrukz7d5Jnvipy": {
+      "rev": "tiu5awf4YZpMiGxzJC9ih3",
+      "updatedAt": "2026-09-29T02:37:49Z"
+    },
+    "IlX7xILobrukz7d5Jo2Xh0": {
+      "rev": "iIEha4Lf0bd08jwW6gbB51",
+      "updatedAt": "2026-09-29T02:37:50Z"
+    },
+    "IlX7xILobrukz7d5Jo2rGw": {
+      "rev": "GDkcErM64RhoZsqj94lGzs",
+      "updatedAt": "2026-09-22T09:17:48Z"
+    },
+    "J1Tx0fWCuGNPno99A6TtLj": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Y8c3",
+      "updatedAt": "2026-09-22T08:44:44Z"
+    },
+    "J1Tx0fWCuGNPno99A6TtVz": {
+      "rev": "iIEha4Lf0bd08jwW6gbBKV",
+      "updatedAt": "2026-09-29T02:37:51Z"
+    },
+    "J1Tx0fWCuGNPno99A6UVbu": {
+      "rev": "tiu5awf4YZpMiGxzJC9j2R",
+      "updatedAt": "2026-09-29T02:37:52Z"
+    },
+    "PZ8Kai1VvEL468NS2KnjUP": {
+      "rev": "6hiKrYJiMBmDerMezgNEXB",
+      "updatedAt": "2026-09-29T02:37:53Z"
+    },
+    "PZ8Kai1VvEL468NS2KnkWY": {
+      "rev": "tiu5awf4YZpMiGxzJC9jNp",
+      "updatedAt": "2026-09-29T02:37:54Z"
+    },
+    "PZ8Kai1VvEL468NS2LLdGW": {
+      "rev": "6hiKrYJiMBmDerMezgNFS3",
+      "updatedAt": "2026-09-29T02:37:55Z"
+    },
+    "bXkDxvOEdfzf4NR9Z3Reey": {
+      "rev": "GDkcErM64RhoZsqj94hcke",
+      "updatedAt": "2026-09-22T08:37:57Z"
+    },
+    "coral-blastomussa": {
+      "rev": "iIEha4Lf0bd08jwW6gb5Fj",
+      "updatedAt": "2026-09-29T02:37:37Z"
+    },
+    "coral-candy-cane-coral": {
+      "rev": "iIEha4Lf0bd08jwW6gb5VD",
+      "updatedAt": "2026-09-29T02:37:39Z"
+    },
+    "coral-duncan-coral": {
+      "rev": "GDkcErM64RhoZsqj94hvDK",
+      "updatedAt": "2026-09-22T08:42:25Z"
+    },
+    "coral-goniopora": {
+      "rev": "9oQmNx0W042DyC9h4Jhtoy",
+      "updatedAt": "2026-09-22T08:38:51Z"
+    },
+    "coral-gorgonian": {
+      "rev": "GDkcErM64RhoZsqj94guga",
+      "updatedAt": "2026-09-22T08:31:19Z"
+    },
+    "coral-hammer-coral": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Yoy1",
+      "updatedAt": "2026-09-22T08:49:01Z"
+    },
+    "coral-lobophytum-leather": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Wqe4",
+      "updatedAt": "2026-09-22T08:36:00Z"
+    },
+    "coral-montipora-capricornis": {
+      "rev": "iIEha4Lf0bd08jwW6gb6AV",
+      "updatedAt": "2026-09-29T02:37:40Z"
+    },
+    "coral-porites": {
+      "rev": "GDkcErM64RhoZsqj94h52f",
+      "updatedAt": "2026-09-22T08:32:54Z"
+    },
+    "coral-ricordea-mushroom": {
+      "rev": "bXkDxvOEdfzf4NR9Z7jaRB",
+      "updatedAt": "2026-09-22T09:41:02Z"
+    },
+    "coral-staghorn-acropora": {
+      "rev": "iIEha4Lf0bd08jwW6gb75H",
+      "updatedAt": "2026-09-29T02:37:41Z"
+    },
+    "coral-table-acropora": {
+      "rev": "bXkDxvOEdfzf4NR9Z7WZzy",
+      "updatedAt": "2026-09-22T08:33:41Z"
+    },
+    "coral-toadstool-leather": {
+      "rev": "GDkcErM64RhoZsqj94hmO0",
+      "updatedAt": "2026-09-22T08:40:28Z"
+    },
+    "coral-turbinaria": {
+      "rev": "GDkcErM64RhoZsqj94hA81",
+      "updatedAt": "2026-09-22T08:34:47Z"
+    },
+    "coral-zoanthids": {
+      "rev": "bXkDxvOEdfzf4NR9Z7Z8q0",
+      "updatedAt": "2026-09-22T08:50:18Z"
+    },
+    "sebdKYryWZgYP2rm3or0mk": {
+      "rev": "tiu5awf4YZpMiGxzJC9jZ9",
+      "updatedAt": "2026-09-29T02:37:57Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXqh": {
+      "rev": "btIt6N6XPzNXF1SAILLhde",
+      "updatedAt": "2026-09-28T11:04:31Z"
+    },
+    "1z8rQFHeojDMTUo2hXSXuo": {
+      "rev": "y0u7dVz9LMSeqECVcK5Cxx",
+      "updatedAt": "2026-09-28T11:04:33Z"
+    },
+    "1z8rQFHeojDMTUo2hXSYAR": {
+      "rev": "iIEha4Lf0bd08jwW6bk41j",
+      "updatedAt": "2026-09-28T17:08:46Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSrZVh": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "5oQB2MZ7gmZXjdwFqSra6F": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "I9bI8W8ZWcEwyIzM9CjFgi": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DXs4W": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "IlX7xILobrukz7d5JnTI3q": {
+      "rev": "rtyqKwjy88AX8UfFxNjKir",
+      "updatedAt": "2026-10-01T02:57:14Z"
+    },
+    "IlX7xILobrukz7d5JnTkGU": {
+      "rev": "rtyqKwjy88AX8UfFxNjKqS",
+      "updatedAt": "2026-10-01T02:57:15Z"
+    },
+    "IlX7xILobrukz7d5JnfmX8": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "IlX7xILobrukz7d5Jnfmla": {
+      "rev": "WXnn3TMAGVs0EnH19COTJ6",
+      "updatedAt": "2026-10-01T02:57:17Z"
+    },
+    "IlX7xILobrukz7d5JnvlZm": {
+      "rev": "zfQuMTBtkX4TgigwznPmIv",
+      "updatedAt": "2026-10-01T02:57:20Z"
+    },
+    "IlX7xILobrukz7d5JnvloE": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "IlX7xILobrukz7d5Jo2s7K": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "J1Tx0fWCuGNPno99A6Ttnw": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "J1Tx0fWCuGNPno99A6UXsx": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "J1Tx0fWCuGNPno99A6hjas": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "J1Tx0fWCuGNPno99A6hjl8": {
+      "rev": "U5e2sPSq4xpFFCYH06KoE4",
+      "updatedAt": "2026-09-28T17:08:49Z"
+    },
+    "J1Tx0fWCuGNPno99A6hwkO": {
+      "rev": "zfQuMTBtkX4TgigwznPmXp",
+      "updatedAt": "2026-10-01T02:57:23Z"
+    },
+    "J1Tx0fWCuGNPno99A6hwxD": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "J1Tx0fWCuGNPno99A79h5B": {
+      "rev": "tiu5awf4YZpMiGxzJAtWz9",
+      "updatedAt": "2026-09-28T17:08:50Z"
+    },
+    "J1Tx0fWCuGNPno99A7Kfv7": {
+      "rev": "rtyqKwjy88AX8UfFxNjL5e",
+      "updatedAt": "2026-10-01T02:57:27Z"
+    },
+    "PZ8Kai1VvEL468NS2LLeg8": {
+      "rev": "Pb1Fwr2lUSeMo5VhsH6X3W",
+      "updatedAt": "2026-09-28T11:04:37Z"
+    },
+    "PZ8Kai1VvEL468NS2LLfrf": {
+      "rev": "VgCu0tH2cTNmEBoZINukGk",
+      "updatedAt": "2026-09-28T11:04:39Z"
+    },
+    "equip-co2-diffuser": {
+      "rev": "6hiKrYJiMBmDerMezezbJF",
+      "updatedAt": "2026-09-28T17:08:52Z"
+    },
+    "equip-co2-drop-checker": {
+      "rev": "6hiKrYJiMBmDerMezezbX7",
+      "updatedAt": "2026-09-28T17:08:53Z"
+    },
+    "equip-t5-fluorescent-light": {
+      "rev": "bXkDxvOEdfzf4NR9Z4Mhgi",
+      "updatedAt": "2026-09-21T09:40:45Z"
+    },
+    "equipment-air-pump": {
+      "rev": "sebdKYryWZgYP2rm3nnvlu",
+      "updatedAt": "2026-09-17T02:38:47Z"
+    },
+    "equipment-canister-filter": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-circulation-pump-powerhead": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-co-regulator-kit": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-hang-on-back-filter": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-internal-filter": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-led-aquarium-light": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-master-test-kit": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-sponge-filter": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "equipment-submersible-heater": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUcx": {
+      "rev": "iIEha4Lf0bd08jwW6bk6Bv",
+      "updatedAt": "2026-09-28T17:08:55Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUfn": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUid": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUlT": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUoJ": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUr9": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUtz": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "ofTl1CTOUWuLwM28PxTUwp": {
+      "rev": "sebdKYryWZgYP2rm3nnwb4",
+      "updatedAt": "2026-09-17T02:38:49Z"
+    },
+    "sebdKYryWZgYP2rm3or3AK": {
+      "rev": "Z5tyIhOWsR99a1RypJ8Jdt",
+      "updatedAt": "2026-10-01T02:57:38Z"
+    },
+    "BruaGKYCGDRQjkiQDnlsx5": {
+      "rev": "BruaGKYCGDRQjkiQDsBQkp",
+      "updatedAt": "2026-08-01T06:17:49Z"
+    },
+    "BruaGKYCGDRQjkiQDnlszk": {
+      "rev": "WeSCIjvgoYC0LmYF98MWpX",
+      "updatedAt": "2026-08-01T06:17:29Z"
+    },
+    "BruaGKYCGDRQjkiQDnlt2P": {
+      "rev": "ofTl1CTOUWuLwM28Q2wrEd",
+      "updatedAt": "2026-08-01T06:17:41Z"
+    },
+    "BruaGKYCGDRQjkiQDnlt54": {
+      "rev": "ofTl1CTOUWuLwM28Q2wrN9",
+      "updatedAt": "2026-08-01T06:17:43Z"
+    },
+    "BruaGKYCGDRQjkiQDnlt7j": {
+      "rev": "WeSCIjvgoYC0LmYF98MYMN",
+      "updatedAt": "2026-08-01T06:17:58Z"
+    },
+    "BruaGKYCGDRQjkiQDnltAO": {
+      "rev": "WeSCIjvgoYC0LmYF98MYGj",
+      "updatedAt": "2026-08-01T06:17:51Z"
+    },
+    "BruaGKYCGDRQjkiQDnltD3": {
+      "rev": "WeSCIjvgoYC0LmYF98MWwJ",
+      "updatedAt": "2026-08-01T06:17:37Z"
+    },
+    "BruaGKYCGDRQjkiQDnltFi": {
+      "rev": "ofTl1CTOUWuLwM28Q2wn79",
+      "updatedAt": "2026-08-01T06:16:56Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DFYjI": {
+      "rev": "6hiKrYJiMBmDerMeziIYMv",
+      "updatedAt": "2026-09-29T17:24:55Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DFYtM": {
+      "rev": "iIEha4Lf0bd08jwW6gbaDj",
+      "updatedAt": "2026-09-29T02:38:49Z"
+    },
+    "I9bI8W8ZWcEwyIzM9DNIu8": {
+      "rev": "HwDqyBW7P3KRUuifj5ImJe",
+      "updatedAt": "2026-10-01T02:57:10Z"
+    },
+    "IlX7xILobrukz7d5JnvacY": {
+      "rev": "tiu5awf4YZpMiGxzJEH9B3",
+      "updatedAt": "2026-09-29T17:24:57Z"
+    },
+    "IlX7xILobrukz7d5Jo2qVy": {
+      "rev": "tiu5awf4YZpMiGxzJC9pYH",
+      "updatedAt": "2026-09-29T02:38:53Z"
+    },
+    "IlX7xILobrukz7d5Jo2qgo": {
+      "rev": "tiu5awf4YZpMiGxzJEH9Ib",
+      "updatedAt": "2026-09-29T17:24:59Z"
+    },
+    "IlX7xILobrukz7d5Jo2wxC": {
+      "rev": "iIEha4Lf0bd08jwW6gbby7",
+      "updatedAt": "2026-09-29T02:38:55Z"
+    },
+    "IlX7xILobrukz7d5Jo2xIs": {
+      "rev": "tiu5awf4YZpMiGxzJEH9Yx",
+      "updatedAt": "2026-09-29T17:25:01Z"
+    },
+    "J1Tx0fWCuGNPno99A79Tvf": {
+      "rev": "6hiKrYJiMBmDerMeziIZVf",
+      "updatedAt": "2026-09-29T17:25:04Z"
+    },
+    "J1Tx0fWCuGNPno99A7AE36": {
+      "rev": "6hiKrYJiMBmDerMezgNO2h",
+      "updatedAt": "2026-09-29T02:38:57Z"
+    },
+    "J1Tx0fWCuGNPno99A7AEDM": {
+      "rev": "6hiKrYJiMBmDerMeziIZfN",
+      "updatedAt": "2026-09-29T17:25:05Z"
+    },
+    "J1Tx0fWCuGNPno99A7KJcq": {
+      "rev": "6hiKrYJiMBmDerMeziIajx",
+      "updatedAt": "2026-09-29T17:25:07Z"
+    },
+    "J1Tx0fWCuGNPno99A7KJpf": {
+      "rev": "6hiKrYJiMBmDerMeziIawR",
+      "updatedAt": "2026-09-29T17:25:09Z"
+    },
+    "J1Tx0fWCuGNPno99A7KutT": {
+      "rev": "iIEha4Lf0bd08jwW6osJRL",
+      "updatedAt": "2026-09-29T17:25:12Z"
+    },
+    "problem-aiptasia-infestation": {
+      "rev": "6hiKrYJiMBmDerMezgNOgv",
+      "updatedAt": "2026-09-29T02:39:03Z"
+    },
+    "problem-brown-diatom-algae": {
+      "rev": "ofTl1CTOUWuLwM28Q2wr0R",
+      "updatedAt": "2026-08-01T06:17:39Z"
+    },
+    "problem-brown-jelly-disease": {
+      "rev": "tiu5awf4YZpMiGxzJC9qfT",
+      "updatedAt": "2026-09-29T02:39:04Z"
+    },
+    "problem-cloudy-water": {
+      "rev": "WeSCIjvgoYC0LmYF98MWsM",
+      "updatedAt": "2026-08-01T06:17:32Z"
+    },
+    "problem-coral-bleaching": {
+      "rev": "6hiKrYJiMBmDerMezgNOs1",
+      "updatedAt": "2026-09-29T02:39:05Z"
+    },
+    "problem-cyanobacteria": {
+      "rev": "BruaGKYCGDRQjkiQDsBPgI",
+      "updatedAt": "2026-08-01T06:17:35Z"
+    },
+    "problem-fish-gasping-surface": {
+      "rev": "BruaGKYCGDRQjkiQDsBQvT",
+      "updatedAt": "2026-08-01T06:17:55Z"
+    },
+    "problem-fish-hiding": {
+      "rev": "BruaGKYCGDRQjkiQDsBR3S",
+      "updatedAt": "2026-08-01T06:17:56Z"
+    },
+    "problem-green-water": {
+      "rev": "ofTl1CTOUWuLwM28Q2wreB",
+      "updatedAt": "2026-08-01T06:17:47Z"
+    },
+    "problem-heater-stuck-off": {
+      "rev": "tiu5awf4YZpMiGxzJC9qn1",
+      "updatedAt": "2026-09-29T02:39:06Z"
+    },
+    "problem-heater-stuck-on": {
+      "rev": "6hiKrYJiMBmDerMezgNP1j",
+      "updatedAt": "2026-09-29T02:39:07Z"
+    },
+    "problem-high-ammonia": {
+      "rev": "BruaGKYCGDRQjkiQDsBPNf",
+      "updatedAt": "2026-08-01T06:17:33Z"
+    },
+    "problem-high-nitrate": {
+      "rev": "tiu5awf4YZpMiGxzJC9quZ",
+      "updatedAt": "2026-09-29T02:39:08Z"
+    },
+    "problem-high-nitrite": {
+      "rev": "6hiKrYJiMBmDerMezgNPED",
+      "updatedAt": "2026-09-29T02:39:09Z"
+    },
+    "problem-low-filter-flow": {
+      "rev": "ofTl1CTOUWuLwM28Q2wnnj",
+      "updatedAt": "2026-08-01T06:17:10Z"
+    },
+    "problem-ph-crash": {
+      "rev": "WXnn3TMAGVs0EnH19COTkX",
+      "updatedAt": "2026-10-01T02:57:34Z"
+    },
+    "problem-ph-drift": {
+      "rev": "6hiKrYJiMBmDerMezgNPWF",
+      "updatedAt": "2026-09-29T02:39:11Z"
+    },
+    "problem-plant-leaves-melting": {
+      "rev": "WeSCIjvgoYC0LmYF98MYPC",
+      "updatedAt": "2026-08-01T06:18:00Z"
+    },
+    "problem-rapid-tissue-necrosis-rtn": {
+      "rev": "iIEha4Lf0bd08jwW6gbhSl",
+      "updatedAt": "2026-09-29T02:39:13Z"
+    },
+    "problem-slow-tissue-necrosis-stn": {
+      "rev": "tiu5awf4YZpMiGxzJC9ra5",
+      "updatedAt": "2026-09-29T02:39:14Z"
+    },
+    "problem-white-spot-disease": {
+      "rev": "WeSCIjvgoYC0LmYF98MYKg",
+      "updatedAt": "2026-08-01T06:17:53Z"
+    }
+  },
+  "observedFieldInventory": {
+    "species": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_system",
+      "_type",
+      "_updatedAt",
+      "aliases",
+      "aquariumStyle",
+      "compatibleInvertebrates",
+      "compatiblePlants",
+      "diet",
+      "difficulty",
+      "excerpt",
+      "family",
+      "ghMax",
+      "ghMin",
+      "group",
+      "isPredator",
+      "localNames",
+      "mainImage",
+      "name",
+      "origin",
+      "parentSpecies",
+      "phMax",
+      "phMin",
+      "publishedAt",
+      "reefCompatibility",
+      "region",
+      "relatedPosts",
+      "relatedProblems",
+      "schooling",
+      "scientificName",
+      "seo",
+      "sizeCm",
+      "slug",
+      "suitableEquipment",
+      "tankSizeMinL",
+      "tempMaxC",
+      "tempMinC",
+      "temperament",
+      "waterType",
+      "waterZone"
+    ],
+    "plant": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_system",
+      "_type",
+      "_updatedAt",
+      "aliases",
+      "aquariumStyle",
+      "co2",
+      "difficulty",
+      "excerpt",
+      "group",
+      "growth",
+      "growthForm",
+      "light",
+      "mainImage",
+      "name",
+      "parentSpecies",
+      "phMax",
+      "phMin",
+      "placement",
+      "propagation",
+      "publishedAt",
+      "redPlant",
+      "region",
+      "relatedPosts",
+      "relatedProblems",
+      "scientificName",
+      "slug",
+      "suitableEquipment",
+      "tempMaxC",
+      "tempMinC",
+      "waterType"
+    ],
+    "invertebrate": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_system",
+      "_type",
+      "_updatedAt",
+      "aliases",
+      "aquariumStyle",
+      "diet",
+      "difficulty",
+      "excerpt",
+      "group",
+      "localNames",
+      "mainImage",
+      "name",
+      "phMax",
+      "phMin",
+      "publishedAt",
+      "reefCompatibility",
+      "region",
+      "relatedPosts",
+      "relatedProblems",
+      "scientificName",
+      "sizeCm",
+      "slug",
+      "tempMaxC",
+      "tempMinC",
+      "temperament",
+      "waterType"
+    ],
+    "coral": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_system",
+      "_type",
+      "_updatedAt",
+      "aggression",
+      "aliases",
+      "aquariumStyle",
+      "coralType",
+      "difficulty",
+      "excerpt",
+      "flow",
+      "group",
+      "light",
+      "mainImage",
+      "name",
+      "photosynthetic",
+      "placement",
+      "publishedAt",
+      "reefCompatibility",
+      "relatedProblems",
+      "scientificName",
+      "slug",
+      "suitableEquipment",
+      "tempMaxC",
+      "tempMinC",
+      "waterType"
+    ],
+    "equipment": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_type",
+      "_updatedAt",
+      "aquariumStyle",
+      "category",
+      "cons",
+      "excerpt",
+      "flowRateLh",
+      "group",
+      "mainImage",
+      "name",
+      "powerW",
+      "pros",
+      "publishedAt",
+      "relatedPosts",
+      "slug",
+      "tankSizeMaxL",
+      "tankSizeMinL"
+    ],
+    "problem": [
+      "_createdAt",
+      "_id",
+      "_rev",
+      "_type",
+      "_updatedAt",
+      "category",
+      "causes",
+      "excerpt",
+      "name",
+      "publishedAt",
+      "relatedPosts",
+      "relatedTools",
+      "slug",
+      "symptoms",
+      "title",
+      "waterType",
+      "whatNotToDo",
+      "whatToCheck"
+    ]
+  },
+  "speciesObservedFields": [
+    "_createdAt",
+    "_id",
+    "_rev",
+    "_system",
+    "_type",
+    "_updatedAt",
+    "aliases",
+    "aquariumStyle",
+    "compatibleInvertebrates",
+    "compatiblePlants",
+    "diet",
+    "difficulty",
+    "excerpt",
+    "family",
+    "ghMax",
+    "ghMin",
+    "group",
+    "isPredator",
+    "localNames",
+    "mainImage",
+    "name",
+    "origin",
+    "parentSpecies",
+    "phMax",
+    "phMin",
+    "publishedAt",
+    "reefCompatibility",
+    "region",
+    "relatedPosts",
+    "relatedProblems",
+    "schooling",
+    "scientificName",
+    "seo",
+    "sizeCm",
+    "slug",
+    "suitableEquipment",
+    "tankSizeMinL",
+    "tempMaxC",
+    "tempMinC",
+    "temperament",
+    "waterType",
+    "waterZone"
+  ],
+  "sourceChain": {
+    "stageAIntegrity": {
+      "finalRun": true,
+      "gatesPassed": 15,
+      "gatesFailed": 0,
+      "sanityWrites": 0,
+      "mutationCalls": 0
+    },
+    "stageAMirror": "10/10",
+    "revision1ChecksumEntries": 15,
+    "revision1ValidationFailed": 0,
+    "note": "Frozen SPEC 11 upstream artifacts were absent and regenerated deterministically; verified here before use. phase/11 PM package + Phases 01-03 were not reproducible (hardcoded SHA-256, untracked) and are not consumed."
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "node": "v22.17.0"
+  }
+}

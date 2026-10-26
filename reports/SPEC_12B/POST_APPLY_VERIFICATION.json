@@ -1,0 +1,220 @@
+{
+  "specId": "SPEC_12B",
+  "artifact": "POST_APPLY_VERIFICATION",
+  "generatedAt": "2026-10-19T02:35:51.175Z",
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "draftCount": 0,
+  "dupIds": 0,
+  "dupSlugs": 0,
+  "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+  "identityMatch": true,
+  "edgesBefore": 3151,
+  "edgesAfter": 3173,
+  "addedEdges": 22,
+  "lostEdges": 0,
+  "modifiedDocuments": 2,
+  "onlyCompatibleSpeciesChanged": true,
+  "scopeChecks": [
+    {
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "titleMatch": true,
+      "slugMatch": true,
+      "otherRelationshipFieldsChanged": []
+    },
+    {
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "titleMatch": true,
+      "slugMatch": true,
+      "otherRelationshipFieldsChanged": []
+    }
+  ],
+  "entryChecks": [
+    {
+      "candidateId": "REL12A-0001",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "ofTl1CTOUWuLwM28PxTCaV",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0002",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "sebdKYryWZgYP2rm3oquNG",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0003",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "J1Tx0fWCuGNPno99A6UR1F",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0004",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "IlX7xILobrukz7d5JnfjuY",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0005",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0006",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "ofTl1CTOUWuLwM28PxTCJT",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0007",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "I9bI8W8ZWcEwyIzM9CuG2u",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0008",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "J1Tx0fWCuGNPno99A6hsP7",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0009",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0010",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "ofTl1CTOUWuLwM28PxTCP9",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0011",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "J1Tx0fWCuGNPno99A6hq84",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0012",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "targetId": "ofTl1CTOUWuLwM28PxTCMJ",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0013",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0014",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "ofTl1CTOUWuLwM28PxTCdL",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0015",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "J1Tx0fWCuGNPno99A79RmJ",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0016",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "ofTl1CTOUWuLwM28PxTCMJ",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0017",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "ofTl1CTOUWuLwM28PxTCRz",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0018",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "ofTl1CTOUWuLwM28PxTCP9",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0019",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "J1Tx0fWCuGNPno99A6hq84",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0020",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "J1Tx0fWCuGNPno99A6UR1F",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0021",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "IlX7xILobrukz7d5JnfjuY",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    },
+    {
+      "candidateId": "REL12A-0022",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "targetId": "ofTl1CTOUWuLwM28PxTCJT",
+      "present": 1,
+      "exact": 1,
+      "status": "APPLIED_AND_VERIFIED"
+    }
+  ],
+  "secondDryRunRemainingOps": [],
+  "holdsUntouched": true,
+  "verdict": "CLEAN"
+}

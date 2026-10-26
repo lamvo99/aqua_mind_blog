@@ -159,7 +159,8 @@ export default defineType({
     defineField({ name: 'reefCompatibility', title: 'Reef Compatible?', type: 'boolean', group: 'compatibility' }),
     defineField({
       name: 'compatibleSpecies', title: 'Compatible Species', type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'species' }] }], group: 'compatibility',
+      of: [{ type: 'compatibleEntry' }], group: 'compatibility',
+      description: 'Conditional compatibility entries with optional conditions[] (SPEC 10 REL-M01).',
     }),
     defineField({
       name: 'compatiblePlants', title: 'Suitable Plants', type: 'array',
@@ -190,6 +191,130 @@ export default defineType({
     defineField({
       name: 'relatedPosts', title: 'Related Posts', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'post' }] }], group: 'related',
+    }),
+    defineField({
+      name: 'minTankLengthCm', title: 'Min Tank Length (cm)', type: 'number', group: 'care',
+      description: 'Minimum tank length of the footprint (length x width). Unknown stays empty, never 0.',
+      validation: (Rule: any) => Rule.min(0.1),
+    }),
+    defineField({
+      name: 'minTankWidthCm', title: 'Min Tank Width (cm)', type: 'number', group: 'care',
+      description: 'Minimum tank width of the footprint (length x width). Unknown stays empty, never 0.',
+      validation: (Rule: any) => Rule.min(0.1),
+    }),
+    defineField({
+      name: 'swimmingSpace', title: 'Swimming Space', type: 'string', group: 'care',
+      options: { list: ['NONE', 'LOW', 'MODERATE', 'HIGH'] },
+    }),
+    defineField({
+      name: 'jumpRisk', title: 'Jump Risk', type: 'string', group: 'care',
+      options: { list: ['NONE', 'LOW', 'MODERATE', 'HIGH'] },
+    }),
+    defineField({
+      name: 'lidRequired', title: 'Lid Requirement', type: 'string', group: 'care',
+      options: { list: ['NOT_REQUIRED', 'RECOMMENDED', 'ESSENTIAL'] },
+    }),
+    defineField({
+      name: 'flowPreference', title: 'Flow Preference', type: 'string', group: 'care',
+      options: { list: ['STILL', 'MODERATE', 'STRONG'] },
+    }),
+    defineField({
+      name: 'oxygenSensitivity', title: 'Oxygen Sensitivity', type: 'string', group: 'care',
+      options: { list: ['NEUTRAL', 'SENSITIVE'] },
+    }),
+    defineField({
+      name: 'maturityRequirement', title: 'Mature Aquarium Requirement', type: 'string', group: 'care',
+      options: { list: ['NONE', 'SUGGESTED', 'REQUIRED'] },
+    }),
+    defineField({
+      name: 'bioload', title: 'Bioload', type: 'string', group: 'care',
+      options: { list: ['LOW', 'MODERATE', 'HIGH'] },
+    }),
+    defineField({
+      name: 'waterChangeSensitivity', title: 'Water Change Sensitivity', type: 'string', group: 'care',
+      options: { list: ['LOW', 'MODERATE', 'HIGH'] },
+    }),
+    defineField({
+      name: 'breedingDifficulty', title: 'Breeding Difficulty', type: 'string', group: 'care',
+      options: { list: ['EASY', 'MODERATE', 'DIFFICULT'] },
+    }),
+    defineField({
+      name: 'khMin', title: 'Min KH (dKH)', type: 'number', group: 'care',
+      validation: (Rule: any) => Rule.min(0).max(40),
+    }),
+    defineField({
+      name: 'khMax', title: 'Max KH (dKH)', type: 'number', group: 'care',
+      validation: (Rule: any) => Rule.min(0).max(40).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.khMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'khMax must be >= khMin';
+      }),
+    }),
+    defineField({
+      name: 'salinityMin', title: 'Min Salinity (ppt)', type: 'number', group: 'care',
+      validation: (Rule: any) => Rule.min(0),
+    }),
+    defineField({
+      name: 'salinityMax', title: 'Max Salinity (ppt)', type: 'number', group: 'care',
+      validation: (Rule: any) => Rule.min(0).custom((val: any, ctx: any) => {
+        const min = ctx?.parent?.salinityMin;
+        if (val == null || min == null) return true;
+        return val >= min || 'salinityMax must be >= salinityMin';
+      }),
+    }),
+    defineField({
+      name: 'behaviorFlags', title: 'Behavior Flags', type: 'array', group: 'care',
+      of: [{ type: 'string' }],
+      description: 'Non-exclusive behavior flags. Presence is a positive signal; absence is not a negative claim.',
+      options: {
+        list: [
+          'open-water', 'territorial', 'solitary', 'nocturnal', 'diurnal',
+          'burrower', 'cave-dweller', 'strong-swimmer', 'timid',
+        ],
+      },
+    }),
+    defineField({
+      name: 'groupSize', title: 'Group Size', type: 'object', group: 'care',
+      description: 'Structured group size backing the schooling text.',
+      fields: [
+        { name: 'min', title: 'Min Group Size', type: 'number', validation: (Rule: any) => Rule.min(1).integer() },
+        { name: 'max', title: 'Max Group Size', type: 'number', validation: (Rule: any) => Rule.min(1).integer() },
+      ],
+      validation: (Rule: any) => Rule.custom((val: any) => {
+        if (!val || val.min == null || val.max == null) return true;
+        return val.max >= val.min || 'max group size must be >= min group size';
+      }),
+    }),
+    defineField({
+      name: 'communitySuitability', title: 'Community Suitability', type: 'string', group: 'compatibility',
+      options: { list: ['UNSUITABLE', 'CONDITIONAL', 'SUITABLE'] },
+    }),
+    defineField({
+      name: 'reefInteraction', title: 'Reef Interaction', type: 'string', group: 'compatibility',
+      description: 'Fish-side tiered reef interaction. Coral-side reefCompatibility keeps its existing meaning.',
+      options: { list: ['REEF_SAFE', 'CAUTION', 'SPECIES_DEPENDENT', 'NOT_REEF_SAFE'] },
+    }),
+    defineField({
+      name: 'predatesInverts', title: 'Predates Invertebrates', type: 'string', group: 'compatibility',
+      options: { list: ['NONE', 'POSSIBLE', 'LIKELY'] },
+    }),
+    defineField({
+      name: 'incompatibleSpecies', title: 'Incompatible Species', type: 'array', group: 'compatibility',
+      of: [{ type: 'incompatibleEntry' }],
+      description: 'Known incompatible species with required reason.',
+    }),
+    defineField({
+      name: 'predatorPrey', title: 'Predator / Prey', type: 'array', group: 'compatibility',
+      of: [{ type: 'predatorPreyEntry' }],
+      description: 'Predator -> prey typed references with size condition and evidence note.',
+    }),
+    defineField({
+      name: 'reefInteractionDetail', title: 'Reef Interaction Detail', type: 'array', group: 'compatibility',
+      of: [{ type: 'reefInteractionEntry' }],
+      description: 'Per-coral interaction detail: ref + tier + targets[] + frequency + monitoring.',
+    }),
+    defineField({
+      name: 'knowledgeBody', title: 'Knowledge Body', type: 'speciesKnowledgeBody', group: 'care',
     }),
   ],
   preview: {

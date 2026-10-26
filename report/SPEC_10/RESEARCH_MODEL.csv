@@ -1,0 +1,34 @@
+modelElement,elementKind,name,dataType,required,allowedValues,notes
+RESEARCH_ITEM_FIELD,FIELD,researchId,string,yes,stable id RS-xxx,links to SPEC 09 research register
+RESEARCH_ITEM_FIELD,FIELD,recordId,string,yes,Sanity _id,target record
+RESEARCH_ITEM_FIELD,FIELD,requirementId,string,yes,SPEC 09 requirement id,which knowledge requirement
+RESEARCH_ITEM_FIELD,FIELD,claim,text,yes,exact question/claim to verify,never vague; one testable claim
+RESEARCH_ITEM_FIELD,FIELD,applicability,enum,yes,REQUIRED|OPTIONAL|CONDITIONAL|NOT_APPLICABLE|UNKNOWN,prevents false gaps (§19)
+RESEARCH_ITEM_FIELD,FIELD,priority,enum,yes,P0|P1|P2|P3,carries SPEC 09 danger priority (§24)
+RESEARCH_ITEM_FIELD,FIELD,sourceTypeNeeded,enum,yes,see SOURCE_TYPE values,declared before searching
+RESEARCH_ITEM_FIELD,FIELD,source,url/text,yes (when found),,never manufactured (§22)
+RESEARCH_ITEM_FIELD,FIELD,evidence,text,yes (when found),quote/figure/table ref,raw support for the claim
+RESEARCH_ITEM_FIELD,FIELD,evidenceClass,enum,yes (when found),see EVIDENCE_CLASS values,evidence typing (§23)
+RESEARCH_ITEM_FIELD,FIELD,confidence,enum,yes,HIGH|MEDIUM|LOW|UNVERIFIED,reviewer confidence
+RESEARCH_ITEM_FIELD,FIELD,dateChecked,date (ISO),yes (when found),,re-check trigger
+RESEARCH_ITEM_FIELD,FIELD,uncertainty,text,no,"species-variable, conflicting sources…",honest uncertainty capture (§23)
+RESEARCH_ITEM_FIELD,FIELD,editorDecision,enum,yes,ACCEPTED|ACCEPTED_WITH_CAVEAT|REJECTED|PENDING_RESEARCH,human gate before content lands
+EVIDENCE_CLASS,ENUM_VALUE,ESTABLISHED_FACT,-,-,peer-reviewed / consensus fact,§23
+EVIDENCE_CLASS,ENUM_VALUE,ACCEPTED_HUSBANDRY_RANGE,-,-,widely accepted aquarium range,§23
+EVIDENCE_CLASS,ENUM_VALUE,PRACTICAL_RECOMMENDATION,-,-,practitioner best practice,§23
+EVIDENCE_CLASS,ENUM_VALUE,MANUFACTURER_CLAIM,-,-,rated/spec claims; never equal to real-world (§15),§23
+EVIDENCE_CLASS,ENUM_VALUE,EXPERT_CONSENSUS,-,-,specialist agreement without single study,§23
+EVIDENCE_CLASS,ENUM_VALUE,SPECIES_VARIABLE,-,-,differs by population/individual,§23
+EVIDENCE_CLASS,ENUM_VALUE,RESEARCH_NEEDED,-,-,no usable source yet,§23
+SOURCE_TYPE,ENUM_VALUE,SCIENTIFIC_LITERATURE,-,-,tier 1 preference,§22 source hierarchy
+SOURCE_TYPE,ENUM_VALUE,GOVERNMENT_INSTITUTIONAL,-,-,tier 2,§22
+SOURCE_TYPE,ENUM_VALUE,AQUARIUM_ORGANIZATION,-,-,tier 3 established aquarium organizations,§22
+SOURCE_TYPE,ENUM_VALUE,MANUFACTURER_DOCUMENTATION,-,-,tier 4; product claims only,§22
+SOURCE_TYPE,ENUM_VALUE,VETERINARY_AQUATIC_HEALTH,-,-,tier 5 disease/health claims,§22
+SOURCE_TYPE,ENUM_VALUE,SPECIALIST_REFERENCE,-,-,tier 6 high-quality specialist refs,§22
+SOURCE_TYPE,ENUM_VALUE,COMMUNITY_SUPPLEMENTARY,-,-,"tier 7; supplementary only, never sole evidence",§22
+CONFIDENCE,ENUM_VALUE,HIGH,-,-,"multiple/major source, unambiguous",
+CONFIDENCE,ENUM_VALUE,MEDIUM,-,-,single good source or consistent secondary,
+CONFIDENCE,ENUM_VALUE,LOW,-,-,weak/conflicting; publish only with caveat,
+CONFIDENCE,ENUM_VALUE,UNVERIFIED,-,-,no source yet,
+EDITOR_DECISION,ENUM_VALUE,ACCEPTED / ACCEPTED_WITH_CAVEAT / REJECTED / PENDING_RESEARCH,-,-,all four permitted; PENDING keeps record honest,never manufacture evidence (§22)

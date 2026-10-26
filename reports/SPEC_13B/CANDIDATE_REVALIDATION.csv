@@ -1,0 +1,22 @@
+candidateId,family,sourceId,sourceName,sourceExists,targetId,targetName,targetExists,targetTypeLive,typesOk,shapeOk,keyUniqueInDestination,absentInLive,reverseEdgePresent,eligibility,alreadyPresent,conflict,liveSourceRevision
+REL13A-0001,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,ofTl1CTOUWuLwM28PxTCRz,Chili Rasbora,true,species,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0002,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,J1Tx0fWCuGNPno99A79RmJ,Green Neon Tetra,true,species,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0003,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,species-paracheirodon-innesi,Neon Tetra,true,species,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0004,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,5oQB2MZ7gmZXjdwFqSs4kl,Cherry Shrimp,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0005,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,invertebrate-caridina-multidentata,Amano Shrimp,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0006,predatorPrey,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,invertebrate-palaemon-paludosus,Ghost Shrimp,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ
+REL13A-0007,predatorPrey,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,true,species-paracheirodon-innesi,Neon Tetra,true,species,true,true,true,true,false,ELIGIBLE,false,false,S14zwcyM2Pfmg8COTwKwt7
+REL13A-0008,predatorPrey,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,true,J1Tx0fWCuGNPno99A79RmJ,Green Neon Tetra,true,species,true,true,true,true,false,ELIGIBLE,false,false,S14zwcyM2Pfmg8COTwKwt7
+REL13A-0009,predatorPrey,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,true,species-paracheirodon-axelrodi,Cardinal Tetra,true,species,true,true,true,true,false,ELIGIBLE,false,false,S14zwcyM2Pfmg8COTwKwt7
+REL13A-0010,predatorPrey,species-bala-shark,Bala Shark,true,ofTl1CTOUWuLwM28PxTCRz,Chili Rasbora,true,species,true,true,true,true,false,ELIGIBLE,false,false,nMj4Bthvy4g70bFzG8bsw1
+REL13A-0011,predatorPrey,species-bala-shark,Bala Shark,true,IlX7xILobrukz7d5Jng1HC,Pygmy Rasbora,true,species,true,true,true,true,false,ELIGIBLE,false,false,nMj4Bthvy4g70bFzG8bsw1
+REL13A-0012,predatorPrey,J1Tx0fWCuGNPno99A79QPg,Pea Puffer,true,invertebrate-planorbarius-corneus,Great Ramshorn Snail,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,BF7b7JzesWwz9GasstzzGz
+REL13A-0013,predatorPrey,J1Tx0fWCuGNPno99A79QPg,Pea Puffer,true,invertebrate-melanoides-tuberculata,Malaysian Trumpet Snail,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,BF7b7JzesWwz9GasstzzGz
+REL13A-0014,predatorPrey,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,true,invertebrate-melanoides-tuberculata,Malaysian Trumpet Snail,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,vIy4RM4AZsZ5V5B7s9fJ4f
+REL13A-0015,predatorPrey,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,true,invertebrate-planorbarius-corneus,Great Ramshorn Snail,true,invertebrate,true,true,true,true,false,ELIGIBLE,false,false,vIy4RM4AZsZ5V5B7s9fJ4f
+REL13A-0016,incompatibleSpecies,species-bala-shark,Bala Shark,true,ofTl1CTOUWuLwM28PxTCMJ,Honey Gourami,true,species,true,true,true,true,false,MANUAL_REVIEW,false,false,nMj4Bthvy4g70bFzG8bsw1
+REL13A-0017,incompatibleSpecies,species-bala-shark,Bala Shark,true,I9bI8W8ZWcEwyIzM9DJbjY,Betta Imbellis,true,species,true,true,true,true,false,MANUAL_REVIEW,false,false,nMj4Bthvy4g70bFzG8bsw1
+REL13A-0018,incompatibleSpecies,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,true,species-poecilia-reticulata,Guppy,true,species,true,true,true,true,false,ELIGIBLE,false,false,vIy4RM4AZsZ5V5B7s9fJ4f
+REL13A-0019,incompatibleSpecies,J1Tx0fWCuGNPno99A79RMf,Yoyo Loach,true,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,true,species,true,true,true,true,false,MANUAL_REVIEW,false,false,vIy4RM4AZsZ5V5B7s9fJ4f
+REL13A-0020,incompatibleSpecies,J1Tx0fWCuGNPno99A79QPg,Pea Puffer,true,5oQB2MZ7gmZXjdwFqSs3qH,Marble Angelfish,true,species,true,true,true,true,false,MANUAL_REVIEW,false,false,BF7b7JzesWwz9GasstzzGz
+REL13A-0021,incompatibleSpecies,7kdig6Bk6SZq4GZkXcVXjK,Oscar,true,ofTl1CTOUWuLwM28PxTCJT,Pygmy Corydoras,true,species,true,true,true,true,false,ELIGIBLE,false,false,iIEha4Lf0bd08jwW6gbhsZ

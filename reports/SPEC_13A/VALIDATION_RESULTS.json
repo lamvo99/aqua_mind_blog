@@ -1,0 +1,84 @@
+{
+  "specId": "SPEC_13A",
+  "ok": true,
+  "checks": [
+    {
+      "id": "V-01",
+      "name": "every path is an allowed relationship field",
+      "pass": true,
+      "detail": "21 ops"
+    },
+    {
+      "id": "V-02",
+      "name": "source and target IDs exist with allowed types",
+      "pass": true,
+      "detail": "all resolve"
+    },
+    {
+      "id": "V-03",
+      "name": "no self-links",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "id": "V-04",
+      "name": "no dangling references",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "id": "V-05",
+      "name": "no duplicate edge within plan or against live data",
+      "pass": true,
+      "detail": "unique=21"
+    },
+    {
+      "id": "V-06",
+      "name": "idempotent (zero duplicate edges on reapply)",
+      "pass": true,
+      "detail": "applied=21 duplicates=0"
+    },
+    {
+      "id": "V-07",
+      "name": "directionality respected (predator source -> prey ref; no auto reverse)",
+      "pass": true,
+      "detail": "no reverse auto-add"
+    },
+    {
+      "id": "V-08",
+      "name": "entry-object shape matches schema exactly",
+      "pass": true,
+      "detail": "entryType+keys per family"
+    },
+    {
+      "id": "V-09",
+      "name": "evidence row exists for every operation",
+      "pass": true,
+      "detail": "evidence=21"
+    },
+    {
+      "id": "V-10",
+      "name": "no non-relationship field and no mutation client in plan",
+      "pass": true,
+      "detail": "plan only"
+    },
+    {
+      "id": "V-11",
+      "name": "no SPEC 12B candidate reintroduced",
+      "pass": true,
+      "detail": "spec12b=22"
+    },
+    {
+      "id": "V-12",
+      "name": "no held/conflict/rejected/NA row leaked into plan",
+      "pass": true,
+      "detail": "held=10"
+    }
+  ],
+  "simulated": {
+    "applied": 21,
+    "duplicates": 0,
+    "before": 3173,
+    "after": 3194
+  }
+}

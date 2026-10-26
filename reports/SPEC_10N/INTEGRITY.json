@@ -1,0 +1,114 @@
+{
+  "specId": "SPEC_10N",
+  "artifact": "INTEGRITY",
+  "generatedAt": "2026-10-18T08:49:02.051Z",
+  "mode": "READ-ONLY verification (GET query only; no Content Lake writes)",
+  "content_mutations": 0,
+  "checks": [
+    {
+      "id": "N-A1",
+      "name": "record counts match baseline",
+      "pass": true,
+      "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "N-A2",
+      "name": "drafts = 0 (no drafts created)",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "N-A3",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "N-B1",
+      "name": "10 types / 90 fields / 2 modified accounted for",
+      "pass": true,
+      "detail": "rows=92"
+    },
+    {
+      "id": "N-B2",
+      "name": "schema field audit written",
+      "pass": true,
+      "detail": "projected=46 rendered=45 schema-only=47"
+    },
+    {
+      "id": "N-C1",
+      "name": "database projection uses compatibleSpecies entry ref shape",
+      "pass": true,
+      "detail": "lib/database.ts"
+    },
+    {
+      "id": "N-C2",
+      "name": "compatibility-checker GROQ dereferences entry ref",
+      "pass": true,
+      "detail": "app/tools/compatibility-checker/page.tsx"
+    },
+    {
+      "id": "N-C3",
+      "name": "species/invertebrate pages unwrap entry refs",
+      "pass": true,
+      "detail": "pages"
+    },
+    {
+      "id": "N-C4",
+      "name": "husbandry rendering module present",
+      "pass": true,
+      "detail": "lib/species-facts.ts + species page"
+    }
+  ],
+  "inventory": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "drafts": 0,
+    "datasetDrafts": 0,
+    "expected": {
+      "counts": {
+        "species": 218,
+        "plant": 62,
+        "invertebrate": 56,
+        "coral": 48,
+        "equipment": 46,
+        "problem": 43
+      },
+      "total": 473
+    }
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "seals": {
+    "seoSeal": "94cbb6564964bd32b566e1556f539b9e242bd8b0e749ba6a3cc81eea4235d9a9",
+    "relSeal": "6585f4d3a304393341177952f8586902559b88d318041667ddd189165d91bc49"
+  },
+  "schemaAudit": {
+    "rows": 92,
+    "projected": 46,
+    "rendered": 45,
+    "schemaOnly": 47
+  },
+  "deployedSchema": {
+    "studioUrl": "https://aqua-mind-blog.sanity.studio/",
+    "workspace": "default",
+    "dataset": "production",
+    "projectId": "zeohjejw"
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0"
+  },
+  "verdict": "PASS"
+}

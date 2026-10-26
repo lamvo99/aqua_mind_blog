@@ -1,0 +1,53 @@
+{
+  "specId": "SPEC_12A",
+  "artifact": "INTEGRITY",
+  "generatedAt": "2026-10-18T12:55:35.707Z",
+  "mode": "READ-ONLY (GET query only; no writes, no deploy)",
+  "content_mutations": 0,
+  "pre": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "drafts": {
+      "wikiDrafts": 0,
+      "datasetDrafts": 0
+    },
+    "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "relationshipEdges": 3151
+  },
+  "post": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "drafts": {
+      "datasetDrafts": 0
+    },
+    "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "relationshipEdges": 3151
+  },
+  "identityMatch": true,
+  "countsMatch": true,
+  "deployedSchema": {
+    "studioUrl": "https://aqua-mind-blog.sanity.studio/",
+    "workspace": "default",
+    "dataset": "production",
+    "projectId": "zeohjejw"
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0"
+  }
+}

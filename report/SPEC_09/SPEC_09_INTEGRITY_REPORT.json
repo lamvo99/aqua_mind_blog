@@ -1,0 +1,188 @@
+{
+ "specId": "SPEC_09",
+ "generatedAt": "2026-10-17T19:32:00.441Z",
+ "finalRun": true,
+ "mode": "READ-ONLY",
+ "sanityWrites": 0,
+ "mutationCalls": 0,
+ "gates": {
+  "preAudit": [
+   {
+    "id": "A-00",
+    "name": "deterministic double-read identical (6 types)",
+    "pass": true,
+    "detail": "mismatchedTypes=0"
+   },
+   {
+    "id": "A-01",
+    "name": "canonical count = 473 with exact type counts",
+    "pass": true,
+    "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+   },
+   {
+    "id": "A-02",
+    "name": "drafts = 0 (wiki records)",
+    "pass": true,
+    "detail": "wikiDrafts=0 datasetDrafts=0"
+   },
+   {
+    "id": "A-03",
+    "name": "no duplicate slugs",
+    "pass": true,
+    "detail": "duplicates=0"
+   },
+   {
+    "id": "A-04",
+    "name": "no undefined routes (all wiki slugs present + route files exist)",
+    "pass": true,
+    "detail": "recordsWithoutSlug=0 missingRouteFiles=none"
+   },
+   {
+    "id": "A-05",
+    "name": "canonical identity hash matches SPEC 09 baseline",
+    "pass": true,
+    "detail": "hash=MATCH"
+   }
+  ],
+  "postAudit": [
+   {
+    "id": "B-01",
+    "name": "post-audit deterministic double-read identical",
+    "pass": true,
+    "detail": "mismatchedTypes=0"
+   },
+   {
+    "id": "B-02",
+    "name": "canonical count unchanged (473, exact type counts)",
+    "pass": true,
+    "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+   },
+   {
+    "id": "B-03",
+    "name": "canonical identity hash unchanged",
+    "pass": true,
+    "detail": "MATCH"
+   },
+   {
+    "id": "B-04",
+    "name": "full-document diff vs baseline = 0 (titles/slugs/categories/relationships/SEO)",
+    "pass": true,
+    "detail": "changed=0 extra=0 title=0 slug=0 cat=0 rel=0 seo=0"
+   },
+   {
+    "id": "B-05",
+    "name": "_updatedAt changes = 0",
+    "pass": true,
+    "detail": "updatedDiff=0"
+   },
+   {
+    "id": "B-06",
+    "name": "Sanity writes = 0 / no mutation path in SPEC 09 scripts",
+    "pass": true,
+    "detail": "scriptsWithMutationHints=0 (GET query only)"
+   }
+  ],
+  "artifacts": [
+   {
+    "id": "C-01",
+    "name": "required artifacts present (integrity report written by this run)",
+    "pass": false,
+    "detail": "present=8/10 missing=SPEC_09_KNOWLEDGE_COVERAGE_AUDIT_REPORT.md,SPEC_09_EXECUTION_LOG.md"
+   },
+   {
+    "id": "C-02",
+    "name": "record matrix = 473 rows, unique ids, exact canonical id-set",
+    "pass": true,
+    "detail": "rows=473 dup=0 missing=0 extra=0"
+   },
+   {
+    "id": "C-03",
+    "name": "per-domain record reconciliation",
+    "pass": true,
+    "detail": "{\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+   },
+   {
+    "id": "C-04",
+    "name": "domain summary: 6 status rows sum=473; every requirement row math reconciles",
+    "pass": true,
+    "detail": "statusRows=6 sum=473 badReqRows=0"
+   },
+   {
+    "id": "C-05",
+    "name": "severity distribution reconciles (matrix vs domain summary requirement rows)",
+    "pass": true,
+    "detail": "matrix={\"CRITICAL\":70,\"HIGH\":5393,\"MEDIUM\":9617,\"LOW\":990} summary={\"CRITICAL\":70,\"HIGH\":5393,\"MEDIUM\":9617,\"LOW\":990}"
+   },
+   {
+    "id": "C-06",
+    "name": "schema gap register reconciles with matrix SCHEMA_GAP instances",
+    "pass": true,
+    "detail": "registerRows=99 matrixKeys=99"
+   },
+   {
+    "id": "C-07",
+    "name": "research register reconciles with matrix researchRequired flags",
+    "pass": true,
+    "detail": "registerRows=201 matrixKeys=201 researchGaps=15852"
+   },
+   {
+    "id": "C-08",
+    "name": "priority queue reconciliation (473 RECORD unique + SCHEMA=register + REL=register, valid priorities)",
+    "pass": true,
+    "detail": "RECORD=473 SCHEMA=99 REL=17"
+   },
+   {
+    "id": "C-09",
+    "name": "relationship gap register = 17 rows, all gapType RELATIONSHIP_GAP",
+    "pass": true,
+    "detail": "rows=17"
+   },
+   {
+    "id": "C-10",
+    "name": "CSV row-count reconciliation",
+    "pass": true,
+    "detail": "matrix=473 domain=236 prio=589 schema=99 rel=17 research=201"
+   },
+   {
+    "id": "C-11",
+    "name": "mirror byte-identical (reports/SPEC_09, all 10 artifacts)",
+    "pass": false,
+    "detail": "bad=mirrorDir:missing"
+   }
+  ]
+ },
+ "recomputed": {
+  "totalGaps": 16070,
+  "severityDistribution": {
+   "CRITICAL": 70,
+   "HIGH": 5393,
+   "MEDIUM": 9617,
+   "LOW": 990
+  },
+  "gapTypeDistribution": {
+   "CONTENT_GAP": 839,
+   "SCHEMA_GAP": 7252,
+   "RELATIONSHIP_GAP": 218,
+   "BODY_GAP": 7761,
+   "RESEARCH_GAP": 0
+  },
+  "researchRequiredGaps": 15852,
+  "schemaGapKeys": 99,
+  "researchKeys": 201
+ },
+ "status": "SPEC 09 — BLOCKED",
+ "failedChecks": [
+  {
+   "id": "C-01",
+   "name": "required artifacts present (integrity report written by this run)",
+   "pass": false,
+   "detail": "present=8/10 missing=SPEC_09_KNOWLEDGE_COVERAGE_AUDIT_REPORT.md,SPEC_09_EXECUTION_LOG.md"
+  },
+  {
+   "id": "C-11",
+   "name": "mirror byte-identical (reports/SPEC_09, all 10 artifacts)",
+   "pass": false,
+   "detail": "bad=mirrorDir:missing"
+  }
+ ]
+}

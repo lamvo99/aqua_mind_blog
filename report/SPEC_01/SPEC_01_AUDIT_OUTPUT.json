@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-10-17T19:29:52.090Z",
+  "schemaMatrixFields": 140,
+  "recordRows": 473,
+  "bodyRows": 43,
+  "relationRows": 3151,
+  "issueCount": 3867,
+  "severityCounts": {
+    "MEDIUM": 2251,
+    "LOW": 1555,
+    "HIGH": 61
+  },
+  "classificationThresholds": [
+    ">=80:STRUCTURALLY_COMPLETE",
+    ">=60:MINOR_GAPS",
+    ">=40:MODERATE_GAPS",
+    ">=20:MAJOR_GAPS",
+    ">=0:CRITICAL_STRUCTURAL_GAPS"
+  ],
+  "tierWeights": {
+    "A": 20,
+    "B": 15,
+    "C": 35,
+    "D": 15,
+    "E": 15
+  },
+  "categorySummary": [
+    {
+      "category": "Fish / Species",
+      "total": 218,
+      "avg": 69.3,
+      "structural": "MODERATE_GAPS:85 MINOR_GAPS:20 STRUCTURALLY_COMPLETE:113"
+    },
+    {
+      "category": "Plants",
+      "total": 62,
+      "avg": 80.5,
+      "structural": "MODERATE_GAPS:3 STRUCTURALLY_COMPLETE:49 MINOR_GAPS:10"
+    },
+    {
+      "category": "Invertebrates",
+      "total": 56,
+      "avg": 68.1,
+      "structural": "MODERATE_GAPS:6 STRUCTURALLY_COMPLETE:2 MINOR_GAPS:48"
+    },
+    {
+      "category": "Corals",
+      "total": 48,
+      "avg": 77.4,
+      "structural": "STRUCTURALLY_COMPLETE:34 MODERATE_GAPS:6 MINOR_GAPS:8"
+    },
+    {
+      "category": "Equipment",
+      "total": 46,
+      "avg": 62.4,
+      "structural": "MAJOR_GAPS:6 MINOR_GAPS:21 MODERATE_GAPS:8 STRUCTURALLY_COMPLETE:11"
+    },
+    {
+      "category": "Problems",
+      "total": 43,
+      "avg": 83.9,
+      "structural": "STRUCTURALLY_COMPLETE:30 MINOR_GAPS:13"
+    }
+  ],
+  "systemic": {
+    "schemaProblems": [
+      "species.compatibleSpecies: 0/218 valid — schema field present but never populated",
+      "plant.localNames: 0/62 valid — schema field present but never populated",
+      "invertebrate.parentSpecies: 0/56 valid — schema field present but never populated",
+      "invertebrate.compatibleSpecies: 0/56 valid — schema field present but never populated",
+      "invertebrate.suitableEquipment: 0/56 valid — schema field present but never populated",
+      "coral.localNames: 0/48 valid — schema field present but never populated",
+      "coral.relatedPosts: 0/48 valid — schema field present but never populated",
+      "equipment.brand: 0/46 valid — schema field present but never populated",
+      "equipment.model: 0/46 valid — schema field present but never populated"
+    ],
+    "dataProblems": [],
+    "editorialProblems": [
+      "problems empty body: 0/43"
+    ],
+    "unusedFields": [],
+    "categoryOmissions": [
+      "species.localNames: 8/218 populated (96% omitted)",
+      "species.aliases: 43/218 populated (80% omitted)",
+      "species.parentSpecies: 3/218 populated (99% omitted)",
+      "species.isPredator: 104/218 populated (52% omitted)",
+      "species.reefCompatibility: 34/218 populated (84% omitted)",
+      "species.compatibleSpecies: 0/218 populated (100% omitted)",
+      "species.compatiblePlants: 107/218 populated (51% omitted)",
+      "species.compatibleInvertebrates: 100/218 populated (54% omitted)",
+      "species.relatedPosts: 38/218 populated (83% omitted)",
+      "plant.localNames: 0/62 populated (100% omitted)",
+      "plant.aliases: 7/62 populated (89% omitted)",
+      "plant.region: 29/62 populated (53% omitted)",
+      "plant.redPlant: 11/62 populated (82% omitted)",
+      "plant.relatedPosts: 26/62 populated (58% omitted)",
+      "invertebrate.localNames: 1/56 populated (98% omitted)",
+      "invertebrate.aliases: 2/56 populated (96% omitted)",
+      "invertebrate.parentSpecies: 0/56 populated (100% omitted)",
+      "invertebrate.reefCompatibility: 27/56 populated (52% omitted)",
+      "invertebrate.compatibleSpecies: 0/56 populated (100% omitted)",
+      "invertebrate.suitableEquipment: 0/56 populated (100% omitted)",
+      "invertebrate.relatedPosts: 3/56 populated (95% omitted)",
+      "coral.localNames: 0/48 populated (100% omitted)",
+      "coral.aliases: 12/48 populated (75% omitted)",
+      "coral.relatedPosts: 0/48 populated (100% omitted)",
+      "equipment.brand: 0/46 populated (100% omitted)",
+      "equipment.model: 0/46 populated (100% omitted)",
+      "equipment.flowRateLh: 6/46 populated (87% omitted)",
+      "equipment.mainImage: 17/46 populated (63% omitted)",
+      "equipment.relatedPosts: 21/46 populated (54% omitted)",
+      "problem.waterType: 21/43 populated (51% omitted)",
+      "problem.relatedPosts: 20/43 populated (53% omitted)",
+      "problem.relatedTools: 16/43 populated (63% omitted)"
+    ],
+    "inconsistentTypes": [],
+    "recurringRel": [],
+    "orphanFields": [
+      "plant.waterType (id 1z8rQFHeojDMTUo2hXSWr0)",
+      "plant.waterType (id 1z8rQFHeojDMTUo2hXSWv7)",
+      "plant.parentSpecies (id plant-java-fern-narrow-leaf)",
+      "plant.parentSpecies (id plant-java-fern-windelov)",
+      "plant.waterType (id sebdKYryWZgYP2rm3oqyay)",
+      "coral.waterType (id 1z8rQFHeojDMTUo2hX9Rpx)",
+      "coral.waterType (id 1z8rQFHeojDMTUo2hXSXLR)",
+      "coral.waterType (id 1z8rQFHeojDMTUo2hXSXOj)",
+      "coral.waterType (id 1z8rQFHeojDMTUo2hXSXVJ)",
+      "coral.waterType (id 5oQB2MZ7gmZXjdwFqSrVl7)",
+      "coral.waterType (id BruaGKYCGDRQjkiQDnlmjC)",
+      "coral.waterType (id BruaGKYCGDRQjkiQDnlmrB)",
+      "coral.waterType (id BruaGKYCGDRQjkiQDnlmtq)",
+      "coral.waterType (id BruaGKYCGDRQjkiQDnlmwV)",
+      "coral.waterType (id Gk33CfLE6ahVd3Ve601Vay)",
+      "coral.waterType (id I9bI8W8ZWcEwyIzM9CjDmS)",
+      "coral.waterType (id I9bI8W8ZWcEwyIzM9CttlY)",
+      "coral.waterType (id I9bI8W8ZWcEwyIzM9Ctty8)",
+      "coral.waterType (id I9bI8W8ZWcEwyIzM9Ctu8C)",
+      "coral.waterType (id I9bI8W8ZWcEwyIzM9DJffc)",
+      "coral.waterType (id IlX7xILobrukz7d5JnTHt0)",
+      "coral.waterType (id IlX7xILobrukz7d5JnvhK2)",
+      "coral.waterType (id PZ8Kai1VvEL468NS2LLdGW)",
+      "coral.waterType (id bXkDxvOEdfzf4NR9Z3Reey)",
+      "coral.waterType (id sebdKYryWZgYP2rm3or0mk)",
+      "equipment.group (id 1z8rQFHeojDMTUo2hXSXqh)",
+      "equipment.group (id 1z8rQFHeojDMTUo2hXSXuo)",
+      "equipment.group (id 1z8rQFHeojDMTUo2hXSYAR)",
+      "equipment.group (id PZ8Kai1VvEL468NS2LLeg8)",
+      "equipment.group (id PZ8Kai1VvEL468NS2LLfrf)",
+      "equipment.group (id sebdKYryWZgYP2rm3or3AK)",
+      "problem.name (id I9bI8W8ZWcEwyIzM9DFYjI)",
+      "problem.name (id I9bI8W8ZWcEwyIzM9DFYtM)",
+      "problem.name (id I9bI8W8ZWcEwyIzM9DNIu8)",
+      "problem.name (id IlX7xILobrukz7d5JnvacY)",
+      "problem.name (id IlX7xILobrukz7d5Jo2qVy)",
+      "problem.name (id IlX7xILobrukz7d5Jo2qgo)",
+      "problem.name (id IlX7xILobrukz7d5Jo2wxC)",
+      "problem.name (id IlX7xILobrukz7d5Jo2xIs)",
+      "problem.name (id J1Tx0fWCuGNPno99A79Tvf)",
+      "problem.name (id J1Tx0fWCuGNPno99A7AE36)",
+      "problem.name (id J1Tx0fWCuGNPno99A7AEDM)",
+      "problem.name (id J1Tx0fWCuGNPno99A7KJcq)",
+      "problem.name (id J1Tx0fWCuGNPno99A7KJpf)",
+      "problem.name (id J1Tx0fWCuGNPno99A7KutT)"
+    ]
+  }
+}

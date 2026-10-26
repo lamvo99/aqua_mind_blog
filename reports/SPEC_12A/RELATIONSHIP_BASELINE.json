@@ -1,0 +1,304 @@
+{
+  "specId": "SPEC_12A",
+  "artifact": "RELATIONSHIP_BASELINE",
+  "generatedAt": "2026-10-18T12:45:33.908Z",
+  "mode": "READ-ONLY (GET query only; no writes, no deploy)",
+  "checks": [
+    {
+      "id": "A-01",
+      "name": "record counts match baseline",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "A-02",
+      "name": "drafts = 0",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "A-03",
+      "name": "duplicate _id = 0 and duplicate slug = 0",
+      "pass": true,
+      "detail": "dupIds=0 dupSlugs=0"
+    },
+    {
+      "id": "A-04",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "A-05",
+      "name": "existing relationship edges enumerated",
+      "pass": true,
+      "detail": "edges=3151 dangling=174"
+    }
+  ],
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "drafts": {
+    "wikiDrafts": 0,
+    "datasetDrafts": 0
+  },
+  "duplicate": {
+    "dupIds": 0,
+    "dupSlugs": 0
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "relationshipInventory": [
+    {
+      "sourceType": "species",
+      "field": "compatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "compatiblePlants",
+      "kind": "refArray",
+      "targets": "plant",
+      "recordsWithData": 107,
+      "edgeCount": 535
+    },
+    {
+      "sourceType": "species",
+      "field": "compatibleInvertebrates",
+      "kind": "refArray",
+      "targets": "invertebrate",
+      "recordsWithData": 100,
+      "edgeCount": 388
+    },
+    {
+      "sourceType": "species",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "recordsWithData": 131,
+      "edgeCount": 654
+    },
+    {
+      "sourceType": "species",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "recordsWithData": 131,
+      "edgeCount": 655
+    },
+    {
+      "sourceType": "species",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 38,
+      "edgeCount": 49
+    },
+    {
+      "sourceType": "species",
+      "field": "incompatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "predatorPrey",
+      "kind": "objectArray",
+      "targets": "species|invertebrate",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "reefInteractionDetail",
+      "kind": "objectArray",
+      "targets": "coral",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "parentSpecies",
+      "kind": "ref",
+      "targets": "species",
+      "recordsWithData": 3,
+      "edgeCount": 3
+    },
+    {
+      "sourceType": "plant",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "recordsWithData": 52,
+      "edgeCount": 208
+    },
+    {
+      "sourceType": "plant",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "recordsWithData": 52,
+      "edgeCount": 156
+    },
+    {
+      "sourceType": "plant",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 26,
+      "edgeCount": 35
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "compatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "recordsWithData": 42,
+      "edgeCount": 126
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 3,
+      "edgeCount": 5
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "predatorPrey",
+      "kind": "objectArray",
+      "targets": "species|invertebrate",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "parentSpecies",
+      "kind": "ref",
+      "targets": "species",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "coral",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "recordsWithData": 36,
+      "edgeCount": 144
+    },
+    {
+      "sourceType": "coral",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "recordsWithData": 36,
+      "edgeCount": 108
+    },
+    {
+      "sourceType": "coral",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "coral",
+      "field": "coralNeighbors",
+      "kind": "objectArray",
+      "targets": "coral",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "compatibleEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "recordsWithData": 0,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 21,
+      "edgeCount": 36
+    },
+    {
+      "sourceType": "problem",
+      "field": "relatedTools",
+      "kind": "refArray",
+      "targets": "tool",
+      "recordsWithData": 16,
+      "edgeCount": 16
+    },
+    {
+      "sourceType": "problem",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "recordsWithData": 20,
+      "edgeCount": 33
+    }
+  ],
+  "existingEdgeCount": 3151,
+  "danglingReferenceCount": 174,
+  "seals": {
+    "relSeal": "1f7cc9e42725fdbd08aafcc5805818644be443cf56ba399f4ecd5d28efe15a7c",
+    "seoSeal": "94cbb6564964bd32b566e1556f539b9e242bd8b0e749ba6a3cc81eea4235d9a9"
+  },
+  "deployedSchema": {
+    "studioUrl": "https://aqua-mind-blog.sanity.studio/",
+    "workspace": "default",
+    "dataset": "production",
+    "projectId": "zeohjejw"
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0"
+  },
+  "content_mutations": 0
+}

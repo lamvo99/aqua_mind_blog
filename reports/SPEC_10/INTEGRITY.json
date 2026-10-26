@@ -1,0 +1,167 @@
+{
+ "specId": "SPEC_10",
+ "generatedAt": "2026-10-17T19:33:39.692Z",
+ "finalRun": true,
+ "mode": "READ-ONLY",
+ "sanityWrites": 0,
+ "mutationCalls": 0,
+ "gates": {
+  "A_baseline": [
+   {
+    "id": "A-01",
+    "gate": "A",
+    "name": "post-phase deterministic double-read identical",
+    "pass": true,
+    "detail": "mismatchedTypes=0"
+   },
+   {
+    "id": "A-02",
+    "gate": "A",
+    "name": "473 records / 6 domains unchanged",
+    "pass": true,
+    "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+   },
+   {
+    "id": "A-03",
+    "gate": "A",
+    "name": "identity hash verified",
+    "pass": true,
+    "detail": "MATCH"
+   },
+   {
+    "id": "A-04",
+    "gate": "A",
+    "name": "drafts = 0 / duplicate slugs = 0",
+    "pass": true,
+    "detail": "drafts=0 dupOrMissingSlug=0"
+   }
+  ],
+  "B_architecture": [
+   {
+    "id": "B-01",
+    "gate": "B",
+    "name": "architecture matrix = 230 rows, unique, exact SPEC 09 requirement set",
+    "pass": true,
+    "detail": "rows=230 unique=230 unmapped=0 extras=0"
+   },
+   {
+    "id": "B-02",
+    "gate": "B",
+    "name": "representation/layer/level vocabularies legal, no empty targets",
+    "pass": true,
+    "detail": "repr=true layer=true level=true target=true"
+   },
+   {
+    "id": "B-03",
+    "gate": "B",
+    "name": "species/plant/invertebrate/coral/equipment/problem architectures all defined",
+    "pass": true,
+    "detail": "species,plant,invertebrate,coral,equipment,problem"
+   }
+  ],
+  "C_representation": [
+   {
+    "id": "D-01",
+    "gate": "C",
+    "name": "all deliverables present (integrity written by this run)",
+    "pass": true,
+    "detail": "present=11/11 missing=none-yet(self)"
+   },
+   {
+    "id": "C-01",
+    "gate": "C",
+    "name": "applicability matrix = exact SPEC 09 set, legal classes, CONDITIONAL rules present, report claim UNKNOWN=0/NA=0 holds",
+    "pass": true,
+    "detail": "rows=230 missing=0 legal=true condRule=true unknown=0 na=0"
+   },
+   {
+    "id": "C-02",
+    "gate": "C",
+    "name": "field mapping = 140 fields, exact SPEC 01 set, legal statuses",
+    "pass": true,
+    "detail": "rows=140 missing=0 legal=true"
+   },
+   {
+    "id": "C-03",
+    "gate": "C",
+    "name": "relationship model: 22 slots, statuses legal, all SPEC 09 REL-01..17 referenced, 6 proposed",
+    "pass": true,
+    "detail": "rows=22 proposed=6 missingRefs=none"
+   },
+   {
+    "id": "R-01",
+    "gate": "C",
+    "name": "report: all Gate A-F sections + §32 acceptance line + no knowledge-complete claim",
+    "pass": true,
+    "detail": "missingGates=none accepted=true noFalseClaim=true"
+   },
+   {
+    "id": "M-01",
+    "gate": "C",
+    "name": "mirror byte-identical (reports/SPEC_10, all 11 artifacts)",
+    "pass": true,
+    "detail": "bad=none"
+   }
+  ],
+  "D_decisionReadiness": [
+   {
+    "id": "D-01",
+    "gate": "D",
+    "name": "completeness levels L0-L4 + beginner/intermediate/advanced gates defined",
+    "pass": true,
+    "detail": "missing=none"
+   },
+   {
+    "id": "D-02",
+    "gate": "D",
+    "name": "priority migration queue legal (priorities/phases/order; 18 P0 records == SPEC 09 CRITICAL count; P0 total = 24)",
+    "pass": true,
+    "detail": "rows=106 legalPrio=true legalPhase=true order=true recordP0=18 p0total=24"
+   },
+   {
+    "id": "D-03",
+    "gate": "D",
+    "name": "body architecture: 6 domain templates + decision rule present",
+    "pass": true,
+    "detail": "missing=none"
+   }
+  ],
+  "E_research": [
+   {
+    "id": "E-01",
+    "gate": "E",
+    "name": "research model: §22 fields + 7 evidence classes + source hierarchy present",
+    "pass": true,
+    "detail": "missingFields=none missingEvidence=none"
+   }
+  ],
+  "F_mutationSafety": [
+   {
+    "id": "F-01",
+    "gate": "F",
+    "name": "full-document diff vs SPEC 10 baseline = 0",
+    "pass": true,
+    "detail": "changed=0 extra=0 title=0 slug=0 rel=0 seo=0"
+   },
+   {
+    "id": "F-02",
+    "gate": "F",
+    "name": "_updatedAt changes = 0",
+    "pass": true,
+    "detail": "updatedDiff=0"
+   },
+   {
+    "id": "F-03",
+    "gate": "F",
+    "name": "Sanity writes = 0 / no mutation path in SPEC 10 scripts",
+    "pass": true,
+    "detail": "scriptsWithMutationHints=0 (GET query only)"
+   }
+  ]
+ },
+ "checksTotal": 20,
+ "checksPassed": 20,
+ "status": "SPEC 10 — COMPLETE",
+ "failedChecks": [],
+ "note": "Read-only architecture phase. Completion does NOT authorize Sanity writes, schema mutations, content enrichment, relationship creation, or publishing (§33)."
+}

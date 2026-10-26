@@ -1,0 +1,10 @@
+family,decision,rationale,targetEdges,riskTier
+predatorPrey,INCLUDE,predatorPreyEntry is empty and key livestock-safety evidence is available from class-3 specialist references.,15,P0
+incompatibleSpecies,INCLUDE,incompatibleEntry is empty and key livestock-safety evidence is available from class-3 specialist references.,6,P1
+reefInteractionDetail,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+coralNeighbors,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+compatibleEquipment,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+invertebrate.compatibleSpecies,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+invertebrate.suitableEquipment,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+equipment.relatedProblems,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a
+coral.relatedPosts,DEFER,"Not selected for this bounded batch: evidence yield is lower, requires saltwater-equipment/reef-specific sourcing, or overlaps with work better suited to a later pass.",0,n/a

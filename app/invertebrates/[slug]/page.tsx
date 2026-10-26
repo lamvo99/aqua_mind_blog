@@ -10,6 +10,8 @@ import { ArrowLeft, Thermometer, Droplets, Ruler, Fish, Waves } from "lucide-rea
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import PortableText from "@/app/components/PortableText"
+import { knowledgeBodySections, compatibleSpeciesRefs } from "@/lib/species-facts"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -82,6 +84,9 @@ export default async function InvertebrateDetailPage({ params }: Props) {
   const range = (min?: number, max?: number, suffix = "") =>
     min !== undefined && max !== undefined && (min !== null) && (max !== null) ? `${min}–${max}${suffix}` : undefined
 
+  const compatible = compatibleSpeciesRefs<any>(item.compatibleSpecies)
+  const bodySections = knowledgeBodySections(item.knowledgeBody)
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <JsonLd data={breadcrumbSchema([
@@ -132,7 +137,14 @@ export default async function InvertebrateDetailPage({ params }: Props) {
             <Parameter label="Difficulty" value={item.difficulty} />
           </div>
 
-          <RelationshipSection title="Compatible Species" items={item.compatibleSpecies || []} hrefPrefix="/species" />
+          {bodySections.map((section) => (
+            <section key={section.title} className="mt-8">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">{section.title}</h2>
+              <PortableText value={section.blocks} />
+            </section>
+          ))}
+
+          <RelationshipSection title="Compatible Species" items={compatible} hrefPrefix="/species" />
           <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
           <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
 

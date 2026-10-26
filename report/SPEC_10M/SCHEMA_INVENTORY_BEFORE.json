@@ -1,0 +1,2680 @@
+{
+  "specId": "SPEC_10M",
+  "artifact": "SCHEMA_INVENTORY_BEFORE",
+  "generatedAt": "2026-10-17T19:40:56.852Z",
+  "mode": "READ-ONLY",
+  "gateA": {
+    "checks": [
+      {
+        "id": "A-01",
+        "name": "SPEC 10 artifacts loaded (11/11)",
+        "pass": true,
+        "detail": "missing=0"
+      },
+      {
+        "id": "A-02",
+        "name": "SPEC 10 INTEGRITY finalRun + all checks passed + writes 0",
+        "pass": true,
+        "detail": "status=\"SPEC 10 — COMPLETE\" 20/20 writes=0"
+      },
+      {
+        "id": "A-03",
+        "name": "SPEC 10 mirror byte-identical 11/11",
+        "pass": true,
+        "detail": "ok=11 bad=none"
+      },
+      {
+        "id": "A-04",
+        "name": "SPEC 10 migration queue loaded (106 items)",
+        "pass": true,
+        "detail": "items=106"
+      },
+      {
+        "id": "A-05",
+        "name": "current schema files present (7/7)",
+        "pass": true,
+        "detail": "missing=0"
+      },
+      {
+        "id": "A-06",
+        "name": "schema inventory parsed (fields>0, types named)",
+        "pass": true,
+        "detail": "files=7 fields=140"
+      },
+      {
+        "id": "A-07",
+        "name": "deterministic double-read identical (6 domains)",
+        "pass": true,
+        "detail": "mismatchedTypes=0"
+      },
+      {
+        "id": "A-08",
+        "name": "473 records / domain counts",
+        "pass": true,
+        "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+      },
+      {
+        "id": "A-09",
+        "name": "drafts = 0",
+        "pass": true,
+        "detail": "wikiDrafts=0 datasetDrafts=0"
+      },
+      {
+        "id": "A-10",
+        "name": "duplicate slugs = 0",
+        "pass": true,
+        "detail": "duplicates=0 noSlug=0"
+      },
+      {
+        "id": "A-11",
+        "name": "canonical identity hash MATCH",
+        "pass": true,
+        "detail": "hash=MATCH"
+      },
+      {
+        "id": "A-12",
+        "name": "compatibleSpecies empty on 218 species + 56 invertebrates (entry-shape precondition)",
+        "pass": true,
+        "detail": "nonEmptyDocs=0"
+      },
+      {
+        "id": "A-13",
+        "name": "relationship data extracted for baseline",
+        "pass": true,
+        "detail": "{\"species.compatiblePlants\":535,\"species.compatibleInvertebrates\":388,\"species.suitableEquipment\":654,\"species.relatedProblems\":655,\"species.relatedPosts\":49,\"plant.suitableEquipment\":208,\"plant.relatedProblems\":156,\"plant.relatedPosts\":35,\"invertebrate.relatedProblems\":126,\"invertebrate.relatedPosts\":5,\"coral.suitableEquipment\":144,\"coral.relatedProblems\":108,\"equipment.relatedPosts\":36,\"problem.relatedPosts\":33,\"problem.relatedTools\":16}"
+      }
+    ],
+    "spec10Artifacts": [
+      "SPEC_10_SCHEMA_STANDARDIZATION_REPORT.md",
+      "KNOWLEDGE_ARCHITECTURE_MATRIX.csv",
+      "FIELD_TO_KNOWLEDGE_MAPPING.csv",
+      "APPLICABILITY_MATRIX.csv",
+      "RELATIONSHIP_MODEL.csv",
+      "BODY_ARCHITECTURE.md",
+      "COMPLETENESS_LEVELS.md",
+      "RESEARCH_MODEL.csv",
+      "PRIORITY_MIGRATION_QUEUE.csv",
+      "INTEGRITY.json",
+      "EXECUTION_LOG.md"
+    ],
+    "spec10Integrity": {
+      "status": "SPEC 10 — COMPLETE",
+      "finalRun": true,
+      "checksPassed": 20,
+      "checksTotal": 20,
+      "sanityWrites": 0
+    },
+    "spec10MirrorOk": 11,
+    "unresolvedArchitectureConflicts": []
+  },
+  "baseline": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "drafts": 0,
+    "datasetDrafts": 0,
+    "duplicateSlugs": 0,
+    "relationshipReferenceCounts": {
+      "species.compatiblePlants": 535,
+      "species.compatibleInvertebrates": 388,
+      "species.suitableEquipment": 654,
+      "species.relatedProblems": 655,
+      "species.relatedPosts": 49,
+      "plant.suitableEquipment": 208,
+      "plant.relatedProblems": 156,
+      "plant.relatedPosts": 35,
+      "invertebrate.relatedProblems": 126,
+      "invertebrate.relatedPosts": 5,
+      "coral.suitableEquipment": 144,
+      "coral.relatedProblems": 108,
+      "equipment.relatedPosts": 36,
+      "problem.relatedPosts": 33,
+      "problem.relatedTools": 16
+    },
+    "compatibleSpeciesPrecondition": {
+      "speciesDocs": 218,
+      "invertebrateDocs": 56,
+      "nonEmpty": 0
+    },
+    "contentBaselineFile": "C:/Users/lam72/AppData/Local/Temp/opencode/spec10m_baseline.json"
+  },
+  "schema": {
+    "schemaDir": "sanity/schemaTypes",
+    "index": {
+      "file": "index.ts",
+      "fileSha256": "dbd45afc8d12c95cbc0fa3c44a324c7819f6a62b033c44a81c3e0df51be64116",
+      "imports": [
+        {
+          "local": "author",
+          "module": "author"
+        },
+        {
+          "local": "category",
+          "module": "category"
+        },
+        {
+          "local": "comment",
+          "module": "comment"
+        },
+        {
+          "local": "post",
+          "module": "post"
+        },
+        {
+          "local": "species",
+          "module": "species"
+        },
+        {
+          "local": "invertebrate",
+          "module": "invertebrate"
+        },
+        {
+          "local": "plant",
+          "module": "plant"
+        },
+        {
+          "local": "coral",
+          "module": "coral"
+        },
+        {
+          "local": "equipment",
+          "module": "equipment"
+        },
+        {
+          "local": "problem",
+          "module": "problem"
+        },
+        {
+          "local": "tool",
+          "module": "tool"
+        },
+        {
+          "local": "inspiration",
+          "module": "inspiration"
+        },
+        {
+          "local": "collection",
+          "module": "collection"
+        },
+        {
+          "local": "subscriber",
+          "module": "subscriber"
+        },
+        {
+          "local": "table",
+          "module": "table"
+        }
+      ],
+      "exported": [
+        "] = [\r\n  author",
+        "category",
+        "comment",
+        "post",
+        "species",
+        "invertebrate",
+        "plant",
+        "coral",
+        "equipment",
+        "problem",
+        "tool",
+        "inspiration",
+        "collection",
+        "subscriber",
+        "table"
+      ]
+    },
+    "types": [
+      {
+        "file": "species.ts",
+        "fileSha256": "965dc7bb6451025323dd21741fde4f95b0ba018aeb6104c2ad4da39df1551112",
+        "typeName": "species",
+        "typeTitle": "Fish Species",
+        "jsonType": "document",
+        "groups": [
+          {
+            "name": "identity",
+            "title": "Identity"
+          },
+          {
+            "name": "care",
+            "title": "Care"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility"
+          },
+          {
+            "name": "media",
+            "title": "Media"
+          },
+          {
+            "name": "seo",
+            "title": "SEO"
+          },
+          {
+            "name": "related",
+            "title": "Related"
+          }
+        ],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "939d58f2ecbe0858e9cef9295b3de999bb018b20d5642cd315ae17d9e1aa1a44"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "a7fa616f53809d3d8964b39735ecfdc920926fc405e7755b2363feb246e0513a"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": "identity",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'name', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "e3cbfd6d6635e5aa53c718412d6aad634c081517750e0161577e32919a4fa983"
+          },
+          {
+            "name": "family",
+            "title": "Family",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "33a1ae8af7f963ef8b1725dc9e33a971ef0f00015cd5390e559c9531e7fc5a2e"
+          },
+          {
+            "name": "origin",
+            "title": "Origin",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "57306a2b27fecab20ebe35bd2a382a05385579d59bdd043c0f438b9eea8a3c77"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "0a52a0fc548bae020ffc2db03087bbecf04c2dfed9416eae449a5187e4695cee"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "ab4a2fcc824c2c91466f8841d3640835cc34ee35e903a0ef9ee66371b22a7f05"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "24e7f24a42f85da0d264da660a4949bed8b44bbce9238b3d6a2f77a5400cb774"
+          },
+          {
+            "name": "group",
+            "title": "Biological Group",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          'Cichlid', 'Livebearer', 'Catfish', 'Loach', 'Characin', 'Cyprinid',\r\n          'Gourami', 'Arowana', 'Puffer', 'Angelfish', 'Tang', 'Wrasse',\r\n          'Goby', 'Blenny', 'Shark', 'Rainbowfish', 'Killifish', 'Pleco',\r\n          'Other',\r\n        ],\r\n      }",
+            "listValues": [
+              "Cichlid",
+              "Livebearer",
+              "Catfish",
+              "Loach",
+              "Characin",
+              "Cyprinid",
+              "Gourami",
+              "Arowana",
+              "Puffer",
+              "Angelfish",
+              "Tang",
+              "Wrasse",
+              "Goby",
+              "Blenny",
+              "Shark",
+              "Rainbowfish",
+              "Killifish",
+              "Pleco",
+              "Other"
+            ],
+            "blockSha256": "f0974552028802faa8c45c6a8af6775c256a5c9ef223bf8d07ae2e7b301a3100"
+          },
+          {
+            "name": "parentSpecies",
+            "title": "Parent Species",
+            "type": "reference",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [
+              "species"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "b4a9753756f29efd0528804445da11ebab71528b20af7b64b803bcdefdd12d60"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": "seo",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "fb81ddf6714df07a627d736403394b67176b2720b837a1991caa7cd9b76b71ef"
+          },
+          {
+            "name": "sizeCm",
+            "title": "Adult Size (cm)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "748f9c9633d5137e7ffbbad9f2641ac7e144a42c22bdb76fc2d773ac94be9fec"
+          },
+          {
+            "name": "tankSizeMinL",
+            "title": "Minimum Tank Size (L)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "9d225398727c56215fb6cc8c27ab90f7fcccd46e1676d81491b236e337af88b5"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "783feb49d29db19c20192e572b1098d0ff8f64277b41c1b199e3ab618fda9bce"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "733a28951f8bef8f9301061f7a3e15a1dcb1dc82d20a71f03c1a49dd52f895b6"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "cad0db87a3df25f5f39194e85e6491c1dfa35bceda1a70e95d1567f7b2d71f07"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "85f8a1ebb7fe91ae1e72c924de1457bc70e410901acb0a1a2dfdbd17c5ea064d"
+          },
+          {
+            "name": "ghMin",
+            "title": "Min GH (dGH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "209148d1689834b25ed92679306aa8dee4b999275608c80648673593ce41d9f0"
+          },
+          {
+            "name": "ghMax",
+            "title": "Max GH (dGH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "8b43c36389ac569f1499f4d91d8e11be5f805db4623b233d8276d5144193f52a"
+          },
+          {
+            "name": "diet",
+            "title": "Diet",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Carnivore', 'Omnivore', 'Herbivore', 'Micropredator'] }",
+            "listValues": [
+              "Carnivore",
+              "Omnivore",
+              "Herbivore",
+              "Micropredator"
+            ],
+            "blockSha256": "a07568986ee0678daef3e91831f307ce092d827b598c84e871331c3eea336d1a"
+          },
+          {
+            "name": "temperament",
+            "title": "Temperament",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] }",
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "blockSha256": "f290e8b3f7d212032015521b9aba9d8cff5925d4c8dd0404fcf6279f14ed6e42"
+          },
+          {
+            "name": "waterZone",
+            "title": "Water Zone",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Top', 'Middle', 'Bottom', 'All levels'] }",
+            "listValues": [
+              "Top",
+              "Middle",
+              "Bottom",
+              "All levels"
+            ],
+            "blockSha256": "bc52027ea920a78f17c24334adb66b06a134a112193fcae7e1c0ac1b58680592"
+          },
+          {
+            "name": "schooling",
+            "title": "Schooling Requirements",
+            "type": "text",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "0a79062c7abbfe867f71e72de6f71c0e7f4e459ccf87d9a487a6c06a4cb7eedf"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] }",
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "blockSha256": "27c738156b0e367625599d6144cd677f181f71cb0510afcca7579b9ca8755fda"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": "care",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['freshwater', 'saltwater', 'brackish'] }",
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "brackish"
+            ],
+            "blockSha256": "5b6496a59ec39d503936c6f4be5a0027bf8a76ed8046044e93ae575836f28d1c"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Community', value: 'Community' },\r\n          { title: 'Planted', value: 'Planted' },\r\n          { title: 'Low-Tech', value: 'Low-Tech' },\r\n          { title: 'High-Tech / CO2', value: 'High-Tech / CO2' },\r\n          { title: 'Aquascaping', value: 'Aquascaping' },\r\n          { title: 'Blackwater', value: 'Blackwater' },\r\n          { title: 'Biotope', value: 'Biotope' },\r\n          { title: 'Amazon / South American', value: 'Amazon / South American' },\r\n          { title: 'Southeast Asian', value: 'Southeast Asian' },\r\n          { title: 'African Cichlid', value: 'African Cichlid' },\r\n          { title: 'Shrimp', value: 'Shrimp' },\r\n          { title: 'Betta / Nano', value: 'Betta / Nano' },\r\n          { title: 'Predator', value: 'Predator' },\r\n          { title: 'Large Fish', value: 'Large Fish' },\r\n          { title: 'Native / Regional', value: 'Native / Regional' },\r\n          { title: 'Fish Only', value: 'Fish Only' },\r\n          { title: 'FOWLR', value: 'FOWLR' },\r\n          { title: 'Nano Reef', value: 'Nano Reef' },\r\n          { title: 'Mixed Reef', value: 'Mixed Reef' },\r\n          { title: 'Anemone / Clownfish', value: 'Anemone / Clownfish' },\r\n          { title: 'Marine Predator', value: 'Marine Predator' },\r\n          { title: 'Pond / Outdoor', value: 'Pond / Outdoor' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Blackwater",
+              "Blackwater",
+              "Biotope",
+              "Biotope",
+              "Amazon / South American",
+              "Amazon / South American",
+              "Southeast Asian",
+              "Southeast Asian",
+              "African Cichlid",
+              "African Cichlid",
+              "Shrimp",
+              "Shrimp",
+              "Betta / Nano",
+              "Betta / Nano",
+              "Predator",
+              "Predator",
+              "Large Fish",
+              "Large Fish",
+              "Native / Regional",
+              "Native / Regional",
+              "Fish Only",
+              "Fish Only",
+              "FOWLR",
+              "FOWLR",
+              "Nano Reef",
+              "Nano Reef",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish",
+              "Marine Predator",
+              "Marine Predator",
+              "Pond / Outdoor",
+              "Pond / Outdoor"
+            ],
+            "blockSha256": "5d13bbb263ce294bf1c7bcb67fcc69f6b4c73391d908f23cac015ca0c50461c1"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'South America', value: 'South America' },\r\n          { title: 'Amazon Basin', value: 'Amazon Basin' },\r\n          { title: 'Central America', value: 'Central America' },\r\n          { title: 'North America', value: 'North America' },\r\n          { title: 'Southeast Asia', value: 'Southeast Asia' },\r\n          { title: 'South Asia', value: 'South Asia' },\r\n          { title: 'East Asia', value: 'East Asia' },\r\n          { title: 'Africa', value: 'Africa' },\r\n          { title: 'Australia / Oceania', value: 'Australia / Oceania' },\r\n          { title: 'Europe', value: 'Europe' },\r\n          { title: 'Marine Indo-Pacific', value: 'Marine Indo-Pacific' },\r\n          { title: 'Red Sea', value: 'Red Sea' },\r\n          { title: 'Caribbean / Western Atlantic', value: 'Caribbean / Western Atlantic' },\r\n        ],\r\n      }",
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Central America",
+              "Central America",
+              "North America",
+              "North America",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Australia / Oceania",
+              "Australia / Oceania",
+              "Europe",
+              "Europe",
+              "Marine Indo-Pacific",
+              "Marine Indo-Pacific",
+              "Red Sea",
+              "Red Sea",
+              "Caribbean / Western Atlantic",
+              "Caribbean / Western Atlantic"
+            ],
+            "blockSha256": "0ea16731f623febd66bedf0b23cf27638574a1bddc5d6d261b76130a0c41b22f"
+          },
+          {
+            "name": "isPredator",
+            "title": "Predator?",
+            "type": "boolean",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "fc72b02ef16866cd572612efc6ecc6914e85d9c484a5be5d7376cfc5e49c53dd"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Compatible?",
+            "type": "boolean",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "da5b8927819fa3ce840dbb4459d7f348e9a923fddd2cbcc2ea0488c682edec20"
+          },
+          {
+            "name": "compatibleSpecies",
+            "title": "Compatible Species",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "species"
+            ],
+            "to": [
+              "species"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "f34d35b2d3c3a7839d94a18836d61306b25cbd155251eddff62f77bc617dcb91"
+          },
+          {
+            "name": "compatiblePlants",
+            "title": "Suitable Plants",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "plant"
+            ],
+            "to": [
+              "plant"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "fd89c4d10c49c88923e4e72ae425c6b4e74eb51785502151033fda00f2fc64cc"
+          },
+          {
+            "name": "compatibleInvertebrates",
+            "title": "Compatible Invertebrates",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "invertebrate"
+            ],
+            "to": [
+              "invertebrate"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "2317c4a74f58d7c087231c0089f162d115b14e8225f48985c1d4a8c89a037629"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "5b192945f9fd077a085e9ec121ac8b6ba63885374e4356c7511b2aa23ad7581d"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": "related",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "5a9987b8f31284ed5795f494e3ff72ee84e304646e4f587d3e6838a4e7b4275a"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": "media",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { hotspot: true }",
+            "listValues": [],
+            "blockSha256": "a9e2b10c434d376f69dac758be742930378586786d96fc19c26ff3360d2d2037"
+          },
+          {
+            "name": "seo",
+            "title": "SEO",
+            "type": "object",
+            "group": "seo",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "bd869e7d584ef6e750bf7364ab6915ad5c392d62bd5c639bb30a8c4c0ce0f739"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": "related",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "076dcddb5c255fdeda761867e5f4546fca828482e01eab4687fa7dbdb8b1a3dd"
+          }
+        ],
+        "definedNames": [
+          "species"
+        ]
+      },
+      {
+        "file": "plant.ts",
+        "fileSha256": "ca64117c4c5aeff0ab976e01a9942ffc5612902571540528b1d04316c04af26e",
+        "typeName": "plant",
+        "typeTitle": "Aquatic Plant",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "48bed4f7a5ce12801de2228d684cf6f6d89b976c8b1fa14a1c9d2f83458655f0"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'name', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "3f1d0ecb4e38fa0eadef431d7937eb468201bd7d38e620f76b376622f16ac2f1"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "20fed5b8561576af5fbdc9c7738a00dcfdca565c83746bcf2a187ec9ea90ce4b"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "43f3d83a6db710cfe77841b74bed72693ed0f6c888f61d6a61cb2dc636568c29"
+          },
+          {
+            "name": "group",
+            "title": "Plant Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          'Stem', 'Rosette', 'Rhizome', 'Bulb', 'Moss', 'Fern',\r\n          'Floating', 'Epiphyte', 'Carpet', 'Succulent', 'Other',\r\n        ],\r\n      }",
+            "listValues": [
+              "Stem",
+              "Rosette",
+              "Rhizome",
+              "Bulb",
+              "Moss",
+              "Fern",
+              "Floating",
+              "Epiphyte",
+              "Carpet",
+              "Succulent",
+              "Other"
+            ],
+            "blockSha256": "c94c11a2a633cc61b74987dd83169be941260166a46576ded312fc2e7c83c2f9"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "light",
+            "title": "Light Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Low', 'Low-Medium', 'Medium', 'Medium-High', 'High'] }",
+            "listValues": [
+              "Low",
+              "Low-Medium",
+              "Medium",
+              "Medium-High",
+              "High"
+            ],
+            "blockSha256": "88d868c0d06c9f7b4f3b7890b0f09d839e2e6c62cd230eecd4062f255b74a868"
+          },
+          {
+            "name": "co2",
+            "title": "CO₂ Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['None', 'Low', 'Medium', 'High'] }",
+            "listValues": [
+              "None",
+              "Low",
+              "Medium",
+              "High"
+            ],
+            "blockSha256": "8738f3a4cb1e25deb99a2610f190a1e75a43af3ec54c4d30eb9cc6db7929b7e1"
+          },
+          {
+            "name": "growth",
+            "title": "Growth Rate",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Slow', 'Medium', 'Fast'] }",
+            "listValues": [
+              "Slow",
+              "Medium",
+              "Fast"
+            ],
+            "blockSha256": "8751d0fe3a0247f69384d7ea7aa7afc63d028069fec6d30fef10b35ab89f362a"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Beginner', 'Intermediate', 'Advanced'] }",
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced"
+            ],
+            "blockSha256": "e8de6540e31642a1a09a204fa152c49a1fbd6f7177ce32d28e769b9144f14549"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Foreground', 'Midground', 'Background', 'Floating', 'Epiphyte'] }",
+            "listValues": [
+              "Foreground",
+              "Midground",
+              "Background",
+              "Floating",
+              "Epiphyte"
+            ],
+            "blockSha256": "c4c3d5283e3dadeba2fe4e2ebcbee0c768aed8936e188aef5ec34c5b3be3f4eb"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "3ffa2445c6aac70af8678364aade97c0f1864a7dcab0417fbc499bb3b83b77be"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "f198e4e100c84df42ae441d2d8958ee1bc68f28862814c30b30ba57108da4582"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "149b9ccb6e008e247b095749f1c00e189519dfc2d6a3ab7272367abc6396494e"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "0806ff737d48ffcb9364dd94ad8c4dda9dc2f863d5e235a9acdb6c759bd8a679"
+          },
+          {
+            "name": "propagation",
+            "title": "Propagation",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "13f1ba16d39cd7f042fb76da9a197befb2c63301bb7c95971ee81dca9fa1208b"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Community', value: 'Community' },\r\n          { title: 'Planted', value: 'Planted' },\r\n          { title: 'Low-Tech', value: 'Low-Tech' },\r\n          { title: 'High-Tech / CO2', value: 'High-Tech / CO2' },\r\n          { title: 'Aquascaping', value: 'Aquascaping' },\r\n          { title: 'Blackwater', value: 'Blackwater' },\r\n          { title: 'Biotope', value: 'Biotope' },\r\n          { title: 'Amazon / South American', value: 'Amazon / South American' },\r\n          { title: 'Shrimp', value: 'Shrimp' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Blackwater",
+              "Blackwater",
+              "Biotope",
+              "Biotope",
+              "Amazon / South American",
+              "Amazon / South American",
+              "Shrimp",
+              "Shrimp"
+            ],
+            "blockSha256": "7c39bd3e35b4ff674c460a8894ee3370aae6e6fdbcb5b46932033c67f563e4bf"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'South America', value: 'South America' },\r\n          { title: 'Amazon Basin', value: 'Amazon Basin' },\r\n          { title: 'Central America', value: 'Central America' },\r\n          { title: 'North America', value: 'North America' },\r\n          { title: 'Southeast Asia', value: 'Southeast Asia' },\r\n          { title: 'South Asia', value: 'South Asia' },\r\n          { title: 'East Asia', value: 'East Asia' },\r\n          { title: 'Africa', value: 'Africa' },\r\n          { title: 'Australia / Oceania', value: 'Australia / Oceania' },\r\n          { title: 'Europe', value: 'Europe' },\r\n          { title: 'Cosmopolitan', value: 'Cosmopolitan' },\r\n        ],\r\n      }",
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Central America",
+              "Central America",
+              "North America",
+              "North America",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Australia / Oceania",
+              "Australia / Oceania",
+              "Europe",
+              "Europe",
+              "Cosmopolitan",
+              "Cosmopolitan"
+            ],
+            "blockSha256": "c3629eb0bb406e6fdf76c1291f5c51497ab515291e7c44c662be49741f4a00e5"
+          },
+          {
+            "name": "growthForm",
+            "title": "Growth Form",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Stem', value: 'Stem' },\r\n          { title: 'Rosette', value: 'Rosette' },\r\n          { title: 'Rhizome', value: 'Rhizome' },\r\n          { title: 'Stolon', value: 'Stolon' },\r\n          { title: 'Bulb', value: 'Bulb' },\r\n          { title: 'Moss', value: 'Moss' },\r\n          { title: 'Floating', value: 'Floating' },\r\n          { title: 'Vine / Creeper', value: 'Vine / Creeper' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Stem",
+              "Stem",
+              "Rosette",
+              "Rosette",
+              "Rhizome",
+              "Rhizome",
+              "Stolon",
+              "Stolon",
+              "Bulb",
+              "Bulb",
+              "Moss",
+              "Moss",
+              "Floating",
+              "Floating",
+              "Vine / Creeper",
+              "Vine / Creeper"
+            ],
+            "blockSha256": "b24c5a509d593afbc0e8eafc7e555e0ac81ce5ea71cb8b997fe7a0bf0cb278fe"
+          },
+          {
+            "name": "redPlant",
+            "title": "Red Plant?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "84aa7b6c89d4f090b721b42a667e1fefb2b51395dda00c4d31f0154800563c60"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "1690e9d530415df508f1d513e7d77dbdcbea64f0e6f5a0dd193d31323462a92e"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "49b273a9ad8b2497f9032c3afa9315633828738acd7747f5ff21e3555a363d49"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { hotspot: true }",
+            "listValues": [],
+            "blockSha256": "ca72c998ec9ec3110552280aa5a637261491dce0fd55ed7c87a4352a25f13d34"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "40cdc0b94bb6e77790266fdf2d33de58ff56185c971f6a9687566ed9e59823d8"
+          }
+        ],
+        "definedNames": [
+          "plant"
+        ]
+      },
+      {
+        "file": "invertebrate.ts",
+        "fileSha256": "263d673b98d40b97a10ae0f332d60b6f552a64711aa95cdd03291b9151cd7529",
+        "typeName": "invertebrate",
+        "typeTitle": "Invertebrate (Shrimp, Snail, Crab…)",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "eb84dd809b5d1ead65897d7c7c323cc7b5970a532204ba826865ad7acb474f83"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'name', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "3f1d0ecb4e38fa0eadef431d7937eb468201bd7d38e620f76b376622f16ac2f1"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "20fed5b8561576af5fbdc9c7738a00dcfdca565c83746bcf2a187ec9ea90ce4b"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "43f3d83a6db710cfe77841b74bed72693ed0f6c888f61d6a61cb2dc636568c29"
+          },
+          {
+            "name": "parentSpecies",
+            "title": "Parent Species",
+            "type": "reference",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [
+              "invertebrate"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "7c4b8b1c860b3eb36d3c7c596669fb56f807fc55d72e8330d12472b9da20a16c"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['freshwater', 'saltwater', 'brackish'] }",
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "brackish"
+            ],
+            "blockSha256": "2e8d5d995078e00484d6bda24b5593bb13d32037b0b5f2eb6b28bb02297c0b8d"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['shrimp', 'snail', 'starfish', 'crab', 'anemone', 'urchin', 'other'] }",
+            "listValues": [
+              "shrimp",
+              "snail",
+              "starfish",
+              "crab",
+              "anemone",
+              "urchin",
+              "other"
+            ],
+            "blockSha256": "73cbd90a22ed24d2223177710a20d382e17dfc53d3762dd1ddf98f8e61d09a56"
+          },
+          {
+            "name": "sizeCm",
+            "title": "Adult Size (cm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "2bb637d534f8cf1e6008cf823e27700b45bfbdc0767e1028a8abcaa89bda4fa0"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "3ffa2445c6aac70af8678364aade97c0f1864a7dcab0417fbc499bb3b83b77be"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "f198e4e100c84df42ae441d2d8958ee1bc68f28862814c30b30ba57108da4582"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "149b9ccb6e008e247b095749f1c00e189519dfc2d6a3ab7272367abc6396494e"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "0806ff737d48ffcb9364dd94ad8c4dda9dc2f863d5e235a9acdb6c759bd8a679"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] }",
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "blockSha256": "9d293a153c731d183c9ce8fb94cc453fd773d054d0aa7ef12d6d91f7314118f9"
+          },
+          {
+            "name": "diet",
+            "title": "Diet",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Carnivore', 'Omnivore', 'Herbivore', 'Scavenger', 'Detritivore', 'Filter feeder'] }",
+            "listValues": [
+              "Carnivore",
+              "Omnivore",
+              "Herbivore",
+              "Scavenger",
+              "Detritivore",
+              "Filter feeder"
+            ],
+            "blockSha256": "4b4e858f09e8f4fd61f2ce67ebc0f6093bb6bded954f88b1d457090fc69bdf44"
+          },
+          {
+            "name": "temperament",
+            "title": "Temperament",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] }",
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "blockSha256": "04ef99f697042b81e231c62e59f6d670d8e331afcb6721c5e4b18a7546aad3c9"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Community', value: 'Community' },\r\n          { title: 'Shrimp', value: 'Shrimp' },\r\n          { title: 'Planted', value: 'Planted' },\r\n          { title: 'Low-Tech', value: 'Low-Tech' },\r\n          { title: 'Mixed Reef', value: 'Mixed Reef' },\r\n          { title: 'Invertebrate-focused', value: 'Invertebrate-focused' },\r\n          { title: 'Fish Only', value: 'Fish Only' },\r\n          { title: 'Nano Reef', value: 'Nano Reef' },\r\n          { title: 'Anemone / Clownfish', value: 'Anemone / Clownfish' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Community",
+              "Community",
+              "Shrimp",
+              "Shrimp",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Invertebrate-focused",
+              "Invertebrate-focused",
+              "Fish Only",
+              "Fish Only",
+              "Nano Reef",
+              "Nano Reef",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish"
+            ],
+            "blockSha256": "50c445ad1fc1e18c4b75b8c4778c041f1df080c6b3429c4b2adbaf72b54efe57"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'South America', value: 'South America' },\r\n          { title: 'Amazon Basin', value: 'Amazon Basin' },\r\n          { title: 'Southeast Asia', value: 'Southeast Asia' },\r\n          { title: 'South Asia', value: 'South Asia' },\r\n          { title: 'East Asia', value: 'East Asia' },\r\n          { title: 'Africa', value: 'Africa' },\r\n          { title: 'Marine Indo-Pacific', value: 'Marine Indo-Pacific' },\r\n          { title: 'Caribbean / Western Atlantic', value: 'Caribbean / Western Atlantic' },\r\n          { title: 'Red Sea', value: 'Red Sea' },\r\n        ],\r\n      }",
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Marine Indo-Pacific",
+              "Marine Indo-Pacific",
+              "Caribbean / Western Atlantic",
+              "Caribbean / Western Atlantic",
+              "Red Sea",
+              "Red Sea"
+            ],
+            "blockSha256": "efcf19f7244f77a255e8f71544b19ff7f4c64d5fcaa137d900459ceb61b153a3"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Compatible?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "9ffd6cb6077122081e40bfe3630d7c85c9d60b7ee6d0932adda2b9381d0929a7"
+          },
+          {
+            "name": "compatibleSpecies",
+            "title": "Compatible Species",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "species"
+            ],
+            "to": [
+              "species"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4357217cd5bb9f8fdfc6b36e3cb459e334767175ccf0f225b7dcfb27a73167fe"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "1690e9d530415df508f1d513e7d77dbdcbea64f0e6f5a0dd193d31323462a92e"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "49b273a9ad8b2497f9032c3afa9315633828738acd7747f5ff21e3555a363d49"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { hotspot: true }",
+            "listValues": [],
+            "blockSha256": "ca72c998ec9ec3110552280aa5a637261491dce0fd55ed7c87a4352a25f13d34"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "40cdc0b94bb6e77790266fdf2d33de58ff56185c971f6a9687566ed9e59823d8"
+          }
+        ],
+        "definedNames": [
+          "invertebrate"
+        ]
+      },
+      {
+        "file": "coral.ts",
+        "fileSha256": "4a1772a386a4fd53e60634c5f8cb5896bfcc211bc2cdaee3eb49cafee437c2fc",
+        "typeName": "coral",
+        "typeTitle": "Coral",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "48bed4f7a5ce12801de2228d684cf6f6d89b976c8b1fa14a1c9d2f83458655f0"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'name', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "3f1d0ecb4e38fa0eadef431d7937eb468201bd7d38e620f76b376622f16ac2f1"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "20fed5b8561576af5fbdc9c7738a00dcfdca565c83746bcf2a187ec9ea90ce4b"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "43f3d83a6db710cfe77841b74bed72693ed0f6c888f61d6a61cb2dc636568c29"
+          },
+          {
+            "name": "group",
+            "title": "Coral Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          'LPS', 'SPS', 'Soft', 'NPS', 'Mushroom', 'Anemone',\r\n          'Polyp', 'Colony', 'Single Polyp', 'Other',\r\n        ],\r\n      }",
+            "listValues": [
+              "LPS",
+              "SPS",
+              "Soft",
+              "NPS",
+              "Mushroom",
+              "Anemone",
+              "Polyp",
+              "Colony",
+              "Single Polyp",
+              "Other"
+            ],
+            "blockSha256": "d04f72534f2c4592a2155d66eca7461367000277e11876f7e258328a9a96a658"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "light",
+            "title": "Light Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Low', 'Moderate', 'High', 'Very High'] }",
+            "listValues": [
+              "Low",
+              "Moderate",
+              "High",
+              "Very High"
+            ],
+            "blockSha256": "f9c9bdab48d2f2d590e2849f8ffd366cdf955e808e94f86a5711f658079bd7de"
+          },
+          {
+            "name": "flow",
+            "title": "Flow Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Low', 'Moderate', 'High'] }",
+            "listValues": [
+              "Low",
+              "Moderate",
+              "High"
+            ],
+            "blockSha256": "089145e19efd155de2321d417fe60c943206265d0d615255d0fd0543d292aa98"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] }",
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "blockSha256": "9d293a153c731d183c9ce8fb94cc453fd773d054d0aa7ef12d6d91f7314118f9"
+          },
+          {
+            "name": "coralType",
+            "title": "Coral Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['soft', 'lps', 'sps', 'nps'] }",
+            "listValues": [
+              "soft",
+              "lps",
+              "sps",
+              "nps"
+            ],
+            "blockSha256": "d6b578367af9dee4d0d4c5bbdd3e570f808773a4a1c0adcf2cfba35a8664c0af"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Sand bed', 'Low rock', 'Mid rock', 'High rock'] }",
+            "listValues": [
+              "Sand bed",
+              "Low rock",
+              "Mid rock",
+              "High rock"
+            ],
+            "blockSha256": "ad7f3c96eecee61483978274464e9fd1dbb214fcbaf66e20cff6100d8e695d0e"
+          },
+          {
+            "name": "aggression",
+            "title": "Aggression",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] }",
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "blockSha256": "593ab6af33a591429a2f5b6852cefd3026721a27e7833e69cddf67ecd3308964"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Safe?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "18d00fbc9beb741539c539aa7d063435e7ec0acaa61c1852605827e118f3ada9"
+          },
+          {
+            "name": "photosynthetic",
+            "title": "Photosynthetic?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "8cdca6e8753301c32d74274711c9a400aef7d2eb22e62859a9b4a53ab50bd1ac"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "1690e9d530415df508f1d513e7d77dbdcbea64f0e6f5a0dd193d31323462a92e"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "49b273a9ad8b2497f9032c3afa9315633828738acd7747f5ff21e3555a363d49"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Nano Reef', value: 'Nano Reef' },\r\n          { title: 'Mixed Reef', value: 'Mixed Reef' },\r\n          { title: 'Soft Coral Reef', value: 'Soft Coral Reef' },\r\n          { title: 'LPS Reef', value: 'LPS Reef' },\r\n          { title: 'SPS Reef', value: 'SPS Reef' },\r\n          { title: 'NPS', value: 'NPS' },\r\n          { title: 'Anemone / Clownfish', value: 'Anemone / Clownfish' },\r\n          { title: 'Invertebrate-focused', value: 'Invertebrate-focused' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Nano Reef",
+              "Nano Reef",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Soft Coral Reef",
+              "Soft Coral Reef",
+              "LPS Reef",
+              "LPS Reef",
+              "SPS Reef",
+              "SPS Reef",
+              "NPS",
+              "NPS",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish",
+              "Invertebrate-focused",
+              "Invertebrate-focused"
+            ],
+            "blockSha256": "f57082cc998ef895ef4ec3d5c022867bb3013a3fc73427b66cc6dcb79f2a98c9"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "3b8ab46244c5bbdf54472c15c38f49a2d3f2e7165171fb6b97955e6f6632e890"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "359e1dd0a8162628e5d873f72e1f543141f2cad6c7514b386afa67da066fd77d"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { hotspot: true }",
+            "listValues": [],
+            "blockSha256": "ca72c998ec9ec3110552280aa5a637261491dce0fd55ed7c87a4352a25f13d34"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "40cdc0b94bb6e77790266fdf2d33de58ff56185c971f6a9687566ed9e59823d8"
+          }
+        ],
+        "definedNames": [
+          "coral"
+        ]
+      },
+      {
+        "file": "equipment.ts",
+        "fileSha256": "4b4d5efafd7f0fc4c3800ba8397b195ce6a747c00c42ce68deddc51b641c2f87",
+        "typeName": "equipment",
+        "typeTitle": "Equipment",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "brand",
+            "title": "Brand",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "5387dfb5eedb85ed939b7ccca1a8d3fd981a0db2fa1cac41f3a8454d54f6c399"
+          },
+          {
+            "name": "model",
+            "title": "Model",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "882c8d6c9832ca8e2cfe37d3bff743806170ae5086384186a22c91bf21a92544"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'name', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "3f1d0ecb4e38fa0eadef431d7937eb468201bd7d38e620f76b376622f16ac2f1"
+          },
+          {
+            "name": "category",
+            "title": "Category",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: ['Filter', 'Light', 'Pump', 'Heater', 'CO₂ System', 'Substrate', 'Test Kit', 'Other'],\r\n      }",
+            "listValues": [
+              "Filter",
+              "Light",
+              "Pump",
+              "Heater",
+              "CO₂ System",
+              "Substrate",
+              "Test Kit",
+              "Other"
+            ],
+            "blockSha256": "5ae8aae8bce3ed2550286a203b3182b3329147e73528a56c62d5b84f871e14f1"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "flowRateLh",
+            "title": "Flow Rate (L/h)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4291a51eeedd0947cbf3a02e0e3cf07d24b6e6920742fece17801e965fc214ac"
+          },
+          {
+            "name": "powerW",
+            "title": "Power (W)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "3f7d513547ddc3755af3500d0a196da2aeff8860fd804eecf56ee39903939be5"
+          },
+          {
+            "name": "tankSizeMinL",
+            "title": "Suitable Tank Min (L)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "1688d9f8a50055a3277027139e7a707d18332a6c656d7629596a5cf335339bc2"
+          },
+          {
+            "name": "tankSizeMaxL",
+            "title": "Suitable Tank Max (L)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "7197e5c702769b54ee11e80e92058284c3e5071d83dd68d7aeb55ab17281a8d9"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: [\r\n          { title: 'Community', value: 'Community' },\r\n          { title: 'Planted', value: 'Planted' },\r\n          { title: 'Low-Tech', value: 'Low-Tech' },\r\n          { title: 'High-Tech / CO2', value: 'High-Tech / CO2' },\r\n          { title: 'Aquascaping', value: 'Aquascaping' },\r\n          { title: 'Mixed Reef', value: 'Mixed Reef' },\r\n          { title: 'SPS Reef', value: 'SPS Reef' },\r\n          { title: 'Fish Only', value: 'Fish Only' },\r\n          { title: 'FOWLR', value: 'FOWLR' },\r\n          { title: 'Pond / Outdoor', value: 'Pond / Outdoor' },\r\n        ],\r\n      }",
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Mixed Reef",
+              "Mixed Reef",
+              "SPS Reef",
+              "SPS Reef",
+              "Fish Only",
+              "Fish Only",
+              "FOWLR",
+              "FOWLR",
+              "Pond / Outdoor",
+              "Pond / Outdoor"
+            ],
+            "blockSha256": "09317ebf7a7ff39f5fd540d8e75047e6d827083356c089da4bf51cf144115358"
+          },
+          {
+            "name": "pros",
+            "title": "Pros",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "2343da7f6b60a2c41a0161189c001f096f3ae1cf94cffcf0e3c18c810319491d"
+          },
+          {
+            "name": "cons",
+            "title": "Cons",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "99ea8107f75596628fef493ee43fdd32beafd41aab8e621b37be6165ec188bf7"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { hotspot: true }",
+            "listValues": [],
+            "blockSha256": "ca72c998ec9ec3110552280aa5a637261491dce0fd55ed7c87a4352a25f13d34"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "40cdc0b94bb6e77790266fdf2d33de58ff56185c971f6a9687566ed9e59823d8"
+          }
+        ],
+        "definedNames": [
+          "equipment"
+        ]
+      },
+      {
+        "file": "problem.ts",
+        "fileSha256": "1b4fcd85c4ccc2606a745900f0deed3a35a54fafaba9d3f14f9428ede34eb41b",
+        "typeName": "problem",
+        "typeTitle": "Aquarium Problem",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Problem Title",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "6ff1c557ba1a4b4a418cfa52a3372b623a99d14dce486a1a91a485d4912e5c15"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { source: 'title', maxLength: 96 }",
+            "listValues": [],
+            "blockSha256": "fa4e43746912a4a68acfb2e56b5500e2941fef872f5572d5c61107bf7aef8e78"
+          },
+          {
+            "name": "excerpt",
+            "title": "Short Description",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "694c0a6186f6fda3aaa83d50337eb5ebbe3a2feb1bbff0d9d6472104b48fd112"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "category",
+            "title": "Category",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: {\r\n        list: ['water', 'algae', 'plants', 'fish', 'equipment'],\r\n      }",
+            "listValues": [
+              "water",
+              "algae",
+              "plants",
+              "fish",
+              "equipment"
+            ],
+            "blockSha256": "f20acde6b9188472278ac00064d27d32023dc849d46d596b819698516a99f03a"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "optionsRaw": "options: { list: ['freshwater', 'saltwater', 'both'] }",
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "both"
+            ],
+            "blockSha256": "a339d076663601a8e1e7d929d3b15ee484177f12a4a63b539afc340a57e73b63"
+          },
+          {
+            "name": "symptoms",
+            "title": "Symptoms",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "68ef5ff4e9a961a9da999ac6847b2c5654211dd458aa019b7a4c750c5ea37cd7"
+          },
+          {
+            "name": "causes",
+            "title": "Common Causes",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "0d88ad0eb8d57931dc11b23857567458ac9b036dbbcdda08d1fb3e3e21c48809"
+          },
+          {
+            "name": "whatToCheck",
+            "title": "What to Check",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "04b2feeab387323005be29d6db0516b8db8297585b4e5fddcc6eca8f3ac329af"
+          },
+          {
+            "name": "whatNotToDo",
+            "title": "What Not to Do",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "5656aa460fc5e0567bb5fee6d15cd35429b9b746837e97b621cec1841f4fa907"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "40cdc0b94bb6e77790266fdf2d33de58ff56185c971f6a9687566ed9e59823d8"
+          },
+          {
+            "name": "relatedTools",
+            "title": "Related Tools",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "tool"
+            ],
+            "to": [
+              "tool"
+            ],
+            "optionsRaw": null,
+            "listValues": [],
+            "blockSha256": "ffadeb0bd34b235bcc3dac64e19968c7a9ba81c1d2d5e1b7e9980cd6aad53dea"
+          }
+        ],
+        "definedNames": [
+          "problem"
+        ]
+      }
+    ],
+    "totals": {
+      "types": 6,
+      "fields": 140
+    }
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0",
+    "mode": "SCHEMA CODE ONLY — no Sanity content mutation calls permitted"
+  },
+  "note": "Inventory captured BEFORE SPEC 10M schema code changes. Content untouched."
+}

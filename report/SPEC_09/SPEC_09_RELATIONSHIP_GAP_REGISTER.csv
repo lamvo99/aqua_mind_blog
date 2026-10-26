@@ -1,0 +1,18 @@
+registerId,relationship,sourceType,targetType,slotField,coverageStat,affectedRecords,severity,priority,gapType,note
+REL-01,Fish -> compatible fish,species,species,compatibleSpecies,0/218,218,HIGH,P1,RELATIONSHIP_GAP,Schema field exists but is empty on every species record — stocking knowledge absent
+REL-02,Fish -> incompatible fish,species,species,(none),no schema field,218,HIGH,P1,RELATIONSHIP_GAP,No structured place for must-avoid combinations
+REL-03,Fish -> prey/predator links,species,species/invertebrate,(none),no schema field,218,HIGH,P1,RELATIONSHIP_GAP,Predation knowledge only via coarse isPredator boolean + narrative
+REL-04,Fish -> coral interaction,species,coral,reefCompatibility,34/218 species carry reefCompatibility (boolean only),56,HIGH,P1,RELATIONSHIP_GAP,54 saltwater + 2 brackish species; boolean lacks species-level caveats (§7C)
+REL-05,Fish -> invertebrate predation,species,invertebrate,(none),no schema field,218,HIGH,P1,RELATIONSHIP_GAP,compatibleInvertebrates (compat-only) does not express predation
+REL-06,Fish -> suitable plants,species,plant,compatiblePlants,107/218,111,MEDIUM,P2,RELATIONSHIP_GAP,Half the records lack plant pairing knowledge
+REL-07,Fish -> suitable invertebrates,species,invertebrate,compatibleInvertebrates,100/218,118,MEDIUM,P2,RELATIONSHIP_GAP,Compat refs missing on over half
+REL-08,Fish -> equipment,species,equipment,suitableEquipment,131/218,87,MEDIUM,P2,RELATIONSHIP_GAP,87 species lack equipment pairing
+REL-09,Fish -> problems,species,problem,relatedProblems,131/218,87,MEDIUM,P2,RELATIONSHIP_GAP,87 species lack troubleshooting links
+REL-10,Plant -> equipment/problems,plant,equipment/problem,suitableEquipment/relatedProblems,"52/62 eq, 52/62 prob",10,LOW,P3,RELATIONSHIP_GAP,Coverage ~84% — minor gaps
+REL-11,Plant -> aquarium style,plant,style,aquariumStyle,62/62,0,LOW,P3,RELATIONSHIP_GAP,Fully populated
+REL-12,Invertebrate -> fish compat,invertebrate,species,compatibleSpecies,0/56,56,HIGH,P1,RELATIONSHIP_GAP,compatibleSpecies empty/absent on every invertebrate
+REL-13,Coral -> aggressive coral / spacing,coral,coral,(none),no coral-coral refs; aggression field on self only,48,HIGH,P1,RELATIONSHIP_GAP,Sweeper/spacing knowledge cannot be expressed as relationships
+REL-14,Coral -> equipment/problems,coral,equipment/problem,suitableEquipment/relatedProblems,"36/48 eq, 36/48 prob",12,MEDIUM,P2,RELATIONSHIP_GAP,12 corals lack both links
+REL-15,Equipment -> suitable tank type/size,equipment,tank,aquariumStyle/tankSizeMinL+MaxL,"46/46 style, 23/46 size range",23,MEDIUM,P2,RELATIONSHIP_GAP,20 equipment records have no tank size range
+REL-16,Problem -> affected species/equipment,problem,species,(none back-ref),reverse only: species.relatedProblems 131/218,43,MEDIUM,P2,RELATIONSHIP_GAP,No problem->species/equipment field; direction relies on source records
+REL-17,Problem -> tools,problem,tool,relatedTools,16/43,27,LOW,P3,RELATIONSHIP_GAP,27 problems lack tool links

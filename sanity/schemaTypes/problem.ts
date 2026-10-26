@@ -44,6 +44,27 @@ export default defineType({
       name: 'relatedTools', title: 'Related Tools', type: 'array',
       of: [{ type: 'reference', to: [{ type: 'tool' }] }],
     }),
+    defineField({
+      name: 'howToDistinguish', title: 'How to Distinguish', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'immediateAction', title: 'Immediate Action', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'treatment', title: 'Treatment / Correction', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'recovery', title: 'Recovery', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'prevention', title: 'Prevention', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'monitoring', title: 'Monitoring', type: 'array', of: [{ type: 'block' }],
+    }),
+    defineField({
+      name: 'escalation', title: 'Escalation', type: 'array', of: [{ type: 'block' }],
+    }),
   ],
   preview: {
     select: { title: 'title', subtitle: 'category' },

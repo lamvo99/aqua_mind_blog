@@ -1,0 +1,60 @@
+{
+  "totalCandidates": 22,
+  "checks": [
+    {
+      "id": "V-01",
+      "name": "every dry-run op targets an allowed relationship path",
+      "pass": true,
+      "detail": "ops=22"
+    },
+    {
+      "id": "V-02",
+      "name": "every dry-run op target exists and has allowed type",
+      "pass": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "V-03",
+      "name": "no self-links in dry-run plan",
+      "pass": true,
+      "detail": "selfLinks=0"
+    },
+    {
+      "id": "V-04",
+      "name": "no dangling targets in dry-run plan",
+      "pass": true,
+      "detail": "dangling=0"
+    },
+    {
+      "id": "V-05",
+      "name": "dry-run plan is idempotent (0 duplicate edges)",
+      "pass": true,
+      "detail": "duplicates=0"
+    },
+    {
+      "id": "V-06",
+      "name": "dry-run plan contains only compatibleSpecies relationship field",
+      "pass": true,
+      "detail": "fields=[\"compatibleSpecies\"]"
+    },
+    {
+      "id": "V-07",
+      "name": "no non-relationship fields present in dry-run entries",
+      "pass": true,
+      "detail": "entryKeysOk"
+    },
+    {
+      "id": "V-08",
+      "name": "directionality: proposals span >=2 source records",
+      "pass": true,
+      "detail": "sources=2"
+    }
+  ],
+  "ok": true,
+  "simulated": {
+    "applied": 22,
+    "duplicates": 0,
+    "before": 3151,
+    "after": 3173
+  }
+}

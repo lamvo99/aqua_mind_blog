@@ -1,0 +1,613 @@
+{
+  "specId": "SPEC_10M",
+  "generatedAt": "2026-10-17T19:39:18.250Z",
+  "finalRun": false,
+  "mode": "SCHEMA CODE ONLY - READ-ONLY validation; schema not deployed; content untouched",
+  "sanityWrites": 0,
+  "mutationCalls": 0,
+  "status": "SPEC 10M - VALIDATION FAILED",
+  "gates": {
+    "A_baseline": [
+      {
+        "id": "A-01",
+        "name": "SPEC 10 artifacts loaded (11/11)",
+        "pass": true,
+        "detail": "missing=0"
+      },
+      {
+        "id": "A-02",
+        "name": "SPEC 10 INTEGRITY finalRun + all checks passed + writes 0",
+        "pass": true,
+        "detail": "status=\"SPEC 10 — COMPLETE\" 20/20 writes=0"
+      },
+      {
+        "id": "A-03",
+        "name": "SPEC 10 mirror byte-identical 11/11",
+        "pass": true,
+        "detail": "ok=11 bad=none"
+      },
+      {
+        "id": "A-04",
+        "name": "SPEC 10 migration queue loaded (106 items)",
+        "pass": true,
+        "detail": "items=106"
+      },
+      {
+        "id": "A-05",
+        "name": "current schema files present (7/7)",
+        "pass": true,
+        "detail": "missing=0"
+      },
+      {
+        "id": "A-06",
+        "name": "schema inventory parsed (fields>0, types named)",
+        "pass": true,
+        "detail": "files=7 fields=230"
+      },
+      {
+        "id": "A-07",
+        "name": "deterministic double-read identical (6 domains)",
+        "pass": true,
+        "detail": "mismatchedTypes=0"
+      },
+      {
+        "id": "A-08",
+        "name": "473 records / domain counts",
+        "pass": true,
+        "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+      },
+      {
+        "id": "A-09",
+        "name": "drafts = 0",
+        "pass": true,
+        "detail": "wikiDrafts=0 datasetDrafts=0"
+      },
+      {
+        "id": "A-10",
+        "name": "duplicate slugs = 0",
+        "pass": true,
+        "detail": "duplicates=0 noSlug=0"
+      },
+      {
+        "id": "A-11",
+        "name": "canonical identity hash MATCH",
+        "pass": true,
+        "detail": "hash=MATCH"
+      },
+      {
+        "id": "A-12",
+        "name": "compatibleSpecies empty on 218 species + 56 invertebrates (entry-shape precondition)",
+        "pass": true,
+        "detail": "nonEmptyDocs=0"
+      },
+      {
+        "id": "A-13",
+        "name": "relationship data extracted for baseline",
+        "pass": true,
+        "detail": "{\"species.compatiblePlants\":535,\"species.compatibleInvertebrates\":388,\"species.suitableEquipment\":654,\"species.relatedProblems\":655,\"species.relatedPosts\":49,\"plant.suitableEquipment\":208,\"plant.relatedProblems\":156,\"plant.relatedPosts\":35,\"invertebrate.relatedProblems\":126,\"invertebrate.relatedPosts\":5,\"coral.suitableEquipment\":144,\"coral.relatedProblems\":108,\"equipment.relatedPosts\":36,\"problem.relatedPosts\":33,\"problem.relatedTools\":16}"
+      }
+    ],
+    "B_schema": [
+      {
+        "id": "B-00",
+        "name": "Gate A inventory intact and all 13 A-checks passing",
+        "pass": true,
+        "detail": "checks=13 passed=13"
+      },
+      {
+        "id": "B-01",
+        "name": "after inventory: 16 types (6 doc + 10 new structures), 230 doc fields, 0 removed",
+        "pass": false,
+        "detail": "types=16 new=10 docFields=230/320"
+      },
+      {
+        "id": "B-02",
+        "name": "schema diff = expected only (90 added / 0 removed / 2 modified / 10 new types / index +10 exports)",
+        "pass": false,
+        "detail": "added=0 removed=0 modified=[] newTypes=10 addProblems=species: got[] plant: got[] invertebrate: got[] coral: got[] equipment: got[] problem: got[]"
+      },
+      {
+        "id": "B-03",
+        "name": "migration queue: all 76 implementation items structurally resolve",
+        "pass": true,
+        "detail": "items=76 failed=0"
+      },
+      {
+        "id": "B-04",
+        "name": "architecture matrix: all 230 rows structurally represented",
+        "pass": true,
+        "detail": "rows=230 failed=0"
+      }
+    ],
+    "C_p0": [
+      {
+        "id": "C-01",
+        "name": "source counts exact: queue 106 (64+7+5 impl, 24 P0), matrix 230 (60/66/95/9; 87 body + 8 blocks)",
+        "pass": true,
+        "detail": "queue=106/76(64+7+5) p0=24 matrix=230 repr={\"EXISTING_FIELD\":60,\"BODY\":95,\"NEW_FIELD\":66,\"RELATIONSHIP\":9} body=87 blocks=8"
+      },
+      {
+        "id": "C-02",
+        "name": "all P0 queue items resolved with field-level evidence (24 items)",
+        "pass": true,
+        "detail": "p0=24 structural=6 failed=0"
+      },
+      {
+        "id": "C-03",
+        "name": "alternative sgMin/sgMax representation NOT implemented (single source of truth = salinity ppt)",
+        "pass": true,
+        "detail": "sgAbsent=true"
+      },
+      {
+        "id": "C-04",
+        "name": "all 90 approved additions present and optional (no field-level Rule.required)",
+        "pass": true,
+        "detail": "checked=90 problems=0"
+      }
+    ],
+    "D_backwardCompat": [
+      {
+        "id": "D-01",
+        "name": "post-change deterministic double-read identical (6 domains)",
+        "pass": true,
+        "detail": "mismatchedTypes=0"
+      },
+      {
+        "id": "D-02",
+        "name": "473 records / domain counts unchanged vs baseline",
+        "pass": true,
+        "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+      },
+      {
+        "id": "D-03",
+        "name": "drafts = 0 (dataset + wiki domains)",
+        "pass": true,
+        "detail": "wikiDrafts=0 datasetDrafts=0"
+      },
+      {
+        "id": "D-04",
+        "name": "duplicate slugs = 0",
+        "pass": true,
+        "detail": "duplicates=0 noSlug=0"
+      },
+      {
+        "id": "D-05",
+        "name": "canonical identity hash unchanged",
+        "pass": true,
+        "detail": "MATCH"
+      },
+      {
+        "id": "D-06",
+        "name": "full-document diff vs pre-migration baseline = 0",
+        "pass": true,
+        "detail": "changed=0 extra=0 missing=0"
+      },
+      {
+        "id": "D-07",
+        "name": "titles/slugs/categories/relationships/SEO/_updatedAt all unchanged",
+        "pass": true,
+        "detail": "title=0 slug=0 cat=0 rel=0 seo=0 updated=0"
+      },
+      {
+        "id": "D-08",
+        "name": "approved new field keys absent-or-empty on all 473 documents",
+        "pass": true,
+        "detail": "violations=0"
+      },
+      {
+        "id": "D-09",
+        "name": "compatibleSpecies still empty on 218+56 (entry-shape change provably data-neutral)",
+        "pass": true,
+        "detail": "nonEmpty=0"
+      }
+    ],
+    "E_probes": [
+      {
+        "id": "E-01",
+        "name": "database.ts species-detail projection executes unchanged (all ref keys present, null-or-array)",
+        "pass": true,
+        "detail": "slug=fantail-goldfish results=1"
+      },
+      {
+        "id": "E-02",
+        "name": "compatibility-checker GROQ executes unchanged; compatibleWith empty/null for every species",
+        "pass": true,
+        "detail": "results=218/218 nullCompatibleWith=218"
+      }
+    ],
+    "F_safety": [
+      {
+        "id": "F-01",
+        "name": "unapproved files = 0 (tracked mods limited to 7 schema files; new files within SPEC 10M scope)",
+        "pass": true,
+        "detail": "unapproved=0"
+      },
+      {
+        "id": "F-02",
+        "name": "secret/token leakage = 0 across SPEC 10M artifacts + scripts",
+        "pass": true,
+        "detail": "filesScanned=7 leaks=0"
+      },
+      {
+        "id": "F-03",
+        "name": "no mutation-endpoint code paths in SPEC 10M scripts/artifacts (fragment-assembled needle scan)",
+        "pass": true,
+        "detail": "needles=8 hits=0"
+      },
+      {
+        "id": "F-04",
+        "name": "Sanity document writes = 0 / GET-only transport in all SPEC 10M scripts",
+        "pass": true,
+        "detail": "writes=0 scripts=2 nonGet=0"
+      }
+    ],
+    "G_tests": [
+      {
+        "id": "G-01",
+        "name": "npm run lint exit 0",
+        "pass": true,
+        "detail": "exit=0 ms=1996"
+      },
+      {
+        "id": "G-02",
+        "name": "tsc --noEmit exit 0",
+        "pass": true,
+        "detail": "exit=0 ms=15378"
+      },
+      {
+        "id": "G-03",
+        "name": "SPEC 10M schema test suite passes (108 assertions across all gates)",
+        "pass": false,
+        "detail": "exit=1 passed=? ms=21675"
+      },
+      {
+        "id": "G-04",
+        "name": "npm test: only the known baseline failure tests/compare.test.ts (retry allowed)",
+        "pass": false,
+        "detail": "attempt=2 exit=1 failingFiles=tests/compare.test.ts,tests/spec10m-schema.test.ts ms=42248"
+      },
+      {
+        "id": "G-05",
+        "name": "npm run build exit 0",
+        "pass": true,
+        "detail": "exit=0 ms=180907"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "A-01",
+      "name": "SPEC 10 artifacts loaded (11/11)",
+      "pass": true,
+      "detail": "missing=0"
+    },
+    {
+      "id": "A-02",
+      "name": "SPEC 10 INTEGRITY finalRun + all checks passed + writes 0",
+      "pass": true,
+      "detail": "status=\"SPEC 10 — COMPLETE\" 20/20 writes=0"
+    },
+    {
+      "id": "A-03",
+      "name": "SPEC 10 mirror byte-identical 11/11",
+      "pass": true,
+      "detail": "ok=11 bad=none"
+    },
+    {
+      "id": "A-04",
+      "name": "SPEC 10 migration queue loaded (106 items)",
+      "pass": true,
+      "detail": "items=106"
+    },
+    {
+      "id": "A-05",
+      "name": "current schema files present (7/7)",
+      "pass": true,
+      "detail": "missing=0"
+    },
+    {
+      "id": "A-06",
+      "name": "schema inventory parsed (fields>0, types named)",
+      "pass": true,
+      "detail": "files=7 fields=230"
+    },
+    {
+      "id": "A-07",
+      "name": "deterministic double-read identical (6 domains)",
+      "pass": true,
+      "detail": "mismatchedTypes=0"
+    },
+    {
+      "id": "A-08",
+      "name": "473 records / domain counts",
+      "pass": true,
+      "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "A-09",
+      "name": "drafts = 0",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "A-10",
+      "name": "duplicate slugs = 0",
+      "pass": true,
+      "detail": "duplicates=0 noSlug=0"
+    },
+    {
+      "id": "A-11",
+      "name": "canonical identity hash MATCH",
+      "pass": true,
+      "detail": "hash=MATCH"
+    },
+    {
+      "id": "A-12",
+      "name": "compatibleSpecies empty on 218 species + 56 invertebrates (entry-shape precondition)",
+      "pass": true,
+      "detail": "nonEmptyDocs=0"
+    },
+    {
+      "id": "A-13",
+      "name": "relationship data extracted for baseline",
+      "pass": true,
+      "detail": "{\"species.compatiblePlants\":535,\"species.compatibleInvertebrates\":388,\"species.suitableEquipment\":654,\"species.relatedProblems\":655,\"species.relatedPosts\":49,\"plant.suitableEquipment\":208,\"plant.relatedProblems\":156,\"plant.relatedPosts\":35,\"invertebrate.relatedProblems\":126,\"invertebrate.relatedPosts\":5,\"coral.suitableEquipment\":144,\"coral.relatedProblems\":108,\"equipment.relatedPosts\":36,\"problem.relatedPosts\":33,\"problem.relatedTools\":16}"
+    },
+    {
+      "id": "B-00",
+      "name": "Gate A inventory intact and all 13 A-checks passing",
+      "pass": true,
+      "detail": "checks=13 passed=13"
+    },
+    {
+      "id": "B-01",
+      "name": "after inventory: 16 types (6 doc + 10 new structures), 230 doc fields, 0 removed",
+      "pass": false,
+      "detail": "types=16 new=10 docFields=230/320"
+    },
+    {
+      "id": "B-02",
+      "name": "schema diff = expected only (90 added / 0 removed / 2 modified / 10 new types / index +10 exports)",
+      "pass": false,
+      "detail": "added=0 removed=0 modified=[] newTypes=10 addProblems=species: got[] plant: got[] invertebrate: got[] coral: got[] equipment: got[] problem: got[]"
+    },
+    {
+      "id": "B-03",
+      "name": "migration queue: all 76 implementation items structurally resolve",
+      "pass": true,
+      "detail": "items=76 failed=0"
+    },
+    {
+      "id": "B-04",
+      "name": "architecture matrix: all 230 rows structurally represented",
+      "pass": true,
+      "detail": "rows=230 failed=0"
+    },
+    {
+      "id": "C-01",
+      "name": "source counts exact: queue 106 (64+7+5 impl, 24 P0), matrix 230 (60/66/95/9; 87 body + 8 blocks)",
+      "pass": true,
+      "detail": "queue=106/76(64+7+5) p0=24 matrix=230 repr={\"EXISTING_FIELD\":60,\"BODY\":95,\"NEW_FIELD\":66,\"RELATIONSHIP\":9} body=87 blocks=8"
+    },
+    {
+      "id": "C-02",
+      "name": "all P0 queue items resolved with field-level evidence (24 items)",
+      "pass": true,
+      "detail": "p0=24 structural=6 failed=0"
+    },
+    {
+      "id": "C-03",
+      "name": "alternative sgMin/sgMax representation NOT implemented (single source of truth = salinity ppt)",
+      "pass": true,
+      "detail": "sgAbsent=true"
+    },
+    {
+      "id": "C-04",
+      "name": "all 90 approved additions present and optional (no field-level Rule.required)",
+      "pass": true,
+      "detail": "checked=90 problems=0"
+    },
+    {
+      "id": "D-01",
+      "name": "post-change deterministic double-read identical (6 domains)",
+      "pass": true,
+      "detail": "mismatchedTypes=0"
+    },
+    {
+      "id": "D-02",
+      "name": "473 records / domain counts unchanged vs baseline",
+      "pass": true,
+      "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "D-03",
+      "name": "drafts = 0 (dataset + wiki domains)",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "D-04",
+      "name": "duplicate slugs = 0",
+      "pass": true,
+      "detail": "duplicates=0 noSlug=0"
+    },
+    {
+      "id": "D-05",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "D-06",
+      "name": "full-document diff vs pre-migration baseline = 0",
+      "pass": true,
+      "detail": "changed=0 extra=0 missing=0"
+    },
+    {
+      "id": "D-07",
+      "name": "titles/slugs/categories/relationships/SEO/_updatedAt all unchanged",
+      "pass": true,
+      "detail": "title=0 slug=0 cat=0 rel=0 seo=0 updated=0"
+    },
+    {
+      "id": "D-08",
+      "name": "approved new field keys absent-or-empty on all 473 documents",
+      "pass": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "D-09",
+      "name": "compatibleSpecies still empty on 218+56 (entry-shape change provably data-neutral)",
+      "pass": true,
+      "detail": "nonEmpty=0"
+    },
+    {
+      "id": "E-01",
+      "name": "database.ts species-detail projection executes unchanged (all ref keys present, null-or-array)",
+      "pass": true,
+      "detail": "slug=fantail-goldfish results=1"
+    },
+    {
+      "id": "E-02",
+      "name": "compatibility-checker GROQ executes unchanged; compatibleWith empty/null for every species",
+      "pass": true,
+      "detail": "results=218/218 nullCompatibleWith=218"
+    },
+    {
+      "id": "F-01",
+      "name": "unapproved files = 0 (tracked mods limited to 7 schema files; new files within SPEC 10M scope)",
+      "pass": true,
+      "detail": "unapproved=0"
+    },
+    {
+      "id": "F-02",
+      "name": "secret/token leakage = 0 across SPEC 10M artifacts + scripts",
+      "pass": true,
+      "detail": "filesScanned=7 leaks=0"
+    },
+    {
+      "id": "F-03",
+      "name": "no mutation-endpoint code paths in SPEC 10M scripts/artifacts (fragment-assembled needle scan)",
+      "pass": true,
+      "detail": "needles=8 hits=0"
+    },
+    {
+      "id": "F-04",
+      "name": "Sanity document writes = 0 / GET-only transport in all SPEC 10M scripts",
+      "pass": true,
+      "detail": "writes=0 scripts=2 nonGet=0"
+    },
+    {
+      "id": "G-01",
+      "name": "npm run lint exit 0",
+      "pass": true,
+      "detail": "exit=0 ms=1996"
+    },
+    {
+      "id": "G-02",
+      "name": "tsc --noEmit exit 0",
+      "pass": true,
+      "detail": "exit=0 ms=15378"
+    },
+    {
+      "id": "G-03",
+      "name": "SPEC 10M schema test suite passes (108 assertions across all gates)",
+      "pass": false,
+      "detail": "exit=1 passed=? ms=21675"
+    },
+    {
+      "id": "G-04",
+      "name": "npm test: only the known baseline failure tests/compare.test.ts (retry allowed)",
+      "pass": false,
+      "detail": "attempt=2 exit=1 failingFiles=tests/compare.test.ts,tests/spec10m-schema.test.ts ms=42248"
+    },
+    {
+      "id": "G-05",
+      "name": "npm run build exit 0",
+      "pass": true,
+      "detail": "exit=0 ms=180907"
+    }
+  ],
+  "checksTotal": 42,
+  "checksPassed": 38,
+  "failedChecks": [
+    "B-01 after inventory: 16 types (6 doc + 10 new structures), 230 doc fields, 0 removed",
+    "B-02 schema diff = expected only (90 added / 0 removed / 2 modified / 10 new types / index +10 exports)",
+    "G-03 SPEC 10M schema test suite passes (108 assertions across all gates)",
+    "G-04 npm test: only the known baseline failure tests/compare.test.ts (retry allowed)"
+  ],
+  "contentUnchanged": {
+    "identityHash": "UNCHANGED (MATCH)",
+    "records": 473,
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "drafts": 0,
+    "duplicateSlugs": 0,
+    "titles": "UNCHANGED",
+    "slugs": "UNCHANGED",
+    "categories": "UNCHANGED",
+    "relationships": "UNCHANGED",
+    "seo": "UNCHANGED",
+    "updatedAt": "UNCHANGED",
+    "fullDocumentChanged": 0,
+    "newFieldKeyViolations": 0,
+    "compatibleSpeciesNonEmpty": 0
+  },
+  "schemaDiff": {
+    "verdict": "UNAPPROVED CHANGES DETECTED",
+    "addedFields": 0,
+    "removedFields": 0,
+    "modifiedFields": [],
+    "newTypes": [
+      "compatibleEntry",
+      "incompatibleEntry",
+      "predatorPreyEntry",
+      "reefInteractionEntry",
+      "coralNeighborEntry",
+      "speciesKnowledgeBody",
+      "coralKnowledgeBody",
+      "plantKnowledgeBody",
+      "invertebrateKnowledgeBody",
+      "equipmentKnowledgeBody"
+    ],
+    "unapprovedChanges": -1,
+    "unapprovedFiles": 0,
+    "secretLeaks": 0,
+    "needleHits": 0
+  },
+  "artifacts": [
+    {
+      "name": "SCHEMA_INVENTORY_BEFORE.json",
+      "sha256": "13510ce0dffde224480445a44e4be9c26431e7ef717173e47c454e38f2d7b5d1"
+    },
+    {
+      "name": "SCHEMA_INVENTORY_AFTER.json",
+      "sha256": "558288984a0a541ae8c68edfd67846da08d617a6e710e0e4c67488d9716e6c6b"
+    },
+    {
+      "name": "SCHEMA_DIFF.json",
+      "sha256": "b046f54a0db731eca7332b4536a5b8a2d474fcdf7212ea3564f840eb60dda4ae"
+    },
+    {
+      "name": "P0_SCHEMA_VALIDATION.json",
+      "sha256": "74bd8cabd322a9850fe9f26ba571810bc4b9b24fb62a7c33d2d76d2d5196f185"
+    },
+    {
+      "name": "BACKWARD_COMPATIBILITY.json",
+      "sha256": "716f3c13ccf458008fcc22f815df3335e5021bdbd32ad4e81655eeb013dafa7e"
+    }
+  ],
+  "mirror": {
+    "pending": true,
+    "dir": "reports\\SPEC_10M",
+    "expected": 8,
+    "note": "byte-verified by --final run"
+  },
+  "note": "Completion of validation does NOT authorize Sanity schema deployment, content writes, or SPEC 11 start; PM authorization required."
+}

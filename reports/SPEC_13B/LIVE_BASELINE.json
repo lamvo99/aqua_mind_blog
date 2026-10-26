@@ -1,0 +1,210 @@
+{
+  "specId": "SPEC_13B",
+  "artifact": "LIVE_BASELINE",
+  "generatedAt": "2026-10-21T07:25:55.263Z",
+  "readOnly": true,
+  "repo": {
+    "root": "F:\\AquaMind\\aqua_mind_blog",
+    "branch": "main",
+    "head": "b014e5c8477f61f0685cf07748aee74c7c18c1e9",
+    "node": "v22.17.0",
+    "dirtyFiles": 132
+  },
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production",
+    "api": "v2026-05-25"
+  },
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "drafts": 0,
+  "duplicate": {
+    "dupIds": 0,
+    "dupSlugs": 0
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "relationships": {
+    "totalEdges": 3173,
+    "expected": 3173,
+    "match": true
+  },
+  "sourceRevisions": {
+    "7kdig6Bk6SZq4GZkXcVXjK": {
+      "type": "species",
+      "revision": "iIEha4Lf0bd08jwW6gbhsZ",
+      "title": "Oscar"
+    },
+    "5oQB2MZ7gmZXjdwFqSs3qH": {
+      "type": "species",
+      "revision": "S14zwcyM2Pfmg8COTwKwt7",
+      "title": "Marble Angelfish"
+    },
+    "species-bala-shark": {
+      "type": "species",
+      "revision": "nMj4Bthvy4g70bFzG8bsw1",
+      "title": "Bala Shark"
+    },
+    "J1Tx0fWCuGNPno99A79QPg": {
+      "type": "species",
+      "revision": "BF7b7JzesWwz9GasstzzGz",
+      "title": "Pea Puffer"
+    },
+    "J1Tx0fWCuGNPno99A79RMf": {
+      "type": "species",
+      "revision": "vIy4RM4AZsZ5V5B7s9fJ4f",
+      "title": "Yoyo Loach"
+    }
+  },
+  "artifactIntegrity": {
+    "spec13a": {
+      "exists": true,
+      "tracked": 14,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    },
+    "spec12a": {
+      "exists": true,
+      "tracked": 14,
+      "mismatches": 1,
+      "bad": [
+        "tests/spec12a-plan.test.ts"
+      ],
+      "missing": []
+    },
+    "spec12b": {
+      "exists": true,
+      "tracked": 10,
+      "mismatches": 0,
+      "bad": [],
+      "missing": []
+    }
+  },
+  "checks": [
+    {
+      "id": "P-01",
+      "name": "SPEC 13A checksum manifest valid",
+      "pass": true,
+      "detail": "tracked=14 mismatches=0 missing=0"
+    },
+    {
+      "id": "P-02",
+      "name": "SPEC 12A/12B artifacts intact (known test-only drift only)",
+      "pass": true,
+      "detail": "12A tracked=14 bad=[\"tests/spec12a-plan.test.ts\"] 12B tracked=10 mismatches=0"
+    },
+    {
+      "id": "P-03",
+      "name": "SPEC 13A plan/evidence/candidates/held artifacts readable",
+      "pass": true,
+      "detail": "ops=21 cand=21 ev=21 held=10 conflicts=0"
+    },
+    {
+      "id": "P-04",
+      "name": "SPEC 13A validation suite passed",
+      "pass": true,
+      "detail": "checks=12"
+    },
+    {
+      "id": "P-05",
+      "name": "read-only client proof: no mutation path in this script",
+      "pass": true,
+      "detail": "GET-only https helper"
+    },
+    {
+      "id": "P-06",
+      "name": "known baseline failure is the compare-domain assertion",
+      "pass": true,
+      "detail": "tests/compare.test.ts present as documented"
+    },
+    {
+      "id": "P-07",
+      "name": "schema supports both entry object types and required fields",
+      "pass": true,
+      "detail": "predatorPreyEntry{ref,sizeCondition,evidenceNote}; incompatibleEntry{ref,reason}"
+    },
+    {
+      "id": "P-08",
+      "name": "live counts and total match SPEC 13A handoff",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "P-09",
+      "name": "live drafts = 0",
+      "pass": true,
+      "detail": "drafts=0"
+    },
+    {
+      "id": "P-10",
+      "name": "live duplicate _id = 0 and slug = 0",
+      "pass": true,
+      "detail": "dupIds=0 dupSlugs=0"
+    },
+    {
+      "id": "P-11",
+      "name": "live identity hash matches handoff",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "P-12",
+      "name": "live relationship-edge count matches handoff",
+      "pass": true,
+      "detail": "edges=3173 expected=3173"
+    },
+    {
+      "id": "P-13",
+      "name": "all 21 candidates map 1:1 to evidence",
+      "pass": true,
+      "detail": "candidates=21 evidenceRows=21"
+    },
+    {
+      "id": "P-14",
+      "name": "all sources/targets resolve with expected types",
+      "pass": true,
+      "detail": "missing=0 typeMismatch=0"
+    },
+    {
+      "id": "P-15",
+      "name": "all planned entry shapes match schema",
+      "pass": true,
+      "detail": "shapeFail=0"
+    },
+    {
+      "id": "P-16",
+      "name": "deterministic _key unique in destination arrays",
+      "pass": true,
+      "detail": "keyFail=0"
+    },
+    {
+      "id": "P-17",
+      "name": "no duplicate planned edge and no reverse edge",
+      "pass": true,
+      "detail": "duplicateInPlan=0 reversePresent=0 alreadyPresent=0"
+    },
+    {
+      "id": "P-18",
+      "name": "no held/rejected row leaked into plan",
+      "pass": true,
+      "detail": "leaked=0"
+    },
+    {
+      "id": "P-19",
+      "name": "evidence class not upgraded and strength reviewed",
+      "pass": true,
+      "detail": "class preserved; 21 reviews"
+    }
+  ]
+}

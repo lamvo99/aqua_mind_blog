@@ -1,0 +1,5312 @@
+{
+  "specId": "SPEC_10M",
+  "artifact": "SCHEMA_INVENTORY_AFTER",
+  "generatedAt": "2026-10-17T19:34:02.007Z",
+  "mode": "READ-ONLY (schema source files only; no Sanity deployment)",
+  "gateB": {
+    "checks": [
+      {
+        "id": "B-00",
+        "name": "Gate A inventory intact and all 13 A-checks passing",
+        "pass": true,
+        "detail": "checks=13 passed=13"
+      },
+      {
+        "id": "B-01",
+        "name": "after inventory: 16 types (6 doc + 10 new structures), 230 doc fields, 0 removed",
+        "pass": false,
+        "detail": "types=16 new=10 docFields=230/320"
+      },
+      {
+        "id": "B-02",
+        "name": "schema diff = expected only (90 added / 0 removed / 2 modified / 10 new types / index +10 exports)",
+        "pass": false,
+        "detail": "added=0 removed=0 modified=[] newTypes=10 addProblems=species: got[] plant: got[] invertebrate: got[] coral: got[] equipment: got[] problem: got[]"
+      }
+    ]
+  },
+  "expectedAdditions": {
+    "species": [
+      "minTankLengthCm",
+      "minTankWidthCm",
+      "swimmingSpace",
+      "jumpRisk",
+      "lidRequired",
+      "flowPreference",
+      "oxygenSensitivity",
+      "maturityRequirement",
+      "bioload",
+      "waterChangeSensitivity",
+      "breedingDifficulty",
+      "khMin",
+      "khMax",
+      "salinityMin",
+      "salinityMax",
+      "behaviorFlags",
+      "groupSize",
+      "communitySuitability",
+      "reefInteraction",
+      "predatesInverts",
+      "incompatibleSpecies",
+      "predatorPrey",
+      "reefInteractionDetail",
+      "knowledgeBody"
+    ],
+    "plant": [
+      "feedingMode",
+      "substrateType",
+      "fertilizationPlan",
+      "ghMin",
+      "ghMax",
+      "khMin",
+      "khMax",
+      "heightCm",
+      "spreadCm",
+      "flowTolerance",
+      "parMin",
+      "parMax",
+      "knowledgeBody"
+    ],
+    "invertebrate": [
+      "salinityMin",
+      "salinityMax",
+      "ghMin",
+      "ghMax",
+      "khMin",
+      "khMax",
+      "calciumRequirement",
+      "stabilityRequirement",
+      "riskFlags",
+      "moltingType",
+      "minTankVolumeL",
+      "breedingDifficulty",
+      "maturityRequirement",
+      "biofilmRequirement",
+      "predatorPrey",
+      "knowledgeBody"
+    ],
+    "coral": [
+      "growthForm",
+      "parMin",
+      "parMax",
+      "flowPattern",
+      "salinityMin",
+      "salinityMax",
+      "phMin",
+      "phMax",
+      "dkhMin",
+      "dkhMax",
+      "caMin",
+      "caMax",
+      "mgMin",
+      "mgMax",
+      "no3Min",
+      "no3Max",
+      "po4Min",
+      "po4Max",
+      "feedingType",
+      "growthRate",
+      "spacing",
+      "aggressionTraits",
+      "coralNeighbors",
+      "knowledgeBody"
+    ],
+    "equipment": [
+      "waterType",
+      "turnoverPerH",
+      "ratedCapacity",
+      "compatibleEquipment",
+      "relatedProblems",
+      "knowledgeBody"
+    ],
+    "problem": [
+      "howToDistinguish",
+      "immediateAction",
+      "treatment",
+      "recovery",
+      "prevention",
+      "monitoring",
+      "escalation"
+    ]
+  },
+  "approvedNewTypes": [
+    "compatibleEntry",
+    "incompatibleEntry",
+    "predatorPreyEntry",
+    "reefInteractionEntry",
+    "coralNeighborEntry",
+    "speciesKnowledgeBody",
+    "coralKnowledgeBody",
+    "plantKnowledgeBody",
+    "invertebrateKnowledgeBody",
+    "equipmentKnowledgeBody"
+  ],
+  "approvedModifications": [
+    "species.compatibleSpecies",
+    "invertebrate.compatibleSpecies"
+  ],
+  "schema": {
+    "schemaDir": "sanity/schemaTypes",
+    "index": {
+      "file": "index.ts",
+      "fileSha256": "1a20ba2d5573089b5e28302e9eeb2765e6bf9f49f6e02a949e50a8f4aed24244",
+      "imports": [
+        {
+          "local": "author",
+          "module": "author"
+        },
+        {
+          "local": "category",
+          "module": "category"
+        },
+        {
+          "local": "comment",
+          "module": "comment"
+        },
+        {
+          "local": "post",
+          "module": "post"
+        },
+        {
+          "local": "species",
+          "module": "species"
+        },
+        {
+          "local": "invertebrate",
+          "module": "invertebrate"
+        },
+        {
+          "local": "plant",
+          "module": "plant"
+        },
+        {
+          "local": "coral",
+          "module": "coral"
+        },
+        {
+          "local": "equipment",
+          "module": "equipment"
+        },
+        {
+          "local": "problem",
+          "module": "problem"
+        },
+        {
+          "local": "tool",
+          "module": "tool"
+        },
+        {
+          "local": "inspiration",
+          "module": "inspiration"
+        },
+        {
+          "local": "collection",
+          "module": "collection"
+        },
+        {
+          "local": "subscriber",
+          "module": "subscriber"
+        },
+        {
+          "local": "table",
+          "module": "table"
+        }
+      ],
+      "exported": [
+        "] = [\n  author",
+        "category",
+        "comment",
+        "post",
+        "species",
+        "invertebrate",
+        "plant",
+        "coral",
+        "equipment",
+        "problem",
+        "tool",
+        "inspiration",
+        "collection",
+        "subscriber",
+        "table",
+        "compatibleEntry",
+        "incompatibleEntry",
+        "predatorPreyEntry",
+        "reefInteractionEntry",
+        "coralNeighborEntry",
+        "speciesKnowledgeBody",
+        "coralKnowledgeBody",
+        "plantKnowledgeBody",
+        "invertebrateKnowledgeBody",
+        "equipmentKnowledgeBody"
+      ]
+    },
+    "types": [
+      {
+        "file": "species.ts",
+        "fileSha256": "044faf3477481ffb631a9316738a27dde9d8836f7c404ee277e4b165e5f3a94d",
+        "typeName": "species",
+        "typeTitle": "Fish Species",
+        "jsonType": "document",
+        "groups": [
+          {
+            "name": "identity",
+            "title": "Identity"
+          },
+          {
+            "name": "care",
+            "title": "Care"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility"
+          },
+          {
+            "name": "media",
+            "title": "Media"
+          },
+          {
+            "name": "seo",
+            "title": "SEO"
+          },
+          {
+            "name": "related",
+            "title": "Related"
+          }
+        ],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "939d58f2ecbe0858e9cef9295b3de999bb018b20d5642cd315ae17d9e1aa1a44"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "a7fa616f53809d3d8964b39735ecfdc920926fc405e7755b2363feb246e0513a"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": "identity",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d26a5cb106dab478b227c861129d6db767f242aa6ed9a2387b900207bd116da7"
+          },
+          {
+            "name": "family",
+            "title": "Family",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "33a1ae8af7f963ef8b1725dc9e33a971ef0f00015cd5390e559c9531e7fc5a2e"
+          },
+          {
+            "name": "origin",
+            "title": "Origin",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "57306a2b27fecab20ebe35bd2a382a05385579d59bdd043c0f438b9eea8a3c77"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0a52a0fc548bae020ffc2db03087bbecf04c2dfed9416eae449a5187e4695cee"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2d3aaed640417c95293fb1232377e8ec1f11e1f897efbe0d91f9e551f0317221"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "5749515bbe955da78599496f270557609ad4b68bafe9ff969d5afada132aff64"
+          },
+          {
+            "name": "group",
+            "title": "Biological Group",
+            "type": "string",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Cichlid",
+              "Livebearer",
+              "Catfish",
+              "Loach",
+              "Characin",
+              "Cyprinid",
+              "Gourami",
+              "Arowana",
+              "Puffer",
+              "Angelfish",
+              "Tang",
+              "Wrasse",
+              "Goby",
+              "Blenny",
+              "Shark",
+              "Rainbowfish",
+              "Killifish",
+              "Pleco",
+              "Other"
+            ],
+            "subNames": [],
+            "blockSha256": "9f128c3eb342a642318aa4729b75d16ee4df921e89e530220ce2a21c350e93c0"
+          },
+          {
+            "name": "parentSpecies",
+            "title": "Parent Species",
+            "type": "reference",
+            "group": "identity",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [
+              "species"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c53e699125f3bd6a0ad2952e26203aeac57985cde9810cd51d993225d952e652"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": "seo",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fb81ddf6714df07a627d736403394b67176b2720b837a1991caa7cd9b76b71ef"
+          },
+          {
+            "name": "sizeCm",
+            "title": "Adult Size (cm)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c3ae546f8939a1525f7d8ee8b796a39f9a5ccea609bf307becb2557c96ef8251"
+          },
+          {
+            "name": "tankSizeMinL",
+            "title": "Minimum Tank Size (L)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "58725e15274bd17138e28674f2e77baf84a9b9b7bb4fedc8c6d7f4923a888e9b"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ea9b1332a1e98fd77e7068d712696b7c1e97cca686f745f4f1aaf4dbd9ef9da2"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "80832f5d367022b93c0b3d003b8821432b46a79a48093d38ec4890fd5e32829f"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d96040730ff83892f2268cabcf4d614b14fd141986768ae416464ca15321ca31"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f2f3f087188d7fa6337cf4969c53fd80ad6cb80afbbd40ea9c9f05f5f4d80c25"
+          },
+          {
+            "name": "ghMin",
+            "title": "Min GH (dGH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ea001b16aea5c7e26d07eb160d1d8db7630b6b0a193d678617c16dd59313afa8"
+          },
+          {
+            "name": "ghMax",
+            "title": "Max GH (dGH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "61aad5357ca8f32e6875213e78a965b981f2e043c3c52b46bf70df76603cce3f"
+          },
+          {
+            "name": "diet",
+            "title": "Diet",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Carnivore",
+              "Omnivore",
+              "Herbivore",
+              "Micropredator"
+            ],
+            "subNames": [],
+            "blockSha256": "6376d6a41bdbc18f531e744682f8612f2a36543bea2e9ba6bc35f6ab85749287"
+          },
+          {
+            "name": "temperament",
+            "title": "Temperament",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "subNames": [],
+            "blockSha256": "b78a26495f1934735a0c87c8ddc6b336e29374161b7a858a5985e4933536be94"
+          },
+          {
+            "name": "waterZone",
+            "title": "Water Zone",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Top",
+              "Middle",
+              "Bottom",
+              "All levels"
+            ],
+            "subNames": [],
+            "blockSha256": "c8e059b6b56249398fae15ba8e1091c6165e33694354e56996997c6b300ba14f"
+          },
+          {
+            "name": "schooling",
+            "title": "Schooling Requirements",
+            "type": "text",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0a79062c7abbfe867f71e72de6f71c0e7f4e459ccf87d9a487a6c06a4cb7eedf"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "subNames": [],
+            "blockSha256": "12173a2d625657f4ef239b51e15483c8eafa7199630402bad84f61d493cd4e8d"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": "care",
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "brackish"
+            ],
+            "subNames": [],
+            "blockSha256": "1fa1dd7cbb2d8c04b3d47e4a5eb40d4f69ef5019af704ffb8fff80a8f028bfb1"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Blackwater",
+              "Blackwater",
+              "Biotope",
+              "Biotope",
+              "Amazon / South American",
+              "Amazon / South American",
+              "Southeast Asian",
+              "Southeast Asian",
+              "African Cichlid",
+              "African Cichlid",
+              "Shrimp",
+              "Shrimp",
+              "Betta / Nano",
+              "Betta / Nano",
+              "Predator",
+              "Predator",
+              "Large Fish",
+              "Large Fish",
+              "Native / Regional",
+              "Native / Regional",
+              "Fish Only",
+              "Fish Only",
+              "FOWLR",
+              "FOWLR",
+              "Nano Reef",
+              "Nano Reef",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish",
+              "Marine Predator",
+              "Marine Predator",
+              "Pond / Outdoor",
+              "Pond / Outdoor"
+            ],
+            "subNames": [],
+            "blockSha256": "e119a68982a81767c0346c8640991bd964b524b48da58e61f0df987f04014ca8"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Central America",
+              "Central America",
+              "North America",
+              "North America",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Australia / Oceania",
+              "Australia / Oceania",
+              "Europe",
+              "Europe",
+              "Marine Indo-Pacific",
+              "Marine Indo-Pacific",
+              "Red Sea",
+              "Red Sea",
+              "Caribbean / Western Atlantic",
+              "Caribbean / Western Atlantic"
+            ],
+            "subNames": [],
+            "blockSha256": "a9a6f00e221313fc3c95d91dc2f32547accc8ac043362184be3c0f85697a70ac"
+          },
+          {
+            "name": "isPredator",
+            "title": "Predator?",
+            "type": "boolean",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fc72b02ef16866cd572612efc6ecc6914e85d9c484a5be5d7376cfc5e49c53dd"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Compatible?",
+            "type": "boolean",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "da5b8927819fa3ce840dbb4459d7f348e9a923fddd2cbcc2ea0488c682edec20"
+          },
+          {
+            "name": "compatibleSpecies",
+            "title": "Compatible Species",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "compatibleEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6b54cfb201e4ff7180b597cba46502009e3ccad8398cb1056184a2ecd66074e1"
+          },
+          {
+            "name": "compatiblePlants",
+            "title": "Suitable Plants",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "plant"
+            ],
+            "to": [
+              "plant"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "53b05eb9e2814f6ebc401517508c630999d4c10400131835eafc55c97d81e687"
+          },
+          {
+            "name": "compatibleInvertebrates",
+            "title": "Compatible Invertebrates",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "invertebrate"
+            ],
+            "to": [
+              "invertebrate"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ee5d18a3372a07d4be827224b1f0cbcb37835995e81d0c28e987258d20e0b16c"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c6abf0edacb5485c07ae70f34f01f59a1f368903517c3798bc8f71319a9d03d9"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": "related",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ab173ab75fbed1ea9b545de0e2e56b9f8fdc0033cd4b0dfbd665800d394e259e"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": "media",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "e750453913d3765908661b4ed0726ed57b1d325f1bebad044dffa1f1cbac27be"
+          },
+          {
+            "name": "seo",
+            "title": "SEO",
+            "type": "object",
+            "group": "seo",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [
+              "metaTitle",
+              "metaDescription"
+            ],
+            "blockSha256": "d7305bfeda8a6dedecb6c3a24b54d911c833c580f93a72f1e99305d152c63915"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": "related",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "a4c03593f47345ea41048d75faf8414a30d2bd18abfcc68d15b1166f461a040f"
+          },
+          {
+            "name": "minTankLengthCm",
+            "title": "Min Tank Length (cm)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "26ce7684b343094f430a821554f474bdb52dd6af1d69660f5da35c85a57283dd"
+          },
+          {
+            "name": "minTankWidthCm",
+            "title": "Min Tank Width (cm)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c6fb5032852d11b8ffe78b4d5199f2f3f38040a28936d018538dab2e84b3fcf9"
+          },
+          {
+            "name": "swimmingSpace",
+            "title": "Swimming Space",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ],
+            "subNames": [],
+            "blockSha256": "b3f8245ecf7c6628d6f0b95c0ccef47e5552a8b39a29894e9b5ee80db8ece97e"
+          },
+          {
+            "name": "jumpRisk",
+            "title": "Jump Risk",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ],
+            "subNames": [],
+            "blockSha256": "264792f77c808033b700ffb3e534672504e3060501db86bc8aa623329fa9c07c"
+          },
+          {
+            "name": "lidRequired",
+            "title": "Lid Requirement",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NOT_REQUIRED",
+              "RECOMMENDED",
+              "ESSENTIAL"
+            ],
+            "subNames": [],
+            "blockSha256": "85557949024064b9ee82686045b8ffd9bdf37bca9e3f8a13e62f78fb9530f8ba"
+          },
+          {
+            "name": "flowPreference",
+            "title": "Flow Preference",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "STILL",
+              "MODERATE",
+              "STRONG"
+            ],
+            "subNames": [],
+            "blockSha256": "47f4493b6ea1d99fb82583f7dd00f8c7a36057afc12f5c331f6c7dd01e7c69fe"
+          },
+          {
+            "name": "oxygenSensitivity",
+            "title": "Oxygen Sensitivity",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NEUTRAL",
+              "SENSITIVE"
+            ],
+            "subNames": [],
+            "blockSha256": "e237c672eebb9bcbba9ff3c0ad0fa84b4f247b7c443f9c6e62f192103d83e3a6"
+          },
+          {
+            "name": "maturityRequirement",
+            "title": "Mature Aquarium Requirement",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ],
+            "subNames": [],
+            "blockSha256": "553c2930134a73f24746637bb693c3eaa393deeea1e7e4ed0cf9ac876499fab4"
+          },
+          {
+            "name": "bioload",
+            "title": "Bioload",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ],
+            "subNames": [],
+            "blockSha256": "ac0d2a326253789280a214ee9e441dabd3a99c6b70258430450105ecdd5af238"
+          },
+          {
+            "name": "waterChangeSensitivity",
+            "title": "Water Change Sensitivity",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ],
+            "subNames": [],
+            "blockSha256": "0fb8b4bbb5bcd958e45153645f6463a160d3e18238b33be2e56c00615f6cb90f"
+          },
+          {
+            "name": "breedingDifficulty",
+            "title": "Breeding Difficulty",
+            "type": "string",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "EASY",
+              "MODERATE",
+              "DIFFICULT"
+            ],
+            "subNames": [],
+            "blockSha256": "f9aed4a8c78bb8fc318c5b93cec85d41dbda30e36ceab58e1c1239f809452ea6"
+          },
+          {
+            "name": "khMin",
+            "title": "Min KH (dKH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "21efba6ffc2713942c5566a49066d7a6b9eb247e97c050bba0c6f1f87d22db4f"
+          },
+          {
+            "name": "khMax",
+            "title": "Max KH (dKH)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "61a5da2f051c75e4deb24796e87fb9cc87232f3ff48389b6769891f67f198535"
+          },
+          {
+            "name": "salinityMin",
+            "title": "Min Salinity (ppt)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "91985292ede3f8184d8d8679432143f6d6064b18c0ba20acccad2cd6f2f31d46"
+          },
+          {
+            "name": "salinityMax",
+            "title": "Max Salinity (ppt)",
+            "type": "number",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9c13e1c3efc4359a305eb316f36cac5de93da605e33a52a7ef07c6e61b18ba7e"
+          },
+          {
+            "name": "behaviorFlags",
+            "title": "Behavior Flags",
+            "type": "array",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "open-water",
+              "territorial",
+              "solitary",
+              "nocturnal",
+              "diurnal",
+              "burrower",
+              "cave-dweller",
+              "strong-swimmer",
+              "timid"
+            ],
+            "subNames": [],
+            "blockSha256": "4cc59a9a08566f0583b79ab122459eae5157b63008f508fd10612a155e8c040a"
+          },
+          {
+            "name": "groupSize",
+            "title": "Group Size",
+            "type": "object",
+            "group": "care",
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [
+              "min",
+              "max"
+            ],
+            "blockSha256": "6062132f91e07c6559f4d8dd4da89c88deacb3b4c04c860ce74929ca13d4ccfd"
+          },
+          {
+            "name": "communitySuitability",
+            "title": "Community Suitability",
+            "type": "string",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "UNSUITABLE",
+              "CONDITIONAL",
+              "SUITABLE"
+            ],
+            "subNames": [],
+            "blockSha256": "fdf44a7b0bac600197b27f4018d82f2cfc0dec0cc8774cf1227d1b614f8cdab7"
+          },
+          {
+            "name": "reefInteraction",
+            "title": "Reef Interaction",
+            "type": "string",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "REEF_SAFE",
+              "CAUTION",
+              "SPECIES_DEPENDENT",
+              "NOT_REEF_SAFE"
+            ],
+            "subNames": [],
+            "blockSha256": "33028a1460ecb0127e4ec61271382de12662e93e4653ef0efc50ee0584ec0292"
+          },
+          {
+            "name": "predatesInverts",
+            "title": "Predates Invertebrates",
+            "type": "string",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "POSSIBLE",
+              "LIKELY"
+            ],
+            "subNames": [],
+            "blockSha256": "4bde2a6446237b999f91a3ecdb4cafca95688808c9d547d18ea156965943b38a"
+          },
+          {
+            "name": "incompatibleSpecies",
+            "title": "Incompatible Species",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "incompatibleEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fa698e0331b1711c1f940cfc716d9b982fd926f038ca61ebd7041d3d8454eca4"
+          },
+          {
+            "name": "predatorPrey",
+            "title": "Predator / Prey",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "predatorPreyEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd1600ed43a9b78d21d6b1a5897c6212f623b93daf67cebc61d90b9b19e063b2"
+          },
+          {
+            "name": "reefInteractionDetail",
+            "title": "Reef Interaction Detail",
+            "type": "array",
+            "group": "compatibility",
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reefInteractionEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9ad323488d3a90865bca0431b0710353c97a7567dff6dcea54e79b4d17465e45"
+          },
+          {
+            "name": "knowledgeBody",
+            "title": "Knowledge Body",
+            "type": "speciesKnowledgeBody",
+            "group": "care",
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "83692642e99d3f38bbdcf3c65fcd6e375ec5ce1be892daae71a179854f958c37"
+          }
+        ]
+      },
+      {
+        "file": "plant.ts",
+        "fileSha256": "0c31daabae06f1c081ac707e3886827dddb86954c3981a75cfa50a3d28c59d6a",
+        "typeName": "plant",
+        "typeTitle": "Aquatic Plant",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "48bed4f7a5ce12801de2228d684cf6f6d89b976c8b1fa14a1c9d2f83458655f0"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "1871b2e1d65943c0e34ff6de27528ed7b72fa48aa6c45df9d8cd79621cc50082"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3c30f583f15692a34a982945a74ad9ce423aa9ad8c8b571eb9543e030c1827bc"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8ce413f39047c76cc676fe99a116012707352eaaf87ddd467e4272c1b0d02c18"
+          },
+          {
+            "name": "group",
+            "title": "Plant Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Stem",
+              "Rosette",
+              "Rhizome",
+              "Bulb",
+              "Moss",
+              "Fern",
+              "Floating",
+              "Epiphyte",
+              "Carpet",
+              "Succulent",
+              "Other"
+            ],
+            "subNames": [],
+            "blockSha256": "b0fdc1a20f2ea1d63309f3fcd776033af1fbd0ec04af0659740df8c120889701"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "light",
+            "title": "Light Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Low",
+              "Low-Medium",
+              "Medium",
+              "Medium-High",
+              "High"
+            ],
+            "subNames": [],
+            "blockSha256": "c9776e8fab9477bca548e0a3ee461124783407a46e269b59ca47ebf056022944"
+          },
+          {
+            "name": "co2",
+            "title": "CO₂ Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "None",
+              "Low",
+              "Medium",
+              "High"
+            ],
+            "subNames": [],
+            "blockSha256": "aeb34d01800cfbcecd295a12a79b0e73c484ac827d194aca804d5949a18e8548"
+          },
+          {
+            "name": "growth",
+            "title": "Growth Rate",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Slow",
+              "Medium",
+              "Fast"
+            ],
+            "subNames": [],
+            "blockSha256": "415840333f58f0b684e4baad791dc44ab8cd3fa469e91bf3d0278995e1442937"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced"
+            ],
+            "subNames": [],
+            "blockSha256": "ec9e71476cee5935494344ffc7c100566994006d06730a9f532a0ef8d03756d4"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Foreground",
+              "Midground",
+              "Background",
+              "Floating",
+              "Epiphyte"
+            ],
+            "subNames": [],
+            "blockSha256": "cbda3a3cee63e231033d9c9e426fc400f41a7b880016fcbe61bf0a4b45759b18"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8f9d72cc4b87b0cdd8cfc629cd45a9d8b874673b19954ab5e1e86de6f0653e2a"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ad3cd9d2c0becddc12ce6c0465b3973c068be57eab6cbe6b51c359b4f2f268cf"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ad8b14b0b608f09d550ea7b2674919ee316239723e1ea2b6feb6e3be90dd4498"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0ebf5e407eecb47a4f691ecffe9b00a8f1579d2d1d4309e437df57cdff46cd56"
+          },
+          {
+            "name": "propagation",
+            "title": "Propagation",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "13f1ba16d39cd7f042fb76da9a197befb2c63301bb7c95971ee81dca9fa1208b"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Blackwater",
+              "Blackwater",
+              "Biotope",
+              "Biotope",
+              "Amazon / South American",
+              "Amazon / South American",
+              "Shrimp",
+              "Shrimp"
+            ],
+            "subNames": [],
+            "blockSha256": "4920b7a1d3927928bd1bad8c02b7dc78bb759cb9aaad2e6f4f630e7bccbdbbf5"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Central America",
+              "Central America",
+              "North America",
+              "North America",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Australia / Oceania",
+              "Australia / Oceania",
+              "Europe",
+              "Europe",
+              "Cosmopolitan",
+              "Cosmopolitan"
+            ],
+            "subNames": [],
+            "blockSha256": "150c5b9d179c94728f315eae38da3de0adbcb3d1d9f27608f49365e0bb903659"
+          },
+          {
+            "name": "growthForm",
+            "title": "Growth Form",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Stem",
+              "Stem",
+              "Rosette",
+              "Rosette",
+              "Rhizome",
+              "Rhizome",
+              "Stolon",
+              "Stolon",
+              "Bulb",
+              "Bulb",
+              "Moss",
+              "Moss",
+              "Floating",
+              "Floating",
+              "Vine / Creeper",
+              "Vine / Creeper"
+            ],
+            "subNames": [],
+            "blockSha256": "6b4cb53924d3c223b7815e67d9ffb55b6fa85270c8488221949979e63d1d31c5"
+          },
+          {
+            "name": "redPlant",
+            "title": "Red Plant?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "84aa7b6c89d4f090b721b42a667e1fefb2b51395dda00c4d31f0154800563c60"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "66e5aa25c2dc4018ccf6ef2a80e52b286df84febc83eebeb0a1d838b05fb944c"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "b54e43925106bfcf360191af2ece324d9ed08ef7020c7849574f7f1faab49e75"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd755be969f7591323e2269505276ee647f33963e071d78d44b3fca5dd902dd5"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3e84e82f7ad807205fb6af68727b451c7c601c0801793ae4bc2fbae26421cc6e"
+          },
+          {
+            "name": "feedingMode",
+            "title": "Feeding Mode",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "ROOT",
+              "WATER_COLUMN",
+              "BOTH"
+            ],
+            "subNames": [],
+            "blockSha256": "e26a91ce51731e285f95c79e0226a5757caf0e8f5012505fc7b8204c97413000"
+          },
+          {
+            "name": "substrateType",
+            "title": "Substrate Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "SAND",
+              "SOIL",
+              "MIXED"
+            ],
+            "subNames": [],
+            "blockSha256": "fad53eb4efc2b8bd43057035e143647b8de0b21e17ff4e82ff65349b3b2a7d0c"
+          },
+          {
+            "name": "fertilizationPlan",
+            "title": "Fertilization Plan",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "LIGHT_LIQUID",
+              "REGULAR",
+              "TARGETED"
+            ],
+            "subNames": [],
+            "blockSha256": "dcad4b483f93fecc1a2954b6a7be6a6514fb0319150155f3e27ac8be1a680275"
+          },
+          {
+            "name": "ghMin",
+            "title": "Min GH (dGH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ee4213c57c8eda90b949888c2f54b064139e869f85e8f3a07904dc21ceeee5a6"
+          },
+          {
+            "name": "ghMax",
+            "title": "Max GH (dGH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0ca4ca3bfbf160cef1dc4cce5efeaafa443f166d5adbfa0da0949eaf0cea7c95"
+          },
+          {
+            "name": "khMin",
+            "title": "Min KH (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "e6b639eff4f55367d142147f123e33e45cb1997b07ee09b5ffeb628fa34866d8"
+          },
+          {
+            "name": "khMax",
+            "title": "Max KH (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "758de853dd11eefe42e96202763731bccbe60ee2b8cb834f50b4142432a3ccef"
+          },
+          {
+            "name": "heightCm",
+            "title": "Adult Height (cm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cad0fab63c40a06545434213bf7937c6045c09f857fd9351c42f6eb8b02e7423"
+          },
+          {
+            "name": "spreadCm",
+            "title": "Spread (cm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "757873ef324bb13225aacbe4aae58e46125a923a8edbf9a24103ae8a6c7e0ef3"
+          },
+          {
+            "name": "flowTolerance",
+            "title": "Flow Tolerance",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "HIGH"
+            ],
+            "subNames": [],
+            "blockSha256": "e3df2e8d844a5a0a25f953c6612f26377ef1eece58379c7369e0e9f2d83b4f2b"
+          },
+          {
+            "name": "parMin",
+            "title": "Min PAR",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "490d3b12ff4bfda5f9044a085fb8fee277c6a393ae7e32d1965482800dea7696"
+          },
+          {
+            "name": "parMax",
+            "title": "Max PAR",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f16c5ee18775180507484e0163556db5a9f08e287d319348896cf47dbb436d68"
+          },
+          {
+            "name": "knowledgeBody",
+            "title": "Knowledge Body",
+            "type": "plantKnowledgeBody",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8b8400e3b4cf506bd8ed711616ba3382278263444ecdbe243b8bd792a6782850"
+          }
+        ]
+      },
+      {
+        "file": "invertebrate.ts",
+        "fileSha256": "682f395dfb572276934d0e167a5bd1c63a13870f0fc47c38531fa7e03d1813b9",
+        "typeName": "invertebrate",
+        "typeTitle": "Invertebrate (Shrimp, Snail, Crab…)",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "b5fd6cb33ae2b1a5b83fbbcc284b31427a786aafd7a40209ada19c8957c4354a"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "1871b2e1d65943c0e34ff6de27528ed7b72fa48aa6c45df9d8cd79621cc50082"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3c30f583f15692a34a982945a74ad9ce423aa9ad8c8b571eb9543e030c1827bc"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8ce413f39047c76cc676fe99a116012707352eaaf87ddd467e4272c1b0d02c18"
+          },
+          {
+            "name": "parentSpecies",
+            "title": "Parent Species",
+            "type": "reference",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [
+              "invertebrate"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cb78e9b1387f35244d34539af0faa4d8252fd5dd0ef5abe62644e439bda3cd36"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "brackish"
+            ],
+            "subNames": [],
+            "blockSha256": "2adc45dc09214a7329b643e22d711e759117b3c76ec233128c08f9ea5920da36"
+          },
+          {
+            "name": "group",
+            "title": "Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "shrimp",
+              "snail",
+              "starfish",
+              "crab",
+              "anemone",
+              "urchin",
+              "other"
+            ],
+            "subNames": [],
+            "blockSha256": "af2c8a803b00e8d0e2aa403a3c65289803e2696a9cae6c9916f77f449cda3dc4"
+          },
+          {
+            "name": "sizeCm",
+            "title": "Adult Size (cm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2bb637d534f8cf1e6008cf823e27700b45bfbdc0767e1028a8abcaa89bda4fa0"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8f9d72cc4b87b0cdd8cfc629cd45a9d8b874673b19954ab5e1e86de6f0653e2a"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ad3cd9d2c0becddc12ce6c0465b3973c068be57eab6cbe6b51c359b4f2f268cf"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ad8b14b0b608f09d550ea7b2674919ee316239723e1ea2b6feb6e3be90dd4498"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0ebf5e407eecb47a4f691ecffe9b00a8f1579d2d1d4309e437df57cdff46cd56"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "subNames": [],
+            "blockSha256": "8923f9463578bf348c0f9fd442a0994278c4a6c14ad643e6746aae21602f3698"
+          },
+          {
+            "name": "diet",
+            "title": "Diet",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Carnivore",
+              "Omnivore",
+              "Herbivore",
+              "Scavenger",
+              "Detritivore",
+              "Filter feeder"
+            ],
+            "subNames": [],
+            "blockSha256": "27df9fdc2d1897532a542d15ce665c32617c72a8ff5ea9406ba0fc96742082e6"
+          },
+          {
+            "name": "temperament",
+            "title": "Temperament",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "subNames": [],
+            "blockSha256": "7dd6a648d1f7df5299ed38240adf6f9aa920c2716fa1360f23f3e67c47cf7876"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "Community",
+              "Community",
+              "Shrimp",
+              "Shrimp",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Invertebrate-focused",
+              "Invertebrate-focused",
+              "Fish Only",
+              "Fish Only",
+              "Nano Reef",
+              "Nano Reef",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish"
+            ],
+            "subNames": [],
+            "blockSha256": "7353c8fae8a14f58b122505db4387ea94fdf53a6efe5bb747aad7fb8a6bc8ffb"
+          },
+          {
+            "name": "region",
+            "title": "Region",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "South America",
+              "South America",
+              "Amazon Basin",
+              "Amazon Basin",
+              "Southeast Asia",
+              "Southeast Asia",
+              "South Asia",
+              "South Asia",
+              "East Asia",
+              "East Asia",
+              "Africa",
+              "Africa",
+              "Marine Indo-Pacific",
+              "Marine Indo-Pacific",
+              "Caribbean / Western Atlantic",
+              "Caribbean / Western Atlantic",
+              "Red Sea",
+              "Red Sea"
+            ],
+            "subNames": [],
+            "blockSha256": "74fb733b540d85d1f481cabcc12d502a4361702c199777b5943835e249b2a2aa"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Compatible?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9ffd6cb6077122081e40bfe3630d7c85c9d60b7ee6d0932adda2b9381d0929a7"
+          },
+          {
+            "name": "compatibleSpecies",
+            "title": "Compatible Species",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "compatibleEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "32c75636f1aaf9b6dc4973c933e750aac5c2a1932bdeb081b67c243b51fd12e4"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "66e5aa25c2dc4018ccf6ef2a80e52b286df84febc83eebeb0a1d838b05fb944c"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "b54e43925106bfcf360191af2ece324d9ed08ef7020c7849574f7f1faab49e75"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd755be969f7591323e2269505276ee647f33963e071d78d44b3fca5dd902dd5"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3e84e82f7ad807205fb6af68727b451c7c601c0801793ae4bc2fbae26421cc6e"
+          },
+          {
+            "name": "salinityMin",
+            "title": "Min Salinity (ppt)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f850030073edab8cfb9319b3854e030b0056e75ed188c64bcaf37950f3a048f6"
+          },
+          {
+            "name": "salinityMax",
+            "title": "Max Salinity (ppt)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ba5e66d025de2ca149342102b87b710e63cfdc6679c62fddcee33e1f49a17ea7"
+          },
+          {
+            "name": "ghMin",
+            "title": "Min GH (dGH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ee4213c57c8eda90b949888c2f54b064139e869f85e8f3a07904dc21ceeee5a6"
+          },
+          {
+            "name": "ghMax",
+            "title": "Max GH (dGH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0ca4ca3bfbf160cef1dc4cce5efeaafa443f166d5adbfa0da0949eaf0cea7c95"
+          },
+          {
+            "name": "khMin",
+            "title": "Min KH (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "e6b639eff4f55367d142147f123e33e45cb1997b07ee09b5ffeb628fa34866d8"
+          },
+          {
+            "name": "khMax",
+            "title": "Max KH (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "758de853dd11eefe42e96202763731bccbe60ee2b8cb834f50b4142432a3ccef"
+          },
+          {
+            "name": "calciumRequirement",
+            "title": "Calcium Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ],
+            "subNames": [],
+            "blockSha256": "b2568a3b3f5501f8d3380bc813c9808bc3881d4646dc9696fe0afa6069d88ced"
+          },
+          {
+            "name": "stabilityRequirement",
+            "title": "Stability Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "LOW",
+              "MODERATE",
+              "CRITICAL"
+            ],
+            "subNames": [],
+            "blockSha256": "f21aee0357a6b7b508a1d6b255f307a489877cc1a596ab80a31b2ec67fe5556c"
+          },
+          {
+            "name": "riskFlags",
+            "title": "Risk Flags",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "STARVATION",
+              "ESCAPE"
+            ],
+            "subNames": [],
+            "blockSha256": "51389438aff3edd5bba102a3cb41a5a6defee50830adb78e1e27f7a7bb19a9aa"
+          },
+          {
+            "name": "moltingType",
+            "title": "Molting Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "RARE",
+              "FREQUENT"
+            ],
+            "subNames": [],
+            "blockSha256": "634ff5e728574b3ff8092c26ce16495b4078bad46af9c1350b6bb8c4346c00eb"
+          },
+          {
+            "name": "minTankVolumeL",
+            "title": "Min Tank Volume (L)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd9c0565dc2c09a1020de4fd0883810ea0ca33db7dfe78dc63e0557bbb3d998e"
+          },
+          {
+            "name": "breedingDifficulty",
+            "title": "Breeding Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "EASY",
+              "MODERATE",
+              "DIFFICULT"
+            ],
+            "subNames": [],
+            "blockSha256": "fb494a562568ca06451ebda89966fd8148137ce8d88c207dcd45380ffb7b4911"
+          },
+          {
+            "name": "maturityRequirement",
+            "title": "Mature Aquarium Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "SUGGESTED",
+              "REQUIRED"
+            ],
+            "subNames": [],
+            "blockSha256": "f6302ae45d8a5acd2798f80e6fc20fba6f25e7aa96e97a4b101338ce22a4aff4"
+          },
+          {
+            "name": "biofilmRequirement",
+            "title": "Biofilm Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "NONE",
+              "REQUIRED"
+            ],
+            "subNames": [],
+            "blockSha256": "78b94fd107a6630662b44c7e3b983dc0972742db9e0d373f3f82f2ece48a70f9"
+          },
+          {
+            "name": "predatorPrey",
+            "title": "Predator / Prey",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "predatorPreyEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "eff7ca565e8dae99c735fbcbfc892627f4ea9c986b29789931c05686b9760455"
+          },
+          {
+            "name": "knowledgeBody",
+            "title": "Knowledge Body",
+            "type": "invertebrateKnowledgeBody",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "5533fcb4003d8d0cd6acf465058f96a45141c2241029b9a12a82b929fbb5cbd0"
+          }
+        ]
+      },
+      {
+        "file": "coral.ts",
+        "fileSha256": "eae2e2006791683946c60dd022fe8d7ad18b93e0b67fb2f17b7aa2ee0e4c6f0a",
+        "typeName": "coral",
+        "typeTitle": "Coral",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "scientificName",
+            "title": "Scientific Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "48bed4f7a5ce12801de2228d684cf6f6d89b976c8b1fa14a1c9d2f83458655f0"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "1871b2e1d65943c0e34ff6de27528ed7b72fa48aa6c45df9d8cd79621cc50082"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "localNames",
+            "title": "Local / Trade Names",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3c30f583f15692a34a982945a74ad9ce423aa9ad8c8b571eb9543e030c1827bc"
+          },
+          {
+            "name": "aliases",
+            "title": "Search Aliases",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8ce413f39047c76cc676fe99a116012707352eaaf87ddd467e4272c1b0d02c18"
+          },
+          {
+            "name": "group",
+            "title": "Coral Group",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "LPS",
+              "SPS",
+              "Soft",
+              "NPS",
+              "Mushroom",
+              "Anemone",
+              "Polyp",
+              "Colony",
+              "Single Polyp",
+              "Other"
+            ],
+            "subNames": [],
+            "blockSha256": "48e754b117d97682f369a2332f36a201281770dedbd1504a0cf4e00e897d3165"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "light",
+            "title": "Light Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Low",
+              "Moderate",
+              "High",
+              "Very High"
+            ],
+            "subNames": [],
+            "blockSha256": "6931525c68be1edfc4a9edb6b48f7f70ab092806154bb3ba6be4be90bde47e10"
+          },
+          {
+            "name": "flow",
+            "title": "Flow Requirement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Low",
+              "Moderate",
+              "High"
+            ],
+            "subNames": [],
+            "blockSha256": "369443d2d81c9fb8ca58c51811fd4e270d79de0daa96f4f341eda7a973ab276b"
+          },
+          {
+            "name": "difficulty",
+            "title": "Difficulty",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ],
+            "subNames": [],
+            "blockSha256": "8923f9463578bf348c0f9fd442a0994278c4a6c14ad643e6746aae21602f3698"
+          },
+          {
+            "name": "coralType",
+            "title": "Coral Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "soft",
+              "lps",
+              "sps",
+              "nps"
+            ],
+            "subNames": [],
+            "blockSha256": "13b69f5956834a7db2ca1c21df231445e72c796ec2011e687730f7fe8d300c27"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Sand bed",
+              "Low rock",
+              "Mid rock",
+              "High rock"
+            ],
+            "subNames": [],
+            "blockSha256": "f0c22f566f00d39a6022389c049dcf2959be5ced6dd3f8b34c7c355dade2c317"
+          },
+          {
+            "name": "aggression",
+            "title": "Aggression",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Peaceful",
+              "Semi-aggressive",
+              "Aggressive"
+            ],
+            "subNames": [],
+            "blockSha256": "a535e087fb779b43c541113e1624b78f268642bfd83e707e5a15218e9a8f146c"
+          },
+          {
+            "name": "reefCompatibility",
+            "title": "Reef Safe?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "18d00fbc9beb741539c539aa7d063435e7ec0acaa61c1852605827e118f3ada9"
+          },
+          {
+            "name": "photosynthetic",
+            "title": "Photosynthetic?",
+            "type": "boolean",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8cdca6e8753301c32d74274711c9a400aef7d2eb22e62859a9b4a53ab50bd1ac"
+          },
+          {
+            "name": "suitableEquipment",
+            "title": "Suitable Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "66e5aa25c2dc4018ccf6ef2a80e52b286df84febc83eebeb0a1d838b05fb944c"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "b54e43925106bfcf360191af2ece324d9ed08ef7020c7849574f7f1faab49e75"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "Nano Reef",
+              "Nano Reef",
+              "Mixed Reef",
+              "Mixed Reef",
+              "Soft Coral Reef",
+              "Soft Coral Reef",
+              "LPS Reef",
+              "LPS Reef",
+              "SPS Reef",
+              "SPS Reef",
+              "NPS",
+              "NPS",
+              "Anemone / Clownfish",
+              "Anemone / Clownfish",
+              "Invertebrate-focused",
+              "Invertebrate-focused"
+            ],
+            "subNames": [],
+            "blockSha256": "7e381a8365d9eeb426afe6a22f4baa3b177690b4472b8994d47372958653c39e"
+          },
+          {
+            "name": "tempMinC",
+            "title": "Min Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d8de79ffb91e34bd10370895b0c92b8358fca1165dac176f061523094e8b5f94"
+          },
+          {
+            "name": "tempMaxC",
+            "title": "Max Temperature (°C)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "556dc18d069272ba2033720e8f90f38bc0756188f2c5a3b25956e4f896d3c0ac"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd755be969f7591323e2269505276ee647f33963e071d78d44b3fca5dd902dd5"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3e84e82f7ad807205fb6af68727b451c7c601c0801793ae4bc2fbae26421cc6e"
+          },
+          {
+            "name": "growthForm",
+            "title": "Growth Form",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "BRANCHING",
+              "PLATING",
+              "ENCRUSTING",
+              "MASSIVE",
+              "FOLIACEOUS"
+            ],
+            "subNames": [],
+            "blockSha256": "0a9e193c9ae5df43e659944670385db32a18634f8d567c2bc1833c8914a76b0e"
+          },
+          {
+            "name": "parMin",
+            "title": "Min PAR",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "490d3b12ff4bfda5f9044a085fb8fee277c6a393ae7e32d1965482800dea7696"
+          },
+          {
+            "name": "parMax",
+            "title": "Max PAR",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f16c5ee18775180507484e0163556db5a9f08e287d319348896cf47dbb436d68"
+          },
+          {
+            "name": "flowPattern",
+            "title": "Flow Pattern",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "DIRECT",
+              "INDIRECT",
+              "RANDOM",
+              "OSCILLATING",
+              "LAMINAR"
+            ],
+            "subNames": [],
+            "blockSha256": "d25f18d5a11e507cfc92292d5efb256f76818acd47e7372d957414b2f6df20fc"
+          },
+          {
+            "name": "salinityMin",
+            "title": "Min Salinity (ppt)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f850030073edab8cfb9319b3854e030b0056e75ed188c64bcaf37950f3a048f6"
+          },
+          {
+            "name": "salinityMax",
+            "title": "Max Salinity (ppt)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ba5e66d025de2ca149342102b87b710e63cfdc6679c62fddcee33e1f49a17ea7"
+          },
+          {
+            "name": "phMin",
+            "title": "Min pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ad8b14b0b608f09d550ea7b2674919ee316239723e1ea2b6feb6e3be90dd4498"
+          },
+          {
+            "name": "phMax",
+            "title": "Max pH",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0d9b0594ad6b7ea8a65925981254a38297f4072ca947d9b3fd1d66bd8e1da193"
+          },
+          {
+            "name": "dkhMin",
+            "title": "Min Alkalinity (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2798e738bc970485bc90a8f941caaabc364631f54c2a2ba97434eddca360c60b"
+          },
+          {
+            "name": "dkhMax",
+            "title": "Max Alkalinity (dKH)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ec2bcce4966a2f40e2de772848d2ec1af3a439f95e110851e3d86971e1ccd43f"
+          },
+          {
+            "name": "caMin",
+            "title": "Min Calcium (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "7bfb10e3bde513d24532f8f35931426694c3b798beeee0b3e38f7ff21bfb8f23"
+          },
+          {
+            "name": "caMax",
+            "title": "Max Calcium (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ccf66838d9828012b8f5edc9e5c9ba68b33a27af80f293843c39b4e44950151b"
+          },
+          {
+            "name": "mgMin",
+            "title": "Min Magnesium (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "a6d8ea4d58f0a260d1e5aa3a35ad0dc0759ef8b3d8bf5ba05d1275cc59449fff"
+          },
+          {
+            "name": "mgMax",
+            "title": "Max Magnesium (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "77f056926be5dd721571f472e72c652db8029b3d6ebc25767fd085067759a841"
+          },
+          {
+            "name": "no3Min",
+            "title": "Min Nitrate (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "7097f60b14d634124b221888bc5d3d0f1674541af220b16300709468e1869a07"
+          },
+          {
+            "name": "no3Max",
+            "title": "Max Nitrate (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6635321aa18fa264f115fe51c2d2b31111afd88b94d56e941122abf3d3ddc3b3"
+          },
+          {
+            "name": "po4Min",
+            "title": "Min Phosphate (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "23c8650719eccd63656b0f7263a6766d57a142800c6efe565fe0246cd390cc8a"
+          },
+          {
+            "name": "po4Max",
+            "title": "Max Phosphate (ppm)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "db3c3f51f683cfd1ce25a6f2ffa798368be82b33c8d1b78a6487750518488d4a"
+          },
+          {
+            "name": "feedingType",
+            "title": "Feeding Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "ZOOXANTHELLAE",
+              "MIXED",
+              "CARNIVOROUS",
+              "NPS"
+            ],
+            "subNames": [],
+            "blockSha256": "1ec3ce0f20313c7a79785147009f4d30387f87d8a01ea4c0a818e80e1a1007d6"
+          },
+          {
+            "name": "growthRate",
+            "title": "Growth Rate",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "SLOW",
+              "MODERATE",
+              "FAST"
+            ],
+            "subNames": [],
+            "blockSha256": "5d1cdc53b873fc659ffd73cb020bc042e1a6e41d174c10dddacd90f000d95b12"
+          },
+          {
+            "name": "spacing",
+            "title": "Spacing",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "CLOSE",
+              "MODERATE",
+              "SPACED"
+            ],
+            "subNames": [],
+            "blockSha256": "40fe128c45e68df621eb02a6ac16223184a5ca29def08852921593b7f4ac27fe"
+          },
+          {
+            "name": "aggressionTraits",
+            "title": "Aggression Traits",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "SWEEPER",
+              "ALLELOPATHY",
+              "STING"
+            ],
+            "subNames": [],
+            "blockSha256": "34fe656d9643b18f9cda61f69fb56a3ba5ed61aa90661b59e4b84652f0ba263f"
+          },
+          {
+            "name": "coralNeighbors",
+            "title": "Coral Neighbors",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "coralNeighborEntry"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "503edfae9beb99d72e542eb933c094fb3b63e9219519405a2dd385bc5c240dc6"
+          },
+          {
+            "name": "knowledgeBody",
+            "title": "Knowledge Body",
+            "type": "coralKnowledgeBody",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0c121f293d6fe617c0b892d527d3df26f9d366c30938dbbc9251285d324d1bdf"
+          }
+        ]
+      },
+      {
+        "file": "equipment.ts",
+        "fileSha256": "bc10f9bd3593b832dda6fcdf39f85da7cc7577c49457ebc9405b5cc9d9685d78",
+        "typeName": "equipment",
+        "typeTitle": "Equipment",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "bb23349f6965225fd654ea59f17df041862b540671e39ddfd1b9b4aa6e51823b"
+          },
+          {
+            "name": "brand",
+            "title": "Brand",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "5387dfb5eedb85ed939b7ccca1a8d3fd981a0db2fa1cac41f3a8454d54f6c399"
+          },
+          {
+            "name": "model",
+            "title": "Model",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "882c8d6c9832ca8e2cfe37d3bff743806170ae5086384186a22c91bf21a92544"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "1871b2e1d65943c0e34ff6de27528ed7b72fa48aa6c45df9d8cd79621cc50082"
+          },
+          {
+            "name": "category",
+            "title": "Category",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "Filter",
+              "Light",
+              "Pump",
+              "Heater",
+              "CO₂ System",
+              "Substrate",
+              "Test Kit",
+              "Other"
+            ],
+            "subNames": [],
+            "blockSha256": "8184d1ae79ec9d69eb1242d5c290b1f923e888f4da69224f9fe7a9476bdc0b3c"
+          },
+          {
+            "name": "excerpt",
+            "title": "Excerpt",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "57ceaf941d127d0583b987add4c577c2dc28e76b5d7574365ca90f4c8b7ef62f"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "flowRateLh",
+            "title": "Flow Rate (L/h)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4291a51eeedd0947cbf3a02e0e3cf07d24b6e6920742fece17801e965fc214ac"
+          },
+          {
+            "name": "powerW",
+            "title": "Power (W)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3f7d513547ddc3755af3500d0a196da2aeff8860fd804eecf56ee39903939be5"
+          },
+          {
+            "name": "tankSizeMinL",
+            "title": "Suitable Tank Min (L)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "14b95da7e6820b6885e0aa8d979a94d9b86b1254b9ad7cc05d7a50fa0e77c8a2"
+          },
+          {
+            "name": "tankSizeMaxL",
+            "title": "Suitable Tank Max (L)",
+            "type": "number",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "510a6e7bd116701296d4866a597f18fffc9911357adb9ec87c17689144f2dc32"
+          },
+          {
+            "name": "aquariumStyle",
+            "title": "Aquarium Style",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "Community",
+              "Community",
+              "Planted",
+              "Planted",
+              "Low-Tech",
+              "Low-Tech",
+              "High-Tech / CO2",
+              "High-Tech / CO2",
+              "Aquascaping",
+              "Aquascaping",
+              "Mixed Reef",
+              "Mixed Reef",
+              "SPS Reef",
+              "SPS Reef",
+              "Fish Only",
+              "Fish Only",
+              "FOWLR",
+              "FOWLR",
+              "Pond / Outdoor",
+              "Pond / Outdoor"
+            ],
+            "subNames": [],
+            "blockSha256": "b832d62d7c381fe29430522857caf44f31026e5295619346b60d849713f1d253"
+          },
+          {
+            "name": "pros",
+            "title": "Pros",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2343da7f6b60a2c41a0161189c001f096f3ae1cf94cffcf0e3c18c810319491d"
+          },
+          {
+            "name": "cons",
+            "title": "Cons",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "99ea8107f75596628fef493ee43fdd32beafd41aab8e621b37be6165ec188bf7"
+          },
+          {
+            "name": "mainImage",
+            "title": "Main Image",
+            "type": "image",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd755be969f7591323e2269505276ee647f33963e071d78d44b3fca5dd902dd5"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3e84e82f7ad807205fb6af68727b451c7c601c0801793ae4bc2fbae26421cc6e"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type Suitability",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "both"
+            ],
+            "subNames": [],
+            "blockSha256": "d91401b68ac7d610f3ab801c2e6845855bee98094f44b0d6ac3972bdd28b5b30"
+          },
+          {
+            "name": "turnoverPerH",
+            "title": "Turnover per Hour (x)",
+            "type": "number",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "953920b908f4ca5fb3ec4e3e4a6f7dfac7c4c6321dc13521208bb1703fa0e5c3"
+          },
+          {
+            "name": "ratedCapacity",
+            "title": "Rated Capacity",
+            "type": "object",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [
+              "value",
+              "unit",
+              "basis"
+            ],
+            "blockSha256": "f9c10febe0161f5b92a2583369add7efd65e0f71742127e33518dc0d2c96a930"
+          },
+          {
+            "name": "compatibleEquipment",
+            "title": "Compatible Equipment",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "equipment"
+            ],
+            "to": [
+              "equipment"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8d2bd83155c534f43870af94e80e1794dc0ad89e1e5cff5d073d7fb293da91fb"
+          },
+          {
+            "name": "relatedProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "problem"
+            ],
+            "to": [
+              "problem"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "389d219ff21414a934e2ebbf155c074722d97a5f593e21930b214ae11b7f4a15"
+          },
+          {
+            "name": "knowledgeBody",
+            "title": "Knowledge Body",
+            "type": "equipmentKnowledgeBody",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "7bab8b7c17792bd85716a69af5f7325fe390160cd7c04632dc3894bfccadad4b"
+          }
+        ]
+      },
+      {
+        "file": "problem.ts",
+        "fileSha256": "cea94ebdf7346d044a53ac85f4922725fc898684bf921545f32329e043dee4f7",
+        "typeName": "problem",
+        "typeTitle": "Aquarium Problem",
+        "jsonType": "document",
+        "groups": [],
+        "fields": [
+          {
+            "name": "title",
+            "title": "Problem Title",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ff1c557ba1a4b4a418cfa52a3372b623a99d14dce486a1a91a485d4912e5c15"
+          },
+          {
+            "name": "slug",
+            "title": "Slug",
+            "type": "slug",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ae348ce816f6020095a2ead79cc87c39084915160b92fde2206afaca38ae5c5b"
+          },
+          {
+            "name": "excerpt",
+            "title": "Short Description",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "694c0a6186f6fda3aaa83d50337eb5ebbe3a2feb1bbff0d9d6472104b48fd112"
+          },
+          {
+            "name": "publishedAt",
+            "title": "Published at",
+            "type": "datetime",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4c290af3d3bfb8751c3b63f94d1cc6f1b55ef56d782e5bad96267ffff765ffa5"
+          },
+          {
+            "name": "category",
+            "title": "Category",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "water",
+              "algae",
+              "plants",
+              "fish",
+              "equipment"
+            ],
+            "subNames": [],
+            "blockSha256": "40dfb94bb2ae155a799ee2d30a9fcae8a389042d172342f74c59cde69730495f"
+          },
+          {
+            "name": "waterType",
+            "title": "Water Type",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "freshwater",
+              "saltwater",
+              "both"
+            ],
+            "subNames": [],
+            "blockSha256": "e95cbf8078e3fc1a5bd7b0d5f3f2308339e6497bebef8795a5b2ab3225d888cb"
+          },
+          {
+            "name": "symptoms",
+            "title": "Symptoms",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "eab6fbfb7c1e5781b5f4774ab5d0d00227f62948cf6255d3b5c0c6eceb26f9e2"
+          },
+          {
+            "name": "causes",
+            "title": "Common Causes",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0f9770530b3c7608ec0172a97bb35a77f9677e08294466afd872db3fcd485c33"
+          },
+          {
+            "name": "whatToCheck",
+            "title": "What to Check",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "617a2a014b248c6827f7bd8d19b458172ed3c31bf95029c94b98434ee7b71094"
+          },
+          {
+            "name": "whatNotToDo",
+            "title": "What Not to Do",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "801977d7a47986ef9d2ee2d28b67d9376155cc6493d6fadbf0208f5ca466ce4d"
+          },
+          {
+            "name": "relatedPosts",
+            "title": "Related Posts",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "post"
+            ],
+            "to": [
+              "post"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3e84e82f7ad807205fb6af68727b451c7c601c0801793ae4bc2fbae26421cc6e"
+          },
+          {
+            "name": "relatedTools",
+            "title": "Related Tools",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "reference",
+              "tool"
+            ],
+            "to": [
+              "tool"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9e2cd4180d106fb2e48e1497f4cc0a1dfa82ad63e53d5a1cc66c4ff1a655573b"
+          },
+          {
+            "name": "howToDistinguish",
+            "title": "How to Distinguish",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "23681298321c4cc1f04b836fad6b150091fe9477e054f4a8691a550d632a7445"
+          },
+          {
+            "name": "immediateAction",
+            "title": "Immediate Action",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "43b9598d184505db756c0fbdabbb8cf1dfce9ee2040b98afe8214d0a15ab666a"
+          },
+          {
+            "name": "treatment",
+            "title": "Treatment / Correction",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8543698b335e6dd5fdd895c6a65cca6c6cf62cc326ff5a9365dee9feac483016"
+          },
+          {
+            "name": "recovery",
+            "title": "Recovery",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "47d80d85312b7b445f4872738b5b0d3817e7212eaf141b98346de940bc6bb9f9"
+          },
+          {
+            "name": "prevention",
+            "title": "Prevention",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "1e147b4e2cfd908d140d350906cb6acade52cdf683ec6797f1254774613c31d0"
+          },
+          {
+            "name": "monitoring",
+            "title": "Monitoring",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f4971d63dae0b47e3c6380335ac669178e79f94034ae73a420553b241eb9a6ac"
+          },
+          {
+            "name": "escalation",
+            "title": "Escalation",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f3f5dee8a05e750e58e07e2e7b3b951b6b80b575a05c4929348bf0276f60eff1"
+          }
+        ]
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "acb71f4f09ddbf9e11a6fac54c0a1162841f68bc162d75e22f17ed1209485269",
+        "typeName": "compatibleEntry",
+        "typeTitle": "Compatible Species Entry",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "ref",
+            "title": "Species",
+            "type": "reference",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [
+              "species"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f223655938dd559e0cc213e2ba2b38aaf24e02d4650e6fdde755a9ee5d526666"
+          },
+          {
+            "name": "conditions",
+            "title": "Conditions",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f6129685a02d3614c42590e16a545db987dd3695e6df6a36339e911fd1cb9893"
+          },
+          {
+            "name": "confidence",
+            "title": "Confidence",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNVERIFIED"
+            ],
+            "subNames": [],
+            "blockSha256": "9d12cd6736f8027fb773537226dfb31f26464656b128df584ff2c2cda6eee54c"
+          },
+          {
+            "name": "evidenceNote",
+            "title": "Evidence Note",
+            "type": "text",
+            "group": null,
+            "hasValidation": true,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "55d65409f1de5ecae357f450143f3405cab18d3954a281b74ea83b26019ce696"
+          }
+        ],
+        "exportName": "compatibleEntry"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "e5abbf391965100e31f70997a0fa808dec542d8aafb418bd8b96b5ff4b86b910",
+        "typeName": "incompatibleEntry",
+        "typeTitle": "Incompatible Species Entry",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "ref",
+            "title": "Species",
+            "type": "reference",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [
+              "species"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f223655938dd559e0cc213e2ba2b38aaf24e02d4650e6fdde755a9ee5d526666"
+          },
+          {
+            "name": "reason",
+            "title": "Reason",
+            "type": "string",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "predation",
+              "temperament",
+              "size",
+              "water"
+            ],
+            "subNames": [],
+            "blockSha256": "26b5e20db18fd9943ea32f2a5e3256b5bfc08f8f409ab70b97a59420a704020a"
+          }
+        ],
+        "exportName": "incompatibleEntry"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "988ace8ed7f6cc2b333fe25a96cb0de13adef09e67688e922033a7a4abbe1cb5",
+        "typeName": "predatorPreyEntry",
+        "typeTitle": "Predator / Prey Entry",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "ref",
+            "title": "Prey",
+            "type": "reference",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [
+              "species",
+              "invertebrate"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9951c8f054d4690f44bf9e7f4249b32ebd353a8380236b9206c977ffe749caf8"
+          },
+          {
+            "name": "sizeCondition",
+            "title": "Size Condition",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cfde4a64f682216db203bdf949c71e29ec1fcdd8f2d29b9dd44bd72b95757dc7"
+          },
+          {
+            "name": "evidenceNote",
+            "title": "Evidence Note",
+            "type": "text",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "066ff91855ffd2f81e15ae23bb3d551121fc2afb92a573e8e7a61d1b1ebcd6c5"
+          }
+        ],
+        "exportName": "predatorPreyEntry"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "7592656e0b728c31f046d5aa1e00be4144397f92b3ce6d47f197079212f52a47",
+        "typeName": "reefInteractionEntry",
+        "typeTitle": "Reef Interaction Detail Entry",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "coral",
+            "title": "Coral",
+            "type": "reference",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [
+              "coral"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "26d1cd2692b46ce8bda2f833ce994decc1cb403a889fae2de44d4a0a08817789"
+          },
+          {
+            "name": "tier",
+            "title": "Tier",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "REEF_SAFE",
+              "CAUTION",
+              "SPECIES_DEPENDENT",
+              "NOT_REEF_SAFE"
+            ],
+            "subNames": [],
+            "blockSha256": "ddf915e4fce3a5b2bfa2fe79efe0111e5cd91073bfb8e325b35c19fb3b997493"
+          },
+          {
+            "name": "targets",
+            "title": "Targets",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "string"
+            ],
+            "to": [],
+            "listValues": [
+              "soft",
+              "lps",
+              "sps",
+              "nps"
+            ],
+            "subNames": [],
+            "blockSha256": "1f9c0b6d19e3f2804195bd1b8d08f9419a970c513dca915361118401c0910084"
+          },
+          {
+            "name": "frequency",
+            "title": "Frequency",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "e3ff844d440bd65908966b15c4071cb578b31f0a10dfe291a3d269b6e0ecd9c5"
+          },
+          {
+            "name": "monitoring",
+            "title": "Monitoring",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "647a19b3e1ac9de8e0dc4636b6ffa92cca7ea6537fd42a1c310fc4192634ab2e"
+          }
+        ],
+        "exportName": "reefInteractionEntry"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "3f0413e9be1d80e2b74b02dbe351d3705e6ecd1b86e3ef8046671d009d147095",
+        "typeName": "coralNeighborEntry",
+        "typeTitle": "Coral Neighbor Entry",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "ref",
+            "title": "Coral",
+            "type": "reference",
+            "group": null,
+            "hasValidation": true,
+            "required": true,
+            "of": [],
+            "to": [
+              "coral"
+            ],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "062722b446e003d63422c03404f73a8e666f33b18d1a3f904357ba34d2abd62d"
+          },
+          {
+            "name": "relation",
+            "title": "Relation",
+            "type": "string",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [
+              "SWEEP",
+              "STING",
+              "SHADE",
+              "ALLELOPATHY",
+              "OVERGROW"
+            ],
+            "subNames": [],
+            "blockSha256": "bed2b02c4178e93f6a606f285e92e87033671e348d72bdcb6c63d1205dee1e33"
+          },
+          {
+            "name": "evidenceNote",
+            "title": "Distance / Evidence Note",
+            "type": "text",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "03b9bd13a6adc8443d367de84a25eb1c30c9284d7673e3bf30956a372f957a13"
+          }
+        ],
+        "exportName": "coralNeighborEntry"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "2343d73757b8a8113f476ed2b6d0102ee92ce13dde191581a2397cfda4dc56c1",
+        "typeName": "speciesKnowledgeBody",
+        "typeTitle": "Species Knowledge Body",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "overview",
+            "title": "Overview",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd4a574d13d69355050936ab1aadf4702daaec438702dda9ab9769ae9f86ab76"
+          },
+          {
+            "name": "adultSizeGrowth",
+            "title": "Adult Size & Growth",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "0e65cc365e6dc63bcc0d387cecfeadd379ce5c9f3b8f2b4364cf84be00e68f04"
+          },
+          {
+            "name": "behavior",
+            "title": "Behavior",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "8fb0b8ae04d1c435a296937280dc9d4cec7053bead800e34784a43e944966cc3"
+          },
+          {
+            "name": "tankRequirements",
+            "title": "Tank Requirements",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "176634740574d566ab2252efd8c940d2231469caa59adf1cd5feceff6353b0ed"
+          },
+          {
+            "name": "swimmingSpaceFootprint",
+            "title": "Swimming Space & Footprint",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "7afa187b6d89312f62d7aeceab38a7ca2f8a269d9a8b60c01df4f582c29318fd"
+          },
+          {
+            "name": "waterParameters",
+            "title": "Water Parameters",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d9639cb8840dfb4a5dfa6ce4b16d57b2907d5d029fde398f075216056d9bf837"
+          },
+          {
+            "name": "feeding",
+            "title": "Feeding",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "94a1cb3578b7b95a0f798bcfc1723b4e9879a0d4fdf551512dce08e7b840ff82"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fd6a444b9c18c976e1b4f9b90f21138d5531422e0c594896dd46bdd02a0b8f7a"
+          },
+          {
+            "name": "specialRequirements",
+            "title": "Special Requirements",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9a1d29e1c45fed99993936528a7191069fe4ddb0923a1adaaef3f5c0246df312"
+          },
+          {
+            "name": "commonProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "afdf55ce3dfa44010f92dc3ae97a4800c9ea89801c349f90bed1f5f86a229e18"
+          },
+          {
+            "name": "breeding",
+            "title": "Breeding (where applicable)",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "87c7b06248497f65151713ada93f1e353a026dee9d5ae0812819074a30f70d2e"
+          },
+          {
+            "name": "practicalVerdict",
+            "title": "Practical Verdict",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ab572c7b7e3d62e84197790cb5d21a177a283b9a8b710d5d9b757a94461ba41"
+          }
+        ],
+        "exportName": "speciesKnowledgeBody"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "960f7a9ffeba5ffad0b737a2af90a49122448bcaf5b23665f45349d841b0b880",
+        "typeName": "coralKnowledgeBody",
+        "typeTitle": "Coral Knowledge Body",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "overview",
+            "title": "Overview",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd4a574d13d69355050936ab1aadf4702daaec438702dda9ab9769ae9f86ab76"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c65c8efc9b18eaba11a1b5072e75ead7940412a03169e7be7ae6e2b8f9d6dba0"
+          },
+          {
+            "name": "lightingPar",
+            "title": "Lighting & PAR",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "edbb934f5db86faf7aa179f1a9544dd113194c05da682e4f910f5a84c11a93c7"
+          },
+          {
+            "name": "flow",
+            "title": "Flow",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "10839557cdaabfbef0ac0b3e5a5dcacabbc87697cfa015866a85ca6f0c113ad7"
+          },
+          {
+            "name": "waterChemistry",
+            "title": "Water Chemistry",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d5bd5ccde25fa99f3ea5521a6eabdaf5e2a586f8b10d252c8184330b9714a54b"
+          },
+          {
+            "name": "nutrition",
+            "title": "Nutrition",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f251b4fcd8a1cb32b8295faa783d6764e7e9a35cdfb27f82d23b1190ecb5144c"
+          },
+          {
+            "name": "growth",
+            "title": "Growth",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "5ecb55aba183774f549ce79bdedb6cfffc8042cbbb39094e0c7061aff76f630d"
+          },
+          {
+            "name": "aggressionSpacing",
+            "title": "Aggression & Spacing",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3fdf536cbc7ef9b90ba1727c212e08d611994c5458995f76321ae2c4731c7b14"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fd6a444b9c18c976e1b4f9b90f21138d5531422e0c594896dd46bdd02a0b8f7a"
+          },
+          {
+            "name": "commonProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "afdf55ce3dfa44010f92dc3ae97a4800c9ea89801c349f90bed1f5f86a229e18"
+          },
+          {
+            "name": "acclimation",
+            "title": "Acclimation",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "80b5acc1a7ca11174b2675cd9e6a54ba43d914357fc4dc78e1ecf662d574bd89"
+          },
+          {
+            "name": "practicalVerdict",
+            "title": "Practical Verdict",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ab572c7b7e3d62e84197790cb5d21a177a283b9a8b710d5d9b757a94461ba41"
+          },
+          {
+            "name": "lightingRisks",
+            "title": "Lighting Risks",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "dd291adee0cb93f4fc5d1bb230b4135ed17752c01b59b1aa0400947e88282f78"
+          },
+          {
+            "name": "reefCaveats",
+            "title": "Reef Caveats",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "4d24c58f5c12965094d2b88db0d019547100f5943ea0806eada5498631ad7d4d"
+          },
+          {
+            "name": "chemistryProblems",
+            "title": "Chemistry Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "629f5f243a882d4221bb36f5bf5399a9d1dc9fb7b1e71690208e58aafe4487c0"
+          }
+        ],
+        "exportName": "coralKnowledgeBody"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "ff514d36896acb91e8225f3ef69bec63a8c7ae4a48b3ca1a7093556f2c381976",
+        "typeName": "plantKnowledgeBody",
+        "typeTitle": "Plant Knowledge Body",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "overview",
+            "title": "Overview",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd4a574d13d69355050936ab1aadf4702daaec438702dda9ab9769ae9f86ab76"
+          },
+          {
+            "name": "light",
+            "title": "Light",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "9ab3216bc45734914a940a47f0d0a59cc64d8ed00fe5214e7b547c089c33dd24"
+          },
+          {
+            "name": "co2",
+            "title": "CO2",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "f35f9bdf1721040abe3d4e96771fb90a2e973ae6fd2ed39c8227e56dbeb3253c"
+          },
+          {
+            "name": "nutrients",
+            "title": "Nutrients",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2dde763b4ab22f058f1158a81fc6977b44d586db8ff8799ae4c3365b464a09d2"
+          },
+          {
+            "name": "substrate",
+            "title": "Substrate",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6e16a48fbef9c9e0eed0b395a132572bb34298f14647b2413cfc76a7e49c11ae"
+          },
+          {
+            "name": "placement",
+            "title": "Placement",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "c65c8efc9b18eaba11a1b5072e75ead7940412a03169e7be7ae6e2b8f9d6dba0"
+          },
+          {
+            "name": "growthAndTrimming",
+            "title": "Growth & Trimming",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "3d932ba7f916f7f48d3cc2aa63b291bd588fd8d43a4a567f54de6d0db76cccc7"
+          },
+          {
+            "name": "waterParameters",
+            "title": "Water Parameters",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d9639cb8840dfb4a5dfa6ce4b16d57b2907d5d029fde398f075216056d9bf837"
+          },
+          {
+            "name": "commonDeficiencies",
+            "title": "Common Deficiencies",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d93e6f60de4acaf9ee9938cc7ebe7fdde2917d4d914b6b733122ac88d8027286"
+          },
+          {
+            "name": "algaeSensitivity",
+            "title": "Algae Sensitivity",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "7415483e0e40b51ea51ac1966ebfd53a8fcd23656cecbb0c5f694a687a795066"
+          },
+          {
+            "name": "practicalVerdict",
+            "title": "Practical Verdict",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ab572c7b7e3d62e84197790cb5d21a177a283b9a8b710d5d9b757a94461ba41"
+          },
+          {
+            "name": "commonProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "afdf55ce3dfa44010f92dc3ae97a4800c9ea89801c349f90bed1f5f86a229e18"
+          },
+          {
+            "name": "transition",
+            "title": "Transition",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "41db9c9ea1d743caee7746f1c1f5a6e8fb5f44f2d7e3bbbb5104b2958a0e5b70"
+          }
+        ],
+        "exportName": "plantKnowledgeBody"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "bd8142e08d7212c84c92b3dad673e15a97620291d6f8e4d74ee598e07ac49fb2",
+        "typeName": "invertebrateKnowledgeBody",
+        "typeTitle": "Invertebrate Knowledge Body",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "overview",
+            "title": "Overview",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "cd4a574d13d69355050936ab1aadf4702daaec438702dda9ab9769ae9f86ab76"
+          },
+          {
+            "name": "tankRequirements",
+            "title": "Tank Requirements",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "176634740574d566ab2252efd8c940d2231469caa59adf1cd5feceff6353b0ed"
+          },
+          {
+            "name": "waterParameters",
+            "title": "Water Parameters",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d9639cb8840dfb4a5dfa6ce4b16d57b2907d5d029fde398f075216056d9bf837"
+          },
+          {
+            "name": "dietAndFeeding",
+            "title": "Diet & Feeding",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "11fb6247a38d8864fa41ccc1e99e1e4dcc17a02a62b411807b35a8e2d218f554"
+          },
+          {
+            "name": "molting",
+            "title": "Molting / Growth",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "daa3b7bcab8337ee366bc9ab5651e9ae9846f79f500283a5ed0ca8229f54475e"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fd6a444b9c18c976e1b4f9b90f21138d5531422e0c594896dd46bdd02a0b8f7a"
+          },
+          {
+            "name": "predators",
+            "title": "Predators",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "11ba2c5ae88ea2e755e7e987fac93b2dc8654647656b3298bbb1f5da45a6c8c2"
+          },
+          {
+            "name": "maturityBiofilm",
+            "title": "Maturity / Biofilm",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "b7e33509b4a2f26c3654a54016d16852ac2f47bc642e7c7d658209c5e917e146"
+          },
+          {
+            "name": "breeding",
+            "title": "Breeding",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "19de41f7a62db5dcd75514857605466347e088122318cfcd3401a0fed2eebd44"
+          },
+          {
+            "name": "commonProblems",
+            "title": "Common Problems",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "afdf55ce3dfa44010f92dc3ae97a4800c9ea89801c349f90bed1f5f86a229e18"
+          },
+          {
+            "name": "practicalVerdict",
+            "title": "Practical Verdict",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ab572c7b7e3d62e84197790cb5d21a177a283b9a8b710d5d9b757a94461ba41"
+          }
+        ],
+        "exportName": "invertebrateKnowledgeBody"
+      },
+      {
+        "file": "knowledgeStructures.ts",
+        "fileSha256": "902bd0d03e47a27cc300c81d88c09344ccf365d7cb62322a8cca3ff0e0b3da5b",
+        "typeName": "equipmentKnowledgeBody",
+        "typeTitle": "Equipment Knowledge Body",
+        "jsonType": "object",
+        "groups": [],
+        "fields": [
+          {
+            "name": "whatItDoes",
+            "title": "What It Does",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "44be8d89946f577831134764fcd8e04ef07cc49eb7e69c4796cf7be5897a2fac"
+          },
+          {
+            "name": "specifications",
+            "title": "Specifications",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "2796ef361a6e7f7a67f40dc2e542de16a6ed36e0fcff20bafcbd3c75b2989182"
+          },
+          {
+            "name": "realWorldCapacity",
+            "title": "Real-World Capacity",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "bdccac8e85c578bbab4e1c2701844e3706a221eee3f534ee8bb3419b8691c421"
+          },
+          {
+            "name": "bestUse",
+            "title": "Best Use",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "76a7a226ea58f2983c47f8e806228fe5dea4ee022fd522fc4f2afa9c4e4b4659"
+          },
+          {
+            "name": "limitations",
+            "title": "Limitations",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "283c379b9a27dc67c0a401cacaa97603e0b308c2de2fa6843241e436fadc0e86"
+          },
+          {
+            "name": "compatibility",
+            "title": "Compatibility",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "fd6a444b9c18c976e1b4f9b90f21138d5531422e0c594896dd46bdd02a0b8f7a"
+          },
+          {
+            "name": "maintenance",
+            "title": "Maintenance",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "d4ca6deb6d87c93593b86e988d2d65e3602425031407a3a09edb1a98e4c74e29"
+          },
+          {
+            "name": "failureModes",
+            "title": "Failure Modes",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "371786586788a6543c64c29591166aef52ba89b7ab1c283a6e4f587b90f40e17"
+          },
+          {
+            "name": "safety",
+            "title": "Safety",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "ab295c4330f75742fbec02cb81507ec22310e02710dd08154669783048f99b80"
+          },
+          {
+            "name": "practicalVerdict",
+            "title": "Practical Verdict",
+            "type": "array",
+            "group": null,
+            "hasValidation": false,
+            "required": false,
+            "of": [
+              "block"
+            ],
+            "to": [],
+            "listValues": [],
+            "subNames": [],
+            "blockSha256": "6ab572c7b7e3d62e84197790cb5d21a177a283b9a8b710d5d9b757a94461ba41"
+          }
+        ],
+        "exportName": "equipmentKnowledgeBody"
+      }
+    ],
+    "totals": {
+      "types": 16,
+      "fields": 308,
+      "docFields": 230,
+      "newStructures": 10
+    }
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0",
+    "mode": "SCHEMA CODE ONLY - schema not deployed; Sanity content untouched"
+  },
+  "note": "Inventory captured AFTER SPEC 10M schema code changes, before any deployment. Content untouched."
+}

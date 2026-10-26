@@ -1,0 +1,52 @@
+{
+  "specId": "SPEC_12B",
+  "artifact": "INTEGRITY",
+  "generatedAt": "2026-10-19T02:35:51.183Z",
+  "mode": "CONTROLLED PRODUCTION WRITE (allowlisted 22 compatibleSpecies add-if-absent ops only)",
+  "content_mutations": {
+    "documentsPatched": 2,
+    "field": "compatibleSpecies",
+    "opsApplied": 22,
+    "opsSkipped": 0,
+    "opsHeldConflict": 0,
+    "opsUncertain": 0
+  },
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "draftCount": 0,
+  "duplicate": {
+    "dupIds": 0,
+    "dupSlugs": 0
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "relationships": {
+    "edgesBefore": 3151,
+    "edgesAfter": 3173,
+    "added": 22,
+    "lost": 0
+  },
+  "scopeConfirmation": {
+    "onlyCompatibleSpeciesChanged": true,
+    "noHeldRowsPromoted": true,
+    "noSchemaChange": true,
+    "noDeploy": true,
+    "exactEntriesPlanned": 22,
+    "exactEntriesVerified": 22
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0"
+  }
+}

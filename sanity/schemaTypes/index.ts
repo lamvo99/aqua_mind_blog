@@ -14,6 +14,18 @@ import inspiration from './inspiration'
 import collection from './collection'
 import subscriber from './subscriber'
 import table from './table'
+import {
+  compatibleEntry,
+  incompatibleEntry,
+  predatorPreyEntry,
+  reefInteractionEntry,
+  coralNeighborEntry,
+  speciesKnowledgeBody,
+  coralKnowledgeBody,
+  plantKnowledgeBody,
+  invertebrateKnowledgeBody,
+  equipmentKnowledgeBody,
+} from './knowledgeStructures'
 
 export const schemaTypes: SchemaTypeDefinition[] = [
   author,
@@ -31,4 +43,14 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   collection,
   subscriber,
   table,
+  compatibleEntry,
+  incompatibleEntry,
+  predatorPreyEntry,
+  reefInteractionEntry,
+  coralNeighborEntry,
+  speciesKnowledgeBody,
+  coralKnowledgeBody,
+  plantKnowledgeBody,
+  invertebrateKnowledgeBody,
+  equipmentKnowledgeBody,
 ]

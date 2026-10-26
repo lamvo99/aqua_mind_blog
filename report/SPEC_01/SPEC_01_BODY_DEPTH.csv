@@ -1,0 +1,44 @@
+record_id,title,exists,block_count,text_block_count,heading_count,list_count,link_count,image_count,malformed_blocks,unsupported_blocks,word_count,symptoms_blocks,causes_blocks,whatToCheck_blocks,whatNotToDo_blocks
+BruaGKYCGDRQjkiQDnlsx5,Fin Rot,TRUE,11,11,0,11,0,0,0,0,64,3,3,3,2
+BruaGKYCGDRQjkiQDnlszk,Old Tank Syndrome,TRUE,11,11,0,11,0,0,0,0,67,3,3,3,2
+BruaGKYCGDRQjkiQDnlt2P,Hair Algae,TRUE,11,11,0,11,0,0,0,0,70,3,3,3,2
+BruaGKYCGDRQjkiQDnlt54,Staghorn Algae,TRUE,11,11,0,11,0,0,0,0,60,3,3,3,2
+BruaGKYCGDRQjkiQDnlt7j,Plant Nutrient Deficiency,TRUE,11,11,0,11,0,0,0,0,65,3,3,3,2
+BruaGKYCGDRQjkiQDnltAO,Dropsy,TRUE,11,11,0,11,0,0,0,0,57,3,3,3,2
+BruaGKYCGDRQjkiQDnltD3,Temperature Shock,TRUE,11,11,0,11,0,0,0,0,70,3,3,3,2
+BruaGKYCGDRQjkiQDnltFi,Filter Crash,TRUE,11,11,0,11,0,0,0,0,65,3,3,3,2
+I9bI8W8ZWcEwyIzM9DFYjI,Columnaris (Cotton Mouth),TRUE,11,11,0,11,0,0,0,0,155,3,3,3,2
+I9bI8W8ZWcEwyIzM9DFYtM,Planaria Infestation,TRUE,11,11,0,11,0,0,0,0,134,3,3,3,2
+I9bI8W8ZWcEwyIzM9DNIu8,Black Beard Algae (BBA),TRUE,11,11,0,11,0,0,0,0,159,3,3,3,2
+IlX7xILobrukz7d5JnvacY,Velvet Disease (Oodinium),TRUE,11,11,0,11,0,0,0,0,150,3,3,3,2
+IlX7xILobrukz7d5Jo2qVy,Fish Lice (Argulus),TRUE,11,11,0,11,0,0,0,0,132,3,3,3,2
+IlX7xILobrukz7d5Jo2qgo,Dinoflagellates,TRUE,11,11,0,11,0,0,0,0,146,3,3,3,2
+IlX7xILobrukz7d5Jo2wxC,Hole in the Head Disease,TRUE,11,11,0,11,0,0,0,0,132,3,3,3,2
+IlX7xILobrukz7d5Jo2xIs,Saprolegnia (Water Mold),TRUE,11,11,0,11,0,0,0,0,130,3,3,3,2
+J1Tx0fWCuGNPno99A79Tvf,Hydra Infestation,TRUE,11,11,0,11,0,0,0,0,111,3,3,3,2
+J1Tx0fWCuGNPno99A7AE36,Ich (White Spot Disease),TRUE,11,11,0,11,0,0,0,0,143,3,3,3,2
+J1Tx0fWCuGNPno99A7AEDM,Swim Bladder Disease,TRUE,11,11,0,11,0,0,0,0,111,3,3,3,2
+J1Tx0fWCuGNPno99A7KJcq,Flukes (Gill and Skin Parasites),TRUE,11,11,0,11,0,0,0,0,118,3,3,3,2
+J1Tx0fWCuGNPno99A7KJpf,Anchor Worm (Lernaea),TRUE,11,11,0,11,0,0,0,0,129,3,3,3,2
+J1Tx0fWCuGNPno99A7KutT,Pop Eye (Exophthalmia),TRUE,11,11,0,11,0,0,0,0,115,3,3,3,2
+problem-aiptasia-infestation,Aiptasia Infestation,TRUE,11,11,0,11,0,0,0,0,108,3,3,3,2
+problem-brown-diatom-algae,Brown Diatom Algae,TRUE,11,11,0,11,0,0,0,0,60,3,3,3,2
+problem-brown-jelly-disease,Brown Jelly Disease,TRUE,11,11,0,11,0,0,0,0,112,3,3,3,2
+problem-cloudy-water,Cloudy Water,TRUE,14,14,0,14,0,0,0,0,86,3,4,4,3
+problem-coral-bleaching,Coral Bleaching,TRUE,11,11,0,11,0,0,0,0,120,3,3,3,2
+problem-cyanobacteria,Cyanobacteria (Blue-Green Slime),TRUE,13,13,0,13,0,0,0,0,57,3,4,4,2
+problem-fish-gasping-surface,Fish Gasping at Surface,TRUE,13,13,0,13,0,0,0,0,60,3,4,4,2
+problem-fish-hiding,Fish Hiding or Chronic Stress,TRUE,14,14,0,14,0,0,0,0,67,4,4,4,2
+problem-green-water,Green Water Algae Bloom,TRUE,14,14,0,14,0,0,0,0,78,3,4,4,3
+problem-heater-stuck-off,Heater Stuck Off,TRUE,11,11,0,11,0,0,0,0,112,3,3,3,2
+problem-heater-stuck-on,Heater Stuck On,TRUE,11,11,0,11,0,0,0,0,114,3,3,3,2
+problem-high-ammonia,High Ammonia Poisoning,TRUE,14,14,0,14,0,0,0,0,66,4,4,4,2
+problem-high-nitrate,High Nitrate,TRUE,11,11,0,11,0,0,0,0,124,3,3,3,2
+problem-high-nitrite,High Nitrite,TRUE,11,11,0,11,0,0,0,0,107,3,3,3,2
+problem-low-filter-flow,Low Filter Flow,TRUE,13,13,0,13,0,0,0,0,68,3,4,4,2
+problem-ph-crash,pH Crash,TRUE,11,11,0,11,0,0,0,0,125,3,3,3,2
+problem-ph-drift,pH Drift,TRUE,11,11,0,11,0,0,0,0,114,3,3,3,2
+problem-plant-leaves-melting,Plant Leaves Melting,TRUE,11,11,0,11,0,0,0,0,67,3,3,3,2
+problem-rapid-tissue-necrosis-rtn,Rapid Tissue Necrosis (RTN),TRUE,11,11,0,11,0,0,0,0,132,3,3,3,2
+problem-slow-tissue-necrosis-stn,Slow Tissue Necrosis (STN),TRUE,11,11,0,11,0,0,0,0,123,3,3,3,2
+problem-white-spot-disease,White Spot Disease (Ich),TRUE,12,12,0,12,0,0,0,0,62,3,3,3,3

@@ -1,0 +1,440 @@
+{
+  "specId": "SPEC_12A",
+  "artifact": "SPEC_12B_DRY_RUN_PLAN",
+  "generatedAt": "2026-10-18T12:55:35.752Z",
+  "mode": "OFFLINE PLAN ONLY - not executed",
+  "targetDataset": "production",
+  "targetProject": "zeohjejw",
+  "defaultOperation": "additive/idempotent array add only (never replace existing arrays)",
+  "operationCount": 22,
+  "simulated": {
+    "relationshipEdgesBefore": 3151,
+    "relationshipEdgesAfter": 3173,
+    "note": "SIMULATED - not a live change"
+  },
+  "idempotency": {
+    "duplicateEdgesOnReapply": 0,
+    "safeToReapply": true
+  },
+  "operations": [
+    {
+      "candidateId": "REL12A-0001",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCaV"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0002",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "sebdKYryWZgYP2rm3oquNG"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0003",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A6UR1F"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0004",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "IlX7xILobrukz7d5JnfjuY"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0005",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "I9bI8W8ZWcEwyIzM9Ci1Vw"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0006",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCJT"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0007",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "I9bI8W8ZWcEwyIzM9CuG2u"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0008",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A6hsP7"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0009",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0010",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCP9"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0011",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A6hq84"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0012",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCMJ"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0013",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "I9bI8W8ZWcEwyIzM9Cj9MC"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0014",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCdL"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0015",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A79RmJ"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0016",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCMJ"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0017",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCRz"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0018",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCP9"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0019",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A6hq84"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0020",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "J1Tx0fWCuGNPno99A6UR1F"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0021",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "IlX7xILobrukz7d5JnfjuY"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    },
+    {
+      "candidateId": "REL12A-0022",
+      "sourceType": "species",
+      "documentId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+      "path": "compatibleSpecies",
+      "action": "add-if-absent",
+      "value": {
+        "ref": {
+          "_type": "reference",
+          "_ref": "ofTl1CTOUWuLwM28PxTCJT"
+        },
+        "conditions": [
+          "peaceful community tank",
+          "avoid large, boisterous or aggressive tankmates"
+        ],
+        "confidence": "MEDIUM",
+        "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+      }
+    }
+  ],
+  "excludedNonRelationshipFields": true
+}

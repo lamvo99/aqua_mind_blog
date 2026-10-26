@@ -1,0 +1,140 @@
+{
+  "specId": "SPEC_10M",
+  "artifact": "BACKWARD_COMPATIBILITY",
+  "generatedAt": "2026-10-17T19:34:12.921Z",
+  "mode": "READ-ONLY live Sanity GET queries; no writes",
+  "baseline": {
+    "generatedAt": "2026-10-17T19:33:49.766Z",
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda"
+  },
+  "current": {
+    "counts": {
+      "species": 218,
+      "plant": 62,
+      "invertebrate": 56,
+      "coral": 48,
+      "equipment": 46,
+      "problem": 43
+    },
+    "total": 473,
+    "identityHash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "drafts": 0,
+    "duplicateSlugs": 0
+  },
+  "diffs": {
+    "fullDocumentChanged": 0,
+    "extra": 0,
+    "missing": 0,
+    "titles": 0,
+    "slugs": 0,
+    "categories": 0,
+    "relationships": 0,
+    "seo": 0,
+    "updatedAt": 0,
+    "newFieldKeyViolations": 0,
+    "newFieldKeyDetail": {},
+    "compatibleSpeciesNonEmpty": 0
+  },
+  "probes": {
+    "databaseProjection": {
+      "source": "lib/database.ts:115 (compatibleSpecies/Plants/Invertebrates/suitableEquipment/relatedProblems/relatedPosts projection)",
+      "slug": "fantail-goldfish",
+      "results": 1,
+      "ok": true
+    },
+    "compatibilityChecker": {
+      "source": "app/tools/compatibility-checker/page.tsx:34 (compatibleSpecies[]->slug.current)",
+      "results": 218,
+      "expected": 218,
+      "allCompatibleWithEmpty": true,
+      "ok": true
+    },
+    "queries": [
+      {
+        "query": "*[_type == \"species\" && slug.current == \"fantail-goldfish\"] {\n      _id, name, scientificName, slug,\n      compatibleSpecies[]->{ _id, name, slug, mainImage, excerpt },\n      compatiblePlants[]->{ _id, name, slug, mainImage, excerpt },\n      compatibleInvertebrates[]->{ _id, name, slug, mainImage, excerpt },\n      suitableEquipment[]->{ _id, name, slug, mainImage, category, brand },\n      relatedProblems[]->{ _id, title, slug, excerpt, category },\n      relatedPosts[]->{ _id, title, slug, excerpt, publishedAt, mainImage }\n    }"
+      },
+      {
+        "query": "*[_type == \"species\" && defined(slug) && defined(name)] | order(name asc) {\n      _id, name, scientificName, slug,\n      sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,\n      diet, temperament, waterZone, schooling, difficulty,\n      \"compatibleWith\": compatibleSpecies[]->slug.current\n    }"
+      }
+    ]
+  },
+  "sanityWrites": 0,
+  "checks": [
+    {
+      "id": "D-01",
+      "name": "post-change deterministic double-read identical (6 domains)",
+      "pass": true,
+      "detail": "mismatchedTypes=0"
+    },
+    {
+      "id": "D-02",
+      "name": "473 records / domain counts unchanged vs baseline",
+      "pass": true,
+      "detail": "total=473/473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "D-03",
+      "name": "drafts = 0 (dataset + wiki domains)",
+      "pass": true,
+      "detail": "wikiDrafts=0 datasetDrafts=0"
+    },
+    {
+      "id": "D-04",
+      "name": "duplicate slugs = 0",
+      "pass": true,
+      "detail": "duplicates=0 noSlug=0"
+    },
+    {
+      "id": "D-05",
+      "name": "canonical identity hash unchanged",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "D-06",
+      "name": "full-document diff vs pre-migration baseline = 0",
+      "pass": true,
+      "detail": "changed=0 extra=0 missing=0"
+    },
+    {
+      "id": "D-07",
+      "name": "titles/slugs/categories/relationships/SEO/_updatedAt all unchanged",
+      "pass": true,
+      "detail": "title=0 slug=0 cat=0 rel=0 seo=0 updated=0"
+    },
+    {
+      "id": "D-08",
+      "name": "approved new field keys absent-or-empty on all 473 documents",
+      "pass": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "D-09",
+      "name": "compatibleSpecies still empty on 218+56 (entry-shape change provably data-neutral)",
+      "pass": true,
+      "detail": "nonEmpty=0"
+    },
+    {
+      "id": "E-01",
+      "name": "database.ts species-detail projection executes unchanged (all ref keys present, null-or-array)",
+      "pass": true,
+      "detail": "slug=fantail-goldfish results=1"
+    },
+    {
+      "id": "E-02",
+      "name": "compatibility-checker GROQ executes unchanged; compatibleWith empty/null for every species",
+      "pass": true,
+      "detail": "results=218/218 nullCompatibleWith=218"
+    }
+  ],
+  "note": "Schema was NOT deployed to Sanity during this phase; live content is byte-identical to the pre-migration baseline."
+}

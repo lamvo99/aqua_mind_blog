@@ -1,0 +1,648 @@
+{
+  "specId": "SPEC_13A",
+  "artifact": "BASELINE",
+  "generatedAt": "2026-10-21T06:04:34.362Z",
+  "mode": "READ-ONLY (GET query only; no writes, no deploy)",
+  "target": {
+    "project": "zeohjejw",
+    "dataset": "production",
+    "api": "v2026-05-25"
+  },
+  "checks": [
+    {
+      "id": "A-01",
+      "name": "SPEC 12A report artifacts intact (code/test drift tracked separately)",
+      "pass": true,
+      "detail": "reports intact"
+    },
+    {
+      "id": "A-02",
+      "name": "SPEC 12B checksums valid",
+      "pass": true,
+      "detail": "{\"tracked\":10,\"mismatches\":0}"
+    },
+    {
+      "id": "A-04",
+      "name": "SPEC 12A non-report checksum drift documented",
+      "pass": true,
+      "detail": "drift=tests/spec12a-plan.test.ts (expected: test-file timeout edit from SPEC 12B)"
+    },
+    {
+      "id": "A-03",
+      "name": "required handoff artifacts present",
+      "pass": true,
+      "detail": "all present"
+    },
+    {
+      "id": "B-01",
+      "name": "record counts match handoff",
+      "pass": true,
+      "detail": "total=473 {\"species\":218,\"plant\":62,\"invertebrate\":56,\"coral\":48,\"equipment\":46,\"problem\":43}"
+    },
+    {
+      "id": "B-02",
+      "name": "drafts = 0",
+      "pass": true,
+      "detail": "datasetDrafts=0"
+    },
+    {
+      "id": "B-03",
+      "name": "duplicate _id = 0 and slug = 0",
+      "pass": true,
+      "detail": "dupIds=0 dupSlugs=0"
+    },
+    {
+      "id": "B-04",
+      "name": "canonical identity hash matches handoff",
+      "pass": true,
+      "detail": "MATCH"
+    },
+    {
+      "id": "B-05",
+      "name": "relationship edge count matches post-12B expectation",
+      "pass": true,
+      "detail": "edges=3173 expected=3173"
+    },
+    {
+      "id": "B-06",
+      "name": "no genuinely broken references",
+      "pass": true,
+      "detail": "broken=0 outOfScopeResolved=174"
+    }
+  ],
+  "counts": {
+    "species": 218,
+    "plant": 62,
+    "invertebrate": 56,
+    "coral": 48,
+    "equipment": 46,
+    "problem": 43
+  },
+  "total": 473,
+  "drafts": {
+    "datasetDrafts": 0
+  },
+  "duplicate": {
+    "dupIds": 0,
+    "dupSlugs": 0
+  },
+  "identity": {
+    "hash": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "expected": "c6e358d5524f46b7cd003db64c8e189fb0db12224b7301d68fbaf1257467aeda",
+    "match": true
+  },
+  "relationships": {
+    "totalEdges": 3173,
+    "expectedAfterSpec12B": 3173,
+    "deltaFromSpec12A": 22
+  },
+  "coverage": [
+    {
+      "sourceType": "species",
+      "field": "compatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "records": 218,
+      "recordsWithData": 2,
+      "emptyRecords": 216,
+      "edgeCount": 22
+    },
+    {
+      "sourceType": "species",
+      "field": "compatiblePlants",
+      "kind": "refArray",
+      "targets": "plant",
+      "records": 218,
+      "recordsWithData": 107,
+      "emptyRecords": 111,
+      "edgeCount": 535
+    },
+    {
+      "sourceType": "species",
+      "field": "compatibleInvertebrates",
+      "kind": "refArray",
+      "targets": "invertebrate",
+      "records": 218,
+      "recordsWithData": 100,
+      "emptyRecords": 118,
+      "edgeCount": 388
+    },
+    {
+      "sourceType": "species",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "records": 218,
+      "recordsWithData": 131,
+      "emptyRecords": 87,
+      "edgeCount": 654
+    },
+    {
+      "sourceType": "species",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "records": 218,
+      "recordsWithData": 131,
+      "emptyRecords": 87,
+      "edgeCount": 655
+    },
+    {
+      "sourceType": "species",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 218,
+      "recordsWithData": 38,
+      "emptyRecords": 180,
+      "edgeCount": 49
+    },
+    {
+      "sourceType": "species",
+      "field": "incompatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "records": 218,
+      "recordsWithData": 0,
+      "emptyRecords": 218,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "predatorPrey",
+      "kind": "objectArray",
+      "targets": "species|invertebrate",
+      "records": 218,
+      "recordsWithData": 0,
+      "emptyRecords": 218,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "reefInteractionDetail",
+      "kind": "objectArray",
+      "targets": "coral",
+      "records": 218,
+      "recordsWithData": 0,
+      "emptyRecords": 218,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "species",
+      "field": "parentSpecies",
+      "kind": "ref",
+      "targets": "species",
+      "records": 218,
+      "recordsWithData": 3,
+      "emptyRecords": 215,
+      "edgeCount": 3
+    },
+    {
+      "sourceType": "plant",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "records": 62,
+      "recordsWithData": 52,
+      "emptyRecords": 10,
+      "edgeCount": 208
+    },
+    {
+      "sourceType": "plant",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "records": 62,
+      "recordsWithData": 52,
+      "emptyRecords": 10,
+      "edgeCount": 156
+    },
+    {
+      "sourceType": "plant",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 62,
+      "recordsWithData": 26,
+      "emptyRecords": 36,
+      "edgeCount": 35
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "compatibleSpecies",
+      "kind": "objectArray",
+      "targets": "species",
+      "records": 56,
+      "recordsWithData": 0,
+      "emptyRecords": 56,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "records": 56,
+      "recordsWithData": 0,
+      "emptyRecords": 56,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "records": 56,
+      "recordsWithData": 42,
+      "emptyRecords": 14,
+      "edgeCount": 126
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 56,
+      "recordsWithData": 3,
+      "emptyRecords": 53,
+      "edgeCount": 5
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "predatorPrey",
+      "kind": "objectArray",
+      "targets": "species|invertebrate",
+      "records": 56,
+      "recordsWithData": 0,
+      "emptyRecords": 56,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "invertebrate",
+      "field": "parentSpecies",
+      "kind": "ref",
+      "targets": "species",
+      "records": 56,
+      "recordsWithData": 0,
+      "emptyRecords": 56,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "coral",
+      "field": "suitableEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "records": 48,
+      "recordsWithData": 36,
+      "emptyRecords": 12,
+      "edgeCount": 144
+    },
+    {
+      "sourceType": "coral",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "records": 48,
+      "recordsWithData": 36,
+      "emptyRecords": 12,
+      "edgeCount": 108
+    },
+    {
+      "sourceType": "coral",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 48,
+      "recordsWithData": 0,
+      "emptyRecords": 48,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "coral",
+      "field": "coralNeighbors",
+      "kind": "objectArray",
+      "targets": "coral",
+      "records": 48,
+      "recordsWithData": 0,
+      "emptyRecords": 48,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "compatibleEquipment",
+      "kind": "refArray",
+      "targets": "equipment",
+      "records": 46,
+      "recordsWithData": 0,
+      "emptyRecords": 46,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "relatedProblems",
+      "kind": "refArray",
+      "targets": "problem",
+      "records": 46,
+      "recordsWithData": 0,
+      "emptyRecords": 46,
+      "edgeCount": 0
+    },
+    {
+      "sourceType": "equipment",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 46,
+      "recordsWithData": 21,
+      "emptyRecords": 25,
+      "edgeCount": 36
+    },
+    {
+      "sourceType": "problem",
+      "field": "relatedTools",
+      "kind": "refArray",
+      "targets": "tool",
+      "records": 43,
+      "recordsWithData": 16,
+      "emptyRecords": 27,
+      "edgeCount": 16
+    },
+    {
+      "sourceType": "problem",
+      "field": "relatedPosts",
+      "kind": "refArray",
+      "targets": "post",
+      "records": 43,
+      "recordsWithData": 20,
+      "emptyRecords": 23,
+      "edgeCount": 33
+    }
+  ],
+  "entryObjectFamilies": {
+    "compatibleSpecies": [
+      {
+        "sourceType": "species",
+        "sourceId": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+        "title": "Sterbai Corydoras",
+        "count": 10,
+        "entries": [
+          {
+            "ref": "I9bI8W8ZWcEwyIzM9Cj9MC",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCdL",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A79RmJ",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCMJ",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCRz",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCP9",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A6hq84",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A6UR1F",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "IlX7xILobrukz7d5JnfjuY",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCJT",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/corydoras-sterbai/)"
+          }
+        ]
+      },
+      {
+        "sourceType": "species",
+        "sourceId": "I9bI8W8ZWcEwyIzM9Cj9MC",
+        "title": "Firehead Tetra",
+        "count": 12,
+        "entries": [
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCaV",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "sebdKYryWZgYP2rm3oquNG",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A6UR1F",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "IlX7xILobrukz7d5JnfjuY",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCJT",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "I9bI8W8ZWcEwyIzM9CuG2u",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A6hsP7",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCRz",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCP9",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "J1Tx0fWCuGNPno99A6hq84",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          },
+          {
+            "ref": "ofTl1CTOUWuLwM28PxTCMJ",
+            "conditions": [
+              "peaceful community tank",
+              "avoid large, boisterous or aggressive tankmates"
+            ],
+            "confidence": "MEDIUM",
+            "evidenceNote": "Seriously Fish (https://www.seriouslyfish.com/species/hemigrammus-bleheri/)"
+          }
+        ]
+      }
+    ],
+    "incompatibleSpecies": [],
+    "predatorPrey": [],
+    "reefInteractionDetail": [],
+    "coralNeighbors": [],
+    "compatibleEquipment": []
+  },
+  "unresolvedReferences": {
+    "total": 174,
+    "broken": [],
+    "resolvedOutsideWikiTypes": 174
+  },
+  "artifactIntegrity": {
+    "spec12a": {
+      "file": "reports/SPEC_12A/CHECKSUMS.txt",
+      "exists": true,
+      "tracked": 14,
+      "mismatches": 1,
+      "missing": [],
+      "mismatchFiles": [
+        "tests/spec12a-plan.test.ts"
+      ],
+      "missingFiles": []
+    },
+    "spec12b": {
+      "file": "reports/SPEC_12B/CHECKSUMS.txt",
+      "exists": true,
+      "tracked": 10,
+      "mismatches": 0,
+      "missing": [],
+      "mismatchFiles": [],
+      "missingFiles": []
+    },
+    "spec12aCodeDrift": [
+      "tests/spec12a-plan.test.ts"
+    ],
+    "discrepancyNote": "Test-file-only checksum drift: tests/spec12a-plan.test.ts gained an explicit 30s timeout in SPEC 12B (no assertion change). All SPEC 12A report artifacts are byte-identical."
+  },
+  "deployedSchema": {
+    "studioUrl": "https://aqua-mind-blog.sanity.studio/",
+    "workspace": "default",
+    "dataset": "production",
+    "projectId": "zeohjejw"
+  },
+  "environment": {
+    "gitHead": "b014e5c",
+    "gitBranch": "main",
+    "node": "v22.17.0"
+  },
+  "content_mutations": 0,
+  "verdict": "PASS"
+}
