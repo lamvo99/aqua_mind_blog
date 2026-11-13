@@ -1,3 +1,11 @@
+import { conditionList, confidenceLabel } from "../relationships"
+
+export interface CompatibleWithEntry {
+  slug: string
+  conditions?: string[]
+  confidence?: string
+}
+
 export interface CompatSpecies {
   _id: string
   name: string
@@ -16,7 +24,7 @@ export interface CompatSpecies {
   schooling?: string | null
   diet?: string | null
   difficulty?: string | null
-  compatibleWith: string[]
+  compatibleWith: CompatibleWithEntry[]
 }
 
 export interface Selection {
@@ -89,8 +97,12 @@ export function checkCompatibility(speciesMap: Record<string, CompatSpecies>, se
     for (let j = i + 1; j < selected.length; j++) {
       const a = selected[i]
       const b = selected[j]
-      const knownCompatible =
-        a.compatibleWith.includes(b.slug) || b.compatibleWith.includes(a.slug)
+      const compatibility =
+        a.compatibleWith.find((entry) => entry.slug === b.slug) ??
+        b.compatibleWith.find((entry) => entry.slug === a.slug)
+      const knownCompatible = Boolean(compatibility)
+      const conditions = conditionList(compatibility?.conditions)
+      const confidence = confidenceLabel(compatibility?.confidence)
       const issues: CompatIssue[] = []
 
       if (!overlaps(a.tempMinC, a.tempMaxC, b.tempMinC, b.tempMaxC)) {
@@ -144,10 +156,22 @@ export function checkCompatibility(speciesMap: Record<string, CompatSpecies>, se
         })
       }
       if (knownCompatible && issues.length === 0) {
-        issues.push({
-          severity: "ok",
-          message: `${a.name} and ${b.name} are marked as known compatible in our database.`,
-        })
+        if (conditions.length > 0) {
+          issues.push({
+            severity: "info",
+            message:
+              `${a.name} and ${b.name} are listed as compatible in our database, but only under these conditions: ` +
+              `${conditions.join("; ")}.` +
+              (confidence ? ` Confidence: ${confidence}.` : ""),
+          })
+        } else {
+          issues.push({
+            severity: "ok",
+            message:
+              `${a.name} and ${b.name} are marked as known compatible in our database.` +
+              (confidence ? ` Confidence: ${confidence}.` : ""),
+          })
+        }
       }
       if (!knownCompatible && !issues.some((i) => i.severity === "error" || i.severity === "warning")) {
         issues.push({

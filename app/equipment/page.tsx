@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { getDatabaseList, getDatabaseCompareItems } from "@/lib/database"
 import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
@@ -6,11 +7,11 @@ import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Aquarium Equipment Database — AquaMind",
+  title: "Aquarium Equipment Database",
   description: "Browse aquarium equipment: filters, lights, pumps, heaters and CO₂ systems with specs and suitability.",
   alternates: { canonical: "https://www.aquamind.life/equipment" },
   openGraph: {
-    title: "Aquarium Equipment Database — AquaMind",
+    title: "Aquarium Equipment Database",
     description: "Browse aquarium equipment: filters, lights, pumps, heaters and CO₂ systems with specs and suitability.",
     type: "website",
     locale: "en_US",
@@ -46,6 +47,14 @@ export default async function EquipmentPage() {
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Filters, lights, pumps, heaters and CO₂ systems with specs and suitable tank ranges.
         </p>
+      </div>
+      <div className="mb-6 rounded-2xl border border-aqua-100 bg-aqua-50 p-4 dark:border-aqua-900 dark:bg-aqua-950/30 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-gray-600 dark:text-slate-300">
+          Buying your first filter, heater or light? Start with the equipment basics.
+        </p>
+        <Link href="/hubs/aquarium-equipment" className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-aqua-700 dark:text-aqua-300 hover:underline">
+          Open the Aquarium Equipment hub
+        </Link>
       </div>
       <DatabaseGrid
         items={items}

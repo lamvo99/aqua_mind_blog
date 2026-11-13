@@ -2,7 +2,7 @@ import Link from "next/link"
 import { getAllPosts, getFeaturedPosts, getAllCategories } from "@/lib/posts"
 import PostCard from "./components/PostCard"
 import NewsletterSection from "./components/NewsletterSection"
-import { Droplets, Sparkles, ArrowRight, Database, Wrench, Bug, Palette, GraduationCap, BookOpen } from "lucide-react"
+import { Droplets, Sparkles, ArrowRight, Database, Wrench, Bug, Palette, GraduationCap, BookOpen, Compass } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import type { Metadata } from "next"
 
@@ -137,6 +137,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { href: "/database", icon: Database, label: "Database", desc: "Fish, plants, corals, equipment & invertebrates" },
+              { href: "/collections", icon: Compass, label: "Collections", desc: "Start from a tank goal or setup style" },
               { href: "/problems", icon: Bug, label: "Problems", desc: "Diagnose symptoms and find solutions" },
               { href: "/tools", icon: Wrench, label: "Tools", desc: "Calculators, planners & compatibility checker" },
               { href: "/inspiration", icon: Palette, label: "Inspiration", desc: "Aquascaping galleries with species links" },

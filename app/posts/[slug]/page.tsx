@@ -17,6 +17,8 @@ import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import SocialShare from "@/app/components/SocialShare"
 import TableOfContents from "@/app/components/TableOfContents"
 import RelatedDatabase from "@/app/components/RelatedDatabase"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForPost } from "@/lib/hubs"
 import strings from "@/lib/i18n/strings"
 
 export const revalidate = 3600
@@ -54,6 +56,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
   if (!post) notFound()
 
   const readingTime = estimateReadingTime(post.body)
+  const hubLinks = await getHubLinksForPost(post)
   const imageUrl = post.mainImage ? urlFor(post.mainImage).width(1200).height(600).url() : null
   const pinterestImage = post.mainImage ? urlFor(post.mainImage).width(600).height(900).url() : null
   const breadcrumbItems = [
@@ -202,6 +205,8 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
         </div>
 
         <RelatedDatabase postId={post._id} />
+
+        <KnowledgeHubLinks links={hubLinks} />
 
         <RelatedResources slug={slug} title={post.title} />
       </div>

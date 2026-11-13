@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
+import { buildDetailMetadata } from "@/lib/seo/detail-metadata"
 import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -10,8 +11,15 @@ import { ArrowLeft, Thermometer, Droplets, Ruler, Fish } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import ParentLink from "@/app/components/database/ParentLink"
+import CompatibilityList from "@/app/components/database/CompatibilityList"
+import PredatorPreySection from "@/app/components/database/PredatorPreySection"
+import DifficultyContext from "@/app/components/database/DifficultyContext"
+import RelatedArticles from "@/app/components/RelatedArticles"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForEntity } from "@/lib/hubs"
 import PortableText from "@/app/components/PortableText"
-import { buildHusbandryFacts, knowledgeBodySections, compatibleSpeciesRefs } from "@/lib/species-facts"
+import { buildHusbandryFacts, knowledgeBodySections, compatibilityEntries, linkedProblemsHeading } from "@/lib/species-facts"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -24,42 +32,18 @@ export async function generateStaticParams() {
   return items.filter((item) => !!item.slug?.current).map((item) => ({ slug: item.slug!.current }))
 }
 
-function nonEmptySeoString(value: unknown): value is string {
-  return typeof value === "string" && value.trim().length > 0
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const item = await getDatabaseItem("species", slug)
   if (!item) return { title: "Not found" }
 
-  const canonical = `https://www.aquamind.life/species/${slug}`
-  const fallbackTitle = `${item.name} — Fish Profile`
-  const fallbackDescription = item.excerpt || `Care guide for ${item.name}`
-  const seoTitle = nonEmptySeoString(item.seo?.metaTitle) ? item.seo.metaTitle : null
-  const seoDescription = nonEmptySeoString(item.seo?.metaDescription) ? item.seo.metaDescription : null
-  const title = seoTitle || fallbackTitle
-  const description = seoDescription || fallbackDescription
-
-  return {
-    title: seoTitle ? { absolute: seoTitle } : fallbackTitle,
-    description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      url: canonical,
-      images: item.mainImage
-        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: `${item.name} — fish species profile` }]
-        : undefined,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  }
+  return buildDetailMetadata(item, {
+    pathPrefix: "species",
+    slug,
+    profileLabel: "Fish Profile",
+    imageAltSuffix: "fish species profile",
+    fallbackDescription: (name) => `Care guide for ${name}`,
+  })
 }
 
 function Parameter({
@@ -88,10 +72,12 @@ export default async function SpeciesDetailPage({ params }: Props) {
   const item = await getDatabaseItem("species", slug)
   if (!item) notFound()
 
+  const hubLinks = await getHubLinksForEntity("species")
+
   const range = (min?: number, max?: number, suffix = "") =>
     min !== undefined && max !== undefined && (min !== null) && (max !== null) ? `${min}–${max}${suffix}` : undefined
 
-  const compatible = compatibleSpeciesRefs<any>(item.compatibleSpecies)
+  const compatible = compatibilityEntries<any>(item.compatibleSpecies)
   const husbandryGroups = buildHusbandryFacts(item)
   const bodySections = knowledgeBodySections(item.knowledgeBody)
 
@@ -125,27 +111,13 @@ export default async function SpeciesDetailPage({ params }: Props) {
               <div className="w-full h-full flex items-center justify-center text-6xl">🐠</div>
             )}
           </div>
-          {compatible.length > 0 && (
-            <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h2 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Compatible Species</h2>
-              <div className="flex flex-wrap gap-2">
-                {compatible.map((c: any) => (
-                  <Link
-                    key={c._id}
-                    href={`/species/${c.slug?.current}`}
-                    className="px-3 py-1.5 rounded-lg bg-aqua-50 dark:bg-aqua-950/50 text-aqua-700 dark:text-aqua-300 text-sm hover:bg-aqua-100 dark:hover:bg-aqua-950 transition-colors"
-                  >
-                    {c.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <CompatibilityList title="Compatible Species" items={compatible} />
           <WikiPromo />
         </div>
 
         <div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-1">{item.name}</h1>          {item.scientificName && <p className="text-lg italic text-gray-500 dark:text-slate-400 mb-4">{item.scientificName}</p>}
+          <ParentLink parent={item.parentSpecies} />
           {item.excerpt && <p className="text-gray-600 dark:text-slate-300 leading-relaxed mb-6">{item.excerpt}</p>}
 
           <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-3">Care Parameters</h2>
@@ -160,6 +132,13 @@ export default async function SpeciesDetailPage({ params }: Props) {
             <Parameter label="Water zone" value={item.waterZone} />
             <Parameter label="Difficulty" value={item.difficulty} />
           </div>
+
+          <DifficultyContext
+            difficulty={item.difficulty}
+            context={item.difficultyContext}
+            confidence={item.difficultyConfidence}
+            notRecommendedFor={item.notRecommendedFor}
+          />
 
           {item.schooling && (
             <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
@@ -186,23 +165,18 @@ export default async function SpeciesDetailPage({ params }: Props) {
             </section>
           ))}
 
+          <PredatorPreySection
+            items={item.predatorPrey || []}
+            description="Organisms this species is documented as preying on. Size notes describe when predation is most likely."
+            showEvidence
+          />
           <RelationshipSection title="Suitable Plants" items={item.compatiblePlants || []} hrefPrefix="/plants" />
           <RelationshipSection title="Compatible Invertebrates" items={item.compatibleInvertebrates || []} hrefPrefix="/invertebrates" />
           <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
-          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
+          <RelationshipSection title={linkedProblemsHeading(bodySections)} items={item.relatedProblems || []} hrefPrefix="/problems" />
 
-          {item.relatedPosts && item.relatedPosts.length > 0 && (
-            <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related Articles</h3>
-              <div className="space-y-2">
-                {item.relatedPosts.map((p: any) => (
-                  <Link key={p._id} href={`/posts/${p.slug?.current}`} className="block text-sm text-aqua-600 dark:text-aqua-400 hover:underline">
-                    {p.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <RelatedArticles items={item.relatedPosts} currentSlug={slug} />
+          <KnowledgeHubLinks links={hubLinks} />
           <EntityResources type="species" />
         </div>
       </div>

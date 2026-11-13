@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next"
 import { client } from "@/lib/sanity"
 import { STYLE_SLUGS } from "@/lib/styles"
+import { HUB_SLUGS } from "@/lib/hubs"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
@@ -33,6 +34,7 @@ const LIST_PATHS = [
   { path: "/tools/diagnostic", priority: 0.6, frequency: "monthly" },
   { path: "/setup-planner", priority: 0.7, frequency: "monthly" },
   { path: "/learn", priority: 0.6, frequency: "weekly" },
+  { path: "/hubs", priority: 0.7, frequency: "weekly" },
   { path: "/about", priority: 0.5, frequency: "monthly" },
   { path: "/contact", priority: 0.5, frequency: "monthly" },
   { path: "/privacy-policy", priority: 0.2, frequency: "yearly" },
@@ -94,6 +96,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: doc.updatedAt || doc.publishedAt || new Date(),
       changeFrequency: doc._type === "post" ? ("weekly" as const) : ("monthly" as const),
       priority: TYPE_PRIORITY[doc._type],
+    })
+  }
+
+  for (const hubSlug of HUB_SLUGS) {
+    entries.push({
+      url: `${siteUrl}/hubs/${hubSlug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
     })
   }
 

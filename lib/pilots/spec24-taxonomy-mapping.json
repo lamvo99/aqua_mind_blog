@@ -1,0 +1,89 @@
+{
+  "canonicalCategories": [
+    "fish",
+    "algae",
+    "water_quality",
+    "equipment",
+    "plant",
+    "coral",
+    "pest",
+    "invertebrate",
+    "other"
+  ],
+  "legacyAliases": {
+    "water": "water_quality",
+    "plants": "plant"
+  },
+  "additionalCases": [
+    {
+      "slug": "cyanobacteria",
+      "from": "water",
+      "primary": "algae",
+      "tags": ["water_quality", "nutrients"],
+      "reason": "Photosynthetic bacteria forming algal-like mats; primary algae, water quality is a tag. Not part of the seven-record migration."
+    },
+    {
+      "slug": "white-spot-disease",
+      "flag": "DUPLICATE_TOPIC",
+      "duplicateOf": "ich-white-spot-disease",
+      "reason": "Same topic under two slugs; do not merge or redirect without a canonical decision."
+    },
+    {
+      "slug": "ich-white-spot-disease",
+      "flag": "DUPLICATE_TOPIC",
+      "duplicateOf": "white-spot-disease",
+      "reason": "Same topic under two slugs; do not merge or redirect without a canonical decision."
+    }
+  ],
+  "proposedMappings": [
+    {
+      "slug": "problem-coral-bleaching",
+      "title": "Coral Bleaching",
+      "from": "algae",
+      "to": "coral",
+      "reason": "Coral is the affected subject; the cause is stress, temperature, light or water quality."
+    },
+    {
+      "slug": "problem-brown-jelly-disease",
+      "title": "Brown Jelly Disease",
+      "from": "algae",
+      "to": "coral",
+      "reason": "Coral disease; coral is the affected subject."
+    },
+    {
+      "slug": "problem-rapid-tissue-necrosis-rtn",
+      "title": "Rapid Tissue Necrosis (RTN)",
+      "from": "algae",
+      "to": "coral",
+      "reason": "Coral disease; coral is the affected subject."
+    },
+    {
+      "slug": "problem-slow-tissue-necrosis-stn",
+      "title": "Slow Tissue Necrosis (STN)",
+      "from": "algae",
+      "to": "coral",
+      "reason": "Coral disease; coral is the affected subject."
+    },
+    {
+      "slug": "problem-aiptasia-infestation",
+      "title": "Aiptasia Infestation",
+      "from": "algae",
+      "to": "pest",
+      "reason": "Aiptasia is a pest anemone, not algae; coral competition remains a tag."
+    },
+    {
+      "slug": "hydra-infestation",
+      "title": "Hydra Infestation",
+      "from": "algae",
+      "to": "pest",
+      "reason": "Hydra is an invertebrate pest, not algae."
+    },
+    {
+      "slug": "planaria-infestation",
+      "title": "Planaria Infestation",
+      "from": "algae",
+      "to": "pest",
+      "reason": "Planaria are flatworm pests, not algae."
+    }
+  ]
+}

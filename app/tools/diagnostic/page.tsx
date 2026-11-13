@@ -60,6 +60,12 @@ export default async function DiagnosticToolPage() {
             problem database, from algae outbreaks to sick fish.
           </p>
         </div>
+        <div className="mb-6 flex flex-wrap items-center gap-2 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-600 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300">
+          <span>Same diagnostic, problem-first layout:</span>
+          <Link href="/problems/diagnose" className="font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+            open it in Problems
+          </Link>
+        </div>
 
         <DiagnosisWizard problems={problems} />
 

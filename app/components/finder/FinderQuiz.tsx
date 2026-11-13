@@ -8,11 +8,14 @@ import {
   findMatches,
   paramsToIntent,
   intentToParams,
+  shortlistMatches,
+  type FinderGroup,
   type FinderIntent,
   type FinderItem,
   type FinderResult,
   type MatchStatus,
 } from "@/lib/finder"
+import { trackDatabaseEvent } from "@/lib/analytics"
 
 const QUESTIONS = [
   {
@@ -82,6 +85,8 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<Partial<FinderIntent>>(urlIntent)
   const [results, setResults] = useState<FinderResult[] | null>(null)
+  const [groups, setGroups] = useState<FinderGroup[]>([])
+  const [totalMatches, setTotalMatches] = useState(0)
   const [expandedCard, setExpandedCard] = useState<string | null>(null)
 
   // Sync to URL on results
@@ -95,13 +100,27 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
   const current = QUESTIONS[step]
   const picked = answers[current.id as keyof FinderIntent] as string | undefined
 
+  const runMatches = (intent: Partial<FinderIntent>) => {
+    const all = findMatches(items, intent as FinderIntent)
+    const outcome = shortlistMatches(all, intent as FinderIntent, 20)
+    setResults(outcome.items)
+    setGroups(outcome.groups)
+    setTotalMatches(outcome.total)
+    trackDatabaseEvent("database_finder_submitted", {
+      page_type: "finder",
+      database_type: "mixed",
+      result_count: outcome.total,
+      filter_count: Object.keys(intent).filter((key) => intent[key as keyof FinderIntent] !== undefined).length,
+    })
+  }
+
   const pick = (value: string) => {
     const next = { ...answers, [current.id]: value }
     setAnswers(next)
     if (step < QUESTIONS.length - 1) {
       setStep(step + 1)
     } else {
-      setResults(findMatches(items, next as FinderIntent))
+      runMatches(next)
     }
   }
 
@@ -109,6 +128,8 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
     setAnswers({})
     setStep(0)
     setResults(null)
+    setGroups([])
+    setTotalMatches(0)
     setExpandedCard(null)
     router.replace("/finder", { scroll: false })
   }
@@ -117,104 +138,161 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
     setExpandedCard(expandedCard === id ? null : id)
   }
 
+  const criterionChips = [
+    answers.waterType
+      ? `Water: ${answers.waterType === 'freshwater' ? 'Freshwater' : 'Saltwater'}`
+      : null,
+    answers.tankRange
+      ? `Tank: ${({ nano: 'under 30 L', small: '30–80 L', medium: '80–200 L', large: 'over 200 L' } as Record<string, string>)[answers.tankRange]}`
+      : null,
+    answers.difficulty
+      ? `Experience: ${answers.difficulty.charAt(0).toUpperCase() + answers.difficulty.slice(1)}`
+      : null,
+    answers.light
+      ? `Light: ${answers.light.charAt(0).toUpperCase() + answers.light.slice(1)}`
+      : null,
+  ].filter((value): value is string => Boolean(value))
+
   if (results) {
     return (
       <div>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-slate-100">
-            Your matches ({results.length})
-          </h2>
-          <button
-            type="button"
-            onClick={restart}
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gray-100 dark:bg-slate-700 text-sm font-medium text-gray-600 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
-          >
-            <RotateCcw className="w-3.5 h-3.5" />
-            Restart
-          </button>
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-slate-100">
+              Your matches ({totalMatches})
+            </h2>
+            <p className="mt-1 text-sm text-gray-500 dark:text-slate-400">
+              Showing {results.length} ranked match{results.length === 1 ? '' : 'es'}
+              {totalMatches > results.length
+                ? ` — ${totalMatches - results.length} more match. Refine tank size or experience to narrow the list.`
+                : '.'}
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setResults(null)
+                setStep(0)
+              }}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-sm font-medium text-gray-600 dark:text-slate-300 hover:border-aqua-300 dark:hover:border-aqua-700 transition-colors"
+            >
+              Edit criteria
+            </button>
+            <button
+              type="button"
+              onClick={restart}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gray-100 dark:bg-slate-700 text-sm font-medium text-gray-600 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              Restart
+            </button>
+          </div>
         </div>
+
+        {criterionChips.length > 0 && (
+          <div className="mb-6 flex flex-wrap gap-2" aria-label="Selected criteria">
+            {criterionChips.map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full bg-aqua-50 px-3 py-1 text-xs font-medium text-aqua-700 dark:bg-aqua-950/50 dark:text-aqua-300"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+        )}
+
         {results.length === 0 ? (
           <div className="text-center py-16 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
             <p className="text-gray-900 dark:text-slate-100 font-medium mb-1">No matches found</p>
             <p className="text-sm text-gray-500 dark:text-slate-400 mb-4">
-              Try loosening your constraints — e.g. a bigger tank or different lighting.
+              Try loosening one criterion — for example a wider tank range, a different experience level or different
+              lighting.
             </p>
             <button
               type="button"
-              onClick={restart}
+              onClick={() => {
+                setResults(null)
+                setStep(0)
+              }}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl gradient-bg text-white text-sm font-semibold hover:opacity-90 transition-all"
             >
-              <RotateCcw className="w-4 h-4" />
-              Start over
+              Edit criteria
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {results.map((r) => {
-              const meta = TYPE_META[r.item._type]
-              const expanded = expandedCard === r.item._id
-              return (
-                <div
-                  key={r.item._id}
-                  className="group rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5 hover:shadow-lg hover:border-aqua-300 dark:hover:border-aqua-800 transition-all"
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-aqua-600 dark:text-aqua-400">{meta.icon}</span>
-                    <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-400 dark:text-slate-500">
-                      {meta.label}
-                    </span>
-                    {r.item.difficulty && (
-                      <span className={`ml-auto text-[11px] font-semibold px-2 py-0.5 rounded-full ${DIFF_COLORS[r.item.difficulty] || ""}`}>
-                        {r.item.difficulty}
-                      </span>
-                    )}
-                  </div>
-                  <Link href={`${meta.path}/${r.item.slug.current}`}>
-                    <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">
-                      {r.item.name}
-                    </h3>
-                  </Link>
-                  <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 mb-3">
-                    {r.item.tankSizeMinL ? `Min tank ${r.item.tankSizeMinL}L · ` : ""}
-                    {r.item.tempMinC != null && r.item.tempMaxC != null ? `${r.item.tempMinC}\u2013${r.item.tempMaxC}\u00b0C · ` : ""}
-                    {r.item.phMin != null && r.item.phMax != null ? `pH ${r.item.phMin}\u2013${r.item.phMax}` : ""}
-                    {r.item.light ? `Light: ${r.item.light}` : ""}
-                  </p>
+          groups.map((group) => (
+            <section key={group.type} className="mb-8">
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400">
+                {group.label} ({group.items.length} shown)
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {group.items.map((r) => {
+                  const meta = TYPE_META[r.item._type]
+                  const expanded = expandedCard === r.item._id
+                  return (
+                    <div
+                      key={r.item._id}
+                      className="group rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-5 hover:shadow-lg hover:border-aqua-300 dark:hover:border-aqua-800 transition-all"
+                    >
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-aqua-600 dark:text-aqua-400">{meta.icon}</span>
+                        <span className="text-[11px] font-semibold uppercase tracking-wide text-gray-400 dark:text-slate-500">
+                          {meta.label}
+                        </span>
+                        {r.item.difficulty && (
+                          <span className={`ml-auto text-[11px] font-semibold px-2 py-0.5 rounded-full ${DIFF_COLORS[r.item.difficulty] || ""}`}>
+                            {r.item.difficulty}
+                          </span>
+                        )}
+                      </div>
+                      <Link href={`${meta.path}/${r.item.slug.current}`}>
+                        <h4 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">
+                          {r.item.name}
+                        </h4>
+                      </Link>
+                      <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 mb-3">
+                        {r.item.tankSizeMinL ? `Min tank ${r.item.tankSizeMinL}L · ` : ""}
+                        {r.item.tempMinC != null && r.item.tempMaxC != null ? `${r.item.tempMinC}\u2013${r.item.tempMaxC}\u00b0C · ` : ""}
+                        {r.item.phMin != null && r.item.phMax != null ? `pH ${r.item.phMin}\u2013${r.item.phMax}` : ""}
+                        {r.item.light ? `Light: ${r.item.light}` : ""}
+                      </p>
 
-                  {/* Explanation */}
-                  <ul className="space-y-1 mb-3">
-                    {r.explanation.slice(0, 3).map((ex, i) => (
-                      <li key={i} className="flex items-start gap-1.5 text-xs text-gray-600 dark:text-slate-300">
-                        <span className="text-aqua-500 mt-0.5 shrink-0">{"\u2022"}</span>
-                        {ex}
-                      </li>
-                    ))}
-                  </ul>
+                      <ul className="space-y-1 mb-3">
+                        {r.explanation.slice(0, 3).map((ex, i) => (
+                          <li key={i} className="flex items-start gap-1.5 text-xs text-gray-600 dark:text-slate-300">
+                            <span className="text-aqua-500 mt-0.5 shrink-0">{"\u2022"}</span>
+                            {ex}
+                          </li>
+                        ))}
+                      </ul>
 
-                  {/* Constraint details toggle */}
-                  <button
-                    type="button"
-                    onClick={() => toggleExpand(r.item._id)}
-                    className="text-[11px] font-medium text-aqua-600 dark:text-aqua-400 hover:underline mb-2"
-                  >
-                    {expanded ? "Hide details" : "Show details"}
-                  </button>
+                      <button
+                        type="button"
+                        onClick={() => toggleExpand(r.item._id)}
+                        className="text-[11px] font-medium text-aqua-600 dark:text-aqua-400 hover:underline mb-2"
+                      >
+                        {expanded ? "Hide details" : "Show details"}
+                      </button>
 
-                  {expanded && (
-                    <div className="mt-2 space-y-1 border-t border-gray-100 dark:border-slate-700 pt-2">
-                      {r.constraints.map((c) => (
-                        <div key={c.field} className="flex items-center gap-2 text-[11px] text-gray-500 dark:text-slate-400">
-                          <span>{STATUS_ICONS[c.status]}</span>
-                          <span className="font-medium">{c.label}</span>
-                          {c.detail && <span>{c.detail}</span>}
+                      {expanded && (
+                        <div className="mt-2 space-y-1 border-t border-gray-100 dark:border-slate-700 pt-2">
+                          {r.constraints.map((c) => (
+                            <div key={c.field} className="flex items-center gap-2 text-[11px] text-gray-500 dark:text-slate-400">
+                              <span>{STATUS_ICONS[c.status]}</span>
+                              <span className="font-medium">{c.label}</span>
+                              {c.detail && <span>{c.detail}</span>}
+                            </div>
+                          ))}
                         </div>
-                      ))}
+                      )}
                     </div>
-                  )}
-                </div>
-              )
-            })}
-          </div>
+                  )
+                })}
+              </div>
+            </section>
+          ))
         )}
       </div>
     )
@@ -272,7 +350,7 @@ export default function FinderQuiz({ items }: { items: FinderItem[] }) {
       {step === QUESTIONS.length - 1 && (
         <button
           type="button"
-          onClick={() => setResults(findMatches(items, answers as FinderIntent))}
+          onClick={() => runMatches(answers)}
           className="mt-6 inline-flex items-center gap-2 px-6 py-3 gradient-bg text-white font-semibold rounded-xl hover:opacity-90 transition-all"
         >
           Show my matches

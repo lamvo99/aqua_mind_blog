@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { urlFor } from "@/lib/sanity"
 import { ArrowRight } from "lucide-react"
+import { filterNavigableItems } from "@/lib/relationships"
 
 interface RelationshipItem {
   _id: string
@@ -31,7 +32,8 @@ export default function RelationshipSection({
   emptyMessage,
   maxVisible = 6,
 }: RelationshipSectionProps) {
-  if (!items || items.length === 0) {
+  const validItems = filterNavigableItems(items)
+  if (validItems.length === 0) {
     if (emptyMessage) {
       return (
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-slate-700">
@@ -43,14 +45,14 @@ export default function RelationshipSection({
     return null
   }
 
-  const visible = items.slice(0, maxVisible)
-  const hasMore = items.length > maxVisible
+  const visible = validItems.slice(0, maxVisible)
+  const hasMore = validItems.length > maxVisible
 
   return (
     <div className="mt-8 pt-6 border-t border-gray-200 dark:border-slate-700">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100">{title}</h2>
-        <span className="text-xs font-medium text-gray-400 dark:text-slate-500">{items.length}</span>
+        <span className="text-xs font-medium text-gray-400 dark:text-slate-500">{validItems.length}</span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {visible.map((item) => (
@@ -92,7 +94,7 @@ export default function RelationshipSection({
       </div>
       {hasMore && (
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
-          Showing {maxVisible} of {items.length}
+          Showing {maxVisible} of {validItems.length}
         </p>
       )}
     </div>

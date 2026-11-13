@@ -51,6 +51,7 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
   const [difficulty, setDifficulty] = useState(searchParams.get("diff") || "all")
   const [origin, setOrigin] = useState(searchParams.get("origin") || "all")
   const [group, setGroup] = useState(searchParams.get("group") || "all")
+  const [browse, setBrowse] = useState(searchParams.get("browse") === "all")
   const [sheetOpen, setSheetOpen] = useState(false)
 
   useEffect(() => {
@@ -62,29 +63,32 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
     }
   }, [sheetOpen])
 
-  const syncUrl = (t: string, q: string, d: string, o: string, g: string) => {
+  const syncUrl = (t: string, q: string, d: string, o: string, g: string, b: boolean) => {
     const params = new URLSearchParams()
     if (t !== "all") params.set("type", t)
     if (q) params.set("q", q)
     if (d !== "all") params.set("diff", d)
     if (o !== "all") params.set("origin", o)
     if (g !== "all") params.set("group", g)
+    if (b) params.set("browse", "all")
     const qs = params.toString()
     router.replace(`/wiki${qs ? `?${qs}` : ""}`, { scroll: false })
   }
 
-  const setFilter = (next: { type?: string; q?: string; diff?: string; origin?: string; group?: string }) => {
+  const setFilter = (next: { type?: string; q?: string; diff?: string; origin?: string; group?: string; browse?: boolean }) => {
     const t = next.type ?? type
     const q = next.q ?? query
     const d = next.diff ?? difficulty
     const o = next.origin ?? origin
     const g = next.group ?? group
+    const b = next.browse ?? browse
     if (next.type !== undefined) setType(next.type as typeof type)
     if (next.q !== undefined) setQuery(next.q)
     if (next.diff !== undefined) setDifficulty(next.diff)
     if (next.origin !== undefined) setOrigin(next.origin)
     if (next.group !== undefined) setGroup(next.group)
-    syncUrl(t, q, d, o, g)
+    if (next.browse !== undefined) setBrowse(next.browse)
+    syncUrl(t, q, d, o, g, b)
   }
 
   const facetOptions = useMemo(() => {
@@ -116,6 +120,8 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
   }, [items, type, query, difficulty, origin, group])
 
   const activeFilterCount = (difficulty !== "all" ? 1 : 0) + (origin !== "all" ? 1 : 0) + (group !== "all" ? 1 : 0)
+  const showResults =
+    browse || type !== "all" || query.trim().length > 0 || difficulty !== "all" || origin !== "all" || group !== "all"
 
   const tempRange = (item: WikiItem) =>
     item.tempMinC && item.tempMaxC ? `${item.tempMinC}–${item.tempMaxC}°C` : null
@@ -229,72 +235,123 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
         ))}
       </div>
 
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-4" role="status" aria-live="polite">
-        {filtered.length} {filtered.length === 1 ? "entry" : "entries"}
-      </p>
-
-      {filtered.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {filtered.map((item) => (
-            <Link
-              key={item._id}
-              href={item.href}
-              className="group block rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 card-hover"
-            >
-              <div className="relative h-32 overflow-hidden bg-aqua-50 dark:bg-slate-900">
-                {item.mainImage ? (
-                  <Image
-                    src={urlFor(item.mainImage).width(600).height(300).url() || ""}
-                    alt={item.name}
-                    fill
-                    sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    loading="lazy"
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-3xl">
-                    {item._type === "species" ? "🐠" : item._type === "invertebrate" ? "🦐" : item._type === "plant" ? "🌿" : item._type === "coral" ? "🪸" : "⚙️"}
-                  </div>
-                )}
-                <span className="absolute top-2 left-2 px-2 py-0.5 bg-black/50 backdrop-blur text-white text-[11px] font-medium rounded-md">
-                  {TYPE_LABELS[item._type]}
-                </span>
-                {item.difficulty && (
-                  <span className="absolute top-2 right-2 px-2 py-0.5 bg-aqua-500/90 text-white text-[11px] font-medium rounded-md">
-                    {item.difficulty}
+      {!showResults ? (
+        <div>
+          <div className="rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-6">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-1">Start with a type</h2>
+            <p className="text-sm text-gray-500 dark:text-slate-400 mb-4">
+              Search across every database type above, or start with one group. Category pages keep the full filters and
+              comparison tools; the Wiki is for quick cross-type lookup.
+            </p>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {TYPE_ORDER.map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => setFilter({ type: t })}
+                  className="flex items-center justify-between rounded-xl border border-gray-200 px-4 py-3 text-left transition-colors hover:border-aqua-300 dark:border-slate-700 dark:hover:border-aqua-700"
+                >
+                  <span className="text-sm font-semibold text-gray-900 dark:text-slate-100">{TYPE_LABELS[t]}</span>
+                  <span className="rounded-full bg-aqua-50 px-2 py-0.5 text-xs font-semibold text-aqua-700 dark:bg-aqua-950/50 dark:text-aqua-300">
+                    {counts[t]}
                   </span>
-                )}
-              </div>
-              <div className="p-4">
-                <h2 className="font-bold text-gray-900 dark:text-slate-100 mb-0.5 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors line-clamp-1">
-                  {item.name}
-                </h2>
-                {item.scientificName && (
-                  <p className="text-xs italic text-gray-500 dark:text-slate-400 line-clamp-1 mb-2">{item.scientificName}</p>
-                )}
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500 dark:text-slate-400">
-                  {item.sizeCm ? (
-                    <span className="flex items-center gap-1"><Ruler className="w-3 h-3" />{item.sizeCm} cm</span>
-                  ) : item.brand ? (
-                    <span className="flex items-center gap-1">{item.brand}</span>
-                  ) : null}
-                  {tempRange(item) ? (
-                    <span className="flex items-center gap-1"><Thermometer className="w-3 h-3" />{tempRange(item)}</span>
-                  ) : item.light ? (
-                    <span className="flex items-center gap-1"><HelpCircle className="w-3 h-3" />{item.light}</span>
-                  ) : null}
-                  {phRange(item) && <span className="flex items-center gap-1"><Droplets className="w-3 h-3" />{phRange(item)}</span>}
-                </div>
-              </div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <Link
+              href="/collections"
+              className="rounded-2xl border border-aqua-100 bg-aqua-50 p-5 text-sm dark:border-aqua-900 dark:bg-aqua-950/30"
+            >
+              <span className="block font-semibold text-gray-900 dark:text-slate-100">Start from a goal</span>
+              <span className="mt-1 block text-gray-600 dark:text-slate-300">
+                Beginner freshwater, nano, low-tech planted, shrimp, beginner reef and more.
+              </span>
             </Link>
-          ))}
+            <button
+              type="button"
+              onClick={() => setFilter({ browse: true })}
+              className="rounded-2xl border border-gray-200 bg-white p-5 text-left text-sm dark:border-slate-700 dark:bg-slate-800"
+            >
+              <span className="block font-semibold text-gray-900 dark:text-slate-100">Browse all {counts.all} entries</span>
+              <span className="mt-1 block text-gray-600 dark:text-slate-300">
+                Show the full cross-type directory (may be long).
+              </span>
+            </button>
+          </div>
         </div>
       ) : (
-        <div className="text-center py-20">
-          <Search className="w-12 h-12 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
-          <p className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">No entries match</p>
-          <p className="text-gray-500 dark:text-slate-400 text-sm">Try different filters or search terms.</p>
-        </div>
+        <>
+          <p className="text-sm text-gray-500 dark:text-slate-400 mb-4" role="status" aria-live="polite">
+            {filtered.length} {filtered.length === 1 ? "entry" : "entries"}
+          </p>
+
+          {filtered.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              {filtered.map((item) => (
+                <Link
+                  key={item._id}
+                  href={item.href}
+                  className="group block rounded-2xl overflow-hidden bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 card-hover"
+                >
+                  <div className="relative h-32 overflow-hidden bg-aqua-50 dark:bg-slate-900">
+                    {item.mainImage ? (
+                      <Image
+                        src={urlFor(item.mainImage).width(600).height(300).url() || ""}
+                        alt={item.name}
+                        fill
+                        sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        loading="lazy"
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-3xl">
+                        {item._type === "species" ? "🐠" : item._type === "invertebrate" ? "🦐" : item._type === "plant" ? "🌿" : item._type === "coral" ? "🪸" : "⚙️"}
+                      </div>
+                    )}
+                    <span className="absolute top-2 left-2 px-2 py-0.5 bg-black/50 backdrop-blur text-white text-[11px] font-medium rounded-md">
+                      {TYPE_LABELS[item._type]}
+                    </span>
+                    {item.difficulty && (
+                      <span className="absolute top-2 right-2 px-2 py-0.5 bg-aqua-500/90 text-white text-[11px] font-medium rounded-md">
+                        {item.difficulty}
+                      </span>
+                    )}
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-bold text-gray-900 dark:text-slate-100 mb-0.5 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors line-clamp-1">
+                      {item.name}
+                    </h3>
+                    {item.scientificName && (
+                      <p className="text-xs italic text-gray-500 dark:text-slate-400 line-clamp-1 mb-2">{item.scientificName}</p>
+                    )}
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500 dark:text-slate-400">
+                      {item.sizeCm ? (
+                        <span className="flex items-center gap-1"><Ruler className="w-3 h-3" />{item.sizeCm} cm</span>
+                      ) : item.brand ? (
+                        <span className="flex items-center gap-1">{item.brand}</span>
+                      ) : null}
+                      {tempRange(item) ? (
+                        <span className="flex items-center gap-1"><Thermometer className="w-3 h-3" />{tempRange(item)}</span>
+                      ) : item.light ? (
+                        <span className="flex items-center gap-1"><HelpCircle className="w-3 h-3" />{item.light}</span>
+                      ) : null}
+                      {phRange(item) && <span className="flex items-center gap-1"><Droplets className="w-3 h-3" />{phRange(item)}</span>}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <Search className="w-12 h-12 mx-auto text-gray-300 dark:text-slate-600 mb-4" />
+              <p className="text-lg font-semibold text-gray-900 dark:text-slate-100 mb-1">No entries match</p>
+              <p className="text-gray-500 dark:text-slate-400 text-sm">Try different filters or search terms.</p>
+            </div>
+          )}
+        </>
       )}
 
       <div className="mt-8 p-5 rounded-2xl bg-aqua-50 dark:bg-aqua-950/30 border border-aqua-100 dark:border-aqua-900/50">

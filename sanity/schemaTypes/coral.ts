@@ -14,6 +14,13 @@ export default defineType({
     }),
     defineField({ name: 'excerpt', title: 'Excerpt', type: 'text', rows: 3 }),
     defineField({
+      name: 'seo', title: 'SEO', type: 'object',
+      fields: [
+        { name: 'metaTitle', title: 'Meta Title', type: 'string' },
+        { name: 'metaDescription', title: 'Meta Description', type: 'text', rows: 2 },
+      ],
+    }),
+    defineField({
       name: 'localNames', title: 'Local / Trade Names', type: 'array',
       description: 'Verified Vietnamese, regional, or aquarium trade names for discovery.',
       of: [{ type: 'string' }],

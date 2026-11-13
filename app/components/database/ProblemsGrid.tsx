@@ -3,6 +3,12 @@
 import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
 import { Search, RotateCcw } from "lucide-react"
+import {
+  PROBLEM_CATEGORIES,
+  normalizeProblemCategory,
+  problemCategoryIcon,
+  problemCategoryLabel,
+} from "@/lib/problem-taxonomy"
 
 interface Problem {
   _id: string
@@ -11,14 +17,6 @@ interface Problem {
   slug?: { current: string }
   excerpt?: string
   category?: string
-}
-
-const categoryIcons: Record<string, string> = {
-  water: "💧",
-  algae: "🟢",
-  plants: "🌿",
-  fish: "🐠",
-  equipment: "⚙️",
 }
 
 interface ProblemsGridProps {
@@ -33,7 +31,7 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
     const params = new URLSearchParams(window.location.search)
     const cat = params.get("category")
     const q = params.get("q")
-    if (cat) setActiveCategory(cat)
+    if (cat) setActiveCategory(normalizeProblemCategory(cat) || cat)
     if (q) setSearch(q)
   }, [])
 
@@ -49,15 +47,16 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
   const categories = useMemo(() => {
     const cats = new Set<string>()
     for (const p of problems) {
-      if (p.category) cats.add(p.category)
+      const category = normalizeProblemCategory(p.category)
+      if (category) cats.add(category)
     }
-    return Array.from(cats).sort()
+    return PROBLEM_CATEGORIES.filter((category) => cats.has(category))
   }, [problems])
 
   const visible = useMemo(() => {
     let result = problems
     if (activeCategory && activeCategory !== "all") {
-      result = result.filter((p) => p.category === activeCategory)
+      result = result.filter((p) => normalizeProblemCategory(p.category) === activeCategory)
     }
     if (search.trim()) {
       const q = search.trim().toLowerCase()
@@ -113,7 +112,7 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
                     : "bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-slate-600"
                 }`}
               >
-                {categoryIcons[cat]} {cat}
+                {problemCategoryIcon(cat)} {problemCategoryLabel(cat)}
               </button>
             ))}
           </div>
@@ -149,7 +148,7 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
               </h3>
               {p.category && (
                 <span className="inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-aqua-100 dark:bg-aqua-900/50 text-aqua-700 dark:text-aqua-300 mb-2">
-                  {categoryIcons[p.category]} {p.category}
+                  {problemCategoryIcon(p.category)} {problemCategoryLabel(p.category)}
                 </span>
               )}
               {p.excerpt && <p className="text-sm text-gray-500 dark:text-slate-400 line-clamp-2">{p.excerpt}</p>}

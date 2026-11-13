@@ -1,3 +1,6 @@
+import { conditionList } from './relationships'
+import type { KnowledgeBody, PortableTextBlock } from './database'
+
 export const SPACE_LABELS: Record<string, string> = {
   NONE: 'None',
   LOW: 'Low',
@@ -168,7 +171,12 @@ export function buildHusbandryFacts(item: SpeciesHusbandryInput): FactGroup[] {
   return groups.filter((g) => g.facts.length > 0)
 }
 
-export const KNOWLEDGE_BODY_SECTIONS: { key: string; title: string }[] = [
+export interface KnowledgeBodySectionDefinition {
+  key: string
+  title: string
+}
+
+export const KNOWLEDGE_BODY_SECTIONS: KnowledgeBodySectionDefinition[] = [
   { key: 'overview', title: 'Overview' },
   { key: 'adultSizeGrowth', title: 'Adult Size & Growth' },
   { key: 'behavior', title: 'Behavior' },
@@ -183,27 +191,155 @@ export const KNOWLEDGE_BODY_SECTIONS: { key: string; title: string }[] = [
   { key: 'practicalVerdict', title: 'Practical Verdict' },
 ]
 
-export function knowledgeBodySections(
-  body?: Record<string, any[]> | null,
-): { title: string; blocks: any[] }[] {
-  if (!body || typeof body !== 'object') return []
-  const known = new Set(KNOWLEDGE_BODY_SECTIONS.map((s) => s.key))
-  const out: { title: string; blocks: any[] }[] = []
-  for (const s of KNOWLEDGE_BODY_SECTIONS) {
-    const blocks = body[s.key]
-    if (Array.isArray(blocks) && blocks.length > 0) out.push({ title: s.title, blocks })
+export const PLANT_KNOWLEDGE_BODY_SECTIONS: KnowledgeBodySectionDefinition[] = [
+  { key: 'overview', title: 'Overview' },
+  { key: 'light', title: 'Light' },
+  { key: 'co2', title: 'CO₂' },
+  { key: 'nutrients', title: 'Nutrients' },
+  { key: 'substrate', title: 'Substrate' },
+  { key: 'placement', title: 'Placement' },
+  { key: 'growthAndTrimming', title: 'Growth & Trimming' },
+  { key: 'waterParameters', title: 'Water Parameters' },
+  { key: 'commonDeficiencies', title: 'Common Deficiencies' },
+  { key: 'algaeSensitivity', title: 'Algae Sensitivity' },
+  { key: 'practicalVerdict', title: 'Practical Verdict' },
+  { key: 'commonProblems', title: 'Common Problems' },
+  { key: 'transition', title: 'Transition' },
+]
+
+export const CORAL_KNOWLEDGE_BODY_SECTIONS: KnowledgeBodySectionDefinition[] = [
+  { key: 'overview', title: 'Overview' },
+  { key: 'placement', title: 'Placement' },
+  { key: 'lightingPar', title: 'Lighting & PAR' },
+  { key: 'flow', title: 'Flow' },
+  { key: 'waterChemistry', title: 'Water Chemistry' },
+  { key: 'nutrition', title: 'Nutrition' },
+  { key: 'growth', title: 'Growth' },
+  { key: 'aggressionSpacing', title: 'Aggression & Spacing' },
+  { key: 'compatibility', title: 'Compatibility' },
+  { key: 'commonProblems', title: 'Common Problems' },
+  { key: 'acclimation', title: 'Acclimation' },
+  { key: 'practicalVerdict', title: 'Practical Verdict' },
+  { key: 'lightingRisks', title: 'Lighting Risks' },
+  { key: 'reefCaveats', title: 'Reef Caveats' },
+  { key: 'chemistryProblems', title: 'Chemistry Problems' },
+]
+
+function isMeaningfulBlock(block: unknown): boolean {
+  if (!block || typeof block !== 'object') return false
+  const b = block as Record<string, unknown>
+  switch (b._type) {
+    case 'block': {
+      const children = Array.isArray(b.children) ? b.children : []
+      return children.some((child) => {
+        if (!child || typeof child !== 'object') return false
+        const span = child as Record<string, unknown>
+        const text = typeof span.text === 'string' ? span.text.trim() : ''
+        const marks = Array.isArray(span.marks) ? span.marks : []
+        return text.length > 0 || marks.length > 0
+      })
+    }
+    case 'image':
+      return !!b.asset
+    case 'code':
+      return typeof b.code === 'string' && b.code.trim().length > 0
+    case 'table':
+      return Array.isArray(b.rows) && b.rows.length > 0
+    default:
+      return false
   }
-  for (const key of Object.keys(body)) {
-    if (key === '_type' || known.has(key)) continue
-    const blocks = body[key]
-    if (Array.isArray(blocks) && blocks.length > 0) out.push({ title: humanizeFlag(key), blocks })
+}
+
+function meaningfulBlocks(value: unknown): PortableTextBlock[] | null {
+  if (!Array.isArray(value)) return null
+  const blocks = value.filter(isMeaningfulBlock) as PortableTextBlock[]
+  return blocks.length > 0 ? blocks : null
+}
+
+export function knowledgeBodySections(
+  body?: KnowledgeBody | Record<string, unknown> | null,
+): { title: string; blocks: PortableTextBlock[] }[] {
+  return buildKnowledgeBodySections(body, KNOWLEDGE_BODY_SECTIONS)
+}
+
+export function plantKnowledgeBodySections(
+  body?: KnowledgeBody | Record<string, unknown> | null,
+): { title: string; blocks: PortableTextBlock[] }[] {
+  return buildKnowledgeBodySections(body, PLANT_KNOWLEDGE_BODY_SECTIONS)
+}
+
+export function coralKnowledgeBodySections(
+  body?: KnowledgeBody | Record<string, unknown> | null,
+): { title: string; blocks: PortableTextBlock[] }[] {
+  return buildKnowledgeBodySections(body, CORAL_KNOWLEDGE_BODY_SECTIONS)
+}
+
+function buildKnowledgeBodySections(
+  body: KnowledgeBody | Record<string, unknown> | null | undefined,
+  definitions: KnowledgeBodySectionDefinition[],
+): { title: string; blocks: PortableTextBlock[] }[] {
+  if (!body || typeof body !== 'object') return []
+  const record = body as Record<string, unknown>
+  const known = new Set(definitions.map((s) => s.key))
+  const usedTitles = new Set<string>()
+  const out: { title: string; blocks: PortableTextBlock[] }[] = []
+
+  const pushSection = (title: string, blocks: PortableTextBlock[]) => {
+    let unique = title
+    let suffix = 2
+    while (usedTitles.has(unique)) unique = `${title} (${suffix++})`
+    usedTitles.add(unique)
+    out.push({ title: unique, blocks })
+  }
+
+  for (const s of definitions) {
+    const blocks = meaningfulBlocks(record[s.key])
+    if (blocks) pushSection(s.title, blocks)
+  }
+  for (const key of Object.keys(record).filter((k) => k !== '_type' && !known.has(k)).sort()) {
+    const blocks = meaningfulBlocks(record[key])
+    if (blocks) pushSection(humanizeFlag(key), blocks)
   }
   return out
 }
 
-export function compatibleSpeciesRefs<T>(entries?: any[] | null): T[] {
+/**
+ * The Knowledge Body may already contain a narrative "Common Problems" section.
+ * The linked-problem cards then need a distinct heading so the page does not
+ * render the same title twice. When only linked problems exist, the established
+ * "Common Problems" heading is kept.
+ */
+export function linkedProblemsHeading(sections: { title: string }[]): string {
+  const hasNarrativeSection = sections.some(
+    (section) => section.title === 'Common Problems' || section.title.startsWith('Common Problems ('),
+  )
+  return hasNarrativeSection ? 'Related Problems' : 'Common Problems'
+}
+
+export interface CompatibilityEntry<T> {
+  ref: T
+  conditions: string[]
+  confidence?: string
+}
+
+export function compatibilityEntries<T>(entries?: unknown[] | null): CompatibilityEntry<T>[] {
   if (!Array.isArray(entries)) return []
-  return entries
-    .map((e) => (e && typeof e === 'object' && 'ref' in e ? e.ref : e))
-    .filter((e): e is T => Boolean(e))
+  const out: CompatibilityEntry<T>[] = []
+  for (const entry of entries) {
+    if (!entry || typeof entry !== 'object') continue
+    const record = entry as Record<string, unknown>
+    const ref = ('ref' in record ? record.ref : entry) as T | null | undefined
+    if (!ref) continue
+    const conditions = conditionList(record.conditions)
+    const confidence =
+      typeof record.confidence === 'string' && record.confidence.trim().length > 0
+        ? record.confidence.trim()
+        : undefined
+    out.push(confidence ? { ref, conditions, confidence } : { ref, conditions })
+  }
+  return out
+}
+
+export function compatibleSpeciesRefs<T>(entries?: unknown[] | null): T[] {
+  return compatibilityEntries<T>(entries).map((entry) => entry.ref)
 }

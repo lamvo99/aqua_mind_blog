@@ -4,14 +4,7 @@ import { useMemo, useState } from "react"
 import Link from "next/link"
 import { Stethoscope, ArrowRight, RotateCcw, CheckCircle2 } from "lucide-react"
 import { SYMPTOM_OPTIONS, diagnoseProblems, type ProblemForDiagnosis } from "@/lib/diagnosis"
-
-const CATEGORY_LABELS: Record<string, string> = {
-  water: "Water quality",
-  algae: "Algae",
-  plants: "Plants",
-  fish: "Fish health",
-  equipment: "Equipment",
-}
+import { problemCategoryLabel } from "@/lib/problem-taxonomy"
 
 function matchLabel(score: number): string {
   if (score >= 75) return "Strong match"
@@ -131,7 +124,7 @@ export default function DiagnosisWizard({ problems }: { problems: ProblemForDiag
                 </div>
                 {r.problem.category && (
                   <span className="inline-block text-[11px] font-medium text-gray-500 dark:text-slate-400 mb-1.5">
-                    {CATEGORY_LABELS[r.problem.category] || r.problem.category}
+                    {problemCategoryLabel(r.problem.category)}
                   </span>
                 )}
                 <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed line-clamp-2">

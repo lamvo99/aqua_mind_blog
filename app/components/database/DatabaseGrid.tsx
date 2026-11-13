@@ -8,6 +8,16 @@ import type { DatabaseItem } from "@/lib/database"
 import { urlFor } from "@/lib/sanity"
 import { COMPARE_FIELDS, MAX_COMPARE } from "@/lib/compare"
 import DatabaseCard from "./DatabaseCard"
+import { trackDatabaseEvent } from "@/lib/analytics"
+
+const ENTITY_TYPE: Record<string, string> = {
+  "/species": "species",
+  "/plants": "plant",
+  "/corals": "coral",
+  "/invertebrates": "invertebrate",
+  "/equipment": "equipment",
+  "/problems": "problem",
+}
 
 export interface FilterGroup {
   key: string
@@ -190,6 +200,24 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
   const activeFilterCount = Object.keys(activeFilters).filter(k => activeFilters[k] && activeFilters[k] !== "all").length +
     Object.keys(activeRanges).length +
     (search.trim().length > 0 ? 1 : 0)
+  const entityType = ENTITY_TYPE[hrefPrefix] || "database"
+
+  const trackedFilters = useRef(false)
+  useEffect(() => {
+    if (!trackedFilters.current) {
+      trackedFilters.current = true
+      return
+    }
+    const timer = setTimeout(() => {
+      trackDatabaseEvent("database_filter_changed", {
+        page_type: "category",
+        database_type: entityType,
+        filter_count: activeFilterCount,
+        result_count: visible.length,
+      })
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [activeFilters, activeRanges, search, activeFilterCount, visible.length, entityType])
 
   const toggleCompare = (item: DatabaseItem) => {
     setSelected((prev) => {
@@ -352,7 +380,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
       {/* Grid */}
       {visible.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {visible.map((item) => (
+          {visible.map((item, index) => (
             <DatabaseCard
               key={item._id}
               item={item}
@@ -360,6 +388,13 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
               comparing={selected.includes(item._id)}
               compareDisabled={selected.length >= MAX_COMPARE}
               onToggleCompare={compareType ? toggleCompare : undefined}
+              onOpen={() =>
+                trackDatabaseEvent("database_result_opened", {
+                  page_type: "category",
+                  database_type: entityType,
+                  result_position: index + 1,
+                })
+              }
             />
           ))}
         </div>

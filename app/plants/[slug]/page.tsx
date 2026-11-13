@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
+import { buildDetailMetadata } from "@/lib/seo/detail-metadata"
 import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -10,6 +11,11 @@ import { ArrowLeft, Sun, Wind, Ruler } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import RelatedArticles from "@/app/components/RelatedArticles"
+import PortableText from "@/app/components/PortableText"
+import { plantKnowledgeBodySections, linkedProblemsHeading } from "@/lib/species-facts"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForEntity } from "@/lib/hubs"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -26,25 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const item = await getDatabaseItem("plant", slug)
   if (!item) return { title: "Not found" }
-  return {
-    title: `${item.name} — Plant Profile`,
-    description: item.excerpt || `Plant care guide for ${item.name}`,
-    alternates: { canonical: `https://www.aquamind.life/plants/${slug}` },
-    openGraph: {
-      title: `${item.name} — Plant Profile`,
-      description: item.excerpt || `Plant care guide for ${item.name}`,
-      type: "website",
-      url: `https://www.aquamind.life/plants/${slug}`,
-      images: item.mainImage
-        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: `${item.name} — aquatic plant profile` }]
-        : undefined,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${item.name} — Plant Profile`,
-      description: item.excerpt || `Plant care guide for ${item.name}`,
-    },
-  }
+  return buildDetailMetadata(item, {
+    pathPrefix: "plants",
+    slug,
+    profileLabel: "Plant Profile",
+    imageAltSuffix: "aquatic plant profile",
+    fallbackDescription: (name) => `Plant care guide for ${name}`,
+  })
 }
 
 function Parameter({ icon, label, value }: { icon?: React.ReactNode; label: string; value?: string | number }) {
@@ -64,6 +58,9 @@ export default async function PlantDetailPage({ params }: Props) {
   const { slug } = await params
   const item = await getDatabaseItem("plant", slug)
   if (!item) notFound()
+
+  const hubLinks = await getHubLinksForEntity("plant")
+  const bodySections = plantKnowledgeBodySections(item.knowledgeBody)
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -117,21 +114,18 @@ export default async function PlantDetailPage({ params }: Props) {
             </div>
           )}
 
-          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
-          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
+          {bodySections.map((section) => (
+            <section key={section.title} className="mt-8">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">{section.title}</h2>
+              <PortableText value={section.blocks} />
+            </section>
+          ))}
 
-          {item.relatedPosts && item.relatedPosts.length > 0 && (
-            <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related Articles</h3>
-              <div className="space-y-2">
-                {item.relatedPosts.map((p: any) => (
-                  <Link key={p._id} href={`/posts/${p.slug?.current}`} className="block text-sm text-aqua-600 dark:text-aqua-400 hover:underline">
-                    {p.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
+          <RelationshipSection title={linkedProblemsHeading(bodySections)} items={item.relatedProblems || []} hrefPrefix="/problems" />
+
+          <RelatedArticles items={item.relatedPosts} currentSlug={slug} />
+          <KnowledgeHubLinks links={hubLinks} />
           <EntityResources type="plant" />
           <WikiPromo />
         </div>

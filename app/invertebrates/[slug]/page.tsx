@@ -10,8 +10,14 @@ import { ArrowLeft, Thermometer, Droplets, Ruler, Fish, Waves } from "lucide-rea
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import RelatedArticles from "@/app/components/RelatedArticles"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForEntity } from "@/lib/hubs"
+import ParentLink from "@/app/components/database/ParentLink"
+import CompatibilityList from "@/app/components/database/CompatibilityList"
+import PredatorPreySection from "@/app/components/database/PredatorPreySection"
 import PortableText from "@/app/components/PortableText"
-import { knowledgeBodySections, compatibleSpeciesRefs } from "@/lib/species-facts"
+import { knowledgeBodySections, compatibilityEntries } from "@/lib/species-facts"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -81,10 +87,12 @@ export default async function InvertebrateDetailPage({ params }: Props) {
   const item = await getDatabaseItem("invertebrate", slug)
   if (!item) notFound()
 
+  const hubLinks = await getHubLinksForEntity("invertebrate")
+
   const range = (min?: number, max?: number, suffix = "") =>
     min !== undefined && max !== undefined && (min !== null) && (max !== null) ? `${min}–${max}${suffix}` : undefined
 
-  const compatible = compatibleSpeciesRefs<any>(item.compatibleSpecies)
+  const compatible = compatibilityEntries<any>(item.compatibleSpecies)
   const bodySections = knowledgeBodySections(item.knowledgeBody)
 
   return (
@@ -123,6 +131,7 @@ export default async function InvertebrateDetailPage({ params }: Props) {
         <div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-1">{item.name}</h1>
           {item.scientificName && <p className="text-lg italic text-gray-500 dark:text-slate-400 mb-4">{item.scientificName}</p>}
+          <ParentLink parent={item.parentSpecies} />
           {item.excerpt && <p className="text-gray-600 dark:text-slate-300 leading-relaxed mb-6">{item.excerpt}</p>}
 
           <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-3">Care Parameters</h2>
@@ -144,22 +153,13 @@ export default async function InvertebrateDetailPage({ params }: Props) {
             </section>
           ))}
 
-          <RelationshipSection title="Compatible Species" items={compatible} hrefPrefix="/species" />
+          <CompatibilityList title="Compatible Species" items={compatible} />
+          <PredatorPreySection items={item.predatorPrey || []} />
           <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
           <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
 
-          {item.relatedPosts && item.relatedPosts.length > 0 && (
-            <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related Articles</h3>
-              <div className="space-y-2">
-                {item.relatedPosts.map((p: any) => (
-                  <Link key={p._id} href={`/posts/${p.slug?.current}`} className="block text-sm text-aqua-600 dark:text-aqua-400 hover:underline">
-                    {p.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <RelatedArticles items={item.relatedPosts} currentSlug={slug} />
+          <KnowledgeHubLinks links={hubLinks} />
           <EntityResources type="invertebrate" />
         </div>
       </div>

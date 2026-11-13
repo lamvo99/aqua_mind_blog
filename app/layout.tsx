@@ -7,6 +7,7 @@ import RegisterSW from "./components/RegisterSW"
 import CookieConsentBanner from "./components/CookieConsentBanner"
 import CookieSettings from "./components/CookieSettings"
 import { JsonLd, websiteSchema, organizationSchema } from "@/lib/seo/jsonld"
+import { getDatabaseCounts } from "@/lib/database-counts"
 import strings from "@/lib/i18n/strings"
 import "./globals.css"
 
@@ -43,14 +44,15 @@ export const metadata: Metadata = {
   alternates: { canonical: siteUrl },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const databaseCounts = await getDatabaseCounts()
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-aqua-600 focus:text-white focus:rounded-lg focus:outline-none">
           Skip to content
         </a>
-        <Navbar />
+        <Navbar databaseCounts={databaseCounts} />
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
         <BackToTop />

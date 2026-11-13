@@ -18,23 +18,25 @@ export const mainNav: NavItem[] = [
 
 export const databaseNav: NavItem[] = [
   { href: "/wiki", label: "Wiki", description: "Search fish, invertebrates, plants, corals & equipment at once" },
-  { href: "/species", label: "Fish", description: "151 species profiles with care parameters" },
-  { href: "/invertebrates", label: "Invertebrates", description: "50 shrimp, snails, crabs & reef inverts" },
-  { href: "/plants", label: "Plants", description: "64 aquatic plants by growth form & light" },
-  { href: "/corals", label: "Corals", description: "49 reef corals — soft, LPS, SPS & NPS" },
-  { href: "/equipment", label: "Equipment", description: "47 filters, lights, pumps & more" },
-  { href: "/problems", label: "Problems", description: "33 common issues with diagnosis & solutions" },
-  { href: "/inspiration", label: "Inspiration", description: "10 aquascaping styles & difficulty levels" },
+  { href: "/hubs", label: "Knowledge Hubs", description: "Article-led paths for water, plants, problems & equipment" },
+  { href: "/species", label: "Fish", description: "Freshwater & marine species with care parameters" },
+  { href: "/invertebrates", label: "Invertebrates", description: "Shrimp, snails, crabs & reef invertebrates" },
+  { href: "/plants", label: "Plants", description: "Aquatic plants by growth form & light" },
+  { href: "/corals", label: "Corals", description: "Reef corals — soft, LPS, SPS & NPS" },
+  { href: "/equipment", label: "Equipment", description: "Filters, lights, pumps & more" },
+  { href: "/problems", label: "Problems", description: "Common issues with symptoms and checks" },
+  { href: "/collections", label: "Collections", description: "Goal-based starting points for common setups" },
+  { href: "/inspiration", label: "Inspiration", description: "Aquascaping styles and setups" },
   { href: "/finder", label: "Finder", description: "Find the right fish, plants & corals for your tank" },
 ]
 
 export const databaseCategories = [
-  { href: "/species", label: "Fish", count: 151, icon: "fish", description: "Freshwater & marine species with care parameters" },
-  { href: "/invertebrates", label: "Invertebrates", count: 50, icon: "invertebrate", description: "Shrimp, snails, crabs & reef invertebrates" },
-  { href: "/plants", label: "Plants", count: 64, icon: "plant", description: "Aquatic plants by growth form & light requirements" },
-  { href: "/corals", label: "Corals", count: 49, icon: "coral", description: "Soft, LPS, SPS & non-photosynthetic corals" },
-  { href: "/equipment", label: "Equipment", count: 47, icon: "equipment", description: "Filters, heaters, lights, pumps & accessories" },
-  { href: "/problems", label: "Problems", count: 33, icon: "problem", description: "Common aquarium issues with diagnosis & solutions" },
+  { href: "/species", label: "Fish", icon: "fish", description: "Freshwater & marine species with care parameters" },
+  { href: "/invertebrates", label: "Invertebrates", icon: "invertebrate", description: "Shrimp, snails, crabs & reef invertebrates" },
+  { href: "/plants", label: "Plants", icon: "plant", description: "Aquatic plants by growth form & light requirements" },
+  { href: "/corals", label: "Corals", icon: "coral", description: "Soft, LPS, SPS & non-photosynthetic corals" },
+  { href: "/equipment", label: "Equipment", icon: "equipment", description: "Filters, heaters, lights, pumps & accessories" },
+  { href: "/problems", label: "Problems", icon: "problem", description: "Common aquarium issues with diagnosis and checks" },
 ]
 
 export const toolsNav: NavItem[] = [

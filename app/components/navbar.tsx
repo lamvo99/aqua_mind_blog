@@ -9,6 +9,24 @@ import { useTheme } from "@/lib/store"
 import SearchModal from "./SearchModal"
 import strings from "@/lib/i18n/strings"
 import { mainNav, databaseNav } from "@/lib/navigation"
+import type { DatabaseCounts } from "@/lib/database-counts"
+
+const COUNT_KEY_BY_HREF: Record<string, keyof DatabaseCounts> = {
+  "/species": "species",
+  "/invertebrates": "invertebrate",
+  "/plants": "plant",
+  "/corals": "coral",
+  "/equipment": "equipment",
+  "/problems": "problem",
+}
+
+function countFor(counts: DatabaseCounts | null | undefined, href: string): number | null {
+  if (!counts) return null
+  const key = COUNT_KEY_BY_HREF[href]
+  if (!key) return null
+  const value = counts[key]
+  return typeof value === "number" ? value : null
+}
 
 function isActive(pathname: string, href: string) {
   if (href === "/posts") return pathname.startsWith("/posts")
@@ -20,7 +38,7 @@ function isActive(pathname: string, href: string) {
   return pathname === href
 }
 
-export default function Navbar() {
+export default function Navbar({ databaseCounts }: { databaseCounts?: DatabaseCounts | null }) {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
@@ -105,10 +123,15 @@ export default function Navbar() {
                               className="flex items-start gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors"
                             >
                               <Database className="w-4 h-4 text-aqua-500 mt-0.5 shrink-0" />
-                              <span>
+                              <span className="min-w-0 flex-1">
                                 <span className="block text-sm font-medium text-gray-900 dark:text-slate-100">{item.label}</span>
                                 <span className="block text-xs text-gray-500 dark:text-slate-400">{item.description}</span>
                               </span>
+                              {countFor(databaseCounts, item.href) !== null && (
+                                <span className="ml-auto shrink-0 rounded-full bg-aqua-50 dark:bg-aqua-950/50 px-2 py-0.5 text-[11px] font-semibold text-aqua-700 dark:text-aqua-300">
+                                  {countFor(databaseCounts, item.href)}
+                                </span>
+                              )}
                             </Link>
                           ))}
                         </div>
@@ -185,9 +208,14 @@ export default function Navbar() {
                             key={item.href}
                             href={item.href}
                             onClick={() => setMobileOpen(false)}
-                            className="block px-4 py-2 rounded-lg text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 hover:bg-gray-50 dark:hover:bg-slate-800"
+                            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-gray-500 dark:text-slate-400 hover:text-aqua-600 dark:hover:text-aqua-400 hover:bg-gray-50 dark:hover:bg-slate-800"
                           >
-                            {item.label}
+                            <span>{item.label}</span>
+                            {countFor(databaseCounts, item.href) !== null && (
+                              <span className="ml-auto rounded-full bg-aqua-50 dark:bg-aqua-950/50 px-2 py-0.5 text-[11px] font-semibold text-aqua-700 dark:text-aqua-300">
+                                {countFor(databaseCounts, item.href)}
+                              </span>
+                            )}
                           </Link>
                         ))}
                       </div>

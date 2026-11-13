@@ -6,11 +6,11 @@ import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Fish Species Database — AquaMind",
+  title: "Fish Species Database",
   description: "Browse fish species profiles with care parameters: size, tank size, temperature, pH, diet, temperament and compatibility.",
   alternates: { canonical: "https://www.aquamind.life/species" },
   openGraph: {
-    title: "Fish Species Database — AquaMind",
+    title: "Fish Species Database",
     description: "Browse fish species profiles with care parameters: size, tank size, temperature, pH, diet, temperament and compatibility.",
     type: "website",
     locale: "en_US",

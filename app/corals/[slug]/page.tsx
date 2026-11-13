@@ -3,6 +3,8 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
+import { buildDetailMetadata } from "@/lib/seo/detail-metadata"
+import { interpretReefCompatibility } from "@/lib/coral-reef-compatibility"
 import { getDatabaseItem, getDatabaseList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -10,6 +12,13 @@ import { ArrowLeft, Sun, Wind, Droplets } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
 import RelationshipSection from "@/app/components/database/RelationshipSection"
+import CareClaims from "@/app/components/care/CareClaims"
+import DifficultyContext from "@/app/components/database/DifficultyContext"
+import RelatedArticles from "@/app/components/RelatedArticles"
+import PortableText from "@/app/components/PortableText"
+import { coralKnowledgeBodySections, linkedProblemsHeading } from "@/lib/species-facts"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForEntity } from "@/lib/hubs"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -26,25 +35,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const item = await getDatabaseItem("coral", slug)
   if (!item) return { title: "Not found" }
-  return {
-    title: `${item.name} — Coral Profile`,
-    description: item.excerpt || `Coral care guide for ${item.name}`,
-    alternates: { canonical: `https://www.aquamind.life/corals/${slug}` },
-    openGraph: {
-      title: `${item.name} — Coral Profile`,
-      description: item.excerpt || `Coral care guide for ${item.name}`,
-      type: "website",
-      url: `https://www.aquamind.life/corals/${slug}`,
-      images: item.mainImage
-        ? [{ url: urlFor(item.mainImage).width(1200).height(630).url(), width: 1200, height: 630, alt: `${item.name} — coral profile` }]
-        : undefined,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${item.name} — Coral Profile`,
-      description: item.excerpt || `Coral care guide for ${item.name}`,
-    },
-  }
+  return buildDetailMetadata(item, {
+    pathPrefix: "corals",
+    slug,
+    profileLabel: "Coral Profile",
+    imageAltSuffix: "coral profile",
+    fallbackDescription: (name) => `Coral care guide for ${name}`,
+  })
 }
 
 function Parameter({ icon, label, value }: { icon?: React.ReactNode; label: string; value?: string | number }) {
@@ -64,6 +61,14 @@ export default async function CoralDetailPage({ params }: Props) {
   const { slug } = await params
   const item = await getDatabaseItem("coral", slug)
   if (!item) notFound()
+
+  const hubLinks = await getHubLinksForEntity("coral")
+  const bodySections = coralKnowledgeBodySections(item.knowledgeBody)
+  const reefCompatibility = interpretReefCompatibility(item)
+
+  const difficultySources = (item.evidenceSources || []).filter((source: any) =>
+    Array.isArray(source.supportedClaimKeys) && source.supportedClaimKeys.includes('difficulty')
+  )
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -107,25 +112,53 @@ export default async function CoralDetailPage({ params }: Props) {
             <Parameter label="Placement" value={item.placement} />
             <Parameter label="Type" value={item.coralType ? item.coralType.toUpperCase() : undefined} />
             <Parameter label="Aggression" value={item.aggression} />
-            <Parameter icon={<Droplets className="w-3.5 h-3.5" />} label="Reef safe" value={item.reefCompatibility !== undefined ? (item.reefCompatibility ? "Yes" : "No") : undefined} />
+            <Parameter
+              icon={<Droplets className="w-3.5 h-3.5" />}
+              label="Reef compatibility"
+              value={reefCompatibility?.label}
+            />
             <Parameter label="Temperature" value={item.tempMinC !== undefined && item.tempMaxC !== undefined && item.tempMinC !== null && item.tempMaxC !== null ? `${item.tempMinC}–${item.tempMaxC}°C` : undefined} />
           </div>
 
-          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
-          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
-
-          {item.relatedPosts && item.relatedPosts.length > 0 && (
-            <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related Articles</h3>
-              <div className="space-y-2">
-                {item.relatedPosts.map((p: any) => (
-                  <Link key={p._id} href={`/posts/${p.slug?.current}`} className="block text-sm text-aqua-600 dark:text-aqua-400 hover:underline">
-                    {p.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
+          {reefCompatibility && (
+            <p className="mt-3 text-xs leading-relaxed text-gray-600 dark:text-slate-300">
+              {reefCompatibility.detail}
+            </p>
           )}
+
+          <DifficultyContext
+            difficulty={item.difficulty}
+            context={item.difficultyContext}
+            confidence={item.difficultyConfidence}
+            sources={difficultySources}
+            notRecommendedFor={item.notRecommendedFor}
+            suitabilityConditions={item.suitabilityConditions}
+          />
+
+          <CareClaims
+            careBasis={item.careBasis}
+            careConfidence={item.careConfidence}
+            sources={item.evidenceSources}
+            reviewStatus={item.reviewStatus}
+            lastReviewedAt={item.lastReviewedAt}
+            growthRisk={item.growthRisk}
+            growthRiskNote={item.growthRiskNote}
+            reefCompatibility={item.reefCompatibility}
+            reefSafetyMeaning={item.reefSafetyMeaning ?? undefined}
+          />
+
+          {bodySections.map((section) => (
+            <section key={section.title} className="mt-8">
+              <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">{section.title}</h2>
+              <PortableText value={section.blocks} />
+            </section>
+          ))}
+
+          <RelationshipSection title="Suitable Equipment" items={item.suitableEquipment || []} hrefPrefix="/equipment" />
+          <RelationshipSection title={linkedProblemsHeading(bodySections)} items={item.relatedProblems || []} hrefPrefix="/problems" />
+
+          <RelatedArticles items={item.relatedPosts} currentSlug={slug} />
+          <KnowledgeHubLinks links={hubLinks} />
           <EntityResources type="coral" />
           <WikiPromo />
         </div>

@@ -295,6 +295,107 @@ export function findMatches(items: FinderItem[], intent: FinderIntent): FinderRe
   })
 }
 
+// ===== SHORTLIST =====
+
+const TYPE_ORDER: FinderItem['_type'][] = ['species', 'invertebrate', 'plant', 'coral', 'equipment']
+
+export interface FinderGroup {
+  type: FinderItem['_type']
+  label: string
+  items: FinderResult[]
+}
+
+export interface FinderShortlist {
+  items: FinderResult[]
+  total: number
+  groups: FinderGroup[]
+}
+
+const TYPE_LABEL: Record<FinderItem['_type'], string> = {
+  species: 'Fish',
+  invertebrate: 'Invertebrates',
+  plant: 'Plants',
+  coral: 'Corals',
+  equipment: 'Equipment',
+}
+
+function tankFitScore(item: FinderItem, intent: FinderIntent): number {
+  let score = 0
+  if (intent.tankSizeL != null && item.tankSizeMinL != null) {
+    const margin = intent.tankSizeL - item.tankSizeMinL
+    if (margin >= 0) score += Math.min(3, 1 + Math.floor(margin / 100))
+  }
+  if (intent.tankRange) {
+    const [lower, upper] = TANK_RANGES[intent.tankRange]
+    if (item.tankSizeMinL != null) {
+      if (item.tankSizeMinL <= lower) score += 3
+      else if (item.tankSizeMinL <= upper) score += 2
+    }
+    if (item.tankSizeMaxL != null && item.tankSizeMaxL >= lower) score += 1
+  }
+  return score
+}
+
+function difficultyFitScore(item: FinderItem, intent: FinderIntent): number {
+  if (!intent.difficulty || !item.difficulty) return 0
+  const diff = (DIFF_RANK[item.difficulty] ?? 0) - EXP_MAP[intent.difficulty]
+  if (diff === 0) return 3
+  if (diff === 1) return 2
+  if (diff < 0) return 1
+  return 0
+}
+
+/**
+ * Ranks the already-filtered matches and returns a bounded shortlist.
+ * It never discards the true total and never treats missing data as a
+ * suitability claim — missing fields only reduce ranking confidence.
+ */
+export function shortlistMatches(
+  results: FinderResult[],
+  intent: FinderIntent,
+  limit = 20
+): FinderShortlist {
+  const safeLimit = Math.max(1, Math.min(50, Math.floor(limit)))
+  const ranked = [...results].sort((a, b) => {
+    const aFit =
+      tankFitScore(a.item, intent) +
+      difficultyFitScore(a.item, intent) +
+      a.matchCount -
+      a.unknownCount * 0.25
+    const bFit =
+      tankFitScore(b.item, intent) +
+      difficultyFitScore(b.item, intent) +
+      b.matchCount -
+      b.unknownCount * 0.25
+    if (bFit !== aFit) return bFit - aFit
+    if (b.matchCount !== a.matchCount) return b.matchCount - a.matchCount
+    return a.item.name.localeCompare(b.item.name)
+  })
+
+  // Keep a little type diversity: up to six per type, then fill by score.
+  const picked: FinderResult[] = []
+  const perType = new Map<string, number>()
+  for (const result of ranked) {
+    if (picked.length >= safeLimit) break
+    const used = perType.get(result.item._type) || 0
+    if (used >= 6) continue
+    perType.set(result.item._type, used + 1)
+    picked.push(result)
+  }
+  for (const result of ranked) {
+    if (picked.length >= safeLimit) break
+    if (!picked.includes(result)) picked.push(result)
+  }
+
+  const groups: FinderGroup[] = TYPE_ORDER.map((type) => ({
+    type,
+    label: TYPE_LABEL[type],
+    items: picked.filter((result) => result.item._type === type),
+  })).filter((group) => group.items.length > 0)
+
+  return { items: picked, total: results.length, groups }
+}
+
 // ===== URL STATE =====
 
 export function intentToParams(intent: FinderIntent): string {

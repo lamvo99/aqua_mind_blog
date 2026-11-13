@@ -26,14 +26,24 @@ export const metadata: Metadata = {
 export const revalidate = 86400
 
 async function getSpecies(): Promise<CompatSpecies[]> {
-  return await client.fetch(
+  const rows = await client.fetch<CompatSpecies[]>(
     `*[_type == "species" && defined(slug) && defined(name)] | order(name asc) {
-      _id, name, scientificName, slug,
+      _id, name, scientificName, "slug": slug.current,
       sizeCm, tankSizeMinL, tempMinC, tempMaxC, phMin, phMax, ghMin, ghMax,
       diet, temperament, waterZone, schooling, difficulty,
-      "compatibleWith": compatibleSpecies[defined(ref)].ref->slug.current
+      "compatibleWith": compatibleSpecies[defined(ref)]{
+        "slug": ref->slug.current,
+        conditions,
+        confidence
+      }
     }`
   )
+  return rows.map((species) => ({
+    ...species,
+    compatibleWith: (species.compatibleWith || []).filter(
+      (entry) => entry && typeof entry.slug === "string" && entry.slug.trim().length > 0
+    ),
+  }))
 }
 
 export default async function CompatibilityCheckerPage() {

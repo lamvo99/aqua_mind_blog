@@ -1,144 +1,120 @@
 "use client"
 
 import { useState, useEffect, useRef, useCallback } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
-import Image from "next/image"
 import { Search, X, Loader2 } from "lucide-react"
 import strings from "@/lib/i18n/strings"
-import { client } from "@/lib/sanity"
-import { urlFor } from "@/lib/sanity"
+import { fetchSearch } from "@/lib/search-client"
+import { highlightParts, searchHref, SEARCH_TYPE_LABEL, type SearchHit } from "@/lib/search-core"
+import { trackDatabaseEvent } from "@/lib/analytics"
 
-const typeLabels: Record<string, string> = {
-  post: "Article",
-  species: "Fish",
-  plant: "Plant",
-  coral: "Coral",
-  equipment: "Equipment",
-  invertebrate: "Invertebrate",
-}
-
-interface SearchResult {
-  _id: string
-  _type: string
-  title: string
-  slug: { current: string }
-  excerpt: string
-  mainImage: any
-  publishedAt?: string
-}
-
-function rankSearchItem(item: any, q: string): number {
-  const name = (item.name || item.title || "").toLowerCase()
-  const sci = (item.scientificName || "").toLowerCase()
-  const aliases = (item.aliases || []).map((a: string) => a.toLowerCase())
-  const localNames = (item.localNames || []).map((n: string) => n.toLowerCase())
-  if (name === q) return 0
-  if (sci === q) return 1
-  if (aliases.includes(q)) return 2
-  if (localNames.includes(q)) return 3
-  if (name.startsWith(q)) return 4
-  if (name.includes(q)) return 6
-  return 8
+function Highlighted({ text, query }: { text: string; query: string }) {
+  return (
+    <>
+      {highlightParts(text, query).map((part, index) =>
+        part.match ? (
+          <mark key={index} className="rounded bg-aqua-100 px-0.5 text-inherit dark:bg-aqua-900/60">
+            {part.text}
+          </mark>
+        ) : (
+          <span key={index}>{part.text}</span>
+        )
+      )}
+    </>
+  )
 }
 
 export default function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const router = useRouter()
   const [query, setQuery] = useState("")
-  const [results, setResults] = useState<SearchResult[]>([])
+  const [results, setResults] = useState<SearchHit[]>([])
+  const [total, setTotal] = useState(0)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
+  const [searched, setSearched] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
   const inputRef = useRef<HTMLInputElement>(null)
   const tokenRef = useRef(0)
 
   useEffect(() => {
     if (open) {
-      setTimeout(() => inputRef.current?.focus(), 100)
-    } else {
-      setQuery("")
-      setResults([])
-      setError(false)
-      setActiveIndex(-1)
+      const timer = setTimeout(() => inputRef.current?.focus(), 100)
+      return () => clearTimeout(timer)
     }
+    setQuery("")
+    setResults([])
+    setTotal(0)
+    setError(false)
+    setSearched(false)
+    setActiveIndex(-1)
   }, [open])
 
   useEffect(() => {
-    if (!query.trim()) {
+    const term = query.trim()
+    if (!open || term.length < 2) {
       setResults([])
+      setTotal(0)
+      setSearched(false)
       setError(false)
       setActiveIndex(-1)
       return
     }
+
     const token = ++tokenRef.current
+    const controller = new AbortController()
     setLoading(true)
     setError(false)
     const timer = setTimeout(async () => {
       try {
-        const [posts, dbItems] = await Promise.all([
-          client.fetch(
-            `*[_type == "post" && title match $q + "*"] | order(publishedAt desc) [0...4] {
-              _id, _type, title, slug, excerpt, mainImage, publishedAt
-            }`,
-            { q: query }
-          ),
-          client.fetch(
-            `*[_type in ["species", "plant", "coral", "equipment", "invertebrate"] && (
-              name match $q + "*" ||
-              scientificName match $q + "*" ||
-              $q in aliases ||
-              $q in localNames
-            )] | order(name asc) [0...8] {
-              _id, _type, "title": name, slug, excerpt, mainImage,
-              name, scientificName, aliases, localNames
-            }`,
-            { q: query }
-          ),
-        ])
+        const data = await fetchSearch({ query: term, type: "all", limit: 8, signal: controller.signal })
         if (token !== tokenRef.current) return
-        const q = query.toLowerCase().trim()
-        const seen = new Set<string>()
-        const ranked: any[] = []
-        for (const item of [...(posts || []), ...(dbItems || [])]) {
-          if (seen.has(item._id)) continue
-          seen.add(item._id)
-          ranked.push(item)
-        }
-        ranked.sort((a: any, b: any) => {
-          const ra = rankSearchItem(a, q)
-          const rb = rankSearchItem(b, q)
-          return ra - rb
+        setResults(data.results)
+        setTotal(data.total)
+        setSearched(true)
+        trackDatabaseEvent("database_search_submitted", {
+          page_type: "modal",
+          query_length: term.length,
+          result_count: data.total,
         })
-        setResults(ranked.map((r: any) => ({
-          _id: r._id, _type: r._type, title: r.title || r.name,
-          slug: r.slug, excerpt: r.excerpt, mainImage: r.mainImage,
-          publishedAt: r.publishedAt,
-        })))
-      } catch {
+        if (data.total === 0) {
+          trackDatabaseEvent("database_search_no_results", {
+            page_type: "modal",
+            query_length: term.length,
+          })
+        }
+      } catch (err) {
+        if ((err as Error).name === "AbortError") return
         if (token !== tokenRef.current) return
         setResults([])
+        setTotal(0)
         setError(true)
+        setSearched(true)
+      } finally {
+        if (token === tokenRef.current) setLoading(false)
       }
-      if (token === tokenRef.current) setLoading(false)
-    }, 300)
-    return () => clearTimeout(timer)
-  }, [query])
+    }, 250)
+
+    return () => {
+      controller.abort()
+      clearTimeout(timer)
+    }
+  }, [query, open])
 
   const goTo = useCallback(
     (index: number) => {
       const item = results[index]
       if (!item) return
+      trackDatabaseEvent("database_search_result_opened", {
+        page_type: "modal",
+        database_type: item.type,
+        result_position: index + 1,
+        query_length: query.trim().length,
+      })
       onClose()
-      const typeRoutes: Record<string, string> = {
-        post: "/posts",
-        species: "/species",
-        plant: "/plants",
-        coral: "/corals",
-        equipment: "/equipment",
-        invertebrate: "/invertebrates",
-      }
-      const base = typeRoutes[item._type] || "/posts"
-      window.location.href = `${base}/${item.slug.current}`
+      router.push(searchHref(item))
     },
-    [results, onClose]
+    [results, onClose, router, query]
   )
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -181,7 +157,7 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
           <Search className="w-5 h-5 text-gray-500 shrink-0" />
           <input
             ref={inputRef}
-            type="text"
+            type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -198,57 +174,74 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
           </button>
         </div>
         {error && (
-          <p className="p-6 text-center text-sm text-red-500" role="alert">
-            Search unavailable right now. Please try again.
-          </p>
+          <div className="p-6 text-center text-sm text-red-500" role="alert">
+            <p>Search unavailable right now. Please try again.</p>
+            <Link href="/database" onClick={onClose} className="mt-2 inline-block underline">
+              Browse the database instead
+            </Link>
+          </div>
         )}
         {!error && results.length > 0 && (
-          <ul id="search-results" role="listbox" aria-label="Search results" className="max-h-80 overflow-y-auto p-2">
-            {results.map((post, index) => (
-              <li key={post._id} role="option" aria-selected={index === activeIndex} id={`search-result-${index}`}>
-                <Link
-                  href={post._type === "post" ? `/posts/${post.slug.current}` : `/${post._type === "species" ? "species" : post._type === "plant" ? "plants" : post._type === "coral" ? "corals" : post._type === "equipment" ? "equipment" : "invertebrates"}/${post.slug.current}`}
-                  onClick={onClose}
-                  className={`flex items-center gap-3 p-3 rounded-xl transition-colors group ${
-                    index === activeIndex ? "bg-aqua-50 dark:bg-aqua-950/50" : "hover:bg-gray-50 dark:hover:bg-slate-700/50"
-                  }`}
-                >
-                  {post.mainImage ? (
-                    <Image
-                      src={urlFor(post.mainImage).width(64).height(64).url() || ""}
-                      alt={post.title}
-                      width={64}
-                      height={64}
-                      loading="lazy"
-                      className="w-12 h-12 rounded-lg object-cover shrink-0"
-                    />
-                  ) : (
-                    <div className="w-12 h-12 rounded-lg bg-aqua-100 dark:bg-aqua-900 flex items-center justify-center shrink-0">
-                      <Search className="w-5 h-5 text-aqua-500" />
+          <>
+            <ul id="search-results" role="listbox" aria-label="Search results" className="max-h-80 overflow-y-auto p-2">
+              {results.map((item, index) => (
+                <li key={`${item.type}-${item.id}`} role="option" aria-selected={index === activeIndex} id={`search-result-${index}`}>
+                  <Link
+                    href={searchHref(item)}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      goTo(index)
+                    }}
+                    className={`flex items-start gap-3 p-3 rounded-xl transition-colors group ${
+                      index === activeIndex ? "bg-aqua-50 dark:bg-aqua-950/50" : "hover:bg-gray-50 dark:hover:bg-slate-700/50"
+                    }`}
+                  >
+                    <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-aqua-50 dark:bg-aqua-950/50 text-[10px] font-semibold uppercase text-aqua-700 dark:text-aqua-300">
+                      {SEARCH_TYPE_LABEL[item.type]?.slice(0, 2) || "?"}
                     </div>
-                  )}
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className={`text-sm font-medium text-gray-900 dark:text-slate-100 truncate group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors ${index === activeIndex ? "text-aqua-700 dark:text-aqua-300" : ""}`}>
-                        {post.title}
-                      </p>
-                      {post._type !== "post" && (
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm font-medium text-gray-900 dark:text-slate-100 truncate">
+                          <Highlighted text={item.title} query={query} />
+                        </p>
                         <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-aqua-100 dark:bg-aqua-900/50 text-aqua-700 dark:text-aqua-300 shrink-0">
-                          {typeLabels[post._type] || post._type}
+                          {SEARCH_TYPE_LABEL[item.type] || item.type}
                         </span>
+                      </div>
+                      {item.excerpt && (
+                        <p className="text-xs text-gray-500 dark:text-slate-400 truncate mt-0.5">
+                          <Highlighted text={item.excerpt} query={query} />
+                        </p>
                       )}
                     </div>
-                    {post.excerpt && (
-                      <p className="text-xs text-gray-500 dark:text-slate-400 truncate mt-0.5">{post.excerpt}</p>
-                    )}
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="border-t border-gray-200 px-4 py-2 text-xs text-gray-500 dark:border-slate-700 dark:text-slate-400">
+              Showing {results.length} of {total}.{" "}
+              <Link
+                href={`/search?q=${encodeURIComponent(query.trim())}`}
+                onClick={onClose}
+                className="font-medium text-aqua-600 hover:underline dark:text-aqua-400"
+              >
+                Open full search
+              </Link>
+            </div>
+          </>
         )}
-        {!error && query && !loading && results.length === 0 && (
-          <div className="p-8 text-center text-sm text-gray-500">{strings.search.noResults}</div>
+        {!error && searched && results.length === 0 && (
+          <div className="p-8 text-center text-sm text-gray-500 dark:text-slate-400">
+            <p>{strings.search.noResults}</p>
+            <p className="mt-1">Try a scientific name or a stored trade name.</p>
+            <Link
+              href={`/search?q=${encodeURIComponent(query.trim())}`}
+              onClick={onClose}
+              className="mt-3 inline-block font-medium text-aqua-600 hover:underline dark:text-aqua-400"
+            >
+              Open full search
+            </Link>
+          </div>
         )}
       </div>
     </div>

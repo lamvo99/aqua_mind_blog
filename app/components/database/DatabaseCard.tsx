@@ -12,6 +12,7 @@ interface DatabaseCardProps {
   comparing?: boolean
   compareDisabled?: boolean
   onToggleCompare?: (item: DatabaseItem) => void
+  onOpen?: () => void
 }
 
 function getDifficultyColor(difficulty?: string) {
@@ -33,7 +34,7 @@ function getWaterTypeIcon(waterType?: string) {
   }
 }
 
-export default function DatabaseCard({ item, href, comparing = false, compareDisabled = false, onToggleCompare }: DatabaseCardProps) {
+export default function DatabaseCard({ item, href, comparing = false, compareDisabled = false, onToggleCompare, onOpen }: DatabaseCardProps) {
   const difficulty = (item as any).difficulty as string | undefined
   const waterType = (item as any).waterType as string | undefined
   const category = item.category as string | undefined
@@ -41,7 +42,7 @@ export default function DatabaseCard({ item, href, comparing = false, compareDis
 
   return (
     <div className="group relative rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 overflow-hidden hover:shadow-lg hover:border-aqua-300 dark:hover:border-aqua-800 transition-all card-hover">
-      <Link href={href} className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-aqua-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 rounded-2xl">
+      <Link href={href} onClick={onOpen} className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-aqua-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 rounded-2xl">
         <div className="relative aspect-[4/3] bg-aqua-50 dark:bg-slate-900">
           {item.mainImage ? (
             <Image

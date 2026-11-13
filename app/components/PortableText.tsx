@@ -6,20 +6,36 @@ function headingId(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
 }
 
-function renderText(child: any) {
+function renderText(child: any, markDefs: any[] = []) {
+  if (!child || typeof child !== 'object') return null
   let text: React.ReactNode = child.text
   if (child.marks?.includes("strong")) text = <strong>{text}</strong>
   if (child.marks?.includes("em")) text = <em>{text}</em>
   if (child.marks?.includes("code")) text = <code className="bg-gray-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-sm text-aqua-600 dark:text-aqua-400">{text}</code>
   if (child.marks?.includes("strike-through")) text = <s>{text}</s>
   if (child.marks?.includes("underline")) text = <u>{text}</u>
+  for (const mark of child.marks || []) {
+    if (["strong", "em", "code", "strike-through", "underline"].includes(mark)) continue
+    const def = markDefs.find((item) => item?._key === mark)
+    if (def?.href) {
+      text = (
+        <a href={def.href} className="text-aqua-600 underline decoration-aqua-300 underline-offset-2 dark:text-aqua-400">
+          {text}
+        </a>
+      )
+    }
+  }
   return text
 }
 
 function BlockRenderer({ block }: { block: any }) {
+  if (!block || typeof block !== "object") return null
   const style = block.style || "normal"
-  const children = block.children?.map((child: any, i: number) => (
-    <span key={i}>{renderText(child)}</span>
+  const childList = Array.isArray(block.children) ? block.children : []
+  const markDefs = Array.isArray(block.markDefs) ? block.markDefs : []
+  if (!block.listItem && childList.length === 0) return null
+  const children = childList.map((child: any, i: number) => (
+    <span key={child?._key || i}>{renderText(child, markDefs)}</span>
   ))
 
   const baseClass = "text-gray-700 dark:text-slate-300 leading-relaxed"
@@ -49,14 +65,15 @@ function BlockRenderer({ block }: { block: any }) {
   }
 }
 
-function renderListItemText(children: any[]) {
-  return children?.map((child: any, i: number) => (
-    <span key={i}>{renderText(child)}</span>
+function renderListItemText(children: any[], markDefs: any[] = []) {
+  if (!Array.isArray(children)) return null
+  return children.map((child: any, i: number) => (
+    <span key={child?._key || i}>{renderText(child, markDefs)}</span>
   ))
 }
 
-export default function PortableText({ value }: { value: any[] }) {
-  if (!value) return null
+export default function PortableText({ value }: { value?: unknown }) {
+  if (!Array.isArray(value)) return null
 
   const blocks: any[] = []
   let currentList: any[] | null = null
@@ -69,7 +86,13 @@ export default function PortableText({ value }: { value: any[] }) {
     }
   }
 
-  for (const block of value) {
+  for (const raw of value) {
+    if (!raw || typeof raw !== "object") continue
+    const block = raw as any
+    if (!block._type) continue
+    if (block._type === "block" && (!Array.isArray(block.children) || block.children.length === 0)) continue
+    if (block._type === "image" && !block.asset) continue
+    if (block._type === "code" && (typeof block.code !== "string" || block.code.trim() === "")) continue
     if (block._type === "block" && block.listItem) {
       if (!currentList) currentList = []
       currentList.push({ block })
@@ -92,7 +115,7 @@ export default function PortableText({ value }: { value: any[] }) {
             }>
               {item.items.map((li: any, j: number) => (
                 <li key={`${li.block._key || j}`} className="mb-1">
-                  {renderListItemText(li.block.children)}
+                  {renderListItemText(li.block.children, li.block.markDefs)}
                 </li>
               ))}
             </Tag>

@@ -6,11 +6,11 @@ import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld
 import { Database } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Invertebrates Database — Shrimp, Snails & Corals — AquaMind",
+  title: "Invertebrates Database — Shrimp, Snails & Corals",
   description: "Browse aquarium invertebrate profiles with care parameters: size, temperature, pH, diet, temperament and difficulty for shrimp, snails, crabs, urchins, starfish and anemones.",
   alternates: { canonical: "https://www.aquamind.life/invertebrates" },
   openGraph: {
-    title: "Invertebrates Database — Shrimp, Snails & Corals — AquaMind",
+    title: "Invertebrates Database — Shrimp, Snails & Corals",
     description: "Browse aquarium invertebrate profiles with care parameters: size, temperature, pH, diet, temperament and difficulty for shrimp, snails, crabs, urchins, starfish and anemones.",
     type: "website",
     locale: "en_US",

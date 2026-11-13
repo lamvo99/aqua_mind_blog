@@ -9,6 +9,11 @@ import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import { ArrowLeft, Droplets, Zap, Waves, Check, X } from "lucide-react"
 import WikiPromo from "@/app/components/database/WikiPromo"
 import EntityResources from "@/app/components/EntityResources"
+import RelationshipSection from "@/app/components/database/RelationshipSection"
+import RelatedArticles from "@/app/components/RelatedArticles"
+import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
+import { getHubLinksForEntity } from "@/lib/hubs"
+import { formatFlowRate, formatPower, formatTankSize } from "@/lib/equipment-specs"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -51,18 +56,17 @@ export default async function EquipmentDetailPage({ params }: Props) {
   const item = await getDatabaseItem("equipment", slug)
   if (!item) notFound()
 
+  const hubLinks = await getHubLinksForEntity("equipment")
+
   const specs: { label: string; value?: string | number }[] = [
     { label: "Category", value: item.category },
     { label: "Brand", value: item.brand },
     { label: "Model", value: item.model },
-    { label: "Flow rate", value: item.flowRateLh ? `${item.flowRateLh} L/h` : undefined },
-    { label: "Power", value: item.powerW ? `${item.powerW} W` : undefined },
+    { label: "Flow rate", value: formatFlowRate(item.flowRateLh) ?? undefined },
+    { label: "Power", value: formatPower(item.powerW) ?? undefined },
     {
       label: "Suitable tank",
-      value:
-        item.tankSizeMinL !== undefined && item.tankSizeMaxL !== undefined && item.tankSizeMinL !== null && item.tankSizeMaxL !== null
-          ? `${item.tankSizeMinL}–${item.tankSizeMaxL} L`
-          : undefined,
+      value: formatTankSize(item.tankSizeMinL, item.tankSizeMaxL) ?? undefined,
     },
   ]
 
@@ -149,18 +153,11 @@ export default async function EquipmentDetailPage({ params }: Props) {
             </div>
           )}
 
-          {item.relatedPosts && item.relatedPosts.length > 0 && (
-            <div className="mt-6 p-4 rounded-2xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-slate-100 mb-3">Related Articles</h3>
-              <div className="space-y-2">
-                {item.relatedPosts.map((p: any) => (
-                  <Link key={p._id} href={`/posts/${p.slug?.current}`} className="block text-sm text-aqua-600 dark:text-aqua-400 hover:underline">
-                    {p.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          <RelationshipSection title="Common Problems" items={item.relatedProblems || []} hrefPrefix="/problems" />
+          <RelationshipSection title="Compatible Equipment" items={item.compatibleEquipment || []} hrefPrefix="/equipment" />
+
+          <RelatedArticles items={item.relatedPosts} currentSlug={slug} />
+          <KnowledgeHubLinks links={hubLinks} />
           <EntityResources type="equipment" />
           <WikiPromo />
         </div>
