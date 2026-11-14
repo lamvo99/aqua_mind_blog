@@ -65,12 +65,12 @@ function fieldIsRequired(f: any): boolean {
 const listValues = (f: any): string[] => (f?.options?.list || []).map((v: any) => (typeof v === 'string' ? v : v.value))
 
 const EXPECTED_ADD: Record<string, string[]> = {
-  species: ['minTankLengthCm', 'minTankWidthCm', 'swimmingSpace', 'jumpRisk', 'lidRequired', 'flowPreference', 'oxygenSensitivity', 'maturityRequirement', 'bioload', 'waterChangeSensitivity', 'breedingDifficulty', 'khMin', 'khMax', 'salinityMin', 'salinityMax', 'behaviorFlags', 'groupSize', 'communitySuitability', 'reefInteraction', 'predatesInverts', 'incompatibleSpecies', 'predatorPrey', 'reefInteractionDetail', 'knowledgeBody'],
-  plant: ['feedingMode', 'substrateType', 'fertilizationPlan', 'ghMin', 'ghMax', 'khMin', 'khMax', 'heightCm', 'spreadCm', 'flowTolerance', 'parMin', 'parMax', 'knowledgeBody'],
+  species: ['minTankLengthCm', 'minTankWidthCm', 'swimmingSpace', 'jumpRisk', 'lidRequired', 'flowPreference', 'oxygenSensitivity', 'maturityRequirement', 'bioload', 'waterChangeSensitivity', 'breedingDifficulty', 'khMin', 'khMax', 'salinityMin', 'salinityMax', 'behaviorFlags', 'groupSize', 'communitySuitability', 'reefInteraction', 'predatesInverts', 'incompatibleSpecies', 'predatorPrey', 'reefInteractionDetail', 'knowledgeBody', 'difficultyContext', 'difficultyConfidence', 'notRecommendedFor'],
+  plant: ['feedingMode', 'substrateType', 'fertilizationPlan', 'ghMin', 'ghMax', 'khMin', 'khMax', 'heightCm', 'spreadCm', 'flowTolerance', 'parMin', 'parMax', 'knowledgeBody', 'seo'],
   invertebrate: ['salinityMin', 'salinityMax', 'ghMin', 'ghMax', 'khMin', 'khMax', 'calciumRequirement', 'stabilityRequirement', 'riskFlags', 'moltingType', 'minTankVolumeL', 'breedingDifficulty', 'maturityRequirement', 'biofilmRequirement', 'predatorPrey', 'knowledgeBody'],
-  coral: ['growthForm', 'parMin', 'parMax', 'flowPattern', 'salinityMin', 'salinityMax', 'phMin', 'phMax', 'dkhMin', 'dkhMax', 'caMin', 'caMax', 'mgMin', 'mgMax', 'no3Min', 'no3Max', 'po4Min', 'po4Max', 'feedingType', 'growthRate', 'spacing', 'aggressionTraits', 'coralNeighbors', 'knowledgeBody'],
+  coral: ['growthForm', 'parMin', 'parMax', 'flowPattern', 'salinityMin', 'salinityMax', 'phMin', 'phMax', 'dkhMin', 'dkhMax', 'caMin', 'caMax', 'mgMin', 'mgMax', 'no3Min', 'no3Max', 'po4Min', 'po4Max', 'feedingType', 'growthRate', 'spacing', 'aggressionTraits', 'coralNeighbors', 'knowledgeBody', 'seo', 'temperatureTolerance', 'careBasis', 'careConfidence', 'evidenceSources', 'suitabilityConditions', 'growthRisk', 'growthRiskNote', 'parBasis', 'lastReviewedAt', 'reviewStatus', 'reviewedBy', 'difficultyContext', 'notRecommendedFor', 'difficultyConfidence', 'reefSafetyMeaning'],
   equipment: ['waterType', 'turnoverPerH', 'ratedCapacity', 'compatibleEquipment', 'relatedProblems', 'knowledgeBody'],
-  problem: ['howToDistinguish', 'immediateAction', 'treatment', 'recovery', 'prevention', 'monitoring', 'escalation'],
+  problem: ['howToDistinguish', 'immediateAction', 'treatment', 'recovery', 'prevention', 'monitoring', 'escalation', 'affectedTypes', 'severity', 'timeSensitivity', 'claimConfidence', 'evidenceSources', 'lastReviewedAt', 'reviewStatus', 'reviewedBy', 'tags', 'whenToSeekHelp'],
 }
 
 const EXPECTED_NEW_TYPES = [

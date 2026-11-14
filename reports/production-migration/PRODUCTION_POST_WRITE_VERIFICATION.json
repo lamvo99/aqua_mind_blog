@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-14T17:08:10.681Z",
+  "documentsInspected": 473,
+  "targetDocuments": 384,
+  "fieldsInManifest": 1171,
+  "verified": 1171,
+  "failed": [],
+  "missingDocuments": [],
+  "unexpectedChanges": [],
+  "publicationChanges": [],
+  "noDocumentCreationOrDeletion": true,
+  "afterCounts": {
+    "coral": 48,
+    "equipment": 46,
+    "invertebrate": 56,
+    "plant": 62,
+    "problem": 43,
+    "species": 218
+  },
+  "afterTotal": 473
+}

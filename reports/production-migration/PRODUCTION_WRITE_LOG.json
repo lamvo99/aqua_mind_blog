@@ -1,0 +1,3863 @@
+{
+  "startedAt": "2026-11-14T17:06:55.440Z",
+  "project": "zeohjejw",
+  "dataset": "production",
+  "manifestFields": 1171,
+  "manifestDocuments": 384,
+  "batches": [
+    {
+      "batch": 1,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhVYx3",
+      "committedAt": "2026-11-14T17:07:02.752Z",
+      "documents": [
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSXLR",
+          "slug": "acan-lord",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNAPx"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z3Reey",
+          "slug": "alveopora-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94hcke"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmoW",
+          "slug": "bird-s-nest-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNB2n"
+        },
+        {
+          "document_id": "coral-blastomussa",
+          "slug": "blastomussa",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb5Fj"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CjDmS",
+          "slug": "briareum-asbestinum",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7jNv9"
+        },
+        {
+          "document_id": "coral-candy-cane-coral",
+          "slug": "candy-cane-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb5VD"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6UVbu",
+          "slug": "capnella-imbricata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9j2R"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng29O",
+          "slug": "caulastrea-furcata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNDdh"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmlr",
+          "slug": "cauliflower-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb1QJ"
+        },
+        {
+          "document_id": "coral-gorgonian",
+          "slug": "coral-gorgonian",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94guga"
+        },
+        {
+          "document_id": "coral-lobophytum-leather",
+          "slug": "coral-lobophytum-leather",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Wqe4"
+        },
+        {
+          "document_id": "coral-porites",
+          "slug": "coral-porites",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94h52f"
+        },
+        {
+          "document_id": "coral-table-acropora",
+          "slug": "coral-table-acropora",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7WZzy"
+        },
+        {
+          "document_id": "coral-turbinaria",
+          "slug": "coral-turbinaria",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94hA81"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hX9Rpx",
+          "slug": "dendronephthya",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gas15"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DJffc",
+          "slug": "dendrophyllia-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb8Kh"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnTgZ4",
+          "slug": "discosoma-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7iprv"
+        },
+        {
+          "document_id": "coral-duncan-coral",
+          "slug": "duncan-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94hvDK"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jnvipy",
+          "slug": "echinophyllia-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9ih3"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmtq",
+          "slug": "elegance-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9hmR"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6TtLj",
+          "slug": "euphyllia-divisa",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Y8c3"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnTHt0",
+          "slug": "euphyllia-glabrescens",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzGBKmmW"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng2TG",
+          "slug": "favia-favus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbAAF"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve601Vay",
+          "slug": "fungia-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7XJdk"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmjC",
+          "slug": "galaxea",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gaxg3"
+        },
+        {
+          "document_id": "coral-goniopora",
+          "slug": "goniopora",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "9oQmNx0W042DyC9h4Jhtoy"
+        },
+        {
+          "document_id": "coral-hammer-coral",
+          "slug": "hammer-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Yoy1"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmrB",
+          "slug": "honeycomb-brain-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9hIF"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Ctty8",
+          "slug": "lobophyllia-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9hrT"
+        },
+        {
+          "document_id": "coral-montipora-capricornis",
+          "slug": "montipora-capricornis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb6AV"
+        },
+        {
+          "document_id": "5oQB2MZ7gmZXjdwFqSrVl7",
+          "slug": "montipora-digitata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gaxB5"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlmwV",
+          "slug": "open-brain-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzGAwUht"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CttlY",
+          "slug": "palythoa-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Yx6J"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2Xh0",
+          "slug": "pavona-cactusis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbB51"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Ctu8C",
+          "slug": "plerogyra-sinuosa",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Y3Eu"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLdGW",
+          "slug": "pocillopora",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNFS3"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2rGw",
+          "slug": "rhodactis-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94lGzs"
+        },
+        {
+          "document_id": "coral-ricordea-mushroom",
+          "slug": "ricordea-mushroom",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7jaRB"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSXOj",
+          "slug": "scolymia",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9gmn"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSXVJ",
+          "slug": "sinularia-leather",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNAWt"
+        },
+        {
+          "document_id": "coral-staghorn-acropora",
+          "slug": "staghorn-acropora",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gb75H"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnvhK2",
+          "slug": "stylophora-pistillata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbAUt"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3or0mk",
+          "slug": "stylophora-pistillata-catspaw",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9jZ9"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2KnjUP",
+          "slug": "sun-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNEXB"
+        },
+        {
+          "document_id": "coral-toadstool-leather",
+          "slug": "toadstool-leather",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94hmO0"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2KnkWY",
+          "slug": "tubing-coral",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9jNp"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6TtVz",
+          "slug": "xenia-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbBKV"
+        },
+        {
+          "document_id": "coral-zoanthids",
+          "slug": "zoanthids",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Z8q0"
+        },
+        {
+          "document_id": "invertebrate-anentome-helena",
+          "slug": "anentome-helena",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "YxbS8uBVVLXOqNZieL59Ia"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61Pewb",
+          "slug": "astraea-snail",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6vljV"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 2,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhVfhY",
+      "committedAt": "2026-11-14T17:07:05.901Z",
+      "documents": [
+        {
+          "document_id": "invertebrate-astropecten-polyacanthus",
+          "slug": "astropecten-polyacanthus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z71d0j"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6UVmA",
+          "slug": "atya-gabonensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94N56a"
+        },
+        {
+          "document_id": "invertebrate-atyopsis-moluccensis",
+          "slug": "atyopsis-moluccensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94L2tq"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSXkw",
+          "slug": "brittle-star",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG95o96"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6UVyz",
+          "slug": "caridina-babaulti",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "PZ8Kai1VvEL468NS2KwTqY"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6hj3X",
+          "slug": "caridina-blue-tiger",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94SZbv"
+        },
+        {
+          "document_id": "invertebrate-caridina-cantonensis",
+          "slug": "caridina-cantonensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GGU4Qyc8kxhhGHYIZm86EG"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXP0y",
+          "slug": "caridina-cantonensis-blue-bolt",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GGU4Qyc8kxhhGHYIZm87OO"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KIaj",
+          "slug": "caridina-cantonensis-king-kong",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Fue1Zj37qj9M7edNQnnbav"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXOqu",
+          "slug": "caridina-cantonensis-taiwan-bee",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "fyn5r30DwKa07ZPFCtffGd"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KIq7",
+          "slug": "caridina-dennerli",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9AUQT"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3or1AM",
+          "slug": "caridina-dennerli-red-cherry",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BhxdLrybiwRysG91aNCIpa"
+        },
+        {
+          "document_id": "invertebrate-caridina-multidentata",
+          "slug": "caridina-multidentata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "rtyqKwjy88AX8UfFxNjLDF"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLdvC",
+          "slug": "caridina-omnipos-sulawesi-cardinal-shrimp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6vY8q"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6iAEQ",
+          "slug": "caridina-snowball",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94SdUz"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3or1pg",
+          "slug": "cerith-snail",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG95JEU"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztyJC",
+          "slug": "chocolate-chip-starfish",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG92gfM"
+        },
+        {
+          "document_id": "invertebrate-entacmaea-quadricolor",
+          "slug": "entacmaea-quadricolor",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94KFy4"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztyQo",
+          "slug": "fromia-starfish",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94JZiC"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DFZ8S",
+          "slug": "geosesarma-dennerle",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94MDUT"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLeDy",
+          "slug": "holothuria",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "G6X5Q7T5x7WwfPCCQLqI1q"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuIo0",
+          "slug": "hymenocera-picta",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Fue1Zj37qj9M7edNQnnXoT"
+        },
+        {
+          "document_id": "invertebrate-limnopilos-naiyanetri",
+          "slug": "limnopilos-naiyanetri",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z72bNi"
+        },
+        {
+          "document_id": "invertebrate-lysmata-amboinensis",
+          "slug": "lysmata-amboinensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "YxbS8uBVVLXOqNZieL59if"
+        },
+        {
+          "document_id": "invertebrate-lysmata-debelius",
+          "slug": "lysmata-debelius",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94LnPW"
+        },
+        {
+          "document_id": "invertebrate-lysmata-wurdemanni",
+          "slug": "lysmata-wurdemanni",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z72wCU"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztyBa",
+          "slug": "magnificent-anemone",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BhxdLrybiwRysG91aNBTYG"
+        },
+        {
+          "document_id": "invertebrate-melanoides-tuberculata",
+          "slug": "melanoides-tuberculata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z72zFv"
+        },
+        {
+          "document_id": "invertebrate-mespilia-globulus",
+          "slug": "mespilia-globulus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9FseR"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jnfm4E",
+          "slug": "mithraculus-sculptus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94MYBs"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnfmDG",
+          "slug": "nassarius-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z73oFX"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JngE2Q",
+          "slug": "neocaridina-blue-diamond",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "R5XTdMuMN6LQM8vv7rDEty"
+        },
+        {
+          "document_id": "invertebrate-neocaridina-davidi",
+          "slug": "neocaridina-davidi",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "YxbS8uBVVLXOqNZieL59pm"
+        },
+        {
+          "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+          "slug": "neocaridina-davidi-cherry",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "zfQuMTBtkX4TgigwznPlwZ"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6iAOg",
+          "slug": "neocaridina-golden-back-yellow",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "R5XTdMuMN6LQM8vv7rDEyo"
+        },
+        {
+          "document_id": "5oQB2MZ7gmZXjdwFqSs8fJ",
+          "slug": "neritina-natalensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "7d6uY14XNJyugfJLsUvqGP"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng5wE",
+          "slug": "paguristes-cadenati",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z73tuy"
+        },
+        {
+          "document_id": "invertebrate-palaemon-paludosus",
+          "slug": "palaemon-paludosus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9GB4t"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MkcJ",
+          "slug": "pencil-urchin",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6vTni"
+        },
+        {
+          "document_id": "invertebrate-perisesarma-bidens",
+          "slug": "perisesarma-bidens",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z73Di9"
+        },
+        {
+          "document_id": "invertebrate-phymanthus-crucifer",
+          "slug": "phymanthus-crucifer",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG97uHf"
+        },
+        {
+          "document_id": "invertebrate-planorbarius-corneus",
+          "slug": "planorbarius-corneus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94KTXW"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MkUT",
+          "slug": "pom-pom-crab",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94JTrq"
+        },
+        {
+          "document_id": "invertebrate-pomacea-bridgesii",
+          "slug": "pomacea-bridgesii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z70nyV"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79WPX",
+          "slug": "procambarus-clarkii-blue",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG99muB"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2rTa",
+          "slug": "sabellastarte-magnifica",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z747IZ"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4Mjof",
+          "slug": "sebae-anemone",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BhxdLrybiwRysG91aNC1N4"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3or21U",
+          "slug": "sexy-anemone-shrimp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6zy4i"
+        },
+        {
+          "document_id": "invertebrate-stenopus-hispidus",
+          "slug": "stenopus-hispidus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG98Rz9"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7Ket0",
+          "slug": "tridacna-maxima",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z71S3N"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 3,
+      "status": "COMMITTED",
+      "transactionId": "tAK23xfG5FC28baVYIEhfK",
+      "committedAt": "2026-11-14T17:07:10.774Z",
+      "documents": [
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61Pe08",
+          "slug": "trochus-snail",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG92OqU"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnfmKU",
+          "slug": "turbo-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9IDZy"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DJhXM",
+          "slug": "tylomelania-spp",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "PZ8Kai1VvEL468NS2KwTqY"
+        },
+        {
+          "document_id": "invertebrate-vittina-natalensis",
+          "slug": "vittina-natalensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG98XzC"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KvVw",
+          "slug": "aegagropila-linnaei",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9mkf"
+        },
+        {
+          "document_id": "plant-alternanthera-reineckii",
+          "slug": "alternanthera-reineckii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNLa7"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSWv7",
+          "slug": "alternanthera-reineckii-mini",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNFoF"
+        },
+        {
+          "document_id": "plant-amazon-sword",
+          "slug": "amazon-sword",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94V2GM"
+        },
+        {
+          "document_id": "plant-ambulia",
+          "slug": "ambulia",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbWix"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLhP",
+          "slug": "anacharis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbVYh"
+        },
+        {
+          "document_id": "plant-anubias-barteri",
+          "slug": "anubias-barteri",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNLh3"
+        },
+        {
+          "document_id": "BruaGKYCGDRQjkiQDnlBjA",
+          "slug": "anubias-nana-petite",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9jzZ"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CjAAW",
+          "slug": "bacopa-caroliniana",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNHLx"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLn5",
+          "slug": "blyxa-japonica",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNLRn"
+        },
+        {
+          "document_id": "plant-bucephalandra",
+          "slug": "bucephalandra",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9Zkgr"
+        },
+        {
+          "document_id": "plant-cabomba-caroliniana",
+          "slug": "cabomba-caroliniana",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNLwJ"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2xiA",
+          "slug": "ceratopteris-thalictroides",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "zfQuMTBtkX4TgigwznPmQN"
+        },
+        {
+          "document_id": "plant-cryptocoryne-balansae",
+          "slug": "cryptocoryne-balansae",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNMAB"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLTD",
+          "slug": "cryptocoryne-beckettii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbW8p"
+        },
+        {
+          "document_id": "plant-cryptocoryne-wendtii",
+          "slug": "cryptocoryne-wendtii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbXdj"
+        },
+        {
+          "document_id": "plant-dwarf-baby-tears",
+          "slug": "dwarf-baby-tears",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94Zm9x"
+        },
+        {
+          "document_id": "plant-dwarf-hairgrass",
+          "slug": "dwarf-hairgrass",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzGAQKZK"
+        },
+        {
+          "document_id": "plant-dwarf-sagittaria",
+          "slug": "dwarf-sagittaria",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6otEd9"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng2hi",
+          "slug": "flame-moss",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbQyp"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6Ttdg",
+          "slug": "glossostigma-elatinoides",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7PdM1"
+        },
+        {
+          "document_id": "plant-hornwort",
+          "slug": "hornwort",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z79iWH"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLW3",
+          "slug": "hydrocotyle-tripartita",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzGANwUN"
+        },
+        {
+          "document_id": "plant-java-fern",
+          "slug": "java-fern",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94UyR5"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXPL6",
+          "slug": "lemna-minor",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "zfQuMTBtkX4TgigwznPmBT"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng4A2",
+          "slug": "lilaeopsis-brasiliensis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94bAYR"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DFYK8",
+          "slug": "limnobium-laevigatum",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "zfQuMTBtkX4TgigwznPm41"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuYam",
+          "slug": "limnophila-aromatica",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbNjX"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CjA0S",
+          "slug": "ludwigia-arcuata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNGLX"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSWr0",
+          "slug": "ludwigia-red",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNFih"
+        },
+        {
+          "document_id": "plant-ludwigia-repens",
+          "slug": "ludwigia-repens",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9oev"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79StY",
+          "slug": "ludwigia-super-red",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbRe7"
+        },
+        {
+          "document_id": "plant-marsilea-hirsuta",
+          "slug": "marsilea-hirsuta",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7Mhsr"
+        },
+        {
+          "document_id": "plant-monte-carlo",
+          "slug": "monte-carlo",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7OZD4"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CtuPo",
+          "slug": "myriophyllum-aquaticum",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9klN"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuIEm",
+          "slug": "peacock-moss",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbM4J"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79SZ2",
+          "slug": "phyllanthus-fluitans",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbSJP"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KJ84",
+          "slug": "pistia-stratiotes",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbSYt"
+        },
+        {
+          "document_id": "plant-bolbitis-heudelotii",
+          "slug": "plant-bolbitis-heudelotii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z79P1o"
+        },
+        {
+          "document_id": "plant-cryptocoryne-parva",
+          "slug": "plant-cryptocoryne-parva",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9XurD"
+        },
+        {
+          "document_id": "plant-java-fern-narrow-leaf",
+          "slug": "plant-java-fern-narrow-leaf",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z79FGv"
+        },
+        {
+          "document_id": "plant-java-fern-windelov",
+          "slug": "plant-java-fern-windelov",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9Yc4i"
+        },
+        {
+          "document_id": "plant-pogostemon-helferi",
+          "slug": "plant-pogostemon-helferi",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG9Xcc2"
+        },
+        {
+          "document_id": "plant-rotala-wallichii",
+          "slug": "plant-rotala-wallichii",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z78kIR"
+        },
+        {
+          "document_id": "plant-thai-onion-plant",
+          "slug": "plant-thai-onion-plant",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94Sgnf"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLbj",
+          "slug": "pogostemon-stellatus",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbUOR"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 4,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhVlwY",
+      "committedAt": "2026-11-14T17:07:14.537Z",
+      "documents": [
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLYt",
+          "slug": "pygmy-chain-sword",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94ZQYS"
+        },
+        {
+          "document_id": "7kdig6Bk6SZq4GZkXcVaBK",
+          "slug": "red-rotala",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNFsP"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTLeZ",
+          "slug": "rotala-indica",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbUyZ"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79SjI",
+          "slug": "rotala-macrandra",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbREJ"
+        },
+        {
+          "document_id": "plant-rotala-rotundifolia",
+          "slug": "rotala-rotundifolia",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNMWN"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Cj9qO",
+          "slug": "rotala-sp-hra",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNGBp"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuIOq",
+          "slug": "sagittaria-platyphylla",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Z5tyIhOWsR99a1RypJ8J6L"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KJKt",
+          "slug": "salvinia-cucullata",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbTJL"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqyay",
+          "slug": "scarlet-temple",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMezgNMtx"
+        },
+        {
+          "document_id": "WeSCIjvgoYC0LmYF97LSPP",
+          "slug": "staurogyne-repens",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z7QIWp"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jnflew",
+          "slug": "taxiphyllum-alternans",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9mCh"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KvLg",
+          "slug": "taxiphyllum-barbieri",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "zfQuMTBtkX4TgigwznPmfH"
+        },
+        {
+          "document_id": "plant-vallisneria-spiralis",
+          "slug": "vallisneria-spiralis",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9oih"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnfltO",
+          "slug": "vesicularia-ferriei",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbQjL"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Ciitg",
+          "slug": "vesicularia-montagnei",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9k8N"
+        },
+        {
+          "document_id": "plant-water-wisteria",
+          "slug": "water-wisteria",
+          "fields": [
+            "aliases",
+            "knowledgeBody"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9ooz"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Ciih6",
+          "slug": "amatitlania-nigrofasciata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQbu"
+        },
+        {
+          "document_id": "species-amphiprion-ocellaris",
+          "slug": "amphiprion-ocellaris",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMeziJ7XR"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTEeF",
+          "slug": "amphiprion-percula",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJEHMbt"
+        },
+        {
+          "document_id": "species-ancistrus-cf-cirrhosus",
+          "slug": "ancistrus-cf-cirrhosus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwDbD"
+        },
+        {
+          "document_id": "species-andinoacara-pulcher",
+          "slug": "andinoacara-pulcher",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fOvw"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve601V4E",
+          "slug": "antennarius-striatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94J5bq"
+        },
+        {
+          "document_id": "species-aphyosemion-australe",
+          "slug": "aphyosemion-australe",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFRB8"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6UR1F",
+          "slug": "apistogramma-agassizii",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr034b"
+        },
+        {
+          "document_id": "species-apistogramma-cacatuoides",
+          "slug": "apistogramma-cacatuoides",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1J4z"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnfjuY",
+          "slug": "apistogramma-trifasciata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02sq"
+        },
+        {
+          "document_id": "species-aplocheilus-lineatus",
+          "slug": "aplocheilus-lineatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSAX3"
+        },
+        {
+          "document_id": "species-arapaima-gigas",
+          "slug": "arapaima-gigas",
+          "fields": [
+            "aliases",
+            "difficultyContext"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAFQZ"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61Pb63",
+          "slug": "arc-eye-hawkfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3uetD"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noGMy",
+          "slug": "asian-snakehead",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z3b8ba"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z3ReYR",
+          "slug": "atractosteus-spatula",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "NJnMV77vCyO9g8HOX8f0DF"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSWMZ",
+          "slug": "australian-redclaw-crayfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "spdaSMErH8o1D4LseJ8iwK"
+        },
+        {
+          "document_id": "species-bala-shark",
+          "slug": "bala-shark",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "IqwjtJHQAER2YjcSnpWkhc"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PcZG",
+          "slug": "bartlett-s-anthias",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5A0qd"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DJbjY",
+          "slug": "betta-imbellis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02eT"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DJbye",
+          "slug": "betta-macrostoma",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02iO"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTESt",
+          "slug": "betta-smaragdina",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gassu050T"
+        },
+        {
+          "document_id": "species-betta-splendens",
+          "slug": "betta-splendens",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSAcK"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztxQx",
+          "slug": "bicolor-blenny",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3tpQc"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6i8hX",
+          "slug": "biotodoma-cupido",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQyY"
+        },
+        {
+          "document_id": "species-black-arowana",
+          "slug": "black-arowana",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "NJnMV77vCyO9g8HOX8f0sJ"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61Pc4r",
+          "slug": "black-cap-basslet",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5C3gA"
+        },
+        {
+          "document_id": "species-black-ghost-knifefish",
+          "slug": "black-ghost-knifefish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8cLj6"
+        },
+        {
+          "document_id": "species-black-moor-goldfish",
+          "slug": "black-moor-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93MSSR"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCRz",
+          "slug": "boraras-brigittae",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBZW3"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng1HC",
+          "slug": "boraras-maculatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9GasstzyBd"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79RMf",
+          "slug": "botia-almorhae",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "IqwjtJHQAER2YjcSnpWmG8"
+        },
+        {
+          "document_id": "species-botia-striata",
+          "slug": "botia-striata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSAhb"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CjDNI",
+          "slug": "brachygobius-doriae",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9GasstzxHV"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noHTq",
+          "slug": "bucktooth-parrot",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6gbm2d"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 5,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhVqRY",
+      "committedAt": "2026-11-14T17:07:18.624Z",
+      "documents": [
+        {
+          "document_id": "species-carassius-auratus",
+          "slug": "carassius-auratus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJEHN8b"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqsPG",
+          "slug": "carassius-auratus-common",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "WXnn3TMAGVs0EnH19COTwI"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79QPg",
+          "slug": "carinotetraodon-travancoricus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "G4w7vBtqb3zU06qXfxDNkJ"
+        },
+        {
+          "document_id": "species-celestichthys-erythromicron",
+          "slug": "celestichthys-erythromicron",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwFgN"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2X54",
+          "slug": "centropyge-bispinosa",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fDcZ"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTEbP",
+          "slug": "centropyge-loricula",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSA6g"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVzKgoN",
+          "slug": "channa-marulioides",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94HKO3"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVzKgu5",
+          "slug": "channa-pulchra",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6rNrf"
+        },
+        {
+          "document_id": "species-chromis-viridis",
+          "slug": "chromis-viridis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMeziJ9VV"
+        },
+        {
+          "document_id": "species-chromobotia-macracanthus",
+          "slug": "chromobotia-macracanthus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwFnp"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2XHi",
+          "slug": "chrysiptera-cyanea",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS8Jv"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztvbi",
+          "slug": "clarkii-clownfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG41elR"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4Mh0u",
+          "slug": "cleaner-wrasse",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3xa44"
+        },
+        {
+          "document_id": "species-clown-knifefish",
+          "slug": "clown-knifefish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQYYN"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqvOE",
+          "slug": "clown-triggerfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "sebdKYryWZgYP2rm3pCggo"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSVV6",
+          "slug": "copperband-butterflyfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9YzkUkI"
+        },
+        {
+          "document_id": "species-corydoras-aeneus",
+          "slug": "corydoras-aeneus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1JL9"
+        },
+        {
+          "document_id": "species-corydoras-paleatus",
+          "slug": "corydoras-paleatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBan4"
+        },
+        {
+          "document_id": "species-corydoras-panda",
+          "slug": "corydoras-panda",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fSTL"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCJT",
+          "slug": "corydoras-pygmaeus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwDMJ"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Ci1Vw",
+          "slug": "corydoras-sterbai",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXQuxzL"
+        },
+        {
+          "document_id": "species-corydoras-trilineatus",
+          "slug": "corydoras-trilineatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFROL"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7ACJO",
+          "slug": "crossocheilus-oblongus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gassu0237"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2V6E",
+          "slug": "cryptocentrus-cinctus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02wl"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A7KH8y",
+          "slug": "ctenochaetus-strigosus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr03CR"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79S9O",
+          "slug": "cyphotilapia-frontosa",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBYfN"
+        },
+        {
+          "document_id": "species-danio-margaritatus",
+          "slug": "danio-margaritatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gassu07f7"
+        },
+        {
+          "document_id": "species-danio-rerio",
+          "slug": "danio-rerio",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBasn"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Cj9gK",
+          "slug": "dario-dario",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS846"
+        },
+        {
+          "document_id": "species-denison-barb",
+          "slug": "denison-barb",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8cJIm"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PbHk",
+          "slug": "diamond-watchman-goby",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3uM6D"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602tRs",
+          "slug": "diodon-holocanthus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94GzFM"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noGak",
+          "slug": "dwarf-chain-loach",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "G6zzfp6s5dlbun6AVxlCkX"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oquwg",
+          "slug": "dwarf-lionfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9YzlTlm"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oquNG",
+          "slug": "dwarf-pencilfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "G6zzfp6s5dlbun6AVwnhDv"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLZxZ",
+          "slug": "dwarf-snakehead",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve60Cza7"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXNJI",
+          "slug": "ecsenius-stigmatura",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwBJd"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXMwe",
+          "slug": "elacatinus-oceanops",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fD6C"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79QpK",
+          "slug": "epalzeorhynchos-frenatum",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr038W"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSUxN",
+          "slug": "fantail-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve5tzs4Y"
+        },
+        {
+          "document_id": "species-figure-8-puffer",
+          "slug": "figure-8-puffer",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6knf5"
+        },
+        {
+          "document_id": "7kdig6Bk6SZq4GZkXcVYRS",
+          "slug": "flamehawkfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMeziIbD5"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PZmC",
+          "slug": "flasher-wrasse",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93LfAg"
+        },
+        {
+          "document_id": "species-freshwater-stingray",
+          "slug": "freshwater-stingray",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "QoM244JUCxy23vNUUTcdIU"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCUp",
+          "slug": "garra-rufa",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1HuG"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTEQ3",
+          "slug": "gasteropelecus-sternicla",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "6hiKrYJiMBmDerMeziJ6xN"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSV4m",
+          "slug": "gasteropelecus-sternicla-hatchetfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "9tHdrZzgsCPG7AwtWms7DB"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6i8Pa",
+          "slug": "geophagus-altifrons",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fGI1"
+        },
+        {
+          "document_id": "species-giant-danio",
+          "slug": "giant-danio",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8QjsK"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuXNI",
+          "slug": "gnathonemus-petersii",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02ZF"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 6,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhVvEY",
+      "committedAt": "2026-11-14T17:07:22.424Z",
+      "documents": [
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6hesW",
+          "slug": "gramma-loreto",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQst"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2Kni6M",
+          "slug": "green-terror",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "tiu5awf4YZpMiGxzJC9siX"
+        },
+        {
+          "document_id": "species-gymnocorymbus-ternetzi",
+          "slug": "gymnocorymbus-ternetzi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr04vZ"
+        },
+        {
+          "document_id": "species-halfbeak",
+          "slug": "halfbeak",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8Q8b7"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXNv2",
+          "slug": "halichoeres-chrysus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr02ov"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Cj9MC",
+          "slug": "hemigrammus-bleheri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "NJnMV77vCyO9g8HOX9gzYT"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCdL",
+          "slug": "hemigrammus-rhodostomus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr03GM"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6hsP7",
+          "slug": "hypancistrus-zebra",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwBW3"
+        },
+        {
+          "document_id": "species-hyphessobrycon-amandae",
+          "slug": "hyphessobrycon-amandae",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6tXv3"
+        },
+        {
+          "document_id": "species-hyphessobrycon-eques",
+          "slug": "hyphessobrycon-eques",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBazf"
+        },
+        {
+          "document_id": "species-hyphessobrycon-herbertaxelrodi",
+          "slug": "hyphessobrycon-herbertaxelrodi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFRrH"
+        },
+        {
+          "document_id": "species-hyphessobrycon-megalopterus",
+          "slug": "hyphessobrycon-megalopterus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr053P"
+        },
+        {
+          "document_id": "species-hyphessobrycon-pulchripinnis",
+          "slug": "hyphessobrycon-pulchripinnis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fSlK"
+        },
+        {
+          "document_id": "species-hypostomus-plecostomus",
+          "slug": "hypostomus-plecostomus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1JTE"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DJePc",
+          "slug": "iriatherina-werneri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9GasstzxpB"
+        },
+        {
+          "document_id": "species-iridescent-shark",
+          "slug": "iridescent-shark",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAFfu"
+        },
+        {
+          "document_id": "species-jaguar-cichlid",
+          "slug": "jaguar-cichlid",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6jx2s"
+        },
+        {
+          "document_id": "1z8rQFHeojDMTUo2hXSViG",
+          "slug": "koi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "NJnMV77vCyO9g8HOX8f0BP"
+        },
+        {
+          "document_id": "species-kryptopterus-vitreolus",
+          "slug": "kryptopterus-vitreolus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFRxZ"
+        },
+        {
+          "document_id": "species-labidochromis-caeruleus",
+          "slug": "labidochromis-caeruleus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6tZZT"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jng1QE",
+          "slug": "laetacara-curviceps",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fDGz"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztwgK",
+          "slug": "longnose-butterflyfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5Bhrz"
+        },
+        {
+          "document_id": "species-longnose-gar",
+          "slug": "longnose-gar",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQYiv"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4Mi1c",
+          "slug": "longnose-hawkfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3vZGD"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79fDm",
+          "slug": "macropodus-opercularis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS9nL"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6i7Sb",
+          "slug": "malpulutta-kretseri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1FTQ"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLaUQ",
+          "slug": "marine-betta",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve5u0QhU"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MeU8",
+          "slug": "maroon-clownfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "POR9P8FMbH7uFFu1qpYwXR"
+        },
+        {
+          "document_id": "species-melanotaenia-boesemani",
+          "slug": "melanotaenia-boesemani",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr057K"
+        },
+        {
+          "document_id": "species-melanotaenia-praecox",
+          "slug": "melanotaenia-praecox",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fSw7"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PZR9",
+          "slug": "melanurus-wrasse",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3xU0G"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCP9",
+          "slug": "microdevario-kubotai",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1HmB"
+        },
+        {
+          "document_id": "species-midas-cichlid",
+          "slug": "midas-cichlid",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8MGoD"
+        },
+        {
+          "document_id": "species-mikrogeophagus-altispinosus",
+          "slug": "mikrogeophagus-altispinosus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "070VCb2YNUintYnS2o6q4j"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCXf",
+          "slug": "mikrogeophagus-ramirezi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFR5T"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCaV",
+          "slug": "nannostomus-beckfordi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSA1P"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6hqNS",
+          "slug": "nanochromis-parilus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gasstzz5l"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z3S1rN",
+          "slug": "naso-lituratus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8dgwv"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5Jo2VIs",
+          "slug": "nemateleotris-magnifica",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQr0"
+        },
+        {
+          "document_id": "species-nematobrycon-palmeri",
+          "slug": "nematobrycon-palmeri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBbyM"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqtze",
+          "slug": "oranda-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve5u075M"
+        },
+        {
+          "document_id": "species-orinoco-peacock-bass",
+          "slug": "orinoco-peacock-bass",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93ND6S"
+        },
+        {
+          "document_id": "7kdig6Bk6SZq4GZkXcVXjK",
+          "slug": "oscar",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "G4w7vBtqb3zU06qXfxDTdn"
+        },
+        {
+          "document_id": "species-osteoglossum-bicirrhosum",
+          "slug": "osteoglossum-bicirrhosum",
+          "fields": [
+            "aliases",
+            "difficultyContext"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAFvF"
+        },
+        {
+          "document_id": "species-otocinclus-affinis",
+          "slug": "otocinclus-affinis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6tZno"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztxmq",
+          "slug": "pajama-cardinalfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3s3Ly"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTEVj",
+          "slug": "panaqolus-maccus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr03Qo"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuEcq",
+          "slug": "panaque-nigrolineatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQgw"
+        },
+        {
+          "document_id": "species-pangio-kuhlii",
+          "slug": "pangio-kuhlii",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gassu08O1"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnvaIg",
+          "slug": "paracanthurus-hepatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve60D0fw"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 7,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhW0JY",
+      "committedAt": "2026-11-14T17:07:26.284Z",
+      "documents": [
+        {
+          "document_id": "species-paracheirodon-axelrodi",
+          "slug": "paracheirodon-axelrodi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSAqO"
+        },
+        {
+          "document_id": "species-paracheirodon-innesi",
+          "slug": "paracheirodon-innesi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBc1n"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79RmJ",
+          "slug": "paracheirodon-simulans",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS9w8"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuWy8",
+          "slug": "parosphromenus-linkei",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBXc6"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLa6x",
+          "slug": "peacock-bass",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve5twmiH"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CuG2u",
+          "slug": "peckoltia-compta",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9GasstzxSj"
+        },
+        {
+          "document_id": "species-pelvicachromis-pulcher",
+          "slug": "pelvicachromis-pulcher",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1LAH"
+        },
+        {
+          "document_id": "species-pethia-conchonius",
+          "slug": "pethia-conchonius",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFStR"
+        },
+        {
+          "document_id": "species-pethia-padamya",
+          "slug": "pethia-padamya",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6u99a"
+        },
+        {
+          "document_id": "species-phenacogrammus-interruptus",
+          "slug": "phenacogrammus-interruptus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6u9Fj"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602em7",
+          "slug": "phractocephalus-hemioliopterus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAF67"
+        },
+        {
+          "document_id": "species-pictus-catfish",
+          "slug": "pictus-catfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94BtM0"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oquiu",
+          "slug": "pike-cichlid",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve5tx0vy"
+        },
+        {
+          "document_id": "species-poecilia-reticulata",
+          "slug": "poecilia-reticulata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBc5E"
+        },
+        {
+          "document_id": "species-poecilia-sphenops",
+          "slug": "poecilia-sphenops",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z19naM"
+        },
+        {
+          "document_id": "PZ8Kai1VvEL468NS2LLaqK",
+          "slug": "poecilia-sphenops-molly",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "D3U4LrLTtv0XoPOOLeYIu7"
+        },
+        {
+          "document_id": "species-poecilia-wingei",
+          "slug": "poecilia-wingei",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBc8f"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602cqq",
+          "slug": "polypterus-delhezi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94Hgst"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602d2X",
+          "slug": "polypterus-endlicheri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94HBtx"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602cco",
+          "slug": "polypterus-ornatipinnis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG90YLV"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve602fPs",
+          "slug": "pomacanthus-imperator",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8dX0b"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztvrt",
+          "slug": "powder-blue-tang",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93LoVq"
+        },
+        {
+          "document_id": "species-pseudanthias-squamipinnis",
+          "slug": "pseudanthias-squamipinnis",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFSvx"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CjDXM",
+          "slug": "pseudepiplatys-annulatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS89N"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6heVR",
+          "slug": "pseudocheilinus-hexataenia",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NS8PC"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6i7Ae",
+          "slug": "pseudosphromenus-dayi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQwf"
+        },
+        {
+          "document_id": "species-pseudotropheus-zebra",
+          "slug": "pseudotropheus-zebra",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6uAlx"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noHja",
+          "slug": "pterapogon-kauderni",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6ospZb"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9CttMO",
+          "slug": "pterois-volitans",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQf3"
+        },
+        {
+          "document_id": "species-pterophyllum-scalare",
+          "slug": "pterophyllum-scalare",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z3gOkq"
+        },
+        {
+          "document_id": "5oQB2MZ7gmZXjdwFqSs3qH",
+          "slug": "pterophyllum-scalare-marble",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "umrRrSLvuHPfwOOu1lZHgv"
+        },
+        {
+          "document_id": "species-puntigrus-tetrazona",
+          "slug": "puntigrus-tetrazona",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1LIM"
+        },
+        {
+          "document_id": "species-puntius-titteya",
+          "slug": "puntius-titteya",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSB2h"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PY2c",
+          "slug": "purple-tang",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93LsWU"
+        },
+        {
+          "document_id": "species-pygocentrus-nattereri",
+          "slug": "pygocentrus-nattereri",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6oR1a"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MgqS",
+          "slug": "queen-angelfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5CLY2"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MicC",
+          "slug": "queen-triggerfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5APZ6"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVztwWo",
+          "slug": "raccoon-butterflyfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93LcCT"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqu9U",
+          "slug": "ranchu-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "G6zzfp6s5dlbun6AVwnnHo"
+        },
+        {
+          "document_id": "species-red-bellied-pacu",
+          "slug": "red-bellied-pacu",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93NliX"
+        },
+        {
+          "document_id": "species-red-devil-cichlid",
+          "slug": "red-devil-cichlid",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6iPzT"
+        },
+        {
+          "document_id": "species-red-tail-shark",
+          "slug": "red-tail-shark",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG8cHuL"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DFXpw",
+          "slug": "rocio-octofasciata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gasstzxdx"
+        },
+        {
+          "document_id": "species-ryukin-goldfish",
+          "slug": "ryukin-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93MVSv"
+        },
+        {
+          "document_id": "species-sailfin-pleco",
+          "slug": "sailfin-pleco",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94D1e7"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9DXNau",
+          "slug": "salarias-fasciatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFQmb"
+        },
+        {
+          "document_id": "species-scleropages-formosus",
+          "slug": "scleropages-formosus",
+          "fields": [
+            "aliases",
+            "difficultyContext"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAJdK"
+        },
+        {
+          "document_id": "species-scleropages-jardinii",
+          "slug": "scleropages-jardinii",
+          "fields": [
+            "aliases",
+            "difficultyContext"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQYoC"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noGuQ",
+          "slug": "senegal-bichir",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "Gk33CfLE6ahVd3Ve60CzF4"
+        },
+        {
+          "document_id": "species-serrasalmus-rhombeus",
+          "slug": "serrasalmus-rhombeus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94HyKe"
+        }
+      ],
+      "result": {
+        "count": 50
+      }
+    },
+    {
+      "batch": 8,
+      "status": "COMMITTED",
+      "transactionId": "6qLw2pLgYP1DIYD0rhW4k3",
+      "committedAt": "2026-11-14T17:07:29.189Z",
+      "documents": [
+        {
+          "document_id": "species-severum",
+          "slug": "severum",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94F388"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnTgRq",
+          "slug": "sewellia-lineolata",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBXhp"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3noI7C",
+          "slug": "siganus-vulpinus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "iIEha4Lf0bd08jwW6ostz9"
+        },
+        {
+          "document_id": "Gk33CfLE6ahVd3Ve61PagK",
+          "slug": "snowflake-eel",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj93LSuL"
+        },
+        {
+          "document_id": "I9bI8W8ZWcEwyIzM9Cj9WG",
+          "slug": "sphaerichthys-osphromenoides",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "bC4ykP1TUmEDYEZRQDwBCB"
+        },
+        {
+          "document_id": "species-spotted-gar",
+          "slug": "spotted-gar",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQYtT"
+        },
+        {
+          "document_id": "species-spotted-snakehead",
+          "slug": "spotted-snakehead",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG48N7a"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4MjaI",
+          "slug": "stars-and-stripes-puffer",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z59DUv"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A6hq84",
+          "slug": "sundadanio-axelrodi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9GasstzyuX"
+        },
+        {
+          "document_id": "species-symphysodon-aequifasciatus",
+          "slug": "symphysodon-aequifasciatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6uAs6"
+        },
+        {
+          "document_id": "IlX7xILobrukz7d5JnfkJq",
+          "slug": "synchiropus-splendidus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "BF7b7JzesWwz9Gasstzy0P"
+        },
+        {
+          "document_id": "J1Tx0fWCuGNPno99A79evp",
+          "slug": "synodontis-multipunctatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1FbV"
+        },
+        {
+          "document_id": "species-telescope-goldfish",
+          "slug": "telescope-goldfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z5H41a"
+        },
+        {
+          "document_id": "species-thorichthys-meeki",
+          "slug": "thorichthys-meeki",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBcLG"
+        },
+        {
+          "document_id": "species-three-barred-peacock-bass",
+          "slug": "three-barred-peacock-bass",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQYyk"
+        },
+        {
+          "document_id": "species-tiger-shovelnose-catfish",
+          "slug": "tiger-shovelnose-catfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAJxm"
+        },
+        {
+          "document_id": "species-tinfoil-barb",
+          "slug": "tinfoil-barb",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "BfX6V3wz1DOJdzDvLyR0yS"
+        },
+        {
+          "document_id": "bXkDxvOEdfzf4NR9Z4Mel7",
+          "slug": "tomato-clownfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "nMj4Bthvy4g70bFzG3zjAm"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTCMJ",
+          "slug": "trichogaster-chuna",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "kacSGNiYKzyTTcRPtr03Mt"
+        },
+        {
+          "document_id": "species-trichogaster-lalius",
+          "slug": "trichogaster-lalius",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "1Ijs2brJcsWqS9fwQ6uAyF"
+        },
+        {
+          "document_id": "species-trichopodus-leerii",
+          "slug": "trichopodus-leerii",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1MzP"
+        },
+        {
+          "document_id": "species-trichopodus-trichopterus",
+          "slug": "trichopodus-trichopterus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fUO2"
+        },
+        {
+          "document_id": "species-trichopsis-pumila",
+          "slug": "trichopsis-pumila",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "vIy4RM4AZsZ5V5B7s9fUYp"
+        },
+        {
+          "document_id": "species-trigonostigma-espei",
+          "slug": "trigonostigma-espei",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "Ih7CtFPuPgIOJ6afZvFTrp"
+        },
+        {
+          "document_id": "species-trigonostigma-heteromorpha",
+          "slug": "trigonostigma-heteromorpha",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "58daN6aSfkISRX8w0NSB7y"
+        },
+        {
+          "document_id": "ofTl1CTOUWuLwM28PxTEYZ",
+          "slug": "tropheus-duboisi",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1Igk"
+        },
+        {
+          "document_id": "species-walking-catfish",
+          "slug": "walking-catfish",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQZ5m"
+        },
+        {
+          "document_id": "species-weeks-bichir",
+          "slug": "weeks-bichir",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "uvXbntIeGC8OhCODUYAKD7"
+        },
+        {
+          "document_id": "species-wolf-cichlid",
+          "slug": "wolf-cichlid",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "GDkcErM64RhoZsqj94CrI2"
+        },
+        {
+          "document_id": "species-xiphophorus-hellerii",
+          "slug": "xiphophorus-hellerii",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "QPsNt7HA1W2nzvoUKEBcOh"
+        },
+        {
+          "document_id": "species-xiphophorus-maculatus",
+          "slug": "xiphophorus-maculatus",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "070VCb2YNUintYnS2o6qMI"
+        },
+        {
+          "document_id": "sebdKYryWZgYP2rm3oqvc0",
+          "slug": "zebra-moray-eel",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "seo"
+          ],
+          "expected_rev": "xDXE1b5fzFsIAlmDXNQXHG"
+        },
+        {
+          "document_id": "species-zebrasoma-flavescens",
+          "slug": "zebrasoma-flavescens",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody"
+          ],
+          "expected_rev": "ewFCUyUyQDZBbcG2bi1N7U"
+        },
+        {
+          "document_id": "G6zzfp6s5dlbun6AVzKmc5",
+          "slug": "zebrasoma-veliferum",
+          "fields": [
+            "aliases",
+            "difficultyContext",
+            "knowledgeBody",
+            "seo"
+          ],
+          "expected_rev": "bXkDxvOEdfzf4NR9Z6rAst"
+        }
+      ],
+      "result": {
+        "count": 34
+      }
+    }
+  ],
+  "skipped": [],
+  "errors": [],
+  "preflight": {
+    "manifestDocuments": 384,
+    "preflightReadyDocuments": 384,
+    "skippedDocuments": 0
+  },
+  "finishedAt": "2026-11-14T17:07:29.189Z"
+}
