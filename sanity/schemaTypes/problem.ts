@@ -1,4 +1,5 @@
 import { defineType, defineField } from 'sanity'
+import { reviewFields } from './careEvidence'
 
 export default defineType({
   name: 'problem',
@@ -16,8 +17,13 @@ export default defineType({
     defineField({
       name: 'category', title: 'Category', type: 'string',
       options: {
-        list: ['water', 'algae', 'plants', 'fish', 'equipment'],
+        list: [
+          'fish', 'algae', 'water_quality', 'equipment', 'plant', 'coral', 'pest', 'invertebrate', 'other',
+          // Legacy values remain readable during the transition.
+          'water', 'plants',
+        ],
       },
+      description: 'Primary category describes the affected subject. Legacy water/plants remain readable and map to water_quality/plant in the UI.',
       validation: (Rule: any) => Rule.required(),
     }),
     defineField({
@@ -65,6 +71,51 @@ export default defineType({
     defineField({
       name: 'escalation', title: 'Escalation', type: 'array', of: [{ type: 'block' }],
     }),
+    defineField({
+      name: 'tags', title: 'Tags', type: 'array', of: [{ type: 'string' }],
+      description: 'Cause, symptom, or system dimensions (for example temperature, parasite, emergency). Primary category must not be duplicated here.',
+    }),
+    defineField({
+      name: 'affectedTypes', title: 'Affected Types', type: 'array', of: [{ type: 'string' }],
+      options: { list: ['fish', 'plant', 'coral', 'invertebrate', 'equipment'] },
+    }),
+    defineField({
+      name: 'severity', title: 'Severity', type: 'string',
+      options: { list: ['LOW', 'MEDIUM', 'HIGH', 'CRITICAL'] },
+      validation: (Rule: any) =>
+        Rule.custom((val: any, ctx: any) => {
+          if (val === 'CRITICAL' && (!Array.isArray(ctx?.document?.escalation) || ctx.document.escalation.length === 0)) {
+            return 'CRITICAL severity requires a non-empty escalation path'
+          }
+          return true
+        }),
+    }),
+    defineField({
+      name: 'timeSensitivity', title: 'Time Sensitivity', type: 'string',
+      options: { list: ['MONITOR', 'ACT_SOON', 'ACT_NOW'] },
+      validation: (Rule: any) =>
+        Rule.custom((val: any, ctx: any) => {
+          if (val === 'ACT_NOW' && (!Array.isArray(ctx?.document?.escalation) || ctx.document.escalation.length === 0)) {
+            return 'ACT_NOW time sensitivity requires a non-empty escalation path'
+          }
+          return true
+        }),
+    }),
+    defineField({
+      name: 'whenToSeekHelp', title: 'When to Seek Help', type: 'text', rows: 3,
+      description: 'Problem-specific escalation guidance. Do not invent universal thresholds.',
+    }),
+    defineField({
+      name: 'claimConfidence', title: 'Claim Confidence', type: 'array',
+      of: [{ type: 'careConfidenceEntry' }],
+      description: 'Evidence state and confidence for individual triage claims.',
+    }),
+    defineField({
+      name: 'evidenceSources', title: 'Evidence Sources', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'evidenceSource' }] }],
+      description: 'Real evidence source records used by this problem. No placeholder sources.',
+    }),
+    ...reviewFields,
   ],
   preview: {
     select: { title: 'title', subtitle: 'category' },

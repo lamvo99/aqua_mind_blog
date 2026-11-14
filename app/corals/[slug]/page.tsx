@@ -147,6 +147,12 @@ export default async function CoralDetailPage({ params }: Props) {
             reefSafetyMeaning={item.reefSafetyMeaning ?? undefined}
           />
 
+          {item.temperatureTolerance && (
+            <p className="mt-3 text-xs leading-relaxed text-gray-600 dark:text-slate-300">
+              <span className="font-semibold">Temperature tolerance note:</span> {item.temperatureTolerance}
+            </p>
+          )}
+
           {bodySections.map((section) => (
             <section key={section.title} className="mt-8">
               <h2 className="text-lg font-bold text-gray-900 dark:text-slate-100 mb-2">{section.title}</h2>

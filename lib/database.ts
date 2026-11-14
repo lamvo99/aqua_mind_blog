@@ -224,6 +224,7 @@ export interface CoralDetail extends DatabaseItem {
   photosynthetic?: boolean
   tempMinC?: number | null
   tempMaxC?: number | null
+  temperatureTolerance?: string | null
   salinityMin?: number | null
   salinityMax?: number | null
   phMin?: number | null
@@ -342,6 +343,7 @@ export async function getDatabaseItem(type: DatabaseType, slug: string): Promise
       parentSpecies->{ _id, _type, name, slug },
       light, co2, growth, placement, propagation, growthForm, redPlant,
       coralType, flow, aggression, reefCompatibility, photosynthetic,
+      temperatureTolerance,
       category, brand, model, flowRateLh, powerW, tankSizeMinL, tankSizeMaxL, pros, cons,
       aquariumStyle, region, isPredator,
       minTankLengthCm, minTankWidthCm, swimmingSpace, jumpRisk, lidRequired, flowPreference,

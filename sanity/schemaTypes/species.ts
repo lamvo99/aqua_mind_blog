@@ -1,4 +1,5 @@
 import { defineType, defineField } from 'sanity'
+import { difficultyFields } from './careEvidence'
 
 export default defineType({
   name: 'species',
@@ -100,6 +101,7 @@ export default defineType({
       name: 'difficulty', title: 'Difficulty', type: 'string', group: 'care',
       options: { list: ['Beginner', 'Intermediate', 'Advanced', 'Expert'] },
     }),
+    ...difficultyFields.map((field: any) => ({ ...field, group: 'care' })),
     defineField({
       name: 'waterType', title: 'Water Type', type: 'string', group: 'care',
       options: { list: ['freshwater', 'saltwater', 'brackish'] },

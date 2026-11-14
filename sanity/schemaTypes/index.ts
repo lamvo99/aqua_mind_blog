@@ -15,6 +15,12 @@ import collection from './collection'
 import subscriber from './subscriber'
 import table from './table'
 import {
+  evidenceSource,
+  careBasisEntry,
+  careConfidenceEntry,
+  careDisagreement,
+} from './careEvidence'
+import {
   compatibleEntry,
   incompatibleEntry,
   predatorPreyEntry,
@@ -43,6 +49,10 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   collection,
   subscriber,
   table,
+  evidenceSource,
+  careBasisEntry,
+  careConfidenceEntry,
+  careDisagreement,
   compatibleEntry,
   incompatibleEntry,
   predatorPreyEntry,

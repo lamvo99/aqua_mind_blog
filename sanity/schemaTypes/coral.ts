@@ -1,4 +1,5 @@
 import { defineType, defineField } from 'sanity'
+import { difficultyFields, reviewFields } from './careEvidence'
 
 export default defineType({
   name: 'coral',
@@ -43,7 +44,7 @@ export default defineType({
     defineField({ name: 'publishedAt', title: 'Published at', type: 'datetime' }),
     defineField({
       name: 'light', title: 'Light Requirement', type: 'string',
-      options: { list: ['Low', 'Moderate', 'High', 'Very High'] },
+      options: { list: ['None', 'Low', 'Moderate', 'High', 'Very High'] },
     }),
     defineField({
       name: 'flow', title: 'Flow Requirement', type: 'string',
@@ -67,6 +68,13 @@ export default defineType({
       options: { list: ['Peaceful', 'Semi-aggressive', 'Aggressive'] },
     }),
     defineField({ name: 'reefCompatibility', title: 'Reef Safe?', type: 'boolean' }),
+    defineField({
+      name: 'reefSafetyMeaning',
+      title: 'Reef Safety Meaning',
+      type: 'text',
+      rows: 2,
+      description: 'Defines what the legacy reefCompatibility boolean means. Without this, the UI must not render an unqualified "Reef safe: Yes".',
+    }),
     defineField({ name: 'photosynthetic', title: 'Photosynthetic?', type: 'boolean' }),
     defineField({
       name: 'suitableEquipment', title: 'Suitable Equipment', type: 'array',
@@ -99,6 +107,13 @@ export default defineType({
     defineField({
       name: 'tempMaxC', title: 'Max Temperature (°C)', type: 'number',
       validation: (Rule: any) => Rule.min(0).max(35),
+    }),
+    defineField({
+      name: 'temperatureTolerance',
+      title: 'Temperature Tolerance Note',
+      type: 'text',
+      rows: 2,
+      description: 'Qualified experimental or laboratory tolerance note. Never an aquarium target; numeric aquarium targets belong in Min/Max Temperature.',
     }),
     defineField({
       name: 'mainImage', title: 'Main Image', type: 'image', options: { hotspot: true },
@@ -234,6 +249,36 @@ export default defineType({
       of: [{ type: 'coralNeighborEntry' }],
       description: 'Coral-to-coral neighbors with aggression relation type.',
     }),
+    defineField({
+      name: 'careBasis', title: 'Care Claim Basis', type: 'array',
+      of: [{ type: 'careBasisEntry' }],
+      description: 'Per-claim basis (target, tolerance, observed, unknown).',
+    }),
+    defineField({
+      name: 'careConfidence', title: 'Care Claim Confidence', type: 'array',
+      of: [{ type: 'careConfidenceEntry' }],
+      description: 'Per-claim confidence, state, source IDs, caveats and preserved source disagreements.',
+    }),
+    defineField({
+      name: 'evidenceSources', title: 'Evidence Sources', type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'evidenceSource' }] }],
+      description: 'Real evidence source records used by this coral. No placeholder sources.',
+    }),
+    defineField({
+      name: 'suitabilityConditions', title: 'Suitability Conditions', type: 'text', rows: 3,
+      description: 'Conditions that make the care/difficulty guidance applicable.',
+    }),
+    defineField({
+      name: 'growthRisk', title: 'Growth / Space Risk', type: 'string',
+      options: { list: ['LOW', 'MODERATE', 'HIGH', 'UNKNOWN'] },
+    }),
+    defineField({ name: 'growthRiskNote', title: 'Growth Risk Note', type: 'text', rows: 2 }),
+    defineField({
+      name: 'parBasis', title: 'PAR Measurement Basis', type: 'text', rows: 2,
+      description: 'Measurement location/method/unit for a supported PAR claim. Leave empty when PAR is unresolved.',
+    }),
+    ...reviewFields,
+    ...difficultyFields,
     defineField({
       name: 'knowledgeBody', title: 'Knowledge Body', type: 'coralKnowledgeBody',
     }),
