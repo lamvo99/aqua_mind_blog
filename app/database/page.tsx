@@ -15,6 +15,9 @@ const COUNT_KEY_BY_HREF: Record<string, DatabaseCountKey> = {
   "/problems": "problem",
 }
 
+// Keep the public headline and category badges aligned with Production.
+export const revalidate = 300
+
 export async function generateMetadata(): Promise<Metadata> {
   const counts = await getDatabaseCounts()
   const total = totalDatabaseCount(counts)

@@ -23,6 +23,9 @@ const playfair = Playfair_Display({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
+// Refresh database counts in the shared navigation without forcing every route dynamic.
+export const revalidate = 300
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {

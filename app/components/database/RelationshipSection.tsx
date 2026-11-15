@@ -82,7 +82,7 @@ export default function RelationshipSection({
               {item.excerpt && (
                 <p className="text-xs text-gray-500 dark:text-slate-400 truncate">{item.excerpt}</p>
               )}
-              {item.category && (
+              {item.category && !((item.name || item.title || '').toLowerCase().includes(item.category.toLowerCase())) && (
                 <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-aqua-100 dark:bg-aqua-900/50 text-aqua-700 dark:text-aqua-300 mt-0.5 inline-block">
                   {item.category}
                 </span>
