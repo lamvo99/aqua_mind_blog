@@ -1,0 +1,800 @@
+{
+  "retrievedAt": "2026-11-15T02:19:29.966Z",
+  "documents": [
+    {
+      "_createdAt": "2026-09-16T07:14:59Z",
+      "_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "_rev": "6qLw2pLgYP1DIYD0rhVfhY",
+      "_system": {
+        "base": {
+          "id": "5oQB2MZ7gmZXjdwFqSs4kl",
+          "rev": "u0O6BryJjvJsFyX7dSMerv"
+        }
+      },
+      "_type": "invertebrate",
+      "_updatedAt": "2026-11-14T17:07:05Z",
+      "aliases": [
+        "Neocaridina",
+        "Cherry Shrimp",
+        "Red Cherry Shrimp"
+      ],
+      "aquariumStyle": [
+        "Community",
+        "Shrimp",
+        "Planted"
+      ],
+      "diet": "Omnivore",
+      "difficulty": "Beginner",
+      "excerpt": "The most popular freshwater shrimp — bright red coloration, extremely hardy, and prolific breeder. The gateway species for shrimp keeping. Tolerates a wide range of conditions.",
+      "group": "shrimp",
+      "knowledgeBody": {
+        "_type": "invertebrateKnowledgeBody",
+        "compatibility": [
+          {
+            "_key": "spec28-cherry-compatibility",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "spec28-cherry-compatibility-s",
+                "_type": "span",
+                "marks": [],
+                "text": "The stored Peaceful temperament is supported. Larger fish can still eat the shrimp; no universal community guarantee is made."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "dietAndFeeding": [
+          {
+            "_key": "spec28-cherry-diet",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "spec28-cherry-diet-s",
+                "_type": "span",
+                "marks": [],
+                "text": "Wikipedia and the Aquarium Co-Op guide describe an omnivore grazing algae, biofilm and prepared food. The stored Omnivore diet is supported. No feeding dose is asserted."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "overview": [
+          {
+            "_key": "spec28-cherry-overview",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "spec28-cherry-overview-s",
+                "_type": "span",
+                "marks": [],
+                "text": "GBIF and Wikipedia accept Neocaridina davidi, and the red morph is the origin of the “cherry shrimp” name. The record is a colour/trade form, not a separate species; species-level care is applied."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "waterParameters": [
+          {
+            "_key": "spec28-cherry-water",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "spec28-cherry-water-s",
+                "_type": "span",
+                "marks": [],
+                "text": "LiveAquaria gives pH 6.6–7.0 and about 16–27 °C. The stored pH 6.5–7.5 and 18–26 °C are broader/narrower and partial. No colour-form-specific range is invented."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "mainImage": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-47ea8a3f3d2ab2d656fbd3c72e34286562b46f2b-547x365-jpg",
+          "_type": "reference"
+        }
+      },
+      "name": "Cherry Shrimp",
+      "phMax": 7.5,
+      "phMin": 6.5,
+      "publishedAt": "2026-09-16T00:00:00Z",
+      "region": "East Asia",
+      "relatedPosts": [
+        {
+          "_key": "7b61debfa0c9e4a0",
+          "_ref": "358ae9b7-d28e-486f-8395-91b8eea2592f",
+          "_type": "reference"
+        },
+        {
+          "_key": "5e27a9b214e657cb",
+          "_ref": "d07f41f4-58e1-4794-aaa1-2c6873e1b866",
+          "_type": "reference"
+        }
+      ],
+      "relatedProblems": [
+        {
+          "_key": "03024f4a255e7ff18b370410741ab3f8",
+          "_ref": "BruaGKYCGDRQjkiQDnlsx5",
+          "_type": "reference"
+        },
+        {
+          "_key": "598e9e360132a47460518b71dd4b9c39",
+          "_ref": "problem-cloudy-water",
+          "_type": "reference"
+        },
+        {
+          "_key": "1a782ea2ad9a249223fee3a9d565119a",
+          "_ref": "problem-fish-hiding",
+          "_type": "reference"
+        }
+      ],
+      "scientificName": "Neocaridina davidi",
+      "sizeCm": 2.5,
+      "slug": {
+        "_type": "slug",
+        "current": "neocaridina-davidi-cherry"
+      },
+      "tempMaxC": 26,
+      "tempMinC": 18,
+      "temperament": "Peaceful",
+      "waterType": "freshwater"
+    },
+    {
+      "_createdAt": "2026-07-31T05:47:52Z",
+      "_id": "BruaGKYCGDRQjkiQDnlt54",
+      "_rev": "A8H3InZCh3xhQPGiDckK3F",
+      "_type": "problem",
+      "_updatedAt": "2026-11-08T06:13:52Z",
+      "category": "algae",
+      "causes": [
+        {
+          "_key": "staghornalgae-causes-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "staghornalgae-causes-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Unstable CO₂, irregular fertilisation and ammonia/organic spikes are associated with plant stress"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "excerpt": "Grey-green branching tufts shaped like antlers on plant tips and filter outlets.",
+      "publishedAt": "2026-07-31T00:00:00Z",
+      "relatedPosts": [
+        {
+          "_ref": "d8eebef4-6b25-4895-8e5f-8c6e546305bc",
+          "_type": "reference"
+        }
+      ],
+      "relatedTools": [
+        {
+          "_ref": "ofTl1CTOUWuLwM28Pz5Mg3",
+          "_type": "reference"
+        }
+      ],
+      "slug": {
+        "_type": "slug",
+        "current": "staghorn-algae"
+      },
+      "symptoms": [
+        {
+          "_key": "staghornalgae-symptoms-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "staghornalgae-symptoms-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Attachment to slow-growing plant edges"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Staghorn Algae",
+      "whatNotToDo": [
+        {
+          "_key": "staghornalgae-whatNotToDo-a0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "staghornalgae-whatNotToDo-a0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do not cut CO₂ off completely to control staghorn algae — address light, CO₂ stability, and husbandry instead."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "staghornalgae-whatNotToDo-a1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "staghornalgae-whatNotToDo-a1-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do not use strong oxidizers or chemical treatments on delicate plants without a supported livestock-safe protocol."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "staghornalgae-whatNotToDo-a2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "staghornalgae-whatNotToDo-a2-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Prioritize manual removal and a husbandry review."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "whatToCheck": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "CO₂ drop checker stability"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Phosphate and potassium levels"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li2",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Flow pattern around the growth"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "_createdAt": "2026-07-31T05:47:52Z",
+      "_id": "BruaGKYCGDRQjkiQDnltAO",
+      "_rev": "A8H3InZCh3xhQPGiDckK3F",
+      "_type": "problem",
+      "_updatedAt": "2026-11-08T06:13:52Z",
+      "category": "fish",
+      "causes": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Bacterial infection of internal organs"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Poor water quality and long-term stress"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li2",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Overfeeding"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ],
+      "excerpt": "Abdomen swells and scales stand out like a pinecone — usually a bacterial infection.",
+      "publishedAt": "2026-07-31T00:00:00Z",
+      "relatedPosts": [
+        {
+          "_ref": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+          "_type": "reference"
+        }
+      ],
+      "relatedTools": [
+        {
+          "_ref": "BruaGKYCGDRQjkiQDp45hZ",
+          "_type": "reference"
+        }
+      ],
+      "slug": {
+        "_type": "slug",
+        "current": "dropsy"
+      },
+      "symptoms": [
+        {
+          "_key": "dropsy-symptoms-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "dropsy-symptoms-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Fluid accumulation/pinecone, bloody spots/ulcers and enlarged eyes"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Dropsy",
+      "whatNotToDo": [
+        {
+          "_key": "dropsy-whatNotToDo-a0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "dropsy-whatNotToDo-a0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Dropsy is a sign/syndrome, not a single disease — diagnosis and treatment depend on the cause and species."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "dropsy-whatNotToDo-a1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "dropsy-whatNotToDo-a1-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do not rely on universal salt-bath or separation instructions; seek aquatic-veterinary advice."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "whatToCheck": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Water quality immediately"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Feeding frequency"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li2",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Quarantine readiness"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "_createdAt": "2026-07-31T05:47:52Z",
+      "_id": "BruaGKYCGDRQjkiQDnltD3",
+      "_rev": "A8H3InZCh3xhQPGiDckK3F",
+      "_type": "problem",
+      "_updatedAt": "2026-11-08T06:13:52Z",
+      "category": "fish",
+      "causes": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Adding water of a very different temperature"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Heater failure or stuck thermostat"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li2",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Power outage in cold months"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ],
+      "excerpt": "Sudden temperature swings after water changes, heater failure or power cuts stress fish.",
+      "publishedAt": "2026-07-31T00:00:00Z",
+      "relatedPosts": [
+        {
+          "_ref": "86ba539d-352a-416c-9a7b-5031d396e7a1",
+          "_type": "reference"
+        },
+        {
+          "_ref": "57b180a8-2b42-4b56-8677-21d1c88d692d",
+          "_type": "reference"
+        }
+      ],
+      "relatedTools": [
+        {
+          "_ref": "BruaGKYCGDRQjkiQDp45hZ",
+          "_type": "reference"
+        }
+      ],
+      "slug": {
+        "_type": "slug",
+        "current": "temperature-shock"
+      },
+      "symptoms": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Fish darting or flashing after a water change"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Sudden listlessness or gasping"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li2",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Clamped fins and rapid breathing"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ],
+      "title": "Temperature Shock",
+      "whatNotToDo": [
+        {
+          "_key": "li0",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Do not pour warm water straight into the tank"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        },
+        {
+          "_key": "li1",
+          "_type": "block",
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Do not raise temperature more than 1–2 °C per day during treatment"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "style": "normal"
+        }
+      ],
+      "whatToCheck": [
+        {
+          "_key": "temperatureshock-whatToCheck-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "temperatureshock-whatToCheck-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Check water temperature before and after changes and take a history of recent temperature shifts; do not rely on heater wattage or thermometer accuracy as diagnostic checks."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    {
+      "_createdAt": "2026-09-16T07:15:09Z",
+      "_id": "I9bI8W8ZWcEwyIzM9DNIu8",
+      "_rev": "A8H3InZCh3xhQPGiDckK3F",
+      "_type": "problem",
+      "_updatedAt": "2026-11-08T06:13:52Z",
+      "category": "algae",
+      "causes": [
+        {
+          "_key": "blackbeardalgae-causes-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-causes-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Plant stress, organic waste and fluctuating CO2 are associated with BBA"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "excerpt": "A stubborn, dark algae that grows in tufts on plants, decorations, and equipment. Often indicates fluctuating CO₂ levels. Removed by spot-treating with hydrogen peroxide.",
+      "name": "Black Beard Algae (BBA)",
+      "publishedAt": "2026-09-16T00:00:00Z",
+      "relatedPosts": [
+        {
+          "_key": "70ff788f676689d4",
+          "_ref": "fb10ea44-d583-4f56-af03-3d7eff0360a1",
+          "_type": "reference"
+        }
+      ],
+      "slug": {
+        "_type": "slug",
+        "current": "black-beard-algae"
+      },
+      "symptoms": [
+        {
+          "_key": "blackbeardalgae-symptoms-p8-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-symptoms-p8-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Dark fuzzy tufts on plant leaves, hardscape, filter outlets and CO2 diffusers"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "title": "Black Beard Algae (BBA)",
+      "whatNotToDo": [
+        {
+          "_key": "blackbeardalgae-whatNotToDo-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatNotToDo-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do not expect removal alone to work while CO₂, light, and organics stay unchanged — tufts return."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blackbeardalgae-whatNotToDo-a1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatNotToDo-a1-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Do not expose fish, shrimp, or other livestock to concentrated chemicals; chemical use requires specialist review."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "whatToCheck": [
+        {
+          "_key": "blackbeardalgae-whatToCheck-0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatToCheck-0-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Check CO₂ stability across the photoperiod and light duration — fluctuations are the leading indicator (E1)."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blackbeardalgae-whatToCheck-a1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatToCheck-a1-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Remove badly affected leaves and physically remove heavy tufts."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blackbeardalgae-whatToCheck-2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatToCheck-2-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Improve flow around affected areas and reduce organic buildup with substrate vacuuming."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "blackbeardalgae-whatToCheck-a3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "blackbeardalgae-whatToCheck-a3-s",
+              "_type": "span",
+              "marks": [],
+              "text": "Any chemical treatment requires a livestock-safety review and specialist guidance."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    }
+  ]
+}

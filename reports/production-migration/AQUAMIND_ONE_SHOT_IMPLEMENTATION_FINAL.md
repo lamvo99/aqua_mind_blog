@@ -163,3 +163,19 @@ Known baseline failures (pre-existing on `main`, reproduced on clean `b6ca8c8`):
 The Core Database schema is implemented and live in Production Studio. The safely supportable prepared core data is written and verified. The remaining fields are explicitly held as `NEEDS_SOURCE`, `NEEDS_SPECIALIST`, `DEFERRED` or `UNRESOLVED_CONFLICT`; they are not falsely marked complete.
 
 **Final status: `PRODUCTION_IMPLEMENTED_WITH_HELD_FIELDS`.**
+
+## 9. Post-audit update — 2026-11-15
+
+A public runtime audit was executed after the initial implementation. It confirmed the live `/database` headline and all six category badges now agree with Sanity at **473** (218 / 56 / 62 / 48 / 46 / 43). The earlier 444/394 figures were stale/mixed cached HTML, not the current dataset.
+
+The audit also fixed **12 fields across 5 documents**:
+
+- Black Beard Algae excerpt — removed the peroxide spot-treatment recommendation.
+- Temperature Shock `whatNotToDo` — removed the unsupported 1–2 °C/day protocol.
+- Dropsy excerpt — removed the default bacterial-cause framing.
+- Staghorn Algae `causes` — clarified “associated factors, not confirmed causes.”
+- Cherry Shrimp trade-form record — renamed and aligned to the canonical Neocaridina davidi baseline.
+
+The audit fix transaction is `6qLw2pLgYP1DIYD0rlNgTY`; read-back verification is 12/12. The audit deployment is commit `ffe68b8` / Vercel `CNGg85vJvjGBcMJe259sWAWgheCh`.
+
+See `reports/PUBLIC_DATABASE_RUNTIME_AUDIT.md` for the full evidence.

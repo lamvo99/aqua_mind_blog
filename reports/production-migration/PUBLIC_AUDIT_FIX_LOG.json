@@ -1,0 +1,110 @@
+{
+  "executedAt": "2026-11-15T02:19:31.849Z",
+  "transactionId": "6qLw2pLgYP1DIYD0rlNgTY",
+  "documents": [
+    "I9bI8W8ZWcEwyIzM9DNIu8",
+    "BruaGKYCGDRQjkiQDnltD3",
+    "BruaGKYCGDRQjkiQDnltAO",
+    "BruaGKYCGDRQjkiQDnlt54",
+    "5oQB2MZ7gmZXjdwFqSs4kl"
+  ],
+  "fieldChanges": 12,
+  "operations": [
+    {
+      "document_id": "I9bI8W8ZWcEwyIzM9DNIu8",
+      "document_type": "problem",
+      "slug": "black-beard-algae",
+      "field": "excerpt",
+      "before": "A stubborn, dark algae that grows in tufts on plants, decorations, and equipment. Often indicates fluctuating CO₂ levels. Removed by spot-treating with hydrogen peroxide.",
+      "after": "A stubborn, dark algae that grows in tufts on plants, decorations and equipment. It is associated with fluctuating CO₂, plant stress and organic buildup. Correct the husbandry cause first; any chemical treatment requires a livestock-safety review and specialist guidance."
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnltD3",
+      "document_type": "problem",
+      "slug": "temperature-shock",
+      "field": "whatNotToDo",
+      "before": "Do not pour warm water straight into the tank | Do not raise temperature more than 1–2 °C per day during treatment",
+      "after": "Do not pour warm water straight into the tank | Do not make abrupt temperature changes; restore stable conditions gradually and seek species-specific guidance."
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnltAO",
+      "document_type": "problem",
+      "slug": "dropsy",
+      "field": "excerpt",
+      "before": "Abdomen swells and scales stand out like a pinecone — usually a bacterial infection.",
+      "after": "A swollen abdomen with scales standing out like a pinecone is a sign of fluid imbalance, not a single disease. Cause and treatment depend on the species and diagnosis; seek aquatic-veterinary advice."
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnlt54",
+      "document_type": "problem",
+      "slug": "staghorn-algae",
+      "field": "causes",
+      "before": "Unstable CO₂, irregular fertilisation and ammonia/organic spikes are associated with plant stress",
+      "after": "Associated factors, not confirmed causes: unstable CO₂, irregular fertilisation and ammonia/organic spikes with plant stress."
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "name",
+      "before": "Cherry Shrimp",
+      "after": "Cherry Shrimp (Red Trade Form)"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "excerpt",
+      "before": "The most popular freshwater shrimp — bright red coloration, extremely hardy, and prolific breeder. The gateway species for shrimp keeping. Tolerates a wide range of conditions.",
+      "after": "Trade-name form of Neocaridina davidi, the same species as Red Cherry Shrimp. Kept for trade-name search continuity; species-level care applies. Not a separate species."
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "sizeCm",
+      "before": "2.5",
+      "after": "3"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "tempMinC",
+      "before": "18",
+      "after": "20"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "tempMaxC",
+      "before": "26",
+      "after": "28"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "phMin",
+      "before": "6.5",
+      "after": "6.5"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "phMax",
+      "before": "7.5",
+      "after": "8"
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "document_type": "invertebrate",
+      "slug": "neocaridina-davidi-cherry",
+      "field": "knowledgeBody",
+      "before": "{\"_type\":\"invertebrateKnowledgeBody\",\"compatibility\":[{\"_key\":\"spec28-cherry-compatibility\",\"_type\":\"block\",\"children\":[{\"_key\":\"spec28-cherry-compatibility-s\",\"_type\":\"span\",\"marks\":[],\"text\":\"The stored Peaceful temperament is supported. Larger fish can still eat the shrimp; no universal community guarantee is made.\"}],\"markDefs\":[],\"style\":\"normal\"}],\"dietAndFeeding\":[{\"_key\":\"spec28-cherry-diet\",\"_type\":\"block\",\"children\":[{\"_key\":\"spec28-cherry-diet-s\",\"_type\":\"span\",\"marks\":[],\"text\":\"Wikipedia and the Aquarium Co-Op guide describe an omnivore grazing algae, biofilm and prepared food. Th",
+      "after": "{\"_type\":\"invertebrateKnowledgeBody\",\"compatibility\":[{\"_key\":\"spec28-cherry-compatibility\",\"_type\":\"block\",\"children\":[{\"_key\":\"spec28-cherry-compatibility-s\",\"_type\":\"span\",\"marks\":[],\"text\":\"The stored Peaceful temperament is supported. Larger fish can still eat the shrimp; no universal community guarantee is made.\"}],\"markDefs\":[],\"style\":\"normal\"}],\"dietAndFeeding\":[{\"_key\":\"spec28-cherry-diet\",\"_type\":\"block\",\"children\":[{\"_key\":\"spec28-cherry-diet-s\",\"_type\":\"span\",\"marks\":[],\"text\":\"Wikipedia and the Aquarium Co-Op guide describe an omnivore grazing algae, biofilm and prepared food. Th"
+    }
+  ]
+}

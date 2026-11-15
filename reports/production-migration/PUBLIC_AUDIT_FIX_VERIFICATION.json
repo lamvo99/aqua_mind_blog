@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-15T02:19:32.182Z",
+  "verification": [
+    {
+      "document_id": "I9bI8W8ZWcEwyIzM9DNIu8",
+      "field": "excerpt",
+      "ok": true
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnltD3",
+      "field": "whatNotToDo",
+      "ok": true
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnltAO",
+      "field": "excerpt",
+      "ok": true
+    },
+    {
+      "document_id": "BruaGKYCGDRQjkiQDnlt54",
+      "field": "causes",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "name",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "excerpt",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "sizeCm",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "tempMinC",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "tempMaxC",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "phMin",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "phMax",
+      "ok": true
+    },
+    {
+      "document_id": "5oQB2MZ7gmZXjdwFqSs4kl",
+      "field": "knowledgeBody",
+      "ok": true
+    }
+  ]
+}
