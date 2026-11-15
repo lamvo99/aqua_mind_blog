@@ -1,12 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Search, Menu, X, Sun, Moon, ChevronDown, Database, Calculator, Mail } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { useTheme } from "@/lib/store"
 import SearchModal from "./SearchModal"
+import LogoMark from "./LogoMark"
 import strings from "@/lib/i18n/strings"
 import { mainNav, databaseNav } from "@/lib/navigation"
 import type { DatabaseCounts } from "@/lib/database-counts"
@@ -80,13 +80,7 @@ export default function Navbar({ databaseCounts }: { databaseCounts?: DatabaseCo
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 group">
-              <Image
-                src="/logo.png"
-                alt={strings.site.name}
-                width={36}
-                height={36}
-                className="w-9 h-9 rounded-xl group-hover:scale-110 transition-transform"
-              />
+              <LogoMark className="w-9 h-9 rounded-xl group-hover:scale-110 transition-transform" />
               <span className="text-xl font-bold gradient-text">{strings.site.name}</span>
             </Link>
 
