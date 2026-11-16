@@ -8,12 +8,12 @@ import { ArrowRight, Compass, Info } from "lucide-react"
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: "Aquarium Setup Collections — AquaMind",
+  title: "Aquarium Setup Collections",
   description:
     "Goal-based aquarium collections built from published database records: beginner freshwater, nano, low-tech planted, shrimp, beginner reef, soft coral and more.",
   alternates: { canonical: "https://www.aquamind.life/collections" },
   openGraph: {
-    title: "Aquarium Setup Collections — AquaMind",
+    title: "Aquarium Setup Collections",
     description:
       "Goal-based aquarium collections built from published database records, with explicit inclusion criteria.",
     type: "website",

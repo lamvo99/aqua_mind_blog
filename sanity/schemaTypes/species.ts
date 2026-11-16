@@ -1,4 +1,5 @@
 import { defineType, defineField } from 'sanity'
+import { isValidSlugValue, suggestSlug } from '../../lib/slug'
 import { difficultyFields } from './careEvidence'
 
 export default defineType({
@@ -19,7 +20,13 @@ export default defineType({
     defineField({
       name: 'slug', title: 'Slug', type: 'slug', group: 'identity',
       options: { source: 'name', maxLength: 96 },
-      validation: (Rule: any) => Rule.required(),
+      validation: (Rule: any) =>
+        Rule.required().custom((value: any) => {
+          const current = value?.current
+          if (!current) return true
+          if (isValidSlugValue(current)) return true
+          return `Invalid slug: use lowercase letters, numbers and single hyphens (suggested: "${suggestSlug(current)}").`
+        }),
     }),
     defineField({ name: 'family', title: 'Family', type: 'string', group: 'identity' }),
     defineField({ name: 'origin', title: 'Origin', type: 'string', group: 'identity' }),

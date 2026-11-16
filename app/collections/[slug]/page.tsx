@@ -35,11 +35,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!collection) return { title: "Collection not found" }
   const canonical = `https://www.aquamind.life/collections/${slug}`
   return {
-    title: `${collection.title} — AquaMind`,
+    title: `${collection.title}`,
     description: collection.intent,
     alternates: { canonical },
     openGraph: {
-      title: `${collection.title} — AquaMind`,
+      title: `${collection.title}`,
       description: collection.intent,
       type: "website",
       url: canonical,

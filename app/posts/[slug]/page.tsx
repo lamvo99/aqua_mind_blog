@@ -13,6 +13,7 @@ import RelatedResources from "@/app/components/RelatedResources"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LikeBookmark from "@/app/components/LikeBookmark"
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
+import { resolvePostSeo } from "@/lib/seo/post-metadata"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import SocialShare from "@/app/components/SocialShare"
 import TableOfContents from "@/app/components/TableOfContents"
@@ -33,19 +34,31 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ slug: string }> }) {
   const { slug } = await paramsPromise
   const post = await getPostBySlug(slug)
-  if (!post) return { title: strings.post.notFound }
+  // Unknown / unpublished slugs must not be indexable and must render the
+  // framework 404 UI. (Metadata must resolve so robots/canonical survive.)
+  if (!post) {
+    return {
+      title: strings.post.notFound,
+      description: "The requested article could not be found.",
+      robots: { index: false, follow: true },
+      alternates: { canonical: `${siteUrl}/posts` },
+    }
+  }
+
+  const { title: metaTitle, description: metaDescription, image: metaImage } = resolvePostSeo(post)
+
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: metaTitle,
+    description: metaDescription,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      images: post.mainImage ? [{ url: urlFor(post.mainImage).width(1200).url() }] : [],
+      title: metaTitle,
+      description: metaDescription,
+      images: metaImage ? [{ url: urlFor(metaImage).width(1200).url() }] : [],
       type: "article",
       publishedTime: post.publishedAt,
       authors: post.author ? [post.author.name] : [],
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
+    twitter: { card: "summary_large_image", title: metaTitle, description: metaDescription },
     alternates: { canonical: `${siteUrl}/posts/${slug}` },
   }
 }

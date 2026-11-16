@@ -1,10 +1,10 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Send } from "lucide-react"
 import { useNewsletter } from "@/lib/store"
 import { useState, useEffect } from "react"
-import LogoMark from "./LogoMark"
 import strings from "@/lib/i18n/strings"
 
 const surfaces = [
@@ -45,7 +45,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <LogoMark className="w-8 h-8 rounded-lg" />
+              <Image
+                src="/logo-3d.png"
+                alt={strings.site.name}
+                width={32}
+                height={32}
+                className="w-8 h-8 rounded-lg"
+              />
               <span className="text-lg font-bold text-white">{strings.site.name}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">

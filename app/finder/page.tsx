@@ -7,18 +7,18 @@ import type { FinderItem } from "@/lib/finder"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
-  title: "Find Your Perfect Match — AquaMind",
+  title: "Find Your Perfect Match",
   description: "Answer a few questions and get a ranked shortlist of fish, plants, corals, invertebrates and equipment matched to your aquarium.",
   alternates: { canonical: "https://www.aquamind.life/finder" },
   openGraph: {
-    title: "Find Your Perfect Match — AquaMind",
+    title: "Find Your Perfect Match",
     description: "Answer a few questions and get a ranked shortlist of fish, plants, corals, invertebrates and equipment matched to your aquarium.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Find Your Perfect Match — AquaMind",
+    title: "Find Your Perfect Match",
     description: "Answer a few questions and get a ranked shortlist of fish, plants, corals, invertebrates and equipment matched to your aquarium.",
   },
 }

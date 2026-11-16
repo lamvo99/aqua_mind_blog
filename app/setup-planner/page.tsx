@@ -3,18 +3,18 @@ import SetupPlanner from "@/app/components/tools/SetupPlanner"
 import { ListChecks } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Aquarium Setup Planner — AquaMind",
+  title: "Aquarium Setup Planner",
   description: "Plan your new aquarium step by step: choose a tank type, estimate the volume and get a personalized checklist with equipment, plants and fish.",
   alternates: { canonical: "https://www.aquamind.life/setup-planner" },
   openGraph: {
-    title: "Aquarium Setup Planner — AquaMind",
+    title: "Aquarium Setup Planner",
     description: "Plan your new aquarium step by step: choose a tank type, estimate the volume and get a personalized checklist with equipment, plants and fish.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aquarium Setup Planner — AquaMind",
+    title: "Aquarium Setup Planner",
     description: "Plan your new aquarium step by step: choose a tank type, estimate the volume and get a personalized checklist with equipment, plants and fish.",
   },
 }

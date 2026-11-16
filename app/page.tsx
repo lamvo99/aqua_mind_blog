@@ -9,7 +9,9 @@ import type { Metadata } from "next"
 export const revalidate = 300
 
 export const metadata: Metadata = {
-  title: "Aquascaping Blog & Beginner Aquarium Guides — AquaMind",
+  // The root page shares its segment with app/layout.tsx, so the global
+  // title template does not apply here — include the brand once explicitly.
+  title: { absolute: "Aquascaping Blog & Beginner Aquarium Guides | AquaMind Blog" },
   description: "Free aquascaping guides, aquarium care articles, tools and a verified database of fish, plants and corals. Start here if you are new to fishkeeping.",
   alternates: { canonical: "https://www.aquamind.life" },
 }

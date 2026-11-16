@@ -4,18 +4,18 @@ import AquariumVolumeCalculator from "@/app/components/tools/AquariumVolumeCalcu
 import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
-  title: "Aquarium Volume Calculator — AquaMind",
+  title: "Aquarium Volume Calculator",
   description: "Calculate the water volume of your rectangular, cube or cylinder aquarium in liters and US gallons, with substrate displacement.",
   alternates: { canonical: "https://www.aquamind.life/tools/aquarium-volume" },
   openGraph: {
-    title: "Aquarium Volume Calculator — AquaMind",
+    title: "Aquarium Volume Calculator",
     description: "Calculate the water volume of your rectangular, cube or cylinder aquarium in liters and US gallons, with substrate displacement.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aquarium Volume Calculator — AquaMind",
+    title: "Aquarium Volume Calculator",
     description: "Calculate the water volume of your rectangular, cube or cylinder aquarium in liters and US gallons, with substrate displacement.",
   },
 }

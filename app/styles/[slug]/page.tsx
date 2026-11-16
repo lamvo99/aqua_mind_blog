@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const style = STYLES.find((s) => s.slug === slug)
   if (!style) return { title: "Not found" }
   return {
-    title: `${style.name} Aquascaping Style Guide — AquaMind`,
+    title: `${style.name} Aquascaping Style Guide`,
     description: style.summary,
     alternates: { canonical: `https://www.aquamind.life/styles/${slug}` },
   }

@@ -4,11 +4,11 @@ import InspirationGrid from "@/app/components/database/InspirationGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Aquascape Inspiration — AquaMind",
+  title: "Aquascape Inspiration",
   description: "Aquascape ideas and gallery: nature aquariums, iwagumi, dutch and jungle styles with tank details.",
   alternates: { canonical: "https://www.aquamind.life/inspiration" },
   openGraph: {
-    title: "Aquascape Inspiration — AquaMind",
+    title: "Aquascape Inspiration",
     description: "Aquascape ideas and gallery: nature aquariums, iwagumi, dutch and jungle styles with tank details.",
     type: "website",
     locale: "en_US",

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "verify:seo": "node scripts/verify-rendered-seo.cjs"
   },
   "dependencies": {
     "@sanity/client": "^7.22.1",

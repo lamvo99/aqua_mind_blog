@@ -26,13 +26,14 @@ export async function getAllPosts() {
 
 export async function getPostBySlug(slug: string) {
   return await client.fetch(`
-    *[_type == "post" && slug.current == $slug][0] {
+    *[_type == "post" && slug.current == $slug && defined(publishedAt)][0] {
       _id,
       title,
       slug,
       excerpt,
       publishedAt,
       updatedAt,
+      seo,
       mainImage,
       body,
       author->{

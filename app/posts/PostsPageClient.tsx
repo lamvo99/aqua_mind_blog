@@ -8,8 +8,9 @@ import { Search, SlidersHorizontal, X } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import { CATEGORY_GROUPS, groupForCategory, postMatchesGroup, postMatchesCategory } from "@/lib/categories"
 import { readScrollMark, writeScrollMark, setManualScrollRestoration } from "@/lib/scrollRestoration"
+import { POSTS_PER_PAGE } from "@/lib/pagination"
 
-const PER_PAGE = 9
+const PER_PAGE = POSTS_PER_PAGE
 
 function reducedMotion() {
   return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches

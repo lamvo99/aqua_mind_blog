@@ -4,18 +4,18 @@ import AquariumPlanner from "@/app/components/tools/AquariumPlanner"
 import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
-  title: "Aquarium Calculator — All-in-One Tank Planner — AquaMind",
+  title: "Aquarium Calculator — All-in-One Tank Planner",
   description: "Calculate your aquarium in one screen: tank volume from dimensions, substrate liters and bags, stocking capacity, water changes, CO₂, lighting and filter flow.",
   alternates: { canonical: "https://www.aquamind.life/tools/aquarium-calculator" },
   openGraph: {
-    title: "Aquarium Calculator — All-in-One Tank Planner — AquaMind",
+    title: "Aquarium Calculator — All-in-One Tank Planner",
     description: "Calculate your aquarium in one screen: tank volume from dimensions, substrate liters and bags, stocking capacity, water changes, CO₂, lighting and filter flow.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aquarium Calculator — All-in-One Tank Planner — AquaMind",
+    title: "Aquarium Calculator — All-in-One Tank Planner",
     description: "Calculate your aquarium in one screen: tank volume from dimensions, substrate liters and bags, stocking capacity, water changes, CO₂, lighting and filter flow.",
   },
 }

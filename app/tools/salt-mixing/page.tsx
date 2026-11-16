@@ -4,18 +4,18 @@ import SaltMixingCalculator from "@/app/components/tools/SaltMixingCalculator"
 import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
-  title: "Salt Mixing Calculator — AquaMind",
+  title: "Salt Mixing Calculator",
   description: "Estimate how much marine salt mix (grams or kg) you need for your reef or saltwater aquarium water changes.",
   alternates: { canonical: "https://www.aquamind.life/tools/salt-mixing" },
   openGraph: {
-    title: "Salt Mixing Calculator — AquaMind",
+    title: "Salt Mixing Calculator",
     description: "Estimate how much marine salt mix (grams or kg) you need for your reef or saltwater aquarium water changes.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Salt Mixing Calculator — AquaMind",
+    title: "Salt Mixing Calculator",
     description: "Estimate how much marine salt mix (grams or kg) you need for your reef or saltwater aquarium water changes.",
   },
 }

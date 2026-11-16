@@ -38,7 +38,7 @@ export async function generateMetadata({
   const category = categories.find((c: any) => c.slug.current === slug)
   if (!category) return { title: strings.post.notFound }
   const [posts] = await Promise.all([getPostsByCategory(slug)])
-  const title = `${category.title} — AquaMind`
+  const title = `${category.title}`
   return {
     title,
     description: category.description || `All articles in ${category.title} on AquaMind.`,

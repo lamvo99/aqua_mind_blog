@@ -8,12 +8,12 @@ import { ArrowRight, Compass } from "lucide-react"
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: "Knowledge Hubs — AquaMind",
+  title: "Knowledge Hubs",
   description:
     "Article-led hubs for water parameters, planted tanks, aquarium problems and equipment, connected to the AquaMind database and tools.",
   alternates: { canonical: "https://www.aquamind.life/hubs" },
   openGraph: {
-    title: "Knowledge Hubs — AquaMind",
+    title: "Knowledge Hubs",
     description:
       "Article-led hubs for water parameters, planted tanks, aquarium problems and equipment, connected to the AquaMind database and tools.",
     type: "website",

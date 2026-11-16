@@ -8,18 +8,18 @@ import type { ProblemForDiagnosis } from "@/lib/diagnosis"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
-  title: "Aquarium Problem Diagnostic — AquaMind",
+  title: "Aquarium Problem Diagnostic",
   description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
   alternates: { canonical: "https://www.aquamind.life/tools/diagnostic" },
   openGraph: {
-    title: "Aquarium Problem Diagnostic — AquaMind",
+    title: "Aquarium Problem Diagnostic",
     description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aquarium Problem Diagnostic — AquaMind",
+    title: "Aquarium Problem Diagnostic",
     description: "Describe what you see in your tank and get ranked likely causes instantly — from algae outbreaks to sick fish.",
   },
 }

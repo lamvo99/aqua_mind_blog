@@ -5,11 +5,11 @@ import { client } from "@/lib/sanity"
 import { GraduationCap, ArrowRight, Compass } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Learning Paths — AquaMind",
+  title: "Learning Paths",
   description: "Structured step-by-step learning paths for freshwater, planted and marine aquariums — from the nitrogen cycle to a thriving reef.",
   alternates: { canonical: "https://www.aquamind.life/learn" },
   openGraph: {
-    title: "Learning Paths — AquaMind",
+    title: "Learning Paths",
     description: "Structured step-by-step learning paths for freshwater, planted and marine aquariums — from the nitrogen cycle to a thriving reef.",
     type: "website",
     locale: "en_US",

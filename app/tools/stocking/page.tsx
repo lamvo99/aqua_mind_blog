@@ -4,18 +4,18 @@ import StockingCalculator from "@/app/components/tools/StockingCalculator"
 import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
-  title: "Fish Stocking Calculator — AquaMind",
+  title: "Fish Stocking Calculator",
   description: "Estimate how many fish your aquarium can hold using the classic inches-per-gallon rule and check your current stocking level.",
   alternates: { canonical: "https://www.aquamind.life/tools/stocking" },
   openGraph: {
-    title: "Fish Stocking Calculator — AquaMind",
+    title: "Fish Stocking Calculator",
     description: "Estimate how many fish your aquarium can hold using the classic inches-per-gallon rule and check your current stocking level.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fish Stocking Calculator — AquaMind",
+    title: "Fish Stocking Calculator",
     description: "Estimate how many fish your aquarium can hold using the classic inches-per-gallon rule and check your current stocking level.",
   },
 }

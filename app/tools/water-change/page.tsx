@@ -4,18 +4,18 @@ import WaterChangeCalculator from "@/app/components/tools/WaterChangeCalculator"
 import { TOOL_LEARN_LINKS } from "@/lib/related"
 
 export const metadata: Metadata = {
-  title: "Water Change Calculator — AquaMind",
+  title: "Water Change Calculator",
   description: "Plan aquarium water changes: calculate the volume to replace and estimate the impact on water parameters like nitrate.",
   alternates: { canonical: "https://www.aquamind.life/tools/water-change" },
   openGraph: {
-    title: "Water Change Calculator — AquaMind",
+    title: "Water Change Calculator",
     description: "Plan aquarium water changes: calculate the volume to replace and estimate the impact on water parameters like nitrate.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Water Change Calculator — AquaMind",
+    title: "Water Change Calculator",
     description: "Plan aquarium water changes: calculate the volume to replace and estimate the impact on water parameters like nitrate.",
   },
 }

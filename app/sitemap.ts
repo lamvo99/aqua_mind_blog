@@ -2,6 +2,7 @@ import { MetadataRoute } from "next"
 import { client } from "@/lib/sanity"
 import { STYLE_SLUGS } from "@/lib/styles"
 import { HUB_SLUGS } from "@/lib/hubs"
+import { isValidSlugValue } from "@/lib/slug"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
@@ -69,13 +70,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [
     {
       url: siteUrl,
-      lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     ...LIST_PATHS.map((p) => ({
       url: `${siteUrl}${p.path}`,
-      lastModified: new Date(),
       changeFrequency: p.frequency,
       priority: p.priority,
     })),
@@ -83,7 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const docs: any[] = await client.fetch(
     `*[_type in $types && defined(slug)] {
-      _type, "slug": slug.current, publishedAt, updatedAt
+      _type, "slug": slug.current, publishedAt, _updatedAt
     }`,
     { types: Object.keys(TYPE_SEGMENTS) }
   )
@@ -91,9 +90,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const doc of docs) {
     const segment = TYPE_SEGMENTS[doc._type]
     if (!segment || !doc.slug) continue
+    // Skip slugs that cannot form a valid URL (e.g. the known legacy
+    // "Slug neocaridina-…" record). Sanity data is not modified.
+    if (doc._type === "post" && !isValidSlugValue(doc.slug)) continue
+    const lastModified = doc._updatedAt || doc.publishedAt
     entries.push({
       url: `${siteUrl}/${segment}/${doc.slug}`,
-      lastModified: doc.updatedAt || doc.publishedAt || new Date(),
+      ...(lastModified ? { lastModified } : {}),
       changeFrequency: doc._type === "post" ? ("weekly" as const) : ("monthly" as const),
       priority: TYPE_PRIORITY[doc._type],
     })
@@ -102,7 +105,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const hubSlug of HUB_SLUGS) {
     entries.push({
       url: `${siteUrl}/hubs/${hubSlug}`,
-      lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })
@@ -115,14 +117,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         "count": count(*[_type == "post" && defined(publishedAt) && ^.slug.current in categories[]->slug.current])
       }`
     ),
-    client.fetch(`*[_type == "learn" && defined(slug)] { "slug": slug.current }`),
+    client.fetch(`*[_type == "collection" && defined(slug)] { "slug": slug.current, _updatedAt }`),
   ])
 
   for (const cat of categories) {
     if (!cat.count || cat.count <= 0) continue
     entries.push({
       url: `${siteUrl}/category/${cat.slug}`,
-      lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })
@@ -131,7 +132,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const learn of learnPaths) {
     entries.push({
       url: `${siteUrl}/learn/${learn.slug}`,
-      lastModified: new Date(),
+      ...(learn._updatedAt ? { lastModified: learn._updatedAt } : {}),
       changeFrequency: "monthly" as const,
       priority: 0.5,
     })
@@ -140,7 +141,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const slug of STYLE_SLUGS) {
     entries.push({
       url: `${siteUrl}/styles/${slug}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })

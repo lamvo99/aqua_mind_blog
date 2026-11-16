@@ -25,18 +25,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!hub) return { title: "Not found" }
   const canonical = `https://www.aquamind.life/hubs/${hub.slug}`
   return {
-    title: `${hub.title} — AquaMind`,
+    title: `${hub.title}`,
     description: hub.description,
     alternates: { canonical },
     openGraph: {
-      title: `${hub.title} — AquaMind`,
+      title: `${hub.title}`,
       description: hub.description,
       type: "website",
       url: canonical,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${hub.title} — AquaMind`,
+      title: `${hub.title}`,
       description: hub.description,
     },
   }

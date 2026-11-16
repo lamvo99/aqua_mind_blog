@@ -5,11 +5,11 @@ import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 
 export const metadata: Metadata = {
-  title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment — AquaMind",
+  title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment",
   description: "Search the AquaMind wiki across fish species, aquatic invertebrates, plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
   alternates: { canonical: "https://www.aquamind.life/wiki" },
   openGraph: {
-    title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment — AquaMind",
+    title: "Aquarium Wiki — Fish, Invertebrates, Plants, Corals & Equipment",
     description: "Search the AquaMind wiki across fish species, aquatic invertebrates, plants, corals and equipment with care parameters: temperature, pH, tank size, difficulty and more.",
     type: "website",
     locale: "en_US",
