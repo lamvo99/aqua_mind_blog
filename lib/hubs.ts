@@ -124,7 +124,6 @@ const HUB_DEFINITIONS: HubDefinition[] = [
     match: (post) => hasAnyTag(post, PLANTED_TAGS) || categorySet(post).has('aquatic-plants'),
     databaseLinks: [
       { href: '/plants', label: 'Plant database', description: 'Browse plants by light, CO₂ and growth form.' },
-      { href: '/collections/low-tech-planted', label: 'Low-tech planted collection', description: 'Plants whose stored CO₂ requirement is none.' },
       { href: '/tools/co2', label: 'CO₂ estimator', description: 'Estimate dissolved CO₂ from KH and pH.' },
       { href: '/tools/lighting', label: 'Lighting estimator', description: 'Sanity-check LED light for a planted tank.' },
       { href: '/problems/black-beard-algae', label: 'Black beard algae', description: 'A common planted-tank problem guide.' },

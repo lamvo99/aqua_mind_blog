@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { getInspirationList } from "@/lib/database"
 import InspirationGrid from "@/app/components/database/InspirationGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
@@ -30,6 +31,12 @@ export default async function InspirationPage() {
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed max-w-2xl">
           Real aquascapes with tank details — plants, hardscape and equipment used.
         </p>
+        <Link
+          href="/styles"
+          className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-aqua-700 dark:text-aqua-400 hover:underline"
+        >
+          Browse style guides
+        </Link>
       </div>
 
       {items.length > 0 ? (

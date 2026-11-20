@@ -166,6 +166,27 @@ describe('sitemap', () => {
       expect(entry.url).toMatch(/^https:\/\/www\.aquamind\.life(\/[^\s]*)?$/)
     }
   })
+
+  it('includes the collections index and exactly the eight published setup collections', async () => {
+    const urls = (await sitemap()).map((e) => e.url)
+    const collectionPaths = [
+      '/collections',
+      '/collections/beginner-freshwater',
+      '/collections/nano-aquarium',
+      '/collections/low-tech-planted',
+      '/collections/shrimp-aquarium',
+      '/collections/beginner-reef',
+      '/collections/soft-coral',
+      '/collections/nano-marine',
+      '/collections/beginner-invertebrates',
+    ]
+
+    for (const path of collectionPaths) {
+      expect(urls.filter((url) => url === `https://www.aquamind.life${path}`)).toHaveLength(1)
+    }
+    expect(urls.some((url) => url.includes('/collections/fowlr'))).toBe(false)
+    expect(new Set(urls).size).toBe(urls.length)
+  })
 })
 
 describe('robots', () => {

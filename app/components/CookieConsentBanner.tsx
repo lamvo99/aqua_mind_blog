@@ -69,7 +69,7 @@ export default function CookieConsentBanner() {
                 <h3 id="cookie-consent-title" className="font-bold text-gray-900 dark:text-slate-100 mb-1">{strings.cookie.title}</h3>
                 <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
                   {strings.cookie.desc}{' '}
-                  <a href="/cookie-policy" className="text-aqua-600 dark:text-aqua-400 hover:underline">
+                  <a href="/cookie-policy" className="text-aqua-700 dark:text-aqua-400 underline">
                     {strings.cookie.policy}
                   </a>
                   .
@@ -91,7 +91,7 @@ export default function CookieConsentBanner() {
               </button>
               <button
                 onClick={() => { setPrefs({ necessary: true, analytics: !!consent?.analytics, advertising: !!consent?.advertising }); setShowCustomize(true) }}
-                className="flex-1 sm:flex-none px-5 py-2.5 text-aqua-600 dark:text-aqua-400 text-sm font-medium hover:bg-aqua-50 dark:hover:bg-aqua-950/50 rounded-xl transition-all"
+                className="flex-1 sm:flex-none px-5 py-2.5 text-aqua-700 dark:text-aqua-400 text-sm font-medium hover:bg-aqua-50 dark:hover:bg-aqua-950/50 rounded-xl transition-all"
               >
                 {strings.cookie.customize}
               </button>

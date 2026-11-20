@@ -31,6 +31,7 @@ export default function AquariumVolumePage() {
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/aquarium-volume"]}
+      toolSlug="aquarium-volume"
       howTo={{
         url: "/tools/aquarium-volume",
         steps: [

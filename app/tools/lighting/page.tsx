@@ -31,6 +31,7 @@ export default function LightingPage() {
         { href: "/tools/aquarium-volume", label: "Aquarium Volume Calculator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/lighting"]}
+      toolSlug="lighting"
       howTo={{
         url: "/tools/lighting",
         steps: [

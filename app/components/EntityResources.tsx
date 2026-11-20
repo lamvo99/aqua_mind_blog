@@ -59,7 +59,7 @@ export default function EntityResources({ type }: { type: string }) {
               <Bug className="w-4 h-4 text-amber-600 dark:text-amber-400" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-xs font-medium text-amber-600 dark:text-amber-400 uppercase tracking-wide">
+              <span className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide">
                 Solve
               </span>
               <p className="text-sm font-medium text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors truncate">
@@ -79,7 +79,7 @@ export default function EntityResources({ type }: { type: string }) {
               <Wrench className="w-4 h-4 text-aqua-600 dark:text-aqua-400" />
             </div>
             <div className="min-w-0 flex-1">
-              <span className="text-xs font-medium text-aqua-600 dark:text-aqua-400 uppercase tracking-wide">
+              <span className="text-xs font-medium text-aqua-700 dark:text-aqua-400 uppercase tracking-wide">
                 Tool
               </span>
               <p className="text-sm font-medium text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors truncate">

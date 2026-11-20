@@ -41,7 +41,7 @@ export default function RelatedArticles({
               )}
             </span>
             {article.publishedAt && (
-              <span className="shrink-0 text-xs text-gray-400 dark:text-slate-500">
+              <span className="shrink-0 text-xs text-gray-500 dark:text-slate-400">
                 {formatDateShort(article.publishedAt)}
               </span>
             )}

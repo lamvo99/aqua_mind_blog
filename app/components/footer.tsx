@@ -47,7 +47,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
                 src="/logo-3d.png"
-                alt={strings.site.name}
+                alt=""
                 width={32}
                 height={32}
                 className="w-8 h-8 rounded-lg"
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Learn</h4>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Learn</h3>
             <ul className="space-y-2.5">
               {surfaces.map((link) => (
                 <li key={link.href}>
@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h3>
             <ul className="space-y-2.5">
               {explore.map((link) => (
                 <li key={link.href}>
@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Solve &amp; Tools</h4>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Solve &amp; Tools</h3>
             <ul className="space-y-2.5">
               {solveAndTools.map((link) => (
                 <li key={link.href}>
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.follow}</h4>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{strings.footer.follow}</h3>
             <p className="text-sm text-slate-400 mb-4">
               {strings.footer.getLatest}
             </p>
@@ -141,6 +141,7 @@ export default function Footer() {
                   <button
                     type="submit"
                     disabled={loading}
+                    aria-label={strings.newsletter.submit}
                     className="px-3 py-2.5 gradient-bg hover:opacity-90 text-white rounded-r-lg transition-all disabled:opacity-50"
                   >
                     {loading ? (
@@ -155,7 +156,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-10 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>&copy; {new Date().getFullYear()} {strings.site.name}. {strings.footer.copyright}</p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="hover:text-aqua-400 transition-colors">{strings.footer.privacy}</Link>

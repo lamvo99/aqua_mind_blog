@@ -31,6 +31,7 @@ export default function PumpFlowPage() {
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/pump-flow"]}
+      toolSlug="pump-flow"
       howTo={{
         url: "/tools/pump-flow",
         steps: [

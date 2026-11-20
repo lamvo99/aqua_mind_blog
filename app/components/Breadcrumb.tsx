@@ -9,7 +9,7 @@ interface Crumb {
 export default function Breadcrumb({ items }: { items: Crumb[] }) {
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-slate-400">
-      <Link href="/" className="hover:text-aqua-600 dark:hover:text-aqua-400 transition-colors">
+      <Link href="/" aria-label="Home" className="hover:text-aqua-600 dark:hover:text-aqua-400 transition-colors">
         <Home className="w-4 h-4" />
       </Link>
       {items.map((item, i) => (

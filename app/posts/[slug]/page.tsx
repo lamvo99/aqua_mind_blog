@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { getPostBySlug, getAllPosts } from "@/lib/posts"
+import { getPostBySlug, getAllPosts, getRelatedPosts } from "@/lib/posts"
 import { urlFor } from "@/lib/sanity"
 import { notFound } from "next/navigation"
 import { formatDate, estimateReadingTime } from "@/lib/utils"
@@ -8,8 +8,10 @@ import PortableText from "@/app/components/PortableText"
 import Comments from "@/app/components/Comments"
 import NewsletterSection from "@/app/components/NewsletterSection"
 import ReadingProgress from "@/app/components/ReadingProgress"
-import RelatedPosts from "@/app/components/RelatedPosts"
-import RelatedResources from "@/app/components/RelatedResources"
+import RelatedReading from "@/app/components/article/RelatedReading"
+import RelatedDatabaseGroups from "@/app/components/article/RelatedDatabaseGroups"
+import ArticleNextSteps from "@/app/components/article/ArticleNextSteps"
+import CategoryChips from "@/app/components/category/CategoryChips"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import LikeBookmark from "@/app/components/LikeBookmark"
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -17,9 +19,11 @@ import { resolvePostSeo } from "@/lib/seo/post-metadata"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
 import SocialShare from "@/app/components/SocialShare"
 import TableOfContents from "@/app/components/TableOfContents"
-import RelatedDatabase from "@/app/components/RelatedDatabase"
-import KnowledgeHubLinks from "@/app/components/KnowledgeHubLinks"
 import { getHubLinksForPost } from "@/lib/hubs"
+import { getDatabaseItemsReferencingPost } from "@/lib/database"
+import { getLearningPathsForPost, getToolsReferencingPost } from "@/lib/relationship-data"
+import { buildArticleRelationships } from "@/lib/article-relationships"
+import { resourcesForCategory } from "@/lib/related"
 import strings from "@/lib/i18n/strings"
 
 export const revalidate = 3600
@@ -69,7 +73,30 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
   if (!post) notFound()
 
   const readingTime = estimateReadingTime(post.body)
-  const hubLinks = await getHubLinksForPost(post)
+  const categorySlugs: string[] = (post.categories || [])
+    .map((category: any) => category?.slug?.current)
+    .filter((value: unknown): value is string => typeof value === "string" && value.length > 0)
+
+  const [hubLinks, fallbackPosts, databaseItems, reverseTools, learningPaths] = await Promise.all([
+    getHubLinksForPost(post),
+    getRelatedPosts(slug, categorySlugs),
+    getDatabaseItemsReferencingPost(post._id, 16),
+    getToolsReferencingPost(post._id, 6),
+    getLearningPathsForPost(post._id),
+  ])
+
+  const relationships = buildArticleRelationships({
+    postSlug: slug,
+    explicitPosts: post.relatedPosts,
+    fallbackPosts,
+    databaseItems,
+    reverseTools,
+    fallbackToolLinks: resourcesForCategory(slug, post.title)
+      .filter((resource) => resource.section === "tool")
+      .map((resource) => ({ href: resource.href, label: resource.label })),
+    learningPaths,
+    hubLinks,
+  })
   const imageUrl = post.mainImage ? urlFor(post.mainImage).width(1200).height(600).url() : null
   const pinterestImage = post.mainImage ? urlFor(post.mainImage).width(600).height(900).url() : null
   const breadcrumbItems = [
@@ -141,17 +168,9 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
 
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-gray-200 dark:border-slate-700">
             <div className="flex flex-wrap items-center gap-2">
-              {post.categories?.map((cat: any) => (
-                <Link
-                  key={cat.slug.current}
-                  href={`/posts?category=${cat.slug.current}`}
-                  className="px-3 py-1 bg-aqua-50 dark:bg-aqua-950/50 text-aqua-700 dark:text-aqua-300 text-xs font-medium rounded-full hover:bg-aqua-100 dark:hover:bg-aqua-950 transition-colors"
-                >
-                  {cat.title}
-                </Link>
-              ))}
+              <CategoryChips categories={post.categories || []} />
               {post.tags?.map((tag: string) => (
-                <span key={tag} className="px-3 py-1 bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-slate-400 text-xs rounded-full">
+                <span key={tag} className="px-3 py-1 bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-slate-400 text-xs rounded-full">
                   #{tag}
                 </span>
               ))}
@@ -200,7 +219,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
                   </div>
                 )}
                 <div>
-                  <h4 className="font-bold text-gray-900 dark:text-slate-100">{post.author.name}</h4>
+                  <h3 className="font-bold text-gray-900 dark:text-slate-100">{post.author.name}</h3>
                   {post.author.bio && (
                     <p className="text-sm text-gray-500 dark:text-slate-400 mt-1 leading-relaxed">
                       {post.author.bio.map((b: any) => b.children?.map((c: any) => c.text).join(" ")).join(" ")}
@@ -217,14 +236,21 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
           <NewsletterSection />
         </div>
 
-        <RelatedDatabase postId={post._id} />
+        <RelatedReading
+          articles={relationships.reading.articles}
+          paths={relationships.reading.paths}
+        />
 
-        <KnowledgeHubLinks links={hubLinks} />
+        <RelatedDatabaseGroups
+          entities={relationships.database.entities}
+          problems={relationships.database.problems}
+        />
 
-        <RelatedResources slug={slug} title={post.title} />
+        <ArticleNextSteps
+          tools={relationships.nextSteps.tools}
+          hubs={relationships.nextSteps.hubs}
+        />
       </div>
-
-      <RelatedPosts currentSlug={slug} categories={post.categories?.map((c: any) => c.slug.current)} />
     </article>
     </>
   )

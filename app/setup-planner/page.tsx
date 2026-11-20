@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import SetupPlanner from "@/app/components/tools/SetupPlanner"
+import ToolRelationships from "@/app/components/tools/ToolRelationships"
 import { ListChecks } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -40,6 +41,8 @@ export default function SetupPlannerPage() {
         Every plan assumes a fully cycled tank before adding fish. Cycling takes 4–8 weeks — resist the urge to
         speed it up. Test ammonia, nitrite and nitrate weekly with a liquid test kit.
       </div>
+
+      <ToolRelationships toolSlug="setup-planner" />
     </div>
   )
 }

@@ -81,7 +81,7 @@ export default async function KnowledgeHubPage({ params }: Props) {
       </div>
 
       <header className="max-w-3xl mb-10">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Compass className="w-4 h-4" />
           Knowledge hub
         </div>
@@ -103,7 +103,7 @@ export default async function KnowledgeHubPage({ params }: Props) {
                 Published guides selected for this reader intent.
               </p>
             </div>
-            <Link href="/posts" className="shrink-0 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:underline">
+            <Link href="/posts" className="shrink-0 text-sm font-medium text-aqua-700 dark:text-aqua-400 hover:underline">
               All articles
             </Link>
           </div>
@@ -174,7 +174,7 @@ export default async function KnowledgeHubPage({ params }: Props) {
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">{hub.nextStep.description}</p>
         <Link
           href={hub.nextStep.href}
-          className="inline-flex items-center gap-2 rounded-xl bg-aqua-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-aqua-700 transition-colors"
+          className="inline-flex items-center gap-2 rounded-xl bg-aqua-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-aqua-800 transition-colors"
         >
           Continue
           <ArrowRight className="w-4 h-4" />

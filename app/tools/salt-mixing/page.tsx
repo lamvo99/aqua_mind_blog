@@ -31,6 +31,7 @@ export default function SaltMixingPage() {
         { href: "/tools/pump-flow", label: "Pump & Filter Flow Calculator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/salt-mixing"]}
+      toolSlug="salt-mixing"
       howTo={{
         url: "/tools/salt-mixing",
         steps: [

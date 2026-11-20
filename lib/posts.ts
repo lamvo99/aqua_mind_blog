@@ -34,6 +34,13 @@ export async function getPostBySlug(slug: string) {
       publishedAt,
       updatedAt,
       seo,
+      relatedPosts[]->{
+        _id,
+        title,
+        slug,
+        excerpt,
+        publishedAt
+      },
       mainImage,
       body,
       author->{
@@ -133,6 +140,22 @@ export async function getAllCategories() {
       title,
       slug,
       description
+    }
+  `)
+}
+
+/**
+ * Categories with their published-post count (single query, no N+1).
+ * Used by homepage category navigation to omit empty categories.
+ */
+export async function getCategoriesWithCounts() {
+  return await client.fetch(`
+    *[_type == "category"] | order(title asc) {
+      _id,
+      title,
+      slug,
+      description,
+      "count": count(*[_type == "post" && defined(publishedAt) && ^.slug.current in categories[]->slug.current])
     }
   `)
 }

@@ -33,6 +33,7 @@ export default function StockingPage() {
         { href: "/species", label: "Fish Species Database" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/stocking"]}
+      toolSlug="stocking"
       howTo={{
         url: "/tools/stocking",
         steps: [

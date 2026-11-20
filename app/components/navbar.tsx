@@ -82,7 +82,7 @@ export default function Navbar({ databaseCounts }: { databaseCounts?: DatabaseCo
             <Link href="/" className="flex items-center gap-2 group">
               <Image
                 src="/logo-3d.png"
-                alt={strings.site.name}
+                alt=""
                 width={36}
                 height={36}
                 className="w-9 h-9 rounded-xl group-hover:scale-110 transition-transform"

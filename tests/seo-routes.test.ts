@@ -6,6 +6,7 @@ vi.mock("@/lib/posts", () => ({
   getPostBySlug: vi.fn(),
   getAllPosts: vi.fn(),
   getAllCategories: vi.fn(),
+  getRelatedPosts: vi.fn().mockResolvedValue([]),
 }))
 vi.mock("@/lib/hubs", () => ({
   getHubLinksForPost: vi.fn().mockResolvedValue([]),

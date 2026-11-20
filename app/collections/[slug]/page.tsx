@@ -118,9 +118,9 @@ export default async function CollectionPage({ params }: Props) {
           <section key={group.type} className="mb-10">
             <div className="mb-4 flex items-baseline justify-between gap-3">
               <h2 className="text-xl font-bold text-gray-900 dark:text-slate-100">
-                {group.label} <span className="text-sm font-medium text-gray-400 dark:text-slate-500">({group.items.length})</span>
+                {group.label} <span className="text-sm font-medium text-gray-500 dark:text-slate-400">({group.items.length})</span>
               </h2>
-              <Link href={TYPE_PATH[group.type] || "/database"} className="text-sm font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+              <Link href={TYPE_PATH[group.type] || "/database"} className="text-sm font-medium text-aqua-700 hover:underline dark:text-aqua-400">
                 Open {group.label.toLowerCase()} database
               </Link>
             </div>
@@ -150,7 +150,7 @@ export default async function CollectionPage({ params }: Props) {
             {remaining > 0 && (
               <p className="mt-3 text-sm text-gray-500 dark:text-slate-400">
                 Showing {visible.length} of {group.items.length}.{" "}
-                <Link href={TYPE_PATH[group.type] || "/database"} className="font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+                <Link href={TYPE_PATH[group.type] || "/database"} className="font-medium text-aqua-700 hover:underline dark:text-aqua-400">
                   Open the {group.label.toLowerCase()} database for the full list
                 </Link>
               </p>
@@ -178,13 +178,13 @@ export default async function CollectionPage({ params }: Props) {
       )}
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/collections" className="text-sm font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+        <Link href="/collections" className="text-sm font-medium text-aqua-700 hover:underline dark:text-aqua-400">
           All collections
         </Link>
-        <Link href="/database" className="text-sm font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+        <Link href="/database" className="text-sm font-medium text-aqua-700 hover:underline dark:text-aqua-400">
           Database home
         </Link>
-        <Link href="/finder" className="text-sm font-medium text-aqua-600 hover:underline dark:text-aqua-400">
+        <Link href="/finder" className="text-sm font-medium text-aqua-700 hover:underline dark:text-aqua-400">
           Use the Finder
         </Link>
       </div>

@@ -31,6 +31,7 @@ export default function DosingPage() {
         { href: "/tools/water-change", label: "Water Change Calculator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/dosing"]}
+      toolSlug="dosing"
       howTo={{
         url: "/tools/dosing",
         steps: [

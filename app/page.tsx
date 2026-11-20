@@ -1,7 +1,9 @@
 import Link from "next/link"
-import { getAllPosts, getFeaturedPosts, getAllCategories } from "@/lib/posts"
+import { getAllPosts, getFeaturedPosts, getCategoriesWithCounts } from "@/lib/posts"
 import PostCard from "./components/PostCard"
 import NewsletterSection from "./components/NewsletterSection"
+import CategoryGrid from "./components/category/CategoryGrid"
+import { selectCategoryLinks } from "@/lib/category-links"
 import { Droplets, Sparkles, ArrowRight, Database, Wrench, Bug, Palette, GraduationCap, BookOpen, Compass } from "lucide-react"
 import strings from "@/lib/i18n/strings"
 import type { Metadata } from "next"
@@ -20,8 +22,10 @@ export default async function Home() {
   const [featuredPosts, allPosts, categories] = await Promise.all([
     getFeaturedPosts(),
     getAllPosts(),
-    getAllCategories(),
+    getCategoriesWithCounts(),
   ])
+
+  const categoryLinks = selectCategoryLinks(categories, { requirePublishedContent: true })
 
   const latestPosts = allPosts.slice(0, 6)
 
@@ -93,7 +97,7 @@ export default async function Home() {
       )}
 
       {/* Categories */}
-      {categories.length > 0 && (
+      {categoryLinks.length > 0 && (
         <section className="py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
@@ -102,25 +106,7 @@ export default async function Home() {
               </h2>
               <p className="text-gray-500 dark:text-slate-400 mt-1">{strings.posts.desc}</p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {categories.map((cat: any) => (
-                <Link
-                  key={cat._id}
-                  href={`/posts?category=${cat.slug.current}`}
-                  className="group p-6 rounded-2xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 card-hover text-center"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-aqua-50 dark:bg-aqua-950/50 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                    <Droplets className="w-5 h-5 text-aqua-600 dark:text-aqua-400" />
-                  </div>
-                  <h3 className="font-semibold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors">
-                    {cat.title}
-                  </h3>
-                  {cat.description && (
-                    <p className="text-xs text-gray-500 dark:text-slate-500 mt-1 line-clamp-2">{cat.description}</p>
-                  )}
-                </Link>
-              ))}
-            </div>
+            <CategoryGrid links={categoryLinks} />
           </div>
         </section>
       )}

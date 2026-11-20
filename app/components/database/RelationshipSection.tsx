@@ -64,7 +64,7 @@ export default function RelationshipSection({
             {item.mainImage ? (
               <Image
                 src={urlFor(item.mainImage).width(48).height(48).url() || ""}
-                alt={item.name || item.title || ""}
+                alt=""
                 width={48}
                 height={48}
                 loading="lazy"

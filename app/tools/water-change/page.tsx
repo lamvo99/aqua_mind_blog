@@ -31,6 +31,7 @@ export default function WaterChangePage() {
         { href: "/tools/co2", label: "CO₂ Estimator" },
       ]}
       learn={TOOL_LEARN_LINKS["/tools/water-change"]}
+      toolSlug="water-change"
       howTo={{
         url: "/tools/water-change",
         steps: [

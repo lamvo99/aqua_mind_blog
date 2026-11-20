@@ -67,4 +67,10 @@ describe('TOOL_LEARN_LINKS', () => {
       }
     }
   })
+
+  it('does not repeat the diagnostic page intro link in the fallback module', () => {
+    const hrefs = TOOL_LEARN_LINKS['/tools/diagnostic'].map((link) => link.href)
+    expect(hrefs).not.toContain('/problems/diagnose')
+    expect(hrefs).toContain('/problems')
+  })
 })

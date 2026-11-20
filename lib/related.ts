@@ -124,6 +124,5 @@ export const TOOL_LEARN_LINKS: Record<string, { href: string; label: string }[]>
   ],
   "/tools/diagnostic": [
     { href: "/problems", label: "Problem guides" },
-    { href: "/problems/diagnose", label: "Diagnose my problem" },
   ],
 }

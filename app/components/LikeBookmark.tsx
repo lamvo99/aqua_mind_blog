@@ -42,7 +42,7 @@ export default function LikeBookmark({ postSlug }: { postSlug: string }) {
         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
           liked
             ? "bg-coral-50 dark:bg-coral-950/30 text-coral-600 dark:text-coral-400"
-            : "bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700"
+            : "bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700"
         }`}
       >
         <Heart className={`w-3.5 h-3.5 ${liked ? "fill-current" : ""}`} />
@@ -54,7 +54,7 @@ export default function LikeBookmark({ postSlug }: { postSlug: string }) {
         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
           bookmarked
             ? "bg-aqua-50 dark:bg-aqua-950/30 text-aqua-600 dark:text-aqua-400"
-            : "bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700"
+            : "bg-gray-100 dark:bg-slate-800 text-gray-600 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700"
         }`}
       >
         <Bookmark className={`w-3.5 h-3.5 ${bookmarked ? "fill-current" : ""}`} />
