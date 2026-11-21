@@ -4,8 +4,10 @@ import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
+import { parseListingQuery } from "@/lib/listing-filters"
+import { withListingSeo } from "@/lib/listing-seo"
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Coral Database",
   description: "Browse reef corals with care parameters: light, flow, difficulty, placement and aggression.",
   alternates: { canonical: "https://www.aquamind.life/corals" },
@@ -17,9 +19,22 @@ export const metadata: Metadata = {
   },
 }
 
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}): Promise<Metadata> {
+  return withListingSeo(baseMetadata, "/corals", searchParams ? await searchParams : {})
+}
+
 export const revalidate = 300
 
-export default async function CoralsPage() {
+export default async function CoralsPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}) {
+  const initialQuery = parseListingQuery(searchParams ? await searchParams : {})
   const [items, compareItems] = await Promise.all([getDatabaseList("coral"), getDatabaseCompareItems("coral")])
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -38,7 +53,7 @@ export default async function CoralsPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Corals" }]} />
       </div>
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Database className="w-4 h-4" />
           Database
         </div>
@@ -59,6 +74,7 @@ export default async function CoralsPage() {
           { key: "placement", label: "Placement" },
           { key: "aquariumStyle", label: "Aquarium Style" },
         ]}
+        initialQuery={initialQuery}
         compareItems={compareItems}
         compareType="coral"
       />

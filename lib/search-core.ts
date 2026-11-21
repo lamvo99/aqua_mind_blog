@@ -6,6 +6,9 @@ export type SearchType =
   | 'plant'
   | 'coral'
   | 'equipment'
+  | 'problem'
+  | 'inspiration'
+  | 'collection'
   | 'tool'
 
 export const SEARCH_TYPES: { value: SearchType; label: string }[] = [
@@ -16,6 +19,9 @@ export const SEARCH_TYPES: { value: SearchType; label: string }[] = [
   { value: 'plant', label: 'Plants' },
   { value: 'coral', label: 'Corals' },
   { value: 'equipment', label: 'Equipment' },
+  { value: 'problem', label: 'Problems' },
+  { value: 'inspiration', label: 'Inspiration' },
+  { value: 'collection', label: 'Collections' },
   { value: 'tool', label: 'Tools' },
 ]
 
@@ -26,6 +32,9 @@ export const SEARCH_TYPE_LABEL: Record<string, string> = {
   plant: 'Plant',
   coral: 'Coral',
   equipment: 'Equipment',
+  problem: 'Problem',
+  inspiration: 'Inspiration',
+  collection: 'Collection',
   tool: 'Tool',
 }
 
@@ -35,6 +44,9 @@ export const SEARCH_TYPE_ORDER: string[] = [
   'plant',
   'coral',
   'equipment',
+  'problem',
+  'inspiration',
+  'collection',
   'tool',
   'post',
 ]
@@ -46,8 +58,11 @@ export interface SearchDoc {
   scientificName?: string | null
   aliases?: string[] | null
   localNames?: string[] | null
+  origin?: string | null
+  region?: string | null
   excerpt?: string | null
   slug?: string | null
+  href?: string | null
 }
 
 export interface SearchHit {
@@ -57,8 +72,9 @@ export interface SearchHit {
   scientificName?: string | null
   excerpt?: string | null
   slug?: string | null
+  href?: string | null
   score: number
-  matchedField: 'name' | 'scientific' | 'alias' | 'local' | 'excerpt'
+  matchedField: 'name' | 'scientific' | 'alias' | 'local' | 'origin' | 'region' | 'excerpt'
 }
 
 export interface SearchResponse {
@@ -166,6 +182,8 @@ export function scoreDocument(doc: SearchDoc, rawQuery: string): { score: number
   const scientific = normalizeSearchText(doc.scientificName)
   const aliases = (doc.aliases || []).map((value) => normalizeSearchText(value)).filter(Boolean)
   const localNames = (doc.localNames || []).map((value) => normalizeSearchText(value)).filter(Boolean)
+  const origin = normalizeSearchText(doc.origin)
+  const region = normalizeSearchText(doc.region)
   const excerpt = normalizeSearchText(doc.excerpt)
   const nameTokens = name ? name.split(' ') : []
 
@@ -181,6 +199,8 @@ export function scoreDocument(doc: SearchDoc, rawQuery: string): { score: number
   if (fuzzyFrom([name, scientific, ...aliases, ...localNames], query, queryTokens)) {
     return { score: 6, matchedField: 'name' }
   }
+  if (origin.includes(query)) return { score: 6, matchedField: 'origin' }
+  if (region.includes(query)) return { score: 6, matchedField: 'region' }
   if (excerpt.includes(query)) return { score: 7, matchedField: 'excerpt' }
   return null
 }
@@ -212,6 +232,7 @@ export function searchCorpus(
       scientificName: doc.scientificName ?? null,
       excerpt: doc.excerpt ?? null,
       slug: doc.slug ?? null,
+      href: doc.href ?? null,
       score: scored.score,
       matchedField: scored.matchedField,
     })
@@ -234,7 +255,7 @@ export function searchCorpus(
   }
 }
 
-export function searchHref(hit: Pick<SearchHit, 'type' | 'slug'>): string {
+export function searchHref(hit: Pick<SearchHit, 'type' | 'slug' | 'href'>): string {
   const segment: Record<string, string> = {
     post: 'posts',
     species: 'species',
@@ -242,8 +263,11 @@ export function searchHref(hit: Pick<SearchHit, 'type' | 'slug'>): string {
     plant: 'plants',
     coral: 'corals',
     equipment: 'equipment',
+    problem: 'problems',
+    inspiration: 'inspiration',
     tool: 'tools',
   }
+  if (hit.href) return hit.href
   const base = segment[hit.type]
   if (!base || !hit.slug) return '/search'
   return `/${base}/${hit.slug}`

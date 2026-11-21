@@ -5,8 +5,10 @@ import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
+import { parseListingQuery } from "@/lib/listing-filters"
+import { withListingSeo } from "@/lib/listing-seo"
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Aquatic Plant Database",
   description: "Browse aquatic plants with care parameters: light, CO₂, growth rate, difficulty and placement.",
   alternates: { canonical: "https://www.aquamind.life/plants" },
@@ -18,9 +20,22 @@ export const metadata: Metadata = {
   },
 }
 
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}): Promise<Metadata> {
+  return withListingSeo(baseMetadata, "/plants", searchParams ? await searchParams : {})
+}
+
 export const revalidate = 300
 
-export default async function PlantsPage() {
+export default async function PlantsPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}) {
+  const initialQuery = parseListingQuery(searchParams ? await searchParams : {})
   const [items, compareItems] = await Promise.all([getDatabaseList("plant"), getDatabaseCompareItems("plant")])
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -39,7 +54,7 @@ export default async function PlantsPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Plants" }]} />
       </div>
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Database className="w-4 h-4" />
           Database
         </div>
@@ -70,6 +85,7 @@ export default async function PlantsPage() {
           { key: "region", label: "Region" },
           { key: "growthForm", label: "Growth Form" },
         ]}
+        initialQuery={initialQuery}
         compareItems={compareItems}
         compareType="plant"
       />

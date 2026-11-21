@@ -79,9 +79,9 @@ export default function DatabaseCard({ item, href, comparing = false, compareDis
               <span className="text-xs text-gray-500 dark:text-slate-500">{(item as any).brand}</span>
             )}
           </div>
-          <h3 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors leading-snug">
+          <h2 className="font-bold text-gray-900 dark:text-slate-100 group-hover:text-aqua-600 dark:group-hover:text-aqua-400 transition-colors leading-snug">
             {item.name}
-          </h3>
+          </h2>
           {scientificName && (
             <p className="text-xs italic text-gray-500 dark:text-slate-400 mt-0.5">{scientificName}</p>
           )}

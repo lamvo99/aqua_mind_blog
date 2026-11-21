@@ -9,6 +9,7 @@ import { urlFor } from "@/lib/sanity"
 import { COMPARE_FIELDS, MAX_COMPARE } from "@/lib/compare"
 import DatabaseCard from "./DatabaseCard"
 import { trackDatabaseEvent } from "@/lib/analytics"
+import { parseListingQuery, type ListingQueryState } from "@/lib/listing-filters"
 
 const ENTITY_TYPE: Record<string, string> = {
   "/species": "species",
@@ -41,39 +42,15 @@ interface DatabaseGridProps {
   compareItems?: DatabaseItem[]
   compareType?: "species" | "invertebrate" | "plant" | "coral" | "equipment"
   finderHref?: string
+  initialQuery?: ListingQueryState
 }
 
-function readFilters(): Record<string, string> {
-  if (typeof window === "undefined") return {}
-  const params = new URLSearchParams(window.location.search)
-  const filters: Record<string, string> = {}
-  for (const [key, value] of params.entries()) {
-    if (key !== "q" && !key.endsWith("_min") && !key.endsWith("_max")) filters[key] = value
-  }
-  return filters
-}
-
-function readRangeFilters(): Record<string, { min: string; max: string }> {
-  if (typeof window === "undefined") return {}
-  const params = new URLSearchParams(window.location.search)
-  const ranges: Record<string, { min: string; max: string }> = {}
-  for (const [key, value] of params.entries()) {
-    if (key.endsWith("_min") || key.endsWith("_max")) {
-      const base = key.replace(/_min$|_max$/, "")
-      if (!ranges[base]) ranges[base] = { min: "", max: "" }
-      if (key.endsWith("_min")) ranges[base].min = value
-      else ranges[base].max = value
-    }
-  }
-  return ranges
-}
-
-function readSearch(): string {
-  if (typeof window === "undefined") return ""
-  return new URLSearchParams(window.location.search).get("q") || ""
-}
-
-function writeFilters(filters: Record<string, string>, search: string, rangeFilters: Record<string, { min: string; max: string }>) {
+function writeFilters(
+  filters: Record<string, string>,
+  search: string,
+  rangeFilters: Record<string, { min: string; max: string }>,
+  mode: "push" | "replace" = "replace"
+) {
   const params = new URLSearchParams()
   for (const [key, value] of Object.entries(filters)) {
     if (value && value !== "all") params.set(key, value)
@@ -85,21 +62,41 @@ function writeFilters(filters: Record<string, string>, search: string, rangeFilt
   if (search) params.set("q", search)
   const qs = params.toString()
   const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname
-  window.history.replaceState(null, "", url)
+  if (url === `${window.location.pathname}${window.location.search}`) return
+  if (mode === "push") window.history.pushState(null, "", url)
+  else window.history.replaceState(null, "", url)
 }
 
-export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], rangeFilters = [], compareItems = [], compareType, finderHref }: DatabaseGridProps) {
-  const [search, setSearch] = useState(readSearch)
-  const [activeFilters, setActiveFilters] = useState<Record<string, string>>(readFilters)
-  const [activeRanges, setActiveRanges] = useState<Record<string, { min: string; max: string }>>(readRangeFilters)
+export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], rangeFilters = [], compareItems = [], compareType, finderHref, initialQuery }: DatabaseGridProps) {
+  const [search, setSearch] = useState(initialQuery?.search || "")
+  const [activeFilters, setActiveFilters] = useState<Record<string, string>>(initialQuery?.filters || {})
+  const [activeRanges, setActiveRanges] = useState<Record<string, { min: string; max: string }>>(initialQuery?.ranges || {})
   const [selected, setSelected] = useState<string[]>([])
   const [showModal, setShowModal] = useState(false)
   const [filtersOpen, setFiltersOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
+  const previousFilterSignature = useRef<string | null>(null)
 
   useEffect(() => {
-    writeFilters(activeFilters, search, activeRanges)
+    const signature = JSON.stringify({ filters: activeFilters, ranges: activeRanges })
+    const firstRun = previousFilterSignature.current === null
+    const filtersChanged = previousFilterSignature.current !== null && previousFilterSignature.current !== signature
+    previousFilterSignature.current = signature
+    // Text search updates replace the entry so typing does not flood history;
+    // filter and range changes push an entry so Back/Forward restore them.
+    writeFilters(activeFilters, search, activeRanges, !firstRun && filtersChanged ? "push" : "replace")
   }, [activeFilters, search, activeRanges])
+
+  useEffect(() => {
+    const applyUrlState = () => {
+      const state = parseListingQuery(new URLSearchParams(window.location.search))
+      setSearch(state.search)
+      setActiveFilters(state.filters)
+      setActiveRanges(state.ranges)
+    }
+    window.addEventListener("popstate", applyUrlState)
+    return () => window.removeEventListener("popstate", applyUrlState)
+  }, [])
 
   const comparePool = compareItems.length > 0 ? compareItems : items
   const byId = useMemo(() => Object.fromEntries(comparePool.map((i) => [i._id, i])), [comparePool])
@@ -345,7 +342,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
                         aria-label={`${rf.label} maximum`}
                         className="w-20 px-2 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-slate-100 text-xs placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-aqua-500/50"
                       />
-                      {rf.unit && <span className="text-[10px] text-gray-400 dark:text-slate-500">{rf.unit}</span>}
+                      {rf.unit && <span className="text-[10px] text-gray-600 dark:text-slate-400">{rf.unit}</span>}
                     </div>
                   </div>
                 )
@@ -367,7 +364,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
               <button
                 type="button"
                 onClick={resetAll}
-                className="flex items-center gap-1.5 text-xs font-medium text-aqua-600 dark:text-aqua-400 hover:underline"
+                className="flex items-center gap-1.5 text-xs font-medium text-aqua-700 dark:text-aqua-400 hover:underline"
               >
                 <RotateCcw className="w-3 h-3" />
                 Reset all
@@ -504,7 +501,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
             <table className="w-full text-sm">
               <thead>
                 <tr>
-                  <th className="text-left align-bottom pb-3 pr-4 w-36 text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-slate-500">
+                  <th className="text-left align-bottom pb-3 pr-4 w-36 text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-slate-400">
                     {compareSel.length} selected
                   </th>
                   {compareSel.map((item) => (
@@ -522,7 +519,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
                         )}
                         <Link
                           href={`${hrefPrefix}/${item.slug?.current}`}
-                          className="text-xs font-medium text-aqua-600 dark:text-aqua-400 hover:underline"
+                          className="text-xs font-medium text-aqua-700 dark:text-aqua-400 hover:underline"
                         >
                           View profile →
                         </Link>

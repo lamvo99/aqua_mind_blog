@@ -126,7 +126,7 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
             <button
               type="button"
               onClick={resetAll}
-              className="flex items-center gap-1.5 text-xs font-medium text-aqua-600 dark:text-aqua-400 hover:underline"
+              className="flex items-center gap-1.5 text-xs font-medium text-aqua-700 dark:text-aqua-400 hover:underline"
             >
               <RotateCcw className="w-3 h-3" />
               Reset all
@@ -167,7 +167,7 @@ export default function ProblemsGrid({ problems }: ProblemsGridProps) {
             <button
               type="button"
               onClick={resetAll}
-              className="mt-3 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:underline"
+              className="mt-3 text-sm font-medium text-aqua-700 dark:text-aqua-400 hover:underline"
             >
               Clear all filters
             </button>

@@ -5,8 +5,10 @@ import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
+import { parseListingQuery } from "@/lib/listing-filters"
+import { withListingSeo } from "@/lib/listing-seo"
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Aquarium Equipment Database",
   description: "Browse aquarium equipment: filters, lights, pumps, heaters and CO₂ systems with specs and suitability.",
   alternates: { canonical: "https://www.aquamind.life/equipment" },
@@ -18,9 +20,22 @@ export const metadata: Metadata = {
   },
 }
 
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}): Promise<Metadata> {
+  return withListingSeo(baseMetadata, "/equipment", searchParams ? await searchParams : {})
+}
+
 export const revalidate = 300
 
-export default async function EquipmentPage() {
+export default async function EquipmentPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}) {
+  const initialQuery = parseListingQuery(searchParams ? await searchParams : {})
   const [items, compareItems] = await Promise.all([getDatabaseList("equipment"), getDatabaseCompareItems("equipment")])
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -39,7 +54,7 @@ export default async function EquipmentPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Equipment" }]} />
       </div>
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Database className="w-4 h-4" />
           Database
         </div>
@@ -68,6 +83,7 @@ export default async function EquipmentPage() {
           { key: "tankSizeMaxL", label: "Tank Size", min: 10, max: 2000, unit: "L" },
           { key: "powerW", label: "Power", min: 1, max: 200, unit: "W" },
         ]}
+        initialQuery={initialQuery}
         compareItems={compareItems}
         compareType="equipment"
       />

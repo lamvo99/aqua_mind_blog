@@ -297,6 +297,9 @@ const DEFINITIONS: Array<{
 /** Published setup-collection routes, derived from the same definitions the pages use. */
 export const SETUP_COLLECTION_SLUGS = DEFINITIONS.map((definition) => definition.slug)
 
+/** Static, source-backed metadata for search and route discovery. */
+export const SETUP_COLLECTION_META = DEFINITIONS.map(({ slug, title, intent }) => ({ slug, title, intent }))
+
 async function loadCorpus(): Promise<Corpus> {
   const [species, plant, coral, invertebrate, equipment] = await Promise.all([
     getDatabaseCompareItems('species'),

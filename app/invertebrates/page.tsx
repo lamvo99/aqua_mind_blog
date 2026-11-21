@@ -4,8 +4,10 @@ import DatabaseGrid from "@/app/components/database/DatabaseGrid"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema, collectionPageSchema } from "@/lib/seo/jsonld"
 import { Database } from "lucide-react"
+import { parseListingQuery } from "@/lib/listing-filters"
+import { withListingSeo } from "@/lib/listing-seo"
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Invertebrates Database — Shrimp, Snails & Corals",
   description: "Browse aquarium invertebrate profiles with care parameters: size, temperature, pH, diet, temperament and difficulty for shrimp, snails, crabs, urchins, starfish and anemones.",
   alternates: { canonical: "https://www.aquamind.life/invertebrates" },
@@ -17,9 +19,22 @@ export const metadata: Metadata = {
   },
 }
 
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}): Promise<Metadata> {
+  return withListingSeo(baseMetadata, "/invertebrates", searchParams ? await searchParams : {})
+}
+
 export const revalidate = 300
 
-export default async function InvertebratesPage() {
+export default async function InvertebratesPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}) {
+  const initialQuery = parseListingQuery(searchParams ? await searchParams : {})
   const [items, compareItems] = await Promise.all([getDatabaseList("invertebrate"), getDatabaseCompareItems("invertebrate")])
 
   return (
@@ -39,7 +54,7 @@ export default async function InvertebratesPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Database", href: "/database" }, { label: "Invertebrates" }]} />
       </div>
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Database className="w-4 h-4" />
           Database
         </div>
@@ -63,6 +78,7 @@ export default async function InvertebratesPage() {
           { key: "sizeCm", label: "Size", min: 0.1, max: 30, unit: "cm" },
           { key: "tempMinC", label: "Temp Min", min: 15, max: 35, unit: "°C" },
         ]}
+        initialQuery={initialQuery}
         compareItems={compareItems}
         compareType="invertebrate"
       />

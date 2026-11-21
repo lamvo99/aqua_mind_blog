@@ -3,10 +3,11 @@ import type { Metadata } from "next"
 import { getProblemsList } from "@/lib/database"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { Wrench } from "lucide-react"
+import { withListingSeo } from "@/lib/listing-seo"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
 import ProblemsGrid from "@/app/components/database/ProblemsGrid"
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Aquarium Problem Solver",
   description: "Solve aquarium problems: cloudy water, algae outbreaks, sick fish, plant issues and equipment failures.",
   alternates: { canonical: "https://www.aquamind.life/problems" },
@@ -21,6 +22,14 @@ export const metadata: Metadata = {
     title: "Aquarium Problem Solver",
     description: "Solve aquarium problems: cloudy water, algae outbreaks, sick fish, plant issues and equipment failures.",
   },
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}): Promise<Metadata> {
+  return withListingSeo(baseMetadata, "/problems", searchParams ? await searchParams : {})
 }
 
 export const revalidate = 300
@@ -40,7 +49,7 @@ export default async function ProblemsPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Problems" }]} />
       </div>
       <div className="mb-8">
-        <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 text-sm font-medium mb-2">
+        <div className="flex items-center gap-2 text-aqua-700 dark:text-aqua-400 text-sm font-medium mb-2">
           <Wrench className="w-4 h-4" />
           Problem Solver
         </div>
@@ -58,7 +67,7 @@ export default async function ProblemsPage() {
         </div>
         <Link
           href="/problems/diagnose"
-          className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-aqua-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-aqua-700"
+          className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-aqua-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-aqua-800"
         >
           Start symptom diagnosis
         </Link>
@@ -67,7 +76,7 @@ export default async function ProblemsPage() {
         <p className="text-sm text-gray-600 dark:text-slate-300">
           Want to understand the pattern before changing the tank?
         </p>
-        <Link href="/hubs/aquarium-problems" className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-aqua-600 dark:text-aqua-400 hover:underline">
+        <Link href="/hubs/aquarium-problems" className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-aqua-700 dark:text-aqua-400 hover:underline">
           Open the Aquarium Problems hub
         </Link>
       </div>
