@@ -24,6 +24,7 @@ interface Props {
 }
 
 export const revalidate = 3600
+export const dynamicParams = false
 
 export async function generateStaticParams() {
   const items = await getDatabaseList("invertebrate")

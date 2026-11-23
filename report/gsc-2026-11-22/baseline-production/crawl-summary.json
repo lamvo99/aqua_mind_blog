@@ -1,0 +1,217 @@
+{
+  "label": "production-baseline",
+  "auditDate": "2026-11-22",
+  "base": "https://www.aquamind.life",
+  "readOnly": true,
+  "sitemap": {
+    "url": "https://www.aquamind.life/sitemap.xml",
+    "httpStatus": 200,
+    "urlCount": 588,
+    "duplicateUrls": 0,
+    "queryUrls": 0
+  },
+  "robots": {
+    "httpStatus": 200,
+    "disallowsStudio": true,
+    "sitemapDirective": true
+  },
+  "crawledTargets": 609,
+  "classificationCounts": {
+    "INDEXABLE_AND_CORRECT": 588,
+    "SOFT_404_OR_THIN_ROUTE_CANDIDATE": 13,
+    "FILTERED_OR_PARAMETER_URL": 5,
+    "EXPECTED_404": 2,
+    "INDEXABLE_BUT_MISSING_FROM_SITEMAP": 1
+  },
+  "statusCounts": {
+    "200": 607,
+    "404": 2
+  },
+  "sitemapUrlIssues": [],
+  "indexableMissingFromSitemap": [
+    "https://www.aquamind.life/styles"
+  ],
+  "soft404Candidates": [
+    {
+      "url": "https://www.aquamind.life/category/__gsc_missing__",
+      "status": 200,
+      "title": "Article not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/collections/__gsc_missing__",
+      "status": 200,
+      "title": "Collection not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/corals/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/equipment/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/inspiration/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/invertebrates/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/learn/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/plants/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/posts/__gsc_missing__",
+      "status": 200,
+      "title": "Article not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/posts/Slug%20neocaridina-shrimp-reproduction-cycle",
+      "status": 200,
+      "title": "Article not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/problems/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/species/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    },
+    {
+      "url": "https://www.aquamind.life/styles/__gsc_missing__",
+      "status": 200,
+      "title": "Not found | AquaMind Blog",
+      "h1": ""
+    }
+  ],
+  "unknownProbeResults": [
+    {
+      "url": "https://www.aquamind.life/category/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/collections/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/corals/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/equipment/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/hubs/__gsc_missing__",
+      "status": 404,
+      "classification": "EXPECTED_404"
+    },
+    {
+      "url": "https://www.aquamind.life/inspiration/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/invertebrates/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/learn/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/plants/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/posts/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/problems/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/species/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/styles/__gsc_missing__",
+      "status": 200,
+      "classification": "SOFT_404_OR_THIN_ROUTE_CANDIDATE"
+    },
+    {
+      "url": "https://www.aquamind.life/this-route-does-not-exist",
+      "status": 404,
+      "classification": "EXPECTED_404"
+    }
+  ],
+  "filteredProbeResults": [
+    {
+      "url": "https://www.aquamind.life/corals?coralType=lps",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/corals",
+      "robots": "noindex, follow",
+      "classification": "FILTERED_OR_PARAMETER_URL"
+    },
+    {
+      "url": "https://www.aquamind.life/problems?category=fish",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/problems",
+      "robots": "noindex, follow",
+      "classification": "FILTERED_OR_PARAMETER_URL"
+    },
+    {
+      "url": "https://www.aquamind.life/search?q=Vietnam&type=species",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/search",
+      "robots": "noindex",
+      "classification": "FILTERED_OR_PARAMETER_URL"
+    },
+    {
+      "url": "https://www.aquamind.life/species?difficulty=Beginner",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/species",
+      "robots": "noindex, follow",
+      "classification": "FILTERED_OR_PARAMETER_URL"
+    }
+  ],
+  "internalLinkIssueCount": 0
+}

@@ -12,6 +12,7 @@ interface Props {
 }
 
 export const revalidate = 86400
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return STYLES.map((s) => ({ slug: s.slug }))

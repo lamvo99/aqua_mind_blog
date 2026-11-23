@@ -44,6 +44,7 @@ describe('sitemap', () => {
       '/problems/diagnose',
       '/learn',
       '/setup-planner',
+      '/styles',
     ]) {
       expect(urls).toContain(`https://www.aquamind.life${path === '/' ? '' : path}`)
     }
@@ -82,6 +83,24 @@ describe('sitemap', () => {
     expect(urls).toContain('https://www.aquamind.life/category/beginner-guides')
     expect(urls).not.toContain('https://www.aquamind.life/category/empty-category')
     expect(urls).toContain('https://www.aquamind.life/learn/first-tank')
+  })
+
+  it('excludes unpublished posts from the sitemap', async () => {
+    const { client } = await import('@/lib/sanity')
+    vi.mocked(client.fetch).mockImplementation(
+      mockSanity({
+        docs: [
+          { _type: 'post', slug: 'published-post', publishedAt: '2026-01-01T00:00:00Z', _updatedAt: null },
+          { _type: 'post', slug: 'unpublished-post', publishedAt: null, _updatedAt: null },
+          { _type: 'species', slug: 'published-species', publishedAt: null, _updatedAt: null },
+        ],
+      })
+    ) as any
+
+    const urls = (await sitemap()).map((e) => e.url)
+    expect(urls).toContain('https://www.aquamind.life/posts/published-post')
+    expect(urls).not.toContain('https://www.aquamind.life/posts/unpublished-post')
+    expect(urls).toContain('https://www.aquamind.life/species/published-species')
   })
 
   it('reads learning paths from collection documents, not learn documents', async () => {

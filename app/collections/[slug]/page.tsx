@@ -9,6 +9,7 @@ import TrackedLink from "@/app/components/analytics/TrackedLink"
 import { ArrowRight, CheckCircle2, Info } from "lucide-react"
 
 export const revalidate = 3600
+export const dynamicParams = false
 
 const MAX_PER_GROUP = 18
 

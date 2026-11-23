@@ -11,6 +11,7 @@ import { resourcesForCategory } from "@/lib/related"
 import strings from "@/lib/i18n/strings"
 
 export const revalidate = 3600
+export const dynamicParams = false
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 

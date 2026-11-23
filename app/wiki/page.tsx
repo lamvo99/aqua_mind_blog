@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import { getDatabaseCompareItems } from "@/lib/database"
 import WikiHub from "@/app/components/wiki/WikiHub"
 import Breadcrumb from "@/app/components/Breadcrumb"
@@ -63,7 +64,9 @@ export default async function WikiPage() {
             difficulty, origin or group, then open any entry for full care parameters.
           </p>
         </div>
+      <Suspense fallback={<p className="text-sm text-gray-500 dark:text-slate-400">Loading wiki…</p>}>
         <WikiHub items={items} />
+      </Suspense>
       </div>
     </>
   )

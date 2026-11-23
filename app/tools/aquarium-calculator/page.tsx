@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react"
 import CalculatorLayout from "@/app/components/tools/CalculatorLayout"
 import AquariumPlanner from "@/app/components/tools/AquariumPlanner"
 import { TOOL_LEARN_LINKS } from "@/lib/related"
@@ -46,7 +47,9 @@ export default function AquariumCalculatorPage() {
         ],
       }}
     >
-      <AquariumPlanner />
+      <Suspense fallback={<p className="text-sm text-gray-500 dark:text-slate-400">Loading calculator…</p>}>
+        <AquariumPlanner />
+      </Suspense>
     </CalculatorLayout>
   )
 }

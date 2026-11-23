@@ -1,0 +1,145 @@
+{
+  "base": "http://localhost:3106",
+  "auditDate": "2026-11-22",
+  "readOnly": true,
+  "sitemap": {
+    "urlCount": 589,
+    "hasStyles": true,
+    "queryUrls": 0,
+    "crawlerStatus200": 589,
+    "redirects": 0,
+    "nonSelfCanonical": 0,
+    "noindex": 0
+  },
+  "unknownProbes": [
+    {
+      "path": "/species/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/plants/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/corals/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/invertebrates/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/equipment/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/problems/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/posts/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/category/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/inspiration/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/collections/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/learn/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/styles/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/hubs/__gsc_missing__",
+      "status": 404
+    },
+    {
+      "path": "/this-route-does-not-exist",
+      "status": 404
+    },
+    {
+      "path": "/posts/Slug%20neocaridina-shrimp-reproduction-cycle",
+      "status": 404
+    }
+  ],
+  "filteredProbes": [
+    {
+      "path": "/species?difficulty=Beginner",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/species",
+      "robots": "noindex, follow",
+      "h1": "Fish Species",
+      "bailouts": 0
+    },
+    {
+      "path": "/corals?coralType=lps",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/corals",
+      "robots": "noindex, follow",
+      "h1": "Corals",
+      "bailouts": 0
+    },
+    {
+      "path": "/problems?category=fish",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/problems",
+      "robots": "noindex, follow",
+      "h1": "Aquarium Problems",
+      "bailouts": 0
+    },
+    {
+      "path": "/search?q=Vietnam&type=species",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/search",
+      "robots": "noindex",
+      "h1": "",
+      "bailouts": 1
+    }
+  ],
+  "serverShells": [
+    {
+      "path": "/wiki",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/wiki",
+      "robots": "index, follow",
+      "h1": "Aquarium Wiki",
+      "bailouts": 1
+    },
+    {
+      "path": "/tools/aquarium-calculator",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/tools/aquarium-calculator",
+      "robots": "index, follow",
+      "h1": "Aquarium Calculator",
+      "bailouts": 1
+    },
+    {
+      "path": "/tools/compatibility-checker",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/tools/compatibility-checker",
+      "robots": "index, follow",
+      "h1": "Compatibility Checker",
+      "bailouts": 1
+    },
+    {
+      "path": "/finder",
+      "status": 200,
+      "canonical": "https://www.aquamind.life/finder",
+      "robots": "index, follow",
+      "h1": "Find Your Perfect Match",
+      "bailouts": 1
+    }
+  ],
+  "postsIndexLinksInvalidSlug": false
+}

@@ -38,6 +38,7 @@ const LIST_PATHS = [
   { path: "/learn", priority: 0.6, frequency: "weekly" },
   { path: "/collections", priority: 0.6, frequency: "weekly" },
   { path: "/hubs", priority: 0.7, frequency: "weekly" },
+  { path: "/styles", priority: 0.6, frequency: "monthly" },
   { path: "/about", priority: 0.5, frequency: "monthly" },
   { path: "/contact", priority: 0.5, frequency: "monthly" },
   { path: "/privacy-policy", priority: 0.2, frequency: "yearly" },
@@ -83,7 +84,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]
 
   const docs: any[] = await client.fetch(
-    `*[_type in $types && defined(slug)] {
+    `*[_type in $types && defined(slug) && (_type != "post" || defined(publishedAt))] {
       _type, "slug": slug.current, publishedAt, _updatedAt
     }`,
     { types: Object.keys(TYPE_SEGMENTS) }
@@ -92,6 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const doc of docs) {
     const segment = TYPE_SEGMENTS[doc._type]
     if (!segment || !doc.slug) continue
+    if (doc._type === "post" && !doc.publishedAt) continue
     // Skip slugs that cannot form a valid URL (e.g. the known legacy
     // "Slug neocaridina-…" record). Sanity data is not modified.
     if (doc._type === "post" && !isValidSlugValue(doc.slug)) continue

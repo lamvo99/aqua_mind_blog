@@ -1,7 +1,12 @@
 import { client } from './sanity'
+import { isValidSlugValue } from './slug'
+
+function filterValidPosts<T extends { slug?: { current?: string | null } | null }>(posts: T[] | null | undefined): T[] {
+  return (posts || []).filter((post) => Boolean(post?.slug?.current && isValidSlugValue(post.slug.current)))
+}
 
 export async function getAllPosts() {
-  return await client.fetch(`
+  const posts = await client.fetch(`
     *[_type == "post" && defined(publishedAt)] | order(publishedAt desc) {
       _id,
       title,
@@ -22,10 +27,12 @@ export async function getAllPosts() {
       isFeatured
     }
   `)
+  return filterValidPosts(posts)
 }
 
 export async function getPostBySlug(slug: string) {
-  return await client.fetch(`
+  if (!isValidSlugValue(slug)) return null
+  const post = await client.fetch(`
     *[_type == "post" && slug.current == $slug && defined(publishedAt)][0] {
       _id,
       title,
@@ -57,10 +64,13 @@ export async function getPostBySlug(slug: string) {
       isFeatured
     }
   `, { slug })
+  if (!post?.slug?.current || !isValidSlugValue(post.slug.current)) return null
+  if (Array.isArray(post.relatedPosts)) post.relatedPosts = filterValidPosts(post.relatedPosts)
+  return post
 }
 
 export async function getFeaturedPosts() {
-  return await client.fetch(`
+  const posts = await client.fetch(`
     *[_type == "post" && isFeatured == true && defined(publishedAt)] | order(publishedAt desc) {
       _id,
       title,
@@ -80,10 +90,11 @@ export async function getFeaturedPosts() {
       tags
     }
   `)
+  return filterValidPosts(posts)
 }
 
 export async function getPostsByCategory(slug: string) {
-  return await client.fetch(`
+  const posts = await client.fetch(`
     *[_type == "post" && defined(publishedAt) && $slug in categories[]->slug.current] | order(publishedAt desc) {
       _id,
       title,
@@ -104,11 +115,12 @@ export async function getPostsByCategory(slug: string) {
       isFeatured
     }
   `, { slug })
+  return filterValidPosts(posts)
 }
 
 export async function getRelatedPosts(slug: string, categories: string[], limit = 3) {
   if (categories.length === 0) return []
-  return await client.fetch(
+  const posts = await client.fetch(
     `*[_type == "post" && defined(publishedAt) && slug.current != $slug
        && count(categories[]->slug.current[@ in $categories]) > 0] | order(publishedAt desc) [0...$limit] {
       _id,
@@ -131,6 +143,7 @@ export async function getRelatedPosts(slug: string, categories: string[], limit 
     }`,
     { slug, categories, limit }
   )
+  return filterValidPosts(posts)
 }
 
 export async function getAllCategories() {
