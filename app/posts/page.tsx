@@ -14,10 +14,13 @@ const postsDescription =
 export async function generateMetadata({
   searchParams: searchParamsPromise,
 }: {
-  searchParams: Promise<{ category?: string; group?: string; page?: string | string[] }>
+  searchParams: Promise<{ category?: string; group?: string; search?: string; page?: string | string[] }>
 }): Promise<Metadata> {
   const searchParams = await searchParamsPromise
   const requested = parseRequestedPage(searchParams?.page)
+  const hasQueryFilter = [searchParams?.category, searchParams?.group, searchParams?.search].some(
+    (value) => typeof value === "string" && value.trim().length > 0
+  )
 
   // Valid pages beyond page 1 are cumulative duplicates of the listing
   // (page N renders page 1..N), so they stay crawlable but are not indexed.
@@ -42,7 +45,7 @@ export async function generateMetadata({
     title: isPaginated ? `All Articles — Page ${page}` : "All Articles",
     description: postsDescription,
     alternates: { canonical: `${siteUrl}/posts` },
-    ...(isPaginated ? { robots: { index: false, follow: true } } : {}),
+    ...(isPaginated || hasQueryFilter ? { robots: { index: false, follow: true } } : {}),
   }
 }
 

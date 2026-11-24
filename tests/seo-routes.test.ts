@@ -115,6 +115,25 @@ describe("posts listing route metadata", () => {
     expect(meta.title).toBe("All Articles")
   })
 
+  it.each([
+    ["category filter", { category: "cá cảnh" }],
+    ["group filter", { group: "freshwater" }],
+    ["search placeholder", { search: "{search_term_string}" }],
+    ["decoded category with spaces", { category: "cây thuỷ sinh" }],
+  ])("%s is noindex,follow with canonical /posts", async (_label, filter) => {
+    const meta: any = await postsMetadata({ searchParams: query(filter as any) } as any)
+    expect(meta.robots).toEqual({ index: false, follow: true })
+    expect(meta.alternates.canonical).toBe("https://www.aquamind.life/posts")
+  })
+
+  it("filtered posts still render without triggering not-found", async () => {
+    const element = await PostsPage({
+      searchParams: query({ category: "cá cảnh", group: "freshwater", search: "tetra" }),
+    } as any)
+    expect(element).toBeTruthy()
+    expect(notFound).not.toHaveBeenCalled()
+  })
+
   it("page 2 is noindex with canonical /posts", async () => {
     const meta: any = await postsMetadata({ searchParams: query({ page: "2" }) } as any)
     expect(meta.robots).toEqual({ index: false, follow: true })

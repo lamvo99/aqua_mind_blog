@@ -18,6 +18,16 @@ const nextConfig = {
         destination: '/setup-planner',
         permanent: true,
       },
+      {
+        source: '/plants/java-moss',
+        destination: '/plants/taxiphyllum-barbieri',
+        permanent: true,
+      },
+      {
+        source: '/corals/acan-lords',
+        destination: '/corals/acan-lord',
+        permanent: true,
+      },
     ];
   },
 };
