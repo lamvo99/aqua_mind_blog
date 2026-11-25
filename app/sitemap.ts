@@ -27,6 +27,7 @@ const LIST_PATHS = [
   { path: "/tools/water-change", priority: 0.6, frequency: "monthly" },
   { path: "/tools/co2", priority: 0.6, frequency: "monthly" },
   { path: "/tools/dosing", priority: 0.6, frequency: "monthly" },
+  { path: "/tools/reef-dosing", priority: 0.6, frequency: "monthly" },
   { path: "/tools/pump-flow", priority: 0.6, frequency: "monthly" },
   { path: "/tools/salt-mixing", priority: 0.6, frequency: "monthly" },
   { path: "/tools/lighting", priority: 0.6, frequency: "monthly" },

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Ruler, Droplets, Wind, Syringe, Waves, FlaskConical, Lightbulb, Fish, ListChecks, HeartCrack, LayoutDashboard, Stethoscope, ArrowRight } from "lucide-react"
+import { Ruler, Droplets, Wind, Syringe, Beaker, Waves, FlaskConical, Lightbulb, Fish, ListChecks, HeartCrack, LayoutDashboard, Stethoscope, ArrowRight } from "lucide-react"
 import { toolsNav } from "@/lib/navigation"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { JsonLd, breadcrumbSchema } from "@/lib/seo/jsonld"
@@ -23,6 +23,7 @@ const icons: Record<string, React.ReactNode> = {
   "/tools/water-change": <Droplets className="w-6 h-6" />,
   "/tools/co2": <Wind className="w-6 h-6" />,
   "/tools/dosing": <Syringe className="w-6 h-6" />,
+  "/tools/reef-dosing": <Beaker className="w-6 h-6" />,
   "/tools/pump-flow": <Waves className="w-6 h-6" />,
   "/tools/salt-mixing": <FlaskConical className="w-6 h-6" />,
   "/tools/lighting": <Lightbulb className="w-6 h-6" />,

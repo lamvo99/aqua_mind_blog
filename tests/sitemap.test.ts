@@ -41,6 +41,7 @@ describe('sitemap', () => {
       '/tools/aquarium-calculator',
       '/tools/diagnostic',
       '/tools/compatibility-checker',
+      '/tools/reef-dosing',
       '/problems/diagnose',
       '/learn',
       '/setup-planner',

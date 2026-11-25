@@ -118,6 +118,10 @@ export const TOOL_LEARN_LINKS: Record<string, { href: string; label: string }[]>
   "/tools/dosing": [
     { href: "/plants", label: "Plant database" },
   ],
+  "/tools/reef-dosing": [
+    { href: "/corals", label: "Coral database" },
+    { href: "/learn/marine-and-reef-fundamentals", label: "Marine & reef fundamentals" },
+  ],
   "/tools/compatibility-checker": [
     { href: "/species", label: "Species database" },
     { href: "/corals", label: "Coral database" },

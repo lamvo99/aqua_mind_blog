@@ -46,6 +46,7 @@ export const toolsNav: NavItem[] = [
   { href: "/tools/water-change", label: "Water Change", description: "Plan water changes & parameter impact" },
   { href: "/tools/co2", label: "CO₂ Estimator", description: "Estimate dissolved CO₂ from KH/pH" },
   { href: "/tools/dosing", label: "Dosing", description: "Measure liquid fertilizers & medications" },
+  { href: "/tools/reef-dosing", label: "Reef Dosing", description: "Calcium, alkalinity & magnesium doses by brand" },
   { href: "/tools/pump-flow", label: "Pump & Filter Flow", description: "Pick the right flow rate for your tank" },
   { href: "/tools/salt-mixing", label: "Salt Mixing", description: "Batch marine salt for reef water changes" },
   { href: "/tools/lighting", label: "Lighting", description: "Estimate LED watts for planted tanks" },

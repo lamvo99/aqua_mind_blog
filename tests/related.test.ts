@@ -49,6 +49,7 @@ describe('TOOL_LEARN_LINKS', () => {
       '/tools/pump-flow',
       '/tools/salt-mixing',
       '/tools/dosing',
+      '/tools/reef-dosing',
       '/tools/compatibility-checker',
       '/tools/diagnostic',
     ]
