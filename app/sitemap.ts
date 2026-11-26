@@ -4,6 +4,7 @@ import { STYLE_SLUGS } from "@/lib/styles"
 import { HUB_SLUGS } from "@/lib/hubs"
 import { SETUP_COLLECTION_SLUGS } from "@/lib/collections"
 import { isValidSlugValue } from "@/lib/slug"
+import { filterWave1RedirectSources } from "@/lib/wave1-redirects"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
 
@@ -159,5 +160,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   }
 
-  return entries
+  return filterWave1RedirectSources(entries)
 }

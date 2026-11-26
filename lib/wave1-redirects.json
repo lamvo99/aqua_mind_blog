@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-11-25",
+  "note": "Wave 1 redirects are data-driven and gated. A group becomes a redirect only when status is READY_FOR_ACTIVATION and all three approval flags are true. W1-09 and W1-10 are activated after actual content migration and link updates; the other nine groups remain gated.",
+  "groups": [
+    {
+      "group": "W1-01",
+      "primary": "/problems/white-spot-disease",
+      "secondary": "/problems/ich-white-spot-disease",
+      "status": "BLOCKED_BY_SPECIALIST",
+      "blocker": "Aquatic veterinarian review for treatment content (SR-02); non-treatment migration pending",
+      "contentMigrated": false,
+      "factualApproved": false,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-02",
+      "primary": "/corals/stylophora-pistillata",
+      "secondary": "/corals/stylophora-pistillata-catspaw",
+      "status": "BLOCKED_BY_EDITORIAL_DECISION",
+      "blocker": "Reef-flag semantics; neutral state required before activation",
+      "contentMigrated": false,
+      "factualApproved": true,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-03",
+      "primary": "/corals/candy-cane-coral",
+      "secondary": "/corals/caulastrea-furcata",
+      "status": "BLOCKED_BY_EDITORIAL_DECISION",
+      "blocker": "Taxonomy metadata edit and reef-flag semantics",
+      "contentMigrated": false,
+      "factualApproved": true,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-04",
+      "primary": "/corals/honeycomb-brain-coral",
+      "secondary": "/corals/favia-favus",
+      "status": "BLOCKED_BY_EDITORIAL_DECISION",
+      "blocker": "Taxonomy/waterType metadata edit and reef-flag semantics",
+      "contentMigrated": false,
+      "factualApproved": true,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-05",
+      "primary": "/corals/cauliflower-coral",
+      "secondary": "/corals/pocillopora",
+      "status": "BLOCKED_BY_EDITORIAL_DECISION",
+      "blocker": "Reef-flag semantics; neutral state required before activation",
+      "contentMigrated": false,
+      "factualApproved": true,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-06",
+      "primary": "/species/poecilia-sphenops-molly",
+      "secondary": "/species/poecilia-sphenops",
+      "status": "BLOCKED_BY_SPECIALIST",
+      "blocker": "Fish-care review for size basis and conflicting care values (SR-04)",
+      "contentMigrated": false,
+      "factualApproved": false,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-07",
+      "primary": "/species/gasteropelecus-sternicla",
+      "secondary": "/species/gasteropelecus-sternicla-hatchetfish",
+      "status": "BLOCKED_BY_SPECIALIST",
+      "blocker": "Fish-care review for tank/size/temp/GH (SR-05)",
+      "contentMigrated": false,
+      "factualApproved": false,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-08",
+      "primary": "/species/pterophyllum-scalare",
+      "secondary": "/species/pterophyllum-scalare-marble",
+      "status": "BLOCKED_BY_SPECIALIST",
+      "blocker": "Fish-care review for care values and editorial morph policy (SR-06/SR-07)",
+      "contentMigrated": false,
+      "factualApproved": false,
+      "editorialApproved": false
+    },
+    {
+      "group": "W1-09",
+      "primary": "/equipment/aquarium-soil-substrate",
+      "secondary": "/equipment/aquasoil-substrate",
+      "status": "READY_FOR_ACTIVATION",
+      "blocker": "Content migrated and verified 2026-11-26; code release pending",
+      "contentMigrated": true,
+      "factualApproved": true,
+      "editorialApproved": true
+    },
+    {
+      "group": "W1-10",
+      "primary": "/invertebrates/neocaridina-davidi",
+      "secondary": "/invertebrates/neocaridina-davidi-cherry",
+      "status": "READY_FOR_ACTIVATION",
+      "blocker": "Content and 32 links migrated/verified 2026-11-26; code release pending",
+      "contentMigrated": true,
+      "factualApproved": true,
+      "editorialApproved": true
+    },
+    {
+      "group": "W1-11",
+      "primary": "/invertebrates/vittina-natalensis",
+      "secondary": "/invertebrates/neritina-natalensis",
+      "status": "BLOCKED_BY_SPECIALIST",
+      "blocker": "Snail-care review for temp/GH; editorial title/URL approval; 21 link updates",
+      "contentMigrated": false,
+      "factualApproved": false,
+      "editorialApproved": false
+    }
+  ]
+}

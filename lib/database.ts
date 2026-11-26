@@ -1,6 +1,7 @@
 import { client } from './sanity'
 import { applySpec28Overlay, applySpec28OverlayList, type Spec28OverlayType } from './content/spec28-overlay'
 import type { CareBasisEntry, CareConfidenceEntry, EvidenceSourceRecord } from './care-evidence'
+import { filterWave1RedirectDatabaseItems } from './wave1-redirects'
 
 export type DatabaseType = 'species' | 'invertebrate' | 'plant' | 'coral' | 'equipment'
 
@@ -282,7 +283,7 @@ export async function getDatabaseList(type: DatabaseType): Promise<DatabaseItem[
     }`,
     { type }
   )
-  return applySpec28OverlayList(type, items as DatabaseItem[])
+  return filterWave1RedirectDatabaseItems(type, applySpec28OverlayList(type, items as DatabaseItem[]))
 }
 
 const COMPARE_PROJECTIONS: Record<DatabaseType, string> = {
@@ -324,7 +325,7 @@ export async function getDatabaseCompareItems(type: DatabaseType): Promise<any[]
     }`,
     { type }
   )
-  return applySpec28OverlayList(type, items as any[])
+  return filterWave1RedirectDatabaseItems(type, applySpec28OverlayList(type, items as any[]))
 }
 
 export function getDatabaseItem(type: 'species', slug: string): Promise<SpeciesDetail | null>
