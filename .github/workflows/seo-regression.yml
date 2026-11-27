@@ -1,0 +1,45 @@
+name: SEO regression
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fast:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run seo:check
+      - run: npm run lint
+
+  production-smoke:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run production SEO smoke
+        run: node scripts/seo/production-smoke.mjs --json-out seo-smoke.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seo-production-smoke
+          path: seo-smoke.json
+          if-no-files-found: warn

@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "verify:seo": "node scripts/verify-rendered-seo.cjs"
+    "verify:seo": "node scripts/verify-rendered-seo.cjs",
+    "seo:check": "vitest run tests/seo-regression.test.ts tests/sitemap.test.ts tests/canonical-host.test.ts tests/gsc-p1-redirects.test.ts tests/wave1-redirects.test.ts",
+    "seo:links": "node scripts/seo/check-internal-links.mjs --mode inventory",
+    "seo:smoke": "node scripts/seo/production-smoke.mjs"
   },
   "dependencies": {
     "@sanity/client": "^7.22.1",
