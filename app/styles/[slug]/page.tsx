@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import Link from "next/link"
 import Breadcrumb from "@/app/components/Breadcrumb"
 import { client, urlFor } from "@/lib/sanity"
@@ -109,7 +109,7 @@ export default async function StylePage({ params }: Props) {
               >
                 <div className="relative aspect-[4/3] bg-aqua-50 dark:bg-slate-900">
                   {item.mainImage ? (
-                    <Image
+                    <SanityImage
                       src={urlFor(item.mainImage).width(600).height(450).url()}
                       alt={item.title}
                       fill

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { Scale } from "lucide-react"
 import { urlFor } from "@/lib/sanity"
 import type { DatabaseItem } from "@/lib/database"
@@ -45,7 +45,7 @@ export default function DatabaseCard({ item, href, comparing = false, compareDis
       <Link href={href} onClick={onOpen} className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-aqua-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 rounded-2xl">
         <div className="relative aspect-[4/3] bg-aqua-50 dark:bg-slate-900">
           {item.mainImage ? (
-            <Image
+            <SanityImage
               src={urlFor(item.mainImage).width(600).height(450).url() || ""}
               alt={item.name}
               fill

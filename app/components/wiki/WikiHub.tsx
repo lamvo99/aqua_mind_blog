@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { Search, Thermometer, Droplets, Ruler, HelpCircle, SlidersHorizontal, X, Check } from "lucide-react"
 import { urlFor } from "@/lib/sanity"
 
@@ -298,7 +298,7 @@ export default function WikiHub({ items }: { items: WikiItem[] }) {
                 >
                   <div className="relative h-32 overflow-hidden bg-aqua-50 dark:bg-slate-900">
                     {item.mainImage ? (
-                      <Image
+                      <SanityImage
                         src={urlFor(item.mainImage).width(600).height(300).url() || ""}
                         alt={item.name}
                         fill

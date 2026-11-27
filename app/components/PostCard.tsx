@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { urlFor } from "@/lib/sanity"
 import { formatDateShort, estimateReadingTime } from "@/lib/utils"
 import { Calendar, User, Clock } from "lucide-react"
@@ -22,7 +22,7 @@ export default function PostCard({ post, featured, priority }: PostCardProps) {
     >
       <div className={`relative ${featured ? "h-64 md:h-80" : "h-52"} overflow-hidden`}>
         {imageUrl ? (
-          <Image
+          <SanityImage
             src={imageUrl}
             alt={post.title}
             fill
@@ -68,7 +68,7 @@ export default function PostCard({ post, featured, priority }: PostCardProps) {
           {post.author && (
             <span className="flex items-center gap-1.5">
               {post.author.image ? (
-                <Image
+                <SanityImage
                   src={urlFor(post.author.image).width(20).height(20).url() || ""}
                   alt={post.author.name}
                   width={20}

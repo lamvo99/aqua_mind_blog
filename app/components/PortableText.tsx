@@ -1,4 +1,4 @@
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { urlFor } from "@/lib/sanity"
 import ResponsiveTable from "./ResponsiveTable"
 
@@ -126,7 +126,7 @@ export default function PortableText({ value }: { value?: unknown }) {
           return (
             <figure key={item.block._key || i} className="my-8">
               {imgUrl && (
-                <Image
+                <SanityImage
                   src={imgUrl}
                   alt={item.block.alt || ""}
                   width={800}

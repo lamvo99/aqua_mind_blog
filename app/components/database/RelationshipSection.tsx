@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { urlFor } from "@/lib/sanity"
 import { ArrowRight } from "lucide-react"
 import { filterNavigableItems } from "@/lib/relationships"
@@ -62,7 +62,7 @@ export default function RelationshipSection({
             className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700 hover:border-aqua-300 dark:hover:border-aqua-800 hover:shadow-md transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-aqua-500"
           >
             {item.mainImage ? (
-              <Image
+              <SanityImage
                 src={urlFor(item.mainImage).width(48).height(48).url() || ""}
                 alt=""
                 width={48}

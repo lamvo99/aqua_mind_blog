@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
 import { client } from "@/lib/sanity"
@@ -95,7 +95,7 @@ export default async function InspirationDetailPage({ params }: Props) {
 
       {item.mainImage && (
         <div className="relative aspect-video rounded-2xl overflow-hidden bg-aqua-50 dark:bg-slate-900 mb-6">
-          <Image
+          <SanityImage
             src={urlFor(item.mainImage).width(1600).url() || ""}
             alt={item.title}
             fill

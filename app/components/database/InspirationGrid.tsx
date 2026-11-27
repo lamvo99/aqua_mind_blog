@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react"
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { BookOpen } from "lucide-react"
 import { urlFor } from "@/lib/sanity"
 import { STYLES } from "@/lib/styles"
@@ -98,7 +98,7 @@ export default function InspirationGrid({ items }: { items: InspirationItem[] })
             >
               <div className="relative aspect-[4/3] bg-aqua-50 dark:bg-slate-900">
                 {item.mainImage ? (
-                  <Image
+                  <SanityImage
                     src={urlFor(item.mainImage).width(600).height(450).url() || ""}
                     alt={item.title}
                     fill

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import Link from "next/link"
 import { urlFor, client } from "@/lib/sanity"
 import Breadcrumb from "@/app/components/Breadcrumb"
@@ -74,7 +74,7 @@ export default async function LearnPathPage({ params }: Props) {
 
       <div className="mb-8">
         {collection.mainImage && (
-          <Image
+          <SanityImage
             src={urlFor(collection.mainImage).width(1200).height(480).auto("format").url()}
             alt={collection.title}
             width={1200}

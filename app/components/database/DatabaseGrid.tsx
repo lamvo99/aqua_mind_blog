@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useMemo, useCallback, useEffect, useRef } from "react"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import Link from "next/link"
 import { X, Scale, Trash2, Search, RotateCcw, SlidersHorizontal, ChevronDown } from "lucide-react"
 import type { DatabaseItem } from "@/lib/database"
@@ -439,7 +439,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
               {compareSel.map((item) => (
                 <div key={item._id} className="flex items-center gap-1.5 shrink-0">
                   {item.mainImage ? (
-                    <Image src={urlFor(item.mainImage).width(48).height(48).url()} alt="" width={24} height={24} className="w-6 h-6 rounded object-cover" />
+                    <SanityImage src={urlFor(item.mainImage).width(48).height(48).url()} alt="" width={24} height={24} className="w-6 h-6 rounded object-cover" />
                   ) : null}
                   <span className="text-xs font-medium text-gray-700 dark:text-slate-300">{item.name}</span>
                   <button
@@ -509,7 +509,7 @@ export default function DatabaseGrid({ items, hrefPrefix, filterGroups = [], ran
                       <div className="flex flex-col gap-1.5">
                         <span className="font-bold text-gray-900 dark:text-slate-100 leading-snug">{item.name}</span>
                         {item.mainImage && (
-                          <Image
+                          <SanityImage
                             src={urlFor(item.mainImage).width(160).height(120).url()}
                             alt={item.name}
                             width={160}

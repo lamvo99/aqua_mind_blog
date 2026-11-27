@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import { getPostBySlug, getAllPosts, getRelatedPosts } from "@/lib/posts"
 import { urlFor } from "@/lib/sanity"
 import { notFound } from "next/navigation"
@@ -114,7 +114,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
         <header className="relative">
           {imageUrl ? (
             <div className="relative h-64 md:h-[450px]">
-              <Image src={imageUrl} alt={post.title} fill className="object-cover" priority />
+              <SanityImage src={imageUrl} alt={post.title} fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
             </div>
           ) : (
@@ -133,7 +133,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
                 {post.author && (
                   <span className="flex items-center gap-2">
                     {post.author.image ? (
-                      <Image
+                      <SanityImage
                         src={urlFor(post.author.image).width(28).height(28).url() || ""}
                         alt={post.author.name}
                         width={28}
@@ -207,7 +207,7 @@ export default async function PostDetailPage({ params: paramsPromise }: { params
             <div className="mt-12 p-6 bg-gray-50 dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-slate-700">
               <div className="flex items-start gap-4">
                 {post.author.image ? (
-                  <Image
+                  <SanityImage
                     src={urlFor(post.author.image).width(64).height(64).url() || ""}
                     alt={post.author.name}
                     width={64}

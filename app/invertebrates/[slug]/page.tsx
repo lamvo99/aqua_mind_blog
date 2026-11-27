@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Image from "next/image"
+import SanityImage from "@/app/components/SanityImage"
 import Link from "next/link"
 import { urlFor } from "@/lib/sanity"
 import { getDatabaseItem, getDatabaseList } from "@/lib/database"
@@ -115,7 +115,7 @@ export default async function InvertebrateDetailPage({ params }: Props) {
         <div>
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-aqua-50 dark:bg-slate-900">
             {item.mainImage ? (
-              <Image
+              <SanityImage
                 src={urlFor(item.mainImage).width(760).height(570).url() || ""}
                 alt={`${item.name} — invertebrate${item.scientificName ? ` (${item.scientificName})` : ""}`}
                 fill
