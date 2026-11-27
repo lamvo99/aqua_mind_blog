@@ -56,7 +56,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           Skip to content
         </a>
         <Navbar databaseCounts={databaseCounts} />
-        <main id="main-content" className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1 min-h-[calc(100vh-4rem)]">{children}</main>
         <Footer />
         <BackToTop />
         <CookieConsentBanner />
