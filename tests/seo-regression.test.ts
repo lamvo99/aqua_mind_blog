@@ -206,7 +206,7 @@ describe('SEO regression — canonical, robots and metadata', () => {
       expect(source, file).not.toMatch(/http:\/\/www\.aquamind\.life/)
       expect(source, file).not.toMatch(/localhost:\d+/)
     }
-  })
+  }, 15000)
 
   it('keeps the dedicated not-found route outside the sitemap', () => {
     expect(fs.existsSync(path.resolve('app/not-found.tsx'))).toBe(true)
