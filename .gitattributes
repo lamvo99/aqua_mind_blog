@@ -1,0 +1,4 @@
+# Node ESM scripts used by the SEO monitor must keep LF; CRLF breaks
+# Vite/Vitest transforms on Windows.
+scripts/seo/*.mjs text eol=lf
+tests/seo-regression.test.ts text eol=lf
