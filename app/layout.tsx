@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Inter } from "next/font/google"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import BackToTop from "./components/BackToTop"
@@ -14,11 +14,7 @@ import "./globals.css"
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-})
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+  display: "optional",
 })
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aquamind.life"
@@ -50,7 +46,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const databaseCounts = await getDatabaseCounts()
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-aqua-600 focus:text-white focus:rounded-lg focus:outline-none">
           Skip to content
